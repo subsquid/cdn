@@ -1,5 +1,5 @@
 {
-    "$id": "https://subsquid.io/schemas/commands.json",
+    "$id": "https://cdn.subsquid.io/schemas/commands.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "description": "commands.json schema",
     "type": "object",
