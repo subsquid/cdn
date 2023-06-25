@@ -10,7 +10,7 @@
         "additionalProperties": {
           "$ref": "#/$defs/command"
         }
-      },
+      }
     },
     "$defs": {
       "command": {
@@ -66,7 +66,7 @@
               "type": "string"
             }
           }
-        },
+        }
       },
       "glob": {
         "type": "object",
