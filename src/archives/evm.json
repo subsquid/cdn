@@ -17,6 +17,11 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://arbitrum-goerli.archive.subsquid.io",
           "release": "FireSquid"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/arbitrum-goerli",
+          "release": "ArrowSquid"
         }
       ]
     },
@@ -192,6 +197,11 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://moonriver-evm.archive.subsquid.io",
           "release": "FireSquid"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonriver-mainnet",
+          "release": "ArrowSquid"
         }
       ]
     },
@@ -242,6 +252,11 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://sepolia.archive.subsquid.io",
           "release": "FireSquid"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/ethereum-sepolia",
+          "release": "ArrowSquid"
         }
       ]
     },
