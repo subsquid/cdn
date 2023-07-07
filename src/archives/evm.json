@@ -7,6 +7,11 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://arbitrum.archive.subsquid.io",
           "release": "FireSquid"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/arbitrum-one",
+          "release": "ArrowSquid"
         }
       ]
     },
@@ -32,6 +37,11 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://arbitrum-nova.archive.subsquid.io",
           "release": "FireSquid"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/arbitrum-nova",
+          "release": "ArrowSquid"
         }
       ]
     },
@@ -297,6 +307,16 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://skale-nebula-staging.archive.subsquid.io",
           "release": "FireSquid"
+        }
+      ]
+    },
+    {
+      "network": "shibuya-testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/shibuya-testnet",
+          "release": "ArrowSquid"
         }
       ]
     },
