@@ -811,6 +811,21 @@
       ]
     },
     {
+      "network": "pangoro",
+      "genesisHash": "0xaaa8b33b723b30b44e45e4e6c01936cc92e7559b4184fb0cee2853d55610fcbf",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://pangoro.archive.subsquid.io/graphql",
+          "explorerUrl": "https://pangoro.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ]
+    },
+    {
       "network": "parallel",
       "genesisHash": "0xe61a41c53f5dcd0beb09df93b34402aada44cb05117b71059cce40a2723a4e97",
       "providers": [
@@ -1208,6 +1223,21 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://vara.archive.subsquid.io/graphql",
           "explorerUrl": "https://vara.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ]
+    },
+    {
+      "network": "westend-collectives",
+      "genesisHash": "0x713daf193a6301583ff467be736da27ef0a72711b248927ba413f573d2b38e44",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://westend-collectives.archive.subsquid.io/graphql",
+          "explorerUrl": "https://westend-collectives.explorer.subsquid.io/graphql",
           "release": "FireSquid",
           "image": "subsquid/substrate-ingest:1",
           "ingest": "subsquid/substrate-ingest:1",
