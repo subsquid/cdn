@@ -673,6 +673,13 @@
       "description": "Pangolin is a multi-chain decentralized digital assets exchange (DEX). Through advanced tooling, deep liquidity, and smooth onboarding, Pangolin offers easy swaps and great tools for projects and traders."
     },
     {
+      "name": "pangoro",
+      "displayName": "Pangoro",
+      "tokens": [],
+      "website": "",
+      "description": ""
+    },
+    {
       "name": "parallel",
       "displayName": "Parallel",
       "tokens": [
@@ -978,6 +985,15 @@
       ],
       "website": "https://vara-network.io/",
       "description": "Vara is a fast and scalable Layer-1 decentralized network powered by Gear Protocol. The best playground for developing and running your dApps. Gear Protocol is an advanced WASM based smart contract platform capable of being deployed as a Kusama and Polkadot parachain, that enables developers to deploy their dApps in under 5 minutes in the easiest and most efficient way possible.",
+      "relayChain": null,
+      "parachainId": null
+    },
+    {
+      "name": "westend-collectives",
+      "displayName": "Westend Collectives",
+      "tokens": [],
+      "website": "",
+      "description": "",
       "relayChain": null,
       "parachainId": null
     },
