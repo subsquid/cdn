@@ -66,6 +66,16 @@
       ]
     },
     {
+      "network": "avalanche-testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/avalanche-testnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "base-goerli",
       "providers": [
         {
@@ -97,6 +107,11 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://binance-testnet.archive.subsquid.io",
           "release": "FireSquid"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/binance-testnet",
+          "release": "ArrowSquid"
         }
       ]
     },
@@ -232,6 +247,11 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://polygon.archive.subsquid.io",
           "release": "FireSquid"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-mainnet",
+          "release": "ArrowSquid"
         }
       ]
     },
@@ -242,6 +262,11 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://polygon-mumbai.archive.subsquid.io",
           "release": "FireSquid"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-testnet",
+          "release": "ArrowSquid"
         }
       ]
     },
