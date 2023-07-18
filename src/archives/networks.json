@@ -610,6 +610,15 @@
       "parachainId": "2023"
     },
     {
+      "name": "moonsama",
+      "displayName": "Moonsama",
+      "tokens": [],
+      "website": "",
+      "description": "",
+      "relayChain": null,
+      "parachainId": null
+    },
+    {
       "name": "myriad",
       "displayName": "Myriad",
       "tokens": [
