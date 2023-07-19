@@ -62,6 +62,11 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://avalanche-c.archive.subsquid.io",
           "release": "FireSquid"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/avalanche-mainnet",
+          "release": "ArrowSquid"
         }
       ]
     },
@@ -226,6 +231,16 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonriver-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "moonsama",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonsama",
           "release": "ArrowSquid"
         }
       ]
