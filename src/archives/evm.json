@@ -52,6 +52,11 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://astar-evm.archive.subsquid.io",
           "release": "FireSquid"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/astar-mainnet",
+          "release": "ArrowSquid"
         }
       ]
     },
