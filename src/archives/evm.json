@@ -192,6 +192,11 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://fantom.archive.subsquid.io",
           "release": "FireSquid"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/fantom-mainnet",
+          "release": "ArrowSquid"
         }
       ]
     },
@@ -326,6 +331,26 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-testnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "polygon-zkevm",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-zkevm",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "polygon-zkevm-testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-zkevm-testnet",
           "release": "ArrowSquid"
         }
       ]
