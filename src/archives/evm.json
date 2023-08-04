@@ -102,11 +102,6 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://base-goerli.archive.subsquid.io",
           "release": "FireSquid"
-        },
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/base-goerli",
-          "release": "ArrowSquid"
         }
       ]
     },
