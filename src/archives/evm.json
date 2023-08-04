@@ -86,6 +86,16 @@
       ]
     },
     {
+      "network": "base-mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/base-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "base-goerli",
       "providers": [
         {
@@ -177,6 +187,21 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://fantom.archive.subsquid.io",
           "release": "FireSquid"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/fantom-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "fantom-testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/fantom-testnet",
+          "release": "ArrowSquid"
         }
       ]
     },
@@ -257,6 +282,21 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://optimism-mainnet.archive.subsquid.io",
           "release": "FireSquid"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/optimism-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "optimism-goerli",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/optimism-goerli",
+          "release": "ArrowSquid"
         }
       ]
     },
