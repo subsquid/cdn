@@ -131,6 +131,16 @@
       ]
     },
     {
+      "network": "eth-goerli",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/ethereum-goerli",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "exosama",
       "providers": [
         {
@@ -271,6 +281,26 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-testnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "polygon-zkevm",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-zkevm",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "polygon-zkevm-testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-zkevm-testnet",
           "release": "ArrowSquid"
         }
       ]
