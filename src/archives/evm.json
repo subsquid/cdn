@@ -20,11 +20,6 @@
       "providers": [
         {
           "provider": "subsquid",
-          "dataSourceUrl": "https://arbitrum-goerli.archive.subsquid.io",
-          "release": "FireSquid"
-        },
-        {
-          "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/arbitrum-goerli",
           "release": "ArrowSquid"
         }
@@ -33,11 +28,6 @@
     {
       "network": "arbitrum-nova",
       "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://arbitrum-nova.archive.subsquid.io",
-          "release": "FireSquid"
-        },
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/arbitrum-nova",
@@ -63,11 +53,6 @@
     {
       "network": "avalanche",
       "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://avalanche-c.archive.subsquid.io",
-          "release": "FireSquid"
-        },
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/avalanche-mainnet",
@@ -100,8 +85,8 @@
       "providers": [
         {
           "provider": "subsquid",
-          "dataSourceUrl": "https://base-goerli.archive.subsquid.io",
-          "release": "FireSquid"
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/base-goerli",
+          "release": "ArrowSquid"
         }
       ]
     },
@@ -125,33 +110,8 @@
       "providers": [
         {
           "provider": "subsquid",
-          "dataSourceUrl": "https://binance-testnet.archive.subsquid.io",
-          "release": "FireSquid"
-        },
-        {
-          "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/binance-testnet",
           "release": "ArrowSquid"
-        }
-      ]
-    },
-    {
-      "network": "boba-eth",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://boba-eth.archive.subsquid.io",
-          "release": "FireSquid"
-        }
-      ]
-    },
-    {
-      "network": "boba-moonbeam",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://boba-moonbeam.archive.subsquid.io",
-          "release": "FireSquid"
         }
       ]
     },
@@ -185,11 +145,6 @@
       "providers": [
         {
           "provider": "subsquid",
-          "dataSourceUrl": "https://fantom.archive.subsquid.io",
-          "release": "FireSquid"
-        },
-        {
-          "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/fantom-mainnet",
           "release": "ArrowSquid"
         }
@@ -211,16 +166,6 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://goerli.archive.subsquid.io",
-          "release": "FireSquid"
-        }
-      ]
-    },
-    {
-      "network": "mantle-testnet",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://mantle-testnet.archive.subsquid.io",
           "release": "FireSquid"
         }
       ]
@@ -331,16 +276,6 @@
       ]
     },
     {
-      "network": "scroll-alpha-testnet",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://scroll-alpha-testnet.archive.subsquid.io",
-          "release": "FireSquid"
-        }
-      ]
-    },
-    {
       "network": "sepolia",
       "providers": [
         {
@@ -356,72 +291,12 @@
       ]
     },
     {
-      "network": "skale-calypso",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://skale-calypso.archive.subsquid.io",
-          "release": "FireSquid"
-        }
-      ]
-    },
-    {
-      "network": "skale-calypso-staging",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://skale-calypso-staging.archive.subsquid.io",
-          "release": "FireSquid"
-        }
-      ]
-    },
-    {
-      "network": "skale-nebula",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://skale-nebula.archive.subsquid.io",
-          "release": "FireSquid"
-        }
-      ]
-    },
-    {
-      "network": "skale-nebula-staging",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://skale-nebula-staging.archive.subsquid.io",
-          "release": "FireSquid"
-        }
-      ]
-    },
-    {
       "network": "shibuya-testnet",
       "providers": [
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/shibuya-testnet",
           "release": "ArrowSquid"
-        }
-      ]
-    },
-    {
-      "network": "zksync",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://zksync.archive.subsquid.io",
-          "release": "FireSquid"
-        }
-      ]
-    },
-    {
-      "network": "zksync-testnet",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://zksync-testnet.archive.subsquid.io",
-          "release": "FireSquid"
         }
       ]
     }
