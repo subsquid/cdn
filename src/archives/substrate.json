@@ -781,21 +781,6 @@
       "genesisHash": "0x7d45920ff7956e45ef6107720e41b1cfdbd0a50371d6e9072f67070fb285fe16"
     },
     {
-      "network": "opal",
-      "genesisHash": "0xc87870ef90a438d574b8e320f17db372c50f62beb52e479c8ff6ee5b460670b9",
-      "providers": [
-        {
-          "provider": "Unique Network",
-          "dataSourceUrl": "https://archive.unique.network/opal/graphql",
-          "explorerUrl": "https://archive.unique.network/opal/explorer/graphql",
-          "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.2.2",
-          "ingest": "subsquid/substrate-ingest:1.2.2",
-          "gateway": "subsquid/substrate-gateway:2.3.1"
-        }
-      ]
-    },
-    {
       "network": "origin-trail",
       "genesisHash": "0xe7e0962324a3b86c83404dbea483f25fb5dab4c224791c81b756cfc948006174",
       "providers": [
@@ -944,21 +929,6 @@
         }
       ],
       "genesisHash": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3"
-    },
-    {
-      "network": "quartz",
-      "genesisHash": "0xcd4d732201ebe5d6b014edda071c4203e16867305332301dc8d092044b28e554",
-      "providers": [
-        {
-          "provider": "Unique Network",
-          "dataSourceUrl": "https://archive.unique.network/quartz/graphql",
-          "explorerUrl": "https://archive.unique.network/quartz/explorer/graphql",
-          "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.2.2",
-          "ingest": "subsquid/substrate-ingest:1.2.2",
-          "gateway": "subsquid/substrate-gateway:2.3.1"
-        }
-      ]
     },
     {
       "network": "reef",
@@ -1212,21 +1182,6 @@
           "image": "subsquid/substrate-ingest:1",
           "ingest": "subsquid/substrate-ingest:1",
           "gateway": "subsquid/substrate-gateway:2"
-        }
-      ]
-    },
-    {
-      "network": "unique",
-      "genesisHash": "0x84322d9cddbf35088f1e54e9a85c967a41a56a4f43445768125e61af166c7d31",
-      "providers": [
-        {
-          "provider": "Unique Network",
-          "dataSourceUrl": "https://archive.unique.network/unique/graphql",
-          "explorerUrl": "https://archive.unique.network/unique/explorer/graphql",
-          "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1.2.2",
-          "ingest": "subsquid/substrate-ingest:1.2.2",
-          "gateway": "subsquid/substrate-gateway:2.3.1"
         }
       ]
     },
