@@ -290,7 +290,7 @@
       "providers": [
         {
           "provider": "subsquid",
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-zkevm",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-zkevm-mainnet",
           "release": "ArrowSquid"
         }
       ]
