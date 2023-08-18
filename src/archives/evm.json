@@ -187,6 +187,11 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://moonbase-evm.archive.subsquid.io",
           "release": "FireSquid"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonbase-testnet",
+          "release": "ArrowSquid"
         }
       ]
     },
