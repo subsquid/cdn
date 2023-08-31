@@ -236,6 +236,16 @@
       ]
     },
     {
+      "network": "neon-mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/neon-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "optimism-mainnet",
       "providers": [
         {
@@ -331,6 +341,36 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/shibuya-testnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "tanssi",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/tanssi",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "zksync-mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/zksync-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "zksync-testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/zksync-testnet",
           "release": "ArrowSquid"
         }
       ]
