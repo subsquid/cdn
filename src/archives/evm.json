@@ -416,16 +416,6 @@
       ]
     },
     {
-      "network": "tanssi",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/tanssi",
-          "release": "ArrowSquid"
-        }
-      ]
-    },
-    {
       "network": "zksync-mainnet",
       "providers": [
         {
