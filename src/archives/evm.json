@@ -171,12 +171,72 @@
       ]
     },
     {
+      "network": "flare-mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/flare-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "gnosis-mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/gnosis-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "goerli",
       "providers": [
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://goerli.archive.subsquid.io",
           "release": "FireSquid"
+        }
+      ]
+    },
+    {
+      "network": "linea-mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/linea-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "mantle-mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/mantle-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "metis-mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/metis-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "mineplex-testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/mineplex-testnet",
+          "release": "ArrowSquid"
         }
       ]
     },
@@ -341,6 +401,16 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/shibuya-testnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "shiden-mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/shiden-mainnet",
           "release": "ArrowSquid"
         }
       ]
