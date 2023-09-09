@@ -358,7 +358,7 @@
           "gateway": "subsquid/substrate-gateway:2"
         }
       ],
-      "genesisHash": "0x335369975fced3fc22e23498da306a712f4fd964c957364d53c49cea9db8bc2f"
+      "genesisHash": "0x99ded175d436bee7d751fa3f2f8c7a257ddc063a541f8daa5e6152604f66b2a0"
     },
     {
       "network": "elysium",
@@ -407,7 +407,7 @@
     },
     {
       "network": "foucoco",
-      "genesisHash": "0x67221cd96c1551b72d55f65164d6a39f31b570c77a05c90e31931b0e2f379e13",
+      "genesisHash": "0xa8d080b07f9c84465aeb9576db5a7838bcbca3ffb78dbfd7d4b56acafc1f29d1",
       "providers": [
         {
           "provider": "subsquid",
@@ -865,7 +865,7 @@
           "gateway": "subsquid/substrate-gateway:2"
         }
       ],
-      "genesisHash": "0x63aa66adf7645152b11891b559d3d09d4a0e8acfae36ff1ab459ef4c298e23f2"
+      "genesisHash": "0x40bc7dad85f35735d51e74ed99636fcf41e8575e6dba21c040d43b782bd135e4"
     },
     {
       "network": "myriad",
