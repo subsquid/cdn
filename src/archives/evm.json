@@ -35,11 +35,6 @@
       "providers": [
         {
           "provider": "subsquid",
-          "dataSourceUrl": "https://astar-evm.archive.subsquid.io",
-          "release": "FireSquid"
-        },
-        {
-          "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/astar-mainnet",
           "release": "ArrowSquid"
         }
@@ -90,11 +85,6 @@
       "providers": [
         {
           "provider": "subsquid",
-          "dataSourceUrl": "https://binance.archive.subsquid.io",
-          "release": "FireSquid"
-        },
-        {
-          "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/binance-mainnet",
           "release": "ArrowSquid"
         }
@@ -113,11 +103,6 @@
     {
       "network": "eth-mainnet",
       "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://eth.archive.subsquid.io",
-          "release": "FireSquid"
-        },
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/ethereum-mainnet",
@@ -142,6 +127,11 @@
           "provider": "subsquid",
           "dataSourceUrl": "https://exosama.archive.subsquid.io",
           "release": "FireSquid"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/exosama",
+          "release": "ArrowSquid"
         }
       ]
     },
@@ -240,11 +230,6 @@
       "providers": [
         {
           "provider": "subsquid",
-          "dataSourceUrl": "https://moonbase-evm.archive.subsquid.io",
-          "release": "FireSquid"
-        },
-        {
-          "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonbase-testnet",
           "release": "ArrowSquid"
         }
@@ -255,11 +240,6 @@
       "providers": [
         {
           "provider": "subsquid",
-          "dataSourceUrl": "https://moonbeam-evm.archive.subsquid.io",
-          "release": "FireSquid"
-        },
-        {
-          "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonbeam-mainnet",
           "release": "ArrowSquid"
         }
@@ -268,11 +248,6 @@
     {
       "network": "moonriver",
       "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://moonriver-evm.archive.subsquid.io",
-          "release": "FireSquid"
-        },
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonriver-mainnet",
@@ -305,11 +280,6 @@
       "providers": [
         {
           "provider": "subsquid",
-          "dataSourceUrl": "https://optimism-mainnet.archive.subsquid.io",
-          "release": "FireSquid"
-        },
-        {
-          "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/optimism-mainnet",
           "release": "ArrowSquid"
         }
@@ -330,11 +300,6 @@
       "providers": [
         {
           "provider": "subsquid",
-          "dataSourceUrl": "https://polygon.archive.subsquid.io",
-          "release": "FireSquid"
-        },
-        {
-          "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-mainnet",
           "release": "ArrowSquid"
         }
@@ -343,11 +308,6 @@
     {
       "network": "polygon-mumbai",
       "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://polygon-mumbai.archive.subsquid.io",
-          "release": "FireSquid"
-        },
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-testnet",
@@ -378,11 +338,6 @@
     {
       "network": "sepolia",
       "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://sepolia.archive.subsquid.io",
-          "release": "FireSquid"
-        },
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/ethereum-sepolia",
