@@ -89,6 +89,15 @@
           "image": "subsquid/substrate-ingest:1",
           "ingest": "subsquid/substrate-ingest:1",
           "gateway": "subsquid/substrate-gateway:2"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/amplitude",
+          "explorerUrl": "",
+          "release": "ArrowSquid",
+          "image": "",
+          "ingest": "",
+          "gateway": ""
         }
       ],
       "genesisHash": "0xcceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf"
@@ -570,6 +579,15 @@
           "image": "subsquid/substrate-ingest:1",
           "ingest": "subsquid/substrate-ingest:1",
           "gateway": "subsquid/substrate-gateway:2"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/interlay",
+          "explorerUrl": "",
+          "release": "ArrowSquid",
+          "image": "",
+          "ingest": "",
+          "gateway": ""
         }
       ]
     },
@@ -702,6 +720,15 @@
           "image": "subsquid/substrate-ingest:1",
           "ingest": "subsquid/substrate-ingest:1",
           "gateway": "subsquid/substrate-gateway:2"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/kintsugi",
+          "explorerUrl": "",
+          "release": "ArrowSquid",
+          "image": "",
+          "ingest": "",
+          "gateway": ""
         }
       ]
     },
@@ -716,6 +743,15 @@
           "image": "subsquid/substrate-ingest:1",
           "ingest": "subsquid/substrate-ingest:1",
           "gateway": "subsquid/substrate-gateway:2"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/kusama",
+          "explorerUrl": "",
+          "release": "ArrowSquid",
+          "image": "",
+          "ingest": "",
+          "gateway": ""
         }
       ],
       "genesisHash": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe"
@@ -824,6 +860,15 @@
           "image": "subsquid/substrate-ingest:1",
           "ingest": "subsquid/substrate-ingest:1",
           "gateway": "subsquid/substrate-gateway:2"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonbeam-substrate",
+          "explorerUrl": "",
+          "release": "ArrowSquid",
+          "image": "",
+          "ingest": "",
+          "gateway": ""
         }
       ],
       "genesisHash": "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d"
@@ -1113,6 +1158,15 @@
           "image": "subsquid/substrate-ingest:1",
           "ingest": "subsquid/substrate-ingest:1",
           "gateway": "subsquid/substrate-gateway:2"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/rococo",
+          "explorerUrl": "",
+          "release": "ArrowSquid",
+          "image": "",
+          "ingest": "",
+          "gateway": ""
         }
       ]
     },
@@ -1317,6 +1371,15 @@
           "image": "subsquid/substrate-ingest:1",
           "ingest": "subsquid/substrate-ingest:1",
           "gateway": "subsquid/substrate-gateway:2"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/turing",
+          "explorerUrl": "",
+          "release": "ArrowSquid",
+          "image": "",
+          "ingest": "",
+          "gateway": ""
         }
       ]
     },
