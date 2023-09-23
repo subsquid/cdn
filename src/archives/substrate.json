@@ -355,21 +355,6 @@
       "genesisHash": "0xf0b8924b12e8108550d28870bc03f7b45a947e1b2b9abf81bfb0b89ecb60570e"
     },
     {
-      "network": "efinity",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://efinity.archive.subsquid.io/graphql",
-          "explorerUrl": "https://efinity.explorer.subsquid.io/graphql",
-          "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1",
-          "ingest": "subsquid/substrate-ingest:1",
-          "gateway": "subsquid/substrate-gateway:2"
-        }
-      ],
-      "genesisHash": "0x99ded175d436bee7d751fa3f2f8c7a257ddc063a541f8daa5e6152604f66b2a0"
-    },
-    {
       "network": "elysium",
       "providers": [
         {
@@ -398,6 +383,21 @@
         }
       ],
       "genesisHash": "0x3fdb98a4965bdb74a6c647c924ceb2b9b1af58fa6dc1300418ab59e02ecdb4db"
+    },
+    {
+      "network": "enjin-matrix",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://matrix.archive.subsquid.io/graphql",
+          "explorerUrl": "https://matrix.explorer.subsquid.io/graphql",
+          "release": "FireSquid",
+          "image": "subsquid/substrate-ingest:1",
+          "ingest": "subsquid/substrate-ingest:1",
+          "gateway": "subsquid/substrate-gateway:2"
+        }
+      ],
+      "genesisHash": "0x3af4ff48ec76d2efc8476730f423ac07e25ad48f5f4c9dc39c778b164d808615"
     },
     {
       "network": "equilibrium",
