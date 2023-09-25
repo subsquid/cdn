@@ -176,16 +176,6 @@
       ]
     },
     {
-      "network": "goerli",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://goerli.archive.subsquid.io",
-          "release": "FireSquid"
-        }
-      ]
-    },
-    {
       "network": "linea-mainnet",
       "providers": [
         {
