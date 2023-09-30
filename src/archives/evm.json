@@ -374,6 +374,26 @@
           "release": "ArrowSquid"
         }
       ]
+    },
+    {
+      "network": "zora-mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/zora-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "zora-goerli",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/zora-goerli",
+          "release": "ArrowSquid"
+        }
+      ]
     }
   ]
 }
