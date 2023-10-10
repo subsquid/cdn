@@ -116,7 +116,7 @@
         },
         {
           "provider": "subsquid",
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/astar",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/astar-substrate",
           "explorerUrl": "",
           "release": "ArrowSquid",
           "image": "",
