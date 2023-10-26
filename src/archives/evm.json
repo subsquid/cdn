@@ -41,6 +41,16 @@
       ]
     },
     {
+      "network": "astar-zkatana",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/astar-zkatana",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "avalanche",
       "providers": [
         {
