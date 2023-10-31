@@ -276,6 +276,26 @@
       ]
     },
     {
+      "network": "opbnb-mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/opbnb-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "opbnb-testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/opbnb-testnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "optimism-mainnet",
       "providers": [
         {
