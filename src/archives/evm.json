@@ -135,11 +135,6 @@
       "providers": [
         {
           "provider": "subsquid",
-          "dataSourceUrl": "https://exosama.archive.subsquid.io",
-          "release": "FireSquid"
-        },
-        {
-          "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/exosama",
           "release": "ArrowSquid"
         }
