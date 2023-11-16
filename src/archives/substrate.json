@@ -1721,6 +1721,21 @@
           "gateway": ""
         }
       ]
+    },
+    {
+      "network": "zeitgeist-testnet",
+      "genesisHash": "",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/zeitgeist-testnet",
+          "explorerUrl": "",
+          "release": "ArrowSquid",
+          "image": "",
+          "ingest": "",
+          "gateway": ""
+        }
+      ]
     }
   ]
 }
