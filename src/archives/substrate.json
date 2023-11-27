@@ -970,21 +970,6 @@
       "genesisHash": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe"
     },
     {
-      "network": "kylin",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://kylin.archive.subsquid.io/graphql",
-          "explorerUrl": "https://kylin.explorer.subsquid.io/graphql",
-          "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1",
-          "ingest": "subsquid/substrate-ingest:1",
-          "gateway": "subsquid/substrate-gateway:2"
-        }
-      ],
-      "genesisHash": "0xf2584690455deda322214e97edfffaf4c1233b6e4625e39478496b3e2f5a44c5"
-    },
-    {
       "network": "litentry",
       "genesisHash": "0x2fc8bb6ed7c0051bdcf4866c322ed32b6276572713607e3297ccf411b8f14aa9",
       "providers": [
