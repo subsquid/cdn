@@ -1558,21 +1558,6 @@
       ]
     },
     {
-      "network": "t0rn",
-      "genesisHash": "0x569de72a10e8426ea1d3515dd473a57af15a38b6dda3b714bdd6968cf928e011",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://t0rn.archive.subsquid.io/graphql",
-          "explorerUrl": "https://t0rn.explorer.subsquid.io/graphql",
-          "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1",
-          "ingest": "subsquid/substrate-ingest:1",
-          "gateway": "subsquid/substrate-gateway:2"
-        }
-      ]
-    },
-    {
       "network": "tanganika",
       "genesisHash": "0xeacdd2d5b42de9769ccbb6e8d9013ab0d90ab105bf601d4aac53e874c145ec21",
       "providers": [
