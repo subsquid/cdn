@@ -191,26 +191,6 @@
       ]
     },
     {
-      "network": "mantle-mainnet",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/mantle-mainnet",
-          "release": "ArrowSquid"
-        }
-      ]
-    },
-    {
-      "network": "metis-mainnet",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/metis-mainnet",
-          "release": "ArrowSquid"
-        }
-      ]
-    },
-    {
       "network": "mineplex-testnet",
       "providers": [
         {
@@ -261,16 +241,6 @@
       ]
     },
     {
-      "network": "neon-mainnet",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/neon-mainnet",
-          "release": "ArrowSquid"
-        }
-      ]
-    },
-    {
       "network": "opbnb-mainnet",
       "providers": [
         {
@@ -306,6 +276,16 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/optimism-goerli",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "optimism-sepolia",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/optimism-sepolia",
           "release": "ArrowSquid"
         }
       ]
@@ -376,6 +356,16 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/shiden-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "tanssi",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/tanssi",
           "release": "ArrowSquid"
         }
       ]
