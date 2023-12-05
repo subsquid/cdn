@@ -1105,21 +1105,6 @@
       "genesisHash": "0x401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b"
     },
     {
-      "network": "moonsama",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://moonsama.archive.subsquid.io/graphql",
-          "explorerUrl": "https://moonsama.explorer.subsquid.io/graphql",
-          "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1",
-          "ingest": "subsquid/substrate-ingest:1",
-          "gateway": "subsquid/substrate-gateway:2"
-        }
-      ],
-      "genesisHash": "0x40bc7dad85f35735d51e74ed99636fcf41e8575e6dba21c040d43b782bd135e4"
-    },
-    {
       "network": "myriad",
       "providers": [
         {
