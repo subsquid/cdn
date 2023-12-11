@@ -1338,6 +1338,15 @@
           "image": "subsquid/substrate-ingest:1",
           "ingest": "subsquid/substrate-ingest:1",
           "gateway": "subsquid/substrate-gateway:2"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/reef",
+          "explorerUrl": "",
+          "release": "ArrowSquid",
+          "image": "",
+          "ingest": "",
+          "gateway": ""
         }
       ]
     },
@@ -1353,6 +1362,15 @@
           "image": "subsquid/substrate-ingest:1",
           "ingest": "subsquid/substrate-ingest:1",
           "gateway": "subsquid/substrate-gateway:2"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/reef-testnet",
+          "explorerUrl": "",
+          "release": "ArrowSquid",
+          "image": "",
+          "ingest": "",
+          "gateway": ""
         }
       ]
     },
@@ -1524,6 +1542,15 @@
           "image": "subsquid/substrate-ingest:1",
           "ingest": "subsquid/substrate-ingest:1",
           "gateway": "subsquid/substrate-gateway:2"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/subsocial-parachain",
+          "explorerUrl": "",
+          "release": "ArrowSquid",
+          "image": "",
+          "ingest": "",
+          "gateway": ""
         }
       ]
     },
@@ -1614,6 +1641,21 @@
           "image": "subsquid/substrate-ingest:1",
           "ingest": "subsquid/substrate-ingest:1",
           "gateway": "subsquid/substrate-gateway:2"
+        }
+      ]
+    },
+    {
+      "network": "vara-testnet",
+      "genesisHash": "",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/polkadot",
+          "explorerUrl": "",
+          "release": "ArrowSquid",
+          "image": "",
+          "ingest": "",
+          "gateway": ""
         }
       ]
     },
