@@ -91,6 +91,16 @@
       ]
     },
     {
+      "network": "base-sepolia",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/base-sepolia",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "binance",
       "providers": [
         {
