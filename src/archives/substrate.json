@@ -1656,6 +1656,15 @@
           "image": "subsquid/substrate-ingest:1",
           "ingest": "subsquid/substrate-ingest:1",
           "gateway": "subsquid/substrate-gateway:2"
+        },
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/vara",
+          "explorerUrl": "",
+          "release": "ArrowSquid",
+          "image": "",
+          "ingest": "",
+          "gateway": ""
         }
       ]
     },
@@ -1665,7 +1674,7 @@
       "providers": [
         {
           "provider": "subsquid",
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/polkadot",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/vara-testnet",
           "explorerUrl": "",
           "release": "ArrowSquid",
           "image": "",
@@ -1711,6 +1720,21 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/watr",
+          "explorerUrl": "",
+          "release": "ArrowSquid",
+          "image": "",
+          "ingest": "",
+          "gateway": ""
+        }
+      ]
+    },
+    {
+      "network": "xsocial",
+      "genesisHash": "",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/xsocial",
           "explorerUrl": "",
           "release": "ArrowSquid",
           "image": "",
