@@ -361,6 +361,16 @@
       ]
     },
     {
+      "network": "skale-nebula",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/skale-nebula",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "tanssi",
       "providers": [
         {
