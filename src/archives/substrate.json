@@ -259,21 +259,6 @@
       ]
     },
     {
-      "network": "bitcountry-pioneer",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://bitcountry-pioneer.archive.subsquid.io/graphql",
-          "explorerUrl": "https://bitcountry-pioneer.explorer.subsquid.io/graphql",
-          "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1",
-          "ingest": "subsquid/substrate-ingest:1",
-          "gateway": "subsquid/substrate-gateway:2"
-        }
-      ],
-      "genesisHash": "0xf22b7850cdd5a7657bbfd90ac86441275bbc57ace3d2698a740c7b0ec4de5ec3"
-    },
-    {
       "network": "bridge-hub-kusama",
       "providers": [
         {
