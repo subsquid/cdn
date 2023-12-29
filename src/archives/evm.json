@@ -31,6 +31,16 @@
       ]
     },
     {
+      "network": "arbitrum-sepolia",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/arbitrum-sepolia",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "astar",
       "providers": [
         {
