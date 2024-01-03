@@ -131,6 +131,16 @@
       ]
     },
     {
+      "network": "dfk-chain",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/dfk-chain",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "eth-mainnet",
       "providers": [
         {
