@@ -161,6 +161,16 @@
       ]
     },
     {
+      "network": "etherlink-testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/etherlink-testnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "exosama",
       "providers": [
         {
