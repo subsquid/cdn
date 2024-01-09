@@ -161,6 +161,16 @@
       ]
     },
     {
+      "network": "eth-holesky",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/ethereum-holesky",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "etherlink-testnet",
       "providers": [
         {
