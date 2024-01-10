@@ -171,6 +171,16 @@
       ]
     },
     {
+      "network": "eth-sepolia",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/ethereum-sepolia",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "etherlink-testnet",
       "providers": [
         {
@@ -426,16 +436,6 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/zksync-mainnet",
-          "release": "ArrowSquid"
-        }
-      ]
-    },
-    {
-      "network": "zksync-testnet",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/zksync-testnet",
           "release": "ArrowSquid"
         }
       ]
