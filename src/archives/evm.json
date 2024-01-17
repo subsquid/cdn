@@ -441,6 +441,16 @@
       ]
     },
     {
+      "network": "zksync-sepolia",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/zksync-sepolia",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "zora-mainnet",
       "providers": [
         {
