@@ -291,6 +291,16 @@
       ]
     },
     {
+      "network": "moonsama",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonsama",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "opbnb-mainnet",
       "providers": [
         {
