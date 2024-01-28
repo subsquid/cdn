@@ -1,0 +1,470 @@
+{
+    "$id": "https://cdn.subsquid.io/schemas/squid_manifest.json",
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "additionalProperties": false,
+    "properties": {
+        "manifest_version": {
+            "const": "subsquid.io/v0.1"
+        },
+        "name": {
+            "type": "string",
+            "minLength": 3,
+            "maxLength": 30,
+            "pattern": "^[a-z0-9][a-z0-9\\-]*[a-z0-9]$"
+        },
+        "version": {
+            "type": "integer",
+            "maximum": 1000000,
+            "exclusiveMinimum": 0
+        },
+        "description": {
+            "type": "string"
+        },
+        "queries": {
+            "type": "object",
+            "properties": {},
+            "additionalProperties": false
+        },
+        "build": {
+            "type": [
+                "object",
+                "null"
+            ],
+            "properties": {
+                "dockerfile": {
+                    "type": "string",
+                    "default": "Dockerfile"
+                },
+                "target": {
+                    "type": "string",
+                    "default": "squid"
+                },
+                "node_version": {
+                    "type": "string",
+                    "default": "20",
+                    "enum": [
+                        "18",
+                        "20",
+                        "21"
+                    ]
+                },
+                "package_manager": {
+                    "type": "string",
+                    "default": "auto",
+                    "enum": [
+                        "auto",
+                        "npm",
+                        "pnpm",
+                        "yarn"
+                    ]
+                }
+            },
+            "additionalProperties": false
+        },
+        "scale": {
+            "type": "object",
+            "properties": {
+                "dedicated": {
+                    "type": "boolean"
+                },
+                "addons": {
+                    "type": "object",
+                    "properties": {
+                        "postgres": {
+                            "type": "object",
+                            "properties": {
+                                "storage": {
+                                    "type": "string"
+                                },
+                                "profile": {
+                                    "type": "string",
+                                    "enum": [
+                                        "small",
+                                        "medium",
+                                        "large"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": false
+                        },
+                        "rpc": {
+                            "type": "object",
+                            "description": "[DEPRECATED] Please use billing settings in Cloud UI",
+                            "properties": {
+                                "monthly-cap": {
+                                    "type": "string",
+                                    "pattern": "\\d+[km]"
+                                },
+                                "max-rate": {
+                                    "type": "string",
+                                    "pattern": "\\d+rp[sm]"
+                                }
+                            },
+                            "additionalProperties": false
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "processor": {
+                    "type": "object",
+                    "default": {
+                        "profile": "small"
+                    },
+                    "properties": {
+                        "profile": {
+                            "type": "string",
+                            "enum": [
+                                "small",
+                                "medium",
+                                "large"
+                            ]
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "api": {
+                    "type": "object",
+                    "default": {
+                        "replicas": 1,
+                        "profile": "small"
+                    },
+                    "properties": {
+                        "replicas": {
+                            "type": "integer",
+                            "exclusiveMinimum": 0,
+                            "maximum": 5
+                        },
+                        "profile": {
+                            "type": "string",
+                            "enum": [
+                                "small",
+                                "medium",
+                                "large"
+                            ]
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "additionalProperties": false
+        },
+        "manifestVersion": {
+            "description": "[DEPRECATED] Please use \"manifest_version\" instead.",
+            "const": "subsquid.io/v0.1"
+        },
+        "deploy": {
+            "type": "object",
+            "properties": {
+                "addons": {
+                    "type": "object",
+                    "properties": {
+                        "postgres": {
+                            "type": [
+                                "object",
+                                "null"
+                            ],
+                            "properties": {
+                                "version": {
+                                    "default": "14",
+                                    "const": "14"
+                                },
+                                "config": {
+                                    "type": "object",
+                                    "properties": {
+                                        "statement_timeout": {
+                                            "type": "integer",
+                                            "exclusiveMinimum": 0
+                                        },
+                                        "log_min_duration_statement": {
+                                            "type": "integer",
+                                            "exclusiveMinimum": 0
+                                        },
+                                        "max_locks_per_transaction": {
+                                            "type": "integer",
+                                            "exclusiveMinimum": 0
+                                        },
+                                        "max_pred_locks_per_transaction": {
+                                            "type": "integer",
+                                            "exclusiveMinimum": 0
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                }
+                            },
+                            "additionalProperties": false
+                        },
+                        "rpc": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "acala:http",
+                                    "aleph-zero:http",
+                                    "aleph-zero-testnet:http",
+                                    "amplitude:http",
+                                    "arbitrum-one:http",
+                                    "arbitrum-sepolia:http",
+                                    "arbitrum-nova:http",
+                                    "astar:http",
+                                    "astar-substrate:http",
+                                    "ava:http",
+                                    "ava-testnet:http",
+                                    "base-goerli:http",
+                                    "base:http",
+                                    "basilisk:http",
+                                    "bsc:http",
+                                    "bsc-testnet:http",
+                                    "darwinia:http",
+                                    "darwiniacrab:http",
+                                    "eden:http",
+                                    "eth:http",
+                                    "eth-sepolia:http",
+                                    "evmos:http",
+                                    "fantom:http",
+                                    "fantom-testnet:http",
+                                    "frequency:http",
+                                    "hydradx:http",
+                                    "interlay:http",
+                                    "karura:http",
+                                    "khala:http",
+                                    "kilt:http",
+                                    "kintsugi:http",
+                                    "kusama:http",
+                                    "mantle:http",
+                                    "metis:http",
+                                    "moonbase-alpha:http",
+                                    "moonbase-substrate:http",
+                                    "moonbeam:http",
+                                    "moonbeam-substrate:http",
+                                    "moonriver:http",
+                                    "moonriver-substrate:http",
+                                    "oktc:http",
+                                    "optimism-goerli:http",
+                                    "optimism:http",
+                                    "phala:http",
+                                    "polkadot:http",
+                                    "polygon:http",
+                                    "polygon-testnet:http",
+                                    "polygon-zkevm:http",
+                                    "polygon-zkevm-testnet:http",
+                                    "shibuya:http",
+                                    "shibuya-substrate:http",
+                                    "shiden:http",
+                                    "shiden-substrate:http",
+                                    "starknet:http",
+                                    "sui-testnet:http",
+                                    "litentry:http",
+                                    "turing:http",
+                                    "zeitgeist:http"
+                                ]
+                            }
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                "env": {
+                    "type": "object",
+                    "properties": {
+                        "/^[a-zA-Z_][a-zA-Z0-9_]*$/": {
+                            "type": "string",
+                            "properties": {},
+                            "required": [],
+                            "additionalProperties": false
+                        }
+                    },
+                    "additionalProperties": false,
+                    "patternProperties": {
+                        "^[a-zA-Z_][a-zA-Z0-9_]*$": {
+                            "type": "string",
+                            "properties": {},
+                            "required": [],
+                            "additionalProperties": false
+                        }
+                    }
+                },
+                "init": {
+                    "type": "object",
+                    "properties": {
+                        "env": {
+                            "type": "object",
+                            "properties": {
+                                "/^[a-zA-Z_][a-zA-Z0-9_]*$/": {
+                                    "type": "string",
+                                    "properties": {},
+                                    "required": [],
+                                    "additionalProperties": false
+                                }
+                            },
+                            "additionalProperties": false,
+                            "patternProperties": {
+                                "^[a-zA-Z_][a-zA-Z0-9_]*$": {
+                                    "type": "string",
+                                    "properties": {},
+                                    "required": [],
+                                    "additionalProperties": false
+                                }
+                            }
+                        },
+                        "cmd": {
+                            "type": "array",
+                            "minItems": 1,
+                            "items": {
+                                "type": "string",
+                                "pattern": "^[:\\-\\/\\w.]+$"
+                            }
+                        }
+                    },
+                    "required": [
+                        "cmd"
+                    ],
+                    "additionalProperties": false
+                },
+                "api": {
+                    "type": "object",
+                    "properties": {
+                        "env": {
+                            "type": "object",
+                            "properties": {
+                                "/^[a-zA-Z_][a-zA-Z0-9_]*$/": {
+                                    "type": "string",
+                                    "properties": {},
+                                    "required": [],
+                                    "additionalProperties": false
+                                }
+                            },
+                            "additionalProperties": false,
+                            "patternProperties": {
+                                "^[a-zA-Z_][a-zA-Z0-9_]*$": {
+                                    "type": "string",
+                                    "properties": {},
+                                    "required": [],
+                                    "additionalProperties": false
+                                }
+                            }
+                        },
+                        "cmd": {
+                            "type": "array",
+                            "minItems": 1,
+                            "items": {
+                                "type": "string",
+                                "pattern": "^[:\\-\\/\\w.]+$"
+                            }
+                        }
+                    },
+                    "required": [
+                        "cmd"
+                    ],
+                    "additionalProperties": false
+                },
+                "secrets": {
+                    "type": "array",
+                    "description": "[DEPRECATED] Please use secrets context https://docs.subsquid.io/cloud/resources/env-variables/#secrets",
+                    "items": {
+                        "type": "string",
+                        "pattern": "^[a-zA-Z_][a-zA-Z0-9_]*$"
+                    }
+                },
+                "processor": {
+                    "anyOf": [
+                        {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string",
+                                    "pattern": "[a-z0-9]([-a-z0-9]*[a-z0-9])?",
+                                    "maxLength": 63
+                                },
+                                "env": {
+                                    "type": "object",
+                                    "properties": {
+                                        "/^[a-zA-Z_][a-zA-Z0-9_]*$/": {
+                                            "type": "string",
+                                            "properties": {},
+                                            "required": [],
+                                            "additionalProperties": false
+                                        }
+                                    },
+                                    "additionalProperties": false,
+                                    "patternProperties": {
+                                        "^[a-zA-Z_][a-zA-Z0-9_]*$": {
+                                            "type": "string",
+                                            "properties": {},
+                                            "required": [],
+                                            "additionalProperties": false
+                                        }
+                                    }
+                                },
+                                "cmd": {
+                                    "type": "array",
+                                    "minItems": 1,
+                                    "items": {
+                                        "type": "string",
+                                        "pattern": "^[:\\-\\/\\w.]+$"
+                                    }
+                                }
+                            },
+                            "required": [
+                                "cmd"
+                            ],
+                            "additionalProperties": false
+                        },
+                        {
+                            "type": "array",
+                            "uniqueItems": true,
+                            "minItems": 1,
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string",
+                                        "pattern": "[a-z0-9]([-a-z0-9]*[a-z0-9])?",
+                                        "maxLength": 63
+                                    },
+                                    "env": {
+                                        "type": "object",
+                                        "properties": {
+                                            "/^[a-zA-Z_][a-zA-Z0-9_]*$/": {
+                                                "type": "string",
+                                                "properties": {},
+                                                "required": [],
+                                                "additionalProperties": false
+                                            }
+                                        },
+                                        "additionalProperties": false,
+                                        "patternProperties": {
+                                            "^[a-zA-Z_][a-zA-Z0-9_]*$": {
+                                                "type": "string",
+                                                "properties": {},
+                                                "required": [],
+                                                "additionalProperties": false
+                                            }
+                                        }
+                                    },
+                                    "cmd": {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string",
+                                            "pattern": "^[:\\-\\/\\w.]+$"
+                                        }
+                                    }
+                                },
+                                "required": [
+                                    "name",
+                                    "cmd"
+                                ],
+                                "additionalProperties": false
+                            }
+                        }
+                    ]
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "required": [
+        "name",
+        "version"
+    ],
+    "type": "object"
+}
