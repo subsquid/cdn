@@ -111,6 +111,16 @@
       ]
     },
     {
+      "network": "berachain-artio",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/berachain-artio",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "binance",
       "providers": [
         {
@@ -131,11 +141,31 @@
       ]
     },
     {
+      "network": "bitgert-mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/bitgert-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "dfk-chain",
       "providers": [
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/dfk-chain",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "dogechain-mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/dogechain-mainnet",
           "release": "ArrowSquid"
         }
       ]
