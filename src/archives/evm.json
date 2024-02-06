@@ -271,6 +271,26 @@
       ]
     },
     {
+      "network": "immutable-zkevm-mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/immutable-zkevm-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "immutable-zkevm-testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/immutable-zkevm-testnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "linea-mainnet",
       "providers": [
         {
@@ -326,6 +346,16 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonsama",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "neon-devnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/neon-devnet",
           "release": "ArrowSquid"
         }
       ]
