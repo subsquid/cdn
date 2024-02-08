@@ -54,15 +54,6 @@
       "providers": [
         {
           "provider": "subsquid",
-          "dataSourceUrl": "https://aleph-zero-testnet.archive.subsquid.io/graphql",
-          "explorerUrl": "https://aleph-zero-testnet.explorer.subsquid.io/graphql",
-          "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1",
-          "ingest": "subsquid/substrate-ingest:1",
-          "gateway": "subsquid/substrate-gateway:2"
-        },
-        {
-          "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/aleph-zero-testnet",
           "explorerUrl": "",
           "release": "ArrowSquid",
@@ -440,15 +431,6 @@
       "providers": [
         {
           "provider": "subsquid",
-          "dataSourceUrl": "https://westend-collectives.archive.subsquid.io/graphql",
-          "explorerUrl": "https://westend-collectives.explorer.subsquid.io/graphql",
-          "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1",
-          "ingest": "subsquid/substrate-ingest:1",
-          "gateway": "subsquid/substrate-gateway:2"
-        },
-        {
-          "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/collectives-westend",
           "explorerUrl": "",
           "release": "ArrowSquid",
@@ -577,21 +559,6 @@
       "genesisHash": "0xa01fd8b004e04a4ce2c689a339b48b0585004de5844b9939071d44be07806a94"
     },
     {
-      "network": "elysium-testnet",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://elysium-testnet.archive.subsquid.io/graphql",
-          "explorerUrl": "https://elysium-testnet.explorer.subsquid.io/graphql",
-          "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1",
-          "ingest": "subsquid/substrate-ingest:1",
-          "gateway": "subsquid/substrate-gateway:2"
-        }
-      ],
-      "genesisHash": "0x3fdb98a4965bdb74a6c647c924ceb2b9b1af58fa6dc1300418ab59e02ecdb4db"
-    },
-    {
       "network": "enjin-matrix",
       "providers": [
         {
@@ -636,15 +603,6 @@
       "providers": [
         {
           "provider": "subsquid",
-          "dataSourceUrl": "https://foucoco.archive.subsquid.io/graphql",
-          "explorerUrl": "https://foucoco.explorer.subsquid.io/graphql",
-          "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1",
-          "ingest": "subsquid/substrate-ingest:1",
-          "gateway": "subsquid/substrate-gateway:2"
-        },
-        {
-          "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/foucoco",
           "explorerUrl": "",
           "release": "ArrowSquid",
@@ -675,21 +633,6 @@
           "image": "",
           "ingest": "",
           "gateway": ""
-        }
-      ]
-    },
-    {
-      "network": "frequency-testnet",
-      "genesisHash": "0x0c33dfffa907de5683ae21cc6b4af899b5c4de83f3794ed75b2dc74e1b088e72",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://frequency-testnet.archive.subsquid.io/graphql",
-          "explorerUrl": "https://frequency-testnet.explorer.subsquid.io/graphql",
-          "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1",
-          "ingest": "subsquid/substrate-ingest:1",
-          "gateway": "subsquid/substrate-gateway:2"
         }
       ]
     },
@@ -1047,15 +990,6 @@
       "providers": [
         {
           "provider": "subsquid",
-          "dataSourceUrl": "https://moonbase.archive.subsquid.io/graphql",
-          "explorerUrl": "https://moonbase.explorer.subsquid.io/graphql",
-          "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1",
-          "ingest": "subsquid/substrate-ingest:1",
-          "gateway": "subsquid/substrate-gateway:2"
-        },
-        {
-          "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonbase-substrate",
           "explorerUrl": "",
           "release": "ArrowSquid",
@@ -1368,15 +1302,6 @@
       "providers": [
         {
           "provider": "subsquid",
-          "dataSourceUrl": "https://reef-testnet.archive.subsquid.io/graphql",
-          "explorerUrl": "https://reef-testnet.explorer.subsquid.io/graphql",
-          "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1",
-          "ingest": "subsquid/substrate-ingest:1",
-          "gateway": "subsquid/substrate-gateway:2"
-        },
-        {
-          "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/reef-testnet",
           "explorerUrl": "",
           "release": "ArrowSquid",
@@ -1414,15 +1339,6 @@
       "network": "rococo",
       "genesisHash": "0x6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
       "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://rococo.archive.subsquid.io/graphql",
-          "explorerUrl": "https://rococo.explorer.subsquid.io/graphql",
-          "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1",
-          "ingest": "subsquid/substrate-ingest:1",
-          "gateway": "subsquid/substrate-gateway:2"
-        },
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/rococo",
@@ -1503,21 +1419,6 @@
           "image": "",
           "ingest": "",
           "gateway": ""
-        }
-      ]
-    },
-    {
-      "network": "sora-testnet",
-      "genesisHash": "0x3266816be9fa51b32cfea58d3e33ca77246bc9618595a4300e44c8856a8d8a17",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://sora-testnet.archive.subsquid.io/graphql",
-          "explorerUrl": "https://sora-testnet.explorer.subsquid.io/graphql",
-          "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1",
-          "ingest": "subsquid/substrate-ingest:1",
-          "gateway": "subsquid/substrate-gateway:2"
         }
       ]
     },
@@ -1686,21 +1587,6 @@
           "image": "",
           "ingest": "",
           "gateway": ""
-        }
-      ]
-    },
-    {
-      "network": "westend-collectives",
-      "genesisHash": "0x713daf193a6301583ff467be736da27ef0a72711b248927ba413f573d2b38e44",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://westend-collectives.archive.subsquid.io/graphql",
-          "explorerUrl": "https://westend-collectives.explorer.subsquid.io/graphql",
-          "release": "FireSquid",
-          "image": "subsquid/substrate-ingest:1",
-          "ingest": "subsquid/substrate-ingest:1",
-          "gateway": "subsquid/substrate-gateway:2"
         }
       ]
     },
