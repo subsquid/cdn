@@ -501,6 +501,16 @@
       ]
     },
     {
+      "network": "x1-testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/x1-testnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "zksync-mainnet",
       "providers": [
         {
