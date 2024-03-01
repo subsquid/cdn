@@ -778,6 +778,21 @@
       ]
     },
     {
+      "network": "invarch-parachain",
+      "genesisHash": "",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/invarch-parachain",
+          "explorerUrl": "",
+          "release": "ArrowSquid",
+          "image": "",
+          "ingest": "",
+          "gateway": ""
+        }
+      ]
+    },
+    {
       "network": "invarch-tinkernet",
       "genesisHash": "0xd42e9606a995dfe433dc7955dc2a70f495f350f373daa200098ae84437816ad2",
       "providers": [
@@ -1396,6 +1411,21 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/rococo",
+          "explorerUrl": "",
+          "release": "ArrowSquid",
+          "image": "",
+          "ingest": "",
+          "gateway": ""
+        }
+      ]
+    },
+    {
+      "network": "rolimec",
+      "genesisHash": "",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/rolimec",
           "explorerUrl": "",
           "release": "ArrowSquid",
           "image": "",
