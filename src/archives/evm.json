@@ -141,6 +141,26 @@
       ]
     },
     {
+      "network": "blast-l2-mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/blast-l2-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "blast-sepolia",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/blast-sepolia",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "bitgert-mainnet",
       "providers": [
         {
@@ -446,6 +466,26 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-zkevm-testnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "scroll-mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/scroll-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "scroll-sepolia",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/scroll-sepolia",
           "release": "ArrowSquid"
         }
       ]
