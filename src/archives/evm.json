@@ -61,6 +61,16 @@
       ]
     },
     {
+      "network": "astar-zkevm-mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/astar-zkevm-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "avalanche",
       "providers": [
         {
@@ -166,6 +176,16 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/bitgert-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "bitgert-testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/bitgert-testnet",
           "release": "ArrowSquid"
         }
       ]
