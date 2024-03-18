@@ -1162,21 +1162,6 @@
       ]
     },
     {
-      "network": "peaq-parachain",
-      "genesisHash": "",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/peaq-parachain-substrate",
-          "explorerUrl": "",
-          "release": "ArrowSquid",
-          "image": "",
-          "ingest": "",
-          "gateway": ""
-        }
-      ]
-    },
-    {
       "network": "pendulum",
       "genesisHash": "0x5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
       "providers": [
