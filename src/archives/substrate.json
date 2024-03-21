@@ -25,6 +25,21 @@
       "genesisHash": "0xfc41b9bd8ef8fe53d58c7ea67c794c7ec9a73daf05e6d54b14ff6342c99ba64c"
     },
     {
+      "network": "agung",
+      "genesisHash": "",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/agung",
+          "explorerUrl": "",
+          "release": "ArrowSquid",
+          "image": "",
+          "ingest": "",
+          "gateway": ""
+        }
+      ]
+    },
+    {
       "network": "aleph-zero",
       "genesisHash": "0x70255b4d28de0fc4e1a193d7e175ad1ccef431598211c55538f1018651a0344e",
       "providers": [
@@ -1162,6 +1177,21 @@
       ]
     },
     {
+      "network": "peaq-mainnet",
+      "genesisHash": "",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/peaq-mainnet-substrate",
+          "explorerUrl": "",
+          "release": "ArrowSquid",
+          "image": "",
+          "ingest": "",
+          "gateway": ""
+        }
+      ]
+    },
+    {
       "network": "pendulum",
       "genesisHash": "0x5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
       "providers": [
@@ -1557,6 +1587,21 @@
           "image": "subsquid/substrate-ingest:1",
           "ingest": "subsquid/substrate-ingest:1",
           "gateway": "subsquid/substrate-gateway:2"
+        }
+      ]
+    },
+    {
+      "network": "ternoa",
+      "genesisHash": "",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/ternoa",
+          "explorerUrl": "",
+          "release": "ArrowSquid",
+          "image": "",
+          "ingest": "",
+          "gateway": ""
         }
       ]
     },

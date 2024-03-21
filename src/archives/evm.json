@@ -341,6 +341,36 @@
       ]
     },
     {
+      "network": "mantle-mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/mantle-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "mantle-sepolia",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/mantle-sepolia",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "metis-mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/metis-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "mineplex-testnet",
       "providers": [
         {
@@ -446,6 +476,16 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/optimism-sepolia",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "peaq-mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/peaq-mainnet",
           "release": "ArrowSquid"
         }
       ]
