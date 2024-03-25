@@ -531,6 +531,16 @@
       ]
     },
     {
+      "network": "prom-testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/prom-testnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "scroll-mainnet",
       "providers": [
         {
