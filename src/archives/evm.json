@@ -421,6 +421,16 @@
       ]
     },
     {
+      "network": "neon-mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/neon-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "neon-devnet",
       "providers": [
         {
