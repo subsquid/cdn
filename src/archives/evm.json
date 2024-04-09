@@ -491,16 +491,6 @@
       ]
     },
     {
-      "network": "polygon-zkevm-testnet",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-zkevm-testnet",
-          "release": "ArrowSquid"
-        }
-      ]
-    },
-    {
       "network": "prom-testnet",
       "providers": [
         {
