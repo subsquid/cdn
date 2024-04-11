@@ -2,6 +2,9 @@
   "archives": [
     {
       "network": "acala",
+      "chainSS58Prefix": 10,
+      "chainName": "Acala",
+      "genesisHash": "0xfc41b9bd8ef8fe53d58c7ea67c794c7ec9a73daf05e6d54b14ff6342c99ba64c",
       "providers": [
         {
           "provider": "subsquid",
@@ -12,12 +15,13 @@
           "ingest": "",
           "gateway": ""
         }
-      ],
-      "genesisHash": "0xfc41b9bd8ef8fe53d58c7ea67c794c7ec9a73daf05e6d54b14ff6342c99ba64c"
+      ]
     },
     {
       "network": "agung",
-      "genesisHash": "",
+      "chainSS58Prefix": null,
+      "chainName": "Agung",
+      "genesisHash": "0xf496028047ba9e394a575e5d2d93828360d35a4c2dade61efff0de309021909f",
       "providers": [
         {
           "provider": "subsquid",
@@ -32,6 +36,8 @@
     },
     {
       "network": "aleph-zero",
+      "chainSS58Prefix": 42,
+      "chainName": "Aleph Zero",
       "genesisHash": "0x70255b4d28de0fc4e1a193d7e175ad1ccef431598211c55538f1018651a0344e",
       "providers": [
         {
@@ -47,6 +53,8 @@
     },
     {
       "network": "aleph-zero-testnet",
+      "chainSS58Prefix": null,
+      "chainName": "Aleph Zero Testnet",
       "genesisHash": "0x05d5279c52c484cc80396535a316add7d47b1c5b9e0398dd1f584149341460c5",
       "providers": [
         {
@@ -62,6 +70,9 @@
     },
     {
       "network": "amplitude",
+      "chainSS58Prefix": 57,
+      "chainName": "Amplitude",
+      "genesisHash": "0xcceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
       "providers": [
         {
           "provider": "subsquid",
@@ -72,11 +83,13 @@
           "ingest": "",
           "gateway": ""
         }
-      ],
-      "genesisHash": "0xcceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf"
+      ]
     },
     {
       "network": "asset-hub-kusama",
+      "chainSS58Prefix": 2,
+      "chainName": "Asset Hub Kusama",
+      "genesisHash": "0x48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
       "providers": [
         {
           "provider": "subsquid",
@@ -87,11 +100,13 @@
           "ingest": "",
           "gateway": ""
         }
-      ],
-      "genesisHash": ""
+      ]
     },
     {
       "network": "asset-hub-polkadot",
+      "chainSS58Prefix": 0,
+      "chainName": "Asset Hub Polkadot",
+      "genesisHash": "0x68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
       "providers": [
         {
           "provider": "subsquid",
@@ -102,11 +117,13 @@
           "ingest": "",
           "gateway": ""
         }
-      ],
-      "genesisHash": ""
+      ]
     },
     {
       "network": "asset-hub-rococo",
+      "chainSS58Prefix": null,
+      "chainName": "Asset Hub Rococo",
+      "genesisHash": "0x7c34d42fc815d392057c78b49f2755c753440ccd38bcb0405b3bcfb601d08734",
       "providers": [
         {
           "provider": "subsquid",
@@ -117,11 +134,13 @@
           "ingest": "",
           "gateway": ""
         }
-      ],
-      "genesisHash": ""
+      ]
     },
     {
       "network": "astar",
+      "chainSS58Prefix": 5,
+      "chainName": "Astar",
+      "genesisHash": "0x9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
       "providers": [
         {
           "provider": "subsquid",
@@ -132,11 +151,12 @@
           "ingest": "",
           "gateway": ""
         }
-      ],
-      "genesisHash": "0x9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6"
+      ]
     },
     {
       "network": "basilisk",
+      "chainSS58Prefix": null,
+      "chainName": "Basilisk",
       "genesisHash": "0xa85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
       "providers": [
         {
@@ -152,7 +172,9 @@
     },
     {
       "network": "bifrost-kusama",
-      "genesisHash": "",
+      "chainSS58Prefix": 6,
+      "chainName": "Bifrost Kusama",
+      "genesisHash": "0x9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
       "providers": [
         {
           "provider": "subsquid",
@@ -167,6 +189,8 @@
     },
     {
       "network": "bifrost-polkadot",
+      "chainSS58Prefix": 6,
+      "chainName": "Bifrost Polkadot",
       "genesisHash": "0x262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
       "providers": [
         {
@@ -182,6 +206,9 @@
     },
     {
       "network": "bridge-hub-kusama",
+      "chainSS58Prefix": 2,
+      "chainName": "Bridge Hub Kusama",
+      "genesisHash": "0x00dcb981df86429de8bbacf9803401f09485366c44efbf53af9ecfab03adc7e5",
       "providers": [
         {
           "provider": "subsquid",
@@ -192,11 +219,13 @@
           "ingest": "",
           "gateway": ""
         }
-      ],
-      "genesisHash": ""
+      ]
     },
     {
       "network": "bridge-hub-polkadot",
+      "chainSS58Prefix": 0,
+      "chainName": "Bridge Hub Polkadot",
+      "genesisHash": "0xdcf691b5a3fbe24adc99ddc959c0561b973e329b1aef4c4b22e7bb2ddecb4464",
       "providers": [
         {
           "provider": "subsquid",
@@ -207,11 +236,13 @@
           "ingest": "",
           "gateway": ""
         }
-      ],
-      "genesisHash": ""
+      ]
     },
     {
       "network": "bridge-hub-rococo",
+      "chainSS58Prefix": 42,
+      "chainName": "Bridge Hub Rococo",
+      "genesisHash": "0x6de3dc58adbc525bad4ae201a8660c5be8949e10308457b176510c72a413f3a3",
       "providers": [
         {
           "provider": "subsquid",
@@ -222,11 +253,13 @@
           "ingest": "",
           "gateway": ""
         }
-      ],
-      "genesisHash": ""
+      ]
     },
     {
       "network": "bridge-hub-westend",
+      "chainSS58Prefix": null,
+      "chainName": "Bridge Hub Westend",
+      "genesisHash": "0x0441383e31d1266a92b4cb2ddd4c2e3661ac476996db7e5844c52433b81fe782",
       "providers": [
         {
           "provider": "subsquid",
@@ -237,11 +270,12 @@
           "ingest": "",
           "gateway": ""
         }
-      ],
-      "genesisHash": ""
+      ]
     },
     {
       "network": "centrifuge",
+      "chainSS58Prefix": null,
+      "chainName": "Centrifuge",
       "genesisHash": "0xb3db41421702df9a7fcac62b53ffeac85f7853cc4e689e0b93aeb3db18c09d82",
       "providers": [
         {
@@ -257,6 +291,8 @@
     },
     {
       "network": "cere",
+      "chainSS58Prefix": null,
+      "chainName": "Cere",
       "genesisHash": "0x81443836a9a24caaa23f1241897d1235717535711d1d3fe24eae4fdc942c092c",
       "providers": [
         {
@@ -272,6 +308,9 @@
     },
     {
       "network": "chainflip",
+      "chainSS58Prefix": 2112,
+      "chainName": "Chainfliip",
+      "genesisHash": "0x8b8c140b0af9db70686583e3f6bf2a59052bfe9584b97d20c45068281e976eb9",
       "providers": [
         {
           "provider": "subsquid",
@@ -282,12 +321,13 @@
           "ingest": "",
           "gateway": ""
         }
-      ],
-      "genesisHash": ""
+      ]
     },
     {
       "network": "clover",
-      "genesisHash": "0x5c7bd13edf349b33eb175ffae85210299e324d852916336027391536e686f267",
+      "chainSS58Prefix": null,
+      "chainName": "Clover",
+      "genesisHash": "0xe923f1773f4197a862cb4fc4a562f93585b26131dadbc943d524a82bbeecd2eb",
       "providers": [
         {
           "provider": "subsquid",
@@ -301,7 +341,77 @@
       ]
     },
     {
+      "network": "collectives-polkadot",
+      "chainSS58Prefix": 0,
+      "chainName": "Collectives Polkadot",
+      "genesisHash": "0x46ee89aa2eedd13e988962630ec9fb7565964cf5023bb351f2b6b25c1b68b0b2",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/collectives-polkadot",
+          "explorerUrl": "",
+          "release": "ArrowSquid",
+          "image": "",
+          "ingest": "",
+          "gateway": ""
+        }
+      ]
+    },
+    {
+      "network": "collectives-westend",
+      "chainSS58Prefix": null,
+      "chainName": "Collectives Westend",
+      "genesisHash": "0x713daf193a6301583ff467be736da27ef0a72711b248927ba413f573d2b38e44",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/collectives-westend",
+          "explorerUrl": "",
+          "release": "ArrowSquid",
+          "image": "",
+          "ingest": "",
+          "gateway": ""
+        }
+      ]
+    },
+    {
+      "network": "crab",
+      "chainSS58Prefix": null,
+      "chainName": "Darwinia Crab",
+      "genesisHash": "0x86e49c195aeae7c5c4a86ced251f1a28c67b3c35d8289c387ede1776cdd88b24",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/darwinia-crab",
+          "explorerUrl": "",
+          "release": "ArrowSquid",
+          "image": "",
+          "ingest": "",
+          "gateway": ""
+        }
+      ]
+    },
+    {
+      "network": "crust",
+      "chainSS58Prefix": 66,
+      "chainName": "Crust",
+      "genesisHash": "0x8b404e7ed8789d813982b9cb4c8b664c05b3fbf433309f603af014ec9ce56a8c",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/crust",
+          "explorerUrl": "",
+          "release": "ArrowSquid",
+          "image": "",
+          "ingest": "",
+          "gateway": ""
+        }
+      ]
+    },
+    {
       "network": "data-avail",
+      "chainSS58Prefix": null,
+      "chainName": "Data Avail",
       "genesisHash": "",
       "providers": [
         {
@@ -316,37 +426,10 @@
       ]
     },
     {
-      "network": "collectives-polkadot",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/collectives-polkadot",
-          "explorerUrl": "",
-          "release": "ArrowSquid",
-          "image": "",
-          "ingest": "",
-          "gateway": ""
-        }
-      ],
-      "genesisHash": ""
-    },
-    {
-      "network": "collectives-westend",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/collectives-westend",
-          "explorerUrl": "",
-          "release": "ArrowSquid",
-          "image": "",
-          "ingest": "",
-          "gateway": ""
-        }
-      ],
-      "genesisHash": ""
-    },
-    {
       "network": "dancebox",
+      "chainSS58Prefix": 42,
+      "chainName": "Dancebox",
+      "genesisHash": "0x27aafd88e5921f5d5c6aebcd728dacbbf5c2a37f63e2eda301f8e0def01c43ea",
       "providers": [
         {
           "provider": "subsquid",
@@ -357,41 +440,13 @@
           "ingest": "",
           "gateway": ""
         }
-      ],
-      "genesisHash": ""
-    },
-    {
-      "network": "crab",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/darwinia-crab",
-          "explorerUrl": "",
-          "release": "ArrowSquid",
-          "image": "",
-          "ingest": "",
-          "gateway": ""
-        }
-      ],
-      "genesisHash": "0x86e49c195aeae7c5c4a86ced251f1a28c67b3c35d8289c387ede1776cdd88b24"
-    },
-    {
-      "network": "crust",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/crust",
-          "explorerUrl": "",
-          "release": "ArrowSquid",
-          "image": "",
-          "ingest": "",
-          "gateway": ""
-        }
-      ],
-      "genesisHash": "0x8b404e7ed8789d813982b9cb4c8b664c05b3fbf433309f603af014ec9ce56a8c"
+      ]
     },
     {
       "network": "darwinia",
+      "chainSS58Prefix": null,
+      "chainName": "Darwinia",
+      "genesisHash": "0xf0b8924b12e8108550d28870bc03f7b45a947e1b2b9abf81bfb0b89ecb60570e",
       "providers": [
         {
           "provider": "subsquid",
@@ -402,11 +457,13 @@
           "ingest": "",
           "gateway": ""
         }
-      ],
-      "genesisHash": "0xf0b8924b12e8108550d28870bc03f7b45a947e1b2b9abf81bfb0b89ecb60570e"
+      ]
     },
     {
       "network": "eden",
+      "chainSS58Prefix": 37,
+      "chainName": "Eden",
+      "genesisHash": "0x97da7ede98d7bad4e36b4d734b6055425a3be036da2a332ea5a7037656427a21",
       "providers": [
         {
           "provider": "subsquid",
@@ -417,11 +474,13 @@
           "ingest": "",
           "gateway": ""
         }
-      ],
-      "genesisHash": "0x97da7ede98d7bad4e36b4d734b6055425a3be036da2a332ea5a7037656427a21"
+      ]
     },
     {
       "network": "enjin-matrix",
+      "chainSS58Prefix": 1110,
+      "chainName": "Enjin Matrix",
+      "genesisHash": "0x3af4ff48ec76d2efc8476730f423ac07e25ad48f5f4c9dc39c778b164d808615",
       "providers": [
         {
           "provider": "subsquid",
@@ -432,11 +491,13 @@
           "ingest": "",
           "gateway": ""
         }
-      ],
-      "genesisHash": "0x3af4ff48ec76d2efc8476730f423ac07e25ad48f5f4c9dc39c778b164d808615"
+      ]
     },
     {
       "network": "equilibrium",
+      "chainSS58Prefix": 68,
+      "chainName": "Equilibrium",
+      "genesisHash": "0x89d3ec46d2fb43ef5a9713833373d5ea666b092fa8fd68fbc34596036571b907",
       "providers": [
         {
           "provider": "subsquid",
@@ -447,11 +508,12 @@
           "ingest": "",
           "gateway": ""
         }
-      ],
-      "genesisHash": "0x89d3ec46d2fb43ef5a9713833373d5ea666b092fa8fd68fbc34596036571b907"
+      ]
     },
     {
       "network": "foucoco",
+      "chainSS58Prefix": 57,
+      "chainName": "Foucoco",
       "genesisHash": "0xa8d080b07f9c84465aeb9576db5a7838bcbca3ffb78dbfd7d4b56acafc1f29d1",
       "providers": [
         {
@@ -467,6 +529,8 @@
     },
     {
       "network": "frequency",
+      "chainSS58Prefix": 90,
+      "chainName": "Frequency",
       "genesisHash": "0x4a587bf17a404e3572747add7aab7bbe56e805a5479c6c436f07f36fcc8d3ae1",
       "providers": [
         {
@@ -482,6 +546,9 @@
     },
     {
       "network": "hydradx",
+      "chainSS58Prefix": null,
+      "chainName": "HydraDX",
+      "genesisHash": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
       "providers": [
         {
           "provider": "subsquid",
@@ -492,11 +559,12 @@
           "ingest": "",
           "gateway": ""
         }
-      ],
-      "genesisHash": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d"
+      ]
     },
     {
       "network": "integritee-network",
+      "chainSS58Prefix": 13,
+      "chainName": "Integritee Network",
       "genesisHash": "0xcdedc8eadbfa209d3f207bba541e57c3c58a667b05a2e1d1e86353c9000758da",
       "providers": [
         {
@@ -512,6 +580,8 @@
     },
     {
       "network": "interlay",
+      "chainSS58Prefix": 2032,
+      "chainName": "Interlay",
       "genesisHash": "0xbf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
       "providers": [
         {
@@ -527,7 +597,9 @@
     },
     {
       "network": "invarch-parachain",
-      "genesisHash": "",
+      "chainSS58Prefix": 117,
+      "chainName": "Invarch Parachain",
+      "genesisHash": "0x31a7d8914fb31c249b972f18c115f1e22b4b039abbcb03c73b6774c5642f9efe",
       "providers": [
         {
           "provider": "subsquid",
@@ -542,6 +614,8 @@
     },
     {
       "network": "invarch-tinkernet",
+      "chainSS58Prefix": 117,
+      "chainName": "Invarch Tinkernet",
       "genesisHash": "0xd42e9606a995dfe433dc7955dc2a70f495f350f373daa200098ae84437816ad2",
       "providers": [
         {
@@ -557,6 +631,8 @@
     },
     {
       "network": "joystream",
+      "chainSS58Prefix": 126,
+      "chainName": "Joystream",
       "genesisHash": "0x6b5e488e0fa8f9821110d5c13f4c468abcd43ce5e297e62b34c53c3346465956",
       "providers": [
         {
@@ -572,6 +648,9 @@
     },
     {
       "network": "karura",
+      "chainSS58Prefix": 8,
+      "chainName": "Karura",
+      "genesisHash": "0xbaf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
       "providers": [
         {
           "provider": "subsquid",
@@ -582,11 +661,12 @@
           "ingest": "",
           "gateway": ""
         }
-      ],
-      "genesisHash": "0xbaf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b"
+      ]
     },
     {
       "network": "khala",
+      "chainSS58Prefix": 30,
+      "chainName": "Khala",
       "genesisHash": "0xd43540ba6d3eb4897c28a77d48cb5b729fea37603cbbfc7a86a73b72adb3be8d",
       "providers": [
         {
@@ -602,6 +682,8 @@
     },
     {
       "network": "kilt",
+      "chainSS58Prefix": 38,
+      "chainName": "Kilt",
       "genesisHash": "0x411f057b9107718c9624d6aa4a3f23c1653898297f3d4d529d9bb6511a39dd21",
       "providers": [
         {
@@ -617,6 +699,8 @@
     },
     {
       "network": "kintsugi",
+      "chainSS58Prefix": 2092,
+      "chainName": "Kintsugi",
       "genesisHash": "0x9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
       "providers": [
         {
@@ -632,6 +716,9 @@
     },
     {
       "network": "kusama",
+      "chainSS58Prefix": 2,
+      "chainName": "Kusama",
+      "genesisHash": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
       "providers": [
         {
           "provider": "subsquid",
@@ -642,11 +729,12 @@
           "ingest": "",
           "gateway": ""
         }
-      ],
-      "genesisHash": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe"
+      ]
     },
     {
       "network": "litentry",
+      "chainSS58Prefix": 31,
+      "chainName": "Litentry",
       "genesisHash": "0x2fc8bb6ed7c0051bdcf4866c322ed32b6276572713607e3297ccf411b8f14aa9",
       "providers": [
         {
@@ -662,6 +750,8 @@
     },
     {
       "network": "litmus",
+      "chainSS58Prefix": 131,
+      "chainName": "Litmus",
       "genesisHash": "0xda5831fbc8570e3c6336d0d72b8c08f8738beefec812df21ef2afc2982ede09c",
       "providers": [
         {
@@ -677,6 +767,8 @@
     },
     {
       "network": "moonbase",
+      "chainSS58Prefix": 1287,
+      "chainName": "Moonbase",
       "genesisHash": "0x91bc6e169807aaa54802737e1c504b2577d4fafedd5a02c10293b1cd60e39527",
       "providers": [
         {
@@ -692,6 +784,9 @@
     },
     {
       "network": "moonbeam",
+      "chainSS58Prefix": 1284,
+      "chainName": "Moonbeam",
+      "genesisHash": "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
       "providers": [
         {
           "provider": "subsquid",
@@ -702,11 +797,13 @@
           "ingest": "",
           "gateway": ""
         }
-      ],
-      "genesisHash": "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d"
+      ]
     },
     {
       "network": "moonriver",
+      "chainSS58Prefix": 1285,
+      "chainName": "Moonriver",
+      "genesisHash": "0x401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
       "providers": [
         {
           "provider": "subsquid",
@@ -717,12 +814,13 @@
           "ingest": "",
           "gateway": ""
         }
-      ],
-      "genesisHash": "0x401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b"
+      ]
     },
     {
       "network": "paseo",
-      "genesisHash": "",
+      "chainSS58Prefix": 42,
+      "chainName": "Paseo",
+      "genesisHash": "0x77afd6190f1554ad45fd0d31aee62aacc33c6db0ea801129acb813f913e0764f",
       "providers": [
         {
           "provider": "subsquid",
@@ -737,7 +835,9 @@
     },
     {
       "network": "peaq-mainnet",
-      "genesisHash": "",
+      "chainSS58Prefix": null,
+      "chainName": "Peaq",
+      "genesisHash": "0xd2a5d385932d1f650dae03ef8e2748983779ee342c614f80854d32b8cd8fa48c",
       "providers": [
         {
           "provider": "subsquid",
@@ -752,6 +852,8 @@
     },
     {
       "network": "pendulum",
+      "chainSS58Prefix": 56,
+      "chainName": "Pendulum",
       "genesisHash": "0x5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
       "providers": [
         {
@@ -767,7 +869,9 @@
     },
     {
       "network": "phala-testnet",
-      "genesisHash": "",
+      "chainSS58Prefix": 30,
+      "chainName": "Phala Testnet",
+      "genesisHash": "0xd9b288f9083f852f2729af58476b82b04bc9ed7e07d705614a843c93460974b2",
       "providers": [
         {
           "provider": "subsquid",
@@ -782,6 +886,8 @@
     },
     {
       "network": "phala",
+      "chainSS58Prefix": 30,
+      "chainName": "Phala",
       "genesisHash": "0x1bb969d85965e4bb5a651abbedf21a54b6b31a21f66b5401cc3f1e286268d736",
       "providers": [
         {
@@ -797,6 +903,8 @@
     },
     {
       "network": "picasso",
+      "chainSS58Prefix": 49,
+      "chainName": "Picasso",
       "genesisHash": "0x6811a339673c9daa897944dcdac99c6e2939cc88245ed21951a0a3c9a2be75bc",
       "providers": [
         {
@@ -812,7 +920,9 @@
     },
     {
       "network": "polimec",
-      "genesisHash": "",
+      "chainSS58Prefix": 41,
+      "chainName": "Polimec",
+      "genesisHash": "0x7eb9354488318e7549c722669dcbdcdc526f1fef1420e7944667212f3601fdbd",
       "providers": [
         {
           "provider": "subsquid",
@@ -827,6 +937,9 @@
     },
     {
       "network": "polkadex",
+      "chainSS58Prefix": 88,
+      "chainName": "Polkadex",
+      "genesisHash": "0x3920bcb4960a1eef5580cd5367ff3f430eef052774f78468852f7b9cb39f8a3c",
       "providers": [
         {
           "provider": "subsquid",
@@ -837,11 +950,13 @@
           "ingest": "",
           "gateway": ""
         }
-      ],
-      "genesisHash": "0x3920bcb4960a1eef5580cd5367ff3f430eef052774f78468852f7b9cb39f8a3c"
+      ]
     },
     {
       "network": "polkadot",
+      "chainSS58Prefix": 0,
+      "chainName": "Polkadot",
+      "genesisHash": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
       "providers": [
         {
           "provider": "subsquid",
@@ -852,11 +967,13 @@
           "ingest": "",
           "gateway": ""
         }
-      ],
-      "genesisHash": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3"
+      ]
     },
     {
       "network": "polymesh",
+      "chainSS58Prefix": 12,
+      "chainName": "Polymesh",
+      "genesisHash": "0x6fbd74e5e1d0a61d52ccfe9d4adaed16dd3a7caa37c6bc4d0c2fa12e8b2f4063",
       "providers": [
         {
           "provider": "subsquid",
@@ -867,11 +984,12 @@
           "ingest": "",
           "gateway": ""
         }
-      ],
-      "genesisHash": ""
+      ]
     },
     {
       "network": "reef",
+      "chainSS58Prefix": 42,
+      "chainName": "Reef",
       "genesisHash": "0x7834781d38e4798d548e34ec947d19deea29df148a7bf32484b7b24dacf8d4b7",
       "providers": [
         {
@@ -887,6 +1005,8 @@
     },
     {
       "network": "reef-testnet",
+      "chainSS58Prefix": 42,
+      "chainName": "Reef Testnet",
       "genesisHash": "0xb414a8602b2251fa538d38a9322391500bd0324bc7ac6048845d57c37dd83fe6",
       "providers": [
         {
@@ -902,6 +1022,8 @@
     },
     {
       "network": "robonomics",
+      "chainSS58Prefix": 32,
+      "chainName": "Robonomics",
       "genesisHash": "0x631ccc82a078481584041656af292834e1ae6daab61d2875b4dd0c14bb9b17bc",
       "providers": [
         {
@@ -917,6 +1039,8 @@
     },
     {
       "network": "rococo",
+      "chainSS58Prefix": 42,
+      "chainName": "Rococo",
       "genesisHash": "0x6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
       "providers": [
         {
@@ -932,7 +1056,9 @@
     },
     {
       "network": "rolimec",
-      "genesisHash": "",
+      "chainSS58Prefix": 41,
+      "chainName": "Rolimec",
+      "genesisHash": "0x7bbb72faf3d6d997ebe622a4e0ebfb6fdacf905b6141c86a3122cd479213a8d8",
       "providers": [
         {
           "provider": "subsquid",
@@ -946,22 +1072,9 @@
       ]
     },
     {
-      "network": "shibuya",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/shibuya-substrate",
-          "explorerUrl": "",
-          "release": "ArrowSquid",
-          "image": "",
-          "ingest": "",
-          "gateway": ""
-        }
-      ],
-      "genesisHash": "0xddb89973361a170839f80f152d2e9e38a376a5a7eccefcade763f46a8e567019"
-    },
-    {
       "network": "shiden",
+      "chainSS58Prefix": 5,
+      "chainName": "Shiden",
       "genesisHash": "0xf1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
       "providers": [
         {
@@ -977,6 +1090,8 @@
     },
     {
       "network": "sora",
+      "chainSS58Prefix": 69,
+      "chainName": "Sora",
       "genesisHash": "0x7e4e32d0feafd4f9c9414b0be86373f9a1efa904809b683453a9af6856d38ad5",
       "providers": [
         {
@@ -992,6 +1107,8 @@
     },
     {
       "network": "subsocial-parachain",
+      "chainSS58Prefix": 28,
+      "chainName": "Subsocial Parachain",
       "genesisHash": "0x4a12be580bb959937a1c7a61d5cf24428ed67fa571974b4007645d1886e7c89f",
       "providers": [
         {
@@ -1007,7 +1124,9 @@
     },
     {
       "network": "ternoa",
-      "genesisHash": "",
+      "chainSS58Prefix": null,
+      "chainName": "Ternoa",
+      "genesisHash": "0x6859c81ca95ef624c9dfe4dc6e3381c33e5d6509e35e147092bfbc780f777c4e",
       "providers": [
         {
           "provider": "subsquid",
@@ -1022,6 +1141,8 @@
     },
     {
       "network": "vara",
+      "chainSS58Prefix": 137,
+      "chainName": "Vara",
       "genesisHash": "0xfe1b4c55fd4d668101126434206571a7838a8b6b93a6d1b95d607e78e6c53763",
       "providers": [
         {
@@ -1037,7 +1158,9 @@
     },
     {
       "network": "vara-testnet",
-      "genesisHash": "",
+      "chainSS58Prefix": 137,
+      "chainName": "Vara Testnet",
+      "genesisHash": "0x525639f713f397dcf839bd022cd821f367ebcf179de7b9253531f8adbe5436d6",
       "providers": [
         {
           "provider": "subsquid",
@@ -1052,7 +1175,9 @@
     },
     {
       "network": "watr",
-      "genesisHash": "",
+      "chainSS58Prefix": 19,
+      "chainName": "Watr",
+      "genesisHash": "0x161db6cdc5896fe55ef12b4778fe78dd65d7af43f65c601786b88d7a93ebc58a",
       "providers": [
         {
           "provider": "subsquid",
@@ -1067,7 +1192,9 @@
     },
     {
       "network": "westend",
-      "genesisHash": "",
+      "chainSS58Prefix": 42,
+      "chainName": "Westend",
+      "genesisHash": "0xe143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
       "providers": [
         {
           "provider": "subsquid",
@@ -1082,6 +1209,8 @@
     },
     {
       "network": "xsocial",
+      "chainSS58Prefix": null,
+      "chainName": "xSocial",
       "genesisHash": "",
       "providers": [
         {
@@ -1097,7 +1226,9 @@
     },
     {
       "network": "zeitgeist",
-      "genesisHash": "0xb90cd3a37b4793c6494b78962986f4f6ed3ec2eda91a6b84fd8457d24f606b9c",
+      "chainSS58Prefix": 73,
+      "chainName": "Zeitgeist",
+      "genesisHash": "0x1bf2a2ecb4a868de66ea8610f2ce7c8c43706561b6476031315f6640fe38e060",
       "providers": [
         {
           "provider": "subsquid",
@@ -1112,7 +1243,9 @@
     },
     {
       "network": "zeitgeist-testnet",
-      "genesisHash": "",
+      "chainSS58Prefix": 73,
+      "chainName": "Zeitgeist Testnet",
+      "genesisHash": "0xb90cd3a37b4793c6494b78962986f4f6ed3ec2eda91a6b84fd8457d24f606b9c",
       "providers": [
         {
           "provider": "subsquid",
