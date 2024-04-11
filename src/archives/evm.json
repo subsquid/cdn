@@ -171,6 +171,16 @@
       ]
     },
     {
+      "network": "cyberconnect-l2-testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/cyberconnect-l2-testnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "dfk-chain",
       "providers": [
         {
@@ -486,6 +496,16 @@
         {
           "provider": "subsquid",
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-zkevm-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "polygon-zkevm-cardona-testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-zkevm-cardona-testnet",
           "release": "ArrowSquid"
         }
       ]

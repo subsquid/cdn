@@ -1066,6 +1066,21 @@
       ]
     },
     {
+      "network": "westend",
+      "genesisHash": "",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/westend",
+          "explorerUrl": "",
+          "release": "ArrowSquid",
+          "image": "",
+          "ingest": "",
+          "gateway": ""
+        }
+      ]
+    },
+    {
       "network": "xsocial",
       "genesisHash": "",
       "providers": [
