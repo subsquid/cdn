@@ -2,6 +2,8 @@
   "archives": [
     {
       "network": "arbitrum",
+      "chainId": 42161,
+      "chainName": "Arbitrum One",
       "providers": [
         {
           "provider": "subsquid",
@@ -12,6 +14,8 @@
     },
     {
       "network": "arbitrum-nova",
+      "chainId": 42170,
+      "chainName": "Arbitrum Nova",
       "providers": [
         {
           "provider": "subsquid",
@@ -22,6 +26,8 @@
     },
     {
       "network": "arbitrum-sepolia",
+      "chainId": 421614,
+      "chainName": "Arbitrum Sepolia",
       "providers": [
         {
           "provider": "subsquid",
@@ -32,6 +38,8 @@
     },
     {
       "network": "astar",
+      "chainId": 592,
+      "chainName": "Astar",
       "providers": [
         {
           "provider": "subsquid",
@@ -42,6 +50,8 @@
     },
     {
       "network": "astar-zkyoto",
+      "chainId": 6038361,
+      "chainName": "Astar zKyoto",
       "providers": [
         {
           "provider": "subsquid",
@@ -52,6 +62,8 @@
     },
     {
       "network": "astar-zkevm-mainnet",
+      "chainId": 3776,
+      "chainName": "Astar zkEVM",
       "providers": [
         {
           "provider": "subsquid",
@@ -62,6 +74,8 @@
     },
     {
       "network": "avalanche",
+      "chainId": 43114,
+      "chainName": "Avalanche",
       "providers": [
         {
           "provider": "subsquid",
@@ -72,6 +86,8 @@
     },
     {
       "network": "avalanche-testnet",
+      "chainId": 43113,
+      "chainName": "Avalanche Testnet",
       "providers": [
         {
           "provider": "subsquid",
@@ -82,6 +98,8 @@
     },
     {
       "network": "base-mainnet",
+      "chainId": 8453,
+      "chainName": "Base",
       "providers": [
         {
           "provider": "subsquid",
@@ -92,6 +110,8 @@
     },
     {
       "network": "base-sepolia",
+      "chainId": 84532,
+      "chainName": "Base Sepolia",
       "providers": [
         {
           "provider": "subsquid",
@@ -102,6 +122,8 @@
     },
     {
       "network": "berachain-artio",
+      "chainId": 80085,
+      "chainName": "Berachain Artio",
       "providers": [
         {
           "provider": "subsquid",
@@ -112,6 +134,8 @@
     },
     {
       "network": "binance",
+      "chainId": 56,
+      "chainName": "Binance",
       "providers": [
         {
           "provider": "subsquid",
@@ -122,6 +146,8 @@
     },
     {
       "network": "binance-testnet",
+      "chainId": 97,
+      "chainName": "Binance Testnet",
       "providers": [
         {
           "provider": "subsquid",
@@ -132,6 +158,8 @@
     },
     {
       "network": "blast-l2-mainnet",
+      "chainId": 81457,
+      "chainName": "Blast L2",
       "providers": [
         {
           "provider": "subsquid",
@@ -142,6 +170,8 @@
     },
     {
       "network": "blast-sepolia",
+      "chainId": 168587773,
+      "chainName": "Blast Sepolia",
       "providers": [
         {
           "provider": "subsquid",
@@ -152,6 +182,8 @@
     },
     {
       "network": "bitgert-mainnet",
+      "chainId": 32520,
+      "chainName": "Bitgert",
       "providers": [
         {
           "provider": "subsquid",
@@ -162,6 +194,8 @@
     },
     {
       "network": "bitgert-testnet",
+      "chainId": 64668,
+      "chainName": "Bitgert Testnet",
       "providers": [
         {
           "provider": "subsquid",
@@ -172,6 +206,8 @@
     },
     {
       "network": "cyberconnect-l2-testnet",
+      "chainId": 111557560,
+      "chainName": "Cyberconnect L2 Testnet",
       "providers": [
         {
           "provider": "subsquid",
@@ -182,6 +218,8 @@
     },
     {
       "network": "dfk-chain",
+      "chainId": 53935,
+      "chainName": "DFK Chain",
       "providers": [
         {
           "provider": "subsquid",
@@ -192,6 +230,8 @@
     },
     {
       "network": "dogechain-mainnet",
+      "chainId": 2000,
+      "chainName": "Dogechain",
       "providers": [
         {
           "provider": "subsquid",
@@ -202,6 +242,8 @@
     },
     {
       "network": "eth-mainnet",
+      "chainId": 1,
+      "chainName": "Ethereum",
       "providers": [
         {
           "provider": "subsquid",
@@ -212,6 +254,8 @@
     },
     {
       "network": "eth-holesky",
+      "chainId": 17000,
+      "chainName": "Ethereum Holesky",
       "providers": [
         {
           "provider": "subsquid",
@@ -222,6 +266,8 @@
     },
     {
       "network": "eth-sepolia",
+      "chainId": 11155111,
+      "chainName": "Ethereum Sepolia",
       "providers": [
         {
           "provider": "subsquid",
@@ -232,6 +278,8 @@
     },
     {
       "network": "etherlink-testnet",
+      "chainId": 128123,
+      "chainName": "Etherlink Testnet",
       "providers": [
         {
           "provider": "subsquid",
@@ -242,6 +290,8 @@
     },
     {
       "network": "exosama",
+      "chainId": 2109,
+      "chainName": "Exosama",
       "providers": [
         {
           "provider": "subsquid",
@@ -252,6 +302,8 @@
     },
     {
       "network": "fantom",
+      "chainId": 250,
+      "chainName": "Fantom",
       "providers": [
         {
           "provider": "subsquid",
@@ -262,6 +314,8 @@
     },
     {
       "network": "fantom-testnet",
+      "chainId": 4002,
+      "chainName": "Fantom Testnet",
       "providers": [
         {
           "provider": "subsquid",
@@ -272,6 +326,8 @@
     },
     {
       "network": "flare-mainnet",
+      "chainId": 14,
+      "chainName": "Flare",
       "providers": [
         {
           "provider": "subsquid",
@@ -282,6 +338,8 @@
     },
     {
       "network": "gnosis-mainnet",
+      "chainId": 100,
+      "chainName": "Gnosis",
       "providers": [
         {
           "provider": "subsquid",
@@ -292,6 +350,8 @@
     },
     {
       "network": "immutable-zkevm-mainnet",
+      "chainId": 13371,
+      "chainName": "Immutable zkEVM",
       "providers": [
         {
           "provider": "subsquid",
@@ -302,6 +362,8 @@
     },
     {
       "network": "immutable-zkevm-testnet",
+      "chainId": 13473,
+      "chainName": "Immutable zkEVM Testnet",
       "providers": [
         {
           "provider": "subsquid",
@@ -312,6 +374,8 @@
     },
     {
       "network": "linea-mainnet",
+      "chainId": 59144,
+      "chainName": "Linea",
       "providers": [
         {
           "provider": "subsquid",
@@ -322,6 +386,8 @@
     },
     {
       "network": "mantle-mainnet",
+      "chainId": 5000,
+      "chainName": "Mantle",
       "providers": [
         {
           "provider": "subsquid",
@@ -332,6 +398,8 @@
     },
     {
       "network": "mantle-sepolia",
+      "chainId": 5003,
+      "chainName": "Mantle Sepolia",
       "providers": [
         {
           "provider": "subsquid",
@@ -342,6 +410,8 @@
     },
     {
       "network": "metis-mainnet",
+      "chainId": 1088,
+      "chainName": "Metis",
       "providers": [
         {
           "provider": "subsquid",
@@ -351,17 +421,9 @@
       ]
     },
     {
-      "network": "mineplex-testnet",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/mineplex-testnet",
-          "release": "ArrowSquid"
-        }
-      ]
-    },
-    {
       "network": "moonbase",
+      "chainId": 1287,
+      "chainName": "Moonbase Alpha",
       "providers": [
         {
           "provider": "subsquid",
@@ -372,6 +434,8 @@
     },
     {
       "network": "moonbeam",
+      "chainId": 1284,
+      "chainName": "Moonbeam",
       "providers": [
         {
           "provider": "subsquid",
@@ -382,6 +446,8 @@
     },
     {
       "network": "moonriver",
+      "chainId": 1285,
+      "chainName": "Moonriver",
       "providers": [
         {
           "provider": "subsquid",
@@ -391,17 +457,9 @@
       ]
     },
     {
-      "network": "moonsama",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonsama",
-          "release": "ArrowSquid"
-        }
-      ]
-    },
-    {
       "network": "neon-mainnet",
+      "chainId": 245022926,
+      "chainName": "Neon EVM",
       "providers": [
         {
           "provider": "subsquid",
@@ -412,6 +470,8 @@
     },
     {
       "network": "neon-devnet",
+      "chainId": 245022934,
+      "chainName": "Neon EVM Devnet",
       "providers": [
         {
           "provider": "subsquid",
@@ -422,6 +482,8 @@
     },
     {
       "network": "opbnb-mainnet",
+      "chainId": 204,
+      "chainName": "opBNB",
       "providers": [
         {
           "provider": "subsquid",
@@ -432,6 +494,8 @@
     },
     {
       "network": "opbnb-testnet",
+      "chainId": 5611,
+      "chainName": "opBNB Tetstnet",
       "providers": [
         {
           "provider": "subsquid",
@@ -442,6 +506,8 @@
     },
     {
       "network": "optimism-mainnet",
+      "chainId": 10,
+      "chainName": "Optimism",
       "providers": [
         {
           "provider": "subsquid",
@@ -452,6 +518,8 @@
     },
     {
       "network": "optimism-sepolia",
+      "chainId": 11155420,
+      "chainName": "Optimism Sepolia",
       "providers": [
         {
           "provider": "subsquid",
@@ -462,6 +530,8 @@
     },
     {
       "network": "peaq-mainnet",
+      "chainId": 3338,
+      "chainName": "Peaq",
       "providers": [
         {
           "provider": "subsquid",
@@ -472,6 +542,8 @@
     },
     {
       "network": "polygon",
+      "chainId": 138,
+      "chainName": "Polygon",
       "providers": [
         {
           "provider": "subsquid",
@@ -482,6 +554,8 @@
     },
     {
       "network": "polygon-mumbai",
+      "chainId": 80001,
+      "chainName": "Polygon Mumbai",
       "providers": [
         {
           "provider": "subsquid",
@@ -492,6 +566,8 @@
     },
     {
       "network": "polygon-zkevm",
+      "chainId": 1101,
+      "chainName": "Polygon zkEVM",
       "providers": [
         {
           "provider": "subsquid",
@@ -502,6 +578,8 @@
     },
     {
       "network": "polygon-zkevm-cardona-testnet",
+      "chainId": 2442,
+      "chainName": "Polygon zkEVM Cardona Testnet",
       "providers": [
         {
           "provider": "subsquid",
@@ -512,6 +590,8 @@
     },
     {
       "network": "prom-testnet",
+      "chainId": 97072271,
+      "chainName": "Prom Testnet",
       "providers": [
         {
           "provider": "subsquid",
@@ -522,6 +602,8 @@
     },
     {
       "network": "scroll-mainnet",
+      "chainId": 534352,
+      "chainName": "Scroll",
       "providers": [
         {
           "provider": "subsquid",
@@ -532,6 +614,8 @@
     },
     {
       "network": "scroll-sepolia",
+      "chainId": 534351,
+      "chainName": "Scroll Sepolia",
       "providers": [
         {
           "provider": "subsquid",
@@ -541,27 +625,9 @@
       ]
     },
     {
-      "network": "sepolia",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/ethereum-sepolia",
-          "release": "ArrowSquid"
-        }
-      ]
-    },
-    {
-      "network": "shibuya-testnet",
-      "providers": [
-        {
-          "provider": "subsquid",
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/shibuya-testnet",
-          "release": "ArrowSquid"
-        }
-      ]
-    },
-    {
       "network": "shiden-mainnet",
+      "chainId": 336,
+      "chainName": "Shiden",
       "providers": [
         {
           "provider": "subsquid",
@@ -572,6 +638,8 @@
     },
     {
       "network": "skale-nebula",
+      "chainId": 1482601649,
+      "chainName": "Skale Nebula",
       "providers": [
         {
           "provider": "subsquid",
@@ -582,6 +650,8 @@
     },
     {
       "network": "tanssi",
+      "chainId": 5678,
+      "chainName": "Tanssi",
       "providers": [
         {
           "provider": "subsquid",
@@ -592,6 +662,8 @@
     },
     {
       "network": "x1-testnet",
+      "chainId": 195,
+      "chainName": "X1 Testnet",
       "providers": [
         {
           "provider": "subsquid",
@@ -602,6 +674,8 @@
     },
     {
       "network": "zksync-mainnet",
+      "chainId": 324,
+      "chainName": "zkSync",
       "providers": [
         {
           "provider": "subsquid",
@@ -612,6 +686,8 @@
     },
     {
       "network": "zksync-sepolia",
+      "chainId": 300,
+      "chainName": "zkSync Sepolia",
       "providers": [
         {
           "provider": "subsquid",
@@ -622,6 +698,8 @@
     },
     {
       "network": "zora-mainnet",
+      "chainId": 7777777,
+      "chainName": "Zora",
       "providers": [
         {
           "provider": "subsquid",
