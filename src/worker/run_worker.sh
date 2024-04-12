@@ -32,7 +32,7 @@ version: "3.8"
 
 services:
   worker:
-    image: ghcr.io/subsquid/worker-rs:0.3.1
+    image: subsquid/p2p-worker:0.3.1
     restart: unless-stopped
     command: p2p
     environment:
