@@ -53,6 +53,8 @@ def _run(parsed_args):
                     }
                 ],
             }
+        case _:
+            raise ValueError("Invalid archive variant")
     syntax = Syntax(
         json.dumps(entry, indent=2), "json", theme="monokai", line_numbers=True
     )

@@ -1,6 +1,6 @@
 import argparse
 
-from scripts.archives import add_command, sort_command
+from scripts.archives import add_command, sort_command, list_command
 
 
 if __name__ == "__main__":
@@ -10,5 +10,6 @@ if __name__ == "__main__":
     subparser = program.add_subparsers()
     add_command.update_parser(subparser.add_parser("add"))
     sort_command.update_parser(subparser.add_parser("sort"))
+    list_command.update_parser(subparser.add_parser("list", aliases=["ls"]))
     parsed_args = program.parse_args()
     parsed_args.func(parsed_args)
