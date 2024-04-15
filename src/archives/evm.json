@@ -661,6 +661,18 @@
       ]
     },
     {
+      "network": "shibuya-testnet",
+      "chainId": 81,
+      "chainName": "Shibuya",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/shibuya-testnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "chainId": 336,
       "chainName": "Shiden",
       "network": "shiden-mainnet",
