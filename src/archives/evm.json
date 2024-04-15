@@ -205,6 +205,18 @@
       ]
     },
     {
+      "chainId": 1116,
+      "chainName": "Core Mainnet",
+      "network": "core-mainnet",
+      "providers": [
+        {
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/core-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "chainId": 111557560,
       "chainName": "Cyberconnect L2 Testnet",
       "network": "cyberconnect-l2-testnet",
@@ -553,6 +565,18 @@
       ]
     },
     {
+      "chainId": 80002,
+      "chainName": "Polygon Amoy Testnet",
+      "network": "polygon-amoy-testnet",
+      "providers": [
+        {
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-amoy-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "chainId": 80001,
       "chainName": "Polygon Mumbai",
       "network": "polygon-mumbai",
@@ -595,6 +619,18 @@
       "providers": [
         {
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/prom-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "chainId": 157,
+      "chainName": "Puppynet (Shibarium's Testnet)",
+      "network": "puppynet",
+      "providers": [
+        {
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/puppynet",
           "provider": "subsquid",
           "release": "ArrowSquid"
         }
