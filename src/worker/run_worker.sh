@@ -61,7 +61,7 @@ services:
       - ${DATA_DIR}:/app/data
       - .:/app/configs
     ports:
-      - "${PROMETHEUS_PORT:-9090}:9090"
+      - "${PROMETHEUS_PORT:-9090}:8000"
       - "${LISTEN_PORT:-12345}:${LISTEN_PORT:-12345}/udp"
     user: "${USER_ID}:${GROUP_ID}"
     deploy:
