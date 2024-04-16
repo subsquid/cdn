@@ -32,7 +32,7 @@ version: "3.8"
 
 services:
   worker:
-    image: subsquid/p2p-worker:0.3.1
+    image: subsquid/p2p-worker:0.3.2
     restart: unless-stopped
     command: p2p
     environment:
@@ -51,6 +51,10 @@ services:
       BOOT_NODES: >
         12D3KooWSRvKpvNbsrGbLXGFZV7GYdcrYNh4W2nipwHHMYikzV58 /dns4/testnet.subsquid.io/udp/22445/quic-v1,
         12D3KooWQC9tPzj2ShLn39RFHS5SGbvbP2pEd7bJ61kSW2LwxGSB /dns4/testnet.subsquid.io/udp/22446/quic-v1
+      GATEWAY_REGISTRY_CONTRACT_ADDR: 0xC52D401Cf4101e6b20F6F7D51c67f5B1dF9559af
+      WORKER_REGISTRATION_CONTRACT_ADDR: 0xCD8e983F8c4202B0085825Cf21833927D1e2b6Dc
+      NETWORK_CONTROLLER_CONTRACT_ADDR: 0x68Fc7E375945d8C8dFb0050c337Ff09E962D976D
+      ALLOCATIONS_VIEWER_CONTRACT_ADDR: 0xEf55fB580dc7CA408a725b53F270277E81C1442f
       KEY_PATH: /app/configs/key
       RUST_LOG: "info"
     volumes:
