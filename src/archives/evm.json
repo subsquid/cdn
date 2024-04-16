@@ -721,6 +721,18 @@
       ]
     },
     {
+      "network": "xlayer-mainnet",
+      "chainId": 196,
+      "chainName": "X Layer Mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/xlayer-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "chainId": 324,
       "chainName": "zkSync",
       "network": "zksync-mainnet",
