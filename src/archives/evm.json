@@ -577,18 +577,6 @@
       ]
     },
     {
-      "chainId": 80001,
-      "chainName": "Polygon Mumbai",
-      "network": "polygon-mumbai",
-      "providers": [
-        {
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-testnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid"
-        }
-      ]
-    },
-    {
       "chainId": 1101,
       "chainName": "Polygon zkEVM",
       "network": "polygon-zkevm",
