@@ -8,16 +8,6 @@ then
   exit 1
 fi
 
-if [ -n "$PUBLIC_IP" ]
-then
-  PUBLIC_ADDR=/ip4/${PUBLIC_IP}/udp/${LISTEN_PORT:-12345}/quic-v1
-fi
-
-if [ -z "$PUBLIC_ADDR" ]
-then
-  echo "Warning: public address not provided (use PUBLIC_IP=x.x.x.x or PUBLIC_ADDR=/ip4/x.x.x.x/udp/xxxx/quic-v1)"
-fi
-
 
 # Get absolute path
 DATA_DIR="$(cd "$(dirname -- "$1")" >/dev/null; pwd -P)/$(basename -- "$1")"
@@ -32,7 +22,7 @@ version: "3.8"
 
 services:
   worker:
-    image: subsquid/p2p-worker:0.3.2
+    image: subsquid/p2p-worker:0.3.3
     restart: unless-stopped
     command: p2p
     environment:
@@ -47,7 +37,6 @@ services:
       SCHEDULER_ID: 12D3KooWQER7HEpwsvqSzqzaiV36d3Bn6DZrnwEunnzS76pgZkMU
       LOGS_COLLECTOR_ID: 12D3KooWC3GvQVqnvPwWz23sTW8G8HVokMnox62A7mnL9wwaSujk
       P2P_LISTEN_ADDRS: /ip4/0.0.0.0/udp/${LISTEN_PORT:-12345}/quic-v1
-      P2P_PUBLIC_ADDRS: ${PUBLIC_ADDR}
       BOOT_NODES: >
         12D3KooWSRvKpvNbsrGbLXGFZV7GYdcrYNh4W2nipwHHMYikzV58 /dns4/testnet.subsquid.io/udp/22445/quic-v1,
         12D3KooWQC9tPzj2ShLn39RFHS5SGbvbP2pEd7bJ61kSW2LwxGSB /dns4/testnet.subsquid.io/udp/22446/quic-v1
