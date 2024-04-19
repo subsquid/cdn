@@ -22,7 +22,7 @@ version: "3.8"
 
 services:
   worker:
-    image: subsquid/p2p-worker:0.3.3
+    image: subsquid/p2p-worker:0.3.4
     restart: unless-stopped
     command: p2p
     environment:
