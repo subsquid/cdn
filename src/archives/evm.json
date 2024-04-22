@@ -649,6 +649,18 @@
       ]
     },
     {
+      "network": "shibarium",
+      "chainId": 109,
+      "chainName": "Shibarium",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/shibarium",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "shibuya-testnet",
       "chainId": 81,
       "chainName": "Shibuya",

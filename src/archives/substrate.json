@@ -205,6 +205,19 @@
       ]
     },
     {
+      "network": "bittensor",
+      "chainSS58Prefix": 42,
+      "chainName": "Bittensor",
+      "genesis_hash": "0x2f0555cc76fc2840a25a6ea3b9637146806f1f44b090c175ffde2a7e5ab36c03",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/bittensor",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "chainName": "Bridge Hub Kusama",
       "chainSS58Prefix": 2,
       "genesisHash": "0x00dcb981df86429de8bbacf9803401f09485366c44efbf53af9ecfab03adc7e5",
