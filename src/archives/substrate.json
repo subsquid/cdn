@@ -1166,6 +1166,19 @@
       ]
     },
     {
+      "network": "turing-avail",
+      "chainSS58Prefix": null,
+      "chainName": "Turing Avail",
+      "genesis_hash": "0xd3d2f3a3495dc597434a99d7d449ebad6616db45e4e4f178f31cc6fa14378b70",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/turing-avail",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "chainName": "Vara",
       "chainSS58Prefix": 137,
       "genesisHash": "0xfe1b4c55fd4d668101126434206571a7838a8b6b93a6d1b95d607e78e6c53763",

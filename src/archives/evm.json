@@ -217,6 +217,18 @@
       ]
     },
     {
+      "network": "cyber-mainnet",
+      "chainId": 7560,
+      "chainName": "Cyber Mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/cyber-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "chainId": 111557560,
       "chainName": "Cyberconnect L2 Testnet",
       "network": "cyberconnect-l2-testnet",
@@ -416,6 +428,18 @@
         {
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/mantle-sepolia",
           "provider": "subsquid",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "merlin-testnet",
+      "chainId": 686868,
+      "chainName": "Merlin Testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/merlin-testnet",
           "release": "ArrowSquid"
         }
       ]
