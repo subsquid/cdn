@@ -205,6 +205,18 @@
       ]
     },
     {
+      "network": "canto",
+      "chainId": 7700,
+      "chainName": "Canto",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/canto",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "chainId": 1116,
       "chainName": "Core Mainnet",
       "network": "core-mainnet",
@@ -428,6 +440,18 @@
         {
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/mantle-sepolia",
           "provider": "subsquid",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "merlin-mainnet",
+      "chainId": 4200,
+      "chainName": "Merlin Mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/merlin-mainnet",
           "release": "ArrowSquid"
         }
       ]

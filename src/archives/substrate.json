@@ -1166,6 +1166,19 @@
       ]
     },
     {
+      "network": "turing",
+      "chainSS58Prefix": 51,
+      "chainName": "Turing",
+      "genesis_hash": "0x0f62b701fb12d02237a33b84818c11f621653d2b1614c777973babf4652b535d",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/turing-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "turing-avail",
       "chainSS58Prefix": null,
       "chainName": "Turing Avail",
