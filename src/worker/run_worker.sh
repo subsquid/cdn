@@ -22,7 +22,7 @@ version: "3.8"
 
 services:
   worker:
-    image: subsquid/p2p-worker:0.3.5
+    image: subsquid/p2p-worker:0.3.6
     restart: unless-stopped
     command: p2p
     environment:
@@ -46,6 +46,7 @@ services:
       ALLOCATIONS_VIEWER_CONTRACT_ADDR: 0xC0Af6432947db51e0C179050dAF801F19d40D2B7
       KEY_PATH: /app/configs/key
       RUST_LOG: "info"
+      SENTRY_DSN: https://f97ffef7e96eb533d4c527ce62e4cfbf@o1149243.ingest.us.sentry.io/4507056936779776
     volumes:
       - ${DATA_DIR}:/app/data
       - .:/app/configs
