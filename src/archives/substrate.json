@@ -490,6 +490,19 @@
       ]
     },
     {
+      "network": "enjin-canary-matrix",
+      "chainSS58Prefix": 9030,
+      "chainName": "Enjin Canary Matrix",
+      "genesis_hash": "0xa37725fd8943d2a524cb7ecc65da438f9fa644db78ba24dcd0003e2f95645e8f",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/enjin-canary-matrix",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "chainName": "Enjin Matrix",
       "chainSS58Prefix": 1110,
       "genesisHash": "0x3af4ff48ec76d2efc8476730f423ac07e25ad48f5f4c9dc39c778b164d808615",
