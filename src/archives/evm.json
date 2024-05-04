@@ -781,6 +781,18 @@
       ]
     },
     {
+      "network": "xlayer-testnet",
+      "chainId": 195,
+      "chainName": "X Layer Testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/xlayer-testnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "chainId": 324,
       "chainName": "zkSync",
       "network": "zksync-mainnet",
