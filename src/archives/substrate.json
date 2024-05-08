@@ -154,6 +154,19 @@
       ]
     },
     {
+      "network": "avail",
+      "chainSS58Prefix": null,
+      "chainName": "Avail Mainnet",
+      "genesis_hash": "0x128ea318539862c0a06b745981300d527c1041c6f3388a8c49565559e3ea3d10",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/avail",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "chainName": "Basilisk",
       "chainSS58Prefix": null,
       "genesisHash": "0xa85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
@@ -456,7 +469,7 @@
       ]
     },
     {
-      "chainName": "Data Avail",
+      "chainName": "Data Avail (Avail Goldberg)",
       "chainSS58Prefix": null,
       "genesisHash": "",
       "network": "data-avail",
