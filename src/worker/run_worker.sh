@@ -27,9 +27,6 @@ services:
     command: p2p
     environment:
       DATA_DIR: /app/data
-      AWS_ACCESS_KEY_ID: 66dfc7705583f6fd9520947ac10d7e9f
-      AWS_SECRET_ACCESS_KEY: a68fdd7253232e30720a4c125f35a81bd495664a154b1643b5f5d4a4a5280a4f
-      AWS_S3_ENDPOINT: https://7a28e49ec5f4a60c66f216392792ac38.r2.cloudflarestorage.com
       CONCURRENT_DOWNLOADS: 3
       S3_TIMEOUT: 120
       RPC_URL: ${RPC_URL:-https://sepolia-rollup.arbitrum.io/rpc}
