@@ -22,13 +22,12 @@ version: "3.8"
 
 services:
   worker:
-    image: subsquid/p2p-worker:0.4.1
+    image: subsquid/p2p-worker:1.0.0-rc1
     restart: unless-stopped
     command: p2p
     environment:
       DATA_DIR: /app/data
       CONCURRENT_DOWNLOADS: 3
-      S3_TIMEOUT: 120
       RPC_URL: ${RPC_URL:-https://sepolia-rollup.arbitrum.io/rpc}
       L1_RPC_URL: https://rpc.sepolia.org
       SCHEDULER_ID: 12D3KooWQER7HEpwsvqSzqzaiV36d3Bn6DZrnwEunnzS76pgZkMU
@@ -37,10 +36,7 @@ services:
       BOOT_NODES: >
         12D3KooWSRvKpvNbsrGbLXGFZV7GYdcrYNh4W2nipwHHMYikzV58 /dns4/testnet.subsquid.io/udp/22445/quic-v1,
         12D3KooWQC9tPzj2ShLn39RFHS5SGbvbP2pEd7bJ61kSW2LwxGSB /dns4/testnet.subsquid.io/udp/22446/quic-v1
-      GATEWAY_REGISTRY_CONTRACT_ADDR: 0xAB46F688AbA4FcD1920F21E9BD16B229316D8b0a
-      WORKER_REGISTRATION_CONTRACT_ADDR: 0xCD8e983F8c4202B0085825Cf21833927D1e2b6Dc
-      NETWORK_CONTROLLER_CONTRACT_ADDR: 0x68Fc7E375945d8C8dFb0050c337Ff09E962D976D
-      ALLOCATIONS_VIEWER_CONTRACT_ADDR: 0xC0Af6432947db51e0C179050dAF801F19d40D2B7
+      NETWORK=tethys
       KEY_PATH: /app/configs/key
       RUST_LOG: "info"
       SENTRY_DSN: https://f97ffef7e96eb533d4c527ce62e4cfbf@o1149243.ingest.us.sentry.io/4507056936779776
