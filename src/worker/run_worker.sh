@@ -36,7 +36,7 @@ services:
       BOOT_NODES: >
         12D3KooWSRvKpvNbsrGbLXGFZV7GYdcrYNh4W2nipwHHMYikzV58 /dns4/testnet.subsquid.io/udp/22445/quic-v1,
         12D3KooWQC9tPzj2ShLn39RFHS5SGbvbP2pEd7bJ61kSW2LwxGSB /dns4/testnet.subsquid.io/udp/22446/quic-v1
-      NETWORK=tethys
+      NETWORK: tethys
       KEY_PATH: /app/configs/key
       RUST_LOG: "info"
       SENTRY_DSN: https://f97ffef7e96eb533d4c527ce62e4cfbf@o1149243.ingest.us.sentry.io/4507056936779776
