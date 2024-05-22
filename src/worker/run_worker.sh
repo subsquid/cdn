@@ -28,6 +28,7 @@ services:
     environment:
       DATA_DIR: /app/data
       CONCURRENT_DOWNLOADS: 3
+      S3_TIMEOUT: 60
       RPC_URL: ${RPC_URL:-https://sepolia-rollup.arbitrum.io/rpc}
       L1_RPC_URL: https://rpc.sepolia.org
       SCHEDULER_ID: 12D3KooWQER7HEpwsvqSzqzaiV36d3Bn6DZrnwEunnzS76pgZkMU
