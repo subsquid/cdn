@@ -10,8 +10,18 @@ then
   exit 1
 fi
 
-DATA_DIR=$(realpath "$1")
-KEY_PATH=$(realpath "$2")
+# Plain realpath doesn't work on MacOS with non-existing files
+abspath() {
+  if [ -d "$1" ]
+  then
+    realpath "$1"
+  else
+    echo "$(realpath "$(dirname -- "$1")")/$(basename -- "$1")"
+  fi
+}
+
+DATA_DIR=$(abspath "$1")
+KEY_PATH=$(abspath "$2")
 
 if [ -d "$DATA_DIR" ]
 then
