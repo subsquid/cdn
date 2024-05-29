@@ -4,18 +4,18 @@ services:
     restart: unless-stopped
     command: p2p
     environment:
-      # How many chunks are downloaded in paralel.
+      # The number of chunks downloaded in paralel.
       # You can increase this number if you have a good internet connection.
       CONCURRENT_DOWNLOADS: 3
       # Timeout for downloading a single file.
       # Increase it if you have the "operation timed out" errors in the logs.
       S3_TIMEOUT: 60
-      # The connection is dropped if no data has arrived for this time.
+      # Read timeout. The connection is dropped if no data has arrived for this time.
       S3_READ_TIMEOUT: 3
       # RPC node of the Arbitrum network
-      RPC_URL: ${RPC_URL:-https://arb1.arbitrum.io/rpc}
+      RPC_URL: https://arb1.arbitrum.io/rpc
       # RPC node of the Ethereum network
-      L1_RPC_URL: ${L1_RPC_URL:-https://ethereum.publicnode.com}
+      L1_RPC_URL: https://ethereum.publicnode.com
       # You can set it to "info,subsquid_worker=debug" to get debug logs
       RUST_LOG: "info"
 
