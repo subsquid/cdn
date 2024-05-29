@@ -1,0 +1,22 @@
+services:
+  worker:
+    image: subsquid/p2p-worker:1.0.0
+    restart: unless-stopped
+    command: p2p
+    env_file:
+      - .${NETWORK}.env
+      - .env
+    environment:
+      DATA_DIR: /app/data
+      KEY_PATH: /app/key
+    user: "${UID}:${GID}"
+    volumes:
+      - ${DATA_DIR:?}:/app/data
+      - ${KEY_PATH:?}:/app/key:ro
+    ports:
+      - "${PROMETHEUS_PORT:-9090}:8000"
+      - "${LISTEN_PORT:?}:${LISTEN_PORT:?}/udp"
+    deploy:
+      resources:
+        limits:
+          memory: 16G

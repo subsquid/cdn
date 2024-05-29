@@ -74,17 +74,31 @@ fi
 cat <<EOF > .env
 DATA_DIR=${DATA_DIR}
 KEY_PATH=${KEY_PATH}
+# UDP port used for P2P connections
 LISTEN_PORT=${LISTEN_PORT}
-PROMETHEUS_PORT=
-PUBLIC_ADDR=${PUBLIC_ADDR:-}
+PROMETHEUS_PORT=9090
 NETWORK=${NETWORK}
+# The number of chunks downloaded in paralel.
+# You can increase this number if you have a good internet connection.
+CONCURRENT_DOWNLOADS=3
+# Timeout for downloading a single file.
+# Increase it if you have the "operation timed out" errors in the logs.
+S3_TIMEOUT=60
+# Read timeout. The connection is dropped if no data has arrived for this time.
+S3_READ_TIMEOUT=3
+# You can set it to "info,subsquid_worker=debug" to get debug logs
+RUST_LOG=info
 UID=$(id -u)
 GID=$(id -g)
+
+# You probably shouldn't change the values below
+P2P_LISTEN_ADDRS=/ip4/0.0.0.0/udp/${LISTEN_PORT}/quic-v1
+P2P_PUBLIC_ADDRS=${PUBLIC_ADDR:-}
 EOF
 
 echo "Config saved to '.env'"
 
-echo "Downloading docker-compose.${NETWORK}.yaml"
-curl -sSf "https://cdn.subsquid.io/worker/docker-compose.${NETWORK}.yaml" -o docker-compose.yaml
+echo "Downloading docker-compose.yaml and .${NETWORK}.env"
+curl -sSfO "https://cdn.subsquid.io/worker/docker-compose.yaml" "https://cdn.subsquid.io/worker/.${NETWORK}.env"
 
 echo "Your peer ID is: ${BOLD}${PEER_ID}${NORMAL}. Now you can register it on chain."
