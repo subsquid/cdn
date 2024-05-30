@@ -99,6 +99,6 @@ EOF
 echo "Config saved to '.env'"
 
 echo "Downloading docker-compose.yaml and .${NETWORK}.env"
-curl -sSfO "https://cdn.subsquid.io/worker/docker-compose.yaml" "https://cdn.subsquid.io/worker/.${NETWORK}.env"
+curl -sSf -O "https://cdn.subsquid.io/worker/docker-compose.yaml" -O "https://cdn.subsquid.io/worker/.${NETWORK}.env"
 
 echo "Your peer ID is: ${BOLD}${PEER_ID}${NORMAL}. Now you can register it on chain."
