@@ -373,6 +373,30 @@
       ]
     },
     {
+      "network": "gelato-arbitrum-blueberry",
+      "chainId": 88153591557,
+      "chainName": "Arbitrum Blueberry",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/gelato-arbitrum-blueberry",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "gelato-opcelestia-raspberry",
+      "chainId": 123420111,
+      "chainName": "OP Celestia Raspberry",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/gelato-opcelestia-raspberry",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "chainId": 100,
       "chainName": "Gnosis",
       "network": "gnosis-mainnet",
@@ -740,6 +764,18 @@
         {
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/skale-nebula",
           "provider": "subsquid",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "taiko-mainnet",
+      "chainId": 167000,
+      "chainName": "Taiko Mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/taiko-mainnet",
           "release": "ArrowSquid"
         }
       ]
