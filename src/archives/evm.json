@@ -205,6 +205,18 @@
       ]
     },
     {
+      "network": "bob-mainnet",
+      "chainId": 60808,
+      "chainName": "BOB Mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/bob-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "canto",
       "chainId": 7700,
       "chainName": "Canto",
@@ -277,6 +289,18 @@
       ]
     },
     {
+      "network": "dogechain-testnet",
+      "chainId": 568,
+      "chainName": "Dogechain Testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/dogechain-testnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "chainId": 17000,
       "chainName": "Ethereum Holesky",
       "network": "eth-holesky",
@@ -308,6 +332,18 @@
         {
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/ethereum-sepolia",
           "provider": "subsquid",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "etherlink-mainnet",
+      "chainId": 42793,
+      "chainName": "Etherlink Mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/etherlink-mainnet",
           "release": "ArrowSquid"
         }
       ]
@@ -428,6 +464,18 @@
         {
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/immutable-zkevm-testnet",
           "provider": "subsquid",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "kyoto-testnet",
+      "chainId": 1998,
+      "chainName": "Kyoto Testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/kyoto-testnet",
           "release": "ArrowSquid"
         }
       ]
@@ -860,6 +908,18 @@
         {
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/zora-mainnet",
           "provider": "subsquid",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "zora-sepolia",
+      "chainId": 999999999,
+      "chainName": "Zora Sepolia",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/zora-sepolia",
           "release": "ArrowSquid"
         }
       ]
