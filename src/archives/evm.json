@@ -673,7 +673,7 @@
       ]
     },
     {
-      "chainId": 138,
+      "chainId": 137,
       "chainName": "Polygon",
       "network": "polygon",
       "providers": [
