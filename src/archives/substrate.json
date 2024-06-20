@@ -18,6 +18,19 @@
       ]
     },
     {
+      "network": "acurast-canary",
+      "chainSS58Prefix": 42,
+      "chainName": "Acurast Canary",
+      "genesis_hash": "0xce7681fb12aa8f7265d229a9074be0ea1d5e99b53eedcec2deade43857901808",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/acurast-canary",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "chainName": "Agung",
       "chainSS58Prefix": null,
       "genesisHash": "0xf496028047ba9e394a575e5d2d93828360d35a4c2dade61efff0de309021909f",
