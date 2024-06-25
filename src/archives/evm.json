@@ -1,6 +1,18 @@
 {
   "archives": [
     {
+      "network": "0g-testnet",
+      "chainId": 16600,
+      "chainName": "0g Testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/0g-testnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "chainId": 42161,
       "chainName": "Arbitrum One",
       "network": "arbitrum",
