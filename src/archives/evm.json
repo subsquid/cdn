@@ -421,6 +421,18 @@
       ]
     },
     {
+      "network": "galxe-gravity",
+      "chainId": 1625,
+      "chainName": "Gravity",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/galxe-gravity",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "gelato-arbitrum-blueberry",
       "chainId": 88153591557,
       "chainName": "Arbitrum Blueberry",
