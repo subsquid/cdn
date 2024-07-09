@@ -697,6 +697,18 @@
       ]
     },
     {
+      "network": "plume-testnet",
+      "chainId": 161221135,
+      "chainName": "Plume Testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/plume-testnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "chainId": 137,
       "chainName": "Polygon",
       "network": "polygon",
