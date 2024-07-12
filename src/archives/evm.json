@@ -109,6 +109,18 @@
       ]
     },
     {
+      "network": "b3-sepolia",
+      "chainId": 1993,
+      "chainName": "B3 Sepolia",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/b3-sepolia",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "chainId": 8453,
       "chainName": "Base",
       "network": "base-mainnet",
