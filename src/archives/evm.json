@@ -649,6 +649,18 @@
       ]
     },
     {
+      "network": "neox-testnet",
+      "chainId": 12227331,
+      "chainName": "NeoX Testnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/neox-testnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "chainId": 204,
       "chainName": "opBNB",
       "network": "opbnb-mainnet",
