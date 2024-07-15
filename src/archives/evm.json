@@ -49,6 +49,18 @@
       ]
     },
     {
+      "network": "arthera-mainnet",
+      "chainId": 10242,
+      "chainName": "Arthera Mainnet",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/arthera-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "chainId": 592,
       "chainName": "Astar",
       "network": "astar",
