@@ -244,6 +244,19 @@
       ]
     },
     {
+      "network": "bittensor-testnet",
+      "chainSS58Prefix": 42,
+      "chainName": "Bittensor Testnet",
+      "genesis_hash": "0x8f9cf856bf558a14440e75569c9e58594757048d7b3a84b5d25f6bd978263105",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/bittensor-testnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "chainName": "Bridge Hub Kusama",
       "chainSS58Prefix": 2,
       "genesisHash": "0x00dcb981df86429de8bbacf9803401f09485366c44efbf53af9ecfab03adc7e5",
@@ -592,6 +605,19 @@
           "image": "",
           "ingest": "",
           "provider": "subsquid",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
+      "network": "gemini-3h",
+      "chainSS58Prefix": 2254,
+      "chainName": "Gemini 3h",
+      "genesis_hash": "0x0c121c75f4ef450f40619e1fca9d1e8e7fbabc42c895bc4790801e85d5a91c34",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/gemini-3h",
           "release": "ArrowSquid"
         }
       ]
@@ -1255,23 +1281,6 @@
       "providers": [
         {
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/vara-testnet",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
-          "provider": "subsquid",
-          "release": "ArrowSquid"
-        }
-      ]
-    },
-    {
-      "chainName": "Watr",
-      "chainSS58Prefix": 19,
-      "genesisHash": "0x161db6cdc5896fe55ef12b4778fe78dd65d7af43f65c601786b88d7a93ebc58a",
-      "network": "watr",
-      "providers": [
-        {
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/watr",
           "explorerUrl": "",
           "gateway": "",
           "image": "",
