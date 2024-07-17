@@ -88,10 +88,10 @@ S3_TIMEOUT=60
 S3_READ_TIMEOUT=3
 # You can set it to "info,subsquid_worker=debug" to get debug logs
 RUST_LOG=info
-UID=$(id -u)
-GID=$(id -g)
 
 # You probably shouldn't change the values below
+UID=$(id -u)
+GID=$(id -g)
 P2P_LISTEN_ADDRS=/ip4/0.0.0.0/udp/${LISTEN_PORT}/quic-v1
 P2P_PUBLIC_ADDRS=${PUBLIC_ADDR:-}
 EOF
