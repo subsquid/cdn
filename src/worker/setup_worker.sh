@@ -42,8 +42,7 @@ NETWORK=${NETWORK:-mainnet}
 
 if [ -d "$DATA_DIR" ]
 then
-  echo "Provided data directory ($DATA_DIR) already exists, please use a new one"
-  exit 1
+  echo "The provided data directory ($DATA_DIR) already exists. Any data inside of it may be lost."
 fi
 mkdir -pv "$DATA_DIR"
 
@@ -85,7 +84,7 @@ CONCURRENT_DOWNLOADS=3
 # Increase it if you have the "operation timed out" errors in the logs.
 S3_TIMEOUT=60
 # Read timeout. The connection is dropped if no data has arrived for this time.
-S3_READ_TIMEOUT=3
+S3_READ_TIMEOUT=30
 # You can set it to "info,subsquid_worker=debug" to get debug logs
 RUST_LOG=info
 
