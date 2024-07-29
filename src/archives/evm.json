@@ -157,12 +157,12 @@
       ]
     },
     {
-      "chainId": 80085,
-      "chainName": "Berachain Artio",
-      "network": "berachain-artio",
+      "chainId": 80084,
+      "chainName": "Berachain bArtio",
+      "network": "berachain-bartio",
       "providers": [
         {
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/berachain-artio",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/berachain-bartio",
           "provider": "subsquid",
           "release": "ArrowSquid"
         }
