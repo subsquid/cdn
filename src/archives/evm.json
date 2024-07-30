@@ -686,7 +686,7 @@
     },
     {
       "chainId": 5611,
-      "chainName": "opBNB Tetstnet",
+      "chainName": "opBNB Testnet",
       "network": "opbnb-testnet",
       "providers": [
         {
