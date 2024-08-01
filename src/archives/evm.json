@@ -13,6 +13,18 @@
       ]
     },
     {
+      "network": "aleph-zero-evm-mainnet",
+      "chainId": 41455,
+      "chainName": "Aleph Zero EVM",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/aleph-zero-evm-mainnet",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "chainId": 42161,
       "chainName": "Arbitrum One",
       "network": "arbitrum",
