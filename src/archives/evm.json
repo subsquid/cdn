@@ -913,6 +913,18 @@
       ]
     },
     {
+      "network": "stratovm-sepolia",
+      "chainId": 93747,
+      "chainName": "StratoVM Sepolia",
+      "providers": [
+        {
+          "provider": "subsquid",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/stratovm-sepolia",
+          "release": "ArrowSquid"
+        }
+      ]
+    },
+    {
       "network": "taiko-mainnet",
       "chainId": 167000,
       "chainName": "Taiko Mainnet",
