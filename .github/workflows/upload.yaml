@@ -28,3 +28,7 @@ jobs:
       - name: upload
         run: |-
           gsutil rsync -r src gs://subsquid-public
+
+      - name: cors
+        run: |-
+          gsutil cors set cors.json gs://subsquid-public
