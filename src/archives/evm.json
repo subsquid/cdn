@@ -2,13 +2,15 @@
   "archives": [
     {
       "chainId": 16600,
-      "chainKind": "testnet",
       "chainName": "0g Testnet",
+      "isTestnet": true,
       "network": "0g-testnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/0g-testnet",
           "provider": "subsquid",
@@ -19,15 +21,16 @@
     },
     {
       "chainId": 41455,
-      "chainKind": "mainnet",
       "chainName": "Aleph Zero EVM",
       "network": "aleph-zero-evm-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/aleph-zero-evm-mainnet",
           "provider": "subsquid",
@@ -38,13 +41,14 @@
     },
     {
       "chainId": 42161,
-      "chainKind": "mainnet",
       "chainName": "Arbitrum One",
       "network": "arbitrum",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/arbitrum-one",
           "provider": "subsquid",
@@ -55,15 +59,16 @@
     },
     {
       "chainId": 42170,
-      "chainKind": "mainnet",
       "chainName": "Arbitrum Nova",
       "network": "arbitrum-nova",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/arbitrum-nova",
           "provider": "subsquid",
@@ -74,15 +79,17 @@
     },
     {
       "chainId": 421614,
-      "chainKind": "testnet",
       "chainName": "Arbitrum Sepolia",
+      "isTestnet": true,
       "network": "arbitrum-sepolia",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/arbitrum-sepolia",
           "provider": "subsquid",
@@ -93,15 +100,16 @@
     },
     {
       "chainId": 10242,
-      "chainKind": "mainnet",
       "chainName": "Arthera Mainnet",
       "network": "arthera-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/arthera-mainnet",
           "provider": "subsquid",
@@ -112,13 +120,14 @@
     },
     {
       "chainId": 592,
-      "chainKind": "mainnet",
       "chainName": "Astar",
       "network": "astar",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/astar-mainnet",
           "provider": "subsquid",
@@ -129,13 +138,14 @@
     },
     {
       "chainId": 3776,
-      "chainKind": "mainnet",
       "chainName": "Astar zkEVM",
       "network": "astar-zkevm-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/astar-zkevm-mainnet",
           "provider": "subsquid",
@@ -146,13 +156,15 @@
     },
     {
       "chainId": 6038361,
-      "chainKind": "testnet",
       "chainName": "Astar zKyoto",
+      "isTestnet": true,
       "network": "astar-zkyoto",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/astar-zkyoto",
           "provider": "subsquid",
@@ -163,13 +175,14 @@
     },
     {
       "chainId": 43114,
-      "chainKind": "mainnet",
       "chainName": "Avalanche",
       "network": "avalanche",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/avalanche-mainnet",
           "provider": "subsquid",
@@ -180,13 +193,15 @@
     },
     {
       "chainId": 43113,
-      "chainKind": "testnet",
       "chainName": "Avalanche Testnet",
+      "isTestnet": true,
       "network": "avalanche-testnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/avalanche-testnet",
           "provider": "subsquid",
@@ -197,15 +212,16 @@
     },
     {
       "chainId": 8333,
-      "chainKind": "mainnet",
       "chainName": "B3",
       "network": "b3-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/b3-mainnet",
           "provider": "subsquid",
@@ -216,15 +232,17 @@
     },
     {
       "chainId": 1993,
-      "chainKind": "testnet",
       "chainName": "B3 Sepolia",
+      "isTestnet": true,
       "network": "b3-sepolia",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/b3-sepolia",
           "provider": "subsquid",
@@ -235,15 +253,16 @@
     },
     {
       "chainId": 8453,
-      "chainKind": "mainnet",
       "chainName": "Base",
       "network": "base-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/base-mainnet",
           "provider": "subsquid",
@@ -254,15 +273,17 @@
     },
     {
       "chainId": 84532,
-      "chainKind": "testnet",
       "chainName": "Base Sepolia",
+      "isTestnet": true,
       "network": "base-sepolia",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/base-sepolia",
           "provider": "subsquid",
@@ -273,15 +294,17 @@
     },
     {
       "chainId": 80084,
-      "chainKind": "testnet",
       "chainName": "Berachain bArtio",
+      "isTestnet": true,
       "network": "berachain-bartio",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/berachain-bartio",
           "provider": "subsquid",
@@ -292,15 +315,16 @@
     },
     {
       "chainId": 56,
-      "chainKind": "mainnet",
       "chainName": "Binance",
       "network": "binance",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/binance-mainnet",
           "provider": "subsquid",
@@ -311,13 +335,15 @@
     },
     {
       "chainId": 97,
-      "chainKind": "testnet",
       "chainName": "Binance Testnet",
+      "isTestnet": true,
       "network": "binance-testnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/binance-testnet",
           "provider": "subsquid",
@@ -328,13 +354,14 @@
     },
     {
       "chainId": 32520,
-      "chainKind": "mainnet",
       "chainName": "Bitgert",
       "network": "bitgert-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/bitgert-mainnet",
@@ -346,13 +373,15 @@
     },
     {
       "chainId": 64668,
-      "chainKind": "testnet",
       "chainName": "Bitgert Testnet",
+      "isTestnet": true,
       "network": "bitgert-testnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/bitgert-testnet",
@@ -364,15 +393,16 @@
     },
     {
       "chainId": 81457,
-      "chainKind": "mainnet",
       "chainName": "Blast L2",
       "network": "blast-l2-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/blast-l2-mainnet",
           "provider": "subsquid",
@@ -383,13 +413,15 @@
     },
     {
       "chainId": 168587773,
-      "chainKind": "testnet",
       "chainName": "Blast Sepolia",
+      "isTestnet": true,
       "network": "blast-sepolia",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/blast-sepolia",
           "provider": "subsquid",
@@ -400,15 +432,16 @@
     },
     {
       "chainId": 60808,
-      "chainKind": "mainnet",
       "chainName": "BOB Mainnet",
       "network": "bob-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/bob-mainnet",
           "provider": "subsquid",
@@ -419,13 +452,14 @@
     },
     {
       "chainId": 7700,
-      "chainKind": "mainnet",
       "chainName": "Canto",
       "network": "canto",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/canto",
           "provider": "subsquid",
@@ -436,13 +470,14 @@
     },
     {
       "chainId": 1116,
-      "chainKind": "mainnet",
       "chainName": "Core Mainnet",
       "network": "core-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/core-mainnet",
@@ -454,13 +489,14 @@
     },
     {
       "chainId": 7560,
-      "chainKind": "mainnet",
       "chainName": "Cyber Mainnet",
       "network": "cyber-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/cyber-mainnet",
           "provider": "subsquid",
@@ -471,15 +507,17 @@
     },
     {
       "chainId": 111557560,
-      "chainKind": "testnet",
       "chainName": "Cyberconnect L2 Testnet",
+      "isTestnet": true,
       "network": "cyberconnect-l2-testnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/cyberconnect-l2-testnet",
           "provider": "subsquid",
@@ -490,13 +528,14 @@
     },
     {
       "chainId": 53935,
-      "chainKind": "mainnet",
       "chainName": "DFK Chain",
       "network": "dfk-chain",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/dfk-chain",
           "provider": "subsquid",
@@ -507,13 +546,14 @@
     },
     {
       "chainId": 2000,
-      "chainKind": "mainnet",
       "chainName": "Dogechain",
       "network": "dogechain-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/dogechain-mainnet",
           "provider": "subsquid",
@@ -524,13 +564,15 @@
     },
     {
       "chainId": 568,
-      "chainKind": "testnet",
       "chainName": "Dogechain Testnet",
+      "isTestnet": true,
       "network": "dogechain-testnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/dogechain-testnet",
           "provider": "subsquid",
@@ -541,15 +583,17 @@
     },
     {
       "chainId": 17000,
-      "chainKind": "testnet",
       "chainName": "Ethereum Holesky",
+      "isTestnet": true,
       "network": "eth-holesky",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/ethereum-holesky",
           "provider": "subsquid",
@@ -560,15 +604,16 @@
     },
     {
       "chainId": 1,
-      "chainKind": "mainnet",
       "chainName": "Ethereum",
       "network": "eth-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/ethereum-mainnet",
           "provider": "subsquid",
@@ -579,15 +624,17 @@
     },
     {
       "chainId": 11155111,
-      "chainKind": "testnet",
       "chainName": "Ethereum Sepolia",
+      "isTestnet": true,
       "network": "eth-sepolia",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/ethereum-sepolia",
           "provider": "subsquid",
@@ -598,13 +645,14 @@
     },
     {
       "chainId": 42793,
-      "chainKind": "mainnet",
       "chainName": "Etherlink Mainnet",
       "network": "etherlink-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/etherlink-mainnet",
           "provider": "subsquid",
@@ -615,13 +663,15 @@
     },
     {
       "chainId": 128123,
-      "chainKind": "testnet",
       "chainName": "Etherlink Testnet",
+      "isTestnet": true,
       "network": "etherlink-testnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/etherlink-testnet",
           "provider": "subsquid",
@@ -632,15 +682,16 @@
     },
     {
       "chainId": 2109,
-      "chainKind": "mainnet",
       "chainName": "Exosama",
       "network": "exosama",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/exosama",
           "provider": "subsquid",
@@ -651,13 +702,14 @@
     },
     {
       "chainId": 250,
-      "chainKind": "mainnet",
       "chainName": "Fantom",
       "network": "fantom",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/fantom-mainnet",
           "provider": "subsquid",
@@ -668,13 +720,15 @@
     },
     {
       "chainId": 4002,
-      "chainKind": "testnet",
       "chainName": "Fantom Testnet",
+      "isTestnet": true,
       "network": "fantom-testnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/fantom-testnet",
           "provider": "subsquid",
@@ -685,13 +739,14 @@
     },
     {
       "chainId": 14,
-      "chainKind": "mainnet",
       "chainName": "Flare",
       "network": "flare-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/flare-mainnet",
           "provider": "subsquid",
@@ -702,15 +757,16 @@
     },
     {
       "chainId": 1625,
-      "chainKind": "mainnet",
       "chainName": "Gravity",
       "network": "galxe-gravity",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/galxe-gravity",
           "provider": "subsquid",
@@ -721,15 +777,17 @@
     },
     {
       "chainId": 88153591557,
-      "chainKind": "testnet",
       "chainName": "Arbitrum Blueberry",
+      "isTestnet": true,
       "network": "gelato-arbitrum-blueberry",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/gelato-arbitrum-blueberry",
           "provider": "subsquid",
@@ -740,13 +798,15 @@
     },
     {
       "chainId": 123420111,
-      "chainKind": "testnet",
       "chainName": "OP Celestia Raspberry",
+      "isTestnet": true,
       "network": "gelato-opcelestia-raspberry",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/gelato-opcelestia-raspberry",
           "provider": "subsquid",
@@ -757,15 +817,16 @@
     },
     {
       "chainId": 100,
-      "chainKind": "mainnet",
       "chainName": "Gnosis",
       "network": "gnosis-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/gnosis-mainnet",
           "provider": "subsquid",
@@ -776,13 +837,14 @@
     },
     {
       "chainId": 13371,
-      "chainKind": "mainnet",
       "chainName": "Immutable zkEVM",
       "network": "immutable-zkevm-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/immutable-zkevm-mainnet",
           "provider": "subsquid",
@@ -793,13 +855,15 @@
     },
     {
       "chainId": 13473,
-      "chainKind": "testnet",
       "chainName": "Immutable zkEVM Testnet",
+      "isTestnet": true,
       "network": "immutable-zkevm-testnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/immutable-zkevm-testnet",
           "provider": "subsquid",
@@ -810,13 +874,15 @@
     },
     {
       "chainId": 1998,
-      "chainKind": "testnet",
       "chainName": "Kyoto Testnet",
+      "isTestnet": true,
       "network": "kyoto-testnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/kyoto-testnet",
           "provider": "subsquid",
@@ -827,13 +893,14 @@
     },
     {
       "chainId": 59144,
-      "chainKind": "mainnet",
       "chainName": "Linea",
       "network": "linea-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/linea-mainnet",
@@ -845,13 +912,14 @@
     },
     {
       "chainId": 5000,
-      "chainKind": "mainnet",
       "chainName": "Mantle",
       "network": "mantle-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/mantle-mainnet",
           "provider": "subsquid",
@@ -862,13 +930,15 @@
     },
     {
       "chainId": 5003,
-      "chainKind": "testnet",
       "chainName": "Mantle Sepolia",
+      "isTestnet": true,
       "network": "mantle-sepolia",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/mantle-sepolia",
           "provider": "subsquid",
@@ -879,13 +949,14 @@
     },
     {
       "chainId": 4200,
-      "chainKind": "mainnet",
       "chainName": "Merlin Mainnet",
       "network": "merlin-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/merlin-mainnet",
           "provider": "subsquid",
@@ -896,13 +967,15 @@
     },
     {
       "chainId": 686868,
-      "chainKind": "testnet",
       "chainName": "Merlin Testnet",
+      "isTestnet": true,
       "network": "merlin-testnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/merlin-testnet",
           "provider": "subsquid",
@@ -913,13 +986,14 @@
     },
     {
       "chainId": 1088,
-      "chainKind": "mainnet",
       "chainName": "Metis",
       "network": "metis-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/metis-mainnet",
@@ -931,13 +1005,15 @@
     },
     {
       "chainId": 1287,
-      "chainKind": "testnet",
       "chainName": "Moonbase Alpha",
+      "isTestnet": true,
       "network": "moonbase",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonbase-testnet",
           "provider": "subsquid",
@@ -948,13 +1024,14 @@
     },
     {
       "chainId": 1284,
-      "chainKind": "mainnet",
       "chainName": "Moonbeam",
       "network": "moonbeam",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonbeam-mainnet",
@@ -966,13 +1043,14 @@
     },
     {
       "chainId": 1285,
-      "chainKind": "mainnet",
       "chainName": "Moonriver",
       "network": "moonriver",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonriver-mainnet",
@@ -984,13 +1062,15 @@
     },
     {
       "chainId": 245022934,
-      "chainKind": "testnet",
       "chainName": "Neon EVM Devnet",
+      "isTestnet": true,
       "network": "neon-devnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/neon-devnet",
           "provider": "subsquid",
@@ -1001,13 +1081,14 @@
     },
     {
       "chainId": 245022926,
-      "chainKind": "mainnet",
       "chainName": "Neon EVM",
       "network": "neon-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/neon-mainnet",
           "provider": "subsquid",
@@ -1018,13 +1099,14 @@
     },
     {
       "chainId": 204,
-      "chainKind": "mainnet",
       "chainName": "opBNB",
       "network": "opbnb-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/opbnb-mainnet",
           "provider": "subsquid",
@@ -1035,13 +1117,15 @@
     },
     {
       "chainId": 5611,
-      "chainKind": "testnet",
       "chainName": "opBNB Testnet",
+      "isTestnet": true,
       "network": "opbnb-testnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/opbnb-testnet",
           "provider": "subsquid",
@@ -1052,15 +1136,16 @@
     },
     {
       "chainId": 10,
-      "chainKind": "mainnet",
       "chainName": "Optimism",
       "network": "optimism-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/optimism-mainnet",
           "provider": "subsquid",
@@ -1071,13 +1156,15 @@
     },
     {
       "chainId": 11155420,
-      "chainKind": "testnet",
       "chainName": "Optimism Sepolia",
+      "isTestnet": true,
       "network": "optimism-sepolia",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/optimism-sepolia",
           "provider": "subsquid",
@@ -1088,13 +1175,14 @@
     },
     {
       "chainId": 3338,
-      "chainKind": "mainnet",
       "chainName": "Peaq",
       "network": "peaq-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/peaq-mainnet",
           "provider": "subsquid",
@@ -1105,15 +1193,17 @@
     },
     {
       "chainId": 161221135,
-      "chainKind": "testnet",
       "chainName": "Plume Testnet",
+      "isTestnet": true,
       "network": "plume-testnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/plume-testnet",
           "provider": "subsquid",
@@ -1124,15 +1214,16 @@
     },
     {
       "chainId": 137,
-      "chainKind": "mainnet",
       "chainName": "Polygon",
       "network": "polygon",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-mainnet",
           "provider": "subsquid",
@@ -1143,13 +1234,15 @@
     },
     {
       "chainId": 80002,
-      "chainKind": "testnet",
       "chainName": "Polygon Amoy Testnet",
+      "isTestnet": true,
       "network": "polygon-amoy-testnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-amoy-testnet",
           "provider": "subsquid",
@@ -1160,13 +1253,14 @@
     },
     {
       "chainId": 1101,
-      "chainKind": "mainnet",
       "chainName": "Polygon zkEVM",
       "network": "polygon-zkevm",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-zkevm-mainnet",
           "provider": "subsquid",
@@ -1177,13 +1271,15 @@
     },
     {
       "chainId": 2442,
-      "chainKind": "testnet",
       "chainName": "Polygon zkEVM Cardona Testnet",
+      "isTestnet": true,
       "network": "polygon-zkevm-cardona-testnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-zkevm-cardona-testnet",
           "provider": "subsquid",
@@ -1194,13 +1290,15 @@
     },
     {
       "chainId": 97072271,
-      "chainKind": "testnet",
       "chainName": "Prom Testnet",
+      "isTestnet": true,
       "network": "prom-testnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/prom-testnet",
           "provider": "subsquid",
@@ -1211,15 +1309,17 @@
     },
     {
       "chainId": 157,
-      "chainKind": "testnet",
       "chainName": "Puppynet (Shibarium's Testnet)",
+      "isTestnet": true,
       "network": "puppynet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/puppynet",
           "provider": "subsquid",
@@ -1230,13 +1330,14 @@
     },
     {
       "chainId": 534352,
-      "chainKind": "mainnet",
       "chainName": "Scroll",
       "network": "scroll-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/scroll-mainnet",
@@ -1248,13 +1349,15 @@
     },
     {
       "chainId": 534351,
-      "chainKind": "testnet",
       "chainName": "Scroll Sepolia",
+      "isTestnet": true,
       "network": "scroll-sepolia",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/scroll-sepolia",
@@ -1266,13 +1369,14 @@
     },
     {
       "chainId": 109,
-      "chainKind": "mainnet",
       "chainName": "Shibarium",
       "network": "shibarium",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/shibarium",
           "provider": "subsquid",
@@ -1283,13 +1387,15 @@
     },
     {
       "chainId": 81,
-      "chainKind": "testnet",
       "chainName": "Shibuya",
+      "isTestnet": true,
       "network": "shibuya-testnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/shibuya-testnet",
           "provider": "subsquid",
@@ -1300,13 +1406,14 @@
     },
     {
       "chainId": 336,
-      "chainKind": "mainnet",
       "chainName": "Shiden",
       "network": "shiden-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/shiden-mainnet",
           "provider": "subsquid",
@@ -1317,13 +1424,14 @@
     },
     {
       "chainId": 1482601649,
-      "chainKind": "mainnet",
       "chainName": "Skale Nebula",
       "network": "skale-nebula",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/skale-nebula",
           "provider": "subsquid",
@@ -1334,15 +1442,17 @@
     },
     {
       "chainId": 93747,
-      "chainKind": "testnet",
       "chainName": "StratoVM Sepolia",
+      "isTestnet": true,
       "network": "stratovm-sepolia",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/stratovm-sepolia",
           "provider": "subsquid",
@@ -1353,13 +1463,14 @@
     },
     {
       "chainId": 167000,
-      "chainKind": "mainnet",
       "chainName": "Taiko Mainnet",
       "network": "taiko-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/taiko-mainnet",
           "provider": "subsquid",
@@ -1370,13 +1481,14 @@
     },
     {
       "chainId": 5678,
-      "chainKind": "mainnet",
       "chainName": "Tanssi",
       "network": "tanssi",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/tanssi",
           "provider": "subsquid",
@@ -1387,13 +1499,15 @@
     },
     {
       "chainId": 195,
-      "chainKind": "testnet",
       "chainName": "X1 Testnet",
+      "isTestnet": true,
       "network": "x1-testnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/x1-testnet",
           "provider": "subsquid",
@@ -1404,13 +1518,14 @@
     },
     {
       "chainId": 196,
-      "chainKind": "mainnet",
       "chainName": "X Layer Mainnet",
       "network": "xlayer-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/xlayer-mainnet",
           "provider": "subsquid",
@@ -1421,13 +1536,15 @@
     },
     {
       "chainId": 195,
-      "chainKind": "testnet",
       "chainName": "X Layer Testnet",
+      "isTestnet": true,
       "network": "xlayer-testnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/xlayer-testnet",
           "provider": "subsquid",
@@ -1438,13 +1555,14 @@
     },
     {
       "chainId": 324,
-      "chainKind": "mainnet",
       "chainName": "zkSync",
       "network": "zksync-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/zksync-mainnet",
           "provider": "subsquid",
@@ -1455,13 +1573,15 @@
     },
     {
       "chainId": 300,
-      "chainKind": "testnet",
       "chainName": "zkSync Sepolia",
+      "isTestnet": true,
       "network": "zksync-sepolia",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/zksync-sepolia",
@@ -1473,15 +1593,16 @@
     },
     {
       "chainId": 7777777,
-      "chainKind": "mainnet",
       "chainName": "Zora",
       "network": "zora-mainnet",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts",
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
             "traces",
-            "statediffs"
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/zora-mainnet",
           "provider": "subsquid",
@@ -1492,13 +1613,15 @@
     },
     {
       "chainId": 999999999,
-      "chainKind": "testnet",
       "chainName": "Zora Sepolia",
+      "isTestnet": true,
       "network": "zora-sepolia",
       "providers": [
         {
-          "dataSourceData": [
-            "receipts"
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/zora-sepolia",
           "provider": "subsquid",

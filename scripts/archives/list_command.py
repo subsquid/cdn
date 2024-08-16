@@ -37,7 +37,6 @@ def _run(parsed_args):
     if parsed_args.variant == "evm":
         table.add_column("Chain Kind", justify="left", no_wrap=True)
         table.add_column("Chain ID", justify="left", no_wrap=True)
-        table.add_column("R/T/S", justify="left", no_wrap=True)
     elif parsed_args.variant == "substrate":
         table.add_column("SS58 Prefix", justify="left", no_wrap=True)
     table.add_column("Data source URL", justify="left")
@@ -56,16 +55,14 @@ def _run(parsed_args):
                 provider["dataSourceUrl"],
             ]
             if parsed_args.variant == "evm":
-                data = provider.get("dataSourceData", [])
-                has_receipts = "+" if "receipts" in data else "-"
-                has_traces = "+" if "traces" in data else "-"
-                has_statediffs = "+" if "statediffs" in data else "-"
                 chain_id = "-"
                 if archive["chainId"]:
                     chain_id = str(archive["chainId"])
-                row.insert(2, f"{has_receipts}/{has_traces}/{has_statediffs}")
                 row.insert(2, chain_id)
-                row.insert(2, archive["chainKind"].title())
+                chain_kind = "Mainnet"
+                if archive.get("isTestnet", False):
+                    chain_kind = "Testnet"
+                row.insert(2, chain_kind)
             elif parsed_args.variant == "substrate":
                 chain_ss58_prefix = "-"
                 if archive["chainSS58Prefix"]:
