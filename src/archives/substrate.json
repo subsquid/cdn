@@ -7,26 +7,36 @@
       "network": "acala",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/acala",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
     {
-      "network": "acurast-canary",
-      "chainSS58Prefix": 42,
       "chainName": "Acurast Canary",
+      "chainSS58Prefix": 42,
       "genesis_hash": "0xce7681fb12aa8f7265d229a9074be0ea1d5e99b53eedcec2deade43857901808",
+      "network": "acurast-canary",
       "providers": [
         {
-          "provider": "subsquid",
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/acurast-canary",
-          "release": "ArrowSquid"
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -37,13 +47,16 @@
       "network": "agung",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/agung",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -54,13 +67,16 @@
       "network": "aleph-zero",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/aleph-zero",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -68,16 +84,20 @@
       "chainName": "Aleph Zero Testnet",
       "chainSS58Prefix": null,
       "genesisHash": "0x05d5279c52c484cc80396535a316add7d47b1c5b9e0398dd1f584149341460c5",
+      "isTestnet": true,
       "network": "aleph-zero-testnet",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/aleph-zero-testnet",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -88,13 +108,16 @@
       "network": "amplitude",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/amplitude",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -105,13 +128,16 @@
       "network": "asset-hub-kusama",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/asset-hub-kusama",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -122,13 +148,16 @@
       "network": "asset-hub-polkadot",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/asset-hub-polkadot",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -139,13 +168,16 @@
       "network": "asset-hub-rococo",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/asset-hub-rococo",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -156,26 +188,36 @@
       "network": "astar",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/astar-substrate",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
     {
-      "network": "avail",
-      "chainSS58Prefix": null,
       "chainName": "Avail Mainnet",
+      "chainSS58Prefix": null,
       "genesis_hash": "0x128ea318539862c0a06b745981300d527c1041c6f3388a8c49565559e3ea3d10",
+      "network": "avail",
       "providers": [
         {
-          "provider": "subsquid",
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/avail",
-          "release": "ArrowSquid"
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -186,13 +228,16 @@
       "network": "basilisk",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/basilisk",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -203,13 +248,16 @@
       "network": "bifrost-kusama",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/bifrost-kusama",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -220,39 +268,57 @@
       "network": "bifrost-polkadot",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/bifrost-polkadot",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
     {
-      "network": "bittensor",
-      "chainSS58Prefix": 42,
       "chainName": "Bittensor",
+      "chainSS58Prefix": 42,
       "genesis_hash": "0x2f0555cc76fc2840a25a6ea3b9637146806f1f44b090c175ffde2a7e5ab36c03",
+      "network": "bittensor",
       "providers": [
         {
-          "provider": "subsquid",
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/bittensor",
-          "release": "ArrowSquid"
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
     {
-      "network": "bittensor-testnet",
-      "chainSS58Prefix": 42,
       "chainName": "Bittensor Testnet",
+      "chainSS58Prefix": 42,
       "genesis_hash": "0x8f9cf856bf558a14440e75569c9e58594757048d7b3a84b5d25f6bd978263105",
+      "isTestnet": true,
+      "network": "bittensor-testnet",
       "providers": [
         {
-          "provider": "subsquid",
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/bittensor-testnet",
-          "release": "ArrowSquid"
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -263,13 +329,16 @@
       "network": "bridge-hub-kusama",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/bridge-hub-kusama",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -280,13 +349,16 @@
       "network": "bridge-hub-polkadot",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/bridge-hub-polkadot",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -297,13 +369,16 @@
       "network": "bridge-hub-rococo",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/bridge-hub-rococo",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -314,13 +389,16 @@
       "network": "bridge-hub-westend",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/bridge-hub-westend",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -331,13 +409,16 @@
       "network": "centrifuge",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/centrifuge",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -348,13 +429,16 @@
       "network": "cere",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/cere",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -365,13 +449,16 @@
       "network": "chainflip",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/chainflip",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -382,13 +469,16 @@
       "network": "clover",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/clover",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -399,13 +489,16 @@
       "network": "collectives-polkadot",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/collectives-polkadot",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -416,13 +509,16 @@
       "network": "collectives-westend",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/collectives-westend",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -433,13 +529,16 @@
       "network": "crab",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/darwinia-crab",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -450,13 +549,16 @@
       "network": "crust",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/crust",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -467,13 +569,16 @@
       "network": "dancebox",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/dancebox",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -484,13 +589,16 @@
       "network": "darwinia",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/darwinia",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -501,13 +609,16 @@
       "network": "data-avail",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/data-avail",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -518,26 +629,36 @@
       "network": "eden",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/eden",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
     {
-      "network": "enjin-canary-matrix",
-      "chainSS58Prefix": 9030,
       "chainName": "Enjin Canary Matrix",
+      "chainSS58Prefix": 9030,
       "genesis_hash": "0xa37725fd8943d2a524cb7ecc65da438f9fa644db78ba24dcd0003e2f95645e8f",
+      "network": "enjin-canary-matrix",
       "providers": [
         {
-          "provider": "subsquid",
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/enjin-canary-matrix",
-          "release": "ArrowSquid"
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -548,13 +669,16 @@
       "network": "enjin-matrix",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/enjin-matrix",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -565,13 +689,16 @@
       "network": "equilibrium",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/equilibrium",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -582,13 +709,16 @@
       "network": "foucoco",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/foucoco",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -599,26 +729,36 @@
       "network": "frequency",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/frequency",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
     {
-      "network": "gemini-3h",
-      "chainSS58Prefix": 2254,
       "chainName": "Gemini 3h",
+      "chainSS58Prefix": 2254,
       "genesis_hash": "0x0c121c75f4ef450f40619e1fca9d1e8e7fbabc42c895bc4790801e85d5a91c34",
+      "network": "gemini-3h",
       "providers": [
         {
-          "provider": "subsquid",
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/gemini-3h",
-          "release": "ArrowSquid"
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -629,13 +769,16 @@
       "network": "hydradx",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/hydradx",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -646,13 +789,16 @@
       "network": "integritee-network",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/integritee",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -663,13 +809,16 @@
       "network": "interlay",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/interlay",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -680,13 +829,16 @@
       "network": "invarch-parachain",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/invarch-parachain",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -697,13 +849,16 @@
       "network": "invarch-tinkernet",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/invarch-tinkernet",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -714,13 +869,16 @@
       "network": "joystream",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/joystream",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -731,13 +889,16 @@
       "network": "karura",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/karura",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -748,13 +909,16 @@
       "network": "khala",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/khala",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -765,13 +929,16 @@
       "network": "kilt",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/kilt",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -782,13 +949,16 @@
       "network": "kintsugi",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/kintsugi",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -799,13 +969,16 @@
       "network": "kusama",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/kusama",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -816,13 +989,16 @@
       "network": "litentry",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/litentry",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -833,13 +1009,16 @@
       "network": "litmus",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/litmus",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -850,13 +1029,16 @@
       "network": "moonbase",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonbase-substrate",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -867,13 +1049,16 @@
       "network": "moonbeam",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonbeam-substrate",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -884,13 +1069,16 @@
       "network": "moonriver",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonriver-substrate",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -901,13 +1089,16 @@
       "network": "paseo",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/paseo",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -918,13 +1109,16 @@
       "network": "peaq-mainnet",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/peaq-mainnet-substrate",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -935,13 +1129,16 @@
       "network": "pendulum",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/pendulum",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -952,13 +1149,16 @@
       "network": "phala",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/phala",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -966,16 +1166,20 @@
       "chainName": "Phala Testnet",
       "chainSS58Prefix": 30,
       "genesisHash": "0xd9b288f9083f852f2729af58476b82b04bc9ed7e07d705614a843c93460974b2",
+      "isTestnet": true,
       "network": "phala-testnet",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/phala-testnet",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -986,13 +1190,16 @@
       "network": "picasso",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/picasso",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -1003,13 +1210,16 @@
       "network": "polimec",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/polimec",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -1020,13 +1230,16 @@
       "network": "polkadex",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/polkadex",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -1037,13 +1250,16 @@
       "network": "polkadot",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/polkadot",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -1054,13 +1270,16 @@
       "network": "polymesh",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/polymesh",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -1071,13 +1290,16 @@
       "network": "reef",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/reef",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -1085,16 +1307,20 @@
       "chainName": "Reef Testnet",
       "chainSS58Prefix": 42,
       "genesisHash": "0xb414a8602b2251fa538d38a9322391500bd0324bc7ac6048845d57c37dd83fe6",
+      "isTestnet": true,
       "network": "reef-testnet",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/reef-testnet",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -1105,13 +1331,16 @@
       "network": "robonomics",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/robonomics",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -1122,13 +1351,16 @@
       "network": "rococo",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/rococo",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -1139,26 +1371,37 @@
       "network": "rolimec",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/rolimec",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
     {
-      "network": "shibuya-testnet",
-      "chainSS58Prefix": null,
       "chainName": "Shibuya",
+      "chainSS58Prefix": null,
       "genesis_hash": "0xddb89973361a170839f80f152d2e9e38a376a5a7eccefcade763f46a8e567019",
+      "isTestnet": true,
+      "network": "shibuya-testnet",
       "providers": [
         {
-          "provider": "subsquid",
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/shibuya-substrate",
-          "release": "ArrowSquid"
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -1169,13 +1412,16 @@
       "network": "shiden",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/shiden-substrate",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -1186,13 +1432,16 @@
       "network": "sora",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/sora-mainnet",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -1203,13 +1452,16 @@
       "network": "subsocial-parachain",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/subsocial-parachain",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -1220,39 +1472,56 @@
       "network": "ternoa",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/ternoa",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
     {
-      "network": "turing",
-      "chainSS58Prefix": 51,
       "chainName": "Turing",
+      "chainSS58Prefix": 51,
       "genesis_hash": "0x0f62b701fb12d02237a33b84818c11f621653d2b1614c777973babf4652b535d",
+      "network": "turing",
       "providers": [
         {
-          "provider": "subsquid",
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/turing-mainnet",
-          "release": "ArrowSquid"
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
     {
-      "network": "turing-avail",
-      "chainSS58Prefix": null,
       "chainName": "Turing Avail",
+      "chainSS58Prefix": null,
       "genesis_hash": "0xd3d2f3a3495dc597434a99d7d449ebad6616db45e4e4f178f31cc6fa14378b70",
+      "network": "turing-avail",
       "providers": [
         {
-          "provider": "subsquid",
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/turing-avail",
-          "release": "ArrowSquid"
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -1263,13 +1532,16 @@
       "network": "vara",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/vara",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -1277,16 +1549,20 @@
       "chainName": "Vara Testnet",
       "chainSS58Prefix": 137,
       "genesisHash": "0x525639f713f397dcf839bd022cd821f367ebcf179de7b9253531f8adbe5436d6",
+      "isTestnet": true,
       "network": "vara-testnet",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/vara-testnet",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -1297,13 +1573,16 @@
       "network": "westend",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/westend",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -1314,13 +1593,16 @@
       "network": "xsocial",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/xsocial",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -1331,13 +1613,16 @@
       "network": "zeitgeist",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/zeitgeist",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -1345,16 +1630,20 @@
       "chainName": "Zeitgeist Testnet",
       "chainSS58Prefix": 73,
       "genesisHash": "0xb90cd3a37b4793c6494b78962986f4f6ed3ec2eda91a6b84fd8457d24f606b9c",
+      "isTestnet": true,
       "network": "zeitgeist-testnet",
       "providers": [
         {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/zeitgeist-testnet",
-          "explorerUrl": "",
-          "gateway": "",
-          "image": "",
-          "ingest": "",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     }

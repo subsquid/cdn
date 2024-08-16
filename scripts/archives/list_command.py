@@ -35,39 +35,39 @@ def _run(parsed_args):
     table.add_column("ID", justify="left", no_wrap=True)
     table.add_column("Name", justify="left", no_wrap=True)
     if parsed_args.variant == "evm":
+        table.add_column("Chain Kind", justify="left", no_wrap=True)
         table.add_column("Chain ID", justify="left", no_wrap=True)
     elif parsed_args.variant == "substrate":
         table.add_column("SS58 Prefix", justify="left", no_wrap=True)
-    table.add_column("Release", justify="left", no_wrap=True)
     table.add_column("Data source URL", justify="left")
 
     for archive in [
         a
         for a in archives["archives"]
-        if parsed_args.search is None or
-        parsed_args.search.lower() in a["network"] or
-        parsed_args.search.lower() in a["chainName"].lower()
+        if parsed_args.search is None
+        or parsed_args.search.lower() in a["network"]
+        or parsed_args.search.lower() in a["chainName"].lower()
     ]:
         for provider in archive["providers"]:
             row = [
                 archive["network"],
                 archive["chainName"],
-                provider["release"],
                 provider["dataSourceUrl"],
             ]
             if parsed_args.variant == "evm":
-                row.insert(
-                    2, "" if archive["chainId"] is None else str(archive["chainId"])
-                )
+                chain_id = "-"
+                if archive["chainId"]:
+                    chain_id = str(archive["chainId"])
+                row.insert(2, chain_id)
+                chain_kind = "Mainnet"
+                if archive.get("isTestnet", False):
+                    chain_kind = "Testnet"
+                row.insert(2, chain_kind)
             elif parsed_args.variant == "substrate":
-                row.insert(
-                    2,
-                    (
-                        ""
-                        if archive["chainSS58Prefix"] is None
-                        else str(archive["chainSS58Prefix"])
-                    ),
-                )
+                chain_ss58_prefix = "-"
+                if archive["chainSS58Prefix"]:
+                    chain_ss58_prefix = str(archive["chainSS58Prefix"])
+                row.insert(2, chain_ss58_prefix)
             table.add_row(*row)
 
     console.print(table)

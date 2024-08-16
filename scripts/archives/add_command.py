@@ -23,32 +23,47 @@ def _run(parsed_args):
     match parsed_args.variant:
         case "evm":
             chain_id = Prompt.ask("Chain ID", default="null")
+            chain_testnet = Confirm.ask("Is chain testnet?", default=False)
+            datasource_data = ["blocks", "tx"]
+            if Confirm.ask("Datasource supports logs?", default=True):
+                datasource_data.append("logs")
+            if Confirm.ask("Datasource supports traces?", default=False):
+                datasource_data.append("traces")
+            if Confirm.ask("Datasource supports statediffs?", default=False):
+                datasource_data.append("stateDiffs")
+            support_tier = int(Prompt.ask("Support tier", default="3", choices=["1", "2", "3"]))
             entry = {
-                "network": registry_name,
                 "chainId": int(chain_id) if chain_id.isdecimal() else None,
                 "chainName": hr_name,
+                "isTestnet": chain_testnet,
+                "network": registry_name,
                 "providers": [
                     {
-                        "provider": "subsquid",
+                        "data": datasource_data,
                         "dataSourceUrl": f"https://v2.archive.subsquid.io/network/{data_source_id}",
+                        "provider": "subsquid",
                         "release": "ArrowSquid",
+                        "supportTier": support_tier,
                     }
                 ],
             }
         case "substrate":
+            chain_testnet = Confirm.ask("Is chain testnet?", default=False)
             chain_ss58_prefix = Prompt.ask("Chain SS58 Prefix", default="null")
             genesis_hash = Prompt.ask("Genesis hash", default="")
             entry = {
-                "network": registry_name,
+                "chainName": hr_name,
                 "chainSS58Prefix": (
                     int(chain_ss58_prefix) if chain_ss58_prefix.isdecimal() else None
                 ),
-                "chainName": hr_name,
                 "genesis_hash": genesis_hash,
+                "isTestnet": chain_testnet,
+                "network": registry_name,
                 "providers": [
                     {
-                        "provider": "subsquid",
+                        "data": ["blocks", "calls", "events", "extrinsics"],
                         "dataSourceUrl": f"https://v2.archive.subsquid.io/network/{data_source_id}",
+                        "provider": "subsquid",
                         "release": "ArrowSquid",
                     }
                 ],
@@ -62,7 +77,7 @@ def _run(parsed_args):
         f"\nFollowing entry will be added to 'src/archives/{parsed_args.variant}.json':"
     )
     console.print(syntax)
-    confirm = Confirm.ask("Ok?", default="y")
+    confirm = Confirm.ask("Ok?", default=True)
     if confirm:
         root_p = Path(os.path.realpath(__file__)).parent.parent.parent
         with open(root_p / f"src/archives/{parsed_args.variant}.json") as f:
