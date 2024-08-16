@@ -88,8 +88,7 @@
             "blocks",
             "tx",
             "logs",
-            "traces",
-            "stateDiffs"
+            {"name": "traces", "ranges": [[0, 55667987]]}
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/arbitrum-sepolia",
           "provider": "subsquid",
@@ -362,7 +361,8 @@
             "blocks",
             "tx",
             "logs",
-            "traces"
+            "traces",
+            {"name": "stateDiffs", "ranges": [[0, 4298094]]}
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/bitgert-mainnet",
           "provider": "subsquid",
@@ -994,7 +994,7 @@
             "blocks",
             "tx",
             "logs",
-            "traces"
+            {"name": "traces", "ranges": [[0, 16861273], [16861287, null]]}
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/metis-mainnet",
           "provider": "subsquid",
@@ -1145,7 +1145,7 @@
             "tx",
             "logs",
             "traces",
-            "stateDiffs"
+            {"name": "stateDiffs", "ranges": [[105235063, null]]}
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/optimism-mainnet",
           "provider": "subsquid",
@@ -1562,7 +1562,8 @@
           "data": [
             "blocks",
             "tx",
-            "logs"
+            "logs",
+            {"name": "traces", "ranges": [[15500000, null]]}
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/zksync-mainnet",
           "provider": "subsquid",
