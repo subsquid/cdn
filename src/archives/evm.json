@@ -88,7 +88,15 @@
             "blocks",
             "tx",
             "logs",
-            {"name": "traces", "ranges": [[0, 55667987]]}
+            {
+              "name": "traces",
+              "ranges": [
+                [
+                  0,
+                  55667987
+                ]
+              ]
+            }
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/arbitrum-sepolia",
           "provider": "subsquid",
@@ -362,7 +370,15 @@
             "tx",
             "logs",
             "traces",
-            {"name": "stateDiffs", "ranges": [[0, 4298094]]}
+            {
+              "name": "stateDiffs",
+              "ranges": [
+                [
+                  0,
+                  4298094
+                ]
+              ]
+            }
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/bitgert-mainnet",
           "provider": "subsquid",
@@ -462,6 +478,25 @@
             "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/canto",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 7701,
+      "chainName": "Canto Testnet",
+      "isTestnet": true,
+      "network": "canto-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/canto-testnet",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
@@ -994,7 +1029,19 @@
             "blocks",
             "tx",
             "logs",
-            {"name": "traces", "ranges": [[0, 16861273], [16861287, null]]}
+            {
+              "name": "traces",
+              "ranges": [
+                [
+                  0,
+                  16861273
+                ],
+                [
+                  16861287,
+                  null
+                ]
+              ]
+            }
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/metis-mainnet",
           "provider": "subsquid",
@@ -1145,7 +1192,15 @@
             "tx",
             "logs",
             "traces",
-            {"name": "stateDiffs", "ranges": [[105235063, null]]}
+            {
+              "name": "stateDiffs",
+              "ranges": [
+                [
+                  105235063,
+                  null
+                ]
+              ]
+            }
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/optimism-mainnet",
           "provider": "subsquid",
@@ -1563,7 +1618,15 @@
             "blocks",
             "tx",
             "logs",
-            {"name": "traces", "ranges": [[15500000, null]]}
+            {
+              "name": "traces",
+              "ranges": [
+                [
+                  15500000,
+                  null
+                ]
+              ]
+            }
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/zksync-mainnet",
           "provider": "subsquid",
