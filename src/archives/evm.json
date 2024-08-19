@@ -523,6 +523,25 @@
       ]
     },
     {
+      "chainId": 4157,
+      "chainName": "CrossFi Testnet",
+      "isTestnet": true,
+      "network": "crossfi-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/crossfi-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "chainId": 7560,
       "chainName": "Cyber Mainnet",
       "network": "cyber-mainnet",
