@@ -1587,26 +1587,6 @@
       ]
     },
     {
-      "chainName": "xSocial",
-      "chainSS58Prefix": null,
-      "genesisHash": "",
-      "network": "xsocial",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/xsocial",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainName": "Zeitgeist",
       "chainSS58Prefix": 73,
       "genesisHash": "0x1bf2a2ecb4a868de66ea8610f2ce7c8c43706561b6476031315f6640fe38e060",
