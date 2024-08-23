@@ -581,6 +581,25 @@
       ]
     },
     {
+      "chainId": 666666666,
+      "chainName": "Degen Chain",
+      "isTestnet": false,
+      "network": "degen-chain",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/degen-chain",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "chainId": 53935,
       "chainName": "DFK Chain",
       "network": "dfk-chain",
@@ -1063,6 +1082,25 @@
             }
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/metis-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 34443,
+      "chainName": "Mode Mainnet",
+      "isTestnet": false,
+      "network": "mode-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/mode-mainnet",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
