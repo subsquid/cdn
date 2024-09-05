@@ -1574,6 +1574,25 @@
       ]
     },
     {
+      "chainId": 53302,
+      "chainName": "Superseed Sepolia",
+      "isTestnet": true,
+      "network": "superseed-sepolia",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/superseed-sepolia",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "chainId": 167000,
       "chainName": "Taiko Mainnet",
       "network": "taiko-mainnet",
