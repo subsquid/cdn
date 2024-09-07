@@ -984,6 +984,25 @@
       ]
     },
     {
+      "chainId": 169,
+      "chainName": "Manta Pacific",
+      "isTestnet": false,
+      "network": "manta-pacific",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/manta-pacific",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "chainId": 5000,
       "chainName": "Mantle",
       "network": "mantle-mainnet",
