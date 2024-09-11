@@ -1003,6 +1003,25 @@
       ]
     },
     {
+      "chainId": 3441006,
+      "chainName": "Manta Pacific Sepolia",
+      "isTestnet": true,
+      "network": "manta-pacific-sepolia",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/manta-pacific-sepolia",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "chainId": 5000,
       "chainName": "Mantle",
       "network": "mantle-mainnet",
@@ -1507,7 +1526,9 @@
           "data": [
             "blocks",
             "tx",
-            "logs"
+            "logs",
+            "traces",
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/shibarium",
           "provider": "subsquid",
