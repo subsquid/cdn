@@ -360,6 +360,25 @@
       ]
     },
     {
+      "chainId": 355110,
+      "chainName": "Bitfinity Mainnet",
+      "isTestnet": false,
+      "network": "bitfinity-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/bitfinity-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "chainId": 355113,
       "chainName": "Bitfinity Testnet",
       "isTestnet": true,
@@ -367,9 +386,33 @@
       "providers": [
         {
           "data": [
-            "blocks",
-            "tx",
-            "logs"
+            {
+              "name": "blocks",
+              "ranges": [
+                [
+                  2760000,
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "tx",
+              "ranges": [
+                [
+                  2760000,
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "logs",
+              "ranges": [
+                [
+                  2760000,
+                  null
+                ]
+              ]
+            }
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/bitfinity-testnet",
           "provider": "subsquid",
@@ -1248,9 +1291,33 @@
       "providers": [
         {
           "data": [
-            "blocks",
-            "tx",
-            "logs"
+            {
+              "name": "blocks",
+              "ranges": [
+                [
+                  177455580,
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "tx",
+              "ranges": [
+                [
+                  177455580,
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "logs",
+              "ranges": [
+                [
+                  177455580,
+                  null
+                ]
+              ]
+            }
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/neon-devnet",
           "provider": "subsquid",
