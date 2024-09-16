@@ -360,6 +360,25 @@
       ]
     },
     {
+      "chainId": 355113,
+      "chainName": "Bitfinity Testnet",
+      "isTestnet": true,
+      "network": "bitfinity-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/bitfinity-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "chainId": 32520,
       "chainName": "Bitgert",
       "network": "bitgert-mainnet",
@@ -1196,6 +1215,25 @@
             "traces"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonriver-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 42225,
+      "chainName": "Naka Chain",
+      "isTestnet": false,
+      "network": "nakachain",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/nakachain",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
