@@ -1606,6 +1606,26 @@
           "supportTier": 2
         }
       ]
+    },
+    {
+      "chainName": "zkVerify Testnet",
+      "chainSS58Prefix": null,
+      "genesis_hash": "",
+      "isTestnet": true,
+      "network": "zkverify-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/zkverify-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid"
+        }
+      ]
     }
   ]
 }

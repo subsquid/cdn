@@ -1447,6 +1447,27 @@
       ]
     },
     {
+      "chainId": null,
+      "chainName": "Plume Devnet",
+      "isTestnet": true,
+      "network": "plume-devnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/plume-devnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "chainId": 161221135,
       "chainName": "Plume Testnet",
       "isTestnet": true,
