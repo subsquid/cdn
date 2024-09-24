@@ -1447,7 +1447,7 @@
       ]
     },
     {
-      "chainId": null,
+      "chainId": 18230,
       "chainName": "Plume Devnet",
       "isTestnet": true,
       "network": "plume-devnet",
