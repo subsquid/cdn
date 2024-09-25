@@ -1584,6 +1584,25 @@
       ]
     },
     {
+      "chainId": 584548796,
+      "chainName": "Prom Testnet (v2)",
+      "isTestnet": true,
+      "network": "prom-testnet-v2",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/prom-testnet-v2",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "chainId": 157,
       "chainName": "Puppynet (Shibarium's Testnet)",
       "isTestnet": true,
