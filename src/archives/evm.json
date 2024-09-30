@@ -566,6 +566,25 @@
       ]
     },
     {
+      "chainId": 44787,
+      "chainName": "Celo Testnet (Alfajores)",
+      "isTestnet": true,
+      "network": "celo-alfajores-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/celo-alfajores-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "chainId": 1116,
       "chainName": "Core Mainnet",
       "network": "core-mainnet",
