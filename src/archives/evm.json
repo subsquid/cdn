@@ -585,6 +585,25 @@
       ]
     },
     {
+      "chainId": 42220,
+      "chainName": "Celo Mainnet",
+      "isTestnet": false,
+      "network": "celo-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/celo-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "chainId": 1116,
       "chainName": "Core Mainnet",
       "network": "core-mainnet",
