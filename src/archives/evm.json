@@ -1485,10 +1485,10 @@
       ]
     },
     {
-      "chainId": 18230,
-      "chainName": "Plume Devnet",
-      "isTestnet": true,
-      "network": "plume-devnet",
+      "chainId": null,
+      "chainName": "Plume Mainnet",
+      "isTestnet": false,
+      "network": "plume-mainnet",
       "providers": [
         {
           "data": [
@@ -1498,15 +1498,15 @@
             "traces",
             "stateDiffs"
           ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/plume-devnet",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/plume-mainnet",
           "provider": "subsquid",
           "release": "ArrowSquid",
-          "supportTier": 2
+          "supportTier": 1
         }
       ]
     },
     {
-      "chainId": 161221135,
+      "chainId": null,
       "chainName": "Plume Testnet",
       "isTestnet": true,
       "network": "plume-testnet",
