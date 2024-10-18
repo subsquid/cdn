@@ -1506,7 +1506,7 @@
       ]
     },
     {
-      "chainId": null,
+      "chainId": 161221135,
       "chainName": "Plume Testnet",
       "isTestnet": true,
       "network": "plume-testnet",
