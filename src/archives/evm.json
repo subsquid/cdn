@@ -1776,6 +1776,26 @@
       ]
     },
     {
+      "chainId": 64165,
+      "chainName": "Sonic Testnet",
+      "isTestnet": true,
+      "network": "sonic-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/sonic-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "chainId": 93747,
       "chainName": "StratoVM Sepolia",
       "isTestnet": true,

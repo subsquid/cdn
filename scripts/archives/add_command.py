@@ -31,7 +31,7 @@ def _run(parsed_args):
                 datasource_data.append("traces")
             if Confirm.ask("Datasource supports statediffs?", default=False):
                 datasource_data.append("stateDiffs")
-            support_tier = int(Prompt.ask("Support tier", default="3", choices=["1", "2", "3"]))
+            support_tier = int(Prompt.ask("Support tier", default="2", choices=["1", "2", "3"]))
             entry = {
                 "chainId": int(chain_id) if chain_id.isdecimal() else None,
                 "chainName": hr_name,
@@ -51,6 +51,7 @@ def _run(parsed_args):
             chain_testnet = Confirm.ask("Is chain testnet?", default=False)
             chain_ss58_prefix = Prompt.ask("Chain SS58 Prefix", default="null")
             genesis_hash = Prompt.ask("Genesis hash", default="")
+            support_tier = int(Prompt.ask("Support tier", default="2", choices=["1", "2", "3"]))
             entry = {
                 "chainName": hr_name,
                 "chainSS58Prefix": (
@@ -65,6 +66,7 @@ def _run(parsed_args):
                         "dataSourceUrl": f"https://v2.archive.subsquid.io/network/{data_source_id}",
                         "provider": "subsquid",
                         "release": "ArrowSquid",
+                        "supportTier": support_tier,
                     }
                 ],
             }

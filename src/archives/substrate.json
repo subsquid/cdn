@@ -698,7 +698,8 @@
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/enjin-relay",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
@@ -1136,6 +1137,27 @@
             "extrinsics"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/pendulum",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainName": "People Chain",
+      "chainSS58Prefix": null,
+      "genesis_hash": "0x67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008",
+      "isTestnet": false,
+      "network": "people-chain",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/people-chain",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
@@ -1643,7 +1665,8 @@
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/zkverify-testnet",
           "provider": "subsquid",
-          "release": "ArrowSquid"
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     }
