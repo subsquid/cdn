@@ -630,9 +630,33 @@
       "providers": [
         {
           "data": [
-            "blocks",
-            "tx",
-            "logs"
+            {
+              "name": "blocks",
+              "ranges": [
+                [
+                  1,
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "tx",
+              "ranges": [
+                [
+                  1,
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "logs",
+              "ranges": [
+                [
+                  1,
+                  null
+                ]
+              ]
+            }
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/crossfi-testnet",
           "provider": "subsquid",
