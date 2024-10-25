@@ -70,7 +70,7 @@ sqd-network-datasets:
   - name: ethereum-holesky
     id: s3://ethereum-holesky-1
   - name: ethereum-mainnet
-    id: s3://ethereum-mainnet-1
+    id: s3://ethereum-mainnet
   - name: ethereum-sepolia
     id: s3://ethereum-sepolia-1
   - name: etherlink-mainnet
