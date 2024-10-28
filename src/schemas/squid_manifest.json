@@ -2,6 +2,62 @@
     "$id": "https://cdn.subsquid.io/schemas/squid_manifest.json",
     "$schema": "https://json-schema.org/draft-07/schema",
     "additionalProperties": false,
+    "oneOf": [
+        {
+            "required": [
+                "slot"
+            ]
+        },
+        {
+            "required": [
+                "version"
+            ]
+        },
+        {
+            "required": [
+                "tag"
+            ]
+        },
+        {
+            "not": {
+                "oneOf": [
+                    {
+                        "required": [
+                            "slot"
+                        ]
+                    },
+                    {
+                        "required": [
+                            "version"
+                        ]
+                    },
+                    {
+                        "required": [
+                            "tag"
+                        ]
+                    },
+                    {
+                        "required": [
+                            "slot",
+                            "version"
+                        ]
+                    },
+                    {
+                        "required": [
+                            "slot",
+                            "tag"
+                        ]
+                    },
+                    {
+                        "required": [
+                            "version",
+                            "tag"
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
     "properties": {
         "manifest_version": {
             "const": "subsquid.io/v0.1"
@@ -10,12 +66,24 @@
             "type": "string",
             "minLength": 3,
             "maxLength": 30,
-            "pattern": "^[a-z0-9][a-z0-9\\-]*[a-z0-9]$"
+            "pattern": "^[a-z0-9]([a-z0-9\\-]*[a-z0-9])?$"
         },
         "version": {
             "type": "integer",
             "maximum": 1000000,
             "exclusiveMinimum": 0
+        },
+        "slot": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 6,
+            "pattern": "^[a-z0-9]([a-z0-9\\-]*[a-z0-9])?$"
+        },
+        "tag": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 32,
+            "pattern": "^[a-z0-9]([a-z0-9\\-]*[a-z0-9])?$"
         },
         "description": {
             "type": "string"
@@ -85,6 +153,47 @@
         "deploy": {
             "type": "object",
             "properties": {
+                "cors": {
+                    "type": "object",
+                    "properties": {
+                        "enabled": {
+                            "type": "boolean",
+                            "default": true
+                        },
+                        "allow_origin": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "allow_methods": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "allow_headers": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "expose_headers": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "allow_credentials": {
+                            "type": "boolean"
+                        },
+                        "max_age": {
+                            "type": "integer",
+                            "exclusiveMinimum": 0
+                        }
+                    },
+                    "additionalProperties": false
+                },
                 "addons": {
                     "type": "object",
                     "properties": {
@@ -123,6 +232,49 @@
                             },
                             "additionalProperties": false
                         },
+                        "neon": {
+                            "type": "object",
+                            "properties": {
+                                "version": {
+                                    "default": "16",
+                                    "const": "16"
+                                }
+                            },
+                            "additionalProperties": false
+                        },
+                        "hasura": {
+                            "type": [
+                                "object",
+                                "null"
+                            ],
+                            "properties": {
+                                "version": {
+                                    "type": "string",
+                                    "default": "latest"
+                                },
+                                "env": {
+                                    "type": "object",
+                                    "properties": {
+                                        "/^[a-zA-Z_][a-zA-Z0-9_]*$/": {
+                                            "type": "string",
+                                            "properties": {},
+                                            "required": [],
+                                            "additionalProperties": false
+                                        }
+                                    },
+                                    "additionalProperties": false,
+                                    "patternProperties": {
+                                        "^[a-zA-Z_][a-zA-Z0-9_]*$": {
+                                            "type": "string",
+                                            "properties": {},
+                                            "required": [],
+                                            "additionalProperties": false
+                                        }
+                                    }
+                                }
+                            },
+                            "additionalProperties": false
+                        },
                         "rpc": {
                             "type": "array",
                             "items": {
@@ -132,9 +284,9 @@
                                     "aleph-zero.http",
                                     "aleph-zero-testnet.http",
                                     "amplitude.http",
+                                    "arbitrum-one.http",
                                     "arbitrum-goerli.http",
                                     "arbitrum-sepolia.http",
-                                    "arbitrum-one.http",
                                     "arbitrum-nova.http",
                                     "asset-hub-kusama.http",
                                     "asset-hub-polkadot.http",
@@ -333,7 +485,7 @@
                             "properties": {
                                 "name": {
                                     "type": "string",
-                                    "pattern": "[a-z0-9]([-a-z0-9]*[a-z0-9])?",
+                                    "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                                     "maxLength": 63
                                 },
                                 "env": {
@@ -377,7 +529,7 @@
                         "properties": {
                             "name": {
                                 "type": "string",
-                                "pattern": "[a-z0-9]([-a-z0-9]*[a-z0-9])?",
+                                "pattern": "^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
                                 "maxLength": 63
                             },
                             "env": {
@@ -481,12 +633,69 @@
                                 "storage": {
                                     "type": "string"
                                 },
+                                "autoresize": {
+                                    "type": "boolean"
+                                },
+                                "autoresize_limit": {
+                                    "type": "string"
+                                },
                                 "profile": {
                                     "type": "string",
                                     "enum": [
                                         "small",
                                         "medium",
                                         "large"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": false
+                        },
+                        "hasura": {
+                            "type": "object",
+                            "properties": {
+                                "replicas": {
+                                    "type": "integer",
+                                    "exclusiveMinimum": 0,
+                                    "maximum": 5
+                                },
+                                "profile": {
+                                    "type": "string",
+                                    "enum": [
+                                        "small",
+                                        "medium",
+                                        "large"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": false
+                        },
+                        "neon": {
+                            "type": "object",
+                            "properties": {
+                                "autoscaling_limit_min_cu": {
+                                    "type": "string",
+                                    "default": "0.25",
+                                    "enum": [
+                                        "0.25",
+                                        "0.5",
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "8"
+                                    ]
+                                },
+                                "autoscaling_limit_max_cu": {
+                                    "type": "string",
+                                    "default": "0.25",
+                                    "enum": [
+                                        "0.25",
+                                        "0.5",
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "8"
                                     ]
                                 }
                             },
@@ -529,10 +738,6 @@
                 },
                 "api": {
                     "type": "object",
-                    "default": {
-                        "replicas": 1,
-                        "profile": "small"
-                    },
                     "properties": {
                         "replicas": {
                             "type": "integer",
@@ -559,8 +764,6 @@
         }
     },
     "required": [
-        "name",
-        "version",
         "deploy"
     ],
     "type": "object"
