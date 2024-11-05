@@ -1896,6 +1896,25 @@
       ]
     },
     {
+      "chainId": 1301,
+      "chainName": "Unichain Sepolia",
+      "isTestnet": true,
+      "network": "unichain-sepolia",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/unichain-sepolia",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "chainId": 195,
       "chainName": "X1 Testnet",
       "isTestnet": true,
