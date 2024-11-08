@@ -623,6 +623,49 @@
       ]
     },
     {
+      "chainId": 4158,
+      "chainName": "CrossFi Mainnet",
+      "isTestnet": false,
+      "network": "crossfi-mainnet",
+      "providers": [
+        {
+          "data": [
+            {
+              "name": "blocks",
+              "ranges": [
+                [
+                  1,
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "tx",
+              "ranges": [
+                [
+                  1,
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "logs",
+              "ranges": [
+                [
+                  1,
+                  null
+                ]
+              ]
+            }
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/crossfi-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
       "chainId": 4157,
       "chainName": "CrossFi Testnet",
       "isTestnet": true,
@@ -661,7 +704,7 @@
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/crossfi-testnet",
           "provider": "subsquid",
           "release": "ArrowSquid",
-          "supportTier": 2
+          "supportTier": 1
         }
       ]
     },
