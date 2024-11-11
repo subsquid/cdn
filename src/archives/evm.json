@@ -846,6 +846,7 @@
       "chainId": 1,
       "chainName": "Ethereum",
       "network": "eth-mainnet",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/ethereum.svg",
       "providers": [
         {
           "data": [
