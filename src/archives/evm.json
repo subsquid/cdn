@@ -1885,6 +1885,25 @@
       ]
     },
     {
+      "chainId": 5330,
+      "chainName": "Superseed Mainnet",
+      "isTestnet": false,
+      "network": "superseed-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/superseed-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "chainId": 53302,
       "chainName": "Superseed Sepolia",
       "isTestnet": true,
