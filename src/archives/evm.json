@@ -1815,7 +1815,7 @@
             "chainId": 534352,
             "chainName": "Scroll",
             "network": "scroll-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/scroll.svg",
+            "logoUrl": "https://cdn.subsquid.io/img/networks/scroll.png",
             "providers": [
                 {
                     "data": [
@@ -1836,7 +1836,7 @@
             "chainName": "Scroll Sepolia",
             "isTestnet": true,
             "network": "scroll-sepolia",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/scroll.svg",
+            "logoUrl": "https://cdn.subsquid.io/img/networks/scroll.png",
             "providers": [
                 {
                     "data": [
