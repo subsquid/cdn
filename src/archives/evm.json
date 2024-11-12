@@ -517,7 +517,7 @@
             "chainName": "Blast Sepolia",
             "isTestnet": true,
             "network": "blast-sepolia",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/blast.jpg",
+            "logoUrl": "https://cdn.subsquid.io/img/networks/blast.png",
             "providers": [
                 {
                     "data": [
