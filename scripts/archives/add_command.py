@@ -32,11 +32,17 @@ def _run(parsed_args):
             if Confirm.ask("Datasource supports statediffs?", default=False):
                 datasource_data.append("stateDiffs")
             support_tier = int(Prompt.ask("Support tier", default="2", choices=["1", "2", "3"]))
+            logo_url = Prompt.ask("Logo url (only name if in /img/networks)", default="null")
+            if logo_url == "null":
+                logo_url = None
+            elif not logo_url.startswith("http://") and not logo_url.startswith("https://"):
+                logo_url = "https://cdn.subsquid.io/img/networks/" + logo_url
             entry = {
                 "chainId": int(chain_id) if chain_id.isdecimal() else None,
                 "chainName": hr_name,
                 "isTestnet": chain_testnet,
                 "network": registry_name,
+                "logoUrl": logo_url,
                 "providers": [
                     {
                         "data": datasource_data,

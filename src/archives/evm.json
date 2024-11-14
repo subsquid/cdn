@@ -1,2246 +1,2299 @@
 {
-    "archives": [
-        {
-            "chainId": 16600,
-            "chainName": "0g Testnet",
-            "isTestnet": true,
-            "network": "0g-testnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/0gai.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/0g-testnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 41455,
-            "chainName": "Aleph Zero EVM",
-            "network": "aleph-zero-evm-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/aleph-zero.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/aleph-zero-evm-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 42161,
-            "chainName": "Arbitrum One",
-            "network": "arbitrum",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/arbitrum.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/arbitrum-one",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 1
-                }
-            ]
-        },
-        {
-            "chainId": 42170,
-            "chainName": "Arbitrum Nova",
-            "network": "arbitrum-nova",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/arbitrum-nova.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/arbitrum-nova",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 1
-                }
-            ]
-        },
-        {
-            "chainId": 421614,
-            "chainName": "Arbitrum Sepolia",
-            "isTestnet": true,
-            "network": "arbitrum-sepolia",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/arbitrum.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        {
-                            "name": "traces",
-                            "ranges": [
-                                [
-                                    0,
-                                    55667987
-                                ]
-                            ]
-                        }
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/arbitrum-sepolia",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 10242,
-            "chainName": "Arthera Mainnet",
-            "network": "arthera-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/arthera.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/arthera-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 592,
-            "chainName": "Astar",
-            "network": "astar",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/astar.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/astar-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 3776,
-            "chainName": "Astar zkEVM",
-            "network": "astar-zkevm-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/astar.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/astar-zkevm-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 6038361,
-            "chainName": "Astar zKyoto",
-            "isTestnet": true,
-            "network": "astar-zkyoto",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/astarzk.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/astar-zkyoto",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 43114,
-            "chainName": "Avalanche",
-            "network": "avalanche",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/avax.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/avalanche-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 1
-                }
-            ]
-        },
-        {
-            "chainId": 43113,
-            "chainName": "Avalanche Testnet",
-            "isTestnet": true,
-            "network": "avalanche-testnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/avax.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/avalanche-testnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 1
-                }
-            ]
-        },
-        {
-            "chainId": 8333,
-            "chainName": "B3",
-            "network": "b3-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/b3.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/b3-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 1993,
-            "chainName": "B3 Sepolia",
-            "isTestnet": true,
-            "network": "b3-sepolia",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/b3.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/b3-sepolia",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 8453,
-            "chainName": "Base",
-            "network": "base-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/base.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/base-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 1
-                }
-            ]
-        },
-        {
-            "chainId": 84532,
-            "chainName": "Base Sepolia",
-            "isTestnet": true,
-            "network": "base-sepolia",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/baseTestnet.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/base-sepolia",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 80084,
-            "chainName": "Berachain bArtio",
-            "isTestnet": true,
-            "network": "berachain-bartio",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/berachain.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/berachain-bartio",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 56,
-            "chainName": "Binance",
-            "network": "binance",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/binance.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/binance-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 1
-                }
-            ]
-        },
-        {
-            "chainId": 97,
-            "chainName": "Binance Testnet",
-            "isTestnet": true,
-            "network": "binance-testnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/binance.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/binance-testnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 355110,
-            "chainName": "Bitfinity Mainnet",
-            "isTestnet": false,
-            "network": "bitfinity-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/bitfinity.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/bitfinity-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 355113,
-            "chainName": "Bitfinity Testnet",
-            "isTestnet": true,
-            "network": "bitfinity-testnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/bitfinity.png",
-            "providers": [
-                {
-                    "data": [
-                        {
-                            "name": "blocks",
-                            "ranges": [
-                                [
-                                    2760000,
-                                    null
-                                ]
-                            ]
-                        },
-                        {
-                            "name": "tx",
-                            "ranges": [
-                                [
-                                    2760000,
-                                    null
-                                ]
-                            ]
-                        },
-                        {
-                            "name": "logs",
-                            "ranges": [
-                                [
-                                    2760000,
-                                    null
-                                ]
-                            ]
-                        }
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/bitfinity-testnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 32520,
-            "chainName": "Bitgert",
-            "network": "bitgert-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/brise.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        {
-                            "name": "stateDiffs",
-                            "ranges": [
-                                [
-                                    0,
-                                    4298094
-                                ]
-                            ]
-                        }
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/bitgert-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 64668,
-            "chainName": "Bitgert Testnet",
-            "isTestnet": true,
-            "network": "bitgert-testnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/brise.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/bitgert-testnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 81457,
-            "chainName": "Blast L2",
-            "network": "blast-l2-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/blast.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/blast-l2-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 168587773,
-            "chainName": "Blast Sepolia",
-            "isTestnet": true,
-            "network": "blast-sepolia",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/blast.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/blast-sepolia",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 60808,
-            "chainName": "BOB Mainnet",
-            "network": "bob-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/bob.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/bob-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 7700,
-            "chainName": "Canto",
-            "network": "canto",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/canto.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/canto",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 7701,
-            "chainName": "Canto Testnet",
-            "isTestnet": true,
-            "network": "canto-testnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/canto.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/canto-testnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 44787,
-            "chainName": "Celo Testnet (Alfajores)",
-            "isTestnet": true,
-            "network": "celo-alfajores-testnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/celo.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/celo-alfajores-testnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 42220,
-            "chainName": "Celo Mainnet",
-            "isTestnet": false,
-            "network": "celo-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/celo.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/celo-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 1116,
-            "chainName": "Core Mainnet",
-            "network": "core-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/core.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/core-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 4158,
-            "chainName": "CrossFi Mainnet",
-            "isTestnet": false,
-            "network": "crossfi-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/crossfi.svg",
-            "providers": [
-                {
-                    "data": [
-                        {
-                            "name": "blocks",
-                            "ranges": [
-                                [
-                                    1,
-                                    null
-                                ]
-                            ]
-                        },
-                        {
-                            "name": "tx",
-                            "ranges": [
-                                [
-                                    1,
-                                    null
-                                ]
-                            ]
-                        },
-                        {
-                            "name": "logs",
-                            "ranges": [
-                                [
-                                    1,
-                                    null
-                                ]
-                            ]
-                        }
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/crossfi-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 1
-                }
-            ]
-        },
-        {
-            "chainId": 4157,
-            "chainName": "CrossFi Testnet",
-            "isTestnet": true,
-            "network": "crossfi-testnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/crossfi.svg",
-            "providers": [
-                {
-                    "data": [
-                        {
-                            "name": "blocks",
-                            "ranges": [
-                                [
-                                    1,
-                                    null
-                                ]
-                            ]
-                        },
-                        {
-                            "name": "tx",
-                            "ranges": [
-                                [
-                                    1,
-                                    null
-                                ]
-                            ]
-                        },
-                        {
-                            "name": "logs",
-                            "ranges": [
-                                [
-                                    1,
-                                    null
-                                ]
-                            ]
-                        }
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/crossfi-testnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 1
-                }
-            ]
-        },
-        {
-            "chainId": 7560,
-            "chainName": "Cyber Mainnet",
-            "network": "cyber-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/cyber.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/cyber-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 111557560,
-            "chainName": "Cyberconnect L2 Testnet",
-            "isTestnet": true,
-            "network": "cyberconnect-l2-testnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/cyber.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/cyberconnect-l2-testnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 666666666,
-            "chainName": "Degen Chain",
-            "isTestnet": false,
-            "network": "degen-chain",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/degen.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/degen-chain",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 53935,
-            "chainName": "DFK Chain",
-            "network": "dfk-chain",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/dfk.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/dfk-chain",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 2000,
-            "chainName": "Dogechain",
-            "network": "dogechain-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/dogechain.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/dogechain-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 568,
-            "chainName": "Dogechain Testnet",
-            "isTestnet": true,
-            "network": "dogechain-testnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/dogechain.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/dogechain-testnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 17000,
-            "chainName": "Ethereum Holesky",
-            "isTestnet": true,
-            "network": "eth-holesky",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/ethereum.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/ethereum-holesky",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 1,
-            "chainName": "Ethereum",
-            "network": "eth-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/ethereum.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/ethereum-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 1
-                }
-            ]
-        },
-        {
-            "chainId": 11155111,
-            "chainName": "Ethereum Sepolia",
-            "isTestnet": true,
-            "network": "eth-sepolia",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/ethereum.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/ethereum-sepolia",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 1
-                }
-            ]
-        },
-        {
-            "chainId": 42793,
-            "chainName": "Etherlink Mainnet",
-            "network": "etherlink-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/etherlink.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/etherlink-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 128123,
-            "chainName": "Etherlink Testnet",
-            "isTestnet": true,
-            "network": "etherlink-testnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/etherlink.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/etherlink-testnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 2109,
-            "chainName": "Exosama",
-            "network": "exosama",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/exn.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/exosama",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 250,
-            "chainName": "Fantom",
-            "network": "fantom",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/fantom.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/fantom-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 1
-                }
-            ]
-        },
-        {
-            "chainId": 4002,
-            "chainName": "Fantom Testnet",
-            "isTestnet": true,
-            "network": "fantom-testnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/fantom.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/fantom-testnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 14,
-            "chainName": "Flare",
-            "network": "flare-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/flare.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/flare-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 1625,
-            "chainName": "Gravity",
-            "network": "galxe-gravity",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/gravity.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/galxe-gravity",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 88153591557,
-            "chainName": "Arbitrum Blueberry",
-            "isTestnet": true,
-            "network": "gelato-arbitrum-blueberry",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/gelato-arbitrum-blueberry",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 123420111,
-            "chainName": "OP Celestia Raspberry",
-            "isTestnet": true,
-            "network": "gelato-opcelestia-raspberry",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/gelato-opcelestia-raspberry",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 100,
-            "chainName": "Gnosis",
-            "network": "gnosis-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/gnosis.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/gnosis-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 13371,
-            "chainName": "Immutable zkEVM",
-            "network": "immutable-zkevm-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/immutable.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/immutable-zkevm-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 13473,
-            "chainName": "Immutable zkEVM Testnet",
-            "isTestnet": true,
-            "network": "immutable-zkevm-testnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/immutable.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/immutable-zkevm-testnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 1998,
-            "chainName": "Kyoto Testnet",
-            "isTestnet": true,
-            "network": "kyoto-testnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/kyoto.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/kyoto-testnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 59144,
-            "chainName": "Linea",
-            "network": "linea-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/linea.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/linea-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 1
-                }
-            ]
-        },
-        {
-            "chainId": 169,
-            "chainName": "Manta Pacific",
-            "isTestnet": false,
-            "network": "manta-pacific",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/manta.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/manta-pacific",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 3441006,
-            "chainName": "Manta Pacific Sepolia",
-            "isTestnet": true,
-            "network": "manta-pacific-sepolia",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/manta.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/manta-pacific-sepolia",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 5000,
-            "chainName": "Mantle",
-            "network": "mantle-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/mantle.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/mantle-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 5003,
-            "chainName": "Mantle Sepolia",
-            "isTestnet": true,
-            "network": "mantle-sepolia",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/mantle.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/mantle-sepolia",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 4200,
-            "chainName": "Merlin Mainnet",
-            "network": "merlin-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/merlin.jpg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/merlin-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 686868,
-            "chainName": "Merlin Testnet",
-            "isTestnet": true,
-            "network": "merlin-testnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/won.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/merlin-testnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 1088,
-            "chainName": "Metis",
-            "network": "metis-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/metis.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        {
-                            "name": "traces",
-                            "ranges": [
-                                [
-                                    0,
-                                    16861273
-                                ],
-                                [
-                                    16861287,
-                                    null
-                                ]
-                            ]
-                        }
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/metis-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 34443,
-            "chainName": "Mode Mainnet",
-            "isTestnet": false,
-            "network": "mode-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/mode.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/mode-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 1287,
-            "chainName": "Moonbase Alpha",
-            "isTestnet": true,
-            "network": "moonbase",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/moonbasealpha.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonbase-testnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 1284,
-            "chainName": "Moonbeam",
-            "network": "moonbeam",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/moonbeam.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonbeam-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 1285,
-            "chainName": "Moonriver",
-            "network": "moonriver",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/moonriver.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonriver-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 42225,
-            "chainName": "Naka Chain",
-            "isTestnet": false,
-            "network": "nakachain",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/naka-chain.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/nakachain",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 245022934,
-            "chainName": "Neon EVM Devnet",
-            "isTestnet": true,
-            "network": "neon-devnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/neon.png",
-            "providers": [
-                {
-                    "data": [
-                        {
-                            "name": "blocks",
-                            "ranges": [
-                                [
-                                    177455580,
-                                    null
-                                ]
-                            ]
-                        },
-                        {
-                            "name": "tx",
-                            "ranges": [
-                                [
-                                    177455580,
-                                    null
-                                ]
-                            ]
-                        },
-                        {
-                            "name": "logs",
-                            "ranges": [
-                                [
-                                    177455580,
-                                    null
-                                ]
-                            ]
-                        }
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/neon-devnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 245022926,
-            "chainName": "Neon EVM",
-            "network": "neon-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/neon.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/neon-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 204,
-            "chainName": "opBNB",
-            "network": "opbnb-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/opbnb.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/opbnb-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 5611,
-            "chainName": "opBNB Testnet",
-            "isTestnet": true,
-            "network": "opbnb-testnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/opbnb.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/opbnb-testnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 10,
-            "chainName": "Optimism",
-            "network": "optimism-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/optimism.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        {
-                            "name": "stateDiffs",
-                            "ranges": [
-                                [
-                                    105235063,
-                                    null
-                                ]
-                            ]
-                        }
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/optimism-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 1
-                }
-            ]
-        },
-        {
-            "chainId": 11155420,
-            "chainName": "Optimism Sepolia",
-            "isTestnet": true,
-            "network": "optimism-sepolia",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/optimism.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/optimism-sepolia",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 3338,
-            "chainName": "Peaq",
-            "network": "peaq-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/peaq.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/peaq-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 98865,
-            "chainName": "Plume Mainnet",
-            "isTestnet": false,
-            "network": "plume-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/plume.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/plume-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 1
-                }
-            ]
-        },
-        {
-            "chainId": 98864,
-            "chainName": "Plume Testnet",
-            "isTestnet": true,
-            "network": "plume-testnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/plume.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/plume-testnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 137,
-            "chainName": "Polygon",
-            "network": "polygon",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/polygon.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 1
-                }
-            ]
-        },
-        {
-            "chainId": 80002,
-            "chainName": "Polygon Amoy Testnet",
-            "isTestnet": true,
-            "network": "polygon-amoy-testnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/polygon.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-amoy-testnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 1101,
-            "chainName": "Polygon zkEVM",
-            "network": "polygon-zkevm",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/zkevm.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-zkevm-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 1
-                }
-            ]
-        },
-        {
-            "chainId": 2442,
-            "chainName": "Polygon zkEVM Cardona Testnet",
-            "isTestnet": true,
-            "network": "polygon-zkevm-cardona-testnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/zkevm.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-zkevm-cardona-testnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 97072271,
-            "chainName": "Prom Testnet",
-            "isTestnet": true,
-            "network": "prom-testnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/prom.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/prom-testnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 584548796,
-            "chainName": "Prom Testnet (v2)",
-            "isTestnet": true,
-            "network": "prom-testnet-v2",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/prom.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/prom-testnet-v2",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 157,
-            "chainName": "Puppynet (Shibarium's Testnet)",
-            "isTestnet": true,
-            "network": "puppynet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/shibarium.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/puppynet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 534352,
-            "chainName": "Scroll",
-            "network": "scroll-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/scroll.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/scroll-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 534351,
-            "chainName": "Scroll Sepolia",
-            "isTestnet": true,
-            "network": "scroll-sepolia",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/scroll.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/scroll-sepolia",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 109,
-            "chainName": "Shibarium",
-            "network": "shibarium",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/shibarium.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/shibarium",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 81,
-            "chainName": "Shibuya",
-            "isTestnet": true,
-            "network": "shibuya-testnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/astar.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/shibuya-testnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 336,
-            "chainName": "Shiden",
-            "network": "shiden-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/shiden.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/shiden-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 1482601649,
-            "chainName": "Skale Nebula",
-            "network": "skale-nebula",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/nebula.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/skale-nebula",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 64165,
-            "chainName": "Sonic Testnet",
-            "isTestnet": true,
-            "network": "sonic-testnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/sonic.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/sonic-testnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 93747,
-            "chainName": "StratoVM Sepolia",
-            "isTestnet": true,
-            "network": "stratovm-sepolia",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/stratovm.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/stratovm-sepolia",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 5330,
-            "chainName": "Superseed Mainnet",
-            "isTestnet": false,
-            "network": "superseed-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/superseed.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/superseed-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 53302,
-            "chainName": "Superseed Sepolia",
-            "isTestnet": true,
-            "network": "superseed-sepolia",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/superseed.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/superseed-sepolia",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 167000,
-            "chainName": "Taiko Mainnet",
-            "network": "taiko-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/taiko.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/taiko-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 5678,
-            "chainName": "Tanssi",
-            "network": "tanssi",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/tanssi.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/tanssi",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 1301,
-            "chainName": "Unichain Sepolia",
-            "isTestnet": true,
-            "network": "unichain-sepolia",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/unichain.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/unichain-sepolia",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 195,
-            "chainName": "X1 Testnet",
-            "isTestnet": true,
-            "network": "x1-testnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/xlayer.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/x1-testnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 196,
-            "chainName": "X Layer Mainnet",
-            "network": "xlayer-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/xlayer.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/xlayer-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 195,
-            "chainName": "X Layer Testnet",
-            "isTestnet": true,
-            "network": "xlayer-testnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/xlayer.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/xlayer-testnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 810180,
-            "chainName": "zkLink Nova Mainnet",
-            "isTestnet": false,
-            "network": "zklink-nova-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/zklink-nova.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/zklink-nova-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 324,
-            "chainName": "zkSync",
-            "network": "zksync-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/zksync-era.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        {
-                            "name": "traces",
-                            "ranges": [
-                                [
-                                    15500000,
-                                    null
-                                ]
-                            ]
-                        }
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/zksync-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 1
-                }
-            ]
-        },
-        {
-            "chainId": 300,
-            "chainName": "zkSync Sepolia",
-            "isTestnet": true,
-            "network": "zksync-sepolia",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/zksync-era.svg",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/zksync-sepolia",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 7777777,
-            "chainName": "Zora",
-            "network": "zora-mainnet",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/zora.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs",
-                        "traces",
-                        "stateDiffs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/zora-mainnet",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
-        },
-        {
-            "chainId": 999999999,
-            "chainName": "Zora Sepolia",
-            "isTestnet": true,
-            "network": "zora-sepolia",
-            "logoUrl": "https://cdn.subsquid.io/img/networks/zora-sepolia-testnet.png",
-            "providers": [
-                {
-                    "data": [
-                        "blocks",
-                        "tx",
-                        "logs"
-                    ],
-                    "dataSourceUrl": "https://v2.archive.subsquid.io/network/zora-sepolia",
-                    "provider": "subsquid",
-                    "release": "ArrowSquid",
-                    "supportTier": 2
-                }
-            ]
+  "archives": [
+    {
+      "chainId": 16600,
+      "chainName": "0g Testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/0gai.png",
+      "network": "0g-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/0g-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
-    ]
+      ]
+    },
+    {
+      "chainId": 41455,
+      "chainName": "Aleph Zero EVM",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/aleph-zero.png",
+      "network": "aleph-zero-evm-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/aleph-zero-evm-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 42161,
+      "chainName": "Arbitrum One",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/arbitrum.svg",
+      "network": "arbitrum",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/arbitrum-one",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
+      "chainId": 42170,
+      "chainName": "Arbitrum Nova",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/arbitrum-nova.png",
+      "network": "arbitrum-nova",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/arbitrum-nova",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
+      "chainId": 421614,
+      "chainName": "Arbitrum Sepolia",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/arbitrum.svg",
+      "network": "arbitrum-sepolia",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            {
+              "name": "traces",
+              "ranges": [
+                [
+                  0,
+                  55667987
+                ]
+              ]
+            }
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/arbitrum-sepolia",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 10242,
+      "chainName": "Arthera Mainnet",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/arthera.png",
+      "network": "arthera-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/arthera-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 592,
+      "chainName": "Astar",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/astar.svg",
+      "network": "astar",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/astar-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 3776,
+      "chainName": "Astar zkEVM",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/astar.svg",
+      "network": "astar-zkevm-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/astar-zkevm-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 6038361,
+      "chainName": "Astar zKyoto",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/astarzk.png",
+      "network": "astar-zkyoto",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/astar-zkyoto",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 43114,
+      "chainName": "Avalanche",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/avax.png",
+      "network": "avalanche",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/avalanche-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
+      "chainId": 43113,
+      "chainName": "Avalanche Testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/avax.png",
+      "network": "avalanche-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/avalanche-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
+      "chainId": 8333,
+      "chainName": "B3",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/b3.svg",
+      "network": "b3-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/b3-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 1993,
+      "chainName": "B3 Sepolia",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/b3.svg",
+      "network": "b3-sepolia",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/b3-sepolia",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 8453,
+      "chainName": "Base",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/base.png",
+      "network": "base-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/base-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
+      "chainId": 84532,
+      "chainName": "Base Sepolia",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/baseTestnet.png",
+      "network": "base-sepolia",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/base-sepolia",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 80084,
+      "chainName": "Berachain bArtio",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/berachain.png",
+      "network": "berachain-bartio",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/berachain-bartio",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 56,
+      "chainName": "Binance",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/binance.svg",
+      "network": "binance",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/binance-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
+      "chainId": 97,
+      "chainName": "Binance Testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/binance.svg",
+      "network": "binance-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/binance-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 355110,
+      "chainName": "Bitfinity Mainnet",
+      "isTestnet": false,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/bitfinity.png",
+      "network": "bitfinity-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/bitfinity-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 355113,
+      "chainName": "Bitfinity Testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/bitfinity.png",
+      "network": "bitfinity-testnet",
+      "providers": [
+        {
+          "data": [
+            {
+              "name": "blocks",
+              "ranges": [
+                [
+                  2760000,
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "tx",
+              "ranges": [
+                [
+                  2760000,
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "logs",
+              "ranges": [
+                [
+                  2760000,
+                  null
+                ]
+              ]
+            }
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/bitfinity-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 32520,
+      "chainName": "Bitgert",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/brise.png",
+      "network": "bitgert-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            {
+              "name": "stateDiffs",
+              "ranges": [
+                [
+                  0,
+                  4298094
+                ]
+              ]
+            }
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/bitgert-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 64668,
+      "chainName": "Bitgert Testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/brise.png",
+      "network": "bitgert-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/bitgert-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 81457,
+      "chainName": "Blast L2",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/blast.png",
+      "network": "blast-l2-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/blast-l2-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 168587773,
+      "chainName": "Blast Sepolia",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/blast.png",
+      "network": "blast-sepolia",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/blast-sepolia",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 60808,
+      "chainName": "BOB Mainnet",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/bob.png",
+      "network": "bob-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/bob-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 7700,
+      "chainName": "Canto",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/canto.png",
+      "network": "canto",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/canto",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 7701,
+      "chainName": "Canto Testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/canto.png",
+      "network": "canto-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/canto-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 44787,
+      "chainName": "Celo Testnet (Alfajores)",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/celo.svg",
+      "network": "celo-alfajores-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/celo-alfajores-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 42220,
+      "chainName": "Celo Mainnet",
+      "isTestnet": false,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/celo.svg",
+      "network": "celo-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/celo-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 1116,
+      "chainName": "Core Mainnet",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/core.png",
+      "network": "core-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/core-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 4158,
+      "chainName": "CrossFi Mainnet",
+      "isTestnet": false,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/crossfi.svg",
+      "network": "crossfi-mainnet",
+      "providers": [
+        {
+          "data": [
+            {
+              "name": "blocks",
+              "ranges": [
+                [
+                  1,
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "tx",
+              "ranges": [
+                [
+                  1,
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "logs",
+              "ranges": [
+                [
+                  1,
+                  null
+                ]
+              ]
+            }
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/crossfi-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
+      "chainId": 4157,
+      "chainName": "CrossFi Testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/crossfi.svg",
+      "network": "crossfi-testnet",
+      "providers": [
+        {
+          "data": [
+            {
+              "name": "blocks",
+              "ranges": [
+                [
+                  1,
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "tx",
+              "ranges": [
+                [
+                  1,
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "logs",
+              "ranges": [
+                [
+                  1,
+                  null
+                ]
+              ]
+            }
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/crossfi-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
+      "chainId": 7560,
+      "chainName": "Cyber Mainnet",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/cyber.svg",
+      "network": "cyber-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/cyber-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 111557560,
+      "chainName": "Cyberconnect L2 Testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/cyber.svg",
+      "network": "cyberconnect-l2-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/cyberconnect-l2-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 666666666,
+      "chainName": "Degen Chain",
+      "isTestnet": false,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/degen.svg",
+      "network": "degen-chain",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/degen-chain",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 53935,
+      "chainName": "DFK Chain",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/dfk.png",
+      "network": "dfk-chain",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/dfk-chain",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 2000,
+      "chainName": "Dogechain",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/dogechain.png",
+      "network": "dogechain-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/dogechain-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 568,
+      "chainName": "Dogechain Testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/dogechain.png",
+      "network": "dogechain-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/dogechain-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 17000,
+      "chainName": "Ethereum Holesky",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/ethereum.svg",
+      "network": "eth-holesky",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/ethereum-holesky",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 1,
+      "chainName": "Ethereum",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/ethereum.svg",
+      "network": "eth-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/ethereum-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
+      "chainId": 11155111,
+      "chainName": "Ethereum Sepolia",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/ethereum.svg",
+      "network": "eth-sepolia",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/ethereum-sepolia",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
+      "chainId": 42793,
+      "chainName": "Etherlink Mainnet",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/etherlink.png",
+      "network": "etherlink-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/etherlink-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 128123,
+      "chainName": "Etherlink Testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/etherlink.png",
+      "network": "etherlink-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/etherlink-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 2109,
+      "chainName": "Exosama",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/exn.png",
+      "network": "exosama",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/exosama",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 250,
+      "chainName": "Fantom",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/fantom.png",
+      "network": "fantom",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/fantom-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
+      "chainId": 4002,
+      "chainName": "Fantom Testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/fantom.png",
+      "network": "fantom-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/fantom-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 14,
+      "chainName": "Flare",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/flare.png",
+      "network": "flare-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/flare-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 1625,
+      "chainName": "Gravity",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/gravity.png",
+      "network": "galxe-gravity",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/galxe-gravity",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 88153591557,
+      "chainName": "Arbitrum Blueberry",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/.png",
+      "network": "gelato-arbitrum-blueberry",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/gelato-arbitrum-blueberry",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 123420111,
+      "chainName": "OP Celestia Raspberry",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/.png",
+      "network": "gelato-opcelestia-raspberry",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/gelato-opcelestia-raspberry",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 100,
+      "chainName": "Gnosis",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/gnosis.png",
+      "network": "gnosis-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/gnosis-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 13371,
+      "chainName": "Immutable zkEVM",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/immutable.png",
+      "network": "immutable-zkevm-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/immutable-zkevm-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 13473,
+      "chainName": "Immutable zkEVM Testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/immutable.png",
+      "network": "immutable-zkevm-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/immutable-zkevm-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 1998,
+      "chainName": "Kyoto Testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/kyoto.png",
+      "network": "kyoto-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/kyoto-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 59144,
+      "chainName": "Linea",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/linea.png",
+      "network": "linea-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/linea-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
+      "chainId": 169,
+      "chainName": "Manta Pacific",
+      "isTestnet": false,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/manta.png",
+      "network": "manta-pacific",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/manta-pacific",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 3441006,
+      "chainName": "Manta Pacific Sepolia",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/manta.png",
+      "network": "manta-pacific-sepolia",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/manta-pacific-sepolia",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 5000,
+      "chainName": "Mantle",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/mantle.png",
+      "network": "mantle-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/mantle-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 5003,
+      "chainName": "Mantle Sepolia",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/mantle.png",
+      "network": "mantle-sepolia",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/mantle-sepolia",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 4200,
+      "chainName": "Merlin Mainnet",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/merlin.jpg",
+      "network": "merlin-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/merlin-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 686868,
+      "chainName": "Merlin Testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/won.png",
+      "network": "merlin-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/merlin-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 1088,
+      "chainName": "Metis",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/metis.svg",
+      "network": "metis-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            {
+              "name": "traces",
+              "ranges": [
+                [
+                  0,
+                  16861273
+                ],
+                [
+                  16861287,
+                  null
+                ]
+              ]
+            }
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/metis-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 34443,
+      "chainName": "Mode Mainnet",
+      "isTestnet": false,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/mode.png",
+      "network": "mode-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/mode-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 41454,
+      "chainName": "Monad Devnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/monad.png",
+      "network": "monad-devnet",
+      "providers": [
+        {
+          "data": [
+            {
+              "name": "blocks",
+              "ranges": [
+                [
+                  10161000,
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "tx",
+              "ranges": [
+                [
+                  10161000,
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "logs",
+              "ranges": [
+                [
+                  10161000,
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "traces",
+              "ranges": [
+                [
+                  10161000,
+                  null
+                ]
+              ]
+            }
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/monad-devnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 1287,
+      "chainName": "Moonbase Alpha",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/moonbasealpha.png",
+      "network": "moonbase",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonbase-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 1284,
+      "chainName": "Moonbeam",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/moonbeam.png",
+      "network": "moonbeam",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonbeam-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 1285,
+      "chainName": "Moonriver",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/moonriver.png",
+      "network": "moonriver",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonriver-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 42225,
+      "chainName": "Naka Chain",
+      "isTestnet": false,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/naka-chain.png",
+      "network": "nakachain",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/nakachain",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 245022934,
+      "chainName": "Neon EVM Devnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/neon.png",
+      "network": "neon-devnet",
+      "providers": [
+        {
+          "data": [
+            {
+              "name": "blocks",
+              "ranges": [
+                [
+                  177455580,
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "tx",
+              "ranges": [
+                [
+                  177455580,
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "logs",
+              "ranges": [
+                [
+                  177455580,
+                  null
+                ]
+              ]
+            }
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/neon-devnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 245022926,
+      "chainName": "Neon EVM",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/neon.png",
+      "network": "neon-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/neon-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 204,
+      "chainName": "opBNB",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/opbnb.png",
+      "network": "opbnb-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/opbnb-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 5611,
+      "chainName": "opBNB Testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/opbnb.png",
+      "network": "opbnb-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/opbnb-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 10,
+      "chainName": "Optimism",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/optimism.svg",
+      "network": "optimism-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            {
+              "name": "stateDiffs",
+              "ranges": [
+                [
+                  105235063,
+                  null
+                ]
+              ]
+            }
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/optimism-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
+      "chainId": 11155420,
+      "chainName": "Optimism Sepolia",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/optimism.svg",
+      "network": "optimism-sepolia",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/optimism-sepolia",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 3338,
+      "chainName": "Peaq",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/peaq.png",
+      "network": "peaq-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/peaq-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 98865,
+      "chainName": "Plume Mainnet",
+      "isTestnet": false,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/plume.png",
+      "network": "plume-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/plume-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
+      "chainId": 98864,
+      "chainName": "Plume Testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/plume.png",
+      "network": "plume-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/plume-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 137,
+      "chainName": "Polygon",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/polygon.png",
+      "network": "polygon",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
+      "chainId": 80002,
+      "chainName": "Polygon Amoy Testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/polygon.png",
+      "network": "polygon-amoy-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-amoy-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 1101,
+      "chainName": "Polygon zkEVM",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/zkevm.png",
+      "network": "polygon-zkevm",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-zkevm-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
+      "chainId": 2442,
+      "chainName": "Polygon zkEVM Cardona Testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/zkevm.png",
+      "network": "polygon-zkevm-cardona-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-zkevm-cardona-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 97072271,
+      "chainName": "Prom Testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/prom.png",
+      "network": "prom-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/prom-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 584548796,
+      "chainName": "Prom Testnet (v2)",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/prom.png",
+      "network": "prom-testnet-v2",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/prom-testnet-v2",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 157,
+      "chainName": "Puppynet (Shibarium's Testnet)",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/shibarium.png",
+      "network": "puppynet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/puppynet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 534352,
+      "chainName": "Scroll",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/scroll.png",
+      "network": "scroll-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/scroll-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 534351,
+      "chainName": "Scroll Sepolia",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/scroll.png",
+      "network": "scroll-sepolia",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/scroll-sepolia",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 109,
+      "chainName": "Shibarium",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/shibarium.png",
+      "network": "shibarium",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/shibarium",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 81,
+      "chainName": "Shibuya",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/astar.svg",
+      "network": "shibuya-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/shibuya-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 336,
+      "chainName": "Shiden",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/shiden.png",
+      "network": "shiden-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/shiden-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 1482601649,
+      "chainName": "Skale Nebula",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/nebula.png",
+      "network": "skale-nebula",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/skale-nebula",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 64165,
+      "chainName": "Sonic Testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/sonic.png",
+      "network": "sonic-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/sonic-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 93747,
+      "chainName": "StratoVM Sepolia",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/stratovm.png",
+      "network": "stratovm-sepolia",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/stratovm-sepolia",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 5330,
+      "chainName": "Superseed Mainnet",
+      "isTestnet": false,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/superseed.png",
+      "network": "superseed-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/superseed-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 53302,
+      "chainName": "Superseed Sepolia",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/superseed.png",
+      "network": "superseed-sepolia",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/superseed-sepolia",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 167000,
+      "chainName": "Taiko Mainnet",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/taiko.png",
+      "network": "taiko-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/taiko-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 5678,
+      "chainName": "Tanssi",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/tanssi.png",
+      "network": "tanssi",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/tanssi",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 1301,
+      "chainName": "Unichain Sepolia",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/unichain.svg",
+      "network": "unichain-sepolia",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/unichain-sepolia",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 195,
+      "chainName": "X1 Testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/xlayer.svg",
+      "network": "x1-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/x1-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 196,
+      "chainName": "X Layer Mainnet",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/xlayer.svg",
+      "network": "xlayer-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/xlayer-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 195,
+      "chainName": "X Layer Testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/xlayer.svg",
+      "network": "xlayer-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/xlayer-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 810180,
+      "chainName": "zkLink Nova Mainnet",
+      "isTestnet": false,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/zklink-nova.png",
+      "network": "zklink-nova-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/zklink-nova-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 324,
+      "chainName": "zkSync",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/zksync-era.svg",
+      "network": "zksync-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            {
+              "name": "traces",
+              "ranges": [
+                [
+                  15500000,
+                  null
+                ]
+              ]
+            }
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/zksync-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
+      "chainId": 300,
+      "chainName": "zkSync Sepolia",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/zksync-era.svg",
+      "network": "zksync-sepolia",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/zksync-sepolia",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 7777777,
+      "chainName": "Zora",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/zora.png",
+      "network": "zora-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/zora-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 999999999,
+      "chainName": "Zora Sepolia",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/zora-sepolia-testnet.png",
+      "network": "zora-sepolia",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/zora-sepolia",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    }
+  ]
 }
