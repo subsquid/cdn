@@ -1376,59 +1376,6 @@
       ]
     },
     {
-      "chainId": 41454,
-      "chainName": "Monad Devnet",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/monad.png",
-      "network": "monad-devnet",
-      "providers": [
-        {
-          "data": [
-            {
-              "name": "blocks",
-              "ranges": [
-                [
-                  10161000,
-                  null
-                ]
-              ]
-            },
-            {
-              "name": "tx",
-              "ranges": [
-                [
-                  10161000,
-                  null
-                ]
-              ]
-            },
-            {
-              "name": "logs",
-              "ranges": [
-                [
-                  10161000,
-                  null
-                ]
-              ]
-            },
-            {
-              "name": "traces",
-              "ranges": [
-                [
-                  10161000,
-                  null
-                ]
-              ]
-            }
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/monad-devnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainId": 1287,
       "chainName": "Moonbase Alpha",
       "isTestnet": true,
