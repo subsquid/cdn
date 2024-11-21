@@ -24,9 +24,16 @@ check_deps() {
   fi
 }
 
-
 BOLD=$(tput bold)
 NORMAL=$(tput sgr0)
+
+declare -A RPC_URL
+declare -A L1_RPC_URL
+RPC_URL["tethys"]=https://sepolia-rollup.arbitrum.io/rpc
+L1_RPC_URL["tethys"]=https://eth-sepolia.public.blastapi.io
+RPC_URL["mainnet"]=https://arb1.arbitrum.io/rpc
+L1_RPC_URL["mainnet"]=https://eth-mainnet.public.blastapi.io
+
 
 if [ "$#" -ne 2 ]
 then
@@ -77,6 +84,10 @@ KEY_PATH=${KEY_PATH}
 LISTEN_PORT=${LISTEN_PORT}
 PROMETHEUS_PORT=9090
 NETWORK=${NETWORK}
+# RPC node of the Arbitrum network
+RPC_URL=${RPC_URL[${NETWORK}]}
+# RPC node of the Ethereum network
+L1_RPC_URL=${L1_RPC_URL[${NETWORK}]}
 # The number of chunks downloaded in paralel.
 # You can increase this number if you have a good internet connection.
 CONCURRENT_DOWNLOADS=3
@@ -91,13 +102,12 @@ RUST_LOG=info
 # You probably shouldn't change the values below
 UID=$(id -u)
 GID=$(id -g)
-P2P_LISTEN_ADDRS=/ip4/0.0.0.0/udp/${LISTEN_PORT}/quic-v1
 P2P_PUBLIC_ADDRS=${PUBLIC_ADDR:-}
 EOF
 
 echo "Config saved to '.env'"
 
-echo "Downloading docker-compose.yaml and .${NETWORK}.env"
-curl -sSf -O "https://cdn.subsquid.io/worker/docker-compose.yaml" -O "https://cdn.subsquid.io/worker/.${NETWORK}.env"
+echo "Downloading docker-compose.yaml"
+curl -sSf -O "https://cdn.subsquid.io/worker/docker-compose.yaml"
 
 echo "Your peer ID is: ${BOLD}${PEER_ID}${NORMAL}. Now you can register it on chain."
