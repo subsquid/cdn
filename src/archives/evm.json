@@ -1456,7 +1456,7 @@
       ]
     },
     {
-      "chainId": 245022934,
+      "chainId": 245022926,
       "chainName": "Neon EVM Devnet",
       "isTestnet": true,
       "logoUrl": "https://cdn.subsquid.io/img/networks/neon.png",
@@ -1500,7 +1500,7 @@
       ]
     },
     {
-      "chainId": 245022926,
+      "chainId": 245022934,
       "chainName": "Neon EVM",
       "logoUrl": "https://cdn.subsquid.io/img/networks/neon.png",
       "network": "neon-mainnet",
@@ -1743,6 +1743,26 @@
             "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-zkevm-cardona-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 227,
+      "chainName": "Prom Mainnet",
+      "isTestnet": false,
+      "network": "prom-mainnet",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/prom.png",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/prom-mainnet",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
