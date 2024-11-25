@@ -16,9 +16,9 @@ def update_parser(parser: argparse.ArgumentParser):
 
 def _run(parsed_args):
     console = Console()
-    registry_name = Prompt.ask("Registry name")
     hr_name = Prompt.ask("Human readable name")
     data_source_id = Prompt.ask("Data source identifier")
+    registry_name = Prompt.ask("Registry name", default=data_source_id)
     entry = {}
     match parsed_args.variant:
         case "evm":
@@ -38,6 +38,7 @@ def _run(parsed_args):
             elif not logo_url.startswith("http://") and not logo_url.startswith("https://"):
                 logo_url = "https://cdn.subsquid.io/img/networks/" + logo_url
             entry = {
+                "id": data_source_id,
                 "chainId": int(chain_id) if chain_id.isdecimal() else None,
                 "chainName": hr_name,
                 "isTestnet": chain_testnet,
@@ -59,6 +60,7 @@ def _run(parsed_args):
             genesis_hash = Prompt.ask("Genesis hash", default="")
             support_tier = int(Prompt.ask("Support tier", default="2", choices=["1", "2", "3"]))
             entry = {
+                "id": data_source_id,
                 "chainName": hr_name,
                 "chainSS58Prefix": (
                     int(chain_ss58_prefix) if chain_ss58_prefix.isdecimal() else None

@@ -1,6 +1,7 @@
 {
   "archives": [
     {
+      "id": "acala",
       "chainName": "Acala",
       "chainSS58Prefix": 10,
       "genesisHash": "0xfc41b9bd8ef8fe53d58c7ea67c794c7ec9a73daf05e6d54b14ff6342c99ba64c",
@@ -21,6 +22,7 @@
       ]
     },
     {
+      "id": "acurast-canary",
       "chainName": "Acurast Canary",
       "chainSS58Prefix": 42,
       "genesis_hash": "0xce7681fb12aa8f7265d229a9074be0ea1d5e99b53eedcec2deade43857901808",
@@ -41,6 +43,7 @@
       ]
     },
     {
+      "id": "agung",
       "chainName": "Agung",
       "chainSS58Prefix": null,
       "genesisHash": "0xf496028047ba9e394a575e5d2d93828360d35a4c2dade61efff0de309021909f",
@@ -61,6 +64,7 @@
       ]
     },
     {
+      "id": "aleph-zero",
       "chainName": "Aleph Zero",
       "chainSS58Prefix": 42,
       "genesisHash": "0x70255b4d28de0fc4e1a193d7e175ad1ccef431598211c55538f1018651a0344e",
@@ -81,6 +85,7 @@
       ]
     },
     {
+      "id": "aleph-zero-testnet",
       "chainName": "Aleph Zero Testnet",
       "chainSS58Prefix": null,
       "genesisHash": "0x05d5279c52c484cc80396535a316add7d47b1c5b9e0398dd1f584149341460c5",
@@ -102,6 +107,7 @@
       ]
     },
     {
+      "id": "amplitude",
       "chainName": "Amplitude",
       "chainSS58Prefix": 57,
       "genesisHash": "0xcceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
@@ -122,6 +128,7 @@
       ]
     },
     {
+      "id": "asset-hub-kusama",
       "chainName": "Asset Hub Kusama",
       "chainSS58Prefix": 2,
       "genesisHash": "0x48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
@@ -142,6 +149,7 @@
       ]
     },
     {
+      "id": "asset-hub-polkadot",
       "chainName": "Asset Hub Polkadot",
       "chainSS58Prefix": 0,
       "genesisHash": "0x68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
@@ -162,6 +170,7 @@
       ]
     },
     {
+      "id": "asset-hub-rococo",
       "chainName": "Asset Hub Rococo",
       "chainSS58Prefix": null,
       "genesisHash": "0x7c34d42fc815d392057c78b49f2755c753440ccd38bcb0405b3bcfb601d08734",
@@ -182,6 +191,7 @@
       ]
     },
     {
+      "id": "astar-substrate",
       "chainName": "Astar",
       "chainSS58Prefix": 5,
       "genesisHash": "0x9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
@@ -202,6 +212,7 @@
       ]
     },
     {
+      "id": "avail",
       "chainName": "Avail Mainnet",
       "chainSS58Prefix": null,
       "genesis_hash": "0x128ea318539862c0a06b745981300d527c1041c6f3388a8c49565559e3ea3d10",
@@ -222,6 +233,7 @@
       ]
     },
     {
+      "id": "basilisk",
       "chainName": "Basilisk",
       "chainSS58Prefix": null,
       "genesisHash": "0xa85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
@@ -242,6 +254,7 @@
       ]
     },
     {
+      "id": "bifrost-kusama",
       "chainName": "Bifrost Kusama",
       "chainSS58Prefix": 6,
       "genesisHash": "0x9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
@@ -262,6 +275,7 @@
       ]
     },
     {
+      "id": "bifrost-polkadot",
       "chainName": "Bifrost Polkadot",
       "chainSS58Prefix": 6,
       "genesisHash": "0x262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
@@ -282,6 +296,7 @@
       ]
     },
     {
+      "id": "bittensor",
       "chainName": "Bittensor",
       "chainSS58Prefix": 42,
       "genesis_hash": "0x2f0555cc76fc2840a25a6ea3b9637146806f1f44b090c175ffde2a7e5ab36c03",
@@ -302,6 +317,7 @@
       ]
     },
     {
+      "id": "bittensor-testnet",
       "chainName": "Bittensor Testnet",
       "chainSS58Prefix": 42,
       "genesis_hash": "0x8f9cf856bf558a14440e75569c9e58594757048d7b3a84b5d25f6bd978263105",
@@ -323,6 +339,7 @@
       ]
     },
     {
+      "id": "bridge-hub-kusama",
       "chainName": "Bridge Hub Kusama",
       "chainSS58Prefix": 2,
       "genesisHash": "0x00dcb981df86429de8bbacf9803401f09485366c44efbf53af9ecfab03adc7e5",
@@ -343,6 +360,7 @@
       ]
     },
     {
+      "id": "bridge-hub-polkadot",
       "chainName": "Bridge Hub Polkadot",
       "chainSS58Prefix": 0,
       "genesisHash": "0xdcf691b5a3fbe24adc99ddc959c0561b973e329b1aef4c4b22e7bb2ddecb4464",
@@ -363,6 +381,7 @@
       ]
     },
     {
+      "id": "bridge-hub-rococo",
       "chainName": "Bridge Hub Rococo",
       "chainSS58Prefix": 42,
       "genesisHash": "0x6de3dc58adbc525bad4ae201a8660c5be8949e10308457b176510c72a413f3a3",
@@ -383,6 +402,7 @@
       ]
     },
     {
+      "id": "bridge-hub-westend",
       "chainName": "Bridge Hub Westend",
       "chainSS58Prefix": null,
       "genesisHash": "0x0441383e31d1266a92b4cb2ddd4c2e3661ac476996db7e5844c52433b81fe782",
@@ -403,6 +423,7 @@
       ]
     },
     {
+      "id": "centrifuge",
       "chainName": "Centrifuge",
       "chainSS58Prefix": null,
       "genesisHash": "0xb3db41421702df9a7fcac62b53ffeac85f7853cc4e689e0b93aeb3db18c09d82",
@@ -423,6 +444,7 @@
       ]
     },
     {
+      "id": "cere",
       "chainName": "Cere",
       "chainSS58Prefix": null,
       "genesisHash": "0x81443836a9a24caaa23f1241897d1235717535711d1d3fe24eae4fdc942c092c",
@@ -443,6 +465,7 @@
       ]
     },
     {
+      "id": "chainflip",
       "chainName": "Chainfliip",
       "chainSS58Prefix": 2112,
       "genesisHash": "0x8b8c140b0af9db70686583e3f6bf2a59052bfe9584b97d20c45068281e976eb9",
@@ -463,6 +486,7 @@
       ]
     },
     {
+      "id": "clover",
       "chainName": "Clover",
       "chainSS58Prefix": null,
       "genesisHash": "0xe923f1773f4197a862cb4fc4a562f93585b26131dadbc943d524a82bbeecd2eb",
@@ -483,6 +507,7 @@
       ]
     },
     {
+      "id": "collectives-polkadot",
       "chainName": "Collectives Polkadot",
       "chainSS58Prefix": 0,
       "genesisHash": "0x46ee89aa2eedd13e988962630ec9fb7565964cf5023bb351f2b6b25c1b68b0b2",
@@ -503,6 +528,7 @@
       ]
     },
     {
+      "id": "collectives-westend",
       "chainName": "Collectives Westend",
       "chainSS58Prefix": null,
       "genesisHash": "0x713daf193a6301583ff467be736da27ef0a72711b248927ba413f573d2b38e44",
@@ -523,6 +549,7 @@
       ]
     },
     {
+      "id": "darwinia-crab",
       "chainName": "Darwinia Crab",
       "chainSS58Prefix": null,
       "genesisHash": "0x86e49c195aeae7c5c4a86ced251f1a28c67b3c35d8289c387ede1776cdd88b24",
@@ -543,6 +570,7 @@
       ]
     },
     {
+      "id": "crust",
       "chainName": "Crust",
       "chainSS58Prefix": 66,
       "genesisHash": "0x8b404e7ed8789d813982b9cb4c8b664c05b3fbf433309f603af014ec9ce56a8c",
@@ -563,6 +591,7 @@
       ]
     },
     {
+      "id": "dancebox",
       "chainName": "Dancebox",
       "chainSS58Prefix": 42,
       "genesisHash": "0x27aafd88e5921f5d5c6aebcd728dacbbf5c2a37f63e2eda301f8e0def01c43ea",
@@ -583,6 +612,7 @@
       ]
     },
     {
+      "id": "darwinia",
       "chainName": "Darwinia",
       "chainSS58Prefix": null,
       "genesisHash": "0xf0b8924b12e8108550d28870bc03f7b45a947e1b2b9abf81bfb0b89ecb60570e",
@@ -603,6 +633,7 @@
       ]
     },
     {
+      "id": "data-avail",
       "chainName": "Data Avail (Avail Goldberg)",
       "chainSS58Prefix": null,
       "genesisHash": "",
@@ -623,6 +654,7 @@
       ]
     },
     {
+      "id": "eden",
       "chainName": "Eden",
       "chainSS58Prefix": 37,
       "genesisHash": "0x97da7ede98d7bad4e36b4d734b6055425a3be036da2a332ea5a7037656427a21",
@@ -643,6 +675,7 @@
       ]
     },
     {
+      "id": "enjin-canary-matrix",
       "chainName": "Enjin Canary Matrix",
       "chainSS58Prefix": 9030,
       "genesis_hash": "0xa37725fd8943d2a524cb7ecc65da438f9fa644db78ba24dcd0003e2f95645e8f",
@@ -663,6 +696,7 @@
       ]
     },
     {
+      "id": "enjin-matrix",
       "chainName": "Enjin Matrix",
       "chainSS58Prefix": 1110,
       "genesisHash": "0x3af4ff48ec76d2efc8476730f423ac07e25ad48f5f4c9dc39c778b164d808615",
@@ -683,6 +717,7 @@
       ]
     },
     {
+      "id": "enjin-relay",
       "chainName": "Enjin Relay",
       "chainSS58Prefix": 2135,
       "genesis_hash": "0xd8761d3c88f26dc12875c00d3165f7d67243d56fc85b4cf19937601a7916e5a9",
@@ -704,6 +739,7 @@
       ]
     },
     {
+      "id": "equilibrium",
       "chainName": "Equilibrium",
       "chainSS58Prefix": 68,
       "genesisHash": "0x89d3ec46d2fb43ef5a9713833373d5ea666b092fa8fd68fbc34596036571b907",
@@ -724,6 +760,7 @@
       ]
     },
     {
+      "id": "foucoco",
       "chainName": "Foucoco",
       "chainSS58Prefix": 57,
       "genesisHash": "0xa8d080b07f9c84465aeb9576db5a7838bcbca3ffb78dbfd7d4b56acafc1f29d1",
@@ -744,6 +781,7 @@
       ]
     },
     {
+      "id": "frequency",
       "chainName": "Frequency",
       "chainSS58Prefix": 90,
       "genesisHash": "0x4a587bf17a404e3572747add7aab7bbe56e805a5479c6c436f07f36fcc8d3ae1",
@@ -764,6 +802,7 @@
       ]
     },
     {
+      "id": "gemini-3h",
       "chainName": "Gemini 3h",
       "chainSS58Prefix": 2254,
       "genesis_hash": "0x0c121c75f4ef450f40619e1fca9d1e8e7fbabc42c895bc4790801e85d5a91c34",
@@ -784,6 +823,7 @@
       ]
     },
     {
+      "id": "hydradx",
       "chainName": "HydraDX",
       "chainSS58Prefix": null,
       "genesisHash": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
@@ -804,6 +844,7 @@
       ]
     },
     {
+      "id": "integritee",
       "chainName": "Integritee Network",
       "chainSS58Prefix": 13,
       "genesisHash": "0xcdedc8eadbfa209d3f207bba541e57c3c58a667b05a2e1d1e86353c9000758da",
@@ -824,6 +865,7 @@
       ]
     },
     {
+      "id": "interlay",
       "chainName": "Interlay",
       "chainSS58Prefix": 2032,
       "genesisHash": "0xbf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
@@ -844,6 +886,7 @@
       ]
     },
     {
+      "id": "invarch-parachain",
       "chainName": "Invarch Parachain",
       "chainSS58Prefix": 117,
       "genesisHash": "0x31a7d8914fb31c249b972f18c115f1e22b4b039abbcb03c73b6774c5642f9efe",
@@ -864,6 +907,7 @@
       ]
     },
     {
+      "id": "invarch-tinkernet",
       "chainName": "Invarch Tinkernet",
       "chainSS58Prefix": 117,
       "genesisHash": "0xd42e9606a995dfe433dc7955dc2a70f495f350f373daa200098ae84437816ad2",
@@ -884,6 +928,7 @@
       ]
     },
     {
+      "id": "joystream",
       "chainName": "Joystream",
       "chainSS58Prefix": 126,
       "genesisHash": "0x6b5e488e0fa8f9821110d5c13f4c468abcd43ce5e297e62b34c53c3346465956",
@@ -904,6 +949,7 @@
       ]
     },
     {
+      "id": "karura",
       "chainName": "Karura",
       "chainSS58Prefix": 8,
       "genesisHash": "0xbaf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
@@ -924,6 +970,7 @@
       ]
     },
     {
+      "id": "khala",
       "chainName": "Khala",
       "chainSS58Prefix": 30,
       "genesisHash": "0xd43540ba6d3eb4897c28a77d48cb5b729fea37603cbbfc7a86a73b72adb3be8d",
@@ -944,6 +991,7 @@
       ]
     },
     {
+      "id": "kilt",
       "chainName": "Kilt",
       "chainSS58Prefix": 38,
       "genesisHash": "0x411f057b9107718c9624d6aa4a3f23c1653898297f3d4d529d9bb6511a39dd21",
@@ -964,6 +1012,7 @@
       ]
     },
     {
+      "id": "kintsugi",
       "chainName": "Kintsugi",
       "chainSS58Prefix": 2092,
       "genesisHash": "0x9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
@@ -984,6 +1033,7 @@
       ]
     },
     {
+      "id": "kusama",
       "chainName": "Kusama",
       "chainSS58Prefix": 2,
       "genesisHash": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
@@ -1004,6 +1054,7 @@
       ]
     },
     {
+      "id": "litentry",
       "chainName": "Litentry",
       "chainSS58Prefix": 31,
       "genesisHash": "0x2fc8bb6ed7c0051bdcf4866c322ed32b6276572713607e3297ccf411b8f14aa9",
@@ -1024,6 +1075,7 @@
       ]
     },
     {
+      "id": "moonbase-substrate",
       "chainName": "Moonbase",
       "chainSS58Prefix": 1287,
       "genesisHash": "0x91bc6e169807aaa54802737e1c504b2577d4fafedd5a02c10293b1cd60e39527",
@@ -1044,6 +1096,7 @@
       ]
     },
     {
+      "id": "moonbeam-substrate",
       "chainName": "Moonbeam",
       "chainSS58Prefix": 1284,
       "genesisHash": "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
@@ -1064,6 +1117,7 @@
       ]
     },
     {
+      "id": "moonriver-substrate",
       "chainName": "Moonriver",
       "chainSS58Prefix": 1285,
       "genesisHash": "0x401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
@@ -1084,6 +1138,7 @@
       ]
     },
     {
+      "id": "paseo",
       "chainName": "Paseo",
       "chainSS58Prefix": 42,
       "genesisHash": "0x77afd6190f1554ad45fd0d31aee62aacc33c6db0ea801129acb813f913e0764f",
@@ -1104,6 +1159,7 @@
       ]
     },
     {
+      "id": "peaq-mainnet-substrate",
       "chainName": "Peaq",
       "chainSS58Prefix": null,
       "genesisHash": "0xd2a5d385932d1f650dae03ef8e2748983779ee342c614f80854d32b8cd8fa48c",
@@ -1124,6 +1180,7 @@
       ]
     },
     {
+      "id": "pendulum",
       "chainName": "Pendulum",
       "chainSS58Prefix": 56,
       "genesisHash": "0x5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
@@ -1144,6 +1201,7 @@
       ]
     },
     {
+      "id": "people-chain",
       "chainName": "People Chain",
       "chainSS58Prefix": null,
       "genesis_hash": "0x67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008",
@@ -1165,6 +1223,7 @@
       ]
     },
     {
+      "id": "phala",
       "chainName": "Phala",
       "chainSS58Prefix": 30,
       "genesisHash": "0x1bb969d85965e4bb5a651abbedf21a54b6b31a21f66b5401cc3f1e286268d736",
@@ -1185,6 +1244,7 @@
       ]
     },
     {
+      "id": "phala-testnet",
       "chainName": "Phala Testnet",
       "chainSS58Prefix": 30,
       "genesisHash": "0xd9b288f9083f852f2729af58476b82b04bc9ed7e07d705614a843c93460974b2",
@@ -1206,6 +1266,7 @@
       ]
     },
     {
+      "id": "picasso",
       "chainName": "Picasso",
       "chainSS58Prefix": 49,
       "genesisHash": "0x6811a339673c9daa897944dcdac99c6e2939cc88245ed21951a0a3c9a2be75bc",
@@ -1226,6 +1287,7 @@
       ]
     },
     {
+      "id": "polimec",
       "chainName": "Polimec",
       "chainSS58Prefix": 41,
       "genesisHash": "0x7eb9354488318e7549c722669dcbdcdc526f1fef1420e7944667212f3601fdbd",
@@ -1246,6 +1308,7 @@
       ]
     },
     {
+      "id": "polkadex",
       "chainName": "Polkadex",
       "chainSS58Prefix": 88,
       "genesisHash": "0x3920bcb4960a1eef5580cd5367ff3f430eef052774f78468852f7b9cb39f8a3c",
@@ -1266,6 +1329,7 @@
       ]
     },
     {
+      "id": "polkadot",
       "chainName": "Polkadot",
       "chainSS58Prefix": 0,
       "genesisHash": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
@@ -1286,6 +1350,7 @@
       ]
     },
     {
+      "id": "polymesh",
       "chainName": "Polymesh",
       "chainSS58Prefix": 12,
       "genesisHash": "0x6fbd74e5e1d0a61d52ccfe9d4adaed16dd3a7caa37c6bc4d0c2fa12e8b2f4063",
@@ -1306,6 +1371,7 @@
       ]
     },
     {
+      "id": "reef",
       "chainName": "Reef",
       "chainSS58Prefix": 42,
       "genesisHash": "0x7834781d38e4798d548e34ec947d19deea29df148a7bf32484b7b24dacf8d4b7",
@@ -1326,6 +1392,7 @@
       ]
     },
     {
+      "id": "reef-testnet",
       "chainName": "Reef Testnet",
       "chainSS58Prefix": 42,
       "genesisHash": "0xb414a8602b2251fa538d38a9322391500bd0324bc7ac6048845d57c37dd83fe6",
@@ -1347,6 +1414,7 @@
       ]
     },
     {
+      "id": "robonomics",
       "chainName": "Robonomics",
       "chainSS58Prefix": 32,
       "genesisHash": "0x631ccc82a078481584041656af292834e1ae6daab61d2875b4dd0c14bb9b17bc",
@@ -1367,6 +1435,7 @@
       ]
     },
     {
+      "id": "rococo",
       "chainName": "Rococo",
       "chainSS58Prefix": 42,
       "genesisHash": "0x6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
@@ -1387,6 +1456,7 @@
       ]
     },
     {
+      "id": "rolimec",
       "chainName": "Rolimec",
       "chainSS58Prefix": 41,
       "genesisHash": "0x7bbb72faf3d6d997ebe622a4e0ebfb6fdacf905b6141c86a3122cd479213a8d8",
@@ -1407,6 +1477,7 @@
       ]
     },
     {
+      "id": "shibuya-substrate",
       "chainName": "Shibuya",
       "chainSS58Prefix": null,
       "genesis_hash": "0xddb89973361a170839f80f152d2e9e38a376a5a7eccefcade763f46a8e567019",
@@ -1428,6 +1499,7 @@
       ]
     },
     {
+      "id": "shiden-substrate",
       "chainName": "Shiden",
       "chainSS58Prefix": 5,
       "genesisHash": "0xf1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
@@ -1448,6 +1520,7 @@
       ]
     },
     {
+      "id": "sora-mainnet",
       "chainName": "Sora",
       "chainSS58Prefix": 69,
       "genesisHash": "0x7e4e32d0feafd4f9c9414b0be86373f9a1efa904809b683453a9af6856d38ad5",
@@ -1468,6 +1541,7 @@
       ]
     },
     {
+      "id": "subsocial-parachain",
       "chainName": "Subsocial Parachain",
       "chainSS58Prefix": 28,
       "genesisHash": "0x4a12be580bb959937a1c7a61d5cf24428ed67fa571974b4007645d1886e7c89f",
@@ -1488,6 +1562,7 @@
       ]
     },
     {
+      "id": "ternoa",
       "chainName": "Ternoa",
       "chainSS58Prefix": null,
       "genesisHash": "0x6859c81ca95ef624c9dfe4dc6e3381c33e5d6509e35e147092bfbc780f777c4e",
@@ -1508,6 +1583,7 @@
       ]
     },
     {
+      "id": "turing-mainnet",
       "chainName": "Turing",
       "chainSS58Prefix": 51,
       "genesis_hash": "0x0f62b701fb12d02237a33b84818c11f621653d2b1614c777973babf4652b535d",
@@ -1528,6 +1604,7 @@
       ]
     },
     {
+      "id": "turing-avail",
       "chainName": "Turing Avail",
       "chainSS58Prefix": null,
       "genesis_hash": "0xd3d2f3a3495dc597434a99d7d449ebad6616db45e4e4f178f31cc6fa14378b70",
@@ -1548,6 +1625,7 @@
       ]
     },
     {
+      "id": "vara",
       "chainName": "Vara",
       "chainSS58Prefix": 137,
       "genesisHash": "0xfe1b4c55fd4d668101126434206571a7838a8b6b93a6d1b95d607e78e6c53763",
@@ -1568,6 +1646,7 @@
       ]
     },
     {
+      "id": "vara-testnet",
       "chainName": "Vara Testnet",
       "chainSS58Prefix": 137,
       "genesisHash": "0x525639f713f397dcf839bd022cd821f367ebcf179de7b9253531f8adbe5436d6",
@@ -1589,6 +1668,7 @@
       ]
     },
     {
+      "id": "westend",
       "chainName": "Westend",
       "chainSS58Prefix": 42,
       "genesisHash": "0xe143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
@@ -1609,6 +1689,7 @@
       ]
     },
     {
+      "id": "zeitgeist",
       "chainName": "Zeitgeist",
       "chainSS58Prefix": 73,
       "genesisHash": "0x1bf2a2ecb4a868de66ea8610f2ce7c8c43706561b6476031315f6640fe38e060",
@@ -1629,6 +1710,7 @@
       ]
     },
     {
+      "id": "zeitgeist-testnet",
       "chainName": "Zeitgeist Testnet",
       "chainSS58Prefix": 73,
       "genesisHash": "0xb90cd3a37b4793c6494b78962986f4f6ed3ec2eda91a6b84fd8457d24f606b9c",
@@ -1650,6 +1732,7 @@
       ]
     },
     {
+      "id": "zkverify-testnet",
       "chainName": "zkVerify Testnet",
       "chainSS58Prefix": null,
       "genesis_hash": "",
