@@ -1,6 +1,7 @@
 {
   "archives": [
     {
+      "id": "0g-testnet",
       "chainId": 16600,
       "chainName": "0g Testnet",
       "isTestnet": true,
@@ -21,6 +22,7 @@
       ]
     },
     {
+      "id": "aleph-zero-evm-mainnet",
       "chainId": 41455,
       "chainName": "Aleph Zero EVM",
       "logoUrl": "https://cdn.subsquid.io/img/networks/aleph-zero.png",
@@ -42,6 +44,7 @@
       ]
     },
     {
+      "id": "arbitrum-one",
       "chainId": 42161,
       "chainName": "Arbitrum One",
       "logoUrl": "https://cdn.subsquid.io/img/networks/arbitrum.svg",
@@ -61,6 +64,7 @@
       ]
     },
     {
+      "id": "arbitrum-nova",
       "chainId": 42170,
       "chainName": "Arbitrum Nova",
       "logoUrl": "https://cdn.subsquid.io/img/networks/arbitrum-nova.png",
@@ -82,6 +86,7 @@
       ]
     },
     {
+      "id": "arbitrum-sepolia",
       "chainId": 421614,
       "chainName": "Arbitrum Sepolia",
       "isTestnet": true,
@@ -111,6 +116,7 @@
       ]
     },
     {
+      "id": "arthera-mainnet",
       "chainId": 10242,
       "chainName": "Arthera Mainnet",
       "logoUrl": "https://cdn.subsquid.io/img/networks/arthera.png",
@@ -132,6 +138,7 @@
       ]
     },
     {
+      "id": "astar-mainnet",
       "chainId": 592,
       "chainName": "Astar",
       "logoUrl": "https://cdn.subsquid.io/img/networks/astar.svg",
@@ -151,6 +158,7 @@
       ]
     },
     {
+      "id": "astar-zkevm-mainnet",
       "chainId": 3776,
       "chainName": "Astar zkEVM",
       "logoUrl": "https://cdn.subsquid.io/img/networks/astar.svg",
@@ -170,6 +178,7 @@
       ]
     },
     {
+      "id": "astar-zkyoto",
       "chainId": 6038361,
       "chainName": "Astar zKyoto",
       "isTestnet": true,
@@ -190,6 +199,7 @@
       ]
     },
     {
+      "id": "avalanche-mainnet",
       "chainId": 43114,
       "chainName": "Avalanche",
       "logoUrl": "https://cdn.subsquid.io/img/networks/avax.png",
@@ -209,6 +219,7 @@
       ]
     },
     {
+      "id": "avalanche-testnet",
       "chainId": 43113,
       "chainName": "Avalanche Testnet",
       "isTestnet": true,
@@ -229,6 +240,7 @@
       ]
     },
     {
+      "id": "b3-mainnet",
       "chainId": 8333,
       "chainName": "B3",
       "logoUrl": "https://cdn.subsquid.io/img/networks/b3.svg",
@@ -250,6 +262,7 @@
       ]
     },
     {
+      "id": "b3-sepolia",
       "chainId": 1993,
       "chainName": "B3 Sepolia",
       "isTestnet": true,
@@ -272,6 +285,7 @@
       ]
     },
     {
+      "id": "base-mainnet",
       "chainId": 8453,
       "chainName": "Base",
       "logoUrl": "https://cdn.subsquid.io/img/networks/base.png",
@@ -293,6 +307,7 @@
       ]
     },
     {
+      "id": "base-sepolia",
       "chainId": 84532,
       "chainName": "Base Sepolia",
       "isTestnet": true,
@@ -315,6 +330,7 @@
       ]
     },
     {
+      "id": "berachain-bartio",
       "chainId": 80084,
       "chainName": "Berachain bArtio",
       "isTestnet": true,
@@ -337,6 +353,7 @@
       ]
     },
     {
+      "id": "binance-mainnet",
       "chainId": 56,
       "chainName": "Binance",
       "logoUrl": "https://cdn.subsquid.io/img/networks/binance.svg",
@@ -358,6 +375,7 @@
       ]
     },
     {
+      "id": "binance-testnet",
       "chainId": 97,
       "chainName": "Binance Testnet",
       "isTestnet": true,
@@ -378,6 +396,7 @@
       ]
     },
     {
+      "id": "bitfinity-mainnet",
       "chainId": 355110,
       "chainName": "Bitfinity Mainnet",
       "isTestnet": false,
@@ -398,6 +417,7 @@
       ]
     },
     {
+      "id": "bitfinity-testnet",
       "chainId": 355113,
       "chainName": "Bitfinity Testnet",
       "isTestnet": true,
@@ -442,6 +462,7 @@
       ]
     },
     {
+      "id": "bitgert-mainnet",
       "chainId": 32520,
       "chainName": "Bitgert",
       "logoUrl": "https://cdn.subsquid.io/img/networks/brise.png",
@@ -471,6 +492,7 @@
       ]
     },
     {
+      "id": "bitgert-testnet",
       "chainId": 64668,
       "chainName": "Bitgert Testnet",
       "isTestnet": true,
@@ -492,6 +514,7 @@
       ]
     },
     {
+      "id": "blast-l2-mainnet",
       "chainId": 81457,
       "chainName": "Blast L2",
       "logoUrl": "https://cdn.subsquid.io/img/networks/blast.png",
@@ -513,6 +536,7 @@
       ]
     },
     {
+      "id": "blast-sepolia",
       "chainId": 168587773,
       "chainName": "Blast Sepolia",
       "isTestnet": true,
@@ -533,6 +557,7 @@
       ]
     },
     {
+      "id": "bob-mainnet",
       "chainId": 60808,
       "chainName": "BOB Mainnet",
       "logoUrl": "https://cdn.subsquid.io/img/networks/bob.png",
@@ -554,6 +579,7 @@
       ]
     },
     {
+      "id": "canto",
       "chainId": 7700,
       "chainName": "Canto",
       "logoUrl": "https://cdn.subsquid.io/img/networks/canto.png",
@@ -573,6 +599,7 @@
       ]
     },
     {
+      "id": "canto-testnet",
       "chainId": 7701,
       "chainName": "Canto Testnet",
       "isTestnet": true,
@@ -593,6 +620,7 @@
       ]
     },
     {
+      "id": "celo-alfajores-testnet",
       "chainId": 44787,
       "chainName": "Celo Testnet (Alfajores)",
       "isTestnet": true,
@@ -613,6 +641,7 @@
       ]
     },
     {
+      "id": "celo-mainnet",
       "chainId": 42220,
       "chainName": "Celo Mainnet",
       "isTestnet": false,
@@ -633,6 +662,7 @@
       ]
     },
     {
+      "id": "core-mainnet",
       "chainId": 1116,
       "chainName": "Core Mainnet",
       "logoUrl": "https://cdn.subsquid.io/img/networks/core.png",
@@ -653,6 +683,7 @@
       ]
     },
     {
+      "id": "crossfi-mainnet",
       "chainId": 4158,
       "chainName": "CrossFi Mainnet",
       "isTestnet": false,
@@ -697,6 +728,7 @@
       ]
     },
     {
+      "id": "crossfi-testnet",
       "chainId": 4157,
       "chainName": "CrossFi Testnet",
       "isTestnet": true,
@@ -741,6 +773,7 @@
       ]
     },
     {
+      "id": "cyber-mainnet",
       "chainId": 7560,
       "chainName": "Cyber Mainnet",
       "logoUrl": "https://cdn.subsquid.io/img/networks/cyber.svg",
@@ -760,6 +793,7 @@
       ]
     },
     {
+      "id": "cyberconnect-l2-testnet",
       "chainId": 111557560,
       "chainName": "Cyberconnect L2 Testnet",
       "isTestnet": true,
@@ -782,6 +816,7 @@
       ]
     },
     {
+      "id": "degen-chain",
       "chainId": 666666666,
       "chainName": "Degen Chain",
       "isTestnet": false,
@@ -802,6 +837,7 @@
       ]
     },
     {
+      "id": "dfk-chain",
       "chainId": 53935,
       "chainName": "DFK Chain",
       "logoUrl": "https://cdn.subsquid.io/img/networks/dfk.png",
@@ -821,6 +857,7 @@
       ]
     },
     {
+      "id": "dogechain-mainnet",
       "chainId": 2000,
       "chainName": "Dogechain",
       "logoUrl": "https://cdn.subsquid.io/img/networks/dogechain.png",
@@ -840,6 +877,7 @@
       ]
     },
     {
+      "id": "dogechain-testnet",
       "chainId": 568,
       "chainName": "Dogechain Testnet",
       "isTestnet": true,
@@ -860,6 +898,7 @@
       ]
     },
     {
+      "id": "ethereum-holesky",
       "chainId": 17000,
       "chainName": "Ethereum Holesky",
       "isTestnet": true,
@@ -882,6 +921,7 @@
       ]
     },
     {
+      "id": "ethereum-mainnet",
       "chainId": 1,
       "chainName": "Ethereum",
       "logoUrl": "https://cdn.subsquid.io/img/networks/ethereum.svg",
@@ -903,6 +943,7 @@
       ]
     },
     {
+      "id": "ethereum-sepolia",
       "chainId": 11155111,
       "chainName": "Ethereum Sepolia",
       "isTestnet": true,
@@ -925,6 +966,7 @@
       ]
     },
     {
+      "id": "etherlink-mainnet",
       "chainId": 42793,
       "chainName": "Etherlink Mainnet",
       "logoUrl": "https://cdn.subsquid.io/img/networks/etherlink.png",
@@ -944,6 +986,7 @@
       ]
     },
     {
+      "id": "etherlink-testnet",
       "chainId": 128123,
       "chainName": "Etherlink Testnet",
       "isTestnet": true,
@@ -964,6 +1007,7 @@
       ]
     },
     {
+      "id": "exosama",
       "chainId": 2109,
       "chainName": "Exosama",
       "logoUrl": "https://cdn.subsquid.io/img/networks/exn.png",
@@ -985,6 +1029,7 @@
       ]
     },
     {
+      "id": "fantom-mainnet",
       "chainId": 250,
       "chainName": "Fantom",
       "logoUrl": "https://cdn.subsquid.io/img/networks/fantom.png",
@@ -1004,6 +1049,7 @@
       ]
     },
     {
+      "id": "fantom-testnet",
       "chainId": 4002,
       "chainName": "Fantom Testnet",
       "isTestnet": true,
@@ -1024,6 +1070,7 @@
       ]
     },
     {
+      "id": "flare-mainnet",
       "chainId": 14,
       "chainName": "Flare",
       "logoUrl": "https://cdn.subsquid.io/img/networks/flare.png",
@@ -1043,6 +1090,7 @@
       ]
     },
     {
+      "id": "galxe-gravity",
       "chainId": 1625,
       "chainName": "Gravity",
       "logoUrl": "https://cdn.subsquid.io/img/networks/gravity.png",
@@ -1064,6 +1112,7 @@
       ]
     },
     {
+      "id": "gelato-arbitrum-blueberry",
       "chainId": 88153591557,
       "chainName": "Arbitrum Blueberry",
       "isTestnet": true,
@@ -1086,6 +1135,7 @@
       ]
     },
     {
+      "id": "gelato-opcelestia-raspberry",
       "chainId": 123420111,
       "chainName": "OP Celestia Raspberry",
       "isTestnet": true,
@@ -1106,6 +1156,7 @@
       ]
     },
     {
+      "id": "gnosis-mainnet",
       "chainId": 100,
       "chainName": "Gnosis",
       "logoUrl": "https://cdn.subsquid.io/img/networks/gnosis.png",
@@ -1127,6 +1178,7 @@
       ]
     },
     {
+      "id": "immutable-zkevm-mainnet",
       "chainId": 13371,
       "chainName": "Immutable zkEVM",
       "logoUrl": "https://cdn.subsquid.io/img/networks/immutable.png",
@@ -1146,6 +1198,7 @@
       ]
     },
     {
+      "id": "immutable-zkevm-testnet",
       "chainId": 13473,
       "chainName": "Immutable zkEVM Testnet",
       "isTestnet": true,
@@ -1166,6 +1219,7 @@
       ]
     },
     {
+      "id": "kyoto-testnet",
       "chainId": 1998,
       "chainName": "Kyoto Testnet",
       "isTestnet": true,
@@ -1186,6 +1240,7 @@
       ]
     },
     {
+      "id": "linea-mainnet",
       "chainId": 59144,
       "chainName": "Linea",
       "logoUrl": "https://cdn.subsquid.io/img/networks/linea.png",
@@ -1206,6 +1261,7 @@
       ]
     },
     {
+      "id": "manta-pacific",
       "chainId": 169,
       "chainName": "Manta Pacific",
       "isTestnet": false,
@@ -1226,6 +1282,7 @@
       ]
     },
     {
+      "id": "manta-pacific-sepolia",
       "chainId": 3441006,
       "chainName": "Manta Pacific Sepolia",
       "isTestnet": true,
@@ -1246,6 +1303,7 @@
       ]
     },
     {
+      "id": "mantle-mainnet",
       "chainId": 5000,
       "chainName": "Mantle",
       "logoUrl": "https://cdn.subsquid.io/img/networks/mantle.png",
@@ -1265,6 +1323,7 @@
       ]
     },
     {
+      "id": "mantle-sepolia",
       "chainId": 5003,
       "chainName": "Mantle Sepolia",
       "isTestnet": true,
@@ -1285,6 +1344,7 @@
       ]
     },
     {
+      "id": "merlin-mainnet",
       "chainId": 4200,
       "chainName": "Merlin Mainnet",
       "logoUrl": "https://cdn.subsquid.io/img/networks/merlin.jpg",
@@ -1304,6 +1364,7 @@
       ]
     },
     {
+      "id": "merlin-testnet",
       "chainId": 686868,
       "chainName": "Merlin Testnet",
       "isTestnet": true,
@@ -1324,6 +1385,7 @@
       ]
     },
     {
+      "id": "metis-mainnet",
       "chainId": 1088,
       "chainName": "Metis",
       "logoUrl": "https://cdn.subsquid.io/img/networks/metis.svg",
@@ -1356,6 +1418,7 @@
       ]
     },
     {
+      "id": "mode-mainnet",
       "chainId": 34443,
       "chainName": "Mode Mainnet",
       "isTestnet": false,
@@ -1376,6 +1439,7 @@
       ]
     },
     {
+      "id": "moonbase-testnet",
       "chainId": 1287,
       "chainName": "Moonbase Alpha",
       "isTestnet": true,
@@ -1396,6 +1460,7 @@
       ]
     },
     {
+      "id": "moonbeam-mainnet",
       "chainId": 1284,
       "chainName": "Moonbeam",
       "logoUrl": "https://cdn.subsquid.io/img/networks/moonbeam.png",
@@ -1416,6 +1481,7 @@
       ]
     },
     {
+      "id": "moonriver-mainnet",
       "chainId": 1285,
       "chainName": "Moonriver",
       "logoUrl": "https://cdn.subsquid.io/img/networks/moonriver.png",
@@ -1436,6 +1502,7 @@
       ]
     },
     {
+      "id": "nakachain",
       "chainId": 42225,
       "chainName": "Naka Chain",
       "isTestnet": false,
@@ -1456,6 +1523,7 @@
       ]
     },
     {
+      "id": "neon-devnet",
       "chainId": 245022926,
       "chainName": "Neon EVM Devnet",
       "isTestnet": true,
@@ -1500,6 +1568,7 @@
       ]
     },
     {
+      "id": "neon-mainnet",
       "chainId": 245022934,
       "chainName": "Neon EVM",
       "logoUrl": "https://cdn.subsquid.io/img/networks/neon.png",
@@ -1519,6 +1588,7 @@
       ]
     },
     {
+      "id": "opbnb-mainnet",
       "chainId": 204,
       "chainName": "opBNB",
       "logoUrl": "https://cdn.subsquid.io/img/networks/opbnb.png",
@@ -1538,6 +1608,7 @@
       ]
     },
     {
+      "id": "opbnb-testnet",
       "chainId": 5611,
       "chainName": "opBNB Testnet",
       "isTestnet": true,
@@ -1558,6 +1629,7 @@
       ]
     },
     {
+      "id": "optimism-mainnet",
       "chainId": 10,
       "chainName": "Optimism",
       "logoUrl": "https://cdn.subsquid.io/img/networks/optimism.svg",
@@ -1587,6 +1659,7 @@
       ]
     },
     {
+      "id": "optimism-sepolia",
       "chainId": 11155420,
       "chainName": "Optimism Sepolia",
       "isTestnet": true,
@@ -1607,6 +1680,7 @@
       ]
     },
     {
+      "id": "peaq-mainnet",
       "chainId": 3338,
       "chainName": "Peaq",
       "logoUrl": "https://cdn.subsquid.io/img/networks/peaq.png",
@@ -1626,6 +1700,7 @@
       ]
     },
     {
+      "id": "plume-mainnet",
       "chainId": 98865,
       "chainName": "Plume Mainnet",
       "isTestnet": false,
@@ -1648,6 +1723,7 @@
       ]
     },
     {
+      "id": "plume-testnet",
       "chainId": 98864,
       "chainName": "Plume Testnet",
       "isTestnet": true,
@@ -1670,6 +1746,7 @@
       ]
     },
     {
+      "id": "polygon-mainnet",
       "chainId": 137,
       "chainName": "Polygon",
       "logoUrl": "https://cdn.subsquid.io/img/networks/polygon.png",
@@ -1691,6 +1768,7 @@
       ]
     },
     {
+      "id": "polygon-amoy-testnet",
       "chainId": 80002,
       "chainName": "Polygon Amoy Testnet",
       "isTestnet": true,
@@ -1711,6 +1789,7 @@
       ]
     },
     {
+      "id": "polygon-zkevm-mainnet",
       "chainId": 1101,
       "chainName": "Polygon zkEVM",
       "logoUrl": "https://cdn.subsquid.io/img/networks/zkevm.png",
@@ -1730,6 +1809,7 @@
       ]
     },
     {
+      "id": "polygon-zkevm-cardona-testnet",
       "chainId": 2442,
       "chainName": "Polygon zkEVM Cardona Testnet",
       "isTestnet": true,
@@ -1750,6 +1830,7 @@
       ]
     },
     {
+      "id": "prom-mainnet",
       "chainId": 227,
       "chainName": "Prom Mainnet",
       "isTestnet": false,
@@ -1770,6 +1851,7 @@
       ]
     },
     {
+      "id": "prom-testnet",
       "chainId": 97072271,
       "chainName": "Prom Testnet",
       "isTestnet": true,
@@ -1790,6 +1872,7 @@
       ]
     },
     {
+      "id": "prom-testnet-v2",
       "chainId": 584548796,
       "chainName": "Prom Testnet (v2)",
       "isTestnet": true,
@@ -1810,6 +1893,7 @@
       ]
     },
     {
+      "id": "puppynet",
       "chainId": 157,
       "chainName": "Puppynet (Shibarium's Testnet)",
       "isTestnet": true,
@@ -1832,6 +1916,7 @@
       ]
     },
     {
+      "id": "scroll-mainnet",
       "chainId": 534352,
       "chainName": "Scroll",
       "logoUrl": "https://cdn.subsquid.io/img/networks/scroll.png",
@@ -1852,6 +1937,7 @@
       ]
     },
     {
+      "id": "scroll-sepolia",
       "chainId": 534351,
       "chainName": "Scroll Sepolia",
       "isTestnet": true,
@@ -1873,6 +1959,7 @@
       ]
     },
     {
+      "id": "shibarium",
       "chainId": 109,
       "chainName": "Shibarium",
       "logoUrl": "https://cdn.subsquid.io/img/networks/shibarium.png",
@@ -1894,6 +1981,7 @@
       ]
     },
     {
+      "id": "shibuya-testnet",
       "chainId": 81,
       "chainName": "Shibuya",
       "isTestnet": true,
@@ -1914,6 +2002,7 @@
       ]
     },
     {
+      "id": "shiden-mainnet",
       "chainId": 336,
       "chainName": "Shiden",
       "logoUrl": "https://cdn.subsquid.io/img/networks/shiden.png",
@@ -1933,6 +2022,7 @@
       ]
     },
     {
+      "id": "skale-nebula",
       "chainId": 1482601649,
       "chainName": "Skale Nebula",
       "logoUrl": "https://cdn.subsquid.io/img/networks/nebula.png",
@@ -1952,6 +2042,7 @@
       ]
     },
     {
+      "id": "sonic-testnet",
       "chainId": 64165,
       "chainName": "Sonic Testnet",
       "isTestnet": true,
@@ -1973,6 +2064,7 @@
       ]
     },
     {
+      "id": "stratovm-sepolia",
       "chainId": 93747,
       "chainName": "StratoVM Sepolia",
       "isTestnet": true,
@@ -1995,6 +2087,7 @@
       ]
     },
     {
+      "id": "superseed-mainnet",
       "chainId": 5330,
       "chainName": "Superseed Mainnet",
       "isTestnet": false,
@@ -2015,6 +2108,7 @@
       ]
     },
     {
+      "id": "superseed-sepolia",
       "chainId": 53302,
       "chainName": "Superseed Sepolia",
       "isTestnet": true,
@@ -2035,6 +2129,7 @@
       ]
     },
     {
+      "id": "taiko-mainnet",
       "chainId": 167000,
       "chainName": "Taiko Mainnet",
       "logoUrl": "https://cdn.subsquid.io/img/networks/taiko.png",
@@ -2054,6 +2149,7 @@
       ]
     },
     {
+      "id": "tanssi",
       "chainId": 5678,
       "chainName": "Tanssi",
       "logoUrl": "https://cdn.subsquid.io/img/networks/tanssi.png",
@@ -2073,6 +2169,7 @@
       ]
     },
     {
+      "id": "unichain-sepolia",
       "chainId": 1301,
       "chainName": "Unichain Sepolia",
       "isTestnet": true,
@@ -2093,6 +2190,7 @@
       ]
     },
     {
+      "id": "x1-testnet",
       "chainId": 195,
       "chainName": "X1 Testnet",
       "isTestnet": true,
@@ -2113,6 +2211,7 @@
       ]
     },
     {
+      "id": "xlayer-mainnet",
       "chainId": 196,
       "chainName": "X Layer Mainnet",
       "logoUrl": "https://cdn.subsquid.io/img/networks/xlayer.svg",
@@ -2132,6 +2231,7 @@
       ]
     },
     {
+      "id": "xlayer-testnet",
       "chainId": 195,
       "chainName": "X Layer Testnet",
       "isTestnet": true,
@@ -2152,6 +2252,7 @@
       ]
     },
     {
+      "id": "zklink-nova-mainnet",
       "chainId": 810180,
       "chainName": "zkLink Nova Mainnet",
       "isTestnet": false,
@@ -2173,6 +2274,7 @@
       ]
     },
     {
+      "id": "zksync-mainnet",
       "chainId": 324,
       "chainName": "zkSync",
       "logoUrl": "https://cdn.subsquid.io/img/networks/zksync-era.svg",
@@ -2201,6 +2303,7 @@
       ]
     },
     {
+      "id": "zksync-sepolia",
       "chainId": 300,
       "chainName": "zkSync Sepolia",
       "isTestnet": true,
@@ -2222,6 +2325,7 @@
       ]
     },
     {
+      "id": "zora-mainnet",
       "chainId": 7777777,
       "chainName": "Zora",
       "logoUrl": "https://cdn.subsquid.io/img/networks/zora.png",
@@ -2243,6 +2347,7 @@
       ]
     },
     {
+      "id": "zora-sepolia",
       "chainId": 999999999,
       "chainName": "Zora Sepolia",
       "isTestnet": true,
