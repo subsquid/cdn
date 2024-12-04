@@ -42,7 +42,7 @@ sqd-network-datasets:
   - name: blast-l2-mainnet
     id: s3://blast-l2-mainnet-1
   - name: blast-sepolia
-    id: s3://blast-sepolia-1-traceless
+    id: s3://blast-sepolia
   - name: bitgert-mainnet
     id: s3://bitgert-mainnet-1
   - name: bitgert-testnet
@@ -59,6 +59,8 @@ sqd-network-datasets:
     id: s3://cyber-l2-testnet-2
   - name: cyber-mainnet
     id: s3://cyber-mainnet-1
+  - name: crossfi-mainnet
+    id: s3://crossfi-mainnet
   - name: crossfi-testnet
     id: s3://crossfi-testnet-traceless
   - name: dfk-chain
@@ -117,6 +119,10 @@ sqd-network-datasets:
     id: s3://metis-mainnet-3
   - name: mode-mainnet
     id: s3://mode-mainnet-traceless
+  - name: monad-devnet
+    id: s3://monad-devnet-1
+  - name: monad-testnet
+    id: s3://monad-testnet
   - name: moonbase-testnet
     id: s3://moonbase-testnet-1
   - name: moonbeam-mainnet
@@ -144,9 +150,9 @@ sqd-network-datasets:
   - name: peaq-mainnet
     id: s3://peaq-mainnet-traceless-1
   - name: plume-testnet
-    id: s3://plume-testnet
-  - name: plume-devnet
-    id: s3://plume-devnet
+    id: s3://plume-devnet-v2
+  - name: plume-mainnet
+    id: s3://plume-mainnet
   - name: polygon-mainnet
     id: s3://polygon-mainnet-1
   - name: polygon-amoy-testnet
@@ -159,6 +165,8 @@ sqd-network-datasets:
     id: s3://prom-testnet-1-traceless
   - name: prom-testnet-v2
     id: s3://prom-testnet-v2
+  - name: prom-mainnet
+    id: s3://prom-mainnet
   - name: puppynet
     id: s3://puppynet
   - name: scroll-mainnet
@@ -173,20 +181,32 @@ sqd-network-datasets:
     id: s3://shibuya-testnet-traceless-1
   - name: skale-nebula
     id: s3://skale-nebula-traceless-1
+  - name: sonic-mainnet
+    id: s3://sonic-mainnet
+  - name: sonic-blaze-testnet
+    id: s3://sonic-blaze-testnet
+  - name: sonic-testnet
+    id: s3://sonic-testnet
   - name: stratovm-sepolia
     id: s3://stratovm-sepolia
   - name: superseed-sepolia
     id: s3://superseed-sepolia-traceless
+  - name: superseed-mainnet
+    id: s3://superseed-mainnet
   - name: taiko-mainnet
     id: s3://taiko-mainnet-traceless
   - name: tanssi
     id: s3://tanssi-traceless-1
+  - name: unichain-sepolia
+    id: s3://unichain-sepolia
   - name: x1-testnet
     id: s3://x1-testnet-traceless
   - name: xlayer-mainnet
     id: s3://xlayer-mainnet-traceless
   - name: xlayer-testnet
     id: s3://xlayer-testnet-traceless
+  - name: zklink-nova-mainnet
+    id: s3://zklink-nova-mainnet
   - name: zksync-mainnet
     id: s3://zksync-mainnet-1
   - name: zksync-sepolia
@@ -235,6 +255,10 @@ sqd-network-datasets:
     id: s3://bridge-hub-rococo-4
   - name: bridge-hub-westend
     id: s3://bridge-hub-westend-4
+  - name: celo-alfajores-testnet
+    id: s3://celo-alfajores-testnet
+  - name: celo-mainnet
+    id: s3://celo-mainnet-traceless
   - name: centrifuge
     id: s3://centrifuge-4
   - name: cere
@@ -263,6 +287,8 @@ sqd-network-datasets:
     id: s3://eden-4
   - name: enjin-matrix
     id: s3://enjin-matrix-4
+  - name: enjin-relay
+    id: s3://enjin-relay
   - name: enjin-canary-matrix
     id: s3://enjin-canary-matrix
   - name: equilibrium
@@ -309,6 +335,8 @@ sqd-network-datasets:
     id: s3://peaq-mainnet-5
   - name: pendulum
     id: s3://pendulum-4
+  - name: people-chain
+    id: s3://people-chain
   - name: phala-testnet
     id: s3://phala-testnet-4
   - name: phala
@@ -354,7 +382,7 @@ sqd-network-datasets:
   - name: westend
     id: s3://westend-4
   - name: zeitgeist-testnet
-    id: s3://zeitgeist-testnet-4
+    id: s3://zeitgeist-testnet-5
   - name: zeitgeist
     id: s3://zeitgeist-4
   - name: zkverify-testnet
