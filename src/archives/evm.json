@@ -1841,7 +1841,9 @@
           "data": [
             "blocks",
             "tx",
-            "logs"
+            "logs",
+            "traces",
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/prom-mainnet",
           "provider": "subsquid",
