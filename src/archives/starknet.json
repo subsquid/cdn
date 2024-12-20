@@ -1,0 +1,23 @@
+{
+  "archives": [
+    {
+      "id": "starknet-mainnet",
+      "chainName": "Starknet Mainnet",
+      "isTestnet": false,
+      "network": "starknet-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "events"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/starknet-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    }
+  ]
+}

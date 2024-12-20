@@ -1,0 +1,24 @@
+{
+  "archives": [
+    {
+      "id": "tron-mainnet",
+      "chainName": "Tron Mainnet",
+      "isTestnet": false,
+      "network": "tron-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "internal_tx"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/tron-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    }
+  ]
+}

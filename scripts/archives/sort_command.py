@@ -11,7 +11,14 @@ def update_parser(parser: argparse.ArgumentParser):
     parser.add_argument(
         "variant",
         help="archive variant",
-        choices=["evm", "substrate"],
+        choices=[
+            "evm",
+            "substrate",
+            "solana",
+            "tron",
+            "fuel",
+            "starknet",
+        ],
     )
     parser.set_defaults(func=_run)
 

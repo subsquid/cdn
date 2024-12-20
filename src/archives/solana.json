@@ -1,0 +1,399 @@
+{
+  "archives": [
+    {
+      "id": "eclipse-mainnet",
+      "chainName": "Eclipse Mainnet",
+      "isTestnet": false,
+      "network": "eclipse-mainnet",
+      "providers": [
+        {
+          "data": [
+            {
+              "name": "blocks",
+              "ranges": [
+                [
+                  "24641070",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "logs",
+              "ranges": [
+                [
+                  "24641070",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "tx",
+              "ranges": [
+                [
+                  "24641070",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "instructions",
+              "ranges": [
+                [
+                  "24641070",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "balances",
+              "ranges": [
+                [
+                  "24641070",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "token_balances",
+              "ranges": [
+                [
+                  "24641070",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "rewards",
+              "ranges": [
+                [
+                  "24641070",
+                  null
+                ]
+              ]
+            }
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/eclipse-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
+      "id": "eclipse-testnet",
+      "chainName": "Eclipse Testnet",
+      "isTestnet": true,
+      "network": "eclipse-testnet",
+      "providers": [
+        {
+          "data": [
+            {
+              "name": "blocks",
+              "ranges": [
+                [
+                  "3875330",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "logs",
+              "ranges": [
+                [
+                  "3875330",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "tx",
+              "ranges": [
+                [
+                  "3875330",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "instructions",
+              "ranges": [
+                [
+                  "3875330",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "balances",
+              "ranges": [
+                [
+                  "3875330",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "token_balances",
+              "ranges": [
+                [
+                  "3875330",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "rewards",
+              "ranges": [
+                [
+                  "3875330",
+                  null
+                ]
+              ]
+            }
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/eclipse-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "id": "solana-mainnet",
+      "chainName": "Solana Mainnet",
+      "isTestnet": false,
+      "network": "solana-mainnet",
+      "providers": [
+        {
+          "data": [
+            {
+              "name": "blocks",
+              "ranges": [
+                [
+                  "259984950",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "logs",
+              "ranges": [
+                [
+                  "259984950",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "tx",
+              "ranges": [
+                [
+                  "259984950",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "instructions",
+              "ranges": [
+                [
+                  "259984950",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "balances",
+              "ranges": [
+                [
+                  "259984950",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "token_balances",
+              "ranges": [
+                [
+                  "259984950",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "rewards",
+              "ranges": [
+                [
+                  "259984950",
+                  null
+                ]
+              ]
+            }
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/solana-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
+      "id": "soon-devnet",
+      "chainName": "Soon Devnet",
+      "isTestnet": true,
+      "network": "soon-devnet",
+      "providers": [
+        {
+          "data": [
+            {
+              "name": "blocks",
+              "ranges": [
+                [
+                  "2471639",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "logs",
+              "ranges": [
+                [
+                  "2471639",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "tx",
+              "ranges": [
+                [
+                  "2471639",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "instructions",
+              "ranges": [
+                [
+                  "2471639",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "balances",
+              "ranges": [
+                [
+                  "2471639",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "token_balances",
+              "ranges": [
+                [
+                  "2471639",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "rewards",
+              "ranges": [
+                [
+                  "2471639",
+                  null
+                ]
+              ]
+            }
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/soon-devnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "id": "soon-testnet",
+      "chainName": "Soon Testnet",
+      "isTestnet": true,
+      "network": "soon-testnet",
+      "providers": [
+        {
+          "data": [
+            {
+              "name": "blocks",
+              "ranges": [
+                [
+                  "30255",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "logs",
+              "ranges": [
+                [
+                  "30255",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "tx",
+              "ranges": [
+                [
+                  "30255",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "instructions",
+              "ranges": [
+                [
+                  "30255",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "balances",
+              "ranges": [
+                [
+                  "30255",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "token_balances",
+              "ranges": [
+                [
+                  "30255",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "rewards",
+              "ranges": [
+                [
+                  "30255",
+                  null
+                ]
+              ]
+            }
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/soon-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    }
+  ]
+}

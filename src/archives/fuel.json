@@ -1,0 +1,46 @@
+{
+  "archives": [
+    {
+      "id": "fuel-mainnet",
+      "chainName": "Fuel Mainnet",
+      "isTestnet": false,
+      "network": "fuel-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "receipts",
+            "inputs",
+            "outputs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/fuel-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
+      "id": "fuel-testnet",
+      "chainName": "Fuel Testnet",
+      "isTestnet": true,
+      "network": "fuel-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "receipts",
+            "inputs",
+            "outputs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/fuel-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    }
+  ]
+}

@@ -12,7 +12,14 @@ def update_parser(parser: argparse.ArgumentParser):
     parser.add_argument(
         "variant",
         help="archive variant",
-        choices=["evm", "substrate"],
+        choices=[
+            "evm",
+            "substrate",
+            "solana",
+            "tron",
+            "fuel",
+            "starknet",
+        ],
     )
     parser.add_argument("-s", "--search", type=str, help="search by name")
     parser.set_defaults(func=_run)
@@ -29,8 +36,16 @@ def _run(parsed_args):
             table = Table(title="EVM Archives")
         case "substrate":
             table = Table(title="Substrate Archives")
+        case "fuel":
+            table = Table(title="Fuel Archives")
+        case "solana":
+            table = Table(title="Solana Archives")
+        case "starknet":
+            table = Table(title="Starknet Archives")
+        case "Tron":
+            table = Table(title="Tron Archives")
         case _:
-            raise ValueError("Invalid archive variant")
+            raise ValueError("Archive variant is not supported")
 
     table.add_column("ID", justify="left", no_wrap=True)
     table.add_column("Name", justify="left", no_wrap=True)
