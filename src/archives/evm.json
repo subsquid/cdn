@@ -1853,48 +1853,6 @@
       ]
     },
     {
-      "id": "prom-testnet",
-      "chainId": 97072271,
-      "chainName": "Prom Testnet",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/prom.png",
-      "network": "prom-testnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/prom-testnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
-      "id": "prom-testnet-v2",
-      "chainId": 584548796,
-      "chainName": "Prom Testnet (v2)",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/prom.png",
-      "network": "prom-testnet-v2",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/prom-testnet-v2",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "id": "puppynet",
       "chainId": 157,
       "chainName": "Puppynet (Shibarium's Testnet)",
