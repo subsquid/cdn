@@ -387,3 +387,5 @@ sqd-network-datasets:
     id: s3://zeitgeist-4
   - name: zkverify-testnet
     id: s3://zkverify-testnet
+  - name: solana-mainnet
+    id: s3://solana-mainnet-0
