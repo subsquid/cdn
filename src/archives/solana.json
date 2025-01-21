@@ -317,6 +317,29 @@
       ]
     },
     {
+      "id": "soon-mainnet",
+      "chainName": "Soon Mainnet",
+      "isTestnet": false,
+      "network": "soon-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "logs",
+            "tx",
+            "instructions",
+            "balances",
+            "token_balances",
+            "rewards"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/soon-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
       "id": "soon-testnet",
       "chainName": "Soon Testnet",
       "isTestnet": true,
