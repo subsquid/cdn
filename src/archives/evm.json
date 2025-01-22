@@ -22,6 +22,27 @@
       ]
     },
     {
+      "id": "abstract-testnet",
+      "chainId": 11124,
+      "chainName": "Abstract Testnet",
+      "isTestnet": true,
+      "network": "abstract-testnet",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/abstract.png",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/abstract-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "id": "aleph-zero-evm-mainnet",
       "chainId": 41455,
       "chainName": "Aleph Zero EVM",
