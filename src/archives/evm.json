@@ -1134,7 +1134,7 @@
     {
       "id": "formicarium-testnet",
       "chainId": 43521,
-      "chainName": "Formicarium Testnet",
+      "chainName": "MemeCore Testnet (Formicarium)",
       "isTestnet": true,
       "network": "formicarium-testnet",
       "logoUrl": "https://cdn.subsquid.io/img/networks/memecore.svg",
