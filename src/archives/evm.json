@@ -556,6 +556,96 @@
       ]
     },
     {
+      "id": "bittensor-mainnet-evm",
+      "chainId": 964,
+      "chainName": "Bittensor Mainnet",
+      "isTestnet": false,
+      "network": "bittensor-mainnet-evm",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/bittensor.svg",
+      "providers": [
+        {
+          "data": [
+            {
+              "name": "blocks",
+              "ranges": [
+                [
+                  4400000,
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "tx",
+              "ranges": [
+                [
+                  4400000,
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "logs",
+              "ranges": [
+                [
+                  4400000,
+                  null
+                ]
+              ]
+            }
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/bittensor-mainnet-evm",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "id": "bittensor-testnet-evm",
+      "chainId": 945,
+      "chainName": "Bittensor Testnet",
+      "isTestnet": true,
+      "network": "bittensor-testnet-evm",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/bittensor.svg",
+      "providers": [
+        {
+          "data": [
+            {
+              "name": "blocks",
+              "ranges": [
+                [
+                  3300000,
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "tx",
+              "ranges": [
+                [
+                  3300000,
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "logs",
+              "ranges": [
+                [
+                  3300000,
+                  null
+                ]
+              ]
+            }
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/bittensor-testnet-evm",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "id": "blast-l2-mainnet",
       "chainId": 81457,
       "chainName": "Blast L2",
