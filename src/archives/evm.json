@@ -711,6 +711,50 @@
       ]
     },
     {
+      "id": "bob-sepolia",
+      "chainId": 28882,
+      "chainName": "BOB Sepolia",
+      "isTestnet": true,
+      "network": "bob-sepolia",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/bob.png",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/bob-sepolia",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "id": "camp-network-testnet-v2",
+      "chainId": 325000,
+      "chainName": "Camp Network Testnet v2",
+      "isTestnet": true,
+      "network": "camp-network-testnet-v2",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/camp-network.svg",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/camp-network-testnet-v2",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "id": "canto",
       "chainId": 7700,
       "chainName": "Canto",
@@ -1367,6 +1411,27 @@
             "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/immutable-zkevm-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "id": "ink-mainnet",
+      "chainId": 57073,
+      "chainName": "Ink Mainnet",
+      "isTestnet": false,
+      "network": "ink-mainnet",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/ink.svg",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/ink-mainnet",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
