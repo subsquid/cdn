@@ -1481,6 +1481,27 @@
       ]
     },
     {
+      "id": "lukso-mainnet",
+      "chainId": 42,
+      "chainName": "Lukso Mainnet",
+      "isTestnet": false,
+      "network": "lukso-mainnet",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/lukso.svg",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/lukso-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "id": "manta-pacific",
       "chainId": 169,
       "chainName": "Manta Pacific",
