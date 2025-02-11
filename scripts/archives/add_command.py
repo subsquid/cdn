@@ -99,11 +99,19 @@ def _run(parsed_args):
                 datasource_data.append("traces")
             if Confirm.ask("Datasource supports statediffs?", default=False):
                 datasource_data.append("stateDiffs")
+            start_block = Prompt.ask("First supported block", default="null")
             logo_url = Prompt.ask("Logo url (only name if in /img/networks)", default="null")
             if logo_url == "null":
                 logo_url = None
             elif not logo_url.startswith("http://") and not logo_url.startswith("https://"):
                 logo_url = "https://cdn.subsquid.io/img/networks/" + logo_url
+            if start_block != "null":
+                datasource_data = [
+                    {
+                        "name": v,
+                        "ranges": [[start_block, None]]
+                    } for v in datasource_data
+                ]
             entry = {
                 "id": data_source_id,
                 "chainId": int(chain_id) if chain_id.isdecimal() else None,

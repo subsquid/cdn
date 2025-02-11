@@ -64,6 +64,51 @@
       ]
     },
     {
+      "id": "agung-evm",
+      "chainId": 9990,
+      "chainName": "Agung",
+      "isTestnet": true,
+      "network": "agung-evm",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/peaq.png",
+      "providers": [
+        {
+          "data": [
+            {
+              "name": "blocks",
+              "ranges": [
+                [
+                  "1",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "tx",
+              "ranges": [
+                [
+                  "1",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "logs",
+              "ranges": [
+                [
+                  "1",
+                  null
+                ]
+              ]
+            }
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/agung-evm",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "id": "aleph-zero-evm-mainnet",
       "chainId": 41455,
       "chainName": "Aleph Zero EVM",
