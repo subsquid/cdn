@@ -1422,6 +1422,51 @@
       ]
     },
     {
+      "id": "hyperliquid-testnet",
+      "chainId": 998,
+      "chainName": "Hyperliquid Testnet",
+      "isTestnet": true,
+      "network": "hyperliquid-testnet",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/hyperliquid.svg",
+      "providers": [
+        {
+          "data": [
+            {
+              "name": "blocks",
+              "ranges": [
+                [
+                  "18197829",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "tx",
+              "ranges": [
+                [
+                  "18197829",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "logs",
+              "ranges": [
+                [
+                  "18197829",
+                  null
+                ]
+              ]
+            }
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/hyperliquid-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "id": "immutable-zkevm-mainnet",
       "chainId": 13371,
       "chainName": "Immutable zkEVM",
@@ -1959,6 +2004,29 @@
             "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/optimism-sepolia",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "id": "ozean-testnet",
+      "chainId": 42,
+      "chainName": "Ozean Testnet",
+      "isTestnet": true,
+      "network": "ozean-testnet",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/ozean.svg",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/ozean-testnet",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
