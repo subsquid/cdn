@@ -1,6 +1,12 @@
 sqd-network-datasets:
   - name: 0g-testnet
     id: s3://0g-testnet-traceless-1
+  - name: abstract-testnet
+    id: s3://abstract-testnet
+  - name: abstract-mainnet
+    id: s3://abstract-mainnet
+  - name: agung-evm
+    id: s3://agung-testnet-1
   - name: aleph-zero-evm-mainnet
     id: s3://aleph-zero-evm-mainnet
   - name: arbitrum-nova
@@ -29,6 +35,8 @@ sqd-network-datasets:
     id: s3://base
   - name: base-sepolia
     id: s3://base-sepolia
+  - name: berachain-mainnet
+    id: s3://berachain-mainnet
   - name: berachain-bartio
     id: s3://berachain-bartio
   - name: binance-mainnet
@@ -39,6 +47,10 @@ sqd-network-datasets:
     id: s3://bitfinity-mainnet
   - name: bitfinity-testnet
     id: s3://bitfinity-testnet
+  - name: bittensor-mainnet-evm
+    id: s3://bittensor-mainnet-evm
+  - name: bittensor-testnet-evm
+    id: s3://bittensor-testnet-evm
   - name: blast-l2-mainnet
     id: s3://blast-l2-mainnet-1
   - name: blast-sepolia
@@ -49,6 +61,10 @@ sqd-network-datasets:
     id: s3://bitgert-testnet-1
   - name: bob-mainnet
     id: s3://bob-mainnet
+  - name: bob-sepolia
+    id: s3://bob-sepolia
+  - name: camp-network-testnet-v2
+    id: s3://camp-network-testnet-v2
   - name: canto
     id: s3://canto-traceless
   - name: canto-testnet
@@ -78,7 +94,7 @@ sqd-network-datasets:
   - name: etherlink-mainnet
     id: s3://etherlink-mainnet-traceless
   - name: etherlink-testnet
-    id: s3://etherlink-testnet-3-traceless
+    id: s3://etherlink-testnet-4
   - name: exosama
     id: s3://exosama-1
   - name: fantom-mainnet
@@ -87,6 +103,8 @@ sqd-network-datasets:
     id: s3://fantom-testnet-traceless-1
   - name: flare-mainnet
     id: s3://flare-mainnet-traceless-1
+  - name: formicarium-testnet
+    id: s3://formicarium-testnet-1
   - name: galxe-gravity
     id: s3://galxe-gravity
   - name: gelato-arbitrum-blueberry
@@ -95,14 +113,20 @@ sqd-network-datasets:
     id: s3://opcelestia-raspberry-traceless
   - name: gnosis-mainnet
     id: s3://gnosis-mainnet-1
+  - name: hyperliquid-testnet
+    id: s3://hyperliquid-testnet-4
   - name: immutable-zkevm-mainnet
     id: s3://immutable-zkevm-mainnet-traceless-1
   - name: immutable-zkevm-testnet
     id: s3://immutable-zkevm-testnet-traceless-1
+  - name: ink-mainnet
+    id: s3://ink-mainnet
   - name: kyoto-testnet
     id: s3://kyoto-testnet-traceless
   - name: linea-mainnet
     id: s3://linea-mainnet-1
+  - name: lukso-mainnet
+    id: s3://lukso-mainnet-1
   - name: manta-pacific
     id: s3://manta-pacific-traceless
   - name: manta-pacific-sepolia
@@ -111,6 +135,8 @@ sqd-network-datasets:
     id: s3://mantle-mainnet-1-traceless
   - name: mantle-sepolia
     id: s3://mantle-sepolia-1-traceless
+  - name: memecore-mainnet
+    id: s3://memecore-mainnet
   - name: merlin-mainnet
     id: s3://merlin-mainnet-traceless
   - name: merlin-testnet
@@ -119,10 +145,8 @@ sqd-network-datasets:
     id: s3://metis-mainnet-3
   - name: mode-mainnet
     id: s3://mode-mainnet-traceless
-  - name: monad-devnet
-    id: s3://monad-devnet-1
   - name: monad-testnet
-    id: s3://monad-testnet
+    id: s3://monad-testnet-2
   - name: moonbase-testnet
     id: s3://moonbase-testnet-1
   - name: moonbeam-mainnet
@@ -147,6 +171,8 @@ sqd-network-datasets:
     id: s3://optimism-2
   - name: optimism-sepolia
     id: s3://optimism-sepolia-traceless
+  - name: ozean-testnet
+    id: s3://ozean-testnet
   - name: peaq-mainnet
     id: s3://peaq-mainnet-traceless-1
   - name: plume-testnet
@@ -161,12 +187,8 @@ sqd-network-datasets:
     id: s3://polygon-zkevm-mainnet-traceless
   - name: polygon-zkevm-cardona-testnet
     id: s3://polygon-zkevm-cardona-testnet-traceless-1
-  - name: prom-testnet
-    id: s3://prom-testnet-1-traceless
-  - name: prom-testnet-v2
-    id: s3://prom-testnet-v2
   - name: prom-mainnet
-    id: s3://prom-mainnet
+    id: s3://prom-mainnet-1
   - name: puppynet
     id: s3://puppynet
   - name: scroll-mainnet
@@ -184,7 +206,7 @@ sqd-network-datasets:
   - name: sonic-mainnet
     id: s3://sonic-mainnet
   - name: sonic-blaze-testnet
-    id: s3://sonic-blaze-testnet
+    id: s3://sonic-blaze-testnet-1
   - name: sonic-testnet
     id: s3://sonic-testnet
   - name: stratovm-sepolia
@@ -198,7 +220,7 @@ sqd-network-datasets:
   - name: tanssi
     id: s3://tanssi-traceless-1
   - name: unichain-sepolia
-    id: s3://unichain-sepolia
+    id: s3://unichain-sepolia-1
   - name: x1-testnet
     id: s3://x1-testnet-traceless
   - name: xlayer-mainnet
@@ -233,6 +255,8 @@ sqd-network-datasets:
     id: s3://asset-hub-polkadot-4
   - name: asset-hub-rococo
     id: s3://asset-hub-rococo-4
+  - name: asset-hub-westend
+    id: s3://asset-hub-westend-3
   - name: astar-substrate
     id: s3://astar-substrate
   - name: avail
@@ -389,3 +413,13 @@ sqd-network-datasets:
     id: s3://zkverify-testnet
   - name: solana-mainnet
     id: s3://solana-mainnet-0
+  - name: soon-devnet
+    id: s3://soon-devnet
+  - name: soon-testnet
+    id: s3://soon-testnet-1
+  - name: soon-mainnet
+    id: s3://soon-mainnet
+  - name: eclipse-testnet
+    id: s3://eclipse-testnet
+  - name: eclipse-mainnet
+    id: s3://eclipse-mainnet
