@@ -191,6 +191,28 @@
       ]
     },
     {
+      "id": "asset-hub-westend",
+      "chainName": "Asset Hub Westend",
+      "chainSS58Prefix": null,
+      "genesis_hash": "0x67f9723393ef76214df0118c34bbbd3dbebc8ed46a10973a8c969d48fe7598c9",
+      "isTestnet": false,
+      "network": "asset-hub-westend",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/asset-hub-westend",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "id": "astar-substrate",
       "chainName": "Astar",
       "chainSS58Prefix": 5,

@@ -440,6 +440,29 @@
       ]
     },
     {
+      "id": "berachain-mainnet",
+      "chainId": 80094,
+      "chainName": "Berachain Mainnet",
+      "isTestnet": false,
+      "network": "berachain-mainnet",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/berachain.png",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/berachain-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "id": "binance-mainnet",
       "chainId": 56,
       "chainName": "Binance",
@@ -1668,6 +1691,29 @@
             "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/mantle-sepolia",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "id": "memecore-mainnet",
+      "chainId": 4352,
+      "chainName": "MemeCore Mainnet",
+      "isTestnet": false,
+      "network": "memecore-mainnet",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/memecore.svg",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/memecore-mainnet",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
