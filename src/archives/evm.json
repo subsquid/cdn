@@ -2615,6 +2615,29 @@
       ]
     },
     {
+      "id": "unichain-mainnet",
+      "chainId": 130,
+      "chainName": "Unichain Mainnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/unichain.svg",
+      "network": "unichain-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/unichain-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "id": "x1-testnet",
       "chainId": 195,
       "chainName": "X1 Testnet",
