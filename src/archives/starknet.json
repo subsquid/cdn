@@ -18,6 +18,25 @@
           "supportTier": 1
         }
       ]
+    },
+    {
+      "id": "starknet-sepolia",
+      "chainName": "Starknet Sepolia",
+      "isTestnet": false,
+      "network": "starknet-sepolia",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "events"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/starknet-sepolia",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
     }
   ]
 }
