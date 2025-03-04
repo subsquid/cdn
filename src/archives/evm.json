@@ -1445,6 +1445,51 @@
       ]
     },
     {
+      "id": "hyperliquid-mainnet",
+      "chainId": 999,
+      "chainName": "Hyperliquid Mainnet",
+      "isTestnet": false,
+      "network": "hyperliquid-mainnet",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/hyperliquid.svg",
+      "providers": [
+        {
+          "data": [
+            {
+              "name": "blocks",
+              "ranges": [
+                [
+                  "1",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "tx",
+              "ranges": [
+                [
+                  "1",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "logs",
+              "ranges": [
+                [
+                  "1",
+                  null
+                ]
+              ]
+            }
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/hyperliquid-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
       "id": "hyperliquid-testnet",
       "chainId": 998,
       "chainName": "Hyperliquid Testnet",
@@ -2594,27 +2639,6 @@
       ]
     },
     {
-      "id": "unichain-sepolia",
-      "chainId": 1301,
-      "chainName": "Unichain Sepolia",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/unichain.svg",
-      "network": "unichain-sepolia",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/unichain-sepolia",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "id": "unichain-mainnet",
       "chainId": 130,
       "chainName": "Unichain Mainnet",
@@ -2631,6 +2655,27 @@
             "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/unichain-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "id": "unichain-sepolia",
+      "chainId": 1301,
+      "chainName": "Unichain Sepolia",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/unichain.svg",
+      "network": "unichain-sepolia",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/unichain-sepolia",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
