@@ -1391,8 +1391,24 @@
             "blocks",
             "tx",
             "logs",
-            "traces",
-            "stateDiffs"
+            {
+              "name": "traces",
+              "ranges": [
+                [
+                  null,
+                  2118412
+                ]
+              ]
+            },
+            {
+              "name": "stateDiffs",
+              "ranges": [
+                [
+                  null,
+                  2118412
+                ]
+              ]
+            }
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/gelato-arbitrum-blueberry",
           "provider": "subsquid",
