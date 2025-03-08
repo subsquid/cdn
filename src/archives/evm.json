@@ -1687,7 +1687,9 @@
           "data": [
             "blocks",
             "tx",
-            "logs"
+            "logs",
+            "traces",
+            "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/manta-pacific",
           "provider": "subsquid",
