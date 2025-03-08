@@ -2699,27 +2699,6 @@
       ]
     },
     {
-      "id": "x1-testnet",
-      "chainId": 195,
-      "chainName": "X1 Testnet",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/xlayer.svg",
-      "network": "x1-testnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/x1-testnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "id": "xlayer-mainnet",
       "chainId": 196,
       "chainName": "X Layer Mainnet",
