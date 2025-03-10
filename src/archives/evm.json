@@ -1,4 +1,5 @@
 {
+  "$schema": "../schemas/archive-registry-evm.json",
   "archives": [
     {
       "id": "0g-testnet",
