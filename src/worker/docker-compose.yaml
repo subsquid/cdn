@@ -1,6 +1,6 @@
 services:
   worker:
-    image: subsquid/p2p-worker:2.0.3
+    image: subsquid/p2p-worker:2.1.0
     restart: unless-stopped
     env_file:
       - .env
@@ -14,6 +14,7 @@ services:
     ports:
       - "${PROMETHEUS_PORT:-9090}:${PROMETHEUS_PORT:-9090}"
       - "${LISTEN_PORT:?}:${LISTEN_PORT:?}/udp"
+    network_mode: host
     deploy:
       resources:
         limits:
