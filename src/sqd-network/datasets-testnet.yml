@@ -5,5 +5,3 @@ sqd-network-datasets:
     id: s3://base
   - name: ethereum-mainnet
     id: s3://ethereum-mainnet-2
-  - name: solana-beta
-    id: s3://solana-mainnet-1
