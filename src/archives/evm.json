@@ -2385,6 +2385,29 @@
       ]
     },
     {
+      "chainId": 31911,
+      "chainName": "Poseidon Testnet",
+      "id": "poseidon-testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/ozean.svg",
+      "network": "poseidon-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/poseidon-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "chainId": 227,
       "chainName": "Prom Mainnet",
       "id": "prom-mainnet",
@@ -2550,6 +2573,48 @@
             "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/skale-nebula",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 1868,
+      "chainName": "Soneium Mainnet",
+      "id": "soneium-mainnet",
+      "isTestnet": false,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/soneium.svg",
+      "network": "soneium-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/soneium-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 1946,
+      "chainName": "Soneium Minato Testnet",
+      "id": "soneium-minato-testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/soneium.svg",
+      "network": "soneium-minato-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/soneium-minato-testnet",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
