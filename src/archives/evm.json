@@ -214,8 +214,24 @@
             "blocks",
             "tx",
             "logs",
-            "traces",
-            "stateDiffs"
+            {
+              "name": "traces",
+              "ranges": [
+                [
+                  null,
+                  15761149
+                ]
+              ]
+            },
+            {
+              "name": "stateDiffs",
+              "ranges": [
+                [
+                  null,
+                  15761149
+                ]
+              ]
+            }
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/arthera-mainnet",
           "provider": "subsquid",
