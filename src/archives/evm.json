@@ -1802,6 +1802,27 @@
       ]
     },
     {
+      "chainId": 6342,
+      "chainName": "Mega Testnet",
+      "id": "mega-testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/mega.png",
+      "network": "mega-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/mega-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
       "chainId": 4352,
       "chainName": "MemeCore Mainnet",
       "id": "memecore-mainnet",
