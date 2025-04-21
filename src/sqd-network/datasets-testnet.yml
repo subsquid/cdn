@@ -5,3 +5,9 @@ sqd-network-datasets:
     id: s3://base
   - name: ethereum-mainnet
     id: s3://ethereum-mainnet-2
+  - name: svm-bnb-mainnet
+    id: s3://svm-bnb-mainnet-0
+  - name: svm-bnb-testnet
+    id: s3://svm-bnb-testnet-2
+  - name: eclipse-testnet
+    id: s3://eclipse-testnet-2
