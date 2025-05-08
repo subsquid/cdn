@@ -421,6 +421,8 @@ sqd-network-datasets:
     id: s3://eclipse-testnet
   - name: eclipse-mainnet
     id: s3://eclipse-mainnet
+  - name: solana-devnet
+    id: s3://solana-devnet-1
   - name: solana-beta
     id: s3://solana-mainnet-2
   - name: svm-bnb-mainnet
