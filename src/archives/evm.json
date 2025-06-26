@@ -1227,6 +1227,27 @@
       ]
     },
     {
+      "chainId": 560048,
+      "chainName": "Ethereum Hoodi",
+      "id": "ethereum-hoodi",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/ethereum.svg",
+      "network": "ethereum-hoodi",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/ethereum-hoodi",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
       "chainId": 1,
       "chainName": "Ethereum",
       "id": "ethereum-mainnet",
