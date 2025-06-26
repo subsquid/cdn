@@ -261,47 +261,6 @@
       ]
     },
     {
-      "chainId": 3776,
-      "chainName": "Astar zkEVM",
-      "id": "astar-zkevm-mainnet",
-      "logoUrl": "https://cdn.subsquid.io/img/networks/astar.svg",
-      "network": "astar-zkevm-mainnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/astar-zkevm-mainnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainId": 6038361,
-      "chainName": "Astar zKyoto",
-      "id": "astar-zkyoto",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/astarzk.png",
-      "network": "astar-zkyoto",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/astar-zkyoto",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainId": 43114,
       "chainName": "Avalanche",
       "id": "avalanche-mainnet",
@@ -1494,27 +1453,6 @@
             }
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/gelato-arbitrum-blueberry",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainId": 123420111,
-      "chainName": "OP Celestia Raspberry",
-      "id": "gelato-opcelestia-raspberry",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/.png",
-      "network": "gelato-opcelestia-raspberry",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/gelato-opcelestia-raspberry",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
