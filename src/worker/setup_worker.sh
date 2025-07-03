@@ -98,6 +98,8 @@ S3_TIMEOUT=60
 S3_READ_TIMEOUT=30
 # You can set it to "info,sqd_worker=debug" to get debug logs
 RUST_LOG=info
+# A temporary fix to solve "out of gas" issue
+CONTRACT_PORTALS_PER_PAGE=10
 
 # You probably shouldn't change the values below
 UID=$(id -u)
