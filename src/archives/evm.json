@@ -1482,6 +1482,48 @@
       ]
     },
     {
+      "chainId": 43111,
+      "chainName": "Hemi Mainnet",
+      "id": "hemi-mainnet",
+      "isTestnet": false,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/hemi.jpg",
+      "network": "hemi-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/hemi-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
+      "chainId": 743111,
+      "chainName": "Hemi Testnet",
+      "id": "hemi-testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/hemi.jpg",
+      "network": "hemi-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/hemi-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
       "chainId": 999,
       "chainName": "Hyperliquid Mainnet",
       "id": "hyperliquid-mainnet",
