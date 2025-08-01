@@ -131,6 +131,26 @@
       ]
     },
     {
+      "chainId": 42161,
+      "chainName": "Arbitrum One",
+      "id": "arbitrum-one",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/arbitrum.svg",
+      "network": "arbitrum",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/arbitrum-one",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
       "chainId": 42170,
       "chainName": "Arbitrum Nova",
       "id": "arbitrum-nova",
@@ -146,26 +166,6 @@
             "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/arbitrum-nova",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 1
-        }
-      ]
-    },
-    {
-      "chainId": 42161,
-      "chainName": "Arbitrum One",
-      "id": "arbitrum-one",
-      "logoUrl": "https://cdn.subsquid.io/img/networks/arbitrum.svg",
-      "network": "arbitrum",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/arbitrum-one",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 1
@@ -1081,6 +1081,27 @@
       ]
     },
     {
+      "chainId": 5678,
+      "chainName": "Dancelight",
+      "id": "dancelight-testnet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/tanssi.png",
+      "network": "dancelight-testnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/dancelight-testnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "chainId": 666666666,
       "chainName": "Degen Chain",
       "id": "degen-chain",
@@ -1186,27 +1207,6 @@
       ]
     },
     {
-      "chainId": 560048,
-      "chainName": "Ethereum Hoodi",
-      "id": "ethereum-hoodi",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/ethereum.svg",
-      "network": "ethereum-hoodi",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/ethereum-hoodi",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 1
-        }
-      ]
-    },
-    {
       "chainId": 1,
       "chainName": "Ethereum",
       "id": "ethereum-mainnet",
@@ -1245,6 +1245,27 @@
             "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/ethereum-sepolia",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
+      "chainId": 560048,
+      "chainName": "Ethereum Hoodi",
+      "id": "ethereum-hoodi",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/ethereum.svg",
+      "network": "ethereum-hoodi",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/ethereum-hoodi",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 1
@@ -2385,6 +2406,28 @@
       ]
     },
     {
+      "chainId": 137,
+      "chainName": "Polygon",
+      "id": "polygon-mainnet",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/polygon.png",
+      "network": "polygon",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
       "chainId": 80002,
       "chainName": "Polygon Amoy Testnet",
       "id": "polygon-amoy-testnet",
@@ -2406,21 +2449,19 @@
       ]
     },
     {
-      "chainId": 137,
-      "chainName": "Polygon",
-      "id": "polygon-mainnet",
-      "logoUrl": "https://cdn.subsquid.io/img/networks/polygon.png",
-      "network": "polygon",
+      "chainId": 1101,
+      "chainName": "Polygon zkEVM",
+      "id": "polygon-zkevm-mainnet",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/zkevm.png",
+      "network": "polygon-zkevm",
       "providers": [
         {
           "data": [
             "blocks",
             "tx",
-            "logs",
-            "traces",
-            "stateDiffs"
+            "logs"
           ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-mainnet",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-zkevm-mainnet",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 1
@@ -2445,26 +2486,6 @@
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainId": 1101,
-      "chainName": "Polygon zkEVM",
-      "id": "polygon-zkevm-mainnet",
-      "logoUrl": "https://cdn.subsquid.io/img/networks/zkevm.png",
-      "network": "polygon-zkevm",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-zkevm-mainnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 1
         }
       ]
     },
