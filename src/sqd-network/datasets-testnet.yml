@@ -11,3 +11,5 @@ sqd-network-datasets:
     id: s3://svm-bnb-testnet-2
   - name: eclipse-testnet
     id: s3://eclipse-testnet-2
+  - name: zora-mainnet
+    id: s3://zora-mainnet
