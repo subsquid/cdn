@@ -193,6 +193,15 @@
                   55667987
                 ]
               ]
+            },
+            {
+              "name": "stateDiffs",
+              "ranges": [
+                [
+                  0,
+                  55667987
+                ]
+              ]
             }
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/arbitrum-sepolia",
@@ -2418,7 +2427,15 @@
             "tx",
             "logs",
             "traces",
-            "stateDiffs"
+            {
+              "name": "stateDiffs",
+              "ranges": [
+                [
+                  0,
+                  74928216
+                ]
+              ]
+            }
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-mainnet",
           "provider": "subsquid",
