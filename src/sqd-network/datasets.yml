@@ -205,10 +205,8 @@ sqd-network-datasets:
     id: s3://skale-nebula-traceless-1
   - name: sonic-mainnet
     id: s3://sonic-mainnet
-  - name: sonic-blaze-testnet
-    id: s3://sonic-blaze-testnet-1
   - name: sonic-testnet
-    id: s3://sonic-testnet
+    id: s3://sonic-testnet-0
   - name: stratovm-sepolia
     id: s3://stratovm-sepolia
   - name: superseed-sepolia

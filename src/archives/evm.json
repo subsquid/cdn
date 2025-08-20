@@ -2765,28 +2765,6 @@
       ]
     },
     {
-      "chainId": 57054,
-      "chainName": "Sonic Blaze Testnet",
-      "id": "sonic-blaze-testnet",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/sonic.png",
-      "network": "sonic-blaze-testnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs",
-            "traces"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/sonic-blaze-testnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainId": 146,
       "chainName": "Sonic Mainnet",
       "id": "sonic-mainnet",
@@ -2809,7 +2787,7 @@
       ]
     },
     {
-      "chainId": 64165,
+      "chainId": 14601,
       "chainName": "Sonic Testnet",
       "id": "sonic-testnet",
       "isTestnet": true,
