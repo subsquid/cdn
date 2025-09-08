@@ -422,8 +422,6 @@ sqd-network-datasets:
   - name: solana-devnet
     id: s3://solana-devnet-1
   - name: solana-mainnet
-    id: s3://solana-mainnet-2
-  - name: solana-beta
     id: s3://solana-mainnet-3
   - name: svm-bnb-mainnet
     id: s3://svm-bnb-mainnet-0
