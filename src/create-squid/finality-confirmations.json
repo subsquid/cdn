@@ -1,0 +1,177 @@
+[
+  {
+    "id": "ethereum-holesky",
+    "chainId": 17000,
+    "confirmations": 64
+  },
+  {
+    "id": "ethereum-mainnet",
+    "chainId": 1,
+    "confirmations": 64
+  },
+  {
+    "id": "ethereum-sepolia",
+    "chainId": 11155111,
+    "confirmations": 64
+  },
+  {
+    "id": "ethereum-hoodi",
+    "chainId": 560048,
+    "confirmations": 64
+  },
+  {
+    "id": "binance-mainnet",
+    "chainId": 56,
+    "confirmations": 15
+  },
+  {
+    "id": "binance-testnet",
+    "chainId": 97,
+    "confirmations": 15
+  },
+  {
+    "id": "arbitrum-one",
+    "chainId": 42161,
+    "confirmations": 120
+  },
+  {
+    "id": "arbitrum-sepolia",
+    "chainId": 421614,
+    "confirmations": 120
+  },
+  {
+    "id": "optimism-mainnet",
+    "chainId": 10,
+    "confirmations": 30
+  },
+  {
+    "id": "optimism-sepolia",
+    "chainId": 11155420,
+    "confirmations": 30
+  },
+  {
+    "id": "optimism-sepolia",
+    "chainId": 11155420,
+    "confirmations": 30
+  },
+  {
+    "id": "polygon-mainnet",
+    "chainId": 137,
+    "confirmations": 300
+  },
+  {
+    "id": "polygon-amoy-testnet",
+    "chainId": 80002,
+    "confirmations": 300
+  },
+  {
+    "id": "avalanche-mainnet",
+    "chainId": 43114,
+    "confirmations": 5
+  },
+  {
+    "id": "avalanche-testnet",
+    "chainId": 43113,
+    "confirmations": 5
+  },
+  {
+    "id": "base-mainnet",
+    "chainId": 8453,
+    "confirmations": 30
+  },
+  {
+    "id": "base-sepolia",
+    "chainId": 84532,
+    "confirmations": 30
+  },
+  {
+    "id": "linea-mainnet",
+    "chainId": 59144,
+    "confirmations": 64
+  },
+  {
+    "id": "zksync-mainnet",
+    "chainId": 324,
+    "confirmations": 30
+  },
+  {
+    "id": "zksync-sepolia",
+    "chainId": 300,
+    "confirmations": 30
+  },
+  {
+    "id": "fantom-mainnet",
+    "chainId": 250,
+    "confirmations": 10
+  },
+  {
+    "id": "fantom-testnet",
+    "chainId": 4002,
+    "confirmations": 10
+  },
+  {
+    "id": "dogechain-mainnet",
+    "chainId": 2000,
+    "confirmations": 36
+  },
+  {
+    "id": "dogechain-testnet",
+    "chainId": 568,
+    "confirmations": 36
+  },
+  {
+    "id": "mantle-mainnet",
+    "chainId": 5000,
+    "confirmations": 100
+  },
+  {
+    "id": "mantle-sepolia",
+    "chainId": 5003,
+    "confirmations": 100
+  },
+  {
+    "id": "blast-l2-mainnet",
+    "chainId": 81457,
+    "confirmations": 60
+  },
+  {
+    "id": "blast-sepolia",
+    "chainId": 168587773,
+    "confirmations": 60
+  },
+  {
+    "id": "core-mainnet",
+    "chainId": 1116,
+    "confirmations": 60
+  },
+  {
+    "id": "flare-mainnet",
+    "chainId": 14,
+    "confirmations": 120
+  },
+  {
+    "id": "merlin-mainnet",
+    "chainId": 4200,
+    "confirmations": 120
+  },
+  {
+    "id": "merlin-testnet",
+    "chainId": 686868,
+    "confirmations": 120
+  },
+  {
+    "id": "taiko-mainnet",
+    "chainId": 167000,
+    "confirmations": 10
+  },
+  {
+    "id": "xlayer-mainnet",
+    "chainId": 196,
+    "confirmations": 120
+  },
+  {
+    "id": "xlayer-testnet",
+    "chainId": 195,
+    "confirmations": 120
+  }
+]
