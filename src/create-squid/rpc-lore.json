@@ -1,0 +1,278 @@
+[
+  {
+    "id": "ethereum-mainnet",
+    "chainId": 1,
+    "cloudRpcId": "eth",
+    "publicRpc": "https://ethereum-rpc.publicnode.com"
+  },
+  {
+    "id": "optimism-mainnet",
+    "chainId": 10,
+    "cloudRpcId": "optimism",
+    "publicRpc": "https://optimism-rpc.publicnode.com"
+  },
+  {
+    "id": "binance-mainnet",
+    "chainId": 56,
+    "cloudRpcId": "bsc",
+    "publicRpc": "https://bsc-rpc.publicnode.com"
+  },
+  {
+    "id": "shibuya-testnet",
+    "chainId": 81,
+    "cloudRpcId": "shibuya",
+    "publicRpc": "https://evm.shibuya.astar.network"
+  },
+  {
+    "id": "binance-testnet",
+    "chainId": 97,
+    "cloudRpcId": "bsc-testnet",
+    "publicRpc": "https://bsc-testnet-rpc.publicnode.com"
+  },
+  {
+    "id": "gnosis-mainnet",
+    "chainId": 100,
+    "cloudRpcId": "gnosis",
+    "publicRpc": "https://gnosis-rpc.publicnode.com"
+  },
+  {
+    "id": "polygon-mainnet",
+    "chainId": 137,
+    "cloudRpcId": "polygon",
+    "publicRpc": "https://polygon-bor-rpc.publicnode.com"
+  },
+  {
+    "id": "sonic-mainnet",
+    "chainId": 146,
+    "cloudRpcId": "sonic-mainnet",
+    "publicRpc": null
+  },
+  {
+    "id": "opbnb-mainnet",
+    "chainId": 204,
+    "cloudRpcId": "opbnb",
+    "publicRpc": "https://opbnb-rpc.publicnode.com"
+  },
+  {
+    "id": "fantom-mainnet",
+    "chainId": 250,
+    "cloudRpcId": "fantom",
+    "publicRpc": "https://fantom-rpc.publicnode.com"
+  },
+  {
+    "id": "zksync-sepolia",
+    "chainId": 300,
+    "cloudRpcId": "zksync-sepolia",
+    "publicRpc": null
+  },
+  {
+    "id": "zksync-mainnet",
+    "chainId": 324,
+    "cloudRpcId": "zksync",
+    "publicRpc": null
+  },
+  {
+    "id": "shiden-mainnet",
+    "chainId": 336,
+    "cloudRpcId": "shiden",
+    "publicRpc": "https://evm.shiden.astar.network"
+  },
+  {
+    "id": "astar-mainnet",
+    "chainId": 592,
+    "cloudRpcId": "astar",
+    "publicRpc": "https://evm.astar.network"
+  },
+  {
+    "id": "metis-mainnet",
+    "chainId": 1088,
+    "cloudRpcId": "metis",
+    "publicRpc": "https://metis-rpc.publicnode.com:443"
+  },
+  {
+    "id": "polygon-zkevm-mainnet",
+    "chainId": 1101,
+    "cloudRpcId": "polygon-zkevm",
+    "publicRpc": null
+  },
+  {
+    "id": "moonbeam-mainnet",
+    "chainId": 1284,
+    "cloudRpcId": "moonbeam",
+    "publicRpc": "https://moonbeam-rpc.publicnode.com"
+  },
+  {
+    "id": "moonriver-mainnet",
+    "chainId": 1285,
+    "cloudRpcId": "moonriver",
+    "publicRpc": "https://moonriver-rpc.publicnode.com"
+  },
+  {
+    "id": "unichain-sepolia",
+    "chainId": 1301,
+    "cloudRpcId": "unichain-sepolia",
+    "publicRpc": "https://unichain-sepolia-rpc.publicnode.com"
+  },
+  {
+    "id": "polygon-zkevm-cardona-testnet",
+    "chainId": 2442,
+    "cloudRpcId": "polygon-zkevm-cardona-testnet",
+    "publicRpc": null
+  },
+  {
+    "id": "peaq-mainnet",
+    "chainId": 3338,
+    "cloudRpcId": null,
+    "publicRpc": "https://peaq-rpc.publicnode.com"
+  },
+  {
+    "id": "fantom-testnet",
+    "chainId": 4002,
+    "cloudRpcId": "fantom-testnet",
+    "publicRpc": "https://fantom-testnet-rpc.publicnode.com"
+  },
+  {
+    "id": "mantle-mainnet",
+    "chainId": 5000,
+    "cloudRpcId": "mantle",
+    "publicRpc": "https://mantle-rpc.publicnode.com"
+  },
+  {
+    "id": "mantle-sepolia",
+    "chainId": 5003,
+    "cloudRpcId": "mantle-sepolia",
+    "publicRpc": null
+  },
+  {
+    "id": "opbnb-testnet",
+    "chainId": 5611,
+    "cloudRpcId": "opbnb-testnet",
+    "publicRpc": "https://opbnb-testnet-rpc.publicnode.com"
+  },
+  {
+    "id": "base-mainnet",
+    "chainId": 8453,
+    "cloudRpcId": "base",
+    "publicRpc": "https://base-rpc.publicnode.com"
+  },
+  {
+    "id": "agung-evm",
+    "chainId": 9990,
+    "cloudRpcId": null,
+    "publicRpc": "https://peaq-agung-rpc.publicnode.com"
+  },
+  {
+    "id": "ethereum-holesky",
+    "chainId": 17000,
+    "cloudRpcId": "eth-holesky",
+    "publicRpc": "https://ethereum-holesky-rpc.publicnode.com"
+  },
+  {
+    "id": "arbitrum-one",
+    "chainId": 42161,
+    "cloudRpcId": "arbitrum-one",
+    "publicRpc": "https://arbitrum-one-rpc.publicnode.com"
+  },
+  {
+    "id": "arbitrum-nova",
+    "chainId": 42170,
+    "cloudRpcId": "arbitrum-nova",
+    "publicRpc": "https://arbitrum-nova-rpc.publicnode.com"
+  },
+  {
+    "id": "avalanche-testnet",
+    "chainId": 43113,
+    "cloudRpcId": "ava-testnet",
+    "publicRpc": "https://api.avax-test.network/ext/bc/C/rpc"
+  },
+  {
+    "id": "avalanche-mainnet",
+    "chainId": 43114,
+    "cloudRpcId": "ava",
+    "publicRpc": "https://avalanche-c-chain-rpc.publicnode.com"
+  },
+  {
+    "id": "linea-mainnet",
+    "chainId": 59144,
+    "cloudRpcId": "linea",
+    "publicRpc": "https://linea-rpc.publicnode.com"
+  },
+  {
+    "id": "polygon-amoy-testnet",
+    "chainId": 80002,
+    "cloudRpcId": "polygon-amoy-testnet",
+    "publicRpc": "https://polygon-amoy-bor-rpc.publicnode.com"
+  },
+  {
+    "id": "berachain-mainnet",
+    "chainId": 80094,
+    "cloudRpcId": "berachain",
+    "publicRpc": "https://berachain-rpc.publicnode.com"
+  },
+  {
+    "id": "blast-l2-mainnet",
+    "chainId": 81457,
+    "cloudRpcId": "blast-l2",
+    "publicRpc": "https://blast-rpc.publicnode.com"
+  },
+  {
+    "id": "base-sepolia",
+    "chainId": 84532,
+    "cloudRpcId": "base-sepolia",
+    "publicRpc": "https://base-sepolia-rpc.publicnode.com"
+  },
+  {
+    "id": "arbitrum-sepolia",
+    "chainId": 421614,
+    "cloudRpcId": "arbitrum-sepolia",
+    "publicRpc": "https://arbitrum-sepolia-rpc.publicnode.com"
+  },
+  {
+    "id": "scroll-sepolia",
+    "chainId": 534351,
+    "cloudRpcId": "scroll-sepolia",
+    "publicRpc": "https://scroll-sepolia-rpc.publicnode.com"
+  },
+  {
+    "id": "scroll-mainnet",
+    "chainId": 534352,
+    "cloudRpcId": "scroll",
+    "publicRpc": "https://scroll-rpc.publicnode.com"
+  },
+  {
+    "id": "ethereum-hoodi",
+    "chainId": 560048,
+    "cloudRpcId": null,
+    "publicRpc": "https://ethereum-hoodi-rpc.publicnode.com"
+  },
+  {
+    "id": "ink-sepolia",
+    "chainId": 763373,
+    "cloudRpcId": "unichain-sepolia",
+    "publicRpc": null
+  },
+  {
+    "id": "zora-mainnet",
+    "chainId": 7777777,
+    "cloudRpcId": null,
+    "publicRpc": "https://oraichain-rpc.publicnode.com:443"
+  },
+  {
+    "id": "ethereum-sepolia",
+    "chainId": 11155111,
+    "cloudRpcId": "eth-sepolia",
+    "publicRpc": "https://ethereum-sepolia-rpc.publicnode.com"
+  },
+  {
+    "id": "optimism-sepolia",
+    "chainId": 11155420,
+    "cloudRpcId": "optimism-sepolia",
+    "publicRpc": "https://optimism-sepolia-rpc.publicnode.com"
+  },
+  {
+    "id": "blast-sepolia",
+    "chainId": 168587773,
+    "cloudRpcId": "base-sepolia",
+    "publicRpc": null
+  }
+]
