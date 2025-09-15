@@ -1,0 +1,271 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://subsquid.io/schemas/createSquid.schema.json",
+  "title": "CreateSquid Configuration Schema",
+  "description": "Schema for createSquid.yaml configuration files used by the create-squid utility",
+  "type": "object",
+  "required": ["name", "description", "contracts"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the squid project",
+      "minLength": 3,
+      "maxLength": 30,
+      "pattern": "^[a-z0-9]([a-z0-9\\-]*[a-z0-9])?$"
+    },
+    "description": {
+      "type": "string",
+      "description": "A description of the squid project",
+      "minLength": 1
+    },
+    "contracts": {
+      "type": "array",
+      "description": "List of smart contracts to index (across all chains)",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "abi", "instances", "events"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The name of the contract (used in generated code)",
+            "minLength": 1,
+            "pattern": "^[a-zA-Z][a-zA-Z0-9]*$"
+          },
+          "abi": {
+            "type": "string",
+            "description": "Path to the ABI JSON file for this contract",
+            "minLength": 1,
+            "pattern": "\\.json$"
+          },
+          "instances": {
+            "type": "array",
+            "description": "List of contract instances to track",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["address", "name", "network", "range"],
+              "properties": {
+                "address": {
+                  "type": "string",
+                  "description": "The contract address. Use the implementation address for upgradable contracts",
+                  "pattern": "^0x[a-fA-F0-9]{40}$"
+                },
+                "proxy": {
+                  "type": "string",
+                  "description": "Optional proxy contract address. Events from this address will be captured if specified",
+                  "pattern": "^0x[a-fA-F0-9]{40}$"
+                },
+                "name": {
+                  "type": "string",
+                  "description": "A unique name for this contract instance",
+                  "minLength": 1,
+                  "pattern": "^[a-zA-Z][a-zA-Z0-9]*$"
+                },
+                "network": {
+                  "type": "string",
+                  "description": "The blockchain network identifier",
+                  "minLength": 1,
+                  "enum": [
+                    "0g-testnet",
+                    "abstract-mainnet",
+                    "abstract-testnet",
+                    "agung-evm",
+                    "aleph-zero-evm-mainnet",
+                    "arbitrum-nova",
+                    "arbitrum-one",
+                    "arbitrum-sepolia",
+                    "arthera-mainnet",
+                    "astar-mainnet",
+                    "avalanche-mainnet",
+                    "avalanche-testnet",
+                    "b3-mainnet",
+                    "b3-sepolia",
+                    "base-mainnet",
+                    "base-sepolia",
+                    "berachain-bartio",
+                    "berachain-mainnet",
+                    "binance-mainnet",
+                    "binance-testnet",
+                    "bitfinity-mainnet",
+                    "bitfinity-testnet",
+                    "bitgert-mainnet",
+                    "bitgert-testnet",
+                    "bittensor-mainnet-evm",
+                    "bittensor-testnet-evm",
+                    "blast-l2-mainnet",
+                    "blast-sepolia",
+                    "bob-mainnet",
+                    "bob-sepolia",
+                    "botanix-mainnet",
+                    "botanix-testnet",
+                    "camp-network-testnet-v2",
+                    "canto",
+                    "canto-testnet",
+                    "celo-alfajores-testnet",
+                    "celo-mainnet",
+                    "core-mainnet",
+                    "crossfi-mainnet",
+                    "crossfi-testnet",
+                    "cyber-mainnet",
+                    "cyberconnect-l2-testnet",
+                    "dancelight-testnet",
+                    "degen-chain",
+                    "dfk-chain",
+                    "dogechain-mainnet",
+                    "dogechain-testnet",
+                    "ethereum-holesky",
+                    "ethereum-hoodi",
+                    "ethereum-mainnet",
+                    "ethereum-sepolia",
+                    "etherlink-mainnet",
+                    "etherlink-testnet",
+                    "exosama",
+                    "fantom-mainnet",
+                    "fantom-testnet",
+                    "flare-mainnet",
+                    "formicarium-testnet",
+                    "galxe-gravity",
+                    "gelato-arbitrum-blueberry",
+                    "gnosis-mainnet",
+                    "hedera-mainnet",
+                    "hemi-mainnet",
+                    "hemi-testnet",
+                    "hyperliquid-mainnet",
+                    "hyperliquid-testnet",
+                    "immutable-zkevm-mainnet",
+                    "immutable-zkevm-testnet",
+                    "ink-mainnet",
+                    "ink-sepolia",
+                    "kyoto-testnet",
+                    "linea-mainnet",
+                    "lukso-mainnet",
+                    "manta-pacific",
+                    "manta-pacific-sepolia",
+                    "mantle-mainnet",
+                    "mantle-sepolia",
+                    "mega-testnet",
+                    "memecore-mainnet",
+                    "merlin-mainnet",
+                    "merlin-testnet",
+                    "metis-mainnet",
+                    "mode-mainnet",
+                    "monad-testnet",
+                    "moonbase-testnet",
+                    "moonbeam-mainnet",
+                    "moonriver-mainnet",
+                    "nakachain",
+                    "neon-devnet",
+                    "neon-mainnet",
+                    "opbnb-mainnet",
+                    "opbnb-testnet",
+                    "optimism-mainnet",
+                    "optimism-sepolia",
+                    "ozean-testnet",
+                    "peaq-mainnet",
+                    "plume",
+                    "plume-devnet",
+                    "plume-legacy",
+                    "plume-testnet",
+                    "polygon-amoy-testnet",
+                    "polygon-mainnet",
+                    "polygon-zkevm-cardona-testnet",
+                    "polygon-zkevm-mainnet",
+                    "poseidon-testnet",
+                    "prom-mainnet",
+                    "puppynet",
+                    "scroll-mainnet",
+                    "scroll-sepolia",
+                    "shibarium",
+                    "shibuya-testnet",
+                    "shiden-mainnet",
+                    "skale-nebula",
+                    "soneium-mainnet",
+                    "soneium-minato-testnet",
+                    "sonic-mainnet",
+                    "sonic-testnet",
+                    "stratovm-sepolia",
+                    "superseed-mainnet",
+                    "superseed-sepolia",
+                    "taiko-mainnet",
+                    "tanssi",
+                    "unichain-mainnet",
+                    "unichain-sepolia",
+                    "xlayer-mainnet",
+                    "xlayer-testnet",
+                    "zklink-nova-mainnet",
+                    "zksync-mainnet",
+                    "zksync-sepolia",
+                    "zora-mainnet",
+                    "zora-sepolia"
+                  ]
+                },
+                "range": {
+                  "type": "object",
+                  "description": "Block range to process for this instance",
+                  "required": ["from"],
+                  "properties": {
+                    "from": {
+                      "type": "integer",
+                      "description": "Starting block number",
+                      "minimum": 0
+                    },
+                    "to": {
+                      "type": "integer",
+                      "description": "Ending block number (optional, will index in real time if omitted and RPC is available)",
+                      "minimum": 0
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "events": {
+            "type": "array",
+            "description": "List of events to track for this contract",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "description": "Event signature in the format 'EventName(type1,type2,type3)'",
+              "pattern": "^[a-zA-Z][a-zA-Z0-9]*\\([^)]*\\)$",
+              "examples": [
+                "Transfer(address,address,uint256)",
+                "LiquidationCall(address,address,address,uint256,uint256,address,bool)",
+                "Approved(address,uint256,uint256,bytes32)"
+              ]
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false,
+  "examples": [
+    {
+      "name": "create-squid-ref-event-tables",
+      "description": "Reference squid for the one-table-per-event mode of the create-squid utility",
+      "contracts": [
+        {
+          "name": "Tokens",
+          "abi": "./abi/erc20.json",
+          "instances": [
+            {
+              "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+              "name": "usdc",
+              "network": "ethereum-mainnet",
+              "range": {
+                "from": 6082465
+              }
+            }
+          ],
+          "events": [
+            "Transfer(address,address,uint256)"
+          ]
+        }
+      ]
+    }
+  ]
+}
