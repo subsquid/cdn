@@ -1588,6 +1588,24 @@
                   null
                 ]
               ]
+            },
+            {
+              "name": "traces",
+              "ranges": [
+                [
+                  "1",
+                  null
+                ]
+              ]
+            },
+            {
+              "name": "stateDiffs",
+              "ranges": [
+                [
+                  "1",
+                  null
+                ]
+              ]
             }
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/hyperliquid-mainnet",
