@@ -177,6 +177,10 @@ sqd-network-datasets:
     id: s3://ozean-testnet
   - name: peaq-mainnet
     id: s3://peaq-mainnet-traceless-1
+  - name: plasma-mainnet
+    id: s3://plasma-mainnet
+  - name: plasma-testnet
+    id: s3://plasma-testnet
   - name: plume-testnet
     id: s3://plume-devnet-v2
   - name: plume-mainnet
