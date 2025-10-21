@@ -1323,47 +1323,6 @@
       ]
     },
     {
-      "chainId": 250,
-      "chainName": "Fantom",
-      "id": "fantom-mainnet",
-      "logoUrl": "https://cdn.subsquid.io/img/networks/fantom.png",
-      "network": "fantom",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/fantom-mainnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 1
-        }
-      ]
-    },
-    {
-      "chainId": 4002,
-      "chainName": "Fantom Testnet",
-      "id": "fantom-testnet",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/fantom.png",
-      "network": "fantom-testnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/fantom-testnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainId": 14,
       "chainName": "Flare",
       "id": "flare-mainnet",

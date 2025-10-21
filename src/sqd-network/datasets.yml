@@ -97,10 +97,6 @@ sqd-network-datasets:
     id: s3://etherlink-testnet-4
   - name: exosama
     id: s3://exosama-1
-  - name: fantom-mainnet
-    id: s3://fantom-mainnet-traceless
-  - name: fantom-testnet
-    id: s3://fantom-testnet-traceless-1
   - name: flare-mainnet
     id: s3://flare-mainnet-traceless-1
   - name: formicarium-testnet
