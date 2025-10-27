@@ -251,6 +251,8 @@ sqd-network-datasets:
     id: s3://amplitude-4
   - name: asset-hub-kusama
     id: s3://asset-hub-kusama-4
+  - name: asset-hub-paseo
+    id: s3://asset-hub-paseo
   - name: asset-hub-polkadot
     id: s3://asset-hub-polkadot-4
   - name: asset-hub-rococo

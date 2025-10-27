@@ -149,6 +149,27 @@
       ]
     },
     {
+      "chainName": "Asset Hub Paseo",
+      "chainSS58Prefix": 0,
+      "genesisHash": "0x48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
+      "id": "asset-hub-paseo",
+      "network": "asset-hub-paseo",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "calls",
+            "events",
+            "extrinsics"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/asset-hub-paseo",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "chainName": "Asset Hub Polkadot",
       "chainSS58Prefix": 0,
       "genesisHash": "0x68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
