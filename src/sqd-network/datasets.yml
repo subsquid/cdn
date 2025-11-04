@@ -111,6 +111,8 @@ sqd-network-datasets:
     id: s3://gnosis-mainnet-1
   - name: hyperliquid-testnet
     id: s3://hyperliquid-testnet-4
+  - name: hyperliquid-mainnet
+    id: s3://hyperliquid-mainnet-1
   - name: immutable-zkevm-mainnet
     id: s3://immutable-zkevm-mainnet-traceless-1
   - name: immutable-zkevm-testnet
