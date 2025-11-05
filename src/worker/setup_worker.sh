@@ -30,9 +30,9 @@ NORMAL=$(tput sgr0)
 declare -A RPC_URL
 declare -A L1_RPC_URL
 RPC_URL["tethys"]=https://sepolia-rollup.arbitrum.io/rpc
-L1_RPC_URL["tethys"]=https://eth-sepolia.public.blastapi.io
+L1_RPC_URL["tethys"]=https://ethereum-sepolia-public.nodies.app
 RPC_URL["mainnet"]=https://arb1.arbitrum.io/rpc
-L1_RPC_URL["mainnet"]=https://eth-mainnet.public.blastapi.io
+L1_RPC_URL["mainnet"]=https://ethereum-public.nodies.app
 
 
 if [ "$#" -ne 2 ]
