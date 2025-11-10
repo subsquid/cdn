@@ -35,6 +35,8 @@ sqd-network-datasets:
     id: s3://base
   - name: base-sepolia
     id: s3://base-sepolia
+  - name: beam-mainnet
+    id: s3://beam-mainnet
   - name: berachain-mainnet
     id: s3://berachain-mainnet
   - name: berachain-bartio
