@@ -11,6 +11,10 @@ sqd-network-datasets:
     id: s3://ethereum-mainnet-2
     kind: evm
     chain_id: 1
+  - name: blast-sepolia
+    id: s3://blast-sepolia
+    kind: evm
+    chain_id: 168587773
   - name: zora-mainnet
     id: s3://zora-mainnet
     kind: evm
