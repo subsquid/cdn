@@ -1877,6 +1877,27 @@
       ]
     },
     {
+      "chainId": 4326,
+      "chainName": "MegaETH Mainnet",
+      "id": "megaeth-mainnet",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/mega.png",
+      "network": "megaeth-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/megaeth-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 1
+        }
+      ]
+    },
+    {
       "chainId": 6342,
       "chainName": "Mega Testnet",
       "id": "mega-testnet",

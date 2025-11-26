@@ -135,6 +135,8 @@ sqd-network-datasets:
     id: s3://mantle-mainnet-1-traceless
   - name: mantle-sepolia
     id: s3://mantle-sepolia-1-traceless
+  - name: megaeth-mainnet
+    id: s3://mega-mainnet
   - name: memecore-mainnet
     id: s3://memecore-mainnet
   - name: merlin-mainnet
