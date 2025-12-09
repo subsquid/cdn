@@ -1302,6 +1302,27 @@
       ]
     },
     {
+      "chainId": 127823,
+      "chainName": "Etherlink Shadownet",
+      "id": "etherlink-shadownet",
+      "isTestnet": true,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/etherlink.png",
+      "network": "etherlink-shadownet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/etherlink-shadownet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
       "chainId": 128123,
       "chainName": "Etherlink Testnet",
       "id": "etherlink-testnet",
@@ -1898,12 +1919,12 @@
       ]
     },
     {
-      "chainId": 6342,
-      "chainName": "Mega Testnet",
-      "id": "mega-testnet",
+      "chainId": 6343,
+      "chainName": "MegaETH Testnet",
+      "id": "megaeth-testnet",
       "isTestnet": true,
       "logoUrl": "https://cdn.subsquid.io/img/networks/mega.png",
-      "network": "mega-testnet",
+      "network": "megaeth-testnet",
       "providers": [
         {
           "data": [
@@ -1911,7 +1932,7 @@
             "tx",
             "logs"
           ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/mega-testnet",
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/megaeth-testnet",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 1

@@ -95,6 +95,8 @@ sqd-network-datasets:
     id: s3://ethereum-sepolia-1
   - name: etherlink-mainnet
     id: s3://etherlink-mainnet-traceless
+  - name: etherlink-shadownet
+    id: s3://etherlink-shadownet
   - name: etherlink-testnet
     id: s3://etherlink-testnet-4
   - name: exosama
@@ -137,6 +139,8 @@ sqd-network-datasets:
     id: s3://mantle-sepolia-1-traceless
   - name: megaeth-mainnet
     id: s3://mega-mainnet
+  - name: megaeth-testnet
+    id: s3://mega-testnet-v2
   - name: memecore-mainnet
     id: s3://memecore-mainnet
   - name: merlin-mainnet
