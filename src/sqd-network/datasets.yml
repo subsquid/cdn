@@ -32,7 +32,7 @@ sqd-network-datasets:
   - name: b3-mainnet
     id: s3://b3-mainnet
   - name: base-mainnet
-    id: s3://base
+    id: s3://base-mainnet
   - name: base-sepolia
     id: s3://base-sepolia
   - name: beam-mainnet
