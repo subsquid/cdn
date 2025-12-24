@@ -30,6 +30,6 @@ sqd-network-datasets:
     id: s3://eclipse-testnet-2
     kind: solana
 
-  - name: hl-node-fills
+  - name: hyperliquid-fills
     id: s3://hl-node-fills
     kind: hyperliquidFills
