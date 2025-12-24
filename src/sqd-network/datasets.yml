@@ -154,7 +154,7 @@ sqd-network-datasets:
   - name: monad-mainnet
     id: s3://monad-mainnet
   - name: monad-testnet
-    id: s3://monad-testnet-2
+    id: s3://monad-testnet-3
   - name: moonbase-testnet
     id: s3://moonbase-testnet-1
   - name: moonbeam-mainnet
