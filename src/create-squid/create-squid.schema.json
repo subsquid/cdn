@@ -34,7 +34,7 @@
           },
           "abi": {
             "type": "string",
-            "description": "Path to the ABI JSON file for this contract",
+            "description": "Path to the ABI JSON file for this contract. Base filename should be in kebab-case",
             "minLength": 1,
             "pattern": "\\.json$"
           },
