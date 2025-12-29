@@ -8,7 +8,7 @@
   "properties": {
     "name": {
       "type": "string",
-      "description": "The name of the squid project",
+      "description": "The name of the squid project (kebab-cased, 3-30 characters)",
       "minLength": 3,
       "maxLength": 30,
       "pattern": "^[a-z0-9]([a-z0-9\\-]*[a-z0-9])?$"
@@ -28,7 +28,7 @@
         "properties": {
           "name": {
             "type": "string",
-            "description": "The name of the contract (used in generated code)",
+            "description": "The name of the contract (required, should be PascalCased)",
             "minLength": 1,
             "pattern": "^[a-zA-Z][a-zA-Z0-9]*$"
           },
@@ -58,20 +58,19 @@
                 },
                 "name": {
                   "type": "string",
-                  "description": "A unique name for this contract instance",
+                  "description": "A unique name for this contract instance (should be camelCased)",
                   "minLength": 1,
                   "pattern": "^[a-zA-Z][a-zA-Z0-9]*$"
                 },
                 "network": {
                   "type": "string",
-                  "description": "The blockchain network identifier",
+                  "description": "The blockchain network identifier (enum)",
                   "minLength": 1,
                   "enum": [
                     "0g-testnet",
                     "abstract-mainnet",
                     "abstract-testnet",
                     "agung-evm",
-                    "aleph-zero-evm-mainnet",
                     "arbitrum-nova",
                     "arbitrum-one",
                     "arbitrum-sepolia",
@@ -83,6 +82,7 @@
                     "b3-sepolia",
                     "base-mainnet",
                     "base-sepolia",
+                    "beam-mainnet",
                     "berachain-bartio",
                     "berachain-mainnet",
                     "binance-mainnet",
@@ -119,10 +119,9 @@
                     "ethereum-mainnet",
                     "ethereum-sepolia",
                     "etherlink-mainnet",
+                    "etherlink-shadownet",
                     "etherlink-testnet",
                     "exosama",
-                    "fantom-mainnet",
-                    "fantom-testnet",
                     "flare-mainnet",
                     "formicarium-testnet",
                     "galxe-gravity",
@@ -144,12 +143,14 @@
                     "manta-pacific-sepolia",
                     "mantle-mainnet",
                     "mantle-sepolia",
-                    "mega-testnet",
+                    "megaeth-mainnet",
+                    "megaeth-testnet",
                     "memecore-mainnet",
                     "merlin-mainnet",
                     "merlin-testnet",
                     "metis-mainnet",
                     "mode-mainnet",
+                    "monad-mainnet",
                     "monad-testnet",
                     "moonbase-testnet",
                     "moonbeam-mainnet",
