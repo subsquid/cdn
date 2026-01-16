@@ -1556,7 +1556,7 @@
     },
     {
       "chainId": 999,
-      "chainName": "Hyperliquid Mainnet",
+      "chainName": "HyperEVM Mainnet",
       "id": "hyperliquid-mainnet",
       "isTestnet": false,
       "logoUrl": "https://cdn.subsquid.io/img/networks/hyperliquid.svg",
@@ -1619,7 +1619,7 @@
     },
     {
       "chainId": 998,
-      "chainName": "Hyperliquid Testnet",
+      "chainName": "HyperEVM Testnet",
       "id": "hyperliquid-testnet",
       "isTestnet": true,
       "logoUrl": "https://cdn.subsquid.io/img/networks/hyperliquid.svg",
@@ -2341,7 +2341,7 @@
       ]
     },
     {
-      "chainId": 42,
+      "chainId": 7849306,
       "chainName": "Ozean Testnet",
       "id": "ozean-testnet",
       "isTestnet": true,
@@ -2957,7 +2957,7 @@
       "chainId": 130,
       "chainName": "Unichain Mainnet",
       "id": "unichain-mainnet",
-      "isTestnet": true,
+      "isTestnet": false,
       "logoUrl": "https://cdn.subsquid.io/img/networks/unichain.svg",
       "network": "unichain-mainnet",
       "providers": [
