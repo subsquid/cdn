@@ -122,7 +122,7 @@ sqd-network-datasets:
   - name: immutable-zkevm-testnet
     id: s3://immutable-zkevm-testnet-traceless-1
   - name: ink-mainnet
-    id: s3://ink-mainnet
+    id: s3://ink-mainnet-2
   - name: kyoto-testnet
     id: s3://kyoto-testnet-traceless
   - name: linea-mainnet
