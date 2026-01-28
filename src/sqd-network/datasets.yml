@@ -2,381 +2,507 @@ sqd-network-datasets:
   - name: 0g-testnet
     id: s3://0g-testnet-traceless-1
     kind: evm
+    chain_id: 16600
   - name: abstract-testnet
     id: s3://abstract-testnet
     kind: evm
+    chain_id: 11124
   - name: abstract-mainnet
     id: s3://abstract-mainnet
     kind: evm
+    chain_id: 2741
   - name: agung-evm
     id: s3://agung-testnet-1
     kind: evm
+    chain_id: 9990
   - name: aleph-zero-evm-mainnet
     id: s3://aleph-zero-evm-mainnet
     kind: evm
+    chain_id: 41455
   - name: arbitrum-nova
     id: s3://arbitrum-nova-1
     kind: evm
+    chain_id: 42170
   - name: arbitrum-one
     id: s3://arbitrum-one
     kind: evm
+    chain_id: 42161
   - name: arbitrum-sepolia
     id: s3://arbitrum-sepolia-traceless
     kind: evm
+    chain_id: 421614
   - name: arthera-mainnet
     id: s3://arthera-mainnet
     kind: evm
+    chain_id: 10242
   - name: astar-mainnet
     id: s3://astar-mainnet-traceless-1
     kind: evm
+    chain_id: 592
   - name: astar-zkyoto
     id: s3://astar-zkyoto-1-traceless
     kind: evm
+    chain_id: 6038361
   - name: astar-zkevm-mainnet
     id: s3://astar-zkevm-mainnet-1-traceless
     kind: evm
+    chain_id: 3776
   - name: avalanche-mainnet
     id: s3://ava-mainnet-1
     kind: evm
+    chain_id: 43114
   - name: avalanche-testnet
     id: s3://ava-testnet-1
     kind: evm
+    chain_id: 43113
   - name: b3-sepolia
     id: s3://b3-sepolia
     kind: evm
+    chain_id: 1993
   - name: b3-mainnet
     id: s3://b3-mainnet
     kind: evm
+    chain_id: 8333
   - name: base-mainnet
     id: s3://base-mainnet
     kind: evm
+    chain_id: 8453
   - name: base-sepolia
     id: s3://base-sepolia
     kind: evm
+    chain_id: 84532
   - name: beam-mainnet
     id: s3://beam-mainnet
     kind: evm
+    chain_id: 4337
   - name: berachain-mainnet
     id: s3://berachain-mainnet
     kind: evm
+    chain_id: 80094
   - name: berachain-bartio
     id: s3://berachain-bartio
     kind: evm
+    chain_id: 80084
   - name: binance-mainnet
     id: s3://binance-mainnet
     kind: evm
+    chain_id: 56
   - name: binance-testnet
     id: s3://binance-testnet-traceless-1
     kind: evm
+    chain_id: 97
   - name: bitfinity-mainnet
     id: s3://bitfinity-mainnet
     kind: evm
+    chain_id: 355110
   - name: bitfinity-testnet
     id: s3://bitfinity-testnet
     kind: evm
+    chain_id: 355113
   - name: bittensor-mainnet-evm
     id: s3://bittensor-mainnet-evm
     kind: evm
+    chain_id: 964
   - name: bittensor-testnet-evm
     id: s3://bittensor-testnet-evm
     kind: evm
+    chain_id: 945
   - name: blast-l2-mainnet
     id: s3://blast-l2-mainnet-1
     kind: evm
+    chain_id: 81457
   - name: blast-sepolia
     id: s3://blast-sepolia
     kind: evm
+    chain_id: 168587773
   - name: bitgert-mainnet
     id: s3://bitgert-mainnet-1
     kind: evm
+    chain_id: 32520
   - name: bitgert-testnet
     id: s3://bitgert-testnet-1
     kind: evm
+    chain_id: 64668
   - name: bob-mainnet
     id: s3://bob-mainnet
     kind: evm
+    chain_id: 60808
   - name: bob-sepolia
     id: s3://bob-sepolia
     kind: evm
+    chain_id: 808813
   - name: camp-network-testnet-v2
     id: s3://camp-network-testnet-v2
     kind: evm
+    chain_id: 325000
   - name: canto
     id: s3://canto-traceless
     kind: evm
+    chain_id: 7700
   - name: canto-testnet
     id: s3://canto-testnet-traceless
     kind: evm
+    chain_id: 7701
   - name: core-mainnet
     id: s3://core-mainnet-1
     kind: evm
+    chain_id: 1116
   - name: cyberconnect-l2-testnet
     id: s3://cyber-l2-testnet-2
     kind: evm
+    chain_id: 111557560
   - name: cyber-mainnet
     id: s3://cyber-mainnet-1
     kind: evm
+    chain_id: 7560
   - name: crossfi-mainnet
     id: s3://crossfi-mainnet
     kind: evm
+    chain_id: 4158
   - name: crossfi-testnet
     id: s3://crossfi-testnet-traceless
     kind: evm
+    chain_id: 4157
   - name: dfk-chain
     id: s3://dfk-chain-traceless-1
     kind: evm
+    chain_id: 53935
   - name: dogechain-mainnet
     id: s3://dogechain-mainnet-traceless-1
     kind: evm
+    chain_id: 2000
   - name: dogechain-testnet
     id: s3://dogechain-testnet-traceless-1
     kind: evm
+    chain_id: 568
   - name: ethereum-holesky
     id: s3://ethereum-holesky-1
     kind: evm
+    chain_id: 17000
   - name: ethereum-mainnet
     id: s3://ethereum-mainnet-2
     kind: evm
+    chain_id: 1
   - name: ethereum-sepolia
     id: s3://ethereum-sepolia-1
     kind: evm
+    chain_id: 11155111
   - name: etherlink-mainnet
     id: s3://etherlink-mainnet-traceless
     kind: evm
+    chain_id: 42793
   - name: etherlink-shadownet
     id: s3://etherlink-shadownet
     kind: evm
+    chain_id: 127823
   - name: etherlink-testnet
     id: s3://etherlink-testnet-4
     kind: evm
+    chain_id: 128123
   - name: exosama
     id: s3://exosama-1
     kind: evm
+    chain_id: 2109
   - name: flare-mainnet
     id: s3://flare-mainnet-traceless-1
     kind: evm
+    chain_id: 14
   - name: formicarium-testnet
     id: s3://formicarium-testnet-1
     kind: evm
+    chain_id: 43521
   - name: galxe-gravity
     id: s3://galxe-gravity
     kind: evm
+    chain_id: 1625
   - name: gelato-arbitrum-blueberry
     id: s3://arbitrum-blueberry-1
     kind: evm
+    chain_id: 88153591557
   - name: gelato-opcelestia-raspberry
     id: s3://opcelestia-raspberry-traceless
     kind: evm
+    chain_id: 123420111
   - name: gnosis-mainnet
     id: s3://gnosis-mainnet-1
     kind: evm
+    chain_id: 100
   - name: hyperliquid-testnet
     id: s3://hyperliquid-testnet-7
     kind: evm
+    chain_id: 998
   - name: hyperliquid-mainnet
     id: s3://hyperliquid-mainnet-1
     kind: evm
+    chain_id: 999
   - name: immutable-zkevm-mainnet
     id: s3://immutable-zkevm-mainnet-traceless-1
     kind: evm
+    chain_id: 13371
   - name: immutable-zkevm-testnet
     id: s3://immutable-zkevm-testnet-traceless-1
     kind: evm
+    chain_id: 13473
   - name: ink-mainnet
     id: s3://ink-mainnet-2
     kind: evm
+    chain_id: 57073
   - name: kyoto-testnet
     id: s3://kyoto-testnet-traceless
     kind: evm
+    chain_id: 1998
   - name: linea-mainnet
     id: s3://linea-mainnet-1
     kind: evm
+    chain_id: 59144
   - name: lukso-mainnet
     id: s3://lukso-mainnet-1
     kind: evm
+    chain_id: 42
   - name: manta-pacific
     id: s3://manta-pacific-traceless
     kind: evm
+    chain_id: 169
   - name: manta-pacific-sepolia
     id: s3://manta-pacific-sepolia
     kind: evm
+    chain_id: 3441006
   - name: mantle-mainnet
     id: s3://mantle-mainnet-1-traceless
     kind: evm
+    chain_id: 5000
   - name: mantle-sepolia
     id: s3://mantle-sepolia-1-traceless
     kind: evm
+    chain_id: 5003
   - name: megaeth-mainnet
     id: s3://mega-mainnet
     kind: evm
+    chain_id: 4326
   - name: megaeth-testnet
     id: s3://mega-testnet-v2
     kind: evm
+    chain_id: 6342
   - name: memecore-mainnet
     id: s3://memecore-mainnet
     kind: evm
+    chain_id: 4352
   - name: merlin-mainnet
     id: s3://merlin-mainnet-traceless
     kind: evm
+    chain_id: 4200
   - name: merlin-testnet
     id: s3://merlin-testnet-traceless
     kind: evm
+    chain_id: 686868
   - name: metis-mainnet
     id: s3://metis-mainnet-3
     kind: evm
+    chain_id: 1088
   - name: mode-mainnet
     id: s3://mode-mainnet-traceless
     kind: evm
+    chain_id: 34443
   - name: monad-mainnet
     id: s3://monad-mainnet
     kind: evm
+    chain_id: 143
   - name: monad-testnet
     id: s3://monad-testnet-3
     kind: evm
+    chain_id: 10143
   - name: moonbase-testnet
     id: s3://moonbase-testnet-1
     kind: evm
+    chain_id: 1287
   - name: moonbeam-mainnet
     id: s3://moonbeam-evm-2
     kind: evm
+    chain_id: 1284
   - name: moonriver-mainnet
     id: s3://moonriver-mainnet-1
     kind: evm
+    chain_id: 1285
   - name: moonsama
     id: s3://moonsama-traceless-1
     kind: evm
+    chain_id: 2199
   - name: nakachain
     id: s3://nakachain
     kind: evm
+    chain_id: 42225
   - name: neon-mainnet
     id: s3://neon-mainnet-traceless
     kind: evm
+    chain_id: 245022934
   - name: neon-devnet
     id: s3://neon-devnet-traceless-1
     kind: evm
+    chain_id: 245022926
   - name: neox-testnet
     id: s3://neox-testnet
     kind: evm
+    chain_id: 12227331
   - name: opbnb-mainnet
     id: s3://opbnb-mainnet-traceless-1
     kind: evm
+    chain_id: 204
   - name: opbnb-testnet
     id: s3://opbnb-testnet-traceless-1
     kind: evm
+    chain_id: 5611
   - name: optimism-mainnet
     id: s3://optimism-2
     kind: evm
+    chain_id: 10
   - name: optimism-sepolia
     id: s3://optimism-sepolia-traceless
     kind: evm
+    chain_id: 11155420
   - name: ozean-testnet
     id: s3://ozean-testnet
     kind: evm
+    chain_id: 7849306
   - name: peaq-mainnet
     id: s3://peaq-mainnet-traceless-1
     kind: evm
+    chain_id: 3338
   - name: plasma-mainnet
     id: s3://plasma-mainnet
     kind: evm
+    chain_id: 9745
   - name: plasma-testnet
     id: s3://plasma-testnet
     kind: evm
+    chain_id: 9746
   - name: plume-testnet
     id: s3://plume-devnet-v2
     kind: evm
+    chain_id: 98867
   - name: plume-mainnet
     id: s3://plume-mainnet
     kind: evm
+    chain_id: 98866
   - name: polygon-mainnet
     id: s3://polygon-mainnet-1
     kind: evm
+    chain_id: 137
   - name: polygon-amoy-testnet
     id: s3://polygon-amoy-testnet-traceless
     kind: evm
+    chain_id: 80002
   - name: polygon-zkevm-mainnet
     id: s3://polygon-zkevm-mainnet-traceless
     kind: evm
+    chain_id: 1101
   - name: polygon-zkevm-cardona-testnet
     id: s3://polygon-zkevm-cardona-testnet-traceless-1
     kind: evm
+    chain_id: 2442
   - name: prom-mainnet
     id: s3://prom-mainnet-1
     kind: evm
+    chain_id: 227
   - name: puppynet
     id: s3://puppynet
     kind: evm
+    chain_id: 157
   - name: scroll-mainnet
     id: s3://scroll-mainnet
     kind: evm
+    chain_id: 534352
   - name: scroll-sepolia
     id: s3://scroll-sepolia
     kind: evm
+    chain_id: 534351
   - name: shiden-mainnet
     id: s3://shiden-mainnet
     kind: evm
+    chain_id: 336
   - name: shibarium
     id: s3://shibarium
     kind: evm
+    chain_id: 109
   - name: shibuya-testnet
     id: s3://shibuya-testnet-traceless-1
     kind: evm
+    chain_id: 81
   - name: skale-nebula
     id: s3://skale-nebula-traceless-1
     kind: evm
+    chain_id: 1482601649
   - name: soneium-mainnet
     id: s3://soneium-mainnet
     kind: evm
+    chain_id: 1868
   - name: sonic-mainnet
     id: s3://sonic-mainnet
     kind: evm
+    chain_id: 146
   - name: sonic-testnet
     id: s3://sonic-testnet-0
     kind: evm
+    chain_id: 14601
   - name: stratovm-sepolia
     id: s3://stratovm-sepolia
     kind: evm
+    chain_id: 93747
   - name: superseed-sepolia
     id: s3://superseed-sepolia-traceless
     kind: evm
+    chain_id: 53302
   - name: superseed-mainnet
     id: s3://superseed-mainnet
     kind: evm
+    chain_id: 5330
   - name: taiko-mainnet
     id: s3://taiko-mainnet-traceless
     kind: evm
+    chain_id: 167000
   - name: tanssi
     id: s3://tanssi-traceless-1
     kind: evm
+    chain_id: 5678
   - name: unichain-mainnet
     id: s3://unichain-mainnet
     kind: evm
+    chain_id: 130
   - name: unichain-sepolia
     id: s3://unichain-sepolia-1
     kind: evm
+    chain_id: 1301
   - name: x1-testnet
     id: s3://x1-testnet-traceless
     kind: evm
+    # Chain ID for this one is unknown
   - name: xlayer-mainnet
     id: s3://xlayer-mainnet-traceless
     kind: evm
+    chain_id: 196
   - name: xlayer-testnet
     id: s3://xlayer-testnet-traceless
     kind: evm
+    chain_id: 195
   - name: zklink-nova-mainnet
     id: s3://zklink-nova-mainnet
     kind: evm
+    chain_id: 810180
   - name: zksync-mainnet
     id: s3://zksync-mainnet-1
     kind: evm
+    chain_id: 324
   - name: zksync-sepolia
     id: s3://zksync-sepolia-2
     kind: evm
+    chain_id: 300
   - name: zora-mainnet
     id: s3://zora-mainnet
     kind: evm
+    chain_id: 7777777
   - name: zora-sepolia
     id: s3://zora-sepolia-traceless-1
     kind: evm
+    chain_id: 999999999
 
   - name: acala
     id: s3://acala-4
