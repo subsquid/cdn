@@ -1,449 +1,675 @@
 sqd-network-datasets:
   - name: 0g-testnet
     id: s3://0g-testnet-traceless-1
+    kind: evm
   - name: abstract-testnet
     id: s3://abstract-testnet
+    kind: evm
   - name: abstract-mainnet
     id: s3://abstract-mainnet
+    kind: evm
   - name: agung-evm
     id: s3://agung-testnet-1
+    kind: evm
   - name: aleph-zero-evm-mainnet
     id: s3://aleph-zero-evm-mainnet
+    kind: evm
   - name: arbitrum-nova
     id: s3://arbitrum-nova-1
+    kind: evm
   - name: arbitrum-one
     id: s3://arbitrum-one
+    kind: evm
   - name: arbitrum-sepolia
     id: s3://arbitrum-sepolia-traceless
+    kind: evm
   - name: arthera-mainnet
     id: s3://arthera-mainnet
+    kind: evm
   - name: astar-mainnet
     id: s3://astar-mainnet-traceless-1
+    kind: evm
   - name: astar-zkyoto
     id: s3://astar-zkyoto-1-traceless
+    kind: evm
   - name: astar-zkevm-mainnet
     id: s3://astar-zkevm-mainnet-1-traceless
+    kind: evm
   - name: avalanche-mainnet
     id: s3://ava-mainnet-1
+    kind: evm
   - name: avalanche-testnet
     id: s3://ava-testnet-1
+    kind: evm
   - name: b3-sepolia
     id: s3://b3-sepolia
+    kind: evm
   - name: b3-mainnet
     id: s3://b3-mainnet
+    kind: evm
   - name: base-mainnet
     id: s3://base-mainnet
+    kind: evm
   - name: base-sepolia
     id: s3://base-sepolia
+    kind: evm
   - name: beam-mainnet
     id: s3://beam-mainnet
+    kind: evm
   - name: berachain-mainnet
     id: s3://berachain-mainnet
+    kind: evm
   - name: berachain-bartio
     id: s3://berachain-bartio
+    kind: evm
   - name: binance-mainnet
     id: s3://binance-mainnet
+    kind: evm
   - name: binance-testnet
     id: s3://binance-testnet-traceless-1
+    kind: evm
   - name: bitfinity-mainnet
     id: s3://bitfinity-mainnet
+    kind: evm
   - name: bitfinity-testnet
     id: s3://bitfinity-testnet
+    kind: evm
   - name: bittensor-mainnet-evm
     id: s3://bittensor-mainnet-evm
+    kind: evm
   - name: bittensor-testnet-evm
     id: s3://bittensor-testnet-evm
+    kind: evm
   - name: blast-l2-mainnet
     id: s3://blast-l2-mainnet-1
+    kind: evm
   - name: blast-sepolia
     id: s3://blast-sepolia
+    kind: evm
   - name: bitgert-mainnet
     id: s3://bitgert-mainnet-1
+    kind: evm
   - name: bitgert-testnet
     id: s3://bitgert-testnet-1
+    kind: evm
   - name: bob-mainnet
     id: s3://bob-mainnet
+    kind: evm
   - name: bob-sepolia
     id: s3://bob-sepolia
+    kind: evm
   - name: camp-network-testnet-v2
     id: s3://camp-network-testnet-v2
+    kind: evm
   - name: canto
     id: s3://canto-traceless
+    kind: evm
   - name: canto-testnet
     id: s3://canto-testnet-traceless
+    kind: evm
   - name: core-mainnet
     id: s3://core-mainnet-1
+    kind: evm
   - name: cyberconnect-l2-testnet
     id: s3://cyber-l2-testnet-2
+    kind: evm
   - name: cyber-mainnet
     id: s3://cyber-mainnet-1
+    kind: evm
   - name: crossfi-mainnet
     id: s3://crossfi-mainnet
+    kind: evm
   - name: crossfi-testnet
     id: s3://crossfi-testnet-traceless
+    kind: evm
   - name: dfk-chain
     id: s3://dfk-chain-traceless-1
+    kind: evm
   - name: dogechain-mainnet
     id: s3://dogechain-mainnet-traceless-1
+    kind: evm
   - name: dogechain-testnet
     id: s3://dogechain-testnet-traceless-1
+    kind: evm
   - name: ethereum-holesky
     id: s3://ethereum-holesky-1
+    kind: evm
   - name: ethereum-mainnet
     id: s3://ethereum-mainnet-2
+    kind: evm
   - name: ethereum-sepolia
     id: s3://ethereum-sepolia-1
+    kind: evm
   - name: etherlink-mainnet
     id: s3://etherlink-mainnet-traceless
+    kind: evm
   - name: etherlink-shadownet
     id: s3://etherlink-shadownet
+    kind: evm
   - name: etherlink-testnet
     id: s3://etherlink-testnet-4
+    kind: evm
   - name: exosama
     id: s3://exosama-1
+    kind: evm
   - name: flare-mainnet
     id: s3://flare-mainnet-traceless-1
+    kind: evm
   - name: formicarium-testnet
     id: s3://formicarium-testnet-1
+    kind: evm
   - name: galxe-gravity
     id: s3://galxe-gravity
+    kind: evm
   - name: gelato-arbitrum-blueberry
     id: s3://arbitrum-blueberry-1
+    kind: evm
   - name: gelato-opcelestia-raspberry
     id: s3://opcelestia-raspberry-traceless
+    kind: evm
   - name: gnosis-mainnet
     id: s3://gnosis-mainnet-1
+    kind: evm
   - name: hyperliquid-testnet
     id: s3://hyperliquid-testnet-7
+    kind: evm
   - name: hyperliquid-mainnet
     id: s3://hyperliquid-mainnet-1
+    kind: evm
   - name: immutable-zkevm-mainnet
     id: s3://immutable-zkevm-mainnet-traceless-1
+    kind: evm
   - name: immutable-zkevm-testnet
     id: s3://immutable-zkevm-testnet-traceless-1
+    kind: evm
   - name: ink-mainnet
     id: s3://ink-mainnet-2
+    kind: evm
   - name: kyoto-testnet
     id: s3://kyoto-testnet-traceless
+    kind: evm
   - name: linea-mainnet
     id: s3://linea-mainnet-1
+    kind: evm
   - name: lukso-mainnet
     id: s3://lukso-mainnet-1
+    kind: evm
   - name: manta-pacific
     id: s3://manta-pacific-traceless
+    kind: evm
   - name: manta-pacific-sepolia
     id: s3://manta-pacific-sepolia
+    kind: evm
   - name: mantle-mainnet
     id: s3://mantle-mainnet-1-traceless
+    kind: evm
   - name: mantle-sepolia
     id: s3://mantle-sepolia-1-traceless
+    kind: evm
   - name: megaeth-mainnet
     id: s3://mega-mainnet
+    kind: evm
   - name: megaeth-testnet
     id: s3://mega-testnet-v2
+    kind: evm
   - name: memecore-mainnet
     id: s3://memecore-mainnet
+    kind: evm
   - name: merlin-mainnet
     id: s3://merlin-mainnet-traceless
+    kind: evm
   - name: merlin-testnet
     id: s3://merlin-testnet-traceless
+    kind: evm
   - name: metis-mainnet
     id: s3://metis-mainnet-3
+    kind: evm
   - name: mode-mainnet
     id: s3://mode-mainnet-traceless
+    kind: evm
   - name: monad-mainnet
     id: s3://monad-mainnet
+    kind: evm
   - name: monad-testnet
     id: s3://monad-testnet-3
+    kind: evm
   - name: moonbase-testnet
     id: s3://moonbase-testnet-1
+    kind: evm
   - name: moonbeam-mainnet
     id: s3://moonbeam-evm-2
+    kind: evm
   - name: moonriver-mainnet
     id: s3://moonriver-mainnet-1
+    kind: evm
   - name: moonsama
     id: s3://moonsama-traceless-1
+    kind: evm
   - name: nakachain
     id: s3://nakachain
+    kind: evm
   - name: neon-mainnet
     id: s3://neon-mainnet-traceless
+    kind: evm
   - name: neon-devnet
     id: s3://neon-devnet-traceless-1
+    kind: evm
   - name: neox-testnet
     id: s3://neox-testnet
+    kind: evm
   - name: opbnb-mainnet
     id: s3://opbnb-mainnet-traceless-1
+    kind: evm
   - name: opbnb-testnet
     id: s3://opbnb-testnet-traceless-1
+    kind: evm
   - name: optimism-mainnet
     id: s3://optimism-2
+    kind: evm
   - name: optimism-sepolia
     id: s3://optimism-sepolia-traceless
+    kind: evm
   - name: ozean-testnet
     id: s3://ozean-testnet
+    kind: evm
   - name: peaq-mainnet
     id: s3://peaq-mainnet-traceless-1
+    kind: evm
   - name: plasma-mainnet
     id: s3://plasma-mainnet
+    kind: evm
   - name: plasma-testnet
     id: s3://plasma-testnet
+    kind: evm
   - name: plume-testnet
     id: s3://plume-devnet-v2
+    kind: evm
   - name: plume-mainnet
     id: s3://plume-mainnet
+    kind: evm
   - name: polygon-mainnet
     id: s3://polygon-mainnet-1
+    kind: evm
   - name: polygon-amoy-testnet
     id: s3://polygon-amoy-testnet-traceless
+    kind: evm
   - name: polygon-zkevm-mainnet
     id: s3://polygon-zkevm-mainnet-traceless
+    kind: evm
   - name: polygon-zkevm-cardona-testnet
     id: s3://polygon-zkevm-cardona-testnet-traceless-1
+    kind: evm
   - name: prom-mainnet
     id: s3://prom-mainnet-1
+    kind: evm
   - name: puppynet
     id: s3://puppynet
+    kind: evm
   - name: scroll-mainnet
     id: s3://scroll-mainnet
+    kind: evm
   - name: scroll-sepolia
     id: s3://scroll-sepolia
+    kind: evm
   - name: shiden-mainnet
     id: s3://shiden-mainnet
+    kind: evm
   - name: shibarium
     id: s3://shibarium
+    kind: evm
   - name: shibuya-testnet
     id: s3://shibuya-testnet-traceless-1
+    kind: evm
   - name: skale-nebula
     id: s3://skale-nebula-traceless-1
+    kind: evm
   - name: soneium-mainnet
     id: s3://soneium-mainnet
+    kind: evm
   - name: sonic-mainnet
     id: s3://sonic-mainnet
+    kind: evm
   - name: sonic-testnet
     id: s3://sonic-testnet-0
+    kind: evm
   - name: stratovm-sepolia
     id: s3://stratovm-sepolia
+    kind: evm
   - name: superseed-sepolia
     id: s3://superseed-sepolia-traceless
+    kind: evm
   - name: superseed-mainnet
     id: s3://superseed-mainnet
+    kind: evm
   - name: taiko-mainnet
     id: s3://taiko-mainnet-traceless
+    kind: evm
   - name: tanssi
     id: s3://tanssi-traceless-1
+    kind: evm
   - name: unichain-mainnet
     id: s3://unichain-mainnet
+    kind: evm
   - name: unichain-sepolia
     id: s3://unichain-sepolia-1
+    kind: evm
   - name: x1-testnet
     id: s3://x1-testnet-traceless
+    kind: evm
   - name: xlayer-mainnet
     id: s3://xlayer-mainnet-traceless
+    kind: evm
   - name: xlayer-testnet
     id: s3://xlayer-testnet-traceless
+    kind: evm
   - name: zklink-nova-mainnet
     id: s3://zklink-nova-mainnet
+    kind: evm
   - name: zksync-mainnet
     id: s3://zksync-mainnet-1
+    kind: evm
   - name: zksync-sepolia
     id: s3://zksync-sepolia-2
+    kind: evm
   - name: zora-mainnet
     id: s3://zora-mainnet
+    kind: evm
   - name: zora-sepolia
     id: s3://zora-sepolia-traceless-1
+    kind: evm
+
   - name: acala
     id: s3://acala-4
+    kind: substrate
   - name: acurast-canary
     id: s3://acurast-canary
+    kind: substrate
   - name: agung
     id: s3://agung-4
+    kind: substrate
   - name: aleph-zero
     id: s3://aleph-zero
+    kind: substrate
   - name: aleph-zero-testnet
     id: s3://aleph-zero-testnet
+    kind: substrate
   - name: amplitude
     id: s3://amplitude-4
+    kind: substrate
   - name: asset-hub-kusama
     id: s3://asset-hub-kusama-4
+    kind: substrate
   - name: asset-hub-paseo
     id: s3://asset-hub-paseo
+    kind: substrate
   - name: asset-hub-polkadot
     id: s3://asset-hub-polkadot-4
+    kind: substrate
   - name: asset-hub-rococo
     id: s3://asset-hub-rococo-4
+    kind: substrate
   - name: asset-hub-westend
     id: s3://asset-hub-westend-3
+    kind: substrate
   - name: astar-substrate
     id: s3://astar-substrate
+    kind: substrate
   - name: avail
     id: s3://avail-1
+    kind: substrate
   - name: basilisk
     id: s3://basilisk-4
+    kind: substrate
   - name: bifrost-kusama
     id: s3://bifrost-kusama-4
+    kind: substrate
   - name: bifrost-polkadot
     id: s3://bifrost-polkadot-4
+    kind: substrate
   - name: bittensor-testnet
     id: s3://bittensor-testnet
+    kind: substrate
   - name: bittensor
     id: s3://bittensor-4
+    kind: substrate
   - name: bridge-hub-kusama
     id: s3://bridge-hub-kusama-4
+    kind: substrate
   - name: bridge-hub-polkadot
     id: s3://bridge-hub-polkadot-4
+    kind: substrate
   - name: bridge-hub-rococo
     id: s3://bridge-hub-rococo-4
+    kind: substrate
   - name: bridge-hub-westend
     id: s3://bridge-hub-westend-4
+    kind: substrate
   - name: celo-alfajores-testnet
     id: s3://celo-alfajores-testnet
+    kind: substrate
   - name: celo-mainnet
     id: s3://celo-mainnet-traceless
+    kind: substrate
   - name: centrifuge
     id: s3://centrifuge-4
+    kind: substrate
   - name: cere
     id: s3://cere-4
+    kind: substrate
   - name: chainflip
     id: s3://chainflip-4
+    kind: substrate
   - name: collectives-polkadot
     id: s3://collectives-polkadot-4
+    kind: substrate
   - name: collectives-westend
     id: s3://collectives-westend-4
+    kind: substrate
   - name: crust
     id: s3://crust-4
+    kind: substrate
   - name: clover
     id: s3://clover-4
+    kind: substrate
   - name: data-avail
     id: s3://data-avail-4
+    kind: substrate
   - name: dancebox
     id: s3://dancebox-4
+    kind: substrate
   - name: darwinia-crab
     id: s3://darwinia-crab-4
+    kind: substrate
   - name: darwinia
     id: s3://darwinia-4
+    kind: substrate
   - name: degen-chain
     id: s3://degen-traceless
+    kind: substrate
   - name: eden
     id: s3://eden-4
+    kind: substrate
   - name: enjin-matrix
     id: s3://enjin-matrix-4
+    kind: substrate
   - name: enjin-relay
     id: s3://enjin-relay
+    kind: substrate
   - name: enjin-canary-matrix
     id: s3://enjin-canary-matrix
+    kind: substrate
   - name: equilibrium
     id: s3://equilibrium
+    kind: substrate
   - name: foucoco
     id: s3://foucoco-5
+    kind: substrate
   - name: frequency
     id: s3://frequency-4
+    kind: substrate
   - name: gemini-3h
     id: s3://gemini-3h
+    kind: substrate
   - name: hydradx
     id: s3://hydradx-4
+    kind: substrate
   - name: integritee
     id: s3://integritee
+    kind: substrate
   - name: interlay
     id: s3://interlay-4
+    kind: substrate
   - name: invarch-parachain
     id: s3://invarch-parachain-4
+    kind: substrate
   - name: invarch-tinkernet
     id: s3://invarch-tinkernet-5
+    kind: substrate
   - name: joystream
     id: s3://joystream-4
+    kind: substrate
   - name: karura
     id: s3://karura-4
+    kind: substrate
   - name: khala
     id: s3://khala-4
+    kind: substrate
   - name: kilt
     id: s3://kilt-4
+    kind: substrate
   - name: kintsugi
     id: s3://kintsugi-4
+    kind: substrate
   - name: kusama
     id: s3://kusama-4
+    kind: substrate
   - name: litentry
     id: s3://litentry-4
+    kind: substrate
   - name: moonbeam-substrate
     id: s3://moonbeam-substrate-4
+    kind: substrate
   - name: moonbase-substrate
     id: s3://moonbase-substrate-4
+    kind: substrate
   - name: moonriver-substrate
     id: s3://moonriver-substrate-4
+    kind: substrate
   - name: paseo
     id: s3://paseo-5
+    kind: substrate
   - name: peaq-mainnet-substrate
     id: s3://peaq-mainnet-5
+    kind: substrate
   - name: pendulum
     id: s3://pendulum-4
+    kind: substrate
   - name: people-chain
     id: s3://people-chain
+    kind: substrate
   - name: phala-testnet
     id: s3://phala-testnet-4
+    kind: substrate
   - name: phala
     id: s3://phala-4
+    kind: substrate
   - name: picasso
     id: s3://picasso
+    kind: substrate
   - name: polimec
     id: s3://polimec-4
+    kind: substrate
   - name: polkadex
     id: s3://polkadex
+    kind: substrate
   - name: polkadot
     id: s3://polkadot-4
+    kind: substrate
   - name: polymesh
     id: s3://polymesh-4
+    kind: substrate
   - name: reef-testnet
     id: s3://reef-testnet-4-1
+    kind: substrate
   - name: reef
     id: s3://reef-4
+    kind: substrate
   - name: robonomics
     id: s3://robonomics-4
+    kind: substrate
   - name: rococo
     id: s3://rococo-4
+    kind: substrate
   - name: rolimec
     id: s3://rolimec-4
+    kind: substrate
   - name: shiden-substrate
     id: s3://shiden-substrate-4
+    kind: substrate
   - name: shibuya-substrate
     id: s3://shibuya-substrate
+    kind: substrate
   - name: sora-mainnet
     id: s3://sora-mainnet-4
+    kind: substrate
   - name: subsocial-parachain
     id: s3://subsocial-parachain-4-1
+    kind: substrate
   - name: ternoa
     id: s3://ternoa-4
+    kind: substrate
   - name: turing-avail
     id: s3://avail-turing
+    kind: substrate
   - name: turing-mainnet
     id: s3://turing-mainnet
+    kind: substrate
   - name: vara
     id: s3://vara-4
+    kind: substrate
   - name: vara-testnet
     id: s3://vara-testnet-4
+    kind: substrate
   - name: westend
     id: s3://westend-4
+    kind: substrate
   - name: zeitgeist-testnet
     id: s3://zeitgeist-testnet-5
+    kind: substrate
   - name: zeitgeist
     id: s3://zeitgeist-4
+    kind: substrate
   - name: zkverify-testnet
     id: s3://zkverify-testnet
+    kind: substrate
   - name: soon-devnet
+
     id: s3://soon-devnet
+    kind: solana
   - name: soon-testnet
     id: s3://soon-testnet-1
+    kind: solana
   - name: soon-mainnet
     id: s3://soon-mainnet
+    kind: solana
   - name: eclipse-testnet
     id: s3://eclipse-testnet
+    kind: solana
   - name: eclipse-mainnet
     id: s3://eclipse-mainnet
+    kind: solana
   - name: solana-devnet
     id: s3://solana-devnet-1
+    kind: solana
   - name: solana-mainnet
     id: s3://solana-mainnet-3
+    kind: solana
   - name: svm-bnb-mainnet
     id: s3://svm-bnb-mainnet-0
+    kind: solana
   - name: svm-bnb-testnet
     id: s3://svm-bnb-testnet-2
+    kind: solana
   - name: eclipse-testnet
     id: s3://eclipse-testnet-2
+    kind: solana
