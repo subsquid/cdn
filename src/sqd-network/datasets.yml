@@ -98,6 +98,12 @@ sqd-network-datasets:
   - name: bob-sepolia
     id: s3://bob-sepolia
     kind: evm
+  - name: botanix-mainnet
+    id: s3://botanix-mainnet
+    kind: evm
+  - name: botanix-testnet
+    id: s3://botanix-testnet
+    kind: evm
   - name: camp-network-testnet-v2
     id: s3://camp-network-testnet-v2
     kind: evm
