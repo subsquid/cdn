@@ -213,7 +213,7 @@ sqd-network-datasets:
     id: s3://mantle-sepolia-1-traceless
     kind: evm
   - name: megaeth-mainnet
-    id: s3://mega-mainnet
+    id: s3://mega-mainnet-1
     kind: evm
   - name: megaeth-testnet
     id: s3://mega-testnet-v2
