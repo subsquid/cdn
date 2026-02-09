@@ -191,6 +191,9 @@ sqd-network-datasets:
   - name: ink-mainnet
     id: s3://ink-mainnet-2
     kind: evm
+  - name: katana-mainnet
+    id: s3://katana-mainnet
+    kind: evm
   - name: kyoto-testnet
     id: s3://kyoto-testnet-traceless
     kind: evm
