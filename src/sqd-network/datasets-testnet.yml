@@ -2,23 +2,18 @@ sqd-network-datasets:
   - name: arbitrum-one
     id: s3://arbitrum-one
     kind: evm
-    chain_id: 42161
   - name: base-mainnet
     id: s3://base-mainnet
     kind: evm
-    chain_id: 8453
   - name: ethereum-mainnet
     id: s3://ethereum-mainnet-2
     kind: evm
-    chain_id: 1
   - name: blast-sepolia
     id: s3://blast-sepolia
     kind: evm
-    chain_id: 168587773
   - name: zora-mainnet
     id: s3://zora-mainnet
     kind: evm
-    chain_id: 7777777
 
   - name: svm-bnb-mainnet
     id: s3://svm-bnb-mainnet-0
