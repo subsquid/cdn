@@ -356,28 +356,6 @@
       ]
     },
     {
-      "chainId": 4337,
-      "chainName": "Beam Mainnet",
-      "id": "beam-mainnet",
-      "logoUrl": "https://cdn.subsquid.io/img/networks/beam.png",
-      "network": "beam-mainnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs",
-            "traces",
-            "stateDiffs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/beam-mainnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainId": 84532,
       "chainName": "Base Sepolia",
       "id": "base-sepolia",
@@ -394,6 +372,28 @@
             "stateDiffs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/base-sepolia",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
+        }
+      ]
+    },
+    {
+      "chainId": 4337,
+      "chainName": "Beam Mainnet",
+      "id": "beam-mainnet",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/beam.png",
+      "network": "beam-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/beam-mainnet",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
