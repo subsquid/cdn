@@ -174,7 +174,7 @@ sqd-network-datasets:
     id: s3://opcelestia-raspberry-traceless
     kind: evm
   - name: gnosis-mainnet
-    id: s3://gnosis-mainnet-1
+    id: s3://gnosis-mainnet-2
     kind: evm
   - name: hyperliquid-testnet
     id: s3://hyperliquid-testnet-7
