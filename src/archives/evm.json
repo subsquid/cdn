@@ -1435,7 +1435,7 @@
       "chainName": "Arbitrum Blueberry",
       "id": "gelato-arbitrum-blueberry",
       "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/.png",
+      "logoUrl": "https://cdn.subsquid.io/img/networks/gelato.svg",
       "network": "gelato-arbitrum-blueberry",
       "providers": [
         {
