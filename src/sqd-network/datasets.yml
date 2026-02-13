@@ -224,6 +224,9 @@ sqd-network-datasets:
   - name: memecore-mainnet
     id: s3://memecore-mainnet
     kind: evm
+  - name: memecore-insectarium
+    id: s3://memecore-testnet
+    kind: evm
   - name: merlin-mainnet
     id: s3://merlin-mainnet-traceless
     kind: evm
