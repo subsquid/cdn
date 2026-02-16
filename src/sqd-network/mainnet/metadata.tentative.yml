@@ -1,40 +1,816 @@
 datasets:
   arbitrum-one:
-    display_name: "Arbitrum One"
+    display_name: Arbitrum One
     kind: evm
     evm:
       chain_id: 42161
+    logo_url: https://cdn.subsquid.io/img/networks/arbitrum.svg
+    type: testnet
   base-mainnet:
-    display_name: "Base"
+    display_name: Base
     kind: evm
     evm:
       chain_id: 8453
+    logo_url: https://cdn.subsquid.io/img/networks/base.png
+    type: testnet
   ethereum-mainnet:
-    display_name: "Ethereum"
+    display_name: Ethereum
     kind: evm
     evm:
       chain_id: 1
+    logo_url: https://cdn.subsquid.io/img/networks/ethereum.svg
+    type: testnet
   blast-sepolia:
-    display_name: "Blast Sepolia"
+    display_name: Blast Sepolia
     kind: evm
     evm:
       chain_id: 168587773
+    logo_url: https://cdn.subsquid.io/img/networks/blast.png
+    type: testnet
   zora-mainnet:
-    display_name: "Zora"
+    display_name: Zora
     kind: evm
     evm:
       chain_id: 7777777
-
+    logo_url: https://cdn.subsquid.io/img/networks/zora.png
+    type: testnet
   svm-bnb-mainnet:
-    display_name: "SVM BNB"
+    display_name: SVM BNB
     kind: solana
   svm-bnb-testnet:
-    display_name: "SVM BNB Testnet"
+    display_name: SVM BNB Testnet
     kind: solana
   eclipse-testnet:
-    display_name: "Eclipse Testnet"
+    display_name: Eclipse Testnet
     kind: solana
-
   hyperliquid-fills:
-    display_name: "Hyperliquid"
+    display_name: Hyperliquid
     kind: hyperliquidFills
+  0g-testnet:
+    display_name: 0g Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/0gai.png
+    type: testnet
+    evm:
+      chain_id: 16600
+  abstract-mainnet:
+    display_name: Abstract Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/abstract.png
+    type: mainnet
+    evm:
+      chain_id: 2741
+  abstract-testnet:
+    display_name: Abstract Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/abstract.png
+    type: testnet
+    evm:
+      chain_id: 11124
+  agung-evm:
+    display_name: Agung
+    logo_url: https://cdn.subsquid.io/img/networks/peaq.png
+    type: testnet
+    evm:
+      chain_id: 9990
+  arbitrum-nova:
+    display_name: Arbitrum Nova
+    logo_url: https://cdn.subsquid.io/img/networks/arbitrum-nova.png
+    type: testnet
+    evm:
+      chain_id: 42170
+  arbitrum-sepolia:
+    display_name: Arbitrum Sepolia
+    logo_url: https://cdn.subsquid.io/img/networks/arbitrum.svg
+    type: testnet
+    evm:
+      chain_id: 421614
+  arthera-mainnet:
+    display_name: Arthera Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/arthera.png
+    type: testnet
+    evm:
+      chain_id: 10242
+  astar-mainnet:
+    display_name: Astar
+    logo_url: https://cdn.subsquid.io/img/networks/astar.svg
+    type: testnet
+    evm:
+      chain_id: 592
+  avalanche-mainnet:
+    display_name: Avalanche
+    logo_url: https://cdn.subsquid.io/img/networks/avax.png
+    type: testnet
+    evm:
+      chain_id: 43114
+  avalanche-testnet:
+    display_name: Avalanche Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/avax.png
+    type: testnet
+    evm:
+      chain_id: 43113
+  b3-mainnet:
+    display_name: B3
+    logo_url: https://cdn.subsquid.io/img/networks/b3.svg
+    type: testnet
+    evm:
+      chain_id: 8333
+  b3-sepolia:
+    display_name: B3 Sepolia
+    logo_url: https://cdn.subsquid.io/img/networks/b3.svg
+    type: testnet
+    evm:
+      chain_id: 1993
+  base-sepolia:
+    display_name: Base Sepolia
+    logo_url: https://cdn.subsquid.io/img/networks/baseTestnet.png
+    type: testnet
+    evm:
+      chain_id: 84532
+  beam-mainnet:
+    display_name: Beam Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/beam.png
+    type: testnet
+    evm:
+      chain_id: 4337
+  berachain-bartio:
+    display_name: Berachain bArtio
+    logo_url: https://cdn.subsquid.io/img/networks/berachain.png
+    type: testnet
+    evm:
+      chain_id: 80084
+  berachain-mainnet:
+    display_name: Berachain Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/berachain.png
+    type: mainnet
+    evm:
+      chain_id: 80094
+  binance-mainnet:
+    display_name: Binance
+    logo_url: https://cdn.subsquid.io/img/networks/binance.svg
+    type: testnet
+    evm:
+      chain_id: 56
+  binance-testnet:
+    display_name: Binance Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/binance.svg
+    type: testnet
+    evm:
+      chain_id: 97
+  bitfinity-mainnet:
+    display_name: Bitfinity Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/bitfinity.png
+    type: mainnet
+    evm:
+      chain_id: 355110
+  bitfinity-testnet:
+    display_name: Bitfinity Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/bitfinity.png
+    type: testnet
+    evm:
+      chain_id: 355113
+  bitgert-mainnet:
+    display_name: Bitgert
+    logo_url: https://cdn.subsquid.io/img/networks/brise.png
+    type: testnet
+    evm:
+      chain_id: 32520
+  bitgert-testnet:
+    display_name: Bitgert Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/brise.png
+    type: testnet
+    evm:
+      chain_id: 64668
+  bittensor-mainnet-evm:
+    display_name: Bittensor Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/bittensor.svg
+    type: mainnet
+    evm:
+      chain_id: 964
+  bittensor-testnet-evm:
+    display_name: Bittensor Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/bittensor.svg
+    type: testnet
+    evm:
+      chain_id: 945
+  blast-l2-mainnet:
+    display_name: Blast L2
+    logo_url: https://cdn.subsquid.io/img/networks/blast.png
+    type: testnet
+    evm:
+      chain_id: 81457
+  bob-mainnet:
+    display_name: BOB Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/bob.png
+    type: testnet
+    evm:
+      chain_id: 60808
+  bob-sepolia:
+    display_name: BOB Sepolia
+    logo_url: https://cdn.subsquid.io/img/networks/bob.png
+    type: testnet
+    evm:
+      chain_id: 808813
+  botanix-mainnet:
+    display_name: Botanix Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/botanix.svg
+    type: mainnet
+    evm:
+      chain_id: 3637
+  botanix-testnet:
+    display_name: Botanix Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/botanix.svg
+    type: testnet
+    evm:
+      chain_id: 3636
+  camp-network-testnet-v2:
+    display_name: Camp Network Testnet v2
+    logo_url: https://cdn.subsquid.io/img/networks/camp-network.svg
+    type: testnet
+    evm:
+      chain_id: 325000
+  canto:
+    display_name: Canto
+    logo_url: https://cdn.subsquid.io/img/networks/canto.png
+    type: testnet
+    evm:
+      chain_id: 7700
+  canto-testnet:
+    display_name: Canto Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/canto.png
+    type: testnet
+    evm:
+      chain_id: 7701
+  celo-alfajores-testnet:
+    display_name: Celo Testnet (Alfajores)
+    logo_url: https://cdn.subsquid.io/img/networks/celo.svg
+    type: testnet
+    evm:
+      chain_id: 44787
+  celo-mainnet:
+    display_name: Celo Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/celo.svg
+    type: mainnet
+    evm:
+      chain_id: 42220
+  core-mainnet:
+    display_name: Core Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/core.png
+    type: testnet
+    evm:
+      chain_id: 1116
+  crossfi-mainnet:
+    display_name: CrossFi Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/crossfi.svg
+    type: mainnet
+    evm:
+      chain_id: 4158
+  crossfi-testnet:
+    display_name: CrossFi Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/crossfi.svg
+    type: testnet
+    evm:
+      chain_id: 4157
+  cyber-mainnet:
+    display_name: Cyber Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/cyber.svg
+    type: testnet
+    evm:
+      chain_id: 7560
+  cyberconnect-l2-testnet:
+    display_name: Cyberconnect L2 Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/cyber.svg
+    type: testnet
+    evm:
+      chain_id: 111557560
+  dancelight-testnet:
+    display_name: Dancelight
+    logo_url: https://cdn.subsquid.io/img/networks/tanssi.png
+    type: testnet
+    evm:
+      chain_id: 5678
+  degen-chain:
+    display_name: Degen Chain
+    logo_url: https://cdn.subsquid.io/img/networks/degen.svg
+    type: mainnet
+    evm:
+      chain_id: 666666666
+  dfk-chain:
+    display_name: DFK Chain
+    logo_url: https://cdn.subsquid.io/img/networks/dfk.png
+    type: testnet
+    evm:
+      chain_id: 53935
+  dogechain-mainnet:
+    display_name: Dogechain
+    logo_url: https://cdn.subsquid.io/img/networks/dogechain.png
+    type: testnet
+    evm:
+      chain_id: 2000
+  dogechain-testnet:
+    display_name: Dogechain Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/dogechain.png
+    type: testnet
+    evm:
+      chain_id: 568
+  ethereum-holesky:
+    display_name: Ethereum Holesky
+    logo_url: https://cdn.subsquid.io/img/networks/ethereum.svg
+    type: testnet
+    evm:
+      chain_id: 17000
+  ethereum-sepolia:
+    display_name: Ethereum Sepolia
+    logo_url: https://cdn.subsquid.io/img/networks/ethereum.svg
+    type: testnet
+    evm:
+      chain_id: 11155111
+  ethereum-hoodi:
+    display_name: Ethereum Hoodi
+    logo_url: https://cdn.subsquid.io/img/networks/ethereum.svg
+    type: testnet
+    evm:
+      chain_id: 560048
+  etherlink-mainnet:
+    display_name: Etherlink Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/etherlink.png
+    type: testnet
+    evm:
+      chain_id: 42793
+  etherlink-shadownet:
+    display_name: Etherlink Shadownet
+    logo_url: https://cdn.subsquid.io/img/networks/etherlink.png
+    type: testnet
+    evm:
+      chain_id: 127823
+  etherlink-testnet:
+    display_name: Etherlink Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/etherlink.png
+    type: testnet
+    evm:
+      chain_id: 128123
+  exosama:
+    display_name: Exosama
+    logo_url: https://cdn.subsquid.io/img/networks/exn.png
+    type: testnet
+    evm:
+      chain_id: 2109
+  flare-mainnet:
+    display_name: Flare
+    logo_url: https://cdn.subsquid.io/img/networks/flare.png
+    type: testnet
+    evm:
+      chain_id: 14
+  formicarium-testnet:
+    display_name: MemeCore Testnet (Formicarium)
+    logo_url: https://cdn.subsquid.io/img/networks/memecore.svg
+    type: testnet
+    evm:
+      chain_id: 43521
+  galxe-gravity:
+    display_name: Gravity
+    logo_url: https://cdn.subsquid.io/img/networks/gravity.png
+    type: testnet
+    evm:
+      chain_id: 1625
+  gelato-arbitrum-blueberry:
+    display_name: Arbitrum Blueberry
+    logo_url: https://cdn.subsquid.io/img/networks/gelato.svg
+    type: testnet
+    evm:
+      chain_id: 88153591557
+  gnosis-mainnet:
+    display_name: Gnosis
+    logo_url: https://cdn.subsquid.io/img/networks/gnosis.png
+    type: testnet
+    evm:
+      chain_id: 100
+  hedera-mainnet:
+    display_name: Hedera Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/hedera.png
+    type: mainnet
+    evm:
+      chain_id: 295
+  hemi-mainnet:
+    display_name: Hemi Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/hemi.jpg
+    type: mainnet
+    evm:
+      chain_id: 43111
+  hemi-testnet:
+    display_name: Hemi Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/hemi.jpg
+    type: testnet
+    evm:
+      chain_id: 743111
+  hyperliquid-mainnet:
+    display_name: HyperEVM Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/hyperliquid.svg
+    type: mainnet
+    evm:
+      chain_id: 999
+  hyperliquid-testnet:
+    display_name: HyperEVM Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/hyperliquid.svg
+    type: testnet
+    evm:
+      chain_id: 998
+  immutable-zkevm-mainnet:
+    display_name: Immutable zkEVM
+    logo_url: https://cdn.subsquid.io/img/networks/immutable.png
+    type: testnet
+    evm:
+      chain_id: 13371
+  immutable-zkevm-testnet:
+    display_name: Immutable zkEVM Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/immutable.png
+    type: testnet
+    evm:
+      chain_id: 13473
+  ink-mainnet:
+    display_name: Ink Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/ink.svg
+    type: mainnet
+    evm:
+      chain_id: 57073
+  ink-sepolia:
+    display_name: Ink Sepolia
+    logo_url: https://cdn.subsquid.io/img/networks/ink.svg
+    type: testnet
+    evm:
+      chain_id: 763373
+  kyoto-testnet:
+    display_name: Kyoto Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/kyoto.png
+    type: testnet
+    evm:
+      chain_id: 1998
+  linea-mainnet:
+    display_name: Linea
+    logo_url: https://cdn.subsquid.io/img/networks/linea.png
+    type: testnet
+    evm:
+      chain_id: 59144
+  lukso-mainnet:
+    display_name: Lukso Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/lukso.svg
+    type: mainnet
+    evm:
+      chain_id: 42
+  manta-pacific:
+    display_name: Manta Pacific
+    logo_url: https://cdn.subsquid.io/img/networks/manta.png
+    type: mainnet
+    evm:
+      chain_id: 169
+  manta-pacific-sepolia:
+    display_name: Manta Pacific Sepolia
+    logo_url: https://cdn.subsquid.io/img/networks/manta.png
+    type: testnet
+    evm:
+      chain_id: 3441006
+  mantle-mainnet:
+    display_name: Mantle
+    logo_url: https://cdn.subsquid.io/img/networks/mantle.png
+    type: testnet
+    evm:
+      chain_id: 5000
+  mantle-sepolia:
+    display_name: Mantle Sepolia
+    logo_url: https://cdn.subsquid.io/img/networks/mantle.png
+    type: testnet
+    evm:
+      chain_id: 5003
+  megaeth-mainnet:
+    display_name: MegaETH Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/mega.png
+    type: testnet
+    evm:
+      chain_id: 4326
+  megaeth-testnet:
+    display_name: MegaETH Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/mega.png
+    type: testnet
+    evm:
+      chain_id: 6342
+  memecore-mainnet:
+    display_name: MemeCore Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/memecore.svg
+    type: mainnet
+    evm:
+      chain_id: 4352
+  memecore-insectarium:
+    display_name: MemeCore Testnet (Insectarium)
+    logo_url: https://cdn.subsquid.io/img/networks/memecore.svg
+    type: testnet
+    evm:
+      chain_id: 43522
+  merlin-mainnet:
+    display_name: Merlin Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/merlin.jpg
+    type: testnet
+    evm:
+      chain_id: 4200
+  merlin-testnet:
+    display_name: Merlin Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/won.png
+    type: testnet
+    evm:
+      chain_id: 686868
+  metis-mainnet:
+    display_name: Metis
+    logo_url: https://cdn.subsquid.io/img/networks/metis.svg
+    type: testnet
+    evm:
+      chain_id: 1088
+  mode-mainnet:
+    display_name: Mode Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/mode.png
+    type: mainnet
+    evm:
+      chain_id: 34443
+  monad-mainnet:
+    display_name: Monad Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/monad.png
+    type: mainnet
+    evm:
+      chain_id: 143
+  monad-testnet:
+    display_name: Monad Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/monad.png
+    type: testnet
+    evm:
+      chain_id: 10143
+  moonbase-testnet:
+    display_name: Moonbase Alpha
+    logo_url: https://cdn.subsquid.io/img/networks/moonbasealpha.png
+    type: testnet
+    evm:
+      chain_id: 1287
+  moonbeam-mainnet:
+    display_name: Moonbeam
+    logo_url: https://cdn.subsquid.io/img/networks/moonbeam.png
+    type: testnet
+    evm:
+      chain_id: 1284
+  moonriver-mainnet:
+    display_name: Moonriver
+    logo_url: https://cdn.subsquid.io/img/networks/moonriver.png
+    type: testnet
+    evm:
+      chain_id: 1285
+  nakachain:
+    display_name: Naka Chain
+    logo_url: https://cdn.subsquid.io/img/networks/naka-chain.png
+    type: mainnet
+    evm:
+      chain_id: 42225
+  neon-devnet:
+    display_name: Neon EVM Devnet
+    logo_url: https://cdn.subsquid.io/img/networks/neon.png
+    type: testnet
+    evm:
+      chain_id: 245022926
+  neon-mainnet:
+    display_name: Neon EVM
+    logo_url: https://cdn.subsquid.io/img/networks/neon.png
+    type: testnet
+    evm:
+      chain_id: 245022934
+  opbnb-mainnet:
+    display_name: opBNB
+    logo_url: https://cdn.subsquid.io/img/networks/opbnb.png
+    type: testnet
+    evm:
+      chain_id: 204
+  opbnb-testnet:
+    display_name: opBNB Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/opbnb.png
+    type: testnet
+    evm:
+      chain_id: 5611
+  optimism-mainnet:
+    display_name: Optimism
+    logo_url: https://cdn.subsquid.io/img/networks/optimism.svg
+    type: testnet
+    evm:
+      chain_id: 10
+  optimism-sepolia:
+    display_name: Optimism Sepolia
+    logo_url: https://cdn.subsquid.io/img/networks/optimism.svg
+    type: testnet
+    evm:
+      chain_id: 11155420
+  ozean-testnet:
+    display_name: Ozean Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/ozean.svg
+    type: testnet
+    evm:
+      chain_id: 7849306
+  peaq-mainnet:
+    display_name: Peaq
+    logo_url: https://cdn.subsquid.io/img/networks/peaq.png
+    type: testnet
+    evm:
+      chain_id: 3338
+  plume:
+    display_name: Plume Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/plume.png
+    type: mainnet
+    evm:
+      chain_id: 98866
+  plume-devnet:
+    display_name: Plume Devnet
+    logo_url: https://cdn.subsquid.io/img/networks/plume.png
+    type: testnet
+    evm:
+      chain_id: 98864
+  plume-legacy:
+    display_name: Plume Mainnet (Legacy)
+    logo_url: https://cdn.subsquid.io/img/networks/plume.png
+    type: mainnet
+    evm:
+      chain_id: 98865
+  plume-testnet:
+    display_name: Plume Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/plume.png
+    type: testnet
+    evm:
+      chain_id: 98867
+  polygon-mainnet:
+    display_name: Polygon
+    logo_url: https://cdn.subsquid.io/img/networks/polygon.png
+    type: testnet
+    evm:
+      chain_id: 137
+  polygon-amoy-testnet:
+    display_name: Polygon Amoy Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/polygon.png
+    type: testnet
+    evm:
+      chain_id: 80002
+  polygon-zkevm-mainnet:
+    display_name: Polygon zkEVM
+    logo_url: https://cdn.subsquid.io/img/networks/zkevm.png
+    type: testnet
+    evm:
+      chain_id: 1101
+  polygon-zkevm-cardona-testnet:
+    display_name: Polygon zkEVM Cardona Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/zkevm.png
+    type: testnet
+    evm:
+      chain_id: 2442
+  poseidon-testnet:
+    display_name: Poseidon Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/ozean.svg
+    type: testnet
+    evm:
+      chain_id: 31911
+  prom-mainnet:
+    display_name: Prom Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/prom.png
+    type: mainnet
+    evm:
+      chain_id: 227
+  puppynet:
+    display_name: Puppynet (Shibarium's Testnet)
+    logo_url: https://cdn.subsquid.io/img/networks/shibarium.png
+    type: testnet
+    evm:
+      chain_id: 157
+  scroll-mainnet:
+    display_name: Scroll
+    logo_url: https://cdn.subsquid.io/img/networks/scroll.png
+    type: testnet
+    evm:
+      chain_id: 534352
+  scroll-sepolia:
+    display_name: Scroll Sepolia
+    logo_url: https://cdn.subsquid.io/img/networks/scroll.png
+    type: testnet
+    evm:
+      chain_id: 534351
+  shibarium:
+    display_name: Shibarium
+    logo_url: https://cdn.subsquid.io/img/networks/shibarium.png
+    type: testnet
+    evm:
+      chain_id: 109
+  shibuya-testnet:
+    display_name: Shibuya
+    logo_url: https://cdn.subsquid.io/img/networks/astar.svg
+    type: testnet
+    evm:
+      chain_id: 81
+  shiden-mainnet:
+    display_name: Shiden
+    logo_url: https://cdn.subsquid.io/img/networks/shiden.png
+    type: testnet
+    evm:
+      chain_id: 336
+  skale-nebula:
+    display_name: Skale Nebula
+    logo_url: https://cdn.subsquid.io/img/networks/nebula.png
+    type: testnet
+    evm:
+      chain_id: 1482601649
+  soneium-mainnet:
+    display_name: Soneium Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/soneium.svg
+    type: mainnet
+    evm:
+      chain_id: 1868
+  soneium-minato-testnet:
+    display_name: Soneium Minato Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/soneium.svg
+    type: testnet
+    evm:
+      chain_id: 1946
+  sonic-mainnet:
+    display_name: Sonic Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/sonic.png
+    type: mainnet
+    evm:
+      chain_id: 146
+  sonic-testnet:
+    display_name: Sonic Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/sonic.png
+    type: testnet
+    evm:
+      chain_id: 14601
+  stratovm-sepolia:
+    display_name: StratoVM Sepolia
+    logo_url: https://cdn.subsquid.io/img/networks/stratovm.png
+    type: testnet
+    evm:
+      chain_id: 93747
+  superseed-mainnet:
+    display_name: Superseed Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/superseed.png
+    type: mainnet
+    evm:
+      chain_id: 5330
+  superseed-sepolia:
+    display_name: Superseed Sepolia
+    logo_url: https://cdn.subsquid.io/img/networks/superseed.png
+    type: testnet
+    evm:
+      chain_id: 53302
+  taiko-mainnet:
+    display_name: Taiko Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/taiko.png
+    type: testnet
+    evm:
+      chain_id: 167000
+  tanssi:
+    display_name: Tanssi
+    logo_url: https://cdn.subsquid.io/img/networks/tanssi.png
+    type: testnet
+    evm:
+      chain_id: 5678
+  unichain-mainnet:
+    display_name: Unichain Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/unichain.svg
+    type: mainnet
+    evm:
+      chain_id: 130
+  unichain-sepolia:
+    display_name: Unichain Sepolia
+    logo_url: https://cdn.subsquid.io/img/networks/unichain.svg
+    type: testnet
+    evm:
+      chain_id: 1301
+  xlayer-mainnet:
+    display_name: X Layer Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/xlayer.svg
+    type: testnet
+    evm:
+      chain_id: 196
+  xlayer-testnet:
+    display_name: X Layer Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/xlayer.svg
+    type: testnet
+    evm:
+      chain_id: 195
+  zklink-nova-mainnet:
+    display_name: zkLink Nova Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/zklink-nova.png
+    type: mainnet
+    evm:
+      chain_id: 810180
+  zksync-mainnet:
+    display_name: zkSync
+    logo_url: https://cdn.subsquid.io/img/networks/zksync-era.svg
+    type: testnet
+    evm:
+      chain_id: 324
+  zksync-sepolia:
+    display_name: zkSync Sepolia
+    logo_url: https://cdn.subsquid.io/img/networks/zksync-era.svg
+    type: testnet
+    evm:
+      chain_id: 300
+  zora-sepolia:
+    display_name: Zora Sepolia
+    logo_url: https://cdn.subsquid.io/img/networks/zora-sepolia-testnet.png
+    type: testnet
+    evm:
+      chain_id: 999999999
