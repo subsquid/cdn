@@ -1,0 +1,40 @@
+datasets:
+  arbitrum-one:
+    display_name: "Arbitrum One"
+    kind: evm
+    evm:
+      chain_id: 42161
+  base-mainnet:
+    display_name: "Base"
+    kind: evm
+    evm:
+      chain_id: 8453
+  ethereum-mainnet:
+    display_name: "Ethereum"
+    kind: evm
+    evm:
+      chain_id: 1
+  blast-sepolia:
+    display_name: "Blast Sepolia"
+    kind: evm
+    evm:
+      chain_id: 168587773
+  zora-mainnet:
+    display_name: "Zora"
+    kind: evm
+    evm:
+      chain_id: 7777777
+
+  svm-bnb-mainnet:
+    display_name: "SVM BNB"
+    kind: solana
+  svm-bnb-testnet:
+    display_name: "SVM BNB Testnet"
+    kind: solana
+  eclipse-testnet:
+    display_name: "Eclipse Testnet"
+    kind: solana
+
+  hyperliquid-fills:
+    display_name: "Hyperliquid"
+    kind: hyperliquidFills
