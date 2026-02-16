@@ -1,51 +1,4 @@
 datasets:
-  arbitrum-one:
-    display_name: Arbitrum One
-    kind: evm
-    evm:
-      chain_id: 42161
-    logo_url: https://cdn.subsquid.io/img/networks/arbitrum.svg
-    type: testnet
-  base-mainnet:
-    display_name: Base
-    kind: evm
-    evm:
-      chain_id: 8453
-    logo_url: https://cdn.subsquid.io/img/networks/base.png
-    type: testnet
-  ethereum-mainnet:
-    display_name: Ethereum
-    kind: evm
-    evm:
-      chain_id: 1
-    logo_url: https://cdn.subsquid.io/img/networks/ethereum.svg
-    type: testnet
-  blast-sepolia:
-    display_name: Blast Sepolia
-    kind: evm
-    evm:
-      chain_id: 168587773
-    logo_url: https://cdn.subsquid.io/img/networks/blast.png
-    type: testnet
-  zora-mainnet:
-    display_name: Zora
-    kind: evm
-    evm:
-      chain_id: 7777777
-    logo_url: https://cdn.subsquid.io/img/networks/zora.png
-    type: testnet
-  svm-bnb-mainnet:
-    display_name: SVM BNB
-    kind: solana
-  svm-bnb-testnet:
-    display_name: SVM BNB Testnet
-    kind: solana
-  eclipse-testnet:
-    display_name: Eclipse Testnet
-    kind: solana
-  hyperliquid-fills:
-    display_name: Hyperliquid
-    kind: hyperliquidFills
   0g-testnet:
     display_name: 0g Testnet
     logo_url: https://cdn.subsquid.io/img/networks/0gai.png
@@ -81,6 +34,13 @@ datasets:
     evm:
       chain_id: 42170
     kind: evm
+  arbitrum-one:
+    display_name: Arbitrum One
+    kind: evm
+    evm:
+      chain_id: 42161
+    logo_url: https://cdn.subsquid.io/img/networks/arbitrum.svg
+    type: testnet
   arbitrum-sepolia:
     display_name: Arbitrum Sepolia
     logo_url: https://cdn.subsquid.io/img/networks/arbitrum.svg
@@ -130,6 +90,13 @@ datasets:
     evm:
       chain_id: 1993
     kind: evm
+  base-mainnet:
+    display_name: Base
+    kind: evm
+    evm:
+      chain_id: 8453
+    logo_url: https://cdn.subsquid.io/img/networks/base.png
+    type: testnet
   base-sepolia:
     display_name: Base Sepolia
     logo_url: https://cdn.subsquid.io/img/networks/baseTestnet.png
@@ -221,6 +188,13 @@ datasets:
     evm:
       chain_id: 81457
     kind: evm
+  blast-sepolia:
+    display_name: Blast Sepolia
+    kind: evm
+    evm:
+      chain_id: 168587773
+    logo_url: https://cdn.subsquid.io/img/networks/blast.png
+    type: testnet
   bob-mainnet:
     display_name: BOB Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/bob.png
@@ -361,19 +335,26 @@ datasets:
     evm:
       chain_id: 17000
     kind: evm
-  ethereum-sepolia:
-    display_name: Ethereum Sepolia
-    logo_url: https://cdn.subsquid.io/img/networks/ethereum.svg
-    type: testnet
-    evm:
-      chain_id: 11155111
-    kind: evm
   ethereum-hoodi:
     display_name: Ethereum Hoodi
     logo_url: https://cdn.subsquid.io/img/networks/ethereum.svg
     type: testnet
     evm:
       chain_id: 560048
+    kind: evm
+  ethereum-mainnet:
+    display_name: Ethereum
+    kind: evm
+    evm:
+      chain_id: 1
+    logo_url: https://cdn.subsquid.io/img/networks/ethereum.svg
+    type: testnet
+  ethereum-sepolia:
+    display_name: Ethereum Sepolia
+    logo_url: https://cdn.subsquid.io/img/networks/ethereum.svg
+    type: testnet
+    evm:
+      chain_id: 11155111
     kind: evm
   etherlink-mainnet:
     display_name: Etherlink Mainnet
@@ -564,19 +545,19 @@ datasets:
     evm:
       chain_id: 6342
     kind: evm
-  memecore-mainnet:
-    display_name: MemeCore Mainnet
-    logo_url: https://cdn.subsquid.io/img/networks/memecore.svg
-    type: mainnet
-    evm:
-      chain_id: 4352
-    kind: evm
   memecore-insectarium:
     display_name: MemeCore Testnet (Insectarium)
     logo_url: https://cdn.subsquid.io/img/networks/memecore.svg
     type: testnet
     evm:
       chain_id: 43522
+    kind: evm
+  memecore-mainnet:
+    display_name: MemeCore Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/memecore.svg
+    type: mainnet
+    evm:
+      chain_id: 4352
     kind: evm
   merlin-mainnet:
     display_name: Merlin Mainnet
@@ -732,13 +713,6 @@ datasets:
     evm:
       chain_id: 98867
     kind: evm
-  polygon-mainnet:
-    display_name: Polygon
-    logo_url: https://cdn.subsquid.io/img/networks/polygon.png
-    type: testnet
-    evm:
-      chain_id: 137
-    kind: evm
   polygon-amoy-testnet:
     display_name: Polygon Amoy Testnet
     logo_url: https://cdn.subsquid.io/img/networks/polygon.png
@@ -746,12 +720,12 @@ datasets:
     evm:
       chain_id: 80002
     kind: evm
-  polygon-zkevm-mainnet:
-    display_name: Polygon zkEVM
-    logo_url: https://cdn.subsquid.io/img/networks/zkevm.png
+  polygon-mainnet:
+    display_name: Polygon
+    logo_url: https://cdn.subsquid.io/img/networks/polygon.png
     type: testnet
     evm:
-      chain_id: 1101
+      chain_id: 137
     kind: evm
   polygon-zkevm-cardona-testnet:
     display_name: Polygon zkEVM Cardona Testnet
@@ -759,6 +733,13 @@ datasets:
     type: testnet
     evm:
       chain_id: 2442
+    kind: evm
+  polygon-zkevm-mainnet:
+    display_name: Polygon zkEVM
+    logo_url: https://cdn.subsquid.io/img/networks/zkevm.png
+    type: testnet
+    evm:
+      chain_id: 1101
     kind: evm
   poseidon-testnet:
     display_name: Poseidon Testnet
@@ -935,6 +916,13 @@ datasets:
     evm:
       chain_id: 300
     kind: evm
+  zora-mainnet:
+    display_name: Zora
+    kind: evm
+    evm:
+      chain_id: 7777777
+    logo_url: https://cdn.subsquid.io/img/networks/zora.png
+    type: testnet
   zora-sepolia:
     display_name: Zora Sepolia
     logo_url: https://cdn.subsquid.io/img/networks/zora-sepolia-testnet.png
@@ -942,3 +930,15 @@ datasets:
     evm:
       chain_id: 999999999
     kind: evm
+  hyperliquid-fills:
+    display_name: Hyperliquid
+    kind: hyperliquidFills
+  eclipse-testnet:
+    display_name: Eclipse Testnet
+    kind: solana
+  svm-bnb-mainnet:
+    display_name: SVM BNB
+    kind: solana
+  svm-bnb-testnet:
+    display_name: SVM BNB Testnet
+    kind: solana
