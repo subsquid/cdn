@@ -53,6 +53,7 @@ function transferArchive(archive, datasets, overwrite) {
     evm.chain_id = archive.chainId;
   }
 
+  dataset.kind = 'evm';
   dataset.evm = evm;
   datasets[id] = dataset;
 }
