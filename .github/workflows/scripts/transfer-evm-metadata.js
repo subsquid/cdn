@@ -58,6 +58,18 @@ function transferArchive(archive, datasets, overwrite) {
   datasets[id] = dataset;
 }
 
+function sortDatasets(datasets) {
+  const sorted = {};
+  const keys = Object.keys(datasets).sort((a, b) => {
+    const kindA = (datasets[a].kind || '');
+    const kindB = (datasets[b].kind || '');
+    if (kindA !== kindB) return kindA < kindB ? -1 : 1;
+    return a < b ? -1 : a > b ? 1 : 0;
+  });
+  for (const key of keys) sorted[key] = datasets[key];
+  return sorted;
+}
+
 function saveMetadata(metadata) {
   const output = yaml.dump(metadata, {
     noRefs: true,
@@ -79,6 +91,7 @@ function main() {
     transferArchive(archive, metadata.datasets, overwrite);
   }
 
+  metadata.datasets = sortDatasets(metadata.datasets);
   saveMetadata(metadata);
 }
 

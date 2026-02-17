@@ -20,6 +20,20 @@ datasets:
     evm:
       chain_id: 11124
     kind: evm
+  adi-mainnet:
+    display_name: ADI Mainnet
+    logo_url: null
+    type: mainnet
+    kind: evm
+    evm:
+      chain_id: 36900
+  adi-testnet:
+    display_name: ADI Testnet
+    logo_url: null
+    type: testnet
+    kind: evm
+    evm:
+      chain_id: null
   agung-evm:
     display_name: Agung
     logo_url: https://cdn.subsquid.io/img/networks/peaq.png
@@ -27,6 +41,13 @@ datasets:
     evm:
       chain_id: 9990
     kind: evm
+  aleph-zero-evm-mainnet:
+    display_name: Aleph Zero EVM
+    logo_url: https://cdn.subsquid.io/img/networks/aleph-zero.png
+    type: mainnet
+    kind: evm
+    evm:
+      chain_id: 41455
   arbitrum-nova:
     display_name: Arbitrum Nova
     logo_url: https://cdn.subsquid.io/img/networks/arbitrum-nova.png
@@ -62,6 +83,20 @@ datasets:
     evm:
       chain_id: 592
     kind: evm
+  astar-zkevm-mainnet:
+    display_name: Astar zkEVM
+    logo_url: https://cdn.subsquid.io/img/networks/astar.svg
+    type: mainnet
+    kind: evm
+    evm:
+      chain_id: 3776
+  astar-zkyoto:
+    display_name: Astar zKyoto
+    logo_url: https://cdn.subsquid.io/img/networks/astar.svg
+    type: testnet
+    kind: evm
+    evm:
+      chain_id: 6038361
   avalanche-mainnet:
     display_name: Avalanche
     logo_url: https://cdn.subsquid.io/img/networks/avax.png
@@ -412,6 +447,13 @@ datasets:
     evm:
       chain_id: 88153591557
     kind: evm
+  gelato-opcelestia-raspberry:
+    display_name: Gelato OP Celestia Raspberry
+    logo_url: https://cdn.subsquid.io/img/networks/gelato.svg
+    type: testnet
+    kind: evm
+    evm:
+      chain_id: 123420111
   gnosis-mainnet:
     display_name: Gnosis
     logo_url: https://cdn.subsquid.io/img/networks/gnosis.png
@@ -482,6 +524,13 @@ datasets:
     evm:
       chain_id: 763373
     kind: evm
+  katana-mainnet:
+    display_name: Katana Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/katana.png
+    type: mainnet
+    kind: evm
+    evm:
+      chain_id: 747474
   kyoto-testnet:
     display_name: Kyoto Testnet
     logo_url: https://cdn.subsquid.io/img/networks/kyoto.png
@@ -622,6 +671,13 @@ datasets:
     evm:
       chain_id: 1285
     kind: evm
+  moonsama:
+    display_name: Moonsama
+    logo_url: https://cdn.subsquid.io/img/networks/.png
+    type: mainnet
+    kind: evm
+    evm:
+      chain_id: 2199
   nakachain:
     display_name: Naka Chain
     logo_url: https://cdn.subsquid.io/img/networks/naka-chain.png
@@ -643,6 +699,13 @@ datasets:
     evm:
       chain_id: 245022934
     kind: evm
+  neox-testnet:
+    display_name: Neo X Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/neox.svg
+    type: testnet
+    kind: evm
+    evm:
+      chain_id: 12227332
   opbnb-mainnet:
     display_name: opBNB
     logo_url: https://cdn.subsquid.io/img/networks/opbnb.png
@@ -685,6 +748,20 @@ datasets:
     evm:
       chain_id: 3338
     kind: evm
+  plasma-mainnet:
+    display_name: Plasma Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/plasma.svg
+    type: mainnet
+    kind: evm
+    evm:
+      chain_id: 9745
+  plasma-testnet:
+    display_name: Plasma Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/plasma.svg
+    type: testnet
+    kind: evm
+    evm:
+      chain_id: 9746
   plume:
     display_name: Plume Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/plume.png
@@ -706,6 +783,13 @@ datasets:
     evm:
       chain_id: 98865
     kind: evm
+  plume-mainnet:
+    display_name: Plume Mainnet
+    logo_url: https://cdn.subsquid.io/img/networks/plume.png
+    type: mainnet
+    kind: evm
+    evm:
+      chain_id: 98866
   plume-testnet:
     display_name: Plume Testnet
     logo_url: https://cdn.subsquid.io/img/networks/plume.png
@@ -881,6 +965,13 @@ datasets:
     evm:
       chain_id: 1301
     kind: evm
+  x1-testnet:
+    display_name: X Layer Testnet
+    logo_url: https://cdn.subsquid.io/img/networks/xlayer.svg
+    type: testnet
+    kind: evm
+    evm:
+      chain_id: 1952
   xlayer-mainnet:
     display_name: X Layer Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/xlayer.svg
