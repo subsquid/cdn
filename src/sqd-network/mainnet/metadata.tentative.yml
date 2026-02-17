@@ -6,6 +6,13 @@ datasets:
     evm:
       chain_id: 16600
     kind: evm
+    contents:
+      - range:
+          from: 1
+          entities:
+            - blocks
+            - transactions
+            - logs
   abstract-mainnet:
     display_name: Abstract Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/abstract.png
@@ -13,6 +20,13 @@ datasets:
     evm:
       chain_id: 2741
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   abstract-testnet:
     display_name: Abstract Testnet
     logo_url: https://cdn.subsquid.io/img/networks/abstract.png
@@ -20,6 +34,13 @@ datasets:
     evm:
       chain_id: 11124
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   adi-mainnet:
     display_name: ADI Mainnet
     logo_url: null
@@ -27,6 +48,14 @@ datasets:
     kind: evm
     evm:
       chain_id: 36900
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
   adi-testnet:
     display_name: ADI Testnet
     logo_url: null
@@ -34,6 +63,14 @@ datasets:
     kind: evm
     evm:
       chain_id: null
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
   agung-evm:
     display_name: Agung
     logo_url: https://cdn.subsquid.io/img/networks/peaq.png
@@ -41,6 +78,13 @@ datasets:
     evm:
       chain_id: 9990
     kind: evm
+    contents:
+      - range:
+          from: 1
+          entities:
+            - blocks
+            - transactions
+            - logs
   aleph-zero-evm-mainnet:
     display_name: Aleph Zero EVM
     logo_url: https://cdn.subsquid.io/img/networks/aleph-zero.png
@@ -48,6 +92,15 @@ datasets:
     kind: evm
     evm:
       chain_id: 41455
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   arbitrum-nova:
     display_name: Arbitrum Nova
     logo_url: https://cdn.subsquid.io/img/networks/arbitrum-nova.png
@@ -55,6 +108,14 @@ datasets:
     evm:
       chain_id: 42170
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
   arbitrum-one:
     display_name: Arbitrum One
     kind: evm
@@ -62,6 +123,14 @@ datasets:
       chain_id: 42161
     logo_url: https://cdn.subsquid.io/img/networks/arbitrum.svg
     type: testnet
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
   arbitrum-sepolia:
     display_name: Arbitrum Sepolia
     logo_url: https://cdn.subsquid.io/img/networks/arbitrum.svg
@@ -69,6 +138,13 @@ datasets:
     evm:
       chain_id: 421614
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   arthera-mainnet:
     display_name: Arthera Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/arthera.png
@@ -76,6 +152,13 @@ datasets:
     evm:
       chain_id: 10242
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   astar-mainnet:
     display_name: Astar
     logo_url: https://cdn.subsquid.io/img/networks/astar.svg
@@ -83,6 +166,13 @@ datasets:
     evm:
       chain_id: 592
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   astar-zkevm-mainnet:
     display_name: Astar zkEVM
     logo_url: https://cdn.subsquid.io/img/networks/astar.svg
@@ -90,6 +180,13 @@ datasets:
     kind: evm
     evm:
       chain_id: 3776
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   astar-zkyoto:
     display_name: Astar zKyoto
     logo_url: https://cdn.subsquid.io/img/networks/astar.svg
@@ -97,6 +194,13 @@ datasets:
     kind: evm
     evm:
       chain_id: 6038361
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   avalanche-mainnet:
     display_name: Avalanche
     logo_url: https://cdn.subsquid.io/img/networks/avax.png
@@ -104,6 +208,15 @@ datasets:
     evm:
       chain_id: 43114
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   avalanche-testnet:
     display_name: Avalanche Testnet
     logo_url: https://cdn.subsquid.io/img/networks/avax.png
@@ -111,6 +224,15 @@ datasets:
     evm:
       chain_id: 43113
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   b3-mainnet:
     display_name: B3
     logo_url: https://cdn.subsquid.io/img/networks/b3.svg
@@ -118,6 +240,15 @@ datasets:
     evm:
       chain_id: 8333
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   b3-sepolia:
     display_name: B3 Sepolia
     logo_url: https://cdn.subsquid.io/img/networks/b3.svg
@@ -125,6 +256,15 @@ datasets:
     evm:
       chain_id: 1993
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   base-mainnet:
     display_name: Base
     kind: evm
@@ -132,6 +272,15 @@ datasets:
       chain_id: 8453
     logo_url: https://cdn.subsquid.io/img/networks/base.png
     type: testnet
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   base-sepolia:
     display_name: Base Sepolia
     logo_url: https://cdn.subsquid.io/img/networks/baseTestnet.png
@@ -139,6 +288,15 @@ datasets:
     evm:
       chain_id: 84532
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   beam-mainnet:
     display_name: Beam Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/beam.png
@@ -146,6 +304,15 @@ datasets:
     evm:
       chain_id: 4337
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   berachain-bartio:
     display_name: Berachain bArtio
     logo_url: https://cdn.subsquid.io/img/networks/berachain.png
@@ -153,6 +320,15 @@ datasets:
     evm:
       chain_id: 80084
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   berachain-mainnet:
     display_name: Berachain Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/berachain.png
@@ -160,6 +336,15 @@ datasets:
     evm:
       chain_id: 80094
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   binance-mainnet:
     display_name: Binance
     logo_url: https://cdn.subsquid.io/img/networks/binance.svg
@@ -167,6 +352,15 @@ datasets:
     evm:
       chain_id: 56
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   binance-testnet:
     display_name: Binance Testnet
     logo_url: https://cdn.subsquid.io/img/networks/binance.svg
@@ -174,6 +368,13 @@ datasets:
     evm:
       chain_id: 97
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   bitfinity-mainnet:
     display_name: Bitfinity Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/bitfinity.png
@@ -181,6 +382,13 @@ datasets:
     evm:
       chain_id: 355110
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   bitfinity-testnet:
     display_name: Bitfinity Testnet
     logo_url: https://cdn.subsquid.io/img/networks/bitfinity.png
@@ -188,6 +396,13 @@ datasets:
     evm:
       chain_id: 355113
     kind: evm
+    contents:
+      - range:
+          from: 2760000
+          entities:
+            - blocks
+            - transactions
+            - logs
   bitgert-mainnet:
     display_name: Bitgert
     logo_url: https://cdn.subsquid.io/img/networks/brise.png
@@ -195,6 +410,14 @@ datasets:
     evm:
       chain_id: 32520
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
   bitgert-testnet:
     display_name: Bitgert Testnet
     logo_url: https://cdn.subsquid.io/img/networks/brise.png
@@ -202,6 +425,14 @@ datasets:
     evm:
       chain_id: 64668
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
   bittensor-mainnet-evm:
     display_name: Bittensor Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/bittensor.svg
@@ -209,6 +440,13 @@ datasets:
     evm:
       chain_id: 964
     kind: evm
+    contents:
+      - range:
+          from: 4400000
+          entities:
+            - blocks
+            - transactions
+            - logs
   bittensor-testnet-evm:
     display_name: Bittensor Testnet
     logo_url: https://cdn.subsquid.io/img/networks/bittensor.svg
@@ -216,6 +454,13 @@ datasets:
     evm:
       chain_id: 945
     kind: evm
+    contents:
+      - range:
+          from: 3300000
+          entities:
+            - blocks
+            - transactions
+            - logs
   blast-l2-mainnet:
     display_name: Blast L2
     logo_url: https://cdn.subsquid.io/img/networks/blast.png
@@ -223,6 +468,15 @@ datasets:
     evm:
       chain_id: 81457
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   blast-sepolia:
     display_name: Blast Sepolia
     kind: evm
@@ -230,6 +484,13 @@ datasets:
       chain_id: 168587773
     logo_url: https://cdn.subsquid.io/img/networks/blast.png
     type: testnet
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   bob-mainnet:
     display_name: BOB Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/bob.png
@@ -237,6 +498,15 @@ datasets:
     evm:
       chain_id: 60808
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   bob-sepolia:
     display_name: BOB Sepolia
     logo_url: https://cdn.subsquid.io/img/networks/bob.png
@@ -244,6 +514,13 @@ datasets:
     evm:
       chain_id: 808813
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   botanix-mainnet:
     display_name: Botanix Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/botanix.svg
@@ -251,6 +528,15 @@ datasets:
     evm:
       chain_id: 3637
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   botanix-testnet:
     display_name: Botanix Testnet
     logo_url: https://cdn.subsquid.io/img/networks/botanix.svg
@@ -258,6 +544,15 @@ datasets:
     evm:
       chain_id: 3636
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   camp-network-testnet-v2:
     display_name: Camp Network Testnet v2
     logo_url: https://cdn.subsquid.io/img/networks/camp-network.svg
@@ -265,6 +560,15 @@ datasets:
     evm:
       chain_id: 325000
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   canto:
     display_name: Canto
     logo_url: https://cdn.subsquid.io/img/networks/canto.png
@@ -272,6 +576,13 @@ datasets:
     evm:
       chain_id: 7700
     kind: evm
+    contents:
+      - range:
+          from: 1
+          entities:
+            - blocks
+            - transactions
+            - logs
   canto-testnet:
     display_name: Canto Testnet
     logo_url: https://cdn.subsquid.io/img/networks/canto.png
@@ -279,6 +590,13 @@ datasets:
     evm:
       chain_id: 7701
     kind: evm
+    contents:
+      - range:
+          from: 1
+          entities:
+            - blocks
+            - transactions
+            - logs
   celo-alfajores-testnet:
     display_name: Celo Testnet (Alfajores)
     logo_url: https://cdn.subsquid.io/img/networks/celo.svg
@@ -286,6 +604,13 @@ datasets:
     evm:
       chain_id: 44787
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   celo-mainnet:
     display_name: Celo Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/celo.svg
@@ -293,6 +618,13 @@ datasets:
     evm:
       chain_id: 42220
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   core-mainnet:
     display_name: Core Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/core.png
@@ -300,6 +632,14 @@ datasets:
     evm:
       chain_id: 1116
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
   crossfi-mainnet:
     display_name: CrossFi Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/crossfi.svg
@@ -307,6 +647,13 @@ datasets:
     evm:
       chain_id: 4158
     kind: evm
+    contents:
+      - range:
+          from: 1
+          entities:
+            - blocks
+            - transactions
+            - logs
   crossfi-testnet:
     display_name: CrossFi Testnet
     logo_url: https://cdn.subsquid.io/img/networks/crossfi.svg
@@ -314,6 +661,13 @@ datasets:
     evm:
       chain_id: 4157
     kind: evm
+    contents:
+      - range:
+          from: 1
+          entities:
+            - blocks
+            - transactions
+            - logs
   cyber-mainnet:
     display_name: Cyber Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/cyber.svg
@@ -321,6 +675,13 @@ datasets:
     evm:
       chain_id: 7560
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   cyberconnect-l2-testnet:
     display_name: Cyberconnect L2 Testnet
     logo_url: https://cdn.subsquid.io/img/networks/cyber.svg
@@ -328,6 +689,15 @@ datasets:
     evm:
       chain_id: 111557560
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   dancelight-testnet:
     display_name: Dancelight
     logo_url: https://cdn.subsquid.io/img/networks/tanssi.png
@@ -342,6 +712,13 @@ datasets:
     evm:
       chain_id: 666666666
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   dfk-chain:
     display_name: DFK Chain
     logo_url: https://cdn.subsquid.io/img/networks/dfk.png
@@ -349,6 +726,13 @@ datasets:
     evm:
       chain_id: 53935
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   dogechain-mainnet:
     display_name: Dogechain
     logo_url: https://cdn.subsquid.io/img/networks/dogechain.png
@@ -356,6 +740,13 @@ datasets:
     evm:
       chain_id: 2000
     kind: evm
+    contents:
+      - range:
+          from: 18980451
+          entities:
+            - blocks
+            - transactions
+            - logs
   dogechain-testnet:
     display_name: Dogechain Testnet
     logo_url: https://cdn.subsquid.io/img/networks/dogechain.png
@@ -363,6 +754,13 @@ datasets:
     evm:
       chain_id: 568
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   ethereum-holesky:
     display_name: Ethereum Holesky
     logo_url: https://cdn.subsquid.io/img/networks/ethereum.svg
@@ -370,6 +768,15 @@ datasets:
     evm:
       chain_id: 17000
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   ethereum-hoodi:
     display_name: Ethereum Hoodi
     logo_url: https://cdn.subsquid.io/img/networks/ethereum.svg
@@ -384,6 +791,15 @@ datasets:
       chain_id: 1
     logo_url: https://cdn.subsquid.io/img/networks/ethereum.svg
     type: testnet
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   ethereum-sepolia:
     display_name: Ethereum Sepolia
     logo_url: https://cdn.subsquid.io/img/networks/ethereum.svg
@@ -391,6 +807,15 @@ datasets:
     evm:
       chain_id: 11155111
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   etherlink-mainnet:
     display_name: Etherlink Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/etherlink.png
@@ -398,6 +823,13 @@ datasets:
     evm:
       chain_id: 42793
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   etherlink-shadownet:
     display_name: Etherlink Shadownet
     logo_url: https://cdn.subsquid.io/img/networks/etherlink.png
@@ -405,6 +837,13 @@ datasets:
     evm:
       chain_id: 127823
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   etherlink-testnet:
     display_name: Etherlink Testnet
     logo_url: https://cdn.subsquid.io/img/networks/etherlink.png
@@ -412,6 +851,13 @@ datasets:
     evm:
       chain_id: 128123
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   exosama:
     display_name: Exosama
     logo_url: https://cdn.subsquid.io/img/networks/exn.png
@@ -419,6 +865,15 @@ datasets:
     evm:
       chain_id: 2109
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   flare-mainnet:
     display_name: Flare
     logo_url: https://cdn.subsquid.io/img/networks/flare.png
@@ -426,6 +881,13 @@ datasets:
     evm:
       chain_id: 14
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   formicarium-testnet:
     display_name: MemeCore Testnet (Formicarium)
     logo_url: https://cdn.subsquid.io/img/networks/memecore.svg
@@ -433,6 +895,15 @@ datasets:
     evm:
       chain_id: 43521
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   galxe-gravity:
     display_name: Gravity
     logo_url: https://cdn.subsquid.io/img/networks/gravity.png
@@ -440,6 +911,15 @@ datasets:
     evm:
       chain_id: 1625
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   gelato-arbitrum-blueberry:
     display_name: Arbitrum Blueberry
     logo_url: https://cdn.subsquid.io/img/networks/gelato.svg
@@ -447,6 +927,13 @@ datasets:
     evm:
       chain_id: 88153591557
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   gelato-opcelestia-raspberry:
     display_name: Gelato OP Celestia Raspberry
     logo_url: https://cdn.subsquid.io/img/networks/gelato.svg
@@ -454,6 +941,13 @@ datasets:
     kind: evm
     evm:
       chain_id: 123420111
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   gnosis-mainnet:
     display_name: Gnosis
     logo_url: https://cdn.subsquid.io/img/networks/gnosis.png
@@ -461,6 +955,15 @@ datasets:
     evm:
       chain_id: 100
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   hedera-mainnet:
     display_name: Hedera Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/hedera.png
@@ -489,6 +992,15 @@ datasets:
     evm:
       chain_id: 999
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   hyperliquid-testnet:
     display_name: HyperEVM Testnet
     logo_url: https://cdn.subsquid.io/img/networks/hyperliquid.svg
@@ -496,6 +1008,13 @@ datasets:
     evm:
       chain_id: 998
     kind: evm
+    contents:
+      - range:
+          from: 42500000
+          entities:
+            - blocks
+            - transactions
+            - logs
   immutable-zkevm-mainnet:
     display_name: Immutable zkEVM
     logo_url: https://cdn.subsquid.io/img/networks/immutable.png
@@ -503,6 +1022,13 @@ datasets:
     evm:
       chain_id: 13371
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   immutable-zkevm-testnet:
     display_name: Immutable zkEVM Testnet
     logo_url: https://cdn.subsquid.io/img/networks/immutable.png
@@ -510,6 +1036,13 @@ datasets:
     evm:
       chain_id: 13473
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   ink-mainnet:
     display_name: Ink Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/ink.svg
@@ -517,6 +1050,15 @@ datasets:
     evm:
       chain_id: 57073
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   ink-sepolia:
     display_name: Ink Sepolia
     logo_url: https://cdn.subsquid.io/img/networks/ink.svg
@@ -531,6 +1073,15 @@ datasets:
     kind: evm
     evm:
       chain_id: 747474
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   kyoto-testnet:
     display_name: Kyoto Testnet
     logo_url: https://cdn.subsquid.io/img/networks/kyoto.png
@@ -538,6 +1089,13 @@ datasets:
     evm:
       chain_id: 1998
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   linea-mainnet:
     display_name: Linea
     logo_url: https://cdn.subsquid.io/img/networks/linea.png
@@ -545,6 +1103,14 @@ datasets:
     evm:
       chain_id: 59144
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
   lukso-mainnet:
     display_name: Lukso Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/lukso.svg
@@ -552,6 +1118,13 @@ datasets:
     evm:
       chain_id: 42
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   manta-pacific:
     display_name: Manta Pacific
     logo_url: https://cdn.subsquid.io/img/networks/manta.png
@@ -559,6 +1132,13 @@ datasets:
     evm:
       chain_id: 169
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   manta-pacific-sepolia:
     display_name: Manta Pacific Sepolia
     logo_url: https://cdn.subsquid.io/img/networks/manta.png
@@ -566,6 +1146,13 @@ datasets:
     evm:
       chain_id: 3441006
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   mantle-mainnet:
     display_name: Mantle
     logo_url: https://cdn.subsquid.io/img/networks/mantle.png
@@ -573,6 +1160,13 @@ datasets:
     evm:
       chain_id: 5000
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   mantle-sepolia:
     display_name: Mantle Sepolia
     logo_url: https://cdn.subsquid.io/img/networks/mantle.png
@@ -580,6 +1174,13 @@ datasets:
     evm:
       chain_id: 5003
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   megaeth-mainnet:
     display_name: MegaETH Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/mega.png
@@ -587,6 +1188,13 @@ datasets:
     evm:
       chain_id: 4326
     kind: evm
+    contents:
+      - range:
+          from: 6920000
+          entities:
+            - blocks
+            - transactions
+            - logs
   megaeth-testnet:
     display_name: MegaETH Testnet
     logo_url: https://cdn.subsquid.io/img/networks/mega.png
@@ -594,6 +1202,13 @@ datasets:
     evm:
       chain_id: 6342
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   memecore-insectarium:
     display_name: MemeCore Testnet (Insectarium)
     logo_url: https://cdn.subsquid.io/img/networks/memecore.svg
@@ -601,6 +1216,15 @@ datasets:
     evm:
       chain_id: 43522
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   memecore-mainnet:
     display_name: MemeCore Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/memecore.svg
@@ -608,6 +1232,15 @@ datasets:
     evm:
       chain_id: 4352
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   merlin-mainnet:
     display_name: Merlin Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/merlin.jpg
@@ -615,6 +1248,13 @@ datasets:
     evm:
       chain_id: 4200
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   merlin-testnet:
     display_name: Merlin Testnet
     logo_url: https://cdn.subsquid.io/img/networks/won.png
@@ -622,6 +1262,13 @@ datasets:
     evm:
       chain_id: 686868
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   metis-mainnet:
     display_name: Metis
     logo_url: https://cdn.subsquid.io/img/networks/metis.svg
@@ -629,6 +1276,14 @@ datasets:
     evm:
       chain_id: 1088
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
   mode-mainnet:
     display_name: Mode Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/mode.png
@@ -636,6 +1291,13 @@ datasets:
     evm:
       chain_id: 34443
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   monad-mainnet:
     display_name: Monad Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/monad.png
@@ -643,6 +1305,13 @@ datasets:
     evm:
       chain_id: 143
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   monad-testnet:
     display_name: Monad Testnet
     logo_url: https://cdn.subsquid.io/img/networks/monad.png
@@ -650,6 +1319,13 @@ datasets:
     evm:
       chain_id: 10143
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   moonbase-testnet:
     display_name: Moonbase Alpha
     logo_url: https://cdn.subsquid.io/img/networks/moonbasealpha.png
@@ -657,6 +1333,13 @@ datasets:
     evm:
       chain_id: 1287
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   moonbeam-mainnet:
     display_name: Moonbeam
     logo_url: https://cdn.subsquid.io/img/networks/moonbeam.png
@@ -664,6 +1347,14 @@ datasets:
     evm:
       chain_id: 1284
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
   moonriver-mainnet:
     display_name: Moonriver
     logo_url: https://cdn.subsquid.io/img/networks/moonriver.png
@@ -671,6 +1362,14 @@ datasets:
     evm:
       chain_id: 1285
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
   moonsama:
     display_name: Moonsama
     logo_url: https://cdn.subsquid.io/img/networks/.png
@@ -678,6 +1377,13 @@ datasets:
     kind: evm
     evm:
       chain_id: 2199
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   nakachain:
     display_name: Naka Chain
     logo_url: https://cdn.subsquid.io/img/networks/naka-chain.png
@@ -685,6 +1391,13 @@ datasets:
     evm:
       chain_id: 42225
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   neon-devnet:
     display_name: Neon EVM Devnet
     logo_url: https://cdn.subsquid.io/img/networks/neon.png
@@ -692,6 +1405,13 @@ datasets:
     evm:
       chain_id: 245022926
     kind: evm
+    contents:
+      - range:
+          from: 177455580
+          entities:
+            - blocks
+            - transactions
+            - logs
   neon-mainnet:
     display_name: Neon EVM
     logo_url: https://cdn.subsquid.io/img/networks/neon.png
@@ -699,6 +1419,13 @@ datasets:
     evm:
       chain_id: 245022934
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   neox-testnet:
     display_name: Neo X Testnet
     logo_url: https://cdn.subsquid.io/img/networks/neox.svg
@@ -706,6 +1433,15 @@ datasets:
     kind: evm
     evm:
       chain_id: 12227332
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   opbnb-mainnet:
     display_name: opBNB
     logo_url: https://cdn.subsquid.io/img/networks/opbnb.png
@@ -713,6 +1449,13 @@ datasets:
     evm:
       chain_id: 204
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   opbnb-testnet:
     display_name: opBNB Testnet
     logo_url: https://cdn.subsquid.io/img/networks/opbnb.png
@@ -720,6 +1463,13 @@ datasets:
     evm:
       chain_id: 5611
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   optimism-mainnet:
     display_name: Optimism
     logo_url: https://cdn.subsquid.io/img/networks/optimism.svg
@@ -727,6 +1477,15 @@ datasets:
     evm:
       chain_id: 10
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   optimism-sepolia:
     display_name: Optimism Sepolia
     logo_url: https://cdn.subsquid.io/img/networks/optimism.svg
@@ -734,6 +1493,13 @@ datasets:
     evm:
       chain_id: 11155420
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   ozean-testnet:
     display_name: Ozean Testnet
     logo_url: https://cdn.subsquid.io/img/networks/ozean.svg
@@ -741,6 +1507,15 @@ datasets:
     evm:
       chain_id: 7849306
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   peaq-mainnet:
     display_name: Peaq
     logo_url: https://cdn.subsquid.io/img/networks/peaq.png
@@ -748,6 +1523,13 @@ datasets:
     evm:
       chain_id: 3338
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   plasma-mainnet:
     display_name: Plasma Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/plasma.svg
@@ -755,6 +1537,15 @@ datasets:
     kind: evm
     evm:
       chain_id: 9745
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   plasma-testnet:
     display_name: Plasma Testnet
     logo_url: https://cdn.subsquid.io/img/networks/plasma.svg
@@ -762,6 +1553,15 @@ datasets:
     kind: evm
     evm:
       chain_id: 9746
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   plume:
     display_name: Plume Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/plume.png
@@ -790,6 +1590,15 @@ datasets:
     kind: evm
     evm:
       chain_id: 98866
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   plume-testnet:
     display_name: Plume Testnet
     logo_url: https://cdn.subsquid.io/img/networks/plume.png
@@ -797,6 +1606,15 @@ datasets:
     evm:
       chain_id: 98867
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   polygon-amoy-testnet:
     display_name: Polygon Amoy Testnet
     logo_url: https://cdn.subsquid.io/img/networks/polygon.png
@@ -804,6 +1622,13 @@ datasets:
     evm:
       chain_id: 80002
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   polygon-mainnet:
     display_name: Polygon
     logo_url: https://cdn.subsquid.io/img/networks/polygon.png
@@ -811,6 +1636,14 @@ datasets:
     evm:
       chain_id: 137
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
   polygon-zkevm-cardona-testnet:
     display_name: Polygon zkEVM Cardona Testnet
     logo_url: https://cdn.subsquid.io/img/networks/zkevm.png
@@ -818,6 +1651,13 @@ datasets:
     evm:
       chain_id: 2442
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   polygon-zkevm-mainnet:
     display_name: Polygon zkEVM
     logo_url: https://cdn.subsquid.io/img/networks/zkevm.png
@@ -825,6 +1665,13 @@ datasets:
     evm:
       chain_id: 1101
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   poseidon-testnet:
     display_name: Poseidon Testnet
     logo_url: https://cdn.subsquid.io/img/networks/ozean.svg
@@ -839,6 +1686,15 @@ datasets:
     evm:
       chain_id: 227
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   puppynet:
     display_name: Puppynet (Shibarium's Testnet)
     logo_url: https://cdn.subsquid.io/img/networks/shibarium.png
@@ -846,6 +1702,15 @@ datasets:
     evm:
       chain_id: 157
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   scroll-mainnet:
     display_name: Scroll
     logo_url: https://cdn.subsquid.io/img/networks/scroll.png
@@ -853,6 +1718,14 @@ datasets:
     evm:
       chain_id: 534352
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
   scroll-sepolia:
     display_name: Scroll Sepolia
     logo_url: https://cdn.subsquid.io/img/networks/scroll.png
@@ -860,6 +1733,14 @@ datasets:
     evm:
       chain_id: 534351
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
   shibarium:
     display_name: Shibarium
     logo_url: https://cdn.subsquid.io/img/networks/shibarium.png
@@ -867,6 +1748,15 @@ datasets:
     evm:
       chain_id: 109
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   shibuya-testnet:
     display_name: Shibuya
     logo_url: https://cdn.subsquid.io/img/networks/astar.svg
@@ -874,6 +1764,13 @@ datasets:
     evm:
       chain_id: 81
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   shiden-mainnet:
     display_name: Shiden
     logo_url: https://cdn.subsquid.io/img/networks/shiden.png
@@ -881,6 +1778,13 @@ datasets:
     evm:
       chain_id: 336
     kind: evm
+    contents:
+      - range:
+          from: 339330
+          entities:
+            - blocks
+            - transactions
+            - logs
   skale-nebula:
     display_name: Skale Nebula
     logo_url: https://cdn.subsquid.io/img/networks/nebula.png
@@ -888,6 +1792,13 @@ datasets:
     evm:
       chain_id: 1482601649
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   soneium-mainnet:
     display_name: Soneium Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/soneium.svg
@@ -895,6 +1806,13 @@ datasets:
     evm:
       chain_id: 1868
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   soneium-minato-testnet:
     display_name: Soneium Minato Testnet
     logo_url: https://cdn.subsquid.io/img/networks/soneium.svg
@@ -902,6 +1820,15 @@ datasets:
     evm:
       chain_id: 1946
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   sonic-mainnet:
     display_name: Sonic Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/sonic.png
@@ -909,6 +1836,14 @@ datasets:
     evm:
       chain_id: 146
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
   sonic-testnet:
     display_name: Sonic Testnet
     logo_url: https://cdn.subsquid.io/img/networks/sonic.png
@@ -923,6 +1858,15 @@ datasets:
     evm:
       chain_id: 93747
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   superseed-mainnet:
     display_name: Superseed Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/superseed.png
@@ -930,6 +1874,13 @@ datasets:
     evm:
       chain_id: 5330
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   superseed-sepolia:
     display_name: Superseed Sepolia
     logo_url: https://cdn.subsquid.io/img/networks/superseed.png
@@ -937,6 +1888,13 @@ datasets:
     evm:
       chain_id: 53302
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   taiko-mainnet:
     display_name: Taiko Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/taiko.png
@@ -944,6 +1902,13 @@ datasets:
     evm:
       chain_id: 167000
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   tanssi:
     display_name: Tanssi
     logo_url: https://cdn.subsquid.io/img/networks/tanssi.png
@@ -951,6 +1916,13 @@ datasets:
     evm:
       chain_id: 5678
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   unichain-mainnet:
     display_name: Unichain Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/unichain.svg
@@ -958,6 +1930,15 @@ datasets:
     evm:
       chain_id: 130
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   unichain-sepolia:
     display_name: Unichain Sepolia
     logo_url: https://cdn.subsquid.io/img/networks/unichain.svg
@@ -965,6 +1946,13 @@ datasets:
     evm:
       chain_id: 1301
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   x1-testnet:
     display_name: X Layer Testnet
     logo_url: https://cdn.subsquid.io/img/networks/xlayer.svg
@@ -972,6 +1960,13 @@ datasets:
     kind: evm
     evm:
       chain_id: 1952
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   xlayer-mainnet:
     display_name: X Layer Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/xlayer.svg
@@ -979,6 +1974,13 @@ datasets:
     evm:
       chain_id: 196
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   xlayer-testnet:
     display_name: X Layer Testnet
     logo_url: https://cdn.subsquid.io/img/networks/xlayer.svg
@@ -986,6 +1988,13 @@ datasets:
     evm:
       chain_id: 195
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   zklink-nova-mainnet:
     display_name: zkLink Nova Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/zklink-nova.png
@@ -993,6 +2002,14 @@ datasets:
     evm:
       chain_id: 810180
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
   zksync-mainnet:
     display_name: zkSync
     logo_url: https://cdn.subsquid.io/img/networks/zksync-era.svg
@@ -1000,6 +2017,14 @@ datasets:
     evm:
       chain_id: 324
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
   zksync-sepolia:
     display_name: zkSync Sepolia
     logo_url: https://cdn.subsquid.io/img/networks/zksync-era.svg
@@ -1007,6 +2032,14 @@ datasets:
     evm:
       chain_id: 300
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
   zora-mainnet:
     display_name: Zora
     kind: evm
@@ -1014,6 +2047,15 @@ datasets:
       chain_id: 7777777
     logo_url: https://cdn.subsquid.io/img/networks/zora.png
     type: testnet
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
+            - traces
+            - stateDiffs
   zora-sepolia:
     display_name: Zora Sepolia
     logo_url: https://cdn.subsquid.io/img/networks/zora-sepolia-testnet.png
@@ -1021,6 +2063,13 @@ datasets:
     evm:
       chain_id: 999999999
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   hyperliquid-fills:
     display_name: Hyperliquid
     kind: hyperliquidFills
