@@ -8,7 +8,10 @@
  * Step 3: Fetch start block (/metadata) and probe capabilities for each matched dataset.
  * Step 4: Update metadata YAML with contents.
  *
- * Usage: node .github/workflows/scripts/update-metadata-contents.js
+ * By default only probes datasets that lack a "contents" field.
+ * Use --full-update to re-probe all datasets.
+ *
+ * Usage: node .github/workflows/scripts/update-metadata-contents.js [--full-update]
  */
 
 const fs = require('fs');
@@ -172,7 +175,7 @@ async function loadPortalEvmDatasets() {
       if (!hasTx) return { name, isEvm: false };
 
       const hasSolana = await probeCapability(baseUrl, 'instructions', headBlock, 'solana');
-      console.log(`${name} - tx: ${hasTx}, instructions: ${hasSolana}, head: ${headBlock}`);
+      console.log(`${name} - transactions: ${hasTx}, instructions: ${hasSolana}, head: ${headBlock}`);
       if (hasSolana) return { name, isEvm: false };
 
       return { name, isEvm: true, headBlock };
@@ -235,10 +238,18 @@ async function probeDatasetContents(datasetName, headBlock) {
   return [{ range: { from: startBlock, entities } }];
 }
 
-async function updateContents(portalEvmDatasets, metadata) {
+async function updateContents(portalEvmDatasets, metadata, fullUpdate) {
   const evmIds = getEvmDatasetIds(metadata);
   const portalSet = new Set(portalEvmDatasets.keys());
-  const toUpdate = evmIds.filter((id) => portalSet.has(id));
+  const onPortal = evmIds.filter((id) => portalSet.has(id));
+  const toUpdate = fullUpdate
+    ? onPortal
+    : onPortal.filter((id) => !metadata.datasets[id].contents);
+
+  if (!fullUpdate) {
+    const skipped = onPortal.length - toUpdate.length;
+    if (skipped > 0) console.log(`Skipping ${skipped} dataset(s) that already have contents (use --full-update to re-probe)`);
+  }
   const errors = [];
 
   await mapInBatches(toUpdate, CAPABILITY_BATCH_SIZE, async (id) => {
@@ -264,12 +275,14 @@ async function updateContents(portalEvmDatasets, metadata) {
 // ---------------------------------------------------------------------------
 
 async function main() {
+  const fullUpdate = process.argv.includes('--full-update');
+
   const portalEvmDatasets = await loadPortalEvmDatasets();
   const metadata = loadMetadata();
   const yamlEvmIds = getEvmDatasetIds(metadata);
 
   checkMissing(portalEvmDatasets, yamlEvmIds);
-  await updateContents(portalEvmDatasets, metadata);
+  await updateContents(portalEvmDatasets, metadata, fullUpdate);
 
   saveMetadata(metadata);
   console.log(`${METADATA_YAML_PATH} updated.`);
