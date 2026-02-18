@@ -19,6 +19,7 @@ on:
     - cron: '0 4 * * *'
     # Weekly Monday 02:00 UTC – full update
     - cron: '0 2 * * 1'
+  workflow_dispatch:
 
 jobs:
   update:
@@ -123,7 +124,7 @@ jobs:
           password: ${{ secrets.SMTP_PASSWORD }}
           subject: '[cdn] Metadata contents updated (${{ steps.flags.outputs.mode }})'
           to: a.bernatskiy@subsquid.io
-          from: ${{ secrets.MAIL_FROM }}
+          from: subsquid/cdn repo automaton
           body: |
             The update-metadata-contents workflow (${{ steps.flags.outputs.mode }}) updated metadata.tentative.yml.
 
@@ -170,6 +171,6 @@ jobs:
           password: ${{ secrets.SMTP_PASSWORD }}
           subject: '[cdn] Metadata contents workflow failed – missing networks'
           to: a.bernatskiy@subsquid.io
-          from: ${{ secrets.MAIL_FROM }}
+          from: subsquid/cdn repo automaton
           body: ${{ env.body }}
         continue-on-error: true

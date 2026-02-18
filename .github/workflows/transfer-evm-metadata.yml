@@ -90,7 +90,7 @@ jobs:
           password: ${{ secrets.SMTP_PASSWORD }}
           subject: '[cdn] EVM metadata transferred – PR created'
           to: a.bernatskiy@subsquid.io
-          from: ${{ secrets.MAIL_FROM }}
+          from: subsquid/cdn repo automaton
           body: |
             The transfer-evm-metadata workflow updated metadata.tentative.yml.
 
@@ -128,6 +128,6 @@ jobs:
           password: ${{ secrets.SMTP_PASSWORD }}
           subject: '[cdn] Transfer EVM metadata – contents update failed'
           to: a.bernatskiy@subsquid.io
-          from: ${{ secrets.MAIL_FROM }}
+          from: subsquid/cdn repo automaton
           body: ${{ env.body }}
         continue-on-error: true
