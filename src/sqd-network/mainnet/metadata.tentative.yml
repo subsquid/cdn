@@ -1923,6 +1923,13 @@ datasets:
             - blocks
             - transactions
             - logs
+  test-network:
+    display_name: TestNet Mainnet
+    logo_url: https://example.com/logo.svg
+    type: mainnet
+    kind: evm
+    evm:
+      chain_id: 2394872342
   unichain-mainnet:
     display_name: Unichain Mainnet
     logo_url: https://cdn.subsquid.io/img/networks/unichain.svg
