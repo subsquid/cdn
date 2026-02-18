@@ -1940,29 +1940,6 @@
       ]
     },
     {
-      "chainId": 4352,
-      "chainName": "MemeCore Mainnet",
-      "id": "memecore-mainnet",
-      "isTestnet": false,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/memecore.svg",
-      "network": "memecore-mainnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs",
-            "traces",
-            "stateDiffs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/memecore-mainnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainId": 43522,
       "chainName": "MemeCore Testnet (Insectarium)",
       "id": "memecore-insectarium",
@@ -1982,6 +1959,29 @@
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 1
+        }
+      ]
+    },
+    {
+      "chainId": 4352,
+      "chainName": "MemeCore Mainnet",
+      "id": "memecore-mainnet",
+      "isTestnet": false,
+      "logoUrl": "https://cdn.subsquid.io/img/networks/memecore.svg",
+      "network": "memecore-mainnet",
+      "providers": [
+        {
+          "data": [
+            "blocks",
+            "tx",
+            "logs",
+            "traces",
+            "stateDiffs"
+          ],
+          "dataSourceUrl": "https://v2.archive.subsquid.io/network/memecore-mainnet",
+          "provider": "subsquid",
+          "release": "ArrowSquid",
+          "supportTier": 2
         }
       ]
     },
