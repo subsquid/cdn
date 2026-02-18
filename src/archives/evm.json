@@ -2981,27 +2981,6 @@
       ]
     },
     {
-      "id": "test-network",
-      "chainId": 2394872342,
-      "chainName": "TestNet Mainnet",
-      "isTestnet": false,
-      "network": "test-network",
-      "logoUrl": "https://example.com/logo.svg",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/test-network",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainId": 130,
       "chainName": "Unichain Mainnet",
       "id": "unichain-mainnet",
