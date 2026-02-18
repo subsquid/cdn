@@ -1,0 +1,175 @@
+# Probes portal.sqd.dev for EVM dataset capabilities and updates the
+# "contents" field of each dataset in metadata.tentative.yml.
+#
+# Triggers:
+#   - Daily at 04:00 UTC (incremental: only datasets missing "contents").
+#   - Weekly on Monday 02:00 UTC (full: re-probes every dataset).
+#
+# Reuses the branch auto/update-metadata-contents if it already exists
+# (adds commits), otherwise creates it from main.
+#
+# Emails on success (PR URL + branch) or failure (branch + missing networks).
+#
+# For email, set repo secrets: SMTP_SERVER, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD, MAIL_FROM.
+name: Update metadata contents
+
+on:
+  schedule:
+    # Daily at 04:00 UTC – incremental
+    - cron: '0 4 * * *'
+    # Weekly Monday 02:00 UTC – full update
+    - cron: '0 2 * * 1'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install dependencies
+        run: npm install js-yaml
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Prepare branch
+        id: branch
+        run: |
+          BRANCH=auto/update-metadata-contents
+          echo "name=$BRANCH" >> "$GITHUB_OUTPUT"
+          if git ls-remote --exit-code --heads origin "$BRANCH" > /dev/null 2>&1; then
+            git fetch origin "$BRANCH"
+            git checkout "$BRANCH"
+            git merge origin/main --no-edit || {
+              echo "::warning::Merge conflict with main; resetting branch to main"
+              git merge --abort
+              git reset --hard origin/main
+            }
+          else
+            git checkout -B "$BRANCH"
+          fi
+
+      - name: Determine flags
+        id: flags
+        run: |
+          if [ "${{ github.event.schedule }}" = "0 2 * * 1" ]; then
+            echo "args=--full-update" >> "$GITHUB_OUTPUT"
+            echo "mode=full" >> "$GITHUB_OUTPUT"
+          else
+            echo "args=" >> "$GITHUB_OUTPUT"
+            echo "mode=incremental" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Run update script
+        id: run-script
+        run: node .github/workflows/scripts/update-metadata-contents.js ${{ steps.flags.outputs.args }}
+
+      - name: Upload missing networks (on failure)
+        if: failure() && hashFiles('missing-networks.txt') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: missing-networks
+          path: missing-networks.txt
+
+      - name: Check for changes
+        if: success()
+        id: diff
+        run: |
+          if git diff --quiet src/sqd-network/mainnet/metadata.tentative.yml; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and push
+        if: success() && steps.diff.outputs.changed == 'true'
+        run: |
+          BRANCH="${{ steps.branch.outputs.name }}"
+          git add src/sqd-network/mainnet/metadata.tentative.yml
+          git commit -m "chore(metadata): update dataset contents from portal (${{ steps.flags.outputs.mode }})"
+          git push -u origin "$BRANCH"
+
+      - name: Find or create PR
+        if: success() && steps.diff.outputs.changed == 'true'
+        id: pr
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="${{ steps.branch.outputs.name }}"
+          PR_URL=$(gh pr list --head "$BRANCH" --state open --json url -q '.[0].url')
+          if [ -z "$PR_URL" ]; then
+            PR_URL=$(gh pr create \
+              --head "$BRANCH" \
+              --title "Update metadata dataset contents (${{ steps.flags.outputs.mode }})" \
+              --body "Automated update of dataset contents from portal.sqd.dev (${{ steps.flags.outputs.mode }}).")
+          fi
+          echo "url=$PR_URL" >> "$GITHUB_OUTPUT"
+
+      - name: Send success email
+        if: success() && steps.diff.outputs.changed == 'true' && steps.pr.outputs.url
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: '[cdn] Metadata contents updated (${{ steps.flags.outputs.mode }})'
+          to: a.bernatskiy@subsquid.io
+          from: ${{ secrets.MAIL_FROM }}
+          body: |
+            The update-metadata-contents workflow (${{ steps.flags.outputs.mode }}) updated metadata.tentative.yml.
+
+            PR: ${{ steps.pr.outputs.url }}
+            Branch: ${{ steps.branch.outputs.name }}
+        continue-on-error: true
+
+  notify-on-failure:
+    needs: update
+    if: failure() && needs.update.result == 'failure'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download missing networks list
+        uses: actions/download-artifact@v4
+        with:
+          name: missing-networks
+        continue-on-error: true
+
+      - name: Prepare email body
+        run: |
+          {
+            echo "body<<ENDOFBODY"
+            echo "The update-metadata-contents workflow failed."
+            echo ""
+            echo "Branch: auto/update-metadata-contents"
+            echo "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            if [ -f missing-networks.txt ]; then
+              echo ""
+              echo "Missing networks:"
+              echo ""
+              cat missing-networks.txt
+              echo ""
+              echo "Add entries for these networks to metadata.tentative.yml and re-run."
+            fi
+            echo "ENDOFBODY"
+          } >> "$GITHUB_ENV"
+
+      - name: Send failure email
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: '[cdn] Metadata contents workflow failed – missing networks'
+          to: a.bernatskiy@subsquid.io
+          from: ${{ secrets.MAIL_FROM }}
+          body: ${{ env.body }}
+        continue-on-error: true
