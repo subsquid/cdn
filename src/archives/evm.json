@@ -1,4 +1,5 @@
 {
+  "$schema": "../schemas/archive-registry-evm.json",
   "archives": [
     {
       "chainId": 16600,
