@@ -72,16 +72,10 @@ jobs:
       - name: Run update script
         id: run-script
         run: node .github/workflows/scripts/update-metadata-contents.js ${{ steps.flags.outputs.args }}
-
-      - name: Upload missing networks (on failure)
-        if: failure() && hashFiles('missing-networks.txt') != ''
-        uses: actions/upload-artifact@v4
-        with:
-          name: missing-networks
-          path: missing-networks.txt
+        continue-on-error: true
 
       - name: Check for changes
-        if: success()
+        if: steps.run-script.outcome == 'success'
         id: diff
         run: |
           if git diff --quiet src/sqd-network/mainnet/metadata.tentative.yml; then
@@ -91,7 +85,7 @@ jobs:
           fi
 
       - name: Commit and push
-        if: success() && steps.diff.outputs.changed == 'true'
+        if: steps.run-script.outcome == 'success' && steps.diff.outputs.changed == 'true'
         run: |
           BRANCH="${{ steps.branch.outputs.name }}"
           git add src/sqd-network/mainnet/metadata.tentative.yml
@@ -99,7 +93,7 @@ jobs:
           git push -u origin "$BRANCH"
 
       - name: Find or create PR
-        if: success() && steps.diff.outputs.changed == 'true'
+        if: steps.run-script.outcome == 'success' && steps.diff.outputs.changed == 'true'
         id: pr
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -115,7 +109,7 @@ jobs:
           echo "url=$PR_URL" >> "$GITHUB_OUTPUT"
 
       - name: Send success email
-        if: success() && steps.diff.outputs.changed == 'true' && steps.pr.outputs.url
+        if: steps.run-script.outcome == 'success' && steps.diff.outputs.changed == 'true' && steps.pr.outputs.url
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: ${{ secrets.SMTP_SERVER }}
@@ -132,24 +126,14 @@ jobs:
             Branch: ${{ steps.branch.outputs.name }}
         continue-on-error: true
 
-  notify-on-failure:
-    needs: update
-    if: failure() && needs.update.result == 'failure'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download missing networks list
-        uses: actions/download-artifact@v4
-        with:
-          name: missing-networks
-        continue-on-error: true
-
-      - name: Prepare email body
+      - name: Prepare failure email body
+        if: steps.run-script.outcome == 'failure'
         run: |
           {
             echo "body<<ENDOFBODY"
             echo "The update-metadata-contents workflow failed."
             echo ""
-            echo "Branch: auto/update-metadata-contents"
+            echo "Branch: ${{ steps.branch.outputs.name }}"
             echo "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
             if [ -f missing-networks.txt ]; then
               echo ""
@@ -163,6 +147,7 @@ jobs:
           } >> "$GITHUB_ENV"
 
       - name: Send failure email
+        if: steps.run-script.outcome == 'failure'
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: ${{ secrets.SMTP_SERVER }}
