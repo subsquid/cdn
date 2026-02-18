@@ -1,0 +1,133 @@
+# Runs whenever src/archives/evm.json changes on the default branch.
+# Transfers metadata from evm.json into metadata.tentative.yml, then
+# runs update-metadata-contents on the result.  The PR contains one
+# commit from each script.
+#
+# For email, set repo secrets: SMTP_SERVER, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD, MAIL_FROM.
+name: Transfer EVM metadata
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - src/archives/evm.json
+
+jobs:
+  transfer:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm install js-yaml
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Transfer EVM metadata
+        run: node .github/workflows/scripts/transfer-evm-metadata.js
+
+      - name: Check for transfer changes
+        id: diff
+        run: |
+          if git diff --quiet src/sqd-network/mainnet/metadata.tentative.yml; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create branch and commit transfer changes
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git checkout -B auto/transfer-evm-metadata
+          git add src/sqd-network/mainnet/metadata.tentative.yml
+          git commit -m "chore(metadata): transfer EVM metadata from evm.json"
+
+      - name: Run update-metadata-contents on branch
+        id: update-contents
+        if: steps.diff.outputs.changed == 'true'
+        run: node .github/workflows/scripts/update-metadata-contents.js
+        continue-on-error: true
+
+      - name: Commit contents updates
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          if ! git diff --quiet src/sqd-network/mainnet/metadata.tentative.yml; then
+            git add src/sqd-network/mainnet/metadata.tentative.yml
+            git commit -m "chore(metadata): update dataset contents from portal"
+          fi
+
+      - name: Push branch and open PR
+        if: steps.diff.outputs.changed == 'true'
+        id: pr
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH=auto/transfer-evm-metadata
+          git push -f origin "$BRANCH"
+          PR_URL=$(gh pr list --head "$BRANCH" --state open --json url -q '.[0].url')
+          if [ -z "$PR_URL" ]; then
+            PR_URL=$(gh pr create \
+              --head "$BRANCH" \
+              --title "Transfer EVM metadata from evm.json" \
+              --body "Automated: transfer EVM metadata + update dataset contents from portal.")
+          fi
+          echo "url=$PR_URL" >> "$GITHUB_OUTPUT"
+
+      - name: Send success email
+        if: steps.diff.outputs.changed == 'true' && steps.pr.outputs.url
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: '[cdn] EVM metadata transferred – PR created'
+          to: a.bernatskiy@subsquid.io
+          from: ${{ secrets.MAIL_FROM }}
+          body: |
+            The transfer-evm-metadata workflow updated metadata.tentative.yml.
+
+            PR: ${{ steps.pr.outputs.url }}
+            Branch: auto/transfer-evm-metadata
+        continue-on-error: true
+
+      - name: Prepare failure email body
+        if: steps.diff.outputs.changed == 'true' && steps.update-contents.outcome == 'failure'
+        run: |
+          {
+            echo "body<<ENDOFBODY"
+            echo "The update-metadata-contents step of the transfer-evm-metadata workflow failed."
+            echo ""
+            echo "Branch: auto/transfer-evm-metadata"
+            echo "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            if [ -f missing-networks.txt ]; then
+              echo ""
+              echo "Missing networks:"
+              echo ""
+              cat missing-networks.txt
+              echo ""
+              echo "Add entries for these networks to metadata.tentative.yml and re-run."
+            fi
+            echo "ENDOFBODY"
+          } >> "$GITHUB_ENV"
+
+      - name: Send failure email
+        if: steps.diff.outputs.changed == 'true' && steps.update-contents.outcome == 'failure'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: '[cdn] Transfer EVM metadata – contents update failed'
+          to: a.bernatskiy@subsquid.io
+          from: ${{ secrets.MAIL_FROM }}
+          body: ${{ env.body }}
+        continue-on-error: true
