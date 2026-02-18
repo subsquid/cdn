@@ -20,6 +20,13 @@ datasets:
     evm:
       chain_id: 2741
     kind: evm
+    contents:
+      - range:
+          from: 0
+          entities:
+            - blocks
+            - transactions
+            - logs
   abstract-testnet:
     display_name: Abstract Testnet
     logo_url: https://cdn.subsquid.io/img/networks/abstract.png
