@@ -87,6 +87,7 @@ async function fetchWith429Retry(url, options = {}) {
     }
 
     const retryAfterMs = parseRetryAfterHeaderMs(res.headers.get('retry-after'));
+    console.log(`Retry-after header parsing: raw header "${res.headers.get('retry-after')}", value ${retryAfterMs}`)
     const delayMs = Math.max(0, retryAfterMs ?? DEFAULT_429_DELAY_MS * (attempt + 1));
     console.warn(`429 from ${url}; retrying in ${delayMs}ms (attempt ${attempt + 1}/${MAX_429_RETRIES + 1})`);
     await sleep(delayMs);
