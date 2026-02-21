@@ -692,3 +692,7 @@ sqd-network-datasets:
   - name: hyperliquid-fills
     id: s3://hl-node-fills
     kind: hyperliquidFills
+
+  - name: hyperliquid-replica-cmds
+    id: s3://hyperliquid-replica-cmds
+    kind: hyperliquidReplicaCmds
