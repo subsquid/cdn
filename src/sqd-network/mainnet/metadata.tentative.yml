@@ -55,6 +55,7 @@ datasets:
             - blocks
             - transactions
             - logs
+            - traces
   adi-testnet:
     display_name: ADI Testnet
     logo_url: null
