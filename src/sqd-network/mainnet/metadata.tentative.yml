@@ -1225,7 +1225,7 @@ datasets:
     metadata:
       display_name: Neon EVM Devnet
       logo_url: https://cdn.subsquid.io/img/networks/neon.png
-      type: testnet
+      type: devnet
       kind: evm
       evm:
         chain_id: 245022926
@@ -1376,7 +1376,7 @@ datasets:
     metadata:
       display_name: Plume Devnet
       logo_url: https://cdn.subsquid.io/img/networks/plume.png
-      type: testnet
+      type: devnet
       kind: evm
       evm:
         chain_id: 98864
