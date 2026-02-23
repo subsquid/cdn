@@ -1,14 +1,13 @@
 #!/usr/bin/env node
 /**
- * Update EVM dataset contents in metadata.tentative.yml from portal.sqd.dev.
+ * Update EVM dataset schema in metadata.tentative.yml from portal.sqd.dev.
  *
  * Step 1: Detect EVM datasets on portal.sqd.dev.
  * Step 2: Verify all detected EVM datasets have a matching key in metadata YAML.
  *         If any are missing, write to missing-networks.txt and exit 1.
- * Step 3: Fetch start block (/metadata) and probe capabilities for each matched dataset.
- * Step 4: Update metadata YAML with contents.
+ * Step 3: Probe capabilities for each matched dataset and update schema.
  *
- * By default only probes datasets that lack a "contents" field.
+ * By default only probes datasets whose schema is entirely empty (no keys).
  * Use --full-update to re-probe all datasets.
  *
  * Usage: node .github/workflows/scripts/update-metadata-contents.js [--full-update]
@@ -30,6 +29,14 @@ const DEFAULT_429_DELAY_MS = Number(process.env.PORTAL_DEFAULT_429_DELAY_MS || 1
 // Everything that should be checked on top of EVM transactions
 const EXTRA_CAPABILITIES = ['logs', 'traces', 'stateDiffs'];
 
+const CAPABILITY_TO_SCHEMA = {
+  transactions: 'transactions',
+  logs: 'logs',
+  traces: 'traces',
+  stateDiffs: 'state_diffs',
+  blocks: 'blocks',
+};
+
 // ---------------------------------------------------------------------------
 // YAML I/O
 // ---------------------------------------------------------------------------
@@ -49,7 +56,7 @@ function saveMetadata(metadata) {
 
 function getEvmDatasetIds(metadata) {
   return Object.entries(metadata.datasets)
-    .filter(([, v]) => v && v.kind === 'evm')
+    .filter(([, v]) => v && v.metadata && v.metadata.kind === 'evm')
     .map(([k]) => k);
 }
 
@@ -164,6 +171,9 @@ async function loadPortalEvmDatasets() {
     .map((item) => (item && typeof item === 'object' ? item.dataset : null))
     .filter((name) => typeof name === 'string' && name.length > 0);
 
+  console.log(`Found ${datasetNames.length} datasets on portal`);
+  console.log(datasetNames.join('\n'));
+
   const evmDatasets = new Map();
   const errors = [];
 
@@ -172,9 +182,11 @@ async function loadPortalEvmDatasets() {
       const baseUrl = `${PORTAL_BASE}/${encodeURIComponent(name)}`;
       const head = await getHead(baseUrl);
       const headBlock = head && Number.isFinite(Number(head.number)) ? Number(head.number) : null;
+      console.log(`${name} - head: ${headBlock}`);
       if (headBlock === null) return { name, isEvm: false };
 
       const hasTx = await probeCapability(baseUrl, 'transactions', headBlock);
+      console.log(`${name} - transactions: ${hasTx}`);
       if (!hasTx) return { name, isEvm: false };
 
       const hasSolana = await probeCapability(baseUrl, 'instructions', headBlock, 'solana');
@@ -218,49 +230,45 @@ function checkMissing(portalEvmDatasets, yamlEvmIds) {
 }
 
 // ---------------------------------------------------------------------------
-// Step 3 – Probe capabilities & build contents
+// Step 3 – Probe capabilities & build schema
 // ---------------------------------------------------------------------------
 
-async function probeDatasetContents(datasetName, headBlock) {
+async function probeDatasetSchema(datasetName, headBlock) {
   const baseUrl = `${PORTAL_BASE}/${encodeURIComponent(datasetName)}`;
 
-  const meta = await fetchJson(`${baseUrl}/metadata`);
-  const startBlock = meta.start_block;
-  assert(
-    startBlock != null,
-    `Cannot extract start block from ${datasetName}/metadata: ${JSON.stringify(meta).slice(0, 300)}`,
-  );
+  const schema = {};
+  schema[CAPABILITY_TO_SCHEMA.blocks] = {};
+  schema[CAPABILITY_TO_SCHEMA.transactions] = {};
 
-  const entities = ['blocks', 'transactions'];
   for (const cap of EXTRA_CAPABILITIES) {
     if (await probeCapability(baseUrl, cap, headBlock)) {
-      entities.push(cap);
+      schema[CAPABILITY_TO_SCHEMA[cap]] = {};
     }
   }
 
-  return [{ range: { from: startBlock, entities } }];
+  return schema;
 }
 
-async function updateContents(portalEvmDatasets, metadata, fullUpdate) {
+async function updateSchema(portalEvmDatasets, metadata, fullUpdate) {
   const evmIds = getEvmDatasetIds(metadata);
   const portalSet = new Set(portalEvmDatasets.keys());
   const onPortal = evmIds.filter((id) => portalSet.has(id));
   const toUpdate = fullUpdate
     ? onPortal
-    : onPortal.filter((id) => !metadata.datasets[id].contents);
+    : onPortal.filter((id) => !metadata.datasets[id].schema || Object.keys(metadata.datasets[id].schema).length === 0);
 
   if (!fullUpdate) {
     const skipped = onPortal.length - toUpdate.length;
-    if (skipped > 0) console.log(`Skipping ${skipped} dataset(s) that already have contents (use --full-update to re-probe)`);
+    if (skipped > 0) console.log(`Skipping ${skipped} dataset(s) that already have a schema (use --full-update to re-probe)`);
   }
   const errors = [];
 
   await mapInBatches(toUpdate, CAPABILITY_BATCH_SIZE, async (id) => {
     try {
       const info = portalEvmDatasets.get(id);
-      const contents = await probeDatasetContents(id, info.headBlock);
-      metadata.datasets[id].contents = contents;
-      console.log(`  ${id}: ${contents[0].range.entities.join(', ')} (from block ${contents[0].range.from})`);
+      const schema = await probeDatasetSchema(id, info.headBlock);
+      metadata.datasets[id].schema = schema;
+      console.log(`  ${id}: ${[...Object.keys(schema)].join(', ')}`);
     } catch (error) {
       errors.push(`${id}: ${error.message}`);
     }
@@ -270,7 +278,7 @@ async function updateContents(portalEvmDatasets, metadata, fullUpdate) {
     throw new Error(`Failed to probe ${errors.length} dataset(s):\n${errors.slice(0, 10).join('\n')}`);
   }
 
-  console.log(`Step 3 OK: updated contents for ${toUpdate.length} dataset(s)`);
+  console.log(`Step 3 OK: updated schema for ${toUpdate.length} dataset(s)`);
 }
 
 // ---------------------------------------------------------------------------
@@ -285,7 +293,7 @@ async function main() {
   const yamlEvmIds = getEvmDatasetIds(metadata);
 
   checkMissing(portalEvmDatasets, yamlEvmIds);
-  await updateContents(portalEvmDatasets, metadata, fullUpdate);
+  await updateSchema(portalEvmDatasets, metadata, fullUpdate);
 
   saveMetadata(metadata);
   console.log(`${METADATA_YAML_PATH} updated.`);

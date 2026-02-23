@@ -26,10 +26,12 @@ def _run(parsed_args):
     datasets_items = list(metadata["datasets"].items())
     for key, entry in datasets_items:
         assert isinstance(entry, dict), f"datasets.{key} must be an object"
-        assert "kind" in entry and isinstance(entry["kind"], str) and entry["kind"], f"datasets.{key}.kind must be a non-empty string"
+        assert "metadata" in entry and isinstance(entry["metadata"], dict), f"datasets.{key} must have a metadata object"
+        meta = entry["metadata"]
+        assert "kind" in meta and isinstance(meta["kind"], str) and meta["kind"], f"datasets.{key}.metadata.kind must be a non-empty string"
 
     sorted_datasets = {}
-    for key, entry in sorted(datasets_items, key=lambda item: (item[1]["kind"], item[0])):
+    for key, entry in sorted(datasets_items, key=lambda item: (item[1]["metadata"]["kind"], item[0])):
         sorted_datasets[key] = entry
 
     metadata["datasets"] = sorted_datasets

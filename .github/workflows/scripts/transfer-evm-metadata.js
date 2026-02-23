@@ -35,34 +35,39 @@ function transferArchive(archive, datasets, overwrite) {
 
   const id = archive.id;
   const dataset = datasets[id] || {};
-  const evm = (dataset.evm && typeof dataset.evm === 'object') ? dataset.evm : {};
+  const meta = (dataset.metadata && typeof dataset.metadata === 'object') ? dataset.metadata : {};
+  const evm = (meta.evm && typeof meta.evm === 'object') ? meta.evm : {};
 
-  if (shouldSet(dataset.display_name, overwrite)) {
-    dataset.display_name = archive.chainName;
+  if (shouldSet(meta.display_name, overwrite)) {
+    meta.display_name = archive.chainName;
   }
 
-  if (shouldSet(dataset.logo_url, overwrite)) {
-    dataset.logo_url = archive.logoUrl;
+  if (shouldSet(meta.logo_url, overwrite)) {
+    meta.logo_url = archive.logoUrl;
   }
 
-  if (shouldSet(dataset.type, overwrite)) {
-    dataset.type = archive.isTestnet === false ? 'mainnet' : 'testnet';
+  if (shouldSet(meta.type, overwrite)) {
+    meta.type = archive.isTestnet === false ? 'mainnet' : 'testnet';
   }
 
   if (shouldSet(evm.chain_id, overwrite)) {
     evm.chain_id = archive.chainId;
   }
 
-  dataset.kind = 'evm';
-  dataset.evm = evm;
+  meta.kind = 'evm';
+  meta.evm = evm;
+  dataset.metadata = meta;
+  if (shouldSet(dataset.schema, overwrite)) {
+    dataset.schema = {};
+  }
   datasets[id] = dataset;
 }
 
 function sortDatasets(datasets) {
   const sorted = {};
   const keys = Object.keys(datasets).sort((a, b) => {
-    const kindA = (datasets[a].kind || '');
-    const kindB = (datasets[b].kind || '');
+    const kindA = ((datasets[a].metadata || {}).kind || '');
+    const kindB = ((datasets[b].metadata || {}).kind || '');
     if (kindA !== kindB) return kindA < kindB ? -1 : 1;
     return a < b ? -1 : a > b ? 1 : 0;
   });

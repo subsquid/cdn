@@ -33,22 +33,22 @@ def _parse_chain_id(chain_id_raw: str):
 
 def _build_entry(kind: str, display_name: str, logo_url_raw: str, chain_type: str, chain_id_raw: str):
     chain_id = _parse_chain_id(chain_id_raw)
-    if kind == "evm":
-        assert chain_id is not None, 'For kind "evm", chain_id must not be null'
 
-    entry = {
+    meta = {
         "kind": kind,
         "display_name": display_name,
         "type": chain_type,
     }
 
     if logo_url_raw != "null":
-        entry["logo_url"] = logo_url_raw
+        meta["logo_url"] = logo_url_raw
 
     if chain_id is not None:
-        entry["evm"] = {"chain_id": chain_id}
+        meta["evm"] = {"chain_id": chain_id}
 
-    return entry
+    schema = {}
+
+    return {"metadata": meta, "schema": schema}
 
 
 def _run(parsed_args):
