@@ -236,8 +236,7 @@ async function classifyAllPortalDatasets() {
       const head = await getHead(baseUrl);
       const headBlock = head && Number.isFinite(Number(head.number)) ? Number(head.number) : null;
       if (headBlock === null) {
-        console.log(`  ${name}: no head block, skipping`);
-        return { name, kind: null, skipped: true };
+        throw new Error(`No head block for ${name}`);
       }
 
       const kind = await classifyDataset(baseUrl, headBlock);
@@ -327,7 +326,14 @@ function applyClassifications(classifications, metadata, fullUpdate) {
 // Main
 // ---------------------------------------------------------------------------
 
+const USAGE = `Usage: node ${path.basename(__filename)} [--full-update]
+
+Classify all portal datasets by VM kind and update metadata.tentative.yml.
+Default: add missing datasets, fill in missing kind fields.
+--full-update: overwrite kind for all portal datasets + add missing ones.`;
+
 async function main() {
+  if (process.argv.includes('--help')) { console.log(USAGE); return; }
   const fullUpdate = process.argv.includes('--full-update');
 
   const classifications = await classifyAllPortalDatasets();
