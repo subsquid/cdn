@@ -236,17 +236,17 @@ function checkMissing(portalEvmDatasets, yamlEvmIds) {
 async function probeDatasetSchema(datasetName, headBlock) {
   const baseUrl = `${PORTAL_BASE}/${encodeURIComponent(datasetName)}`;
 
-  const schema = {};
-  schema[CAPABILITY_TO_SCHEMA.blocks] = {};
-  schema[CAPABILITY_TO_SCHEMA.transactions] = {};
+  const tables = {};
+  tables[CAPABILITY_TO_SCHEMA.blocks] = {};
+  tables[CAPABILITY_TO_SCHEMA.transactions] = {};
 
   for (const cap of EXTRA_CAPABILITIES) {
     if (await probeCapability(baseUrl, cap, headBlock)) {
-      schema[CAPABILITY_TO_SCHEMA[cap]] = {};
+      tables[CAPABILITY_TO_SCHEMA[cap]] = {};
     }
   }
 
-  return schema;
+  return { tables };
 }
 
 async function updateSchema(portalEvmDatasets, metadata, fullUpdate) {
@@ -255,7 +255,7 @@ async function updateSchema(portalEvmDatasets, metadata, fullUpdate) {
   const onPortal = evmIds.filter((id) => portalSet.has(id));
   const toUpdate = fullUpdate
     ? onPortal
-    : onPortal.filter((id) => !metadata.datasets[id].schema || Object.keys(metadata.datasets[id].schema).length === 0);
+    : onPortal.filter((id) => !metadata.datasets[id].schema || !metadata.datasets[id].schema.tables);
 
   if (!fullUpdate) {
     const skipped = onPortal.length - toUpdate.length;
@@ -268,7 +268,7 @@ async function updateSchema(portalEvmDatasets, metadata, fullUpdate) {
       const info = portalEvmDatasets.get(id);
       const schema = await probeDatasetSchema(id, info.headBlock);
       metadata.datasets[id].schema = schema;
-      console.log(`  ${id}: ${[...Object.keys(schema)].join(', ')}`);
+      console.log(`  ${id}: ${[...Object.keys(schema.tables)].join(', ')}`);
     } catch (error) {
       errors.push(`${id}: ${error.message}`);
     }

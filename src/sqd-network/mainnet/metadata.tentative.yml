@@ -8,9 +8,10 @@ datasets:
       evm:
         chain_id: 16600
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   abstract-mainnet:
     metadata:
       display_name: Abstract Mainnet
@@ -20,9 +21,10 @@ datasets:
       evm:
         chain_id: 2741
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   abstract-testnet:
     metadata:
       display_name: Abstract Testnet
@@ -32,9 +34,10 @@ datasets:
       evm:
         chain_id: 11124
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   adi-mainnet:
     metadata:
       kind: evm
@@ -43,20 +46,22 @@ datasets:
       evm:
         chain_id: 36900
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
   adi-testnet:
     metadata:
       kind: evm
       display_name: ADI Testnet
       type: testnet
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
   agung-evm:
     metadata:
       display_name: Agung
@@ -66,9 +71,10 @@ datasets:
       evm:
         chain_id: 9990
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   aleph-zero-evm-mainnet:
     metadata:
       kind: evm
@@ -78,11 +84,12 @@ datasets:
       evm:
         chain_id: 41455
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   arbitrum-nova:
     metadata:
       display_name: Arbitrum Nova
@@ -92,10 +99,11 @@ datasets:
       evm:
         chain_id: 42170
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
   arbitrum-one:
     metadata:
       display_name: Arbitrum One
@@ -105,10 +113,11 @@ datasets:
       evm:
         chain_id: 42161
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
   arbitrum-sepolia:
     metadata:
       display_name: Arbitrum Sepolia
@@ -118,9 +127,10 @@ datasets:
       evm:
         chain_id: 421614
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   arthera-mainnet:
     metadata:
       display_name: Arthera Mainnet
@@ -130,9 +140,10 @@ datasets:
       evm:
         chain_id: 10242
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   astar-mainnet:
     metadata:
       display_name: Astar
@@ -142,9 +153,10 @@ datasets:
       evm:
         chain_id: 592
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   astar-zkevm-mainnet:
     metadata:
       kind: evm
@@ -154,9 +166,10 @@ datasets:
       evm:
         chain_id: 3776
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   astar-zkyoto:
     metadata:
       kind: evm
@@ -166,9 +179,10 @@ datasets:
       evm:
         chain_id: 6038361
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   avalanche-mainnet:
     metadata:
       display_name: Avalanche
@@ -178,11 +192,12 @@ datasets:
       evm:
         chain_id: 43114
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   avalanche-testnet:
     metadata:
       display_name: Avalanche Testnet
@@ -192,11 +207,12 @@ datasets:
       evm:
         chain_id: 43113
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   b3-mainnet:
     metadata:
       display_name: B3
@@ -206,11 +222,12 @@ datasets:
       evm:
         chain_id: 8333
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   b3-sepolia:
     metadata:
       display_name: B3 Sepolia
@@ -220,11 +237,12 @@ datasets:
       evm:
         chain_id: 1993
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   base-mainnet:
     metadata:
       display_name: Base
@@ -234,11 +252,12 @@ datasets:
       evm:
         chain_id: 8453
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   base-sepolia:
     metadata:
       display_name: Base Sepolia
@@ -248,11 +267,12 @@ datasets:
       evm:
         chain_id: 84532
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   beam-mainnet:
     metadata:
       display_name: Beam Mainnet
@@ -262,11 +282,12 @@ datasets:
       evm:
         chain_id: 4337
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   berachain-bartio:
     metadata:
       display_name: Berachain bArtio
@@ -276,11 +297,12 @@ datasets:
       evm:
         chain_id: 80084
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   berachain-mainnet:
     metadata:
       display_name: Berachain Mainnet
@@ -290,11 +312,12 @@ datasets:
       evm:
         chain_id: 80094
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   binance-mainnet:
     metadata:
       display_name: Binance
@@ -304,11 +327,12 @@ datasets:
       evm:
         chain_id: 56
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   binance-testnet:
     metadata:
       display_name: Binance Testnet
@@ -318,9 +342,10 @@ datasets:
       evm:
         chain_id: 97
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   bitfinity-mainnet:
     metadata:
       display_name: Bitfinity Mainnet
@@ -330,9 +355,10 @@ datasets:
       evm:
         chain_id: 355110
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   bitfinity-testnet:
     metadata:
       display_name: Bitfinity Testnet
@@ -342,9 +368,10 @@ datasets:
       evm:
         chain_id: 355113
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   bitgert-mainnet:
     metadata:
       display_name: Bitgert
@@ -354,10 +381,11 @@ datasets:
       evm:
         chain_id: 32520
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
   bitgert-testnet:
     metadata:
       display_name: Bitgert Testnet
@@ -367,10 +395,11 @@ datasets:
       evm:
         chain_id: 64668
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
   bittensor-mainnet-evm:
     metadata:
       display_name: Bittensor Mainnet
@@ -380,9 +409,10 @@ datasets:
       evm:
         chain_id: 964
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   bittensor-testnet-evm:
     metadata:
       display_name: Bittensor Testnet
@@ -392,9 +422,10 @@ datasets:
       evm:
         chain_id: 945
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   blast-l2-mainnet:
     metadata:
       display_name: Blast L2
@@ -404,11 +435,12 @@ datasets:
       evm:
         chain_id: 81457
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   blast-sepolia:
     metadata:
       display_name: Blast Sepolia
@@ -418,9 +450,10 @@ datasets:
       evm:
         chain_id: 168587773
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   bob-mainnet:
     metadata:
       display_name: BOB Mainnet
@@ -430,11 +463,12 @@ datasets:
       evm:
         chain_id: 60808
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   bob-sepolia:
     metadata:
       display_name: BOB Sepolia
@@ -444,9 +478,10 @@ datasets:
       evm:
         chain_id: 808813
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   botanix-mainnet:
     metadata:
       display_name: Botanix Mainnet
@@ -456,11 +491,12 @@ datasets:
       evm:
         chain_id: 3637
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   botanix-testnet:
     metadata:
       display_name: Botanix Testnet
@@ -470,11 +506,12 @@ datasets:
       evm:
         chain_id: 3636
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   camp-network-testnet-v2:
     metadata:
       display_name: Camp Network Testnet v2
@@ -484,11 +521,12 @@ datasets:
       evm:
         chain_id: 325000
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   canto:
     metadata:
       display_name: Canto
@@ -498,9 +536,10 @@ datasets:
       evm:
         chain_id: 7700
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   canto-testnet:
     metadata:
       display_name: Canto Testnet
@@ -510,9 +549,10 @@ datasets:
       evm:
         chain_id: 7701
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   celo-alfajores-testnet:
     metadata:
       display_name: Celo Testnet (Alfajores)
@@ -522,9 +562,10 @@ datasets:
       evm:
         chain_id: 44787
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   celo-mainnet:
     metadata:
       display_name: Celo Mainnet
@@ -534,9 +575,10 @@ datasets:
       evm:
         chain_id: 42220
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   core-mainnet:
     metadata:
       display_name: Core Mainnet
@@ -546,10 +588,11 @@ datasets:
       evm:
         chain_id: 1116
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
   crossfi-mainnet:
     metadata:
       display_name: CrossFi Mainnet
@@ -559,9 +602,10 @@ datasets:
       evm:
         chain_id: 4158
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   crossfi-testnet:
     metadata:
       display_name: CrossFi Testnet
@@ -571,9 +615,10 @@ datasets:
       evm:
         chain_id: 4157
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   cyber-mainnet:
     metadata:
       display_name: Cyber Mainnet
@@ -583,9 +628,10 @@ datasets:
       evm:
         chain_id: 7560
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   cyberconnect-l2-testnet:
     metadata:
       display_name: Cyberconnect L2 Testnet
@@ -595,11 +641,12 @@ datasets:
       evm:
         chain_id: 111557560
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   dancelight-testnet:
     metadata:
       display_name: Dancelight
@@ -618,9 +665,10 @@ datasets:
       evm:
         chain_id: 666666666
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   dfk-chain:
     metadata:
       display_name: DFK Chain
@@ -630,9 +678,10 @@ datasets:
       evm:
         chain_id: 53935
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   dogechain-mainnet:
     metadata:
       display_name: Dogechain
@@ -642,9 +691,10 @@ datasets:
       evm:
         chain_id: 2000
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   dogechain-testnet:
     metadata:
       display_name: Dogechain Testnet
@@ -654,9 +704,10 @@ datasets:
       evm:
         chain_id: 568
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   ethereum-holesky:
     metadata:
       display_name: Ethereum Holesky
@@ -666,11 +717,12 @@ datasets:
       evm:
         chain_id: 17000
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   ethereum-hoodi:
     metadata:
       display_name: Ethereum Hoodi
@@ -689,11 +741,12 @@ datasets:
       evm:
         chain_id: 1
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   ethereum-sepolia:
     metadata:
       display_name: Ethereum Sepolia
@@ -703,11 +756,12 @@ datasets:
       evm:
         chain_id: 11155111
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   etherlink-mainnet:
     metadata:
       display_name: Etherlink Mainnet
@@ -717,9 +771,10 @@ datasets:
       evm:
         chain_id: 42793
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   etherlink-shadownet:
     metadata:
       display_name: Etherlink Shadownet
@@ -729,9 +784,10 @@ datasets:
       evm:
         chain_id: 127823
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   etherlink-testnet:
     metadata:
       display_name: Etherlink Testnet
@@ -741,9 +797,10 @@ datasets:
       evm:
         chain_id: 128123
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   exosama:
     metadata:
       display_name: Exosama
@@ -753,11 +810,12 @@ datasets:
       evm:
         chain_id: 2109
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   flare-mainnet:
     metadata:
       display_name: Flare
@@ -767,9 +825,10 @@ datasets:
       evm:
         chain_id: 14
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   formicarium-testnet:
     metadata:
       display_name: MemeCore Testnet (Formicarium)
@@ -779,11 +838,12 @@ datasets:
       evm:
         chain_id: 43521
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   galxe-gravity:
     metadata:
       display_name: Gravity
@@ -793,11 +853,12 @@ datasets:
       evm:
         chain_id: 1625
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   gelato-arbitrum-blueberry:
     metadata:
       display_name: Arbitrum Blueberry
@@ -807,9 +868,10 @@ datasets:
       evm:
         chain_id: 88153591557
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   gelato-opcelestia-raspberry:
     metadata:
       kind: evm
@@ -819,9 +881,10 @@ datasets:
       evm:
         chain_id: 123420111
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   gnosis-mainnet:
     metadata:
       display_name: Gnosis
@@ -831,11 +894,12 @@ datasets:
       evm:
         chain_id: 100
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   hedera-mainnet:
     metadata:
       display_name: Hedera Mainnet
@@ -872,11 +936,12 @@ datasets:
       evm:
         chain_id: 999
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   hyperliquid-testnet:
     metadata:
       display_name: HyperEVM Testnet
@@ -886,9 +951,10 @@ datasets:
       evm:
         chain_id: 998
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   immutable-zkevm-mainnet:
     metadata:
       display_name: Immutable zkEVM
@@ -898,9 +964,10 @@ datasets:
       evm:
         chain_id: 13371
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   immutable-zkevm-testnet:
     metadata:
       display_name: Immutable zkEVM Testnet
@@ -910,9 +977,10 @@ datasets:
       evm:
         chain_id: 13473
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   ink-mainnet:
     metadata:
       display_name: Ink Mainnet
@@ -922,11 +990,12 @@ datasets:
       evm:
         chain_id: 57073
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   ink-sepolia:
     metadata:
       display_name: Ink Sepolia
@@ -945,11 +1014,12 @@ datasets:
       evm:
         chain_id: 747474
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   kyoto-testnet:
     metadata:
       display_name: Kyoto Testnet
@@ -959,9 +1029,10 @@ datasets:
       evm:
         chain_id: 1998
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   linea-mainnet:
     metadata:
       display_name: Linea
@@ -971,10 +1042,11 @@ datasets:
       evm:
         chain_id: 59144
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
   lukso-mainnet:
     metadata:
       display_name: Lukso Mainnet
@@ -984,9 +1056,10 @@ datasets:
       evm:
         chain_id: 42
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   manta-pacific:
     metadata:
       display_name: Manta Pacific
@@ -996,9 +1069,10 @@ datasets:
       evm:
         chain_id: 169
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   manta-pacific-sepolia:
     metadata:
       display_name: Manta Pacific Sepolia
@@ -1008,9 +1082,10 @@ datasets:
       evm:
         chain_id: 3441006
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   mantle-mainnet:
     metadata:
       display_name: Mantle
@@ -1020,9 +1095,10 @@ datasets:
       evm:
         chain_id: 5000
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   mantle-sepolia:
     metadata:
       display_name: Mantle Sepolia
@@ -1032,9 +1108,10 @@ datasets:
       evm:
         chain_id: 5003
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   megaeth-mainnet:
     metadata:
       display_name: MegaETH Mainnet
@@ -1044,9 +1121,10 @@ datasets:
       evm:
         chain_id: 4326
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   megaeth-testnet:
     metadata:
       display_name: MegaETH Testnet
@@ -1056,9 +1134,10 @@ datasets:
       evm:
         chain_id: 6342
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   memecore-insectarium:
     metadata:
       display_name: MemeCore Testnet (Insectarium)
@@ -1068,11 +1147,12 @@ datasets:
       evm:
         chain_id: 43522
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   memecore-mainnet:
     metadata:
       display_name: MemeCore Mainnet
@@ -1082,11 +1162,12 @@ datasets:
       evm:
         chain_id: 4352
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   merlin-mainnet:
     metadata:
       display_name: Merlin Mainnet
@@ -1096,9 +1177,10 @@ datasets:
       evm:
         chain_id: 4200
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   merlin-testnet:
     metadata:
       display_name: Merlin Testnet
@@ -1108,9 +1190,10 @@ datasets:
       evm:
         chain_id: 686868
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   metis-mainnet:
     metadata:
       display_name: Metis
@@ -1120,10 +1203,11 @@ datasets:
       evm:
         chain_id: 1088
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
   mode-mainnet:
     metadata:
       display_name: Mode Mainnet
@@ -1133,9 +1217,10 @@ datasets:
       evm:
         chain_id: 34443
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   monad-mainnet:
     metadata:
       display_name: Monad Mainnet
@@ -1145,9 +1230,10 @@ datasets:
       evm:
         chain_id: 143
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   monad-testnet:
     metadata:
       display_name: Monad Testnet
@@ -1157,9 +1243,10 @@ datasets:
       evm:
         chain_id: 10143
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   moonbase-testnet:
     metadata:
       display_name: Moonbase Alpha
@@ -1169,9 +1256,10 @@ datasets:
       evm:
         chain_id: 1287
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   moonbeam-mainnet:
     metadata:
       display_name: Moonbeam
@@ -1181,10 +1269,11 @@ datasets:
       evm:
         chain_id: 1284
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
   moonriver-mainnet:
     metadata:
       display_name: Moonriver
@@ -1194,10 +1283,11 @@ datasets:
       evm:
         chain_id: 1285
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
   moonsama:
     metadata:
       kind: evm
@@ -1206,9 +1296,10 @@ datasets:
       evm:
         chain_id: 2199
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   nakachain:
     metadata:
       display_name: Naka Chain
@@ -1218,9 +1309,10 @@ datasets:
       evm:
         chain_id: 42225
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   neon-devnet:
     metadata:
       display_name: Neon EVM Devnet
@@ -1230,9 +1322,10 @@ datasets:
       evm:
         chain_id: 245022926
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   neon-mainnet:
     metadata:
       display_name: Neon EVM
@@ -1242,9 +1335,10 @@ datasets:
       evm:
         chain_id: 245022934
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   neox-testnet:
     metadata:
       kind: evm
@@ -1254,11 +1348,12 @@ datasets:
       evm:
         chain_id: 12227332
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   opbnb-mainnet:
     metadata:
       display_name: opBNB
@@ -1268,9 +1363,10 @@ datasets:
       evm:
         chain_id: 204
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   opbnb-testnet:
     metadata:
       display_name: opBNB Testnet
@@ -1280,9 +1376,10 @@ datasets:
       evm:
         chain_id: 5611
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   optimism-mainnet:
     metadata:
       display_name: Optimism
@@ -1292,11 +1389,12 @@ datasets:
       evm:
         chain_id: 10
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   optimism-sepolia:
     metadata:
       display_name: Optimism Sepolia
@@ -1306,9 +1404,10 @@ datasets:
       evm:
         chain_id: 11155420
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   ozean-testnet:
     metadata:
       display_name: Ozean Testnet
@@ -1318,11 +1417,12 @@ datasets:
       evm:
         chain_id: 7849306
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   peaq-mainnet:
     metadata:
       display_name: Peaq
@@ -1332,9 +1432,10 @@ datasets:
       evm:
         chain_id: 3338
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   plasma-mainnet:
     metadata:
       kind: evm
@@ -1344,11 +1445,12 @@ datasets:
       evm:
         chain_id: 9745
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   plasma-testnet:
     metadata:
       kind: evm
@@ -1358,11 +1460,12 @@ datasets:
       evm:
         chain_id: 9746
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   plume:
     metadata:
       display_name: Plume Mainnet
@@ -1399,11 +1502,12 @@ datasets:
       evm:
         chain_id: 98866
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   plume-testnet:
     metadata:
       display_name: Plume Testnet
@@ -1413,11 +1517,12 @@ datasets:
       evm:
         chain_id: 98867
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   polygon-amoy-testnet:
     metadata:
       display_name: Polygon Amoy Testnet
@@ -1427,9 +1532,10 @@ datasets:
       evm:
         chain_id: 80002
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   polygon-mainnet:
     metadata:
       display_name: Polygon
@@ -1439,10 +1545,11 @@ datasets:
       evm:
         chain_id: 137
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
   polygon-zkevm-cardona-testnet:
     metadata:
       display_name: Polygon zkEVM Cardona Testnet
@@ -1452,9 +1559,10 @@ datasets:
       evm:
         chain_id: 2442
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   polygon-zkevm-mainnet:
     metadata:
       display_name: Polygon zkEVM
@@ -1464,9 +1572,10 @@ datasets:
       evm:
         chain_id: 1101
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   poseidon-testnet:
     metadata:
       display_name: Poseidon Testnet
@@ -1485,11 +1594,12 @@ datasets:
       evm:
         chain_id: 227
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   puppynet:
     metadata:
       display_name: Puppynet (Shibarium's Testnet)
@@ -1499,11 +1609,12 @@ datasets:
       evm:
         chain_id: 157
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   scroll-mainnet:
     metadata:
       display_name: Scroll
@@ -1513,10 +1624,11 @@ datasets:
       evm:
         chain_id: 534352
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
   scroll-sepolia:
     metadata:
       display_name: Scroll Sepolia
@@ -1526,10 +1638,11 @@ datasets:
       evm:
         chain_id: 534351
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
   shibarium:
     metadata:
       display_name: Shibarium
@@ -1539,11 +1652,12 @@ datasets:
       evm:
         chain_id: 109
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   shibuya-testnet:
     metadata:
       display_name: Shibuya
@@ -1553,9 +1667,10 @@ datasets:
       evm:
         chain_id: 81
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   shiden-mainnet:
     metadata:
       display_name: Shiden
@@ -1565,9 +1680,10 @@ datasets:
       evm:
         chain_id: 336
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   skale-nebula:
     metadata:
       display_name: Skale Nebula
@@ -1577,9 +1693,10 @@ datasets:
       evm:
         chain_id: 1482601649
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   soneium-mainnet:
     metadata:
       display_name: Soneium Mainnet
@@ -1589,9 +1706,10 @@ datasets:
       evm:
         chain_id: 1868
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   soneium-minato-testnet:
     metadata:
       display_name: Soneium Minato Testnet
@@ -1601,11 +1719,12 @@ datasets:
       evm:
         chain_id: 1946
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   sonic-mainnet:
     metadata:
       display_name: Sonic Mainnet
@@ -1615,10 +1734,11 @@ datasets:
       evm:
         chain_id: 146
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
   sonic-testnet:
     metadata:
       display_name: Sonic Testnet
@@ -1641,11 +1761,12 @@ datasets:
       evm:
         chain_id: 93747
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   superseed-mainnet:
     metadata:
       display_name: Superseed Mainnet
@@ -1655,9 +1776,10 @@ datasets:
       evm:
         chain_id: 5330
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   superseed-sepolia:
     metadata:
       display_name: Superseed Sepolia
@@ -1667,9 +1789,10 @@ datasets:
       evm:
         chain_id: 53302
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   taiko-mainnet:
     metadata:
       display_name: Taiko Mainnet
@@ -1679,9 +1802,10 @@ datasets:
       evm:
         chain_id: 167000
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   tanssi:
     metadata:
       display_name: Tanssi
@@ -1691,9 +1815,10 @@ datasets:
       evm:
         chain_id: 5678
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   unichain-mainnet:
     metadata:
       display_name: Unichain Mainnet
@@ -1703,11 +1828,12 @@ datasets:
       evm:
         chain_id: 130
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   unichain-sepolia:
     metadata:
       display_name: Unichain Sepolia
@@ -1717,9 +1843,10 @@ datasets:
       evm:
         chain_id: 1301
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   x1-testnet:
     metadata:
       kind: evm
@@ -1729,9 +1856,10 @@ datasets:
       evm:
         chain_id: 1952
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   xlayer-mainnet:
     metadata:
       display_name: X Layer Mainnet
@@ -1741,9 +1869,10 @@ datasets:
       evm:
         chain_id: 196
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   xlayer-testnet:
     metadata:
       display_name: X Layer Testnet
@@ -1753,9 +1882,10 @@ datasets:
       evm:
         chain_id: 195
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   zklink-nova-mainnet:
     metadata:
       display_name: zkLink Nova Mainnet
@@ -1765,10 +1895,11 @@ datasets:
       evm:
         chain_id: 810180
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
   zksync-mainnet:
     metadata:
       display_name: zkSync
@@ -1778,10 +1909,11 @@ datasets:
       evm:
         chain_id: 324
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
   zksync-sepolia:
     metadata:
       display_name: zkSync Sepolia
@@ -1791,10 +1923,11 @@ datasets:
       evm:
         chain_id: 300
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
   zora-mainnet:
     metadata:
       display_name: Zora
@@ -1804,11 +1937,12 @@ datasets:
       evm:
         chain_id: 7777777
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
-      state_diffs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   zora-sepolia:
     metadata:
       display_name: Zora Sepolia
@@ -1818,9 +1952,10 @@ datasets:
       evm:
         chain_id: 999999999
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   hyperliquid-fills:
     metadata:
       kind: hyperliquidFills
