@@ -1627,7 +1627,11 @@ datasets:
       kind: evm
       evm:
         chain_id: 14601
-    schema: {}
+    schema:
+      blocks: {}
+      transactions: {}
+      logs: {}
+      traces: {}
   stratovm-sepolia:
     metadata:
       display_name: StratoVM Sepolia
