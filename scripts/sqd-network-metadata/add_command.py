@@ -7,12 +7,12 @@ from rich.prompt import Confirm, Prompt
 from rich.syntax import Syntax
 
 
-METADATA_PATH = Path(__file__).resolve().parent.parent.parent / "src/sqd-network/mainnet/metadata.tentative.yml"
+METADATA_PATH = Path(__file__).resolve().parent.parent.parent / "src/sqd-network/mainnet/metadata.yml"
 TYPE_CHOICES = ["testnet", "mainnet", "devnet"]
 
 
 def update_parser(parser: argparse.ArgumentParser):
-    parser.description = "Add new dataset entry to metadata.tentative.yml"
+    parser.description = "Add new dataset entry to metadata.yml"
     parser.set_defaults(func=_run)
 
 

@@ -8,7 +8,7 @@ const yaml = require('js-yaml');
 const OVERWRITE_FLAG = '--overwrite';
 
 const EVM_JSON_PATH = path.join(process.cwd(), 'src/archives/evm.json');
-const METADATA_YAML_PATH = path.join(process.cwd(), 'src/sqd-network/mainnet/metadata.tentative.yml');
+const METADATA_YAML_PATH = path.join(process.cwd(), 'src/sqd-network/mainnet/metadata.yml');
 
 function shouldSet(value, overwrite) {
   return overwrite || value === undefined || value === null;
@@ -85,7 +85,7 @@ function saveMetadata(metadata) {
 
 const USAGE = `Usage: node ${path.basename(__filename)} [--overwrite]
 
-Transfer metadata from evm.json to metadata.tentative.yml.
+Transfer metadata from evm.json to metadata.yml.
 By default only sets values that are absent. Use --overwrite to replace all.`;
 
 function main() {

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Classify all portal datasets by VM kind and update metadata.tentative.yml.
+ * Classify all portal datasets by VM kind and update metadata.yml.
  *
  * Fetches every dataset from portal.sqd.dev, determines its VM kind by
  * probing capabilities, then updates the YAML.
@@ -18,7 +18,7 @@ const path = require('path');
 const assert = require('assert');
 const yaml = require('js-yaml');
 
-const METADATA_YAML_PATH = path.join(process.cwd(), 'src/sqd-network/mainnet/metadata.tentative.yml');
+const METADATA_YAML_PATH = path.join(process.cwd(), 'src/sqd-network/mainnet/metadata.yml');
 const PORTAL_BASE = 'https://portal.sqd.dev/datasets';
 const REQUEST_TIMEOUT_MS = 15_000;
 const CLASSIFY_BATCH_SIZE = Number(process.env.PORTAL_CLASSIFY_BATCH_SIZE || 10);
@@ -328,7 +328,7 @@ function applyClassifications(classifications, metadata, fullUpdate) {
 
 const USAGE = `Usage: node ${path.basename(__filename)} [--full-update]
 
-Classify all portal datasets by VM kind and update metadata.tentative.yml.
+Classify all portal datasets by VM kind and update metadata.yml.
 Default: add missing datasets, fill in missing kind fields.
 --full-update: overwrite kind for all portal datasets + add missing ones.`;
 

@@ -1,6 +1,6 @@
 # SQD Network Metadata CLI
 
-CLI to process actions on `src/sqd-network/mainnet/metadata.tentative.yml`.
+CLI to process actions on `src/sqd-network/mainnet/metadata.yml`.
 
 ## Requirements
 

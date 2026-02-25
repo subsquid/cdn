@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Update EVM dataset schema in metadata.tentative.yml from portal.sqd.dev.
+ * Update EVM dataset schema in metadata.yml from portal.sqd.dev.
  *
  * Step 1: Fetch all dataset names from portal.sqd.dev.
  * Step 2: Verify all portal datasets have a matching key in metadata YAML.
@@ -19,7 +19,7 @@ const path = require('path');
 const assert = require('assert');
 const yaml = require('js-yaml');
 
-const METADATA_YAML_PATH = path.join(process.cwd(), 'src/sqd-network/mainnet/metadata.tentative.yml');
+const METADATA_YAML_PATH = path.join(process.cwd(), 'src/sqd-network/mainnet/metadata.yml');
 const PORTAL_BASE = 'https://portal.sqd.dev/datasets';
 const REQUEST_TIMEOUT_MS = 15_000;
 const DATASET_BATCH_SIZE = Number(process.env.PORTAL_DATASET_BATCH_SIZE || 20);
@@ -301,7 +301,7 @@ async function updateSchema(portalEvmDatasets, metadata, fullUpdate) {
 
 const USAGE = `Usage: node ${path.basename(__filename)} [--full-update]
 
-Update EVM dataset schema in metadata.tentative.yml from portal.sqd.dev.
+Update EVM dataset schema in metadata.yml from portal.sqd.dev.
 By default only probes datasets without a schema. Use --full-update to re-probe all.`;
 
 async function main() {
