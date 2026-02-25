@@ -1960,6 +1960,10 @@ datasets:
     metadata:
       kind: hyperliquidReplicaCmds
     schema: {}
+  eclipse-mainnet:
+    metadata:
+      kind: solana
+      display_name: Eclipse Mainnet
   eclipse-testnet:
     metadata:
       kind: solana
