@@ -1,5 +1,5 @@
 # Runs whenever src/archives/evm.json changes on the default branch.
-# Transfers metadata from evm.json into metadata.tentative.yml, then
+# Transfers metadata from evm.json into metadata.yml, then
 # runs update-metadata-contents on the result.  The PR contains one
 # commit from each script.
 #
@@ -36,7 +36,7 @@ jobs:
       - name: Check for transfer changes
         id: diff
         run: |
-          if git diff --quiet src/sqd-network/mainnet/metadata.tentative.yml; then
+          if git diff --quiet src/sqd-network/mainnet/metadata.yml; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
@@ -46,7 +46,7 @@ jobs:
         if: steps.diff.outputs.changed == 'true'
         run: |
           git checkout -B auto/transfer-evm-metadata
-          git add src/sqd-network/mainnet/metadata.tentative.yml
+          git add src/sqd-network/mainnet/metadata.yml
           git commit -m "chore(metadata): transfer EVM metadata from evm.json"
 
       - name: Run update-metadata-contents on branch
@@ -58,8 +58,8 @@ jobs:
       - name: Commit contents updates
         if: steps.diff.outputs.changed == 'true'
         run: |
-          if ! git diff --quiet src/sqd-network/mainnet/metadata.tentative.yml; then
-            git add src/sqd-network/mainnet/metadata.tentative.yml
+          if ! git diff --quiet src/sqd-network/mainnet/metadata.yml; then
+            git add src/sqd-network/mainnet/metadata.yml
             git commit -m "chore(metadata): update dataset contents from portal"
           fi
 
@@ -92,7 +92,7 @@ jobs:
           to: a.bernatskiy@subsquid.io
           from: subsquid/cdn repo automaton
           body: |
-            The transfer-evm-metadata workflow updated metadata.tentative.yml.
+            The transfer-evm-metadata workflow updated metadata.yml.
 
             PR: ${{ steps.pr.outputs.url }}
             Branch: auto/transfer-evm-metadata
@@ -113,7 +113,7 @@ jobs:
               echo ""
               cat missing-networks.txt
               echo ""
-              echo "Add entries for these networks to metadata.tentative.yml and re-run."
+              echo "Add entries for these networks to metadata.yml and re-run."
             fi
             echo "ENDOFBODY"
           } >> "$GITHUB_ENV"

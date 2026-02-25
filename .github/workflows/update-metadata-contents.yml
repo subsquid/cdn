@@ -1,5 +1,5 @@
 # Probes portal.sqd.dev for EVM dataset capabilities and updates the
-# "contents" field of each dataset in metadata.tentative.yml.
+# "contents" field of each dataset in metadata.yml.
 #
 # Triggers:
 #   - Daily at 04:00 UTC (incremental: only datasets missing "contents").
@@ -78,7 +78,7 @@ jobs:
         if: steps.run-script.outcome == 'success'
         id: diff
         run: |
-          if git diff --quiet src/sqd-network/mainnet/metadata.tentative.yml; then
+          if git diff --quiet src/sqd-network/mainnet/metadata.yml; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
@@ -88,7 +88,7 @@ jobs:
         if: steps.run-script.outcome == 'success' && steps.diff.outputs.changed == 'true'
         run: |
           BRANCH="${{ steps.branch.outputs.name }}"
-          git add src/sqd-network/mainnet/metadata.tentative.yml
+          git add src/sqd-network/mainnet/metadata.yml
           git commit -m "chore(metadata): update dataset contents from portal (${{ steps.flags.outputs.mode }})"
           git push -u origin "$BRANCH"
 
@@ -120,7 +120,7 @@ jobs:
           to: a.bernatskiy@subsquid.io
           from: subsquid/cdn repo automaton
           body: |
-            The update-metadata-contents workflow (${{ steps.flags.outputs.mode }}) updated metadata.tentative.yml.
+            The update-metadata-contents workflow (${{ steps.flags.outputs.mode }}) updated metadata.yml.
 
             PR: ${{ steps.pr.outputs.url }}
             Branch: ${{ steps.branch.outputs.name }}
@@ -141,7 +141,7 @@ jobs:
               echo ""
               cat missing-networks.txt
               echo ""
-              echo "Add entries for these networks to metadata.tentative.yml and re-run."
+              echo "Add entries for these networks to metadata.yml and re-run."
             fi
             echo "ENDOFBODY"
           } >> "$GITHUB_ENV"

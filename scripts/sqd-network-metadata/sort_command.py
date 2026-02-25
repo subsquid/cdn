@@ -5,7 +5,7 @@ import yaml
 from rich.console import Console
 
 
-METADATA_PATH = Path(__file__).resolve().parent.parent.parent / "src/sqd-network/mainnet/metadata.tentative.yml"
+METADATA_PATH = Path(__file__).resolve().parent.parent.parent / "src/sqd-network/mainnet/metadata.yml"
 
 
 def update_parser(parser: argparse.ArgumentParser):

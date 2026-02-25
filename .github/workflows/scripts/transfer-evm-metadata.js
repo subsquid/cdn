@@ -8,7 +8,7 @@ const yaml = require('js-yaml');
 const OVERWRITE_FLAG = '--overwrite';
 
 const EVM_JSON_PATH = path.join(process.cwd(), 'src/archives/evm.json');
-const METADATA_YAML_PATH = path.join(process.cwd(), 'src/sqd-network/mainnet/metadata.tentative.yml');
+const METADATA_YAML_PATH = path.join(process.cwd(), 'src/sqd-network/mainnet/metadata.yml');
 
 function shouldSet(value, overwrite) {
   return overwrite || value === undefined || value === null;
@@ -83,8 +83,14 @@ function saveMetadata(metadata) {
   fs.writeFileSync(METADATA_YAML_PATH, output, 'utf8');
 }
 
+const USAGE = `Usage: node ${path.basename(__filename)} [--overwrite]
+
+Transfer metadata from evm.json to metadata.yml.
+By default only sets values that are absent. Use --overwrite to replace all.`;
+
 function main() {
   const args = process.argv.slice(2);
+  if (args.includes('--help')) { console.log(USAGE); return; }
   const overwrite = args.includes(OVERWRITE_FLAG);
   const unknownArgs = args.filter((arg) => arg !== OVERWRITE_FLAG);
   assert(unknownArgs.length === 0, `Unknown arguments: ${unknownArgs.join(', ')}. Supported flag: ${OVERWRITE_FLAG}`);

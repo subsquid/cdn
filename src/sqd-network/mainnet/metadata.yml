@@ -1748,10 +1748,11 @@ datasets:
       evm:
         chain_id: 14601
     schema:
-      blocks: {}
-      transactions: {}
-      logs: {}
-      traces: {}
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
   stratovm-sepolia:
     metadata:
       display_name: StratoVM Sepolia
@@ -1960,10 +1961,38 @@ datasets:
     metadata:
       kind: hyperliquidFills
       display_name: Hyperliquid
+  hyperliquid-replica-cmds:
+    metadata:
+      kind: hyperliquidReplicaCmds
+    schema: {}
+  eclipse-mainnet:
+    metadata:
+      kind: solana
+      display_name: Eclipse Mainnet
   eclipse-testnet:
     metadata:
       kind: solana
       display_name: Eclipse Testnet
+  solana-devnet:
+    metadata:
+      kind: solana
+    schema: {}
+  solana-mainnet:
+    metadata:
+      kind: solana
+    schema: {}
+  soon-devnet:
+    metadata:
+      kind: solana
+    schema: {}
+  soon-mainnet:
+    metadata:
+      kind: solana
+    schema: {}
+  soon-testnet:
+    metadata:
+      kind: solana
+    schema: {}
   svm-bnb-mainnet:
     metadata:
       kind: solana
@@ -1972,3 +2001,343 @@ datasets:
     metadata:
       kind: solana
       display_name: SVM BNB Testnet
+  acala:
+    metadata:
+      kind: substrate
+    schema: {}
+  acurast-canary:
+    metadata:
+      kind: substrate
+    schema: {}
+  agung:
+    metadata:
+      kind: substrate
+    schema: {}
+  aleph-zero:
+    metadata:
+      kind: substrate
+    schema: {}
+  aleph-zero-testnet:
+    metadata:
+      kind: substrate
+    schema: {}
+  amplitude:
+    metadata:
+      kind: substrate
+    schema: {}
+  asset-hub-kusama:
+    metadata:
+      kind: substrate
+    schema: {}
+  asset-hub-paseo:
+    metadata:
+      kind: substrate
+    schema: {}
+  asset-hub-polkadot:
+    metadata:
+      kind: substrate
+    schema: {}
+  asset-hub-rococo:
+    metadata:
+      kind: substrate
+    schema: {}
+  asset-hub-westend:
+    metadata:
+      kind: substrate
+    schema: {}
+  astar-substrate:
+    metadata:
+      kind: substrate
+    schema: {}
+  avail:
+    metadata:
+      kind: substrate
+    schema: {}
+  basilisk:
+    metadata:
+      kind: substrate
+    schema: {}
+  bifrost-kusama:
+    metadata:
+      kind: substrate
+    schema: {}
+  bifrost-polkadot:
+    metadata:
+      kind: substrate
+    schema: {}
+  bittensor:
+    metadata:
+      kind: substrate
+    schema: {}
+  bittensor-testnet:
+    metadata:
+      kind: substrate
+    schema: {}
+  bridge-hub-kusama:
+    metadata:
+      kind: substrate
+    schema: {}
+  bridge-hub-polkadot:
+    metadata:
+      kind: substrate
+    schema: {}
+  bridge-hub-rococo:
+    metadata:
+      kind: substrate
+    schema: {}
+  bridge-hub-westend:
+    metadata:
+      kind: substrate
+    schema: {}
+  centrifuge:
+    metadata:
+      kind: substrate
+    schema: {}
+  cere:
+    metadata:
+      kind: substrate
+    schema: {}
+  chainflip:
+    metadata:
+      kind: substrate
+    schema: {}
+  clover:
+    metadata:
+      kind: substrate
+    schema: {}
+  collectives-polkadot:
+    metadata:
+      kind: substrate
+    schema: {}
+  collectives-westend:
+    metadata:
+      kind: substrate
+    schema: {}
+  crust:
+    metadata:
+      kind: substrate
+    schema: {}
+  dancebox:
+    metadata:
+      kind: substrate
+    schema: {}
+  darwinia:
+    metadata:
+      kind: substrate
+    schema: {}
+  darwinia-crab:
+    metadata:
+      kind: substrate
+    schema: {}
+  data-avail:
+    metadata:
+      kind: substrate
+    schema: {}
+  eden:
+    metadata:
+      kind: substrate
+    schema: {}
+  enjin-canary-matrix:
+    metadata:
+      kind: substrate
+    schema: {}
+  enjin-matrix:
+    metadata:
+      kind: substrate
+    schema: {}
+  enjin-relay:
+    metadata:
+      kind: substrate
+    schema: {}
+  equilibrium:
+    metadata:
+      kind: substrate
+    schema: {}
+  foucoco:
+    metadata:
+      kind: substrate
+    schema: {}
+  frequency:
+    metadata:
+      kind: substrate
+    schema: {}
+  gemini-3h:
+    metadata:
+      kind: substrate
+    schema: {}
+  hydradx:
+    metadata:
+      kind: substrate
+    schema: {}
+  integritee:
+    metadata:
+      kind: substrate
+    schema: {}
+  interlay:
+    metadata:
+      kind: substrate
+    schema: {}
+  invarch-parachain:
+    metadata:
+      kind: substrate
+    schema: {}
+  invarch-tinkernet:
+    metadata:
+      kind: substrate
+    schema: {}
+  joystream:
+    metadata:
+      kind: substrate
+    schema: {}
+  karura:
+    metadata:
+      kind: substrate
+    schema: {}
+  khala:
+    metadata:
+      kind: substrate
+    schema: {}
+  kilt:
+    metadata:
+      kind: substrate
+    schema: {}
+  kintsugi:
+    metadata:
+      kind: substrate
+    schema: {}
+  kusama:
+    metadata:
+      kind: substrate
+    schema: {}
+  litentry:
+    metadata:
+      kind: substrate
+    schema: {}
+  moonbase-substrate:
+    metadata:
+      kind: substrate
+    schema: {}
+  moonbeam-substrate:
+    metadata:
+      kind: substrate
+    schema: {}
+  moonriver-substrate:
+    metadata:
+      kind: substrate
+    schema: {}
+  paseo:
+    metadata:
+      kind: substrate
+    schema: {}
+  peaq-mainnet-substrate:
+    metadata:
+      kind: substrate
+    schema: {}
+  pendulum:
+    metadata:
+      kind: substrate
+    schema: {}
+  people-chain:
+    metadata:
+      kind: substrate
+    schema: {}
+  phala:
+    metadata:
+      kind: substrate
+    schema: {}
+  phala-testnet:
+    metadata:
+      kind: substrate
+    schema: {}
+  picasso:
+    metadata:
+      kind: substrate
+    schema: {}
+  polimec:
+    metadata:
+      kind: substrate
+    schema: {}
+  polkadex:
+    metadata:
+      kind: substrate
+    schema: {}
+  polkadot:
+    metadata:
+      kind: substrate
+    schema: {}
+  polymesh:
+    metadata:
+      kind: substrate
+    schema: {}
+  reef:
+    metadata:
+      kind: substrate
+    schema: {}
+  reef-testnet:
+    metadata:
+      kind: substrate
+    schema: {}
+  robonomics:
+    metadata:
+      kind: substrate
+    schema: {}
+  rococo:
+    metadata:
+      kind: substrate
+    schema: {}
+  rolimec:
+    metadata:
+      kind: substrate
+    schema: {}
+  shibuya-substrate:
+    metadata:
+      kind: substrate
+    schema: {}
+  shiden-substrate:
+    metadata:
+      kind: substrate
+    schema: {}
+  sora-mainnet:
+    metadata:
+      kind: substrate
+    schema: {}
+  subsocial-parachain:
+    metadata:
+      kind: substrate
+    schema: {}
+  ternoa:
+    metadata:
+      kind: substrate
+    schema: {}
+  turing-avail:
+    metadata:
+      kind: substrate
+    schema: {}
+  turing-mainnet:
+    metadata:
+      kind: substrate
+    schema: {}
+  vara:
+    metadata:
+      kind: substrate
+    schema: {}
+  vara-testnet:
+    metadata:
+      kind: substrate
+    schema: {}
+  westend:
+    metadata:
+      kind: substrate
+    schema: {}
+  zeitgeist:
+    metadata:
+      kind: substrate
+    schema: {}
+  zeitgeist-testnet:
+    metadata:
+      kind: substrate
+    schema: {}
+  zkverify-testnet:
+    metadata:
+      kind: substrate
+    schema: {}
