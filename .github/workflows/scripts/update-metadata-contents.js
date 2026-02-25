@@ -2,10 +2,11 @@
 /**
  * Update EVM dataset schema in metadata.tentative.yml from portal.sqd.dev.
  *
- * Step 1: Detect EVM datasets on portal.sqd.dev.
- * Step 2: Verify all detected EVM datasets have a matching key in metadata YAML.
+ * Step 1: Fetch all dataset names from portal.sqd.dev.
+ * Step 2: Verify all portal datasets have a matching key in metadata YAML.
  *         If any are missing, write to missing-networks.txt and exit 1.
- * Step 3: Probe capabilities for each matched dataset and update schema.
+ * Step 3: Detect EVM datasets among the portal datasets.
+ * Step 4: Probe capabilities for each EVM dataset and update schema.
  *
  * By default only probes datasets whose schema is entirely empty (no keys).
  * Use --full-update to re-probe all datasets.
@@ -160,39 +161,69 @@ async function probeCapability(baseUrl, capability, block, probeType = 'evm') {
 }
 
 // ---------------------------------------------------------------------------
-// Step 1 – Detect EVM datasets on portal
+// Step 1 – Fetch all portal dataset names
 // ---------------------------------------------------------------------------
 
-async function loadPortalEvmDatasets() {
+async function loadPortalDatasetNames() {
   const portalDatasets = await fetchJson(PORTAL_BASE);
   assert(Array.isArray(portalDatasets), `Unexpected response from ${PORTAL_BASE}: expected an array`);
 
-  const datasetNames = portalDatasets
+  const names = portalDatasets
     .map((item) => (item && typeof item === 'object' ? item.dataset : null))
     .filter((name) => typeof name === 'string' && name.length > 0);
 
-  console.log(`Found ${datasetNames.length} datasets on portal`);
-  console.log(datasetNames.join('\n'));
+  console.log(`Found ${names.length} datasets on portal`);
+  return names;
+}
 
+// ---------------------------------------------------------------------------
+// Step 2 – Check missing (all datasets, not just EVM)
+// ---------------------------------------------------------------------------
+
+function checkMissing(portalNames, metadata) {
+  const yamlSet = new Set(Object.keys(metadata.datasets));
+  const missing = portalNames.filter((id) => !yamlSet.has(id));
+  if (missing.length > 0) {
+    const outPath = path.join(process.cwd(), 'missing-networks.txt');
+    fs.writeFileSync(outPath, missing.join('\n') + '\n', 'utf8');
+    console.error(`Missing datasets in ${METADATA_YAML_PATH}:`);
+    missing.forEach((m) => console.error('  -', m));
+    process.exit(1);
+  }
+  console.log('Step 2 OK: all portal datasets have a matching metadata entry');
+}
+
+// ---------------------------------------------------------------------------
+// Step 3 – Detect EVM datasets on portal
+// ---------------------------------------------------------------------------
+
+async function detectEvmDatasets(portalNames) {
   const evmDatasets = new Map();
   const errors = [];
 
-  const results = await mapInBatches(datasetNames, DATASET_BATCH_SIZE, async (name) => {
+  const results = await mapInBatches(portalNames, DATASET_BATCH_SIZE, async (name) => {
     try {
       const baseUrl = `${PORTAL_BASE}/${encodeURIComponent(name)}`;
       const head = await getHead(baseUrl);
       const headBlock = head && Number.isFinite(Number(head.number)) ? Number(head.number) : null;
-      console.log(`${name} - head: ${headBlock}`);
       if (headBlock === null) return { name, isEvm: false };
 
-      const hasTx = await probeCapability(baseUrl, 'transactions', headBlock);
-      console.log(`${name} - transactions: ${hasTx}`);
+      const hasTx = await probeCapability(baseUrl, 'transactions', headBlock, 'evm');
       if (!hasTx) return { name, isEvm: false };
 
       const hasSolana = await probeCapability(baseUrl, 'instructions', headBlock, 'solana');
-      console.log(`${name} - transactions: ${hasTx}, instructions: ${hasSolana}, head: ${headBlock}`);
       if (hasSolana) return { name, isEvm: false };
 
+      const hasStarknet = await probeCapability(baseUrl, 'events', headBlock, 'starknet');
+      if (hasStarknet) return { name, isEvm: false };
+
+      const hasFuel = await probeCapability(baseUrl, 'receipts', headBlock, 'fuel');
+      if (hasFuel) return { name, isEvm: false };
+
+      const hasTron = await probeCapability(baseUrl, 'internalTransactions', headBlock, 'tron');
+      if (hasTron) return { name, isEvm: false };
+
+      console.log(`${name} - evm, head: ${headBlock}`);
       return { name, isEvm: true, headBlock };
     } catch (error) {
       return { name, isEvm: false, error };
@@ -213,24 +244,7 @@ async function loadPortalEvmDatasets() {
 }
 
 // ---------------------------------------------------------------------------
-// Step 2 – Check missing
-// ---------------------------------------------------------------------------
-
-function checkMissing(portalEvmDatasets, yamlEvmIds) {
-  const yamlSet = new Set(yamlEvmIds);
-  const missing = [...portalEvmDatasets.keys()].filter((id) => !yamlSet.has(id));
-  if (missing.length > 0) {
-    const outPath = path.join(process.cwd(), 'missing-networks.txt');
-    fs.writeFileSync(outPath, missing.join('\n') + '\n', 'utf8');
-    console.error(`Missing datasets in ${METADATA_YAML_PATH} for EVM datasets from ${PORTAL_BASE}:`);
-    missing.forEach((m) => console.error('  -', m));
-    process.exit(1);
-  }
-  console.log('Step 2 OK: all portal EVM datasets have a matching metadata entry');
-}
-
-// ---------------------------------------------------------------------------
-// Step 3 – Probe capabilities & build schema
+// Step 4 – Probe capabilities & build schema
 // ---------------------------------------------------------------------------
 
 async function probeDatasetSchema(datasetName, headBlock) {
@@ -278,21 +292,28 @@ async function updateSchema(portalEvmDatasets, metadata, fullUpdate) {
     throw new Error(`Failed to probe ${errors.length} dataset(s):\n${errors.slice(0, 10).join('\n')}`);
   }
 
-  console.log(`Step 3 OK: updated schema for ${toUpdate.length} dataset(s)`);
+  console.log(`Step 4 OK: updated schema for ${toUpdate.length} dataset(s)`);
 }
 
 // ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
 
+const USAGE = `Usage: node ${path.basename(__filename)} [--full-update]
+
+Update EVM dataset schema in metadata.tentative.yml from portal.sqd.dev.
+By default only probes datasets without a schema. Use --full-update to re-probe all.`;
+
 async function main() {
+  if (process.argv.includes('--help')) { console.log(USAGE); return; }
   const fullUpdate = process.argv.includes('--full-update');
 
-  const portalEvmDatasets = await loadPortalEvmDatasets();
+  const portalNames = await loadPortalDatasetNames();
   const metadata = loadMetadata();
-  const yamlEvmIds = getEvmDatasetIds(metadata);
 
-  checkMissing(portalEvmDatasets, yamlEvmIds);
+  checkMissing(portalNames, metadata);
+
+  const portalEvmDatasets = await detectEvmDatasets(portalNames);
   await updateSchema(portalEvmDatasets, metadata, fullUpdate);
 
   saveMetadata(metadata);
