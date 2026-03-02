@@ -368,6 +368,9 @@ sqd-network-datasets:
   - name: unichain-sepolia
     id: s3://unichain-sepolia-1
     kind: evm
+  - name: worldchain-mainnet-traceless
+    id: s3://worldchain-mainnet-traceless
+    kind: evm
   - name: x1-testnet
     id: s3://x1-testnet-traceless
     kind: evm
