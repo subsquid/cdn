@@ -2341,3 +2341,12 @@ datasets:
     metadata:
       kind: substrate
     schema: {}
+  worldchain-mainnet:
+    metadata:
+      kind: evm
+      display_name: Worldchain Mainnet
+      type: mainnet
+      logo_url: https://cdn.subsquid.io/img/networks/world.png
+      evm:
+        chain_id: 480
+    schema: {}
