@@ -2349,4 +2349,8 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/world.png
       evm:
         chain_id: 480
-    schema: {}
+    schema:
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
