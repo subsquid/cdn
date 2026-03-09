@@ -644,7 +644,6 @@ datasets:
       tables:
         blocks: {}
         transactions: {}
-        logs: {}
         traces: {}
         state_diffs: {}
   dancelight-testnet:
@@ -1737,7 +1736,6 @@ datasets:
       tables:
         blocks: {}
         transactions: {}
-        logs: {}
         traces: {}
   sonic-testnet:
     metadata:
