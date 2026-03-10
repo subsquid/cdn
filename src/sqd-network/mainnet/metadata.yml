@@ -1794,6 +1794,15 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+  tac-mainnet:
+    metadata:
+      kind: evm
+      display_name: TAC Mainnet
+      type: mainnet
+      logo_url: https://cdn.subsquid.io/img/networks/tac.png
+      evm:
+        chain_id: 239
+    schema: {}
   taiko-mainnet:
     metadata:
       display_name: Taiko Mainnet
@@ -1843,6 +1852,19 @@ datasets:
       kind: evm
       evm:
         chain_id: 1301
+    schema:
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+  worldchain-mainnet:
+    metadata:
+      kind: evm
+      display_name: Worldchain Mainnet
+      type: mainnet
+      logo_url: https://cdn.subsquid.io/img/networks/world.png
+      evm:
+        chain_id: 480
     schema:
       tables:
         blocks: {}
@@ -2341,16 +2363,3 @@ datasets:
     metadata:
       kind: substrate
     schema: {}
-  worldchain-mainnet:
-    metadata:
-      kind: evm
-      display_name: Worldchain Mainnet
-      type: mainnet
-      logo_url: https://cdn.subsquid.io/img/networks/world.png
-      evm:
-        chain_id: 480
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
