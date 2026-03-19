@@ -201,38 +201,41 @@ async function detectEvmDatasets(portalNames) {
   const evmDatasets = new Map();
   const errors = [];
 
-  const results = await mapInBatches(portalNames, DATASET_BATCH_SIZE, async (name) => {
+  const checkIfEvm = async (name) => {
     try {
       const baseUrl = `${PORTAL_BASE}/${encodeURIComponent(name)}`;
       const head = await getHead(baseUrl);
       const headBlock = head && Number.isFinite(Number(head.number)) ? Number(head.number) : null;
-      if (headBlock === null) return { name, isEvm: false };
+      if (headBlock === null) return { name, isEvm: false, reason: 'No head block' };
 
       const hasTx = await probeCapability(baseUrl, 'transactions', headBlock, 'evm');
-      if (!hasTx) return { name, isEvm: false };
+      if (!hasTx) return { name, isEvm: false, reason: 'No txs' };
 
       const hasSolana = await probeCapability(baseUrl, 'instructions', headBlock, 'solana');
-      if (hasSolana) return { name, isEvm: false };
+      if (hasSolana) return { name, isEvm: false, reason: 'Has instructions' };
 
       const hasStarknet = await probeCapability(baseUrl, 'events', headBlock, 'starknet');
-      if (hasStarknet) return { name, isEvm: false };
+      if (hasStarknet) return { name, isEvm: false, reason: 'Has events / likely Starknet' };
 
       const hasFuel = await probeCapability(baseUrl, 'receipts', headBlock, 'fuel');
-      if (hasFuel) return { name, isEvm: false };
+      if (hasFuel) return { name, isEvm: false, reason: 'Has receipts / likely Fuel' };
 
       const hasTron = await probeCapability(baseUrl, 'internalTransactions', headBlock, 'tron');
-      if (hasTron) return { name, isEvm: false };
+      if (hasTron) return { name, isEvm: false, reason: 'Has internal txs / likely Tron' };
 
       console.log(`${name} - evm, head: ${headBlock}`);
       return { name, isEvm: true, headBlock };
     } catch (error) {
       return { name, isEvm: false, error };
     }
-  });
+  };
+
+  const results = await mapInBatches(portalNames, DATASET_BATCH_SIZE, checkIfEvm);
 
   for (const r of results) {
     if (r.error) errors.push(`${r.name}: ${r.error.message}`);
     else if (r.isEvm) evmDatasets.set(r.name, { headBlock: r.headBlock });
+    else console.log(`${r.name} is not EVM, reason - ${r.reason}`)
   }
 
   if (errors.length > 0) {
