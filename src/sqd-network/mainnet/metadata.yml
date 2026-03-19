@@ -2381,3 +2381,10 @@ datasets:
     metadata:
       kind: substrate
     schema: {}
+  alpen-testnet:
+    metadata:
+      kind: evm
+      display_name: Alpen Testnet
+      type: testnet
+      logo_url: https://cdn.subsquid.io/img/networks/alpen.svg
+    schema: {}
