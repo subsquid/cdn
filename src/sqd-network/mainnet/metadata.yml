@@ -1992,118 +1992,55 @@ datasets:
       kind: solana
       type: mainnet
       display_name: Eclipse Mainnet
-    schema:
-      tables:
-        instructions: {}
-        transactions: {}
-        balances: {}
-        token_balances: {}
-        rewards: {}
-        logs: {}
+    schema: {}
   eclipse-testnet:
     metadata:
       kind: solana
       type: testnet
       display_name: Eclipse Testnet
-    schema:
-      tables:
-        instructions: {}
-        transactions: {}
-        balances: {}
-        token_balances: {}
-        rewards: {}
-        logs: {}
+    schema: {}
   solana-devnet:
     metadata:
       kind: solana
       type: devnet
       display_name: Solana Devnet
-    schema:
-      tables:
-        instructions: {}
-        transactions: {}
-        balances: {}
-        token_balances: {}
-        rewards: {}
-        logs: {}
+    schema: {}
   solana-mainnet:
     metadata:
       kind: solana
       type: mainnet
       display_name: Solana
-    schema:
-      tables:
-        instructions: {}
-        transactions: {}
-        balances: {}
-        token_balances: {}
-        rewards: {}
-        logs: {}
+    schema: {}
   soon-devnet:
     metadata:
       kind: solana
       type: devnet
       display_name: Soon Devnet
-    schema:
-      tables:
-        instructions: {}
-        transactions: {}
-        balances: {}
-        token_balances: {}
-        rewards: {}
-        logs: {}
+    schema: {}
   soon-mainnet:
     metadata:
       kind: solana
       type: mainnet
       display_name: Soon Mainnet
-    schema:
-      tables:
-        instructions: {}
-        transactions: {}
-        balances: {}
-        token_balances: {}
-        rewards: {}
-        logs: {}
+    schema: {}
   soon-testnet:
     metadata:
       kind: solana
       type: testnet
       display_name: Soon Testnet
-    schema:
-      tables:
-        instructions: {}
-        transactions: {}
-        balances: {}
-        token_balances: {}
-        rewards: {}
-        logs: {}
+    schema: {}
   svm-bnb-mainnet:
     metadata:
       kind: solana
       type: mainnet
       display_name: SVM BNB
-    schema:
-      tables:
-        instructions: {}
-        transactions: {}
-        balances: {}
-        token_balances: {}
-        rewards: {}
-        logs: {}
+    schema: {}
   svm-bnb-testnet:
     metadata:
       kind: solana
       type: testnet
       display_name: SVM BNB Testnet
-    schema:
-      tables:
-        instructions: {}
-        transactions: {}
-        balances: {}
-        token_balances: {}
-        rewards: {}
-        logs: {}
+    schema: {}
   acala:
     metadata:
       kind: substrate
