@@ -96,7 +96,13 @@ datasets:
       display_name: Alpen Testnet
       type: testnet
       logo_url: https://cdn.subsquid.io/img/networks/alpen.svg
-    schema: {}
+    schema:
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   arbitrum-nova:
     metadata:
       display_name: Arbitrum Nova
@@ -1809,7 +1815,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/tac.png
       evm:
         chain_id: 239
-    schema: {}
+    schema:
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   taiko-mainnet:
     metadata:
       display_name: Taiko Mainnet
