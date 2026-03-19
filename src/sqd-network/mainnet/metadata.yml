@@ -1990,39 +1990,57 @@ datasets:
   eclipse-mainnet:
     metadata:
       kind: solana
+      type: mainnet
       display_name: Eclipse Mainnet
+    schema: {}
   eclipse-testnet:
     metadata:
       kind: solana
+      type: testnet
       display_name: Eclipse Testnet
+    schema: {}
   solana-devnet:
     metadata:
       kind: solana
+      type: devnet
+      display_name: Solana Devnet
     schema: {}
   solana-mainnet:
     metadata:
       kind: solana
+      type: mainnet
+      display_name: Solana
     schema: {}
   soon-devnet:
     metadata:
       kind: solana
+      type: devnet
+      display_name: Soon Devnet
     schema: {}
   soon-mainnet:
     metadata:
       kind: solana
+      type: mainnet
+      display_name: Soon Mainnet
     schema: {}
   soon-testnet:
     metadata:
       kind: solana
+      type: testnet
+      display_name: Soon Testnet
     schema: {}
   svm-bnb-mainnet:
     metadata:
       kind: solana
+      type: mainnet
       display_name: SVM BNB
+    schema: {}
   svm-bnb-testnet:
     metadata:
       kind: solana
+      type: testnet
       display_name: SVM BNB Testnet
+    schema: {}
   acala:
     metadata:
       kind: substrate
