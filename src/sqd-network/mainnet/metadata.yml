@@ -90,6 +90,13 @@ datasets:
         logs: {}
         traces: {}
         state_diffs: {}
+  alpen-testnet:
+    metadata:
+      kind: evm
+      display_name: Alpen Testnet
+      type: testnet
+      logo_url: https://cdn.subsquid.io/img/networks/alpen.svg
+    schema: {}
   arbitrum-nova:
     metadata:
       display_name: Arbitrum Nova
@@ -1829,6 +1836,15 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+  tempo-mainnet:
+    metadata:
+      kind: evm
+      display_name: Tempo Mainnet
+      type: mainnet
+      logo_url: https://cdn.subsquid.io/img/networks/tempo.png
+      evm:
+        chain_id: 4217
+    schema: {}
   unichain-mainnet:
     metadata:
       display_name: Unichain Mainnet
@@ -2380,11 +2396,4 @@ datasets:
   zkverify-testnet:
     metadata:
       kind: substrate
-    schema: {}
-  alpen-testnet:
-    metadata:
-      kind: evm
-      display_name: Alpen Testnet
-      type: testnet
-      logo_url: https://cdn.subsquid.io/img/networks/alpen.svg
     schema: {}
