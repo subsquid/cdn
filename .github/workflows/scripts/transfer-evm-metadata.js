@@ -47,7 +47,7 @@ function transferArchive(archive, datasets, overwrite) {
   }
 
   if (shouldSet(meta.type, overwrite)) {
-    meta.type = archive.isTestnet === false ? 'mainnet' : 'testnet';
+    meta.type = (archive.isTestnet == null || archive.isTestnet === false) ? 'mainnet' : 'testnet';
   }
 
   if (shouldSet(evm.chain_id, overwrite)) {
