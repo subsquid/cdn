@@ -94,7 +94,7 @@ datasets:
     metadata:
       display_name: Arbitrum Nova
       logo_url: https://cdn.subsquid.io/img/networks/arbitrum-nova.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 42170
@@ -108,7 +108,7 @@ datasets:
     metadata:
       display_name: Arbitrum One
       logo_url: https://cdn.subsquid.io/img/networks/arbitrum.svg
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 42161
@@ -135,7 +135,7 @@ datasets:
     metadata:
       display_name: Arthera Mainnet
       logo_url: https://cdn.subsquid.io/img/networks/arthera.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 10242
@@ -148,7 +148,7 @@ datasets:
     metadata:
       display_name: Astar
       logo_url: https://cdn.subsquid.io/img/networks/astar.svg
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 592
@@ -187,7 +187,7 @@ datasets:
     metadata:
       display_name: Avalanche
       logo_url: https://cdn.subsquid.io/img/networks/avax.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 43114
@@ -217,7 +217,7 @@ datasets:
     metadata:
       display_name: B3
       logo_url: https://cdn.subsquid.io/img/networks/b3.svg
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 8333
@@ -247,7 +247,7 @@ datasets:
     metadata:
       display_name: Base
       logo_url: https://cdn.subsquid.io/img/networks/base.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 8453
@@ -277,7 +277,7 @@ datasets:
     metadata:
       display_name: Beam Mainnet
       logo_url: https://cdn.subsquid.io/img/networks/beam.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 4337
@@ -322,7 +322,7 @@ datasets:
     metadata:
       display_name: Binance
       logo_url: https://cdn.subsquid.io/img/networks/binance.svg
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 56
@@ -376,7 +376,7 @@ datasets:
     metadata:
       display_name: Bitgert
       logo_url: https://cdn.subsquid.io/img/networks/brise.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 32520
@@ -430,7 +430,7 @@ datasets:
     metadata:
       display_name: Blast L2
       logo_url: https://cdn.subsquid.io/img/networks/blast.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 81457
@@ -458,7 +458,7 @@ datasets:
     metadata:
       display_name: BOB Mainnet
       logo_url: https://cdn.subsquid.io/img/networks/bob.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 60808
@@ -531,7 +531,7 @@ datasets:
     metadata:
       display_name: Canto
       logo_url: https://cdn.subsquid.io/img/networks/canto.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 7700
@@ -583,7 +583,7 @@ datasets:
     metadata:
       display_name: Core Mainnet
       logo_url: https://cdn.subsquid.io/img/networks/core.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 1116
@@ -623,7 +623,7 @@ datasets:
     metadata:
       display_name: Cyber Mainnet
       logo_url: https://cdn.subsquid.io/img/networks/cyber.svg
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 7560
@@ -673,7 +673,7 @@ datasets:
     metadata:
       display_name: DFK Chain
       logo_url: https://cdn.subsquid.io/img/networks/dfk.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 53935
@@ -686,7 +686,7 @@ datasets:
     metadata:
       display_name: Dogechain
       logo_url: https://cdn.subsquid.io/img/networks/dogechain.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 2000
@@ -736,7 +736,7 @@ datasets:
     metadata:
       display_name: Ethereum
       logo_url: https://cdn.subsquid.io/img/networks/ethereum.svg
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 1
@@ -766,7 +766,7 @@ datasets:
     metadata:
       display_name: Etherlink Mainnet
       logo_url: https://cdn.subsquid.io/img/networks/etherlink.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 42793
@@ -805,7 +805,7 @@ datasets:
     metadata:
       display_name: Exosama
       logo_url: https://cdn.subsquid.io/img/networks/exn.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 2109
@@ -820,7 +820,7 @@ datasets:
     metadata:
       display_name: Flare
       logo_url: https://cdn.subsquid.io/img/networks/flare.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 14
@@ -848,7 +848,7 @@ datasets:
     metadata:
       display_name: Gravity
       logo_url: https://cdn.subsquid.io/img/networks/gravity.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 1625
@@ -889,7 +889,7 @@ datasets:
     metadata:
       display_name: Gnosis
       logo_url: https://cdn.subsquid.io/img/networks/gnosis.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 100
@@ -959,7 +959,7 @@ datasets:
     metadata:
       display_name: Immutable zkEVM
       logo_url: https://cdn.subsquid.io/img/networks/immutable.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 13371
@@ -1037,7 +1037,7 @@ datasets:
     metadata:
       display_name: Linea
       logo_url: https://cdn.subsquid.io/img/networks/linea.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 59144
@@ -1090,7 +1090,7 @@ datasets:
     metadata:
       display_name: Mantle
       logo_url: https://cdn.subsquid.io/img/networks/mantle.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 5000
@@ -1116,7 +1116,7 @@ datasets:
     metadata:
       display_name: MegaETH Mainnet
       logo_url: https://cdn.subsquid.io/img/networks/mega.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 4326
@@ -1172,7 +1172,7 @@ datasets:
     metadata:
       display_name: Merlin Mainnet
       logo_url: https://cdn.subsquid.io/img/networks/merlin.jpg
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 4200
@@ -1198,7 +1198,7 @@ datasets:
     metadata:
       display_name: Metis
       logo_url: https://cdn.subsquid.io/img/networks/metis.svg
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 1088
@@ -1264,7 +1264,7 @@ datasets:
     metadata:
       display_name: Moonbeam
       logo_url: https://cdn.subsquid.io/img/networks/moonbeam.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 1284
@@ -1278,7 +1278,7 @@ datasets:
     metadata:
       display_name: Moonriver
       logo_url: https://cdn.subsquid.io/img/networks/moonriver.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 1285
@@ -1330,7 +1330,7 @@ datasets:
     metadata:
       display_name: Neon EVM
       logo_url: https://cdn.subsquid.io/img/networks/neon.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 245022934
@@ -1358,7 +1358,7 @@ datasets:
     metadata:
       display_name: opBNB
       logo_url: https://cdn.subsquid.io/img/networks/opbnb.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 204
@@ -1384,7 +1384,7 @@ datasets:
     metadata:
       display_name: Optimism
       logo_url: https://cdn.subsquid.io/img/networks/optimism.svg
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 10
@@ -1427,7 +1427,7 @@ datasets:
     metadata:
       display_name: Peaq
       logo_url: https://cdn.subsquid.io/img/networks/peaq.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 3338
@@ -1540,7 +1540,7 @@ datasets:
     metadata:
       display_name: Polygon
       logo_url: https://cdn.subsquid.io/img/networks/polygon.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 137
@@ -1567,7 +1567,7 @@ datasets:
     metadata:
       display_name: Polygon zkEVM
       logo_url: https://cdn.subsquid.io/img/networks/zkevm.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 1101
@@ -1619,7 +1619,7 @@ datasets:
     metadata:
       display_name: Scroll
       logo_url: https://cdn.subsquid.io/img/networks/scroll.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 534352
@@ -1647,7 +1647,7 @@ datasets:
     metadata:
       display_name: Shibarium
       logo_url: https://cdn.subsquid.io/img/networks/shibarium.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 109
@@ -1675,7 +1675,7 @@ datasets:
     metadata:
       display_name: Shiden
       logo_url: https://cdn.subsquid.io/img/networks/shiden.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 336
@@ -1688,7 +1688,7 @@ datasets:
     metadata:
       display_name: Skale Nebula
       logo_url: https://cdn.subsquid.io/img/networks/nebula.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 1482601649
@@ -1807,7 +1807,7 @@ datasets:
     metadata:
       display_name: Taiko Mainnet
       logo_url: https://cdn.subsquid.io/img/networks/taiko.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 167000
@@ -1820,7 +1820,7 @@ datasets:
     metadata:
       display_name: Tanssi
       logo_url: https://cdn.subsquid.io/img/networks/tanssi.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 5678
@@ -1887,7 +1887,7 @@ datasets:
     metadata:
       display_name: X Layer Mainnet
       logo_url: https://cdn.subsquid.io/img/networks/xlayer.svg
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 196
@@ -1927,7 +1927,7 @@ datasets:
     metadata:
       display_name: zkSync
       logo_url: https://cdn.subsquid.io/img/networks/zksync-era.svg
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 324
@@ -1955,7 +1955,7 @@ datasets:
     metadata:
       display_name: Zora
       logo_url: https://cdn.subsquid.io/img/networks/zora.png
-      type: testnet
+      type: mainnet
       kind: evm
       evm:
         chain_id: 7777777
