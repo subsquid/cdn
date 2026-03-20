@@ -1854,7 +1854,13 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/tempo.png
       evm:
         chain_id: 4217
-    schema: {}
+    schema:
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   unichain-mainnet:
     metadata:
       display_name: Unichain Mainnet
