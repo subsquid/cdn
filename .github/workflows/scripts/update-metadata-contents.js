@@ -223,6 +223,9 @@ async function detectEvmDatasets(portalNames) {
       const hasTron = await probeCapability(baseUrl, 'internalTransactions', headBlock, 'tron');
       if (hasTron) return { name, isEvm: false, reason: 'Has internal txs / likely Tron' };
 
+      const hasBitcoin = await probeCapability(baseUrl, 'inputs', headBlock, 'bitcoin');
+      if (hasBitcoin) return { name, isEvm: false, reason: 'Has inputs / likely Bitcoin' };
+
       console.log(`${name} - evm, head: ${headBlock}`);
       return { name, isEvm: true, headBlock };
     } catch (error) {

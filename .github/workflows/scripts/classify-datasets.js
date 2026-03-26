@@ -164,6 +164,11 @@ async function classifyDataset(baseUrl, headBlock) {
     return cache.get(key);
   }
 
+  // bitcoin: inputs(bitcoin) && !receipts(fuel)
+  if (await probe('inputs', 'bitcoin') && !(await probe('receipts', 'fuel'))) {
+    return 'bitcoin';
+  }
+
   // evm: transactions(evm) && !instructions(solana) && !events(starknet) && !receipts(fuel) && !internalTransactions(tron)
   if (await probe('transactions', 'evm')) {
     if (!(await probe('instructions', 'solana'))
@@ -202,11 +207,6 @@ async function classifyDataset(baseUrl, headBlock) {
   // hyperliquidReplicaCmds: orderActions(hyperliquidReplicaCmds)
   if (await probe('orderActions', 'hyperliquidReplicaCmds')) {
     return 'hyperliquidReplicaCmds';
-  }
-
-  // bitcoin: inputs(bitcoin) && !receipts(fuel)
-  if (await probe('inputs', 'bitcoin') && !(await probe('receipts', 'fuel'))) {
-    return 'bitcoin';
   }
 
   return null;
