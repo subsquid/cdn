@@ -2027,10 +2027,17 @@ datasets:
     metadata:
       kind: hyperliquidFills
       display_name: Hyperliquid
+    schema:
+      tables:
+        blocks: {}
+        fills: {}
   hyperliquid-replica-cmds:
     metadata:
       kind: hyperliquidReplicaCmds
-    schema: {}
+    schema:
+      tables:
+        blocks: {}
+        actions: {}
   eclipse-mainnet:
     metadata:
       kind: solana
