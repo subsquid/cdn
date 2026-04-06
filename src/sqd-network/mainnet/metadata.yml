@@ -86,6 +86,7 @@ datasets:
       tables:
         blocks: {}
         transactions: {}
+        logs: {}
   aleph-zero-evm-mainnet:
     metadata:
       kind: evm
@@ -310,6 +311,8 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+        traces: {}
+        state_diffs: {}
   berachain-bartio:
     metadata:
       display_name: Berachain bArtio
@@ -322,6 +325,7 @@ datasets:
       tables:
         blocks: {}
         transactions: {}
+        logs: {}
         traces: {}
         state_diffs: {}
   berachain-mainnet:
@@ -405,6 +409,8 @@ datasets:
       tables:
         blocks: {}
         transactions: {}
+        logs: {}
+        traces: {}
   bitgert-testnet:
     metadata:
       display_name: Bitgert Testnet
@@ -529,6 +535,8 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+        traces: {}
+        state_diffs: {}
   camp-network-testnet-v2:
     metadata:
       display_name: Camp Network Testnet v2
@@ -541,6 +549,8 @@ datasets:
       tables:
         blocks: {}
         transactions: {}
+        logs: {}
+        traces: {}
         state_diffs: {}
   canto:
     metadata:
@@ -567,6 +577,7 @@ datasets:
       tables:
         blocks: {}
         transactions: {}
+        logs: {}
   celo-alfajores-testnet:
     metadata:
       display_name: Celo Testnet (Alfajores)
@@ -606,6 +617,7 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+        traces: {}
   crossfi-mainnet:
     metadata:
       display_name: CrossFi Mainnet
@@ -707,6 +719,7 @@ datasets:
       tables:
         blocks: {}
         transactions: {}
+        logs: {}
   dogechain-testnet:
     metadata:
       display_name: Dogechain Testnet
@@ -853,7 +866,9 @@ datasets:
       tables:
         blocks: {}
         transactions: {}
+        logs: {}
         traces: {}
+        state_diffs: {}
   galxe-gravity:
     metadata:
       display_name: Gravity
@@ -1296,6 +1311,8 @@ datasets:
       tables:
         blocks: {}
         transactions: {}
+        logs: {}
+        traces: {}
   moonsama:
     metadata:
       kind: evm
@@ -1361,6 +1378,7 @@ datasets:
         transactions: {}
         logs: {}
         traces: {}
+        state_diffs: {}
   opbnb-mainnet:
     metadata:
       display_name: opBNB
@@ -1470,6 +1488,8 @@ datasets:
       tables:
         blocks: {}
         transactions: {}
+        logs: {}
+        traces: {}
         state_diffs: {}
   plume:
     metadata:
@@ -1512,6 +1532,7 @@ datasets:
         transactions: {}
         logs: {}
         traces: {}
+        state_diffs: {}
   plume-testnet:
     metadata:
       display_name: Plume Testnet
@@ -1618,6 +1639,7 @@ datasets:
         transactions: {}
         logs: {}
         traces: {}
+        state_diffs: {}
   scroll-mainnet:
     metadata:
       display_name: Scroll
@@ -1906,6 +1928,7 @@ datasets:
       tables:
         blocks: {}
         transactions: {}
+        logs: {}
   xlayer-mainnet:
     metadata:
       display_name: X Layer Mainnet
@@ -1931,6 +1954,7 @@ datasets:
       tables:
         blocks: {}
         transactions: {}
+        logs: {}
   zklink-nova-mainnet:
     metadata:
       display_name: zkLink Nova Mainnet
