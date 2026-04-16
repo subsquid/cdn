@@ -2555,4 +2555,8 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/cronos.svg
       evm:
         chain_id: 25
-    schema: {}
+    schema:
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
