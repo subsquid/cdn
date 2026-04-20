@@ -236,6 +236,7 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+        traces: {}
         state_diffs: {}
   b3-mainnet:
     metadata:
@@ -1788,6 +1789,7 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+        traces: {}
   sonic-testnet:
     metadata:
       display_name: Sonic Testnet
@@ -2017,6 +2019,7 @@ datasets:
       tables:
         blocks: {}
         transactions: {}
+        logs: {}
         traces: {}
   zksync-mainnet:
     metadata:
