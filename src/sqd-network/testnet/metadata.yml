@@ -5,6 +5,12 @@ datasets:
       kind: evm
       evm:
         chain_id: 42161
+  arbitrum-sepolia:
+    metadata:
+      display_name: "Arbitrum Sepolia"
+      kind: evm
+      evm:
+        chain_id: 421614
   base-mainnet:
     metadata:
       display_name: "Base"
@@ -29,6 +35,18 @@ datasets:
       kind: evm
       evm:
         chain_id: 7777777
+  stable-mainnet:
+    metadata:
+      display_name: "Stable"
+      kind: evm
+      evm:
+        chain_id: 988
+  sei-mainnet:
+    metadata:
+      display_name: "Sei"
+      kind: evm
+      evm:
+        chain_id: 1329
 
   svm-bnb-mainnet:
     metadata:

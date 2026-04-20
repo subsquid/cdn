@@ -26,6 +26,7 @@ const DATASET_BATCH_SIZE = Number(process.env.PORTAL_DATASET_BATCH_SIZE || 20);
 const CAPABILITY_BATCH_SIZE = Number(process.env.PORTAL_CAPABILITY_BATCH_SIZE || 20);
 const MAX_429_RETRIES = Number(process.env.PORTAL_MAX_429_RETRIES || 6);
 const DEFAULT_429_DELAY_MS = Number(process.env.PORTAL_DEFAULT_429_DELAY_MS || 1_000);
+const RETRYABLE_STATUSES = [503];
 
 // Everything that should be checked on top of EVM transactions
 const EXTRA_CAPABILITIES = ['logs', 'traces', 'stateDiffs'];
@@ -87,11 +88,11 @@ async function fetchWith429Retry(url, options = {}) {
       signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
       ...options,
     });
-    if (res.status !== 429) return res;
+    if (res.status !== 429 && !RETRYABLE_STATUSES.includes(res.status)) return res;
 
     const bodyText = await res.text();
     if (attempt === MAX_429_RETRIES) {
-      throw new Error(`HTTP 429 from ${url} after ${MAX_429_RETRIES + 1} attempts. Body: ${bodyText.slice(0, 500)}`);
+      throw new Error(`HTTP ${res.status} from ${url} after ${MAX_429_RETRIES + 1} attempts. Body: ${bodyText.slice(0, 500)}`);
     }
 
     let retryAfterMs = parseRetryAfterHeaderMs(res.headers.get('retry-after'));
@@ -99,7 +100,7 @@ async function fetchWith429Retry(url, options = {}) {
       console.warn(`Parsing header ${res.headers.get('retry-after')} yielded a delay of ${retryAfterMs}ms (below 1s)`);
     }
     const delayMs = Math.max(1000, retryAfterMs ?? DEFAULT_429_DELAY_MS * (attempt + 1));
-    console.warn(`429 from ${url}; retrying in ${delayMs}ms (attempt ${attempt + 1}/${MAX_429_RETRIES + 1})`);
+    console.warn(`${res.status} from ${url}; retrying in ${delayMs}ms (attempt ${attempt + 1}/${MAX_429_RETRIES + 1})`);
     await sleep(delayMs);
   }
   throw new Error(`Unreachable retry path for ${url}`);
@@ -134,6 +135,11 @@ async function mapInBatches(items, batchSize, mapper) {
 // Portal probing
 // ---------------------------------------------------------------------------
 
+// Collects HTTP statuses returned by probeCapability that were neither
+// successful (200/204) nor retried. Logged at the end of step 4 so that
+// new statuses worth retrying can be identified and added to RETRYABLE_STATUSES.
+const unexpectedProbeStatuses = new Set();
+
 async function getHead(baseUrl) {
   const head = await fetchJson(`${baseUrl}/head`);
   if (!head || head._status) return null;
@@ -157,7 +163,9 @@ async function probeCapability(baseUrl, capability, block, probeType = 'evm') {
     headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
     body: JSON.stringify(body),
   });
-  return res.status === 200 || res.status === 204;
+  if (res.status === 200 || res.status === 204) return true;
+  unexpectedProbeStatuses.add(res.status);
+  return false;
 }
 
 // ---------------------------------------------------------------------------
@@ -321,6 +329,12 @@ async function main() {
 
   const portalEvmDatasets = await detectEvmDatasets(portalNames);
   await updateSchema(portalEvmDatasets, metadata, fullUpdate);
+
+  if (unexpectedProbeStatuses.size > 0) {
+    const sorted = [...unexpectedProbeStatuses].sort((a, b) => a - b).join(', ');
+    console.log(`Non-retried HTTP statuses seen during capability probing: ${sorted}`);
+    console.log(`(Add any of these to RETRYABLE_STATUSES if they should be retried instead of treated as missing.)`);
+  }
 
   saveMetadata(metadata);
   console.log(`${METADATA_YAML_PATH} updated.`);

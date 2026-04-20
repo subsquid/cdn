@@ -1667,6 +1667,32 @@ datasets:
         transactions: {}
         logs: {}
         traces: {}
+  sei-mainnet:
+    metadata:
+      display_name: Sei Mainnet
+      logo_url: https://cdn.subsquid.io/img/networks/sei.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 1329
+    schema:
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+  sei-testnet:
+    metadata:
+      display_name: Sei Testnet
+      logo_url: https://cdn.subsquid.io/img/networks/sei.png
+      type: testnet
+      kind: evm
+      evm:
+        chain_id: 1328
+    schema:
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   shibarium:
     metadata:
       display_name: Shibarium
@@ -1776,6 +1802,32 @@ datasets:
         transactions: {}
         logs: {}
         traces: {}
+  stable-mainnet:
+    metadata:
+      display_name: Stable Mainnet
+      logo_url: https://cdn.subsquid.io/img/networks/stable.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 988
+    schema:
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+  stable-testnet:
+    metadata:
+      display_name: Stable Testnet
+      logo_url: https://cdn.subsquid.io/img/networks/stable.png
+      type: testnet
+      kind: evm
+      evm:
+        chain_id: 2201
+    schema:
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   stratovm-sepolia:
     metadata:
       display_name: StratoVM Sepolia
@@ -2494,3 +2546,16 @@ datasets:
     metadata:
       kind: substrate
     schema: {}
+  cronos-mainnet:
+    metadata:
+      kind: evm
+      display_name: Cronos Mainnet
+      type: mainnet
+      logo_url: https://cdn.subsquid.io/img/networks/cronos.svg
+      evm:
+        chain_id: 25
+    schema:
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
