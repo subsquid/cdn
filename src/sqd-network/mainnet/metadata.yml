@@ -1507,15 +1507,6 @@ datasets:
       evm:
         chain_id: 98866
     schema: {}
-  plume-devnet:
-    metadata:
-      display_name: Plume Devnet
-      logo_url: https://cdn.subsquid.io/img/networks/plume.png
-      type: devnet
-      kind: evm
-      evm:
-        chain_id: 98864
-    schema: {}
   plume-testnet:
     metadata:
       display_name: Plume Testnet
