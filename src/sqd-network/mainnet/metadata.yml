@@ -1969,6 +1969,8 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+        traces: {}
+        state_diffs: {}
   x1-testnet:
     metadata:
       kind: evm
