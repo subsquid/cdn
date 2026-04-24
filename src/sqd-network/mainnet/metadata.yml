@@ -80,8 +80,7 @@ datasets:
       ecosystem: adi
       logo_url: https://cdn.subsquid.io/img/networks/adi.jpg
       type: testnet
-      evm:
-        chain_id: 99999
+      evm: {}
     schema:
       tables:
         blocks: {}
