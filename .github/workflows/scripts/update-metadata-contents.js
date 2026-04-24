@@ -24,7 +24,7 @@ const PORTAL_BASE = 'https://portal.sqd.dev/datasets';
 const REQUEST_TIMEOUT_MS = 15_000;
 const DATASET_BATCH_SIZE = Number(process.env.PORTAL_DATASET_BATCH_SIZE || 20);
 const CAPABILITY_BATCH_SIZE = Number(process.env.PORTAL_CAPABILITY_BATCH_SIZE || 20);
-const MAX_429_RETRIES = Number(process.env.PORTAL_MAX_429_RETRIES || 6);
+const MAX_429_RETRIES = Number(process.env.PORTAL_MAX_429_RETRIES || 30);
 const DEFAULT_429_DELAY_MS = Number(process.env.PORTAL_DEFAULT_429_DELAY_MS || 1_000);
 const RETRYABLE_STATUSES = [503];
 
