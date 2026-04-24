@@ -3,6 +3,7 @@ datasets:
     metadata:
       kind: bitcoin
       display_name: Bitcoin
+      ecosystem: bitcoin
       type: mainnet
       logo_url: https://cdn.subsquid.io/img/networks/bitcoin.svg
     schema:
@@ -14,6 +15,7 @@ datasets:
   0g-testnet:
     metadata:
       display_name: 0g Testnet
+      ecosystem: 0g
       logo_url: https://cdn.subsquid.io/img/networks/0gai.png
       type: testnet
       kind: evm
@@ -26,7 +28,10 @@ datasets:
         logs: {}
   abstract-mainnet:
     metadata:
-      display_name: Abstract Mainnet
+      display_name: Abstract
+      aliases:
+        - Abstract Mainnet
+      ecosystem: abstract
       logo_url: https://cdn.subsquid.io/img/networks/abstract.png
       type: mainnet
       kind: evm
@@ -40,6 +45,7 @@ datasets:
   abstract-testnet:
     metadata:
       display_name: Abstract Testnet
+      ecosystem: abstract
       logo_url: https://cdn.subsquid.io/img/networks/abstract.png
       type: testnet
       kind: evm
@@ -53,7 +59,10 @@ datasets:
   adi-mainnet:
     metadata:
       kind: evm
-      display_name: ADI Mainnet
+      display_name: ADI Chain
+      aliases:
+        - ADI Mainnet
+      ecosystem: adi
       logo_url: https://cdn.subsquid.io/img/networks/adi.jpg
       type: mainnet
       evm:
@@ -68,8 +77,10 @@ datasets:
     metadata:
       kind: evm
       display_name: ADI Testnet
+      ecosystem: adi
       logo_url: https://cdn.subsquid.io/img/networks/adi.jpg
       type: testnet
+      evm: {}
     schema:
       tables:
         blocks: {}
@@ -78,7 +89,10 @@ datasets:
         traces: {}
   agung-evm:
     metadata:
-      display_name: Agung
+      display_name: Agung Testnet
+      aliases:
+        - Agung
+      ecosystem: agung
       logo_url: https://cdn.subsquid.io/img/networks/peaq.png
       type: testnet
       kind: evm
@@ -93,6 +107,7 @@ datasets:
     metadata:
       kind: evm
       display_name: Aleph Zero EVM
+      ecosystem: aleph-zero
       type: mainnet
       logo_url: https://cdn.subsquid.io/img/networks/aleph-zero.png
       evm:
@@ -108,8 +123,11 @@ datasets:
     metadata:
       kind: evm
       display_name: Alpen Testnet
+      ecosystem: alpen
       type: testnet
       logo_url: https://cdn.subsquid.io/img/networks/alpen.svg
+      evm:
+        chain_id: 8150
     schema:
       tables:
         blocks: {}
@@ -120,6 +138,7 @@ datasets:
   arbitrum-nova:
     metadata:
       display_name: Arbitrum Nova
+      ecosystem: arbitrum-nova
       logo_url: https://cdn.subsquid.io/img/networks/arbitrum-nova.png
       type: mainnet
       kind: evm
@@ -134,6 +153,7 @@ datasets:
   arbitrum-one:
     metadata:
       display_name: Arbitrum One
+      ecosystem: arbitrum-one
       logo_url: https://cdn.subsquid.io/img/networks/arbitrum.svg
       type: mainnet
       kind: evm
@@ -148,6 +168,7 @@ datasets:
   arbitrum-sepolia:
     metadata:
       display_name: Arbitrum Sepolia
+      ecosystem: arbitrum-one
       logo_url: https://cdn.subsquid.io/img/networks/arbitrum.svg
       type: testnet
       kind: evm
@@ -160,7 +181,10 @@ datasets:
         logs: {}
   arthera-mainnet:
     metadata:
-      display_name: Arthera Mainnet
+      display_name: Arthera
+      aliases:
+        - Arthera Mainnet
+      ecosystem: arthera
       logo_url: https://cdn.subsquid.io/img/networks/arthera.png
       type: mainnet
       kind: evm
@@ -174,6 +198,7 @@ datasets:
   astar-mainnet:
     metadata:
       display_name: Astar
+      ecosystem: astar
       logo_url: https://cdn.subsquid.io/img/networks/astar.svg
       type: mainnet
       kind: evm
@@ -188,6 +213,7 @@ datasets:
     metadata:
       kind: evm
       display_name: Astar zkEVM
+      ecosystem: astar-zkevm
       type: mainnet
       logo_url: https://cdn.subsquid.io/img/networks/astar.svg
       evm:
@@ -201,6 +227,7 @@ datasets:
     metadata:
       kind: evm
       display_name: Astar zKyoto
+      ecosystem: astar-zkevm
       type: testnet
       logo_url: https://cdn.subsquid.io/img/networks/astar.svg
       evm:
@@ -213,6 +240,7 @@ datasets:
   avalanche-mainnet:
     metadata:
       display_name: Avalanche
+      ecosystem: avalanche
       logo_url: https://cdn.subsquid.io/img/networks/avax.png
       type: mainnet
       kind: evm
@@ -228,6 +256,7 @@ datasets:
   avalanche-testnet:
     metadata:
       display_name: Avalanche Testnet
+      ecosystem: avalanche
       logo_url: https://cdn.subsquid.io/img/networks/avax.png
       type: testnet
       kind: evm
@@ -243,6 +272,7 @@ datasets:
   b3-mainnet:
     metadata:
       display_name: B3
+      ecosystem: b3
       logo_url: https://cdn.subsquid.io/img/networks/b3.svg
       type: mainnet
       kind: evm
@@ -258,6 +288,7 @@ datasets:
   b3-sepolia:
     metadata:
       display_name: B3 Sepolia
+      ecosystem: b3
       logo_url: https://cdn.subsquid.io/img/networks/b3.svg
       type: testnet
       kind: evm
@@ -273,6 +304,7 @@ datasets:
   base-mainnet:
     metadata:
       display_name: Base
+      ecosystem: base
       logo_url: https://cdn.subsquid.io/img/networks/base.png
       type: mainnet
       kind: evm
@@ -288,6 +320,7 @@ datasets:
   base-sepolia:
     metadata:
       display_name: Base Sepolia
+      ecosystem: base
       logo_url: https://cdn.subsquid.io/img/networks/baseTestnet.png
       type: testnet
       kind: evm
@@ -302,7 +335,10 @@ datasets:
         state_diffs: {}
   beam-mainnet:
     metadata:
-      display_name: Beam Mainnet
+      display_name: Beam
+      aliases:
+        - Beam Mainnet
+      ecosystem: beam
       logo_url: https://cdn.subsquid.io/img/networks/beam.png
       type: mainnet
       kind: evm
@@ -318,6 +354,7 @@ datasets:
   berachain-bartio:
     metadata:
       display_name: Berachain bArtio
+      ecosystem: berachain
       logo_url: https://cdn.subsquid.io/img/networks/berachain.png
       type: testnet
       kind: evm
@@ -332,7 +369,10 @@ datasets:
         state_diffs: {}
   berachain-mainnet:
     metadata:
-      display_name: Berachain Mainnet
+      display_name: Berachain
+      aliases:
+        - Berachain Mainnet
+      ecosystem: berachain
       logo_url: https://cdn.subsquid.io/img/networks/berachain.png
       type: mainnet
       kind: evm
@@ -347,7 +387,10 @@ datasets:
         state_diffs: {}
   binance-mainnet:
     metadata:
-      display_name: Binance
+      display_name: BNB Smart Chain
+      aliases:
+        - Binance
+      ecosystem: binance
       logo_url: https://cdn.subsquid.io/img/networks/binance.svg
       type: mainnet
       kind: evm
@@ -363,6 +406,7 @@ datasets:
   binance-testnet:
     metadata:
       display_name: Binance Testnet
+      ecosystem: binance
       logo_url: https://cdn.subsquid.io/img/networks/binance.svg
       type: testnet
       kind: evm
@@ -375,7 +419,10 @@ datasets:
         logs: {}
   bitfinity-mainnet:
     metadata:
-      display_name: Bitfinity Mainnet
+      display_name: Bitfinity Network
+      aliases:
+        - Bitfinity Mainnet
+      ecosystem: bitfinity
       logo_url: https://cdn.subsquid.io/img/networks/bitfinity.png
       type: mainnet
       kind: evm
@@ -389,6 +436,7 @@ datasets:
   bitfinity-testnet:
     metadata:
       display_name: Bitfinity Testnet
+      ecosystem: bitfinity
       logo_url: https://cdn.subsquid.io/img/networks/bitfinity.png
       type: testnet
       kind: evm
@@ -402,6 +450,7 @@ datasets:
   bitgert-mainnet:
     metadata:
       display_name: Bitgert
+      ecosystem: bitgert
       logo_url: https://cdn.subsquid.io/img/networks/brise.png
       type: mainnet
       kind: evm
@@ -416,6 +465,7 @@ datasets:
   bitgert-testnet:
     metadata:
       display_name: Bitgert Testnet
+      ecosystem: bitgert
       logo_url: https://cdn.subsquid.io/img/networks/brise.png
       type: testnet
       kind: evm
@@ -429,7 +479,10 @@ datasets:
         traces: {}
   bittensor-mainnet-evm:
     metadata:
-      display_name: Bittensor Mainnet
+      display_name: Bittensor
+      aliases:
+        - Bittensor Mainnet
+      ecosystem: bittensor
       logo_url: https://cdn.subsquid.io/img/networks/bittensor.svg
       type: mainnet
       kind: evm
@@ -443,6 +496,7 @@ datasets:
   bittensor-testnet-evm:
     metadata:
       display_name: Bittensor Testnet
+      ecosystem: bittensor
       logo_url: https://cdn.subsquid.io/img/networks/bittensor.svg
       type: testnet
       kind: evm
@@ -455,7 +509,10 @@ datasets:
         logs: {}
   blast-l2-mainnet:
     metadata:
-      display_name: Blast L2
+      display_name: Blast
+      aliases:
+        - Blast L2
+      ecosystem: blast
       logo_url: https://cdn.subsquid.io/img/networks/blast.png
       type: mainnet
       kind: evm
@@ -471,6 +528,7 @@ datasets:
   blast-sepolia:
     metadata:
       display_name: Blast Sepolia
+      ecosystem: blast
       logo_url: https://cdn.subsquid.io/img/networks/blast.png
       type: testnet
       kind: evm
@@ -483,7 +541,10 @@ datasets:
         logs: {}
   bob-mainnet:
     metadata:
-      display_name: BOB Mainnet
+      display_name: BOB
+      aliases:
+        - BOB Mainnet
+      ecosystem: bob
       logo_url: https://cdn.subsquid.io/img/networks/bob.png
       type: mainnet
       kind: evm
@@ -499,6 +560,7 @@ datasets:
   bob-sepolia:
     metadata:
       display_name: BOB Sepolia
+      ecosystem: bob
       logo_url: https://cdn.subsquid.io/img/networks/bob.png
       type: testnet
       kind: evm
@@ -511,7 +573,10 @@ datasets:
         logs: {}
   botanix-mainnet:
     metadata:
-      display_name: Botanix Mainnet
+      display_name: Botanix
+      aliases:
+        - Botanix Mainnet
+      ecosystem: botanix
       logo_url: https://cdn.subsquid.io/img/networks/botanix.svg
       type: mainnet
       kind: evm
@@ -527,6 +592,7 @@ datasets:
   botanix-testnet:
     metadata:
       display_name: Botanix Testnet
+      ecosystem: botanix
       logo_url: https://cdn.subsquid.io/img/networks/botanix.svg
       type: testnet
       kind: evm
@@ -542,6 +608,7 @@ datasets:
   camp-network-testnet-v2:
     metadata:
       display_name: Camp Network Testnet v2
+      ecosystem: camp-network
       logo_url: https://cdn.subsquid.io/img/networks/camp-network.svg
       type: testnet
       kind: evm
@@ -557,6 +624,7 @@ datasets:
   canto:
     metadata:
       display_name: Canto
+      ecosystem: canto
       logo_url: https://cdn.subsquid.io/img/networks/canto.png
       type: mainnet
       kind: evm
@@ -570,6 +638,7 @@ datasets:
   canto-testnet:
     metadata:
       display_name: Canto Testnet
+      ecosystem: canto
       logo_url: https://cdn.subsquid.io/img/networks/canto.png
       type: testnet
       kind: evm
@@ -583,6 +652,7 @@ datasets:
   celo-alfajores-testnet:
     metadata:
       display_name: Celo Testnet (Alfajores)
+      ecosystem: celo
       logo_url: https://cdn.subsquid.io/img/networks/celo.svg
       type: testnet
       kind: evm
@@ -595,7 +665,10 @@ datasets:
         logs: {}
   celo-mainnet:
     metadata:
-      display_name: Celo Mainnet
+      display_name: Celo
+      aliases:
+        - Celo Mainnet
+      ecosystem: celo
       logo_url: https://cdn.subsquid.io/img/networks/celo.svg
       type: mainnet
       kind: evm
@@ -608,7 +681,10 @@ datasets:
         logs: {}
   core-mainnet:
     metadata:
-      display_name: Core Mainnet
+      display_name: Core Blockchain
+      aliases:
+        - Core Mainnet
+      ecosystem: core
       logo_url: https://cdn.subsquid.io/img/networks/core.png
       type: mainnet
       kind: evm
@@ -622,7 +698,10 @@ datasets:
         traces: {}
   crossfi-mainnet:
     metadata:
-      display_name: CrossFi Mainnet
+      display_name: CrossFi
+      aliases:
+        - CrossFi Mainnet
+      ecosystem: crossfi
       logo_url: https://cdn.subsquid.io/img/networks/crossfi.svg
       type: mainnet
       kind: evm
@@ -636,6 +715,7 @@ datasets:
   crossfi-testnet:
     metadata:
       display_name: CrossFi Testnet
+      ecosystem: crossfi
       logo_url: https://cdn.subsquid.io/img/networks/crossfi.svg
       type: testnet
       kind: evm
@@ -648,7 +728,10 @@ datasets:
         logs: {}
   cyber-mainnet:
     metadata:
-      display_name: Cyber Mainnet
+      display_name: Cyber
+      aliases:
+        - Cyber Mainnet
+      ecosystem: cyber
       logo_url: https://cdn.subsquid.io/img/networks/cyber.svg
       type: mainnet
       kind: evm
@@ -662,6 +745,7 @@ datasets:
   cyberconnect-l2-testnet:
     metadata:
       display_name: Cyberconnect L2 Testnet
+      ecosystem: cyberconnect-l2
       logo_url: https://cdn.subsquid.io/img/networks/cyber.svg
       type: testnet
       kind: evm
@@ -676,7 +760,10 @@ datasets:
         state_diffs: {}
   dancelight-testnet:
     metadata:
-      display_name: Dancelight
+      display_name: Dancelight Testnet
+      aliases:
+        - Dancelight
+      ecosystem: tanssi
       logo_url: https://cdn.subsquid.io/img/networks/tanssi.png
       type: testnet
       kind: evm
@@ -686,6 +773,7 @@ datasets:
   degen-chain:
     metadata:
       display_name: Degen Chain
+      ecosystem: degen-chain
       logo_url: https://cdn.subsquid.io/img/networks/degen.svg
       type: mainnet
       kind: evm
@@ -699,6 +787,7 @@ datasets:
   dfk-chain:
     metadata:
       display_name: DFK Chain
+      ecosystem: dfk-chain
       logo_url: https://cdn.subsquid.io/img/networks/dfk.png
       type: mainnet
       kind: evm
@@ -712,6 +801,7 @@ datasets:
   dogechain-mainnet:
     metadata:
       display_name: Dogechain
+      ecosystem: dogechain
       logo_url: https://cdn.subsquid.io/img/networks/dogechain.png
       type: mainnet
       kind: evm
@@ -725,6 +815,7 @@ datasets:
   dogechain-testnet:
     metadata:
       display_name: Dogechain Testnet
+      ecosystem: dogechain
       logo_url: https://cdn.subsquid.io/img/networks/dogechain.png
       type: testnet
       kind: evm
@@ -738,6 +829,7 @@ datasets:
   ethereum-holesky:
     metadata:
       display_name: Ethereum Holesky
+      ecosystem: ethereum
       logo_url: https://cdn.subsquid.io/img/networks/ethereum.svg
       type: testnet
       kind: evm
@@ -753,6 +845,7 @@ datasets:
   ethereum-hoodi:
     metadata:
       display_name: Ethereum Hoodi
+      ecosystem: ethereum
       logo_url: https://cdn.subsquid.io/img/networks/ethereum.svg
       type: testnet
       kind: evm
@@ -762,6 +855,7 @@ datasets:
   ethereum-mainnet:
     metadata:
       display_name: Ethereum
+      ecosystem: ethereum
       logo_url: https://cdn.subsquid.io/img/networks/ethereum.svg
       type: mainnet
       kind: evm
@@ -777,6 +871,7 @@ datasets:
   ethereum-sepolia:
     metadata:
       display_name: Ethereum Sepolia
+      ecosystem: ethereum
       logo_url: https://cdn.subsquid.io/img/networks/ethereum.svg
       type: testnet
       kind: evm
@@ -791,7 +886,10 @@ datasets:
         state_diffs: {}
   etherlink-mainnet:
     metadata:
-      display_name: Etherlink Mainnet
+      display_name: Etherlink
+      aliases:
+        - Etherlink Mainnet
+      ecosystem: etherlink
       logo_url: https://cdn.subsquid.io/img/networks/etherlink.png
       type: mainnet
       kind: evm
@@ -805,6 +903,7 @@ datasets:
   etherlink-shadownet:
     metadata:
       display_name: Etherlink Shadownet
+      ecosystem: etherlink
       logo_url: https://cdn.subsquid.io/img/networks/etherlink.png
       type: testnet
       kind: evm
@@ -818,6 +917,7 @@ datasets:
   etherlink-testnet:
     metadata:
       display_name: Etherlink Testnet
+      ecosystem: etherlink
       logo_url: https://cdn.subsquid.io/img/networks/etherlink.png
       type: testnet
       kind: evm
@@ -830,7 +930,10 @@ datasets:
         logs: {}
   exosama:
     metadata:
-      display_name: Exosama
+      display_name: Exosama Network
+      aliases:
+        - Exosama
+      ecosystem: exosama
       logo_url: https://cdn.subsquid.io/img/networks/exn.png
       type: mainnet
       kind: evm
@@ -846,6 +949,7 @@ datasets:
   flare-mainnet:
     metadata:
       display_name: Flare
+      ecosystem: flare
       logo_url: https://cdn.subsquid.io/img/networks/flare.png
       type: mainnet
       kind: evm
@@ -859,6 +963,7 @@ datasets:
   formicarium-testnet:
     metadata:
       display_name: MemeCore Testnet (Formicarium)
+      ecosystem: memecore
       logo_url: https://cdn.subsquid.io/img/networks/memecore.svg
       type: testnet
       kind: evm
@@ -873,7 +978,10 @@ datasets:
         state_diffs: {}
   galxe-gravity:
     metadata:
-      display_name: Gravity
+      display_name: Gravity Alpha
+      aliases:
+        - Gravity
+      ecosystem: galxe-gravity
       logo_url: https://cdn.subsquid.io/img/networks/gravity.png
       type: mainnet
       kind: evm
@@ -889,6 +997,7 @@ datasets:
   gelato-arbitrum-blueberry:
     metadata:
       display_name: Arbitrum Blueberry
+      ecosystem: gelato-arbitrum-blueberry
       logo_url: https://cdn.subsquid.io/img/networks/gelato.svg
       type: testnet
       kind: evm
@@ -903,6 +1012,7 @@ datasets:
     metadata:
       kind: evm
       display_name: Gelato OP Celestia Raspberry
+      ecosystem: gelato-opcelestia-raspberry
       type: testnet
       logo_url: https://cdn.subsquid.io/img/networks/gelato.svg
       evm:
@@ -915,6 +1025,7 @@ datasets:
   gnosis-mainnet:
     metadata:
       display_name: Gnosis
+      ecosystem: gnosis
       logo_url: https://cdn.subsquid.io/img/networks/gnosis.png
       type: mainnet
       kind: evm
@@ -929,7 +1040,10 @@ datasets:
         state_diffs: {}
   hedera-mainnet:
     metadata:
-      display_name: Hedera Mainnet
+      display_name: Hedera
+      aliases:
+        - Hedera Mainnet
+      ecosystem: hedera
       logo_url: https://cdn.subsquid.io/img/networks/hedera.png
       type: mainnet
       kind: evm
@@ -938,7 +1052,10 @@ datasets:
     schema: {}
   hemi-mainnet:
     metadata:
-      display_name: Hemi Mainnet
+      display_name: Hemi
+      aliases:
+        - Hemi Mainnet
+      ecosystem: hemi
       logo_url: https://cdn.subsquid.io/img/networks/hemi.jpg
       type: mainnet
       kind: evm
@@ -948,6 +1065,7 @@ datasets:
   hemi-testnet:
     metadata:
       display_name: Hemi Testnet
+      ecosystem: hemi
       logo_url: https://cdn.subsquid.io/img/networks/hemi.jpg
       type: testnet
       kind: evm
@@ -956,7 +1074,10 @@ datasets:
     schema: {}
   hyperliquid-mainnet:
     metadata:
-      display_name: HyperEVM Mainnet
+      display_name: HyperEVM
+      aliases:
+        - HyperEVM Mainnet
+      ecosystem: hyperliquid
       logo_url: https://cdn.subsquid.io/img/networks/hyperliquid.svg
       type: mainnet
       kind: evm
@@ -972,6 +1093,7 @@ datasets:
   hyperliquid-testnet:
     metadata:
       display_name: HyperEVM Testnet
+      ecosystem: hyperliquid
       logo_url: https://cdn.subsquid.io/img/networks/hyperliquid.svg
       type: testnet
       kind: evm
@@ -985,6 +1107,7 @@ datasets:
   immutable-zkevm-mainnet:
     metadata:
       display_name: Immutable zkEVM
+      ecosystem: immutable-zkevm
       logo_url: https://cdn.subsquid.io/img/networks/immutable.png
       type: mainnet
       kind: evm
@@ -998,6 +1121,7 @@ datasets:
   immutable-zkevm-testnet:
     metadata:
       display_name: Immutable zkEVM Testnet
+      ecosystem: immutable-zkevm
       logo_url: https://cdn.subsquid.io/img/networks/immutable.png
       type: testnet
       kind: evm
@@ -1010,7 +1134,10 @@ datasets:
         logs: {}
   ink-mainnet:
     metadata:
-      display_name: Ink Mainnet
+      display_name: Ink
+      aliases:
+        - Ink Mainnet
+      ecosystem: ink
       logo_url: https://cdn.subsquid.io/img/networks/ink.svg
       type: mainnet
       kind: evm
@@ -1026,6 +1153,7 @@ datasets:
   ink-sepolia:
     metadata:
       display_name: Ink Sepolia
+      ecosystem: ink
       logo_url: https://cdn.subsquid.io/img/networks/ink.svg
       type: testnet
       kind: evm
@@ -1035,7 +1163,10 @@ datasets:
   katana-mainnet:
     metadata:
       kind: evm
-      display_name: Katana Mainnet
+      display_name: Katana
+      aliases:
+        - Katana Mainnet
+      ecosystem: katana
       type: mainnet
       logo_url: https://cdn.subsquid.io/img/networks/katana.png
       evm:
@@ -1050,6 +1181,7 @@ datasets:
   kyoto-testnet:
     metadata:
       display_name: Kyoto Testnet
+      ecosystem: kyoto
       logo_url: https://cdn.subsquid.io/img/networks/kyoto.png
       type: testnet
       kind: evm
@@ -1063,6 +1195,7 @@ datasets:
   linea-mainnet:
     metadata:
       display_name: Linea
+      ecosystem: linea
       logo_url: https://cdn.subsquid.io/img/networks/linea.png
       type: mainnet
       kind: evm
@@ -1076,7 +1209,10 @@ datasets:
         traces: {}
   lukso-mainnet:
     metadata:
-      display_name: Lukso Mainnet
+      display_name: LUKSO
+      aliases:
+        - Lukso Mainnet
+      ecosystem: lukso
       logo_url: https://cdn.subsquid.io/img/networks/lukso.svg
       type: mainnet
       kind: evm
@@ -1090,6 +1226,7 @@ datasets:
   manta-pacific:
     metadata:
       display_name: Manta Pacific
+      ecosystem: manta-pacific
       logo_url: https://cdn.subsquid.io/img/networks/manta.png
       type: mainnet
       kind: evm
@@ -1103,6 +1240,7 @@ datasets:
   manta-pacific-sepolia:
     metadata:
       display_name: Manta Pacific Sepolia
+      ecosystem: manta-pacific
       logo_url: https://cdn.subsquid.io/img/networks/manta.png
       type: testnet
       kind: evm
@@ -1116,6 +1254,7 @@ datasets:
   mantle-mainnet:
     metadata:
       display_name: Mantle
+      ecosystem: mantle
       logo_url: https://cdn.subsquid.io/img/networks/mantle.png
       type: mainnet
       kind: evm
@@ -1129,6 +1268,7 @@ datasets:
   mantle-sepolia:
     metadata:
       display_name: Mantle Sepolia
+      ecosystem: mantle
       logo_url: https://cdn.subsquid.io/img/networks/mantle.png
       type: testnet
       kind: evm
@@ -1141,7 +1281,10 @@ datasets:
         logs: {}
   megaeth-mainnet:
     metadata:
-      display_name: MegaETH Mainnet
+      display_name: MegaETH
+      aliases:
+        - MegaETH Mainnet
+      ecosystem: megaeth
       logo_url: https://cdn.subsquid.io/img/networks/mega.png
       type: mainnet
       kind: evm
@@ -1155,6 +1298,7 @@ datasets:
   megaeth-testnet:
     metadata:
       display_name: MegaETH Testnet
+      ecosystem: megaeth
       logo_url: https://cdn.subsquid.io/img/networks/mega.png
       type: testnet
       kind: evm
@@ -1168,6 +1312,7 @@ datasets:
   memecore-insectarium:
     metadata:
       display_name: MemeCore Testnet (Insectarium)
+      ecosystem: memecore
       logo_url: https://cdn.subsquid.io/img/networks/memecore.svg
       type: testnet
       kind: evm
@@ -1182,7 +1327,10 @@ datasets:
         state_diffs: {}
   memecore-mainnet:
     metadata:
-      display_name: MemeCore Mainnet
+      display_name: MemeCore
+      aliases:
+        - MemeCore Mainnet
+      ecosystem: memecore
       logo_url: https://cdn.subsquid.io/img/networks/memecore.svg
       type: mainnet
       kind: evm
@@ -1197,7 +1345,10 @@ datasets:
         state_diffs: {}
   merlin-mainnet:
     metadata:
-      display_name: Merlin Mainnet
+      display_name: Merlin
+      aliases:
+        - Merlin Mainnet
+      ecosystem: merlin
       logo_url: https://cdn.subsquid.io/img/networks/merlin.jpg
       type: mainnet
       kind: evm
@@ -1211,6 +1362,7 @@ datasets:
   merlin-testnet:
     metadata:
       display_name: Merlin Testnet
+      ecosystem: merlin
       logo_url: https://cdn.subsquid.io/img/networks/won.png
       type: testnet
       kind: evm
@@ -1223,7 +1375,10 @@ datasets:
         logs: {}
   metis-mainnet:
     metadata:
-      display_name: Metis
+      display_name: Metis Andromeda
+      aliases:
+        - Metis
+      ecosystem: metis
       logo_url: https://cdn.subsquid.io/img/networks/metis.svg
       type: mainnet
       kind: evm
@@ -1237,7 +1392,10 @@ datasets:
         traces: {}
   mode-mainnet:
     metadata:
-      display_name: Mode Mainnet
+      display_name: Mode
+      aliases:
+        - Mode Mainnet
+      ecosystem: mode
       logo_url: https://cdn.subsquid.io/img/networks/mode.png
       type: mainnet
       kind: evm
@@ -1250,7 +1408,10 @@ datasets:
         logs: {}
   monad-mainnet:
     metadata:
-      display_name: Monad Mainnet
+      display_name: Monad
+      aliases:
+        - Monad Mainnet
+      ecosystem: monad
       logo_url: https://cdn.subsquid.io/img/networks/monad.png
       type: mainnet
       kind: evm
@@ -1264,6 +1425,7 @@ datasets:
   monad-testnet:
     metadata:
       display_name: Monad Testnet
+      ecosystem: monad
       logo_url: https://cdn.subsquid.io/img/networks/monad.png
       type: testnet
       kind: evm
@@ -1277,6 +1439,7 @@ datasets:
   moonbase-testnet:
     metadata:
       display_name: Moonbase Alpha
+      ecosystem: moonbase
       logo_url: https://cdn.subsquid.io/img/networks/moonbasealpha.png
       type: testnet
       kind: evm
@@ -1290,6 +1453,7 @@ datasets:
   moonbeam-mainnet:
     metadata:
       display_name: Moonbeam
+      ecosystem: moonbeam
       logo_url: https://cdn.subsquid.io/img/networks/moonbeam.png
       type: mainnet
       kind: evm
@@ -1304,6 +1468,7 @@ datasets:
   moonriver-mainnet:
     metadata:
       display_name: Moonriver
+      ecosystem: moonriver
       logo_url: https://cdn.subsquid.io/img/networks/moonriver.png
       type: mainnet
       kind: evm
@@ -1318,7 +1483,10 @@ datasets:
   moonsama:
     metadata:
       kind: evm
-      display_name: Moonsama
+      display_name: Moonsama Network
+      aliases:
+        - Moonsama
+      ecosystem: moonsama
       logo_url: https://cdn.subsquid.io/img/networks/moonsama.svg
       type: mainnet
       evm:
@@ -1331,6 +1499,7 @@ datasets:
   nakachain:
     metadata:
       display_name: Naka Chain
+      ecosystem: nakachain
       logo_url: https://cdn.subsquid.io/img/networks/naka-chain.png
       type: mainnet
       kind: evm
@@ -1344,6 +1513,7 @@ datasets:
   neon-devnet:
     metadata:
       display_name: Neon EVM Devnet
+      ecosystem: neon
       logo_url: https://cdn.subsquid.io/img/networks/neon.png
       type: devnet
       kind: evm
@@ -1357,6 +1527,7 @@ datasets:
   neon-mainnet:
     metadata:
       display_name: Neon EVM
+      ecosystem: neon
       logo_url: https://cdn.subsquid.io/img/networks/neon.png
       type: mainnet
       kind: evm
@@ -1371,6 +1542,7 @@ datasets:
     metadata:
       kind: evm
       display_name: Neo X Testnet
+      ecosystem: neox
       type: testnet
       logo_url: https://cdn.subsquid.io/img/networks/neox.svg
       evm:
@@ -1385,6 +1557,7 @@ datasets:
   opbnb-mainnet:
     metadata:
       display_name: opBNB
+      ecosystem: opbnb
       logo_url: https://cdn.subsquid.io/img/networks/opbnb.png
       type: mainnet
       kind: evm
@@ -1398,6 +1571,7 @@ datasets:
   opbnb-testnet:
     metadata:
       display_name: opBNB Testnet
+      ecosystem: opbnb
       logo_url: https://cdn.subsquid.io/img/networks/opbnb.png
       type: testnet
       kind: evm
@@ -1411,6 +1585,7 @@ datasets:
   optimism-mainnet:
     metadata:
       display_name: Optimism
+      ecosystem: optimism
       logo_url: https://cdn.subsquid.io/img/networks/optimism.svg
       type: mainnet
       kind: evm
@@ -1426,6 +1601,7 @@ datasets:
   optimism-sepolia:
     metadata:
       display_name: Optimism Sepolia
+      ecosystem: optimism
       logo_url: https://cdn.subsquid.io/img/networks/optimism.svg
       type: testnet
       kind: evm
@@ -1439,6 +1615,7 @@ datasets:
   ozean-testnet:
     metadata:
       display_name: Ozean Testnet
+      ecosystem: ozean
       logo_url: https://cdn.subsquid.io/img/networks/ozean.svg
       type: testnet
       kind: evm
@@ -1454,6 +1631,7 @@ datasets:
   peaq-mainnet:
     metadata:
       display_name: Peaq
+      ecosystem: peaq
       logo_url: https://cdn.subsquid.io/img/networks/peaq.png
       type: mainnet
       kind: evm
@@ -1467,7 +1645,10 @@ datasets:
   plasma-mainnet:
     metadata:
       kind: evm
-      display_name: Plasma Mainnet
+      display_name: Plasma
+      aliases:
+        - Plasma Mainnet
+      ecosystem: plasma
       type: mainnet
       logo_url: https://cdn.subsquid.io/img/networks/plasma.svg
       evm:
@@ -1483,6 +1664,7 @@ datasets:
     metadata:
       kind: evm
       display_name: Plasma Testnet
+      ecosystem: plasma
       type: testnet
       logo_url: https://cdn.subsquid.io/img/networks/plasma.svg
       evm:
@@ -1494,39 +1676,15 @@ datasets:
         logs: {}
         traces: {}
         state_diffs: {}
-  plume:
-    metadata:
-      display_name: Plume Mainnet
-      logo_url: https://cdn.subsquid.io/img/networks/plume.png
-      type: mainnet
-      kind: evm
-      evm:
-        chain_id: 98866
-    schema: {}
-  plume-devnet:
-    metadata:
-      display_name: Plume Devnet
-      logo_url: https://cdn.subsquid.io/img/networks/plume.png
-      type: devnet
-      kind: evm
-      evm:
-        chain_id: 98864
-    schema: {}
-  plume-legacy:
-    metadata:
-      display_name: Plume Mainnet (Legacy)
-      logo_url: https://cdn.subsquid.io/img/networks/plume.png
-      type: mainnet
-      kind: evm
-      evm:
-        chain_id: 98865
-    schema: {}
   plume-mainnet:
     metadata:
-      kind: evm
-      display_name: Plume Mainnet
-      type: mainnet
+      display_name: Plume
+      aliases:
+        - Plume Mainnet
+      ecosystem: plume
       logo_url: https://cdn.subsquid.io/img/networks/plume.png
+      type: mainnet
+      kind: evm
       evm:
         chain_id: 98866
     schema:
@@ -1539,6 +1697,7 @@ datasets:
   plume-testnet:
     metadata:
       display_name: Plume Testnet
+      ecosystem: plume
       logo_url: https://cdn.subsquid.io/img/networks/plume.png
       type: testnet
       kind: evm
@@ -1554,6 +1713,7 @@ datasets:
   polygon-amoy-testnet:
     metadata:
       display_name: Polygon Amoy Testnet
+      ecosystem: polygon
       logo_url: https://cdn.subsquid.io/img/networks/polygon.png
       type: testnet
       kind: evm
@@ -1567,6 +1727,7 @@ datasets:
   polygon-mainnet:
     metadata:
       display_name: Polygon
+      ecosystem: polygon
       logo_url: https://cdn.subsquid.io/img/networks/polygon.png
       type: mainnet
       kind: evm
@@ -1581,6 +1742,7 @@ datasets:
   polygon-zkevm-cardona-testnet:
     metadata:
       display_name: Polygon zkEVM Cardona Testnet
+      ecosystem: polygon-zkevm
       logo_url: https://cdn.subsquid.io/img/networks/zkevm.png
       type: testnet
       kind: evm
@@ -1594,6 +1756,7 @@ datasets:
   polygon-zkevm-mainnet:
     metadata:
       display_name: Polygon zkEVM
+      ecosystem: polygon-zkevm
       logo_url: https://cdn.subsquid.io/img/networks/zkevm.png
       type: mainnet
       kind: evm
@@ -1607,6 +1770,7 @@ datasets:
   poseidon-testnet:
     metadata:
       display_name: Poseidon Testnet
+      ecosystem: poseidon
       logo_url: https://cdn.subsquid.io/img/networks/ozean.svg
       type: testnet
       kind: evm
@@ -1615,7 +1779,10 @@ datasets:
     schema: {}
   prom-mainnet:
     metadata:
-      display_name: Prom Mainnet
+      display_name: Prom
+      aliases:
+        - Prom Mainnet
+      ecosystem: prom
       logo_url: https://cdn.subsquid.io/img/networks/prom.png
       type: mainnet
       kind: evm
@@ -1631,6 +1798,7 @@ datasets:
   puppynet:
     metadata:
       display_name: Puppynet (Shibarium's Testnet)
+      ecosystem: shibarium
       logo_url: https://cdn.subsquid.io/img/networks/shibarium.png
       type: testnet
       kind: evm
@@ -1646,6 +1814,7 @@ datasets:
   scroll-mainnet:
     metadata:
       display_name: Scroll
+      ecosystem: scroll
       logo_url: https://cdn.subsquid.io/img/networks/scroll.png
       type: mainnet
       kind: evm
@@ -1660,6 +1829,7 @@ datasets:
   scroll-sepolia:
     metadata:
       display_name: Scroll Sepolia
+      ecosystem: scroll
       logo_url: https://cdn.subsquid.io/img/networks/scroll.png
       type: testnet
       kind: evm
@@ -1673,7 +1843,10 @@ datasets:
         traces: {}
   sei-mainnet:
     metadata:
-      display_name: Sei Mainnet
+      display_name: Sei Network
+      aliases:
+        - Sei Mainnet
+      ecosystem: sei
       logo_url: https://cdn.subsquid.io/img/networks/sei.png
       type: mainnet
       kind: evm
@@ -1687,6 +1860,7 @@ datasets:
   sei-testnet:
     metadata:
       display_name: Sei Testnet
+      ecosystem: sei
       logo_url: https://cdn.subsquid.io/img/networks/sei.png
       type: testnet
       kind: evm
@@ -1700,6 +1874,7 @@ datasets:
   shibarium:
     metadata:
       display_name: Shibarium
+      ecosystem: shibarium
       logo_url: https://cdn.subsquid.io/img/networks/shibarium.png
       type: mainnet
       kind: evm
@@ -1715,6 +1890,7 @@ datasets:
   shibuya-testnet:
     metadata:
       display_name: Shibuya
+      ecosystem: shibuya
       logo_url: https://cdn.subsquid.io/img/networks/astar.svg
       type: testnet
       kind: evm
@@ -1728,6 +1904,7 @@ datasets:
   shiden-mainnet:
     metadata:
       display_name: Shiden
+      ecosystem: shiden
       logo_url: https://cdn.subsquid.io/img/networks/shiden.png
       type: mainnet
       kind: evm
@@ -1740,7 +1917,10 @@ datasets:
         logs: {}
   skale-nebula:
     metadata:
-      display_name: Skale Nebula
+      display_name: SKALE Nebula Hub
+      aliases:
+        - Skale Nebula
+      ecosystem: skale-nebula
       logo_url: https://cdn.subsquid.io/img/networks/nebula.png
       type: mainnet
       kind: evm
@@ -1753,7 +1933,10 @@ datasets:
         logs: {}
   soneium-mainnet:
     metadata:
-      display_name: Soneium Mainnet
+      display_name: Soneium
+      aliases:
+        - Soneium Mainnet
+      ecosystem: soneium
       logo_url: https://cdn.subsquid.io/img/networks/soneium.svg
       type: mainnet
       kind: evm
@@ -1767,6 +1950,7 @@ datasets:
   soneium-minato-testnet:
     metadata:
       display_name: Soneium Minato Testnet
+      ecosystem: soneium
       logo_url: https://cdn.subsquid.io/img/networks/soneium.svg
       type: testnet
       kind: evm
@@ -1781,7 +1965,10 @@ datasets:
         state_diffs: {}
   sonic-mainnet:
     metadata:
-      display_name: Sonic Mainnet
+      display_name: Sonic
+      aliases:
+        - Sonic Mainnet
+      ecosystem: sonic
       logo_url: https://cdn.subsquid.io/img/networks/sonic.png
       type: mainnet
       kind: evm
@@ -1796,6 +1983,7 @@ datasets:
   sonic-testnet:
     metadata:
       display_name: Sonic Testnet
+      ecosystem: sonic
       logo_url: https://cdn.subsquid.io/img/networks/sonic.png
       type: testnet
       kind: evm
@@ -1809,7 +1997,10 @@ datasets:
         traces: {}
   stable-mainnet:
     metadata:
-      display_name: Stable Mainnet
+      display_name: Stable
+      aliases:
+        - Stable Mainnet
+      ecosystem: stable
       logo_url: https://cdn.subsquid.io/img/networks/stable.png
       type: mainnet
       kind: evm
@@ -1823,6 +2014,7 @@ datasets:
   stable-testnet:
     metadata:
       display_name: Stable Testnet
+      ecosystem: stable
       logo_url: https://cdn.subsquid.io/img/networks/stable.png
       type: testnet
       kind: evm
@@ -1836,6 +2028,7 @@ datasets:
   stratovm-sepolia:
     metadata:
       display_name: StratoVM Sepolia
+      ecosystem: stratovm
       logo_url: https://cdn.subsquid.io/img/networks/stratovm.png
       type: testnet
       kind: evm
@@ -1850,7 +2043,10 @@ datasets:
         state_diffs: {}
   superseed-mainnet:
     metadata:
-      display_name: Superseed Mainnet
+      display_name: Superseed
+      aliases:
+        - Superseed Mainnet
+      ecosystem: superseed
       logo_url: https://cdn.subsquid.io/img/networks/superseed.png
       type: mainnet
       kind: evm
@@ -1864,6 +2060,7 @@ datasets:
   superseed-sepolia:
     metadata:
       display_name: Superseed Sepolia
+      ecosystem: superseed
       logo_url: https://cdn.subsquid.io/img/networks/superseed.png
       type: testnet
       kind: evm
@@ -1877,7 +2074,10 @@ datasets:
   tac-mainnet:
     metadata:
       kind: evm
-      display_name: TAC Mainnet
+      display_name: TAC
+      aliases:
+        - TAC Mainnet
+      ecosystem: tac
       type: mainnet
       logo_url: https://cdn.subsquid.io/img/networks/tac.png
       evm:
@@ -1889,7 +2089,10 @@ datasets:
         logs: {}
   taiko-mainnet:
     metadata:
-      display_name: Taiko Mainnet
+      display_name: Taiko Alethia
+      aliases:
+        - Taiko Mainnet
+      ecosystem: taiko
       logo_url: https://cdn.subsquid.io/img/networks/taiko.png
       type: mainnet
       kind: evm
@@ -1903,6 +2106,7 @@ datasets:
   tanssi:
     metadata:
       display_name: Tanssi
+      ecosystem: tanssi
       logo_url: https://cdn.subsquid.io/img/networks/tanssi.png
       type: mainnet
       kind: evm
@@ -1916,7 +2120,10 @@ datasets:
   tempo-mainnet:
     metadata:
       kind: evm
-      display_name: Tempo Mainnet
+      display_name: Tempo
+      aliases:
+        - Tempo Mainnet
+      ecosystem: tempo
       type: mainnet
       logo_url: https://cdn.subsquid.io/img/networks/tempo.png
       evm:
@@ -1930,7 +2137,10 @@ datasets:
         state_diffs: {}
   unichain-mainnet:
     metadata:
-      display_name: Unichain Mainnet
+      display_name: Unichain
+      aliases:
+        - Unichain Mainnet
+      ecosystem: unichain
       logo_url: https://cdn.subsquid.io/img/networks/unichain.svg
       type: mainnet
       kind: evm
@@ -1946,6 +2156,7 @@ datasets:
   unichain-sepolia:
     metadata:
       display_name: Unichain Sepolia
+      ecosystem: unichain
       logo_url: https://cdn.subsquid.io/img/networks/unichain.svg
       type: testnet
       kind: evm
@@ -1959,7 +2170,10 @@ datasets:
   worldchain-mainnet:
     metadata:
       kind: evm
-      display_name: Worldchain Mainnet
+      display_name: World Chain
+      aliases:
+        - Worldchain Mainnet
+      ecosystem: worldchain
       type: mainnet
       logo_url: https://cdn.subsquid.io/img/networks/world.png
       evm:
@@ -1973,6 +2187,7 @@ datasets:
     metadata:
       kind: evm
       display_name: X Layer Testnet
+      ecosystem: xlayer
       type: testnet
       logo_url: https://cdn.subsquid.io/img/networks/xlayer.svg
       evm:
@@ -1984,7 +2199,10 @@ datasets:
         logs: {}
   xlayer-mainnet:
     metadata:
-      display_name: X Layer Mainnet
+      display_name: X Layer
+      aliases:
+        - X Layer Mainnet
+      ecosystem: xlayer
       logo_url: https://cdn.subsquid.io/img/networks/xlayer.svg
       type: mainnet
       kind: evm
@@ -1998,6 +2216,7 @@ datasets:
   xlayer-testnet:
     metadata:
       display_name: X Layer Testnet
+      ecosystem: xlayer
       logo_url: https://cdn.subsquid.io/img/networks/xlayer.svg
       type: testnet
       kind: evm
@@ -2010,7 +2229,10 @@ datasets:
         logs: {}
   zklink-nova-mainnet:
     metadata:
-      display_name: zkLink Nova Mainnet
+      display_name: zkLink Nova
+      aliases:
+        - zkLink Nova Mainnet
+      ecosystem: zklink-nova
       logo_url: https://cdn.subsquid.io/img/networks/zklink-nova.png
       type: mainnet
       kind: evm
@@ -2025,6 +2247,7 @@ datasets:
   zksync-mainnet:
     metadata:
       display_name: zkSync
+      ecosystem: zksync
       logo_url: https://cdn.subsquid.io/img/networks/zksync-era.svg
       type: mainnet
       kind: evm
@@ -2039,6 +2262,7 @@ datasets:
   zksync-sepolia:
     metadata:
       display_name: zkSync Sepolia
+      ecosystem: zksync
       logo_url: https://cdn.subsquid.io/img/networks/zksync-era.svg
       type: testnet
       kind: evm
@@ -2053,6 +2277,7 @@ datasets:
   zora-mainnet:
     metadata:
       display_name: Zora
+      ecosystem: zora
       logo_url: https://cdn.subsquid.io/img/networks/zora.png
       type: mainnet
       kind: evm
@@ -2068,6 +2293,7 @@ datasets:
   zora-sepolia:
     metadata:
       display_name: Zora Sepolia
+      ecosystem: zora
       logo_url: https://cdn.subsquid.io/img/networks/zora-sepolia-testnet.png
       type: testnet
       kind: evm
@@ -2082,6 +2308,7 @@ datasets:
     metadata:
       kind: hyperliquidFills
       display_name: Hyperliquid
+      ecosystem: hyperliquid
       logo_url: https://cdn.subsquid.io/img/networks/hyperliquid.svg
     schema:
       tables:
@@ -2091,6 +2318,8 @@ datasets:
     metadata:
       kind: hyperliquidReplicaCmds
       logo_url: https://cdn.subsquid.io/img/networks/hyperliquid.svg
+      display_name: Hyperliquid Replica Commands
+      ecosystem: hyperliquid
     schema:
       tables:
         blocks: {}
@@ -2099,7 +2328,10 @@ datasets:
     metadata:
       kind: solana
       type: mainnet
-      display_name: Eclipse Mainnet
+      display_name: Eclipse
+      aliases:
+        - Eclipse Mainnet
+      ecosystem: eclipse
       logo_url: https://cdn.subsquid.io/img/networks/eclipse.svg
     schema:
       tables:
@@ -2114,6 +2346,7 @@ datasets:
       kind: solana
       type: testnet
       display_name: Eclipse Testnet
+      ecosystem: eclipse
       logo_url: https://cdn.subsquid.io/img/networks/eclipse.svg
     schema:
       tables:
@@ -2128,6 +2361,7 @@ datasets:
       kind: solana
       type: devnet
       display_name: Solana Devnet
+      ecosystem: solana
       logo_url: https://cdn.subsquid.io/img/networks/solana.svg
     schema:
       tables:
@@ -2142,6 +2376,7 @@ datasets:
       kind: solana
       type: mainnet
       display_name: Solana
+      ecosystem: solana
       logo_url: https://cdn.subsquid.io/img/networks/solana.svg
     schema:
       tables:
@@ -2156,6 +2391,7 @@ datasets:
       kind: solana
       type: devnet
       display_name: Soon Devnet
+      ecosystem: soon
       logo_url: https://cdn.subsquid.io/img/networks/soon.png
     schema:
       tables:
@@ -2169,7 +2405,10 @@ datasets:
     metadata:
       kind: solana
       type: mainnet
-      display_name: Soon Mainnet
+      display_name: Soon
+      aliases:
+        - Soon Mainnet
+      ecosystem: soon
       logo_url: https://cdn.subsquid.io/img/networks/soon.png
     schema:
       tables:
@@ -2184,6 +2423,7 @@ datasets:
       kind: solana
       type: testnet
       display_name: Soon Testnet
+      ecosystem: soon
       logo_url: https://cdn.subsquid.io/img/networks/soon.png
     schema:
       tables:
@@ -2198,6 +2438,7 @@ datasets:
       kind: solana
       type: mainnet
       display_name: SVM BNB
+      ecosystem: svm-bnb
       logo_url: https://cdn.subsquid.io/img/networks/bnb.svg
     schema:
       tables:
@@ -2212,6 +2453,7 @@ datasets:
       kind: solana
       type: testnet
       display_name: SVM BNB Testnet
+      ecosystem: svm-bnb
       logo_url: https://cdn.subsquid.io/img/networks/bnb.svg
     schema:
       tables:
@@ -2225,416 +2467,589 @@ datasets:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/acala.svg
+      display_name: Acala
+      ecosystem: acala
     schema: {}
   acurast-canary:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/acurast.svg
+      display_name: Acurast Canary
+      ecosystem: acurast-canary
     schema: {}
   agung:
     metadata:
       kind: substrate
+      display_name: Agung (Substrate)
+      ecosystem: agung
     schema: {}
   aleph-zero:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/aleph.svg
+      display_name: Aleph Zero
+      ecosystem: aleph-zero
     schema: {}
   aleph-zero-testnet:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/aleph.svg
+      display_name: Aleph Zero Testnet
+      ecosystem: aleph-zero
     schema: {}
   amplitude:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/amplitude.svg
+      display_name: Amplitude
+      ecosystem: amplitude
     schema: {}
   asset-hub-kusama:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/assethub-kusama.svg
+      display_name: Kusama Asset Hub
+      ecosystem: asset-hub-kusama
     schema: {}
   asset-hub-paseo:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/assethub.svg
+      display_name: Paseo Asset Hub
+      ecosystem: asset-hub-paseo
     schema: {}
   asset-hub-polkadot:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/assethub.svg
+      display_name: Polkadot Asset Hub
+      ecosystem: asset-hub-polkadot
     schema: {}
   asset-hub-rococo:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/assethub.svg
+      display_name: Rococo Asset Hub
+      ecosystem: asset-hub-rococo
     schema: {}
   asset-hub-westend:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/assethub.svg
+      display_name: Westend Asset Hub
+      ecosystem: asset-hub-westend
     schema: {}
   astar-substrate:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/astar.png
+      display_name: Astar (Substrate)
+      ecosystem: astar
     schema: {}
   avail:
     metadata:
       kind: substrate
+      display_name: Avail
+      ecosystem: avail
     schema: {}
   basilisk:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/basilisk-rococo-bg.png
+      display_name: Basilisk
+      ecosystem: basilisk
     schema: {}
   bifrost-kusama:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/bifrost.svg
+      display_name: Bifrost Kusama
+      ecosystem: bifrost-kusama
     schema: {}
   bifrost-polkadot:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/bifrost.svg
+      display_name: Bifrost Polkadot
+      ecosystem: bifrost-polkadot
     schema: {}
   bittensor:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/bittensor.png
+      display_name: Bittensor (Substrate)
+      ecosystem: bittensor
     schema: {}
   bittensor-testnet:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/bittensor.png
+      display_name: Bittensor Testnet (Substrate)
+      ecosystem: bittensor
     schema: {}
   bridge-hub-kusama:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/bridgehub.svg
+      display_name: Kusama Bridge Hub
+      ecosystem: bridge-hub-kusama
     schema: {}
   bridge-hub-polkadot:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/bridgehub.svg
+      display_name: Polkadot Bridge Hub
+      ecosystem: bridge-hub-polkadot
     schema: {}
   bridge-hub-rococo:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/bridgehub.svg
+      display_name: Rococo Bridge Hub
+      ecosystem: bridge-hub-rococo
     schema: {}
   bridge-hub-westend:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/bridgehub.svg
+      display_name: Westend Bridge Hub
+      ecosystem: bridge-hub-westend
     schema: {}
   centrifuge:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/centrifuge.png
+      display_name: Centrifuge
+      ecosystem: centrifuge
     schema: {}
   cere:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/cere.svg
+      display_name: Cere
+      ecosystem: cere
     schema: {}
   chainflip:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/chainflip.png
+      display_name: Chainflip
+      ecosystem: chainflip
     schema: {}
   clover:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/clover.svg
+      display_name: Clover
+      ecosystem: clover
     schema: {}
   collectives-polkadot:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/collectives.svg
+      display_name: Polkadot Collectives
+      ecosystem: collectives-polkadot
     schema: {}
   collectives-westend:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/collectives.svg
+      display_name: Westend Collectives
+      ecosystem: collectives-westend
     schema: {}
   crust:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/crust-maxwell.svg
+      display_name: Crust
+      ecosystem: crust
     schema: {}
   dancebox:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/dancelight.svg
+      display_name: Dancebox
+      ecosystem: tanssi
     schema: {}
   darwinia:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/darwinia-koi.svg
+      display_name: Darwinia
+      ecosystem: darwinia
     schema: {}
   darwinia-crab:
     metadata:
       kind: substrate
+      display_name: Darwinia Crab
+      ecosystem: darwinia-crab
     schema: {}
   data-avail:
     metadata:
       kind: substrate
+      display_name: Avail (Legacy)
+      ecosystem: data-avail
     schema: {}
   eden:
     metadata:
       kind: substrate
+      display_name: Eden
+      ecosystem: eden
     schema: {}
   enjin-canary-matrix:
     metadata:
       kind: substrate
+      display_name: Enjin Canary Matrixchain
+      ecosystem: enjin-canary-matrix
     schema: {}
   enjin-matrix:
     metadata:
       kind: substrate
+      display_name: Enjin Matrixchain
+      ecosystem: enjin-matrix
     schema: {}
   enjin-relay:
     metadata:
       kind: substrate
+      display_name: Enjin Relaychain
+      ecosystem: enjin-relay
     schema: {}
   equilibrium:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/equilibrium.svg
+      display_name: Equilibrium
+      ecosystem: equilibrium
     schema: {}
   foucoco:
     metadata:
       kind: substrate
+      display_name: Foucoco
+      ecosystem: foucoco
     schema: {}
   frequency:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/frequency.svg
+      display_name: Frequency
+      ecosystem: frequency
     schema: {}
   gemini-3h:
     metadata:
       kind: substrate
+      display_name: Subspace Gemini 3h
+      ecosystem: gemini-3h
     schema: {}
   hydradx:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/hydration.svg
+      display_name: Hydration
+      ecosystem: hydradx
     schema: {}
   integritee:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/integritee.svg
+      display_name: Integritee
+      ecosystem: integritee
     schema: {}
   interlay:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/interlay.svg
+      display_name: Interlay
+      ecosystem: interlay
     schema: {}
   invarch-parachain:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/invarch.jpeg
+      display_name: InvArch
+      ecosystem: invarch-parachain
     schema: {}
   invarch-tinkernet:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/tinker.png
+      display_name: InvArch Tinkernet
+      ecosystem: invarch-tinkernet
     schema: {}
   joystream:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/joystream.svg
+      display_name: Joystream
+      ecosystem: joystream
     schema: {}
   karura:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/karura.svg
+      display_name: Karura
+      ecosystem: karura
     schema: {}
   khala:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/khala.svg
+      display_name: Khala
+      ecosystem: khala
     schema: {}
   kilt:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/kilt-icon.svg
+      display_name: KILT
+      ecosystem: kilt
     schema: {}
   kintsugi:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/kintsugi.png
+      display_name: Kintsugi
+      ecosystem: kintsugi
     schema: {}
   kusama:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/kusama.svg
+      display_name: Kusama
+      ecosystem: kusama
     schema: {}
   litentry:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/heima.svg
+      display_name: Heima
+      ecosystem: litentry
     schema: {}
   moonbase-substrate:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/moonbase_alpha.svg
+      display_name: Moonbase Alpha (Substrate)
+      ecosystem: moonbase
     schema: {}
   moonbeam-substrate:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/moonbeam.svg
+      display_name: Moonbeam (Substrate)
+      ecosystem: moonbeam
     schema: {}
   moonriver-substrate:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/moonriver.svg
+      display_name: Moonriver (Substrate)
+      ecosystem: moonriver
     schema: {}
   paseo:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/paseo.png
+      display_name: Paseo
+      ecosystem: paseo
     schema: {}
   peaq-mainnet-substrate:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/peaq.png
+      display_name: Peaq (Substrate)
+      ecosystem: peaq
     schema: {}
   pendulum:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/pendulum.svg
+      display_name: Pendulum
+      ecosystem: pendulum
     schema: {}
   people-chain:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/people-polkadot.svg
+      display_name: Polkadot People
+      ecosystem: people-chain
     schema: {}
   phala:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/phala.svg
+      display_name: Phala
+      ecosystem: phala
     schema: {}
   phala-testnet:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/phala.svg
+      display_name: Phala Testnet
+      ecosystem: phala
     schema: {}
   picasso:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/picasso.svg
+      display_name: Picasso
+      ecosystem: picasso
     schema: {}
   polimec:
     metadata:
       kind: substrate
+      display_name: Polimec
+      ecosystem: polimec
     schema: {}
   polkadex:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/polkadex.svg
+      display_name: Polkadex
+      ecosystem: polkadex
     schema: {}
   polkadot:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/polkadot-circle.svg
+      display_name: Polkadot
+      ecosystem: polkadot
     schema: {}
   polymesh:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/polymesh.svg
+      display_name: Polymesh
+      ecosystem: polymesh
     schema: {}
   reef:
     metadata:
       kind: substrate
+      display_name: Reef
+      ecosystem: reef
     schema: {}
   reef-testnet:
     metadata:
       kind: substrate
+      display_name: Reef Testnet
+      ecosystem: reef
     schema: {}
   robonomics:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/robonomics.svg
+      display_name: Robonomics
+      ecosystem: robonomics
     schema: {}
   rococo:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/rococo.svg
+      display_name: Rococo
+      ecosystem: rococo
     schema: {}
   rolimec:
     metadata:
       kind: substrate
+      display_name: Rolimec
+      ecosystem: rolimec
     schema: {}
   shibuya-substrate:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/shibuya.svg
+      display_name: Shibuya (Substrate)
+      ecosystem: shibuya
     schema: {}
   shiden-substrate:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/shiden.png
+      display_name: Shiden (Substrate)
+      ecosystem: shiden
     schema: {}
   sora-mainnet:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/sora-substrate.svg
+      display_name: SORA
+      ecosystem: sora
     schema: {}
   subsocial-parachain:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/subsocial.svg
+      display_name: Subsocial
+      ecosystem: subsocial-parachain
     schema: {}
   ternoa:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/ternoa.svg
+      display_name: Ternoa
+      ecosystem: ternoa
     schema: {}
   turing-avail:
     metadata:
       kind: substrate
+      display_name: Turing Avail
+      ecosystem: avail
     schema: {}
   turing-mainnet:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/turing.png
+      display_name: Turing
+      ecosystem: turing
     schema: {}
   vara:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/vara.svg
+      display_name: Vara
+      ecosystem: vara
     schema: {}
   vara-testnet:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/vara-testnet.png
+      display_name: Vara Testnet
+      ecosystem: vara
     schema: {}
   westend:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/westend_colour.svg
+      display_name: Westend
+      ecosystem: westend
     schema: {}
   zeitgeist:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/zeitgeist.png
+      display_name: Zeitgeist
+      ecosystem: zeitgeist
     schema: {}
   zeitgeist-testnet:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/zeitgeist.png
+      display_name: Zeitgeist Testnet
+      ecosystem: zeitgeist
     schema: {}
   zkverify-testnet:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/zkverify.png
+      display_name: zkVerify Testnet
+      ecosystem: zkverify
     schema: {}
   cronos-mainnet:
     metadata:
       kind: evm
-      display_name: Cronos Mainnet
+      display_name: Cronos
+      aliases:
+        - Cronos Mainnet
+      ecosystem: cronos
       type: mainnet
       logo_url: https://cdn.subsquid.io/img/networks/cronos.svg
       evm:
