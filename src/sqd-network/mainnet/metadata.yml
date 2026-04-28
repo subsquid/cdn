@@ -758,18 +758,6 @@ datasets:
         logs: {}
         traces: {}
         state_diffs: {}
-  dancelight-testnet:
-    metadata:
-      display_name: Dancelight Testnet
-      aliases:
-        - Dancelight
-      ecosystem: tanssi
-      logo_url: https://cdn.subsquid.io/img/networks/tanssi.png
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 5678
-    schema: {}
   degen-chain:
     metadata:
       display_name: Degen Chain
@@ -1038,40 +1026,6 @@ datasets:
         logs: {}
         traces: {}
         state_diffs: {}
-  hedera-mainnet:
-    metadata:
-      display_name: Hedera
-      aliases:
-        - Hedera Mainnet
-      ecosystem: hedera
-      logo_url: https://cdn.subsquid.io/img/networks/hedera.png
-      type: mainnet
-      kind: evm
-      evm:
-        chain_id: 295
-    schema: {}
-  hemi-mainnet:
-    metadata:
-      display_name: Hemi
-      aliases:
-        - Hemi Mainnet
-      ecosystem: hemi
-      logo_url: https://cdn.subsquid.io/img/networks/hemi.jpg
-      type: mainnet
-      kind: evm
-      evm:
-        chain_id: 43111
-    schema: {}
-  hemi-testnet:
-    metadata:
-      display_name: Hemi Testnet
-      ecosystem: hemi
-      logo_url: https://cdn.subsquid.io/img/networks/hemi.jpg
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 743111
-    schema: {}
   hyperliquid-mainnet:
     metadata:
       display_name: HyperEVM
@@ -1150,16 +1104,6 @@ datasets:
         logs: {}
         traces: {}
         state_diffs: {}
-  ink-sepolia:
-    metadata:
-      display_name: Ink Sepolia
-      ecosystem: ink
-      logo_url: https://cdn.subsquid.io/img/networks/ink.svg
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 763373
-    schema: {}
   katana-mainnet:
     metadata:
       kind: evm
@@ -1767,16 +1711,6 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
-  poseidon-testnet:
-    metadata:
-      display_name: Poseidon Testnet
-      ecosystem: poseidon
-      logo_url: https://cdn.subsquid.io/img/networks/ozean.svg
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 31911
-    schema: {}
   prom-mainnet:
     metadata:
       display_name: Prom
@@ -1841,36 +1775,6 @@ datasets:
         transactions: {}
         logs: {}
         traces: {}
-  sei-mainnet:
-    metadata:
-      display_name: Sei Network
-      aliases:
-        - Sei Mainnet
-      ecosystem: sei
-      logo_url: https://cdn.subsquid.io/img/networks/sei.png
-      type: mainnet
-      kind: evm
-      evm:
-        chain_id: 1329
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-  sei-testnet:
-    metadata:
-      display_name: Sei Testnet
-      ecosystem: sei
-      logo_url: https://cdn.subsquid.io/img/networks/sei.png
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 1328
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
   shibarium:
     metadata:
       display_name: Shibarium
@@ -1995,36 +1899,6 @@ datasets:
         transactions: {}
         logs: {}
         traces: {}
-  stable-mainnet:
-    metadata:
-      display_name: Stable
-      aliases:
-        - Stable Mainnet
-      ecosystem: stable
-      logo_url: https://cdn.subsquid.io/img/networks/stable.png
-      type: mainnet
-      kind: evm
-      evm:
-        chain_id: 988
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-  stable-testnet:
-    metadata:
-      display_name: Stable Testnet
-      ecosystem: stable
-      logo_url: https://cdn.subsquid.io/img/networks/stable.png
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 2201
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
   stratovm-sepolia:
     metadata:
       display_name: StratoVM Sepolia
@@ -2117,24 +1991,6 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
-  tempo-mainnet:
-    metadata:
-      kind: evm
-      display_name: Tempo
-      aliases:
-        - Tempo Mainnet
-      ecosystem: tempo
-      type: mainnet
-      logo_url: https://cdn.subsquid.io/img/networks/tempo.png
-      evm:
-        chain_id: 4217
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-        traces: {}
-        state_diffs: {}
   unichain-mainnet:
     metadata:
       display_name: Unichain
@@ -2162,22 +2018,6 @@ datasets:
       kind: evm
       evm:
         chain_id: 1301
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-  worldchain-mainnet:
-    metadata:
-      kind: evm
-      display_name: World Chain
-      aliases:
-        - Worldchain Mainnet
-      ecosystem: worldchain
-      type: mainnet
-      logo_url: https://cdn.subsquid.io/img/networks/world.png
-      evm:
-        chain_id: 480
     schema:
       tables:
         blocks: {}
