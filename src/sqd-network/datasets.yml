@@ -179,6 +179,15 @@ sqd-network-datasets:
   - name: gnosis-mainnet
     id: s3://gnosis-mainnet-2
     kind: evm
+  - name: hedera-mainnet
+    id: s3://hedera-mainnet
+    kind: evm
+  - name: hemi-mainnet
+    id: s3://hemi-mainnet
+    kind: evm
+  - name: hemi-testnet
+    id: s3://hemi-testnet
+    kind: evm
   - name: hyperliquid-testnet
     id: s3://hyperliquid-testnet-7
     kind: evm
@@ -193,6 +202,9 @@ sqd-network-datasets:
     kind: evm
   - name: ink-mainnet
     id: s3://ink-mainnet-2
+    kind: evm
+  - name: ink-sepolia
+    id: s3://ink-sepolia
     kind: evm
   - name: katana-mainnet
     id: s3://katana-mainnet
@@ -657,11 +669,14 @@ sqd-network-datasets:
   - name: zeitgeist
     id: s3://zeitgeist-4
     kind: substrate
-  - name: zkverify-testnet
-    id: s3://zkverify-testnet
+  - name: zkverify-mainnet
+    id: s3://zkverify-mainnet
     kind: substrate
-  - name: soon-devnet
+  - name: zkverify-testnet
+    id: s3://zkverify-testnet-1
+    kind: substrate
 
+  - name: soon-devnet
     id: s3://soon-devnet
     kind: solana
   - name: soon-testnet

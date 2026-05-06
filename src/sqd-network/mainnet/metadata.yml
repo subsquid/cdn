@@ -3036,6 +3036,13 @@ datasets:
       display_name: Zeitgeist Testnet
       ecosystem: zeitgeist
     schema: {}
+  zkverify-mainnet:
+    metadata:
+      kind: substrate
+      logo_url: https://cdn.subsquid.io/img/networks/zkverify.png
+      display_name: zkVerify Mainnet
+      ecosystem: zkverify
+    schema: {}
   zkverify-testnet:
     metadata:
       kind: substrate
