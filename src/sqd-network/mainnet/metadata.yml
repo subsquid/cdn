@@ -696,36 +696,6 @@ datasets:
         transactions: {}
         logs: {}
         traces: {}
-  crossfi-mainnet:
-    metadata:
-      display_name: CrossFi
-      aliases:
-        - CrossFi Mainnet
-      ecosystem: crossfi
-      logo_url: https://cdn.subsquid.io/img/networks/crossfi.svg
-      type: mainnet
-      kind: evm
-      evm:
-        chain_id: 4158
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-  crossfi-testnet:
-    metadata:
-      display_name: CrossFi Testnet
-      ecosystem: crossfi
-      logo_url: https://cdn.subsquid.io/img/networks/crossfi.svg
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 4157
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
   cyber-mainnet:
     metadata:
       display_name: Cyber

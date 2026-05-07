@@ -122,12 +122,6 @@ sqd-network-datasets:
   - name: cyber-mainnet
     id: s3://cyber-mainnet-1
     kind: evm
-  - name: crossfi-mainnet
-    id: s3://crossfi-mainnet
-    kind: evm
-  - name: crossfi-testnet
-    id: s3://crossfi-testnet-traceless
-    kind: evm
   - name: dfk-chain
     id: s3://dfk-chain-traceless-1
     kind: evm
