@@ -851,7 +851,11 @@ datasets:
       kind: evm
       evm:
         chain_id: 560048
-    schema: {}
+    schema:
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   ethereum-mainnet:
     metadata:
       display_name: Ethereum
@@ -1049,7 +1053,11 @@ datasets:
       kind: evm
       evm:
         chain_id: 295
-    schema: {}
+    schema:
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   hemi-mainnet:
     metadata:
       display_name: Hemi
@@ -1061,7 +1069,11 @@ datasets:
       kind: evm
       evm:
         chain_id: 43111
-    schema: {}
+    schema:
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   hemi-testnet:
     metadata:
       display_name: Hemi Testnet
@@ -1071,7 +1083,11 @@ datasets:
       kind: evm
       evm:
         chain_id: 743111
-    schema: {}
+    schema:
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   hyperliquid-mainnet:
     metadata:
       display_name: HyperEVM
@@ -1159,7 +1175,13 @@ datasets:
       kind: evm
       evm:
         chain_id: 763373
-    schema: {}
+    schema:
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   katana-mainnet:
     metadata:
       kind: evm
