@@ -138,7 +138,7 @@ sqd-network-datasets:
     id: s3://ethereum-hoodi
     kind: evm
   - name: ethereum-mainnet
-    id: s3://ethereum-mainnet-2
+    id: s3://ethereum-mainnet-3
     kind: evm
   - name: ethereum-sepolia
     id: s3://ethereum-sepolia-1
