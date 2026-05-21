@@ -679,12 +679,6 @@ sqd-network-datasets:
   - name: soon-mainnet
     id: s3://soon-mainnet
     kind: solana
-  - name: eclipse-testnet
-    id: s3://eclipse-testnet
-    kind: solana
-  - name: eclipse-mainnet
-    id: s3://eclipse-mainnet
-    kind: solana
   - name: solana-devnet
     id: s3://solana-devnet-1
     kind: solana
@@ -696,9 +690,6 @@ sqd-network-datasets:
     kind: solana
   - name: svm-bnb-testnet
     id: s3://svm-bnb-testnet-2
-    kind: solana
-  - name: eclipse-testnet
-    id: s3://eclipse-testnet-2
     kind: solana
 
   - name: hyperliquid-fills

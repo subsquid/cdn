@@ -56,10 +56,6 @@ datasets:
     metadata:
       display_name: "SVM BNB Testnet"
       kind: solana
-  eclipse-testnet:
-    metadata:
-      display_name: "Eclipse Testnet"
-      kind: solana
 
   hyperliquid-fills:
     metadata:

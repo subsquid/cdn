@@ -2294,38 +2294,6 @@ datasets:
       tables:
         blocks: {}
         actions: {}
-  eclipse-mainnet:
-    metadata:
-      kind: solana
-      type: mainnet
-      display_name: Eclipse
-      aliases:
-        - Eclipse Mainnet
-      ecosystem: eclipse
-      logo_url: https://cdn.subsquid.io/img/networks/eclipse.svg
-    schema:
-      tables:
-        instructions: {}
-        transactions: {}
-        balances: {}
-        token_balances: {}
-        rewards: {}
-        logs: {}
-  eclipse-testnet:
-    metadata:
-      kind: solana
-      type: testnet
-      display_name: Eclipse Testnet
-      ecosystem: eclipse
-      logo_url: https://cdn.subsquid.io/img/networks/eclipse.svg
-    schema:
-      tables:
-        instructions: {}
-        transactions: {}
-        balances: {}
-        token_balances: {}
-        rewards: {}
-        logs: {}
   solana-devnet:
     metadata:
       kind: solana
