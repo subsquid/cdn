@@ -309,7 +309,7 @@ sqd-network-datasets:
     id: s3://plume-mainnet
     kind: evm
   - name: polygon-mainnet
-    id: s3://polygon-mainnet-1
+    id: s3://polygon-mainnet-2
     kind: evm
   - name: polygon-amoy-testnet
     id: s3://polygon-amoy-testnet-traceless
