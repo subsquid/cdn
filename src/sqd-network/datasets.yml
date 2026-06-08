@@ -171,7 +171,7 @@ sqd-network-datasets:
     id: s3://opcelestia-raspberry-traceless
     kind: evm
   - name: gnosis-mainnet
-    id: s3://gnosis-mainnet-2
+    id: s3://gnosis-mainnet-3
     kind: evm
   - name: hedera-mainnet
     id: s3://hedera-mainnet
