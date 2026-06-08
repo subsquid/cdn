@@ -1939,6 +1939,7 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+        traces: {}
   soneium-minato-testnet:
     metadata:
       display_name: Soneium Minato Testnet
