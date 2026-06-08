@@ -18,9 +18,6 @@ sqd-network-datasets:
   - name: svm-bnb-testnet
     id: s3://svm-bnb-testnet-2
     kind: solana
-  - name: eclipse-testnet
-    id: s3://eclipse-testnet-2
-    kind: solana
 
   - name: hyperliquid-fills
     id: s3://hl-node-fills

@@ -696,36 +696,6 @@ datasets:
         transactions: {}
         logs: {}
         traces: {}
-  crossfi-mainnet:
-    metadata:
-      display_name: CrossFi
-      aliases:
-        - CrossFi Mainnet
-      ecosystem: crossfi
-      logo_url: https://cdn.subsquid.io/img/networks/crossfi.svg
-      type: mainnet
-      kind: evm
-      evm:
-        chain_id: 4158
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-  crossfi-testnet:
-    metadata:
-      display_name: CrossFi Testnet
-      ecosystem: crossfi
-      logo_url: https://cdn.subsquid.io/img/networks/crossfi.svg
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 4157
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
   cyber-mainnet:
     metadata:
       display_name: Cyber
@@ -2348,38 +2318,6 @@ datasets:
       tables:
         blocks: {}
         actions: {}
-  eclipse-mainnet:
-    metadata:
-      kind: solana
-      type: mainnet
-      display_name: Eclipse
-      aliases:
-        - Eclipse Mainnet
-      ecosystem: eclipse
-      logo_url: https://cdn.subsquid.io/img/networks/eclipse.svg
-    schema:
-      tables:
-        instructions: {}
-        transactions: {}
-        balances: {}
-        token_balances: {}
-        rewards: {}
-        logs: {}
-  eclipse-testnet:
-    metadata:
-      kind: solana
-      type: testnet
-      display_name: Eclipse Testnet
-      ecosystem: eclipse
-      logo_url: https://cdn.subsquid.io/img/networks/eclipse.svg
-    schema:
-      tables:
-        instructions: {}
-        transactions: {}
-        balances: {}
-        token_balances: {}
-        rewards: {}
-        logs: {}
   solana-devnet:
     metadata:
       kind: solana

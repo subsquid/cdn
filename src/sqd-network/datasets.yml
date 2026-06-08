@@ -122,12 +122,6 @@ sqd-network-datasets:
   - name: cyber-mainnet
     id: s3://cyber-mainnet-1
     kind: evm
-  - name: crossfi-mainnet
-    id: s3://crossfi-mainnet
-    kind: evm
-  - name: crossfi-testnet
-    id: s3://crossfi-testnet-traceless
-    kind: evm
   - name: dfk-chain
     id: s3://dfk-chain-traceless-1
     kind: evm
@@ -144,7 +138,7 @@ sqd-network-datasets:
     id: s3://ethereum-hoodi
     kind: evm
   - name: ethereum-mainnet
-    id: s3://ethereum-mainnet-2
+    id: s3://ethereum-mainnet-3
     kind: evm
   - name: ethereum-sepolia
     id: s3://ethereum-sepolia-1
@@ -315,7 +309,7 @@ sqd-network-datasets:
     id: s3://plume-mainnet
     kind: evm
   - name: polygon-mainnet
-    id: s3://polygon-mainnet-1
+    id: s3://polygon-mainnet-2
     kind: evm
   - name: polygon-amoy-testnet
     id: s3://polygon-amoy-testnet-traceless
@@ -685,12 +679,6 @@ sqd-network-datasets:
   - name: soon-mainnet
     id: s3://soon-mainnet
     kind: solana
-  - name: eclipse-testnet
-    id: s3://eclipse-testnet
-    kind: solana
-  - name: eclipse-mainnet
-    id: s3://eclipse-mainnet
-    kind: solana
   - name: solana-devnet
     id: s3://solana-devnet-1
     kind: solana
@@ -702,9 +690,6 @@ sqd-network-datasets:
     kind: solana
   - name: svm-bnb-testnet
     id: s3://svm-bnb-testnet-2
-    kind: solana
-  - name: eclipse-testnet
-    id: s3://eclipse-testnet-2
     kind: solana
 
   - name: hyperliquid-fills
