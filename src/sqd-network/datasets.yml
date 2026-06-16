@@ -63,7 +63,7 @@ sqd-network-datasets:
     id: s3://berachain-bartio
     kind: evm
   - name: binance-mainnet
-    id: s3://binance-mainnet
+    id: s3://binance-mainnet-1
     kind: evm
   - name: binance-testnet
     id: s3://binance-testnet-traceless-1
