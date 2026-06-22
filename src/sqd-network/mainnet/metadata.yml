@@ -857,7 +857,6 @@ datasets:
         transactions: {}
         logs: {}
         traces: {}
-        state_diffs: {}
   etherlink-mainnet:
     metadata:
       display_name: Etherlink
