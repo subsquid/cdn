@@ -63,7 +63,7 @@ sqd-network-datasets:
     id: s3://berachain-bartio
     kind: evm
   - name: binance-mainnet
-    id: s3://binance-mainnet
+    id: s3://binance-mainnet-1
     kind: evm
   - name: binance-testnet
     id: s3://binance-testnet-traceless-1
@@ -171,7 +171,7 @@ sqd-network-datasets:
     id: s3://opcelestia-raspberry-traceless
     kind: evm
   - name: gnosis-mainnet
-    id: s3://gnosis-mainnet-2
+    id: s3://gnosis-mainnet-3
     kind: evm
   - name: hedera-mainnet
     id: s3://hedera-mainnet
