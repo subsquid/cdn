@@ -3,7 +3,7 @@ sqd-network-datasets:
     id: s3://arbitrum-one
     kind: evm
   - name: ethereum-mainnet
-    id: s3://ethereum-mainnet-2
+    id: s3://ethereum-mainnet-3
     kind: evm
   - name: blast-sepolia
     id: s3://blast-sepolia
