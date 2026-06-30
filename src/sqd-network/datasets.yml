@@ -213,7 +213,7 @@ sqd-network-datasets:
     id: s3://lukso-mainnet-1
     kind: evm
   - name: manta-pacific
-    id: s3://manta-pacific-traceless
+    id: s3://manta-pacific
     kind: evm
   - name: manta-pacific-sepolia
     id: s3://manta-pacific-sepolia
@@ -323,9 +323,6 @@ sqd-network-datasets:
   - name: prom-mainnet
     id: s3://prom-mainnet-1
     kind: evm
-  - name: puppynet
-    id: s3://puppynet
-    kind: evm
   - name: scroll-mainnet
     id: s3://scroll-mainnet
     kind: evm
@@ -334,9 +331,6 @@ sqd-network-datasets:
     kind: evm
   - name: shiden-mainnet
     id: s3://shiden-mainnet
-    kind: evm
-  - name: shibarium
-    id: s3://shibarium
     kind: evm
   - name: shibuya-testnet
     id: s3://shibuya-testnet-traceless-1
