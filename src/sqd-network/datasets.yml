@@ -306,7 +306,7 @@ sqd-network-datasets:
     id: s3://plume-devnet-v2
     kind: evm
   - name: plume-mainnet
-    id: s3://plume-mainnet
+    id: s3://plume-mainnet-3
     kind: evm
   - name: polygon-mainnet
     id: s3://polygon-mainnet-2
