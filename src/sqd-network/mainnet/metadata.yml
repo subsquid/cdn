@@ -571,40 +571,6 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
-  botanix-mainnet:
-    metadata:
-      display_name: Botanix
-      aliases:
-        - Botanix Mainnet
-      ecosystem: botanix
-      logo_url: https://cdn.subsquid.io/img/networks/botanix.svg
-      type: mainnet
-      kind: evm
-      evm:
-        chain_id: 3637
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-        traces: {}
-        state_diffs: {}
-  botanix-testnet:
-    metadata:
-      display_name: Botanix Testnet
-      ecosystem: botanix
-      logo_url: https://cdn.subsquid.io/img/networks/botanix.svg
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 3636
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-        traces: {}
-        state_diffs: {}
   camp-network-testnet-v2:
     metadata:
       display_name: Camp Network Testnet v2
