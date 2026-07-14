@@ -867,24 +867,6 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
-  exosama:
-    metadata:
-      display_name: Exosama Network
-      aliases:
-        - Exosama
-      ecosystem: exosama
-      logo_url: https://cdn.subsquid.io/img/networks/exn.png
-      type: mainnet
-      kind: evm
-      evm:
-        chain_id: 2109
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-        traces: {}
-        state_diffs: {}
   flare-mainnet:
     metadata:
       display_name: Flare
