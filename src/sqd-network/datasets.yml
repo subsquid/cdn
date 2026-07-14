@@ -152,9 +152,6 @@ sqd-network-datasets:
   - name: flare-mainnet
     id: s3://flare-mainnet-traceless-1
     kind: evm
-  - name: formicarium-testnet
-    id: s3://formicarium-testnet-1
-    kind: evm
   - name: galxe-gravity
     id: s3://galxe-gravity
     kind: evm
@@ -223,12 +220,6 @@ sqd-network-datasets:
     kind: evm
   - name: megaeth-testnet
     id: s3://mega-testnet-v2
-    kind: evm
-  - name: memecore-mainnet
-    id: s3://memecore-mainnet
-    kind: evm
-  - name: memecore-insectarium
-    id: s3://memecore-testnet
     kind: evm
   - name: merlin-mainnet
     id: s3://merlin-mainnet-traceless

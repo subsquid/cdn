@@ -899,22 +899,6 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
-  formicarium-testnet:
-    metadata:
-      display_name: MemeCore Testnet (Formicarium)
-      ecosystem: memecore
-      logo_url: https://cdn.subsquid.io/img/networks/memecore.svg
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 43521
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-        traces: {}
-        state_diffs: {}
   galxe-gravity:
     metadata:
       display_name: Gravity Alpha
@@ -1266,40 +1250,6 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
-  memecore-insectarium:
-    metadata:
-      display_name: MemeCore Testnet (Insectarium)
-      ecosystem: memecore
-      logo_url: https://cdn.subsquid.io/img/networks/memecore.svg
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 43522
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-        traces: {}
-        state_diffs: {}
-  memecore-mainnet:
-    metadata:
-      display_name: MemeCore
-      aliases:
-        - MemeCore Mainnet
-      ecosystem: memecore
-      logo_url: https://cdn.subsquid.io/img/networks/memecore.svg
-      type: mainnet
-      kind: evm
-      evm:
-        chain_id: 4352
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-        traces: {}
-        state_diffs: {}
   merlin-mainnet:
     metadata:
       display_name: Merlin
