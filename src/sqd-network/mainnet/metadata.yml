@@ -662,6 +662,22 @@ datasets:
         transactions: {}
         logs: {}
         traces: {}
+  cronos-mainnet:
+    metadata:
+      kind: evm
+      display_name: Cronos
+      aliases:
+        - Cronos Mainnet
+      ecosystem: cronos
+      type: mainnet
+      logo_url: https://cdn.subsquid.io/img/networks/cronos.svg
+      evm:
+        chain_id: 25
+    schema:
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
   cyber-mainnet:
     metadata:
       display_name: Cyber
@@ -1565,6 +1581,33 @@ datasets:
         logs: {}
         traces: {}
         state_diffs: {}
+  plume:
+    metadata:
+      display_name: Plume Mainnet
+      logo_url: https://cdn.subsquid.io/img/networks/plume.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 98866
+    schema: {}
+  plume-devnet:
+    metadata:
+      display_name: Plume Devnet
+      logo_url: https://cdn.subsquid.io/img/networks/plume.png
+      type: testnet
+      kind: evm
+      evm:
+        chain_id: 98864
+    schema: {}
+  plume-legacy:
+    metadata:
+      display_name: Plume Mainnet (Legacy)
+      logo_url: https://cdn.subsquid.io/img/networks/plume.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 98865
+    schema: {}
   plume-mainnet:
     metadata:
       display_name: Plume
@@ -2910,19 +2953,3 @@ datasets:
       display_name: zkVerify Testnet
       ecosystem: zkverify
     schema: {}
-  cronos-mainnet:
-    metadata:
-      kind: evm
-      display_name: Cronos
-      aliases:
-        - Cronos Mainnet
-      ecosystem: cronos
-      type: mainnet
-      logo_url: https://cdn.subsquid.io/img/networks/cronos.svg
-      evm:
-        chain_id: 25
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
