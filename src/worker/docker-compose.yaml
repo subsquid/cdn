@@ -1,6 +1,6 @@
 services:
   worker:
-    image: subsquid/p2p-worker:2.13.0
+    image: subsquid/p2p-worker:2.14.0
     restart: unless-stopped
     env_file:
       - .env
