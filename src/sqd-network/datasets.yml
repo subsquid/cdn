@@ -36,7 +36,7 @@ sqd-network-datasets:
     id: s3://astar-zkevm-mainnet-1-traceless
     kind: evm
   - name: avalanche-mainnet
-    id: s3://ava-mainnet-1
+    id: s3://ava-mainnet-2
     kind: evm
   - name: avalanche-testnet
     id: s3://ava-testnet-1
