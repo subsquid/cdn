@@ -653,7 +653,7 @@ sqd-network-datasets:
     id: s3://soon-testnet-1
     kind: solana
   - name: soon-mainnet
-    id: s3://soon-mainnet
+    id: s3://soon-mainnet-1
     kind: solana
   - name: solana-devnet
     id: s3://solana-devnet-1
