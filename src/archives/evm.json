@@ -1569,27 +1569,6 @@
       ]
     },
     {
-      "chainId": 1998,
-      "chainName": "Kyoto Testnet",
-      "id": "kyoto-testnet",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/kyoto.png",
-      "network": "kyoto-testnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/kyoto-testnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainId": 59144,
       "chainName": "Linea",
       "id": "linea-mainnet",

@@ -191,9 +191,6 @@ sqd-network-datasets:
   - name: katana-mainnet
     id: s3://katana-mainnet
     kind: evm
-  - name: kyoto-testnet
-    id: s3://kyoto-testnet-traceless
-    kind: evm
   - name: linea-mainnet
     id: s3://linea-mainnet-1
     kind: evm
