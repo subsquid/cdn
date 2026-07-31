@@ -655,28 +655,6 @@
       ]
     },
     {
-      "chainName": "Dancelight",
-      "chainSS58Prefix": null,
-      "genesis_hash": "0x983a1a72503d6cc3636776747ec627172b51272bf45e50a355348facb67a820a",
-      "id": "dancelight",
-      "isTestnet": true,
-      "network": "dancelight",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/dancelight",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainName": "Darwinia",
       "chainSS58Prefix": null,
       "genesisHash": "0xf0b8924b12e8108550d28870bc03f7b45a947e1b2b9abf81bfb0b89ecb60570e",
