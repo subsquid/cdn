@@ -179,9 +179,6 @@ sqd-network-datasets:
   - name: immutable-zkevm-mainnet
     id: s3://immutable-zkevm-mainnet-traceless-1
     kind: evm
-  - name: immutable-zkevm-testnet
-    id: s3://immutable-zkevm-testnet-traceless-1
-    kind: evm
   - name: ink-mainnet
     id: s3://ink-mainnet-2
     kind: evm

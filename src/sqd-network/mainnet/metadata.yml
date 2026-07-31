@@ -1035,20 +1035,6 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
-  immutable-zkevm-testnet:
-    metadata:
-      display_name: Immutable zkEVM Testnet
-      ecosystem: immutable-zkevm
-      logo_url: https://cdn.subsquid.io/img/networks/immutable.png
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 13473
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
   ink-mainnet:
     metadata:
       display_name: Ink
