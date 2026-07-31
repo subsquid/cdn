@@ -387,9 +387,6 @@ sqd-network-datasets:
   - name: asset-hub-polkadot
     id: s3://asset-hub-polkadot-4
     kind: substrate
-  - name: asset-hub-rococo
-    id: s3://asset-hub-rococo-4
-    kind: substrate
   - name: asset-hub-westend
     id: s3://asset-hub-westend-3
     kind: substrate

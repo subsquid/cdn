@@ -289,7 +289,6 @@
                                     "arbitrum-nova.http",
                                     "asset-hub-kusama.http",
                                     "asset-hub-polkadot.http",
-                                    "asset-hub-rococo.http",
                                     "asset-hub-westend.http",
                                     "astar.http",
                                     "astar-substrate.http",

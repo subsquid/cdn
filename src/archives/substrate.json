@@ -169,27 +169,6 @@
       ]
     },
     {
-      "chainName": "Asset Hub Rococo",
-      "chainSS58Prefix": null,
-      "genesisHash": "0x7c34d42fc815d392057c78b49f2755c753440ccd38bcb0405b3bcfb601d08734",
-      "id": "asset-hub-rococo",
-      "network": "asset-hub-rococo",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/asset-hub-rococo",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainName": "Asset Hub Westend",
       "chainSS58Prefix": null,
       "genesis_hash": "0x67f9723393ef76214df0118c34bbbd3dbebc8ed46a10973a8c969d48fe7598c9",

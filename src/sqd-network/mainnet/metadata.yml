@@ -2306,13 +2306,6 @@ datasets:
       display_name: Polkadot Asset Hub
       ecosystem: asset-hub-polkadot
     schema: {}
-  asset-hub-rococo:
-    metadata:
-      kind: substrate
-      logo_url: https://cdn.subsquid.io/img/networks/assethub.svg
-      display_name: Rococo Asset Hub
-      ecosystem: asset-hub-rococo
-    schema: {}
   asset-hub-westend:
     metadata:
       kind: substrate
