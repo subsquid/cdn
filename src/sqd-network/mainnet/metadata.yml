@@ -2350,13 +2350,6 @@ datasets:
       display_name: Aleph Zero
       ecosystem: aleph-zero
     schema: {}
-  aleph-zero-testnet:
-    metadata:
-      kind: substrate
-      logo_url: https://cdn.subsquid.io/img/networks/aleph.svg
-      display_name: Aleph Zero Testnet
-      ecosystem: aleph-zero
-    schema: {}
   amplitude:
     metadata:
       kind: substrate

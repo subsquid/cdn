@@ -85,28 +85,6 @@
       ]
     },
     {
-      "chainName": "Aleph Zero Testnet",
-      "chainSS58Prefix": null,
-      "genesisHash": "0x05d5279c52c484cc80396535a316add7d47b1c5b9e0398dd1f584149341460c5",
-      "id": "aleph-zero-testnet",
-      "isTestnet": true,
-      "network": "aleph-zero-testnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/aleph-zero-testnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainName": "Amplitude",
       "chainSS58Prefix": 57,
       "genesisHash": "0xcceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",

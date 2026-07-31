@@ -282,7 +282,6 @@
                                 "enum": [
                                     "acala.http",
                                     "aleph-zero.http",
-                                    "aleph-zero-testnet.http",
                                     "amplitude.http",
                                     "arbitrum-one.http",
                                     "arbitrum-goerli.http",

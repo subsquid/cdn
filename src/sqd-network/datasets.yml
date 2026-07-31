@@ -390,9 +390,6 @@ sqd-network-datasets:
   - name: aleph-zero
     id: s3://aleph-zero
     kind: substrate
-  - name: aleph-zero-testnet
-    id: s3://aleph-zero-testnet
-    kind: substrate
   - name: amplitude
     id: s3://amplitude-4
     kind: substrate
