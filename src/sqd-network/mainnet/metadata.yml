@@ -2740,13 +2740,6 @@ datasets:
       display_name: Phala
       ecosystem: phala
     schema: {}
-  phala-testnet:
-    metadata:
-      kind: substrate
-      logo_url: https://cdn.subsquid.io/img/networks/phala.svg
-      display_name: Phala Testnet
-      ecosystem: phala
-    schema: {}
   picasso:
     metadata:
       kind: substrate

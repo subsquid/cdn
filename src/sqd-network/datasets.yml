@@ -567,9 +567,6 @@ sqd-network-datasets:
   - name: people-chain
     id: s3://people-chain
     kind: substrate
-  - name: phala-testnet
-    id: s3://phala-testnet-4
-    kind: substrate
   - name: phala
     id: s3://phala-4
     kind: substrate

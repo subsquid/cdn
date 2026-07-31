@@ -1331,28 +1331,6 @@
       ]
     },
     {
-      "chainName": "Phala Testnet",
-      "chainSS58Prefix": 30,
-      "genesisHash": "0xd9b288f9083f852f2729af58476b82b04bc9ed7e07d705614a843c93460974b2",
-      "id": "phala-testnet",
-      "isTestnet": true,
-      "network": "phala-testnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/phala-testnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainName": "Picasso",
       "chainSS58Prefix": 49,
       "genesisHash": "0x6811a339673c9daa897944dcdac99c6e2939cc88245ed21951a0a3c9a2be75bc",
