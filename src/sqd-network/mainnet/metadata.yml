@@ -2389,13 +2389,6 @@ datasets:
       display_name: Rococo Bridge Hub
       ecosystem: bridge-hub-rococo
     schema: {}
-  bridge-hub-westend:
-    metadata:
-      kind: substrate
-      logo_url: https://cdn.subsquid.io/img/networks/bridgehub.svg
-      display_name: Westend Bridge Hub
-      ecosystem: bridge-hub-westend
-    schema: {}
   centrifuge:
     metadata:
       kind: substrate

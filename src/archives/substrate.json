@@ -445,27 +445,6 @@
       ]
     },
     {
-      "chainName": "Bridge Hub Westend",
-      "chainSS58Prefix": null,
-      "genesisHash": "0x0441383e31d1266a92b4cb2ddd4c2e3661ac476996db7e5844c52433b81fe782",
-      "id": "bridge-hub-westend",
-      "network": "bridge-hub-westend",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/bridge-hub-westend",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainName": "Centrifuge",
       "chainSS58Prefix": null,
       "genesisHash": "0xb3db41421702df9a7fcac62b53ffeac85f7853cc4e689e0b93aeb3db18c09d82",
