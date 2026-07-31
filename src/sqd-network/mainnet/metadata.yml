@@ -1905,20 +1905,6 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
-  superseed-sepolia:
-    metadata:
-      display_name: Superseed Sepolia
-      ecosystem: superseed
-      logo_url: https://cdn.subsquid.io/img/networks/superseed.png
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 53302
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
   tac-mainnet:
     metadata:
       kind: evm

@@ -326,9 +326,6 @@ sqd-network-datasets:
   - name: stratovm-sepolia
     id: s3://stratovm-sepolia
     kind: evm
-  - name: superseed-sepolia
-    id: s3://superseed-sepolia-traceless
-    kind: evm
   - name: superseed-mainnet
     id: s3://superseed-mainnet
     kind: evm
