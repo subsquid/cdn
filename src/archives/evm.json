@@ -1737,27 +1737,6 @@
       ]
     },
     {
-      "chainId": 686868,
-      "chainName": "Merlin Testnet",
-      "id": "merlin-testnet",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/won.png",
-      "network": "merlin-testnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/merlin-testnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainId": 1088,
       "chainName": "Metis",
       "id": "metis-mainnet",

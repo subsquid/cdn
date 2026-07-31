@@ -215,9 +215,6 @@ sqd-network-datasets:
   - name: merlin-mainnet
     id: s3://merlin-mainnet-traceless
     kind: evm
-  - name: merlin-testnet
-    id: s3://merlin-testnet-traceless
-    kind: evm
   - name: metis-mainnet
     id: s3://metis-mainnet-3
     kind: evm

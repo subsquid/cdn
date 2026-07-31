@@ -1220,20 +1220,6 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
-  merlin-testnet:
-    metadata:
-      display_name: Merlin Testnet
-      ecosystem: merlin
-      logo_url: https://cdn.subsquid.io/img/networks/won.png
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 686868
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
   metis-mainnet:
     metadata:
       display_name: Metis Andromeda

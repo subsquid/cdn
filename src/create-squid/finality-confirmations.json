@@ -155,11 +155,6 @@
     "confirmations": 120
   },
   {
-    "id": "merlin-testnet",
-    "chainId": 686868,
-    "confirmations": 120
-  },
-  {
     "id": "taiko-mainnet",
     "chainId": 167000,
     "confirmations": 10
