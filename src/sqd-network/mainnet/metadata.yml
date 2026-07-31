@@ -1385,22 +1385,6 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
-  neox-testnet:
-    metadata:
-      kind: evm
-      display_name: Neo X Testnet
-      ecosystem: neox
-      type: testnet
-      logo_url: https://cdn.subsquid.io/img/networks/neox.svg
-      evm:
-        chain_id: 12227332
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-        traces: {}
-        state_diffs: {}
   opbnb-mainnet:
     metadata:
       display_name: opBNB

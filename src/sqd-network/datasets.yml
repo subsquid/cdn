@@ -248,9 +248,6 @@ sqd-network-datasets:
   - name: neon-devnet
     id: s3://neon-devnet-traceless-1
     kind: evm
-  - name: neox-testnet
-    id: s3://neox-testnet
-    kind: evm
   - name: opbnb-mainnet
     id: s3://opbnb-mainnet-traceless-1
     kind: evm
