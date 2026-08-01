@@ -732,20 +732,6 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
-  dogechain-testnet:
-    metadata:
-      display_name: Dogechain Testnet
-      ecosystem: dogechain
-      logo_url: https://cdn.subsquid.io/img/networks/dogechain.png
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 568
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
   ethereum-holesky:
     metadata:
       display_name: Ethereum Holesky

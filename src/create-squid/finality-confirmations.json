@@ -115,11 +115,6 @@
     "confirmations": 36
   },
   {
-    "id": "dogechain-testnet",
-    "chainId": 568,
-    "confirmations": 36
-  },
-  {
     "id": "mantle-mainnet",
     "chainId": 5000,
     "confirmations": 100
