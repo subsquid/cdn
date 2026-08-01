@@ -2451,12 +2451,6 @@ datasets:
       display_name: Darwinia Crab
       ecosystem: darwinia-crab
     schema: {}
-  data-avail:
-    metadata:
-      kind: substrate
-      display_name: Avail (Legacy)
-      ecosystem: data-avail
-    schema: {}
   eden:
     metadata:
       kind: substrate

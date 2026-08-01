@@ -447,9 +447,6 @@ sqd-network-datasets:
   - name: clover
     id: s3://clover-4
     kind: substrate
-  - name: data-avail
-    id: s3://data-avail-4
-    kind: substrate
   - name: dancebox
     id: s3://dancebox-4
     kind: substrate
