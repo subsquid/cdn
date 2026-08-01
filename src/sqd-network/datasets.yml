@@ -110,9 +110,6 @@ sqd-network-datasets:
   - name: core-mainnet
     id: s3://core-mainnet-1
     kind: evm
-  - name: cyberconnect-l2-testnet
-    id: s3://cyber-l2-testnet-2
-    kind: evm
   - name: cyber-mainnet
     id: s3://cyber-mainnet-1
     kind: evm

@@ -931,29 +931,6 @@
       ]
     },
     {
-      "chainId": 111557560,
-      "chainName": "Cyberconnect L2 Testnet",
-      "id": "cyberconnect-l2-testnet",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/cyber.svg",
-      "network": "cyberconnect-l2-testnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs",
-            "traces",
-            "stateDiffs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/cyberconnect-l2-testnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainId": 5678,
       "chainName": "Dancelight",
       "id": "dancelight-testnet",

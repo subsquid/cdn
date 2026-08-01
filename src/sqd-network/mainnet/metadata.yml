@@ -678,22 +678,6 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
-  cyberconnect-l2-testnet:
-    metadata:
-      display_name: Cyberconnect L2 Testnet
-      ecosystem: cyberconnect-l2
-      logo_url: https://cdn.subsquid.io/img/networks/cyber.svg
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 111557560
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-        traces: {}
-        state_diffs: {}
   dancelight-testnet:
     metadata:
       display_name: Dancelight Testnet
