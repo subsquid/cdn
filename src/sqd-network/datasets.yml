@@ -597,9 +597,6 @@ sqd-network-datasets:
   - name: vara-testnet
     id: s3://vara-testnet-4
     kind: substrate
-  - name: westend
-    id: s3://westend-4
-    kind: substrate
   - name: zeitgeist-testnet
     id: s3://zeitgeist-testnet-5
     kind: substrate

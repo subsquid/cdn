@@ -2753,13 +2753,6 @@ datasets:
       display_name: Vara Testnet
       ecosystem: vara
     schema: {}
-  westend:
-    metadata:
-      kind: substrate
-      logo_url: https://cdn.subsquid.io/img/networks/westend_colour.svg
-      display_name: Westend
-      ecosystem: westend
-    schema: {}
   zeitgeist:
     metadata:
       kind: substrate
