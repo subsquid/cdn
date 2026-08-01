@@ -2394,13 +2394,6 @@ datasets:
       display_name: Crust
       ecosystem: crust
     schema: {}
-  dancebox:
-    metadata:
-      kind: substrate
-      logo_url: https://cdn.subsquid.io/img/networks/dancelight.svg
-      display_name: Dancebox
-      ecosystem: tanssi
-    schema: {}
   darwinia:
     metadata:
       kind: substrate

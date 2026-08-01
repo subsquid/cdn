@@ -438,9 +438,6 @@ sqd-network-datasets:
   - name: clover
     id: s3://clover-4
     kind: substrate
-  - name: dancebox
-    id: s3://dancebox-4
-    kind: substrate
   - name: darwinia-crab
     id: s3://darwinia-crab-4
     kind: substrate

@@ -571,27 +571,6 @@
       ]
     },
     {
-      "chainName": "Dancebox",
-      "chainSS58Prefix": 42,
-      "genesisHash": "0x27aafd88e5921f5d5c6aebcd728dacbbf5c2a37f63e2eda301f8e0def01c43ea",
-      "id": "dancebox",
-      "network": "dancebox",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/dancebox",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainName": "Darwinia",
       "chainSS58Prefix": null,
       "genesisHash": "0xf0b8924b12e8108550d28870bc03f7b45a947e1b2b9abf81bfb0b89ecb60570e",
