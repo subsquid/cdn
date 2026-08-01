@@ -2228,13 +2228,6 @@ datasets:
       display_name: Acala
       ecosystem: acala
     schema: {}
-  acurast-canary:
-    metadata:
-      kind: substrate
-      logo_url: https://cdn.subsquid.io/img/networks/acurast.svg
-      display_name: Acurast Canary
-      ecosystem: acurast-canary
-    schema: {}
   agung:
     metadata:
       kind: substrate

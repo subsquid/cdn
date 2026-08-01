@@ -360,9 +360,6 @@ sqd-network-datasets:
   - name: acala
     id: s3://acala-4
     kind: substrate
-  - name: acurast-canary
-    id: s3://acurast-canary
-    kind: substrate
   - name: agung
     id: s3://agung-4
     kind: substrate

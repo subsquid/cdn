@@ -22,27 +22,6 @@
       ]
     },
     {
-      "chainName": "Acurast Canary",
-      "chainSS58Prefix": 42,
-      "genesis_hash": "0xce7681fb12aa8f7265d229a9074be0ea1d5e99b53eedcec2deade43857901808",
-      "id": "acurast-canary",
-      "network": "acurast-canary",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/acurast-canary",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainName": "Agung",
       "chainSS58Prefix": null,
       "genesisHash": "0xf496028047ba9e394a575e5d2d93828360d35a4c2dade61efff0de309021909f",
