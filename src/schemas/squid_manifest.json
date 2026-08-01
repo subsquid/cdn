@@ -304,7 +304,6 @@
                                     "blast-l2.http",
                                     "bridge-hub-kusama.http",
                                     "bridge-hub-polkadot.http",
-                                    "bridge-hub-rococo.http",
                                     "bsc.http",
                                     "bsc-testnet.http",
                                     "centrifuge.http",

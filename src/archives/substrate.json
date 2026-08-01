@@ -403,27 +403,6 @@
       ]
     },
     {
-      "chainName": "Bridge Hub Rococo",
-      "chainSS58Prefix": 42,
-      "genesisHash": "0x6de3dc58adbc525bad4ae201a8660c5be8949e10308457b176510c72a413f3a3",
-      "id": "bridge-hub-rococo",
-      "network": "bridge-hub-rococo",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/bridge-hub-rococo",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainName": "Centrifuge",
       "chainSS58Prefix": null,
       "genesisHash": "0xb3db41421702df9a7fcac62b53ffeac85f7853cc4e689e0b93aeb3db18c09d82",

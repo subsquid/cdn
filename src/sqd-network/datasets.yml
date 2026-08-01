@@ -411,9 +411,6 @@ sqd-network-datasets:
   - name: bridge-hub-polkadot
     id: s3://bridge-hub-polkadot-4
     kind: substrate
-  - name: bridge-hub-rococo
-    id: s3://bridge-hub-rococo-4
-    kind: substrate
   - name: celo-alfajores-testnet
     id: s3://celo-alfajores-testnet
     kind: substrate

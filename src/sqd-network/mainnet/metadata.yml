@@ -2345,13 +2345,6 @@ datasets:
       display_name: Polkadot Bridge Hub
       ecosystem: bridge-hub-polkadot
     schema: {}
-  bridge-hub-rococo:
-    metadata:
-      kind: substrate
-      logo_url: https://cdn.subsquid.io/img/networks/bridgehub.svg
-      display_name: Rococo Bridge Hub
-      ecosystem: bridge-hub-rococo
-    schema: {}
   centrifuge:
     metadata:
       kind: substrate
