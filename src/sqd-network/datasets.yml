@@ -98,9 +98,6 @@ sqd-network-datasets:
   - name: bob-sepolia
     id: s3://bob-sepolia
     kind: evm
-  - name: camp-network-testnet-v2
-    id: s3://camp-network-testnet-v2
-    kind: evm
   - name: canto
     id: s3://canto-traceless
     kind: evm

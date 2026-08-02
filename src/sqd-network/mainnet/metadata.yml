@@ -571,22 +571,6 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
-  camp-network-testnet-v2:
-    metadata:
-      display_name: Camp Network Testnet v2
-      ecosystem: camp-network
-      logo_url: https://cdn.subsquid.io/img/networks/camp-network.svg
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 325000
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-        traces: {}
-        state_diffs: {}
   canto:
     metadata:
       display_name: Canto

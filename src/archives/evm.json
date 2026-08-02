@@ -784,29 +784,6 @@
       ]
     },
     {
-      "chainId": 325000,
-      "chainName": "Camp Network Testnet v2",
-      "id": "camp-network-testnet-v2",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/camp-network.svg",
-      "network": "camp-network-testnet-v2",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs",
-            "traces",
-            "stateDiffs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/camp-network-testnet-v2",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainId": 7700,
       "chainName": "Canto",
       "id": "canto",
