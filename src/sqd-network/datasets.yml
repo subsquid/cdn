@@ -71,9 +71,6 @@ sqd-network-datasets:
   - name: bitfinity-mainnet
     id: s3://bitfinity-mainnet
     kind: evm
-  - name: bitfinity-testnet
-    id: s3://bitfinity-testnet
-    kind: evm
   - name: bittensor-mainnet-evm
     id: s3://bittensor-mainnet-evm
     kind: evm
@@ -89,9 +86,6 @@ sqd-network-datasets:
   - name: bitgert-mainnet
     id: s3://bitgert-mainnet-1
     kind: evm
-  - name: bitgert-testnet
-    id: s3://bitgert-testnet-1
-    kind: evm
   - name: bob-mainnet
     id: s3://bob-mainnet
     kind: evm
@@ -100,9 +94,6 @@ sqd-network-datasets:
     kind: evm
   - name: canto
     id: s3://canto-traceless
-    kind: evm
-  - name: canto-testnet
-    id: s3://canto-testnet-traceless
     kind: evm
   - name: core-mainnet
     id: s3://core-mainnet-1
@@ -293,9 +284,6 @@ sqd-network-datasets:
   - name: shiden-mainnet
     id: s3://shiden-mainnet
     kind: evm
-  - name: shibuya-testnet
-    id: s3://shibuya-testnet-traceless-1
-    kind: evm
   - name: skale-nebula
     id: s3://skale-nebula-traceless-1
     kind: evm
@@ -310,9 +298,6 @@ sqd-network-datasets:
     kind: evm
   - name: sonic-testnet
     id: s3://sonic-testnet-0
-    kind: evm
-  - name: stratovm-sepolia
-    id: s3://stratovm-sepolia
     kind: evm
   - name: superseed-mainnet
     id: s3://superseed-mainnet
@@ -423,9 +408,6 @@ sqd-network-datasets:
   - name: collectives-polkadot
     id: s3://collectives-polkadot-4
     kind: substrate
-  - name: collectives-westend
-    id: s3://collectives-westend-4
-    kind: substrate
   - name: crust
     id: s3://crust-4
     kind: substrate
@@ -456,14 +438,8 @@ sqd-network-datasets:
   - name: equilibrium
     id: s3://equilibrium
     kind: substrate
-  - name: foucoco
-    id: s3://foucoco-5
-    kind: substrate
   - name: frequency
     id: s3://frequency-4
-    kind: substrate
-  - name: gemini-3h
-    id: s3://gemini-3h
     kind: substrate
   - name: hydradx
     id: s3://hydradx-4
@@ -528,9 +504,6 @@ sqd-network-datasets:
   - name: picasso
     id: s3://picasso
     kind: substrate
-  - name: polimec
-    id: s3://polimec-4
-    kind: substrate
   - name: polkadex
     id: s3://polkadex
     kind: substrate
@@ -548,12 +521,6 @@ sqd-network-datasets:
     kind: substrate
   - name: robonomics
     id: s3://robonomics-4
-    kind: substrate
-  - name: rococo
-    id: s3://rococo-4
-    kind: substrate
-  - name: rolimec
-    id: s3://rolimec-4
     kind: substrate
   - name: shiden-substrate
     id: s3://shiden-substrate-4

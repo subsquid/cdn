@@ -4,7 +4,11 @@
   "title": "CreateSquid Configuration Schema",
   "description": "Schema for createSquid.yaml configuration files used by the create-squid utility",
   "type": "object",
-  "required": ["name", "description", "contracts"],
+  "required": [
+    "name",
+    "description",
+    "contracts"
+  ],
   "properties": {
     "name": {
       "type": "string",
@@ -24,7 +28,12 @@
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["name", "abi", "instances", "events"],
+        "required": [
+          "name",
+          "abi",
+          "instances",
+          "events"
+        ],
         "properties": {
           "name": {
             "type": "string",
@@ -44,7 +53,12 @@
             "minItems": 1,
             "items": {
               "type": "object",
-              "required": ["address", "name", "network", "range"],
+              "required": [
+                "address",
+                "name",
+                "network",
+                "range"
+              ],
               "properties": {
                 "address": {
                   "type": "string",
@@ -88,9 +102,7 @@
                     "binance-mainnet",
                     "binance-testnet",
                     "bitfinity-mainnet",
-                    "bitfinity-testnet",
                     "bitgert-mainnet",
-                    "bitgert-testnet",
                     "bittensor-mainnet-evm",
                     "bittensor-testnet-evm",
                     "blast-l2-mainnet",
@@ -98,7 +110,6 @@
                     "bob-mainnet",
                     "bob-sepolia",
                     "canto",
-                    "canto-testnet",
                     "celo-alfajores-testnet",
                     "celo-mainnet",
                     "core-mainnet",
@@ -165,14 +176,12 @@
                     "scroll-mainnet",
                     "scroll-sepolia",
                     "shibarium",
-                    "shibuya-testnet",
                     "shiden-mainnet",
                     "skale-nebula",
                     "soneium-mainnet",
                     "soneium-minato-testnet",
                     "sonic-mainnet",
                     "sonic-testnet",
-                    "stratovm-sepolia",
                     "superseed-mainnet",
                     "taiko-mainnet",
                     "tanssi",
@@ -190,7 +199,9 @@
                 "range": {
                   "type": "object",
                   "description": "Block range to process for this instance",
-                  "required": ["from"],
+                  "required": [
+                    "from"
+                  ],
                   "properties": {
                     "from": {
                       "type": "integer",

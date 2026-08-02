@@ -433,20 +433,6 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
-  bitfinity-testnet:
-    metadata:
-      display_name: Bitfinity Testnet
-      ecosystem: bitfinity
-      logo_url: https://cdn.subsquid.io/img/networks/bitfinity.png
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 355113
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
   bitgert-mainnet:
     metadata:
       display_name: Bitgert
@@ -456,21 +442,6 @@ datasets:
       kind: evm
       evm:
         chain_id: 32520
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-        traces: {}
-  bitgert-testnet:
-    metadata:
-      display_name: Bitgert Testnet
-      ecosystem: bitgert
-      logo_url: https://cdn.subsquid.io/img/networks/brise.png
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 64668
     schema:
       tables:
         blocks: {}
@@ -580,20 +551,6 @@ datasets:
       kind: evm
       evm:
         chain_id: 7700
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-  canto-testnet:
-    metadata:
-      display_name: Canto Testnet
-      ecosystem: canto
-      logo_url: https://cdn.subsquid.io/img/networks/canto.png
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 7701
     schema:
       tables:
         blocks: {}
@@ -1672,20 +1629,6 @@ datasets:
         logs: {}
         traces: {}
         state_diffs: {}
-  shibuya-testnet:
-    metadata:
-      display_name: Shibuya
-      ecosystem: shibuya
-      logo_url: https://cdn.subsquid.io/img/networks/astar.svg
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 81
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
   shiden-mainnet:
     metadata:
       display_name: Shiden
@@ -1811,22 +1754,6 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
-  stratovm-sepolia:
-    metadata:
-      display_name: StratoVM Sepolia
-      ecosystem: stratovm
-      logo_url: https://cdn.subsquid.io/img/networks/stratovm.png
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 93747
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-        traces: {}
-        state_diffs: {}
   superseed-mainnet:
     metadata:
       display_name: Superseed
@@ -2357,13 +2284,6 @@ datasets:
       display_name: Polkadot Collectives
       ecosystem: collectives-polkadot
     schema: {}
-  collectives-westend:
-    metadata:
-      kind: substrate
-      logo_url: https://cdn.subsquid.io/img/networks/collectives.svg
-      display_name: Westend Collectives
-      ecosystem: collectives-westend
-    schema: {}
   crust:
     metadata:
       kind: substrate
@@ -2415,24 +2335,12 @@ datasets:
       display_name: Equilibrium
       ecosystem: equilibrium
     schema: {}
-  foucoco:
-    metadata:
-      kind: substrate
-      display_name: Foucoco
-      ecosystem: foucoco
-    schema: {}
   frequency:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/frequency.svg
       display_name: Frequency
       ecosystem: frequency
-    schema: {}
-  gemini-3h:
-    metadata:
-      kind: substrate
-      display_name: Subspace Gemini 3h
-      ecosystem: gemini-3h
     schema: {}
   hydradx:
     metadata:
@@ -2581,12 +2489,6 @@ datasets:
       display_name: Picasso
       ecosystem: picasso
     schema: {}
-  polimec:
-    metadata:
-      kind: substrate
-      display_name: Polimec
-      ecosystem: polimec
-    schema: {}
   polkadex:
     metadata:
       kind: substrate
@@ -2626,19 +2528,6 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/robonomics.svg
       display_name: Robonomics
       ecosystem: robonomics
-    schema: {}
-  rococo:
-    metadata:
-      kind: substrate
-      logo_url: https://cdn.subsquid.io/img/networks/rococo.svg
-      display_name: Rococo
-      ecosystem: rococo
-    schema: {}
-  rolimec:
-    metadata:
-      kind: substrate
-      display_name: Rolimec
-      ecosystem: rolimec
     schema: {}
   shibuya-substrate:
     metadata:

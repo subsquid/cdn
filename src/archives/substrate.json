@@ -487,27 +487,6 @@
       ]
     },
     {
-      "chainName": "Collectives Westend",
-      "chainSS58Prefix": null,
-      "genesisHash": "0x713daf193a6301583ff467be736da27ef0a72711b248927ba413f573d2b38e44",
-      "id": "collectives-westend",
-      "network": "collectives-westend",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/collectives-westend",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainName": "Darwinia Crab",
       "chainSS58Prefix": null,
       "genesisHash": "0x86e49c195aeae7c5c4a86ced251f1a28c67b3c35d8289c387ede1776cdd88b24",
@@ -677,27 +656,6 @@
       ]
     },
     {
-      "chainName": "Foucoco",
-      "chainSS58Prefix": 57,
-      "genesisHash": "0xa8d080b07f9c84465aeb9576db5a7838bcbca3ffb78dbfd7d4b56acafc1f29d1",
-      "id": "foucoco",
-      "network": "foucoco",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/foucoco",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainName": "Frequency",
       "chainSS58Prefix": 90,
       "genesisHash": "0x4a587bf17a404e3572747add7aab7bbe56e805a5479c6c436f07f36fcc8d3ae1",
@@ -712,27 +670,6 @@
             "extrinsics"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/frequency",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainName": "Gemini 3h",
-      "chainSS58Prefix": 2254,
-      "genesis_hash": "0x0c121c75f4ef450f40619e1fca9d1e8e7fbabc42c895bc4790801e85d5a91c34",
-      "id": "gemini-3h",
-      "network": "gemini-3h",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/gemini-3h",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
@@ -1182,27 +1119,6 @@
       ]
     },
     {
-      "chainName": "Polimec",
-      "chainSS58Prefix": 41,
-      "genesisHash": "0x7eb9354488318e7549c722669dcbdcdc526f1fef1420e7944667212f3601fdbd",
-      "id": "polimec",
-      "network": "polimec",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/polimec",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainName": "Polkadex",
       "chainSS58Prefix": 88,
       "genesisHash": "0x3920bcb4960a1eef5580cd5367ff3f430eef052774f78468852f7b9cb39f8a3c",
@@ -1323,48 +1239,6 @@
             "extrinsics"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/robonomics",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainName": "Rococo",
-      "chainSS58Prefix": 42,
-      "genesisHash": "0x6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
-      "id": "rococo",
-      "network": "rococo",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/rococo",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainName": "Rolimec",
-      "chainSS58Prefix": 41,
-      "genesisHash": "0x7bbb72faf3d6d997ebe622a4e0ebfb6fdacf905b6141c86a3122cd479213a8d8",
-      "id": "rolimec",
-      "network": "rolimec",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/rolimec",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2

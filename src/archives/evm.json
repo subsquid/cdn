@@ -511,51 +511,6 @@
       ]
     },
     {
-      "chainId": 355113,
-      "chainName": "Bitfinity Testnet",
-      "id": "bitfinity-testnet",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/bitfinity.png",
-      "network": "bitfinity-testnet",
-      "providers": [
-        {
-          "data": [
-            {
-              "name": "blocks",
-              "ranges": [
-                [
-                  2760000,
-                  null
-                ]
-              ]
-            },
-            {
-              "name": "tx",
-              "ranges": [
-                [
-                  2760000,
-                  null
-                ]
-              ]
-            },
-            {
-              "name": "logs",
-              "ranges": [
-                [
-                  2760000,
-                  null
-                ]
-              ]
-            }
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/bitfinity-testnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainId": 32520,
       "chainName": "Bitgert",
       "id": "bitgert-mainnet",
@@ -579,28 +534,6 @@
             }
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/bitgert-mainnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainId": 64668,
-      "chainName": "Bitgert Testnet",
-      "id": "bitgert-testnet",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/brise.png",
-      "network": "bitgert-testnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs",
-            "traces"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/bitgert-testnet",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
@@ -797,27 +730,6 @@
             "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/canto",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainId": 7701,
-      "chainName": "Canto Testnet",
-      "id": "canto-testnet",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/canto.png",
-      "network": "canto-testnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/canto-testnet",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
@@ -2368,27 +2280,6 @@
       ]
     },
     {
-      "chainId": 81,
-      "chainName": "Shibuya",
-      "id": "shibuya-testnet",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/astar.svg",
-      "network": "shibuya-testnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/shibuya-testnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainId": 336,
       "chainName": "Shiden",
       "id": "shiden-mainnet",
@@ -2512,29 +2403,6 @@
             "traces"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/sonic-testnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainId": 93747,
-      "chainName": "StratoVM Sepolia",
-      "id": "stratovm-sepolia",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/stratovm.png",
-      "network": "stratovm-sepolia",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs",
-            "traces",
-            "stateDiffs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/stratovm-sepolia",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
