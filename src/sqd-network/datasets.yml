@@ -294,7 +294,7 @@ sqd-network-datasets:
     id: s3://soneium-minato-testnet-0
     kind: evm
   - name: sonic-mainnet
-    id: s3://sonic-mainnet
+    id: s3://sonic-mainnet-1
     kind: evm
   - name: sonic-testnet
     id: s3://sonic-testnet-0
