@@ -5,6 +5,9 @@ sqd-network-datasets:
   - name: abstract-testnet
     id: s3://abstract-testnet
     kind: evm
+  - name: alpen-testnet
+    id: s3://alpen-testnet-1
+    kind: evm
   - name: abstract-mainnet
     id: s3://abstract-mainnet
     kind: evm
