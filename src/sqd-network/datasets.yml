@@ -107,9 +107,6 @@ sqd-network-datasets:
   - name: dogechain-mainnet
     id: s3://dogechain-mainnet-traceless-1
     kind: evm
-  - name: ethereum-holesky
-    id: s3://ethereum-holesky-1
-    kind: evm
   - name: ethereum-hoodi
     id: s3://ethereum-hoodi
     kind: evm

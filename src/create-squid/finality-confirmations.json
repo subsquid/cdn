@@ -1,10 +1,5 @@
 [
   {
-    "id": "ethereum-holesky",
-    "chainId": 17000,
-    "confirmations": 64
-  },
-  {
     "id": "ethereum-mainnet",
     "chainId": 1,
     "confirmations": 64
