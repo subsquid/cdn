@@ -703,6 +703,18 @@ datasets:
         logs: {}
         traces: {}
         state_diffs: {}
+  ethereum-mainnet-tb:
+    metadata:
+      display_name: Ethereum Mainnet (Trace Blocks)
+      aliases:
+        - Ethereum Mainnet Trace Blocks
+      ecosystem: ethereum
+      logo_url: https://cdn.subsquid.io/img/networks/ethereum.svg
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 1
+    schema: {}
   ethereum-sepolia:
     metadata:
       display_name: Ethereum Sepolia
@@ -1530,6 +1542,40 @@ datasets:
       kind: evm
       evm:
         chain_id: 157
+    schema:
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
+  robinhood-mainnet:
+    metadata:
+      display_name: Robinhood Chain
+      aliases:
+        - Robinhood Chain Mainnet
+      ecosystem: robinhood
+      logo_url: https://cdn.subsquid.io/img/networks/robinhood.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 4663
+    schema:
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
+  robinhood-testnet:
+    metadata:
+      display_name: Robinhood Chain Testnet
+      ecosystem: robinhood
+      logo_url: https://cdn.subsquid.io/img/networks/robinhood.png
+      type: testnet
+      kind: evm
+      evm:
+        chain_id: 46630
     schema:
       tables:
         blocks: {}
@@ -2617,6 +2663,16 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/zkverify.png
       display_name: zkVerify Testnet
       ecosystem: zkverify
+    schema: {}
+  tron-mainnet:
+    metadata:
+      kind: tron
+      display_name: TRON
+      aliases:
+        - TRON Mainnet
+      ecosystem: tron
+      logo_url: https://cdn.subsquid.io/img/networks/tron.png
+      type: mainnet
     schema: {}
   cronos-mainnet:
     metadata:
