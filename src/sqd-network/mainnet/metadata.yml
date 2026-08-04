@@ -1915,28 +1915,28 @@ datasets:
     schema: {}
   eden:
     metadata:
-      logo_url: https://cdn.prod.website-files.com/65bb4a468049d4f4ebf2c321/65fc35dd065ebfcb72cc8d4f_favicon.png
+      logo_url: https://cdn.subsquid.io/img/networks/eden.png
       kind: substrate
       display_name: Eden
       ecosystem: eden
     schema: {}
   enjin-canary-matrix:
     metadata:
-      logo_url: https://docs.enjin.io/img/favicon.ico
+      logo_url: https://cdn.subsquid.io/img/networks/enjin.png
       kind: substrate
       display_name: Enjin Canary Matrixchain
       ecosystem: enjin
     schema: {}
   enjin-matrix:
     metadata:
-      logo_url: https://docs.enjin.io/img/favicon.ico
+      logo_url: https://cdn.subsquid.io/img/networks/enjin.png
       kind: substrate
       display_name: Enjin Matrixchain
       ecosystem: enjin
     schema: {}
   enjin-relay:
     metadata:
-      logo_url: https://docs.enjin.io/img/favicon.ico
+      logo_url: https://cdn.subsquid.io/img/networks/enjin.png
       kind: substrate
       display_name: Enjin Relaychain
       ecosystem: enjin
