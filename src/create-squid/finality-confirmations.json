@@ -10,18 +10,8 @@
     "confirmations": 64
   },
   {
-    "id": "ethereum-hoodi",
-    "chainId": 560048,
-    "confirmations": 64
-  },
-  {
     "id": "binance-mainnet",
     "chainId": 56,
-    "confirmations": 15
-  },
-  {
-    "id": "binance-testnet",
-    "chainId": 97,
     "confirmations": 15
   },
   {
@@ -80,16 +70,6 @@
     "confirmations": 30
   },
   {
-    "id": "linea-mainnet",
-    "chainId": 59144,
-    "confirmations": 64
-  },
-  {
-    "id": "zksync-mainnet",
-    "chainId": 324,
-    "confirmations": 30
-  },
-  {
     "id": "zksync-sepolia",
     "chainId": 300,
     "confirmations": 30
@@ -143,11 +123,6 @@
     "id": "merlin-mainnet",
     "chainId": 4200,
     "confirmations": 120
-  },
-  {
-    "id": "taiko-mainnet",
-    "chainId": 167000,
-    "confirmations": 10
   },
   {
     "id": "xlayer-mainnet",

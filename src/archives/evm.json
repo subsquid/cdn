@@ -228,26 +228,6 @@
       ]
     },
     {
-      "chainId": 592,
-      "chainName": "Astar",
-      "id": "astar-mainnet",
-      "logoUrl": "https://cdn.subsquid.io/img/networks/astar.svg",
-      "network": "astar",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/astar-mainnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainId": 43114,
       "chainName": "Avalanche",
       "id": "avalanche-mainnet",
@@ -424,29 +404,6 @@
       ]
     },
     {
-      "chainId": 80094,
-      "chainName": "Berachain Mainnet",
-      "id": "berachain-mainnet",
-      "isTestnet": false,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/berachain.png",
-      "network": "berachain-mainnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs",
-            "traces",
-            "stateDiffs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/berachain-mainnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainId": 56,
       "chainName": "Binance",
       "id": "binance-mainnet",
@@ -465,27 +422,6 @@
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 1
-        }
-      ]
-    },
-    {
-      "chainId": 97,
-      "chainName": "Binance Testnet",
-      "id": "binance-testnet",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/binance.svg",
-      "network": "binance-testnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/binance-testnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
         }
       ]
     },
@@ -758,27 +694,6 @@
       ]
     },
     {
-      "chainId": 42220,
-      "chainName": "Celo Mainnet",
-      "id": "celo-mainnet",
-      "isTestnet": false,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/celo.svg",
-      "network": "celo-mainnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/celo-mainnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainId": 1116,
       "chainName": "Core Mainnet",
       "id": "core-mainnet",
@@ -943,68 +858,6 @@
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 1
-        }
-      ]
-    },
-    {
-      "chainId": 560048,
-      "chainName": "Ethereum Hoodi",
-      "id": "ethereum-hoodi",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/ethereum.svg",
-      "network": "ethereum-hoodi",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/ethereum-hoodi",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 1
-        }
-      ]
-    },
-    {
-      "chainId": 42793,
-      "chainName": "Etherlink Mainnet",
-      "id": "etherlink-mainnet",
-      "logoUrl": "https://cdn.subsquid.io/img/networks/etherlink.png",
-      "network": "etherlink-mainnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/etherlink-mainnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainId": 127823,
-      "chainName": "Etherlink Shadownet",
-      "id": "etherlink-shadownet",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/etherlink.png",
-      "network": "etherlink-shadownet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/etherlink-shadownet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
         }
       ]
     },
@@ -1196,69 +1049,6 @@
       ]
     },
     {
-      "chainId": 999,
-      "chainName": "HyperEVM Mainnet",
-      "id": "hyperliquid-mainnet",
-      "isTestnet": false,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/hyperliquid.svg",
-      "network": "hyperliquid-mainnet",
-      "providers": [
-        {
-          "data": [
-            {
-              "name": "blocks",
-              "ranges": [
-                [
-                  "1",
-                  null
-                ]
-              ]
-            },
-            {
-              "name": "tx",
-              "ranges": [
-                [
-                  "1",
-                  null
-                ]
-              ]
-            },
-            {
-              "name": "logs",
-              "ranges": [
-                [
-                  "1",
-                  null
-                ]
-              ]
-            },
-            {
-              "name": "traces",
-              "ranges": [
-                [
-                  "1",
-                  null
-                ]
-              ]
-            },
-            {
-              "name": "stateDiffs",
-              "ranges": [
-                [
-                  "1",
-                  null
-                ]
-              ]
-            }
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/hyperliquid-mainnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 1
-        }
-      ]
-    },
-    {
       "chainId": 998,
       "chainName": "HyperEVM Testnet",
       "id": "hyperliquid-testnet",
@@ -1366,27 +1156,6 @@
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainId": 59144,
-      "chainName": "Linea",
-      "id": "linea-mainnet",
-      "logoUrl": "https://cdn.subsquid.io/img/networks/linea.png",
-      "network": "linea-mainnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs",
-            "traces"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/linea-mainnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 1
         }
       ]
     },
@@ -1627,48 +1396,6 @@
             "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/monad-mainnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainId": 10143,
-      "chainName": "Monad Testnet",
-      "id": "monad-testnet",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/monad.png",
-      "network": "monad-testnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/monad-testnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainId": 1287,
-      "chainName": "Moonbase Alpha",
-      "id": "moonbase-testnet",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/moonbasealpha.png",
-      "network": "moonbase",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonbase-testnet",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
@@ -2192,49 +1919,6 @@
       ]
     },
     {
-      "chainId": 534352,
-      "chainName": "Scroll",
-      "id": "scroll-mainnet",
-      "logoUrl": "https://cdn.subsquid.io/img/networks/scroll.png",
-      "network": "scroll-mainnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs",
-            "traces"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/scroll-mainnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainId": 534351,
-      "chainName": "Scroll Sepolia",
-      "id": "scroll-sepolia",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/scroll.png",
-      "network": "scroll-sepolia",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs",
-            "traces"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/scroll-sepolia",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainId": 109,
       "chainName": "Shibarium",
       "id": "shibarium",
@@ -2320,29 +2004,6 @@
       ]
     },
     {
-      "chainId": 1946,
-      "chainName": "Soneium Minato Testnet",
-      "id": "soneium-minato-testnet",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/soneium.svg",
-      "network": "soneium-minato-testnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs",
-            "traces",
-            "stateDiffs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/soneium-minato-testnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainId": 146,
       "chainName": "Sonic Mainnet",
       "id": "sonic-mainnet",
@@ -2408,26 +2069,6 @@
       ]
     },
     {
-      "chainId": 167000,
-      "chainName": "Taiko Mainnet",
-      "id": "taiko-mainnet",
-      "logoUrl": "https://cdn.subsquid.io/img/networks/taiko.png",
-      "network": "taiko-mainnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/taiko-mainnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainId": 5678,
       "chainName": "Tanssi",
       "id": "tanssi",
@@ -2441,29 +2082,6 @@
             "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/tanssi",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainId": 130,
-      "chainName": "Unichain Mainnet",
-      "id": "unichain-mainnet",
-      "isTestnet": false,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/unichain.svg",
-      "network": "unichain-mainnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs",
-            "traces",
-            "stateDiffs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/unichain-mainnet",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
@@ -2555,35 +2173,6 @@
       ]
     },
     {
-      "chainId": 324,
-      "chainName": "zkSync",
-      "id": "zksync-mainnet",
-      "logoUrl": "https://cdn.subsquid.io/img/networks/zksync-era.svg",
-      "network": "zksync-mainnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs",
-            {
-              "name": "traces",
-              "ranges": [
-                [
-                  15500000,
-                  null
-                ]
-              ]
-            }
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/zksync-mainnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 1
-        }
-      ]
-    },
-    {
       "chainId": 300,
       "chainName": "zkSync Sepolia",
       "id": "zksync-sepolia",
@@ -2599,28 +2188,6 @@
             "traces"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/zksync-sepolia",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainId": 7777777,
-      "chainName": "Zora",
-      "id": "zora-mainnet",
-      "logoUrl": "https://cdn.subsquid.io/img/networks/zora.png",
-      "network": "zora-mainnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs",
-            "traces",
-            "stateDiffs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/zora-mainnet",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
