@@ -127,7 +127,7 @@ datasets:
       type: testnet
       logo_url: https://cdn.subsquid.io/img/networks/alpen.svg
       evm:
-        chain_id: 8150
+        chain_id: 20310
     schema:
       tables:
         blocks: {}
