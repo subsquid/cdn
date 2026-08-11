@@ -21,7 +21,7 @@ sqd-network-datasets:
     id: s3://arbitrum-nova-1
     kind: evm
   - name: arbitrum-one
-    id: s3://arbitrum-one
+    id: s3://arbitrum-one-1
     kind: evm
   - name: arbitrum-sepolia
     id: s3://arbitrum-sepolia-traceless
