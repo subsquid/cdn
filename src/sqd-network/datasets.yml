@@ -60,7 +60,7 @@ sqd-network-datasets:
     id: s3://beam-mainnet
     kind: evm
   - name: berachain-mainnet
-    id: s3://berachain-mainnet
+    id: s3://berachain-mainnet-1
     kind: evm
   - name: berachain-bartio
     id: s3://berachain-bartio
