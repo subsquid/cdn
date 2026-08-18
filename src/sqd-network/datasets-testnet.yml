@@ -1,6 +1,6 @@
 sqd-network-datasets:
   - name: arbitrum-one
-    id: s3://arbitrum-one
+    id: s3://arbitrum-one-2
     kind: evm
   - name: ethereum-mainnet
     id: s3://ethereum-mainnet-4
