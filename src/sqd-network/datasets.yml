@@ -1,7 +1,4 @@
 sqd-network-datasets:
-  - name: 0g-testnet
-    id: s3://0g-testnet-traceless-1
-    kind: evm
   - name: abstract-testnet
     id: s3://abstract-testnet
     kind: evm
@@ -14,9 +11,6 @@ sqd-network-datasets:
   - name: agung-evm
     id: s3://agung-testnet-1
     kind: evm
-  - name: aleph-zero-evm-mainnet
-    id: s3://aleph-zero-evm-mainnet
-    kind: evm
   - name: arbitrum-nova
     id: s3://arbitrum-nova-1
     kind: evm
@@ -25,9 +19,6 @@ sqd-network-datasets:
     kind: evm
   - name: arbitrum-sepolia
     id: s3://arbitrum-sepolia-traceless
-    kind: evm
-  - name: arthera-mainnet
-    id: s3://arthera-mainnet
     kind: evm
   - name: astar-mainnet
     id: s3://astar-mainnet-traceless-1
@@ -62,17 +53,11 @@ sqd-network-datasets:
   - name: berachain-mainnet
     id: s3://berachain-mainnet-1
     kind: evm
-  - name: berachain-bartio
-    id: s3://berachain-bartio
-    kind: evm
   - name: binance-mainnet
     id: s3://binance-mainnet-1
     kind: evm
   - name: binance-testnet
     id: s3://binance-testnet-traceless-1
-    kind: evm
-  - name: bitfinity-mainnet
-    id: s3://bitfinity-mainnet
     kind: evm
   - name: bittensor-mainnet-evm
     id: s3://bittensor-mainnet-evm
@@ -86,26 +71,14 @@ sqd-network-datasets:
   - name: blast-sepolia
     id: s3://blast-sepolia
     kind: evm
-  - name: bitgert-mainnet
-    id: s3://bitgert-mainnet-1
-    kind: evm
   - name: bob-mainnet
     id: s3://bob-mainnet
     kind: evm
   - name: bob-sepolia
     id: s3://bob-sepolia
     kind: evm
-  - name: canto
-    id: s3://canto-traceless
-    kind: evm
   - name: core-mainnet
     id: s3://core-mainnet-1
-    kind: evm
-  - name: cyber-mainnet
-    id: s3://cyber-mainnet-1
-    kind: evm
-  - name: dfk-chain
-    id: s3://dfk-chain-traceless-1
     kind: evm
   - name: dogechain-mainnet
     id: s3://dogechain-mainnet-traceless-1
@@ -134,9 +107,6 @@ sqd-network-datasets:
   - name: galxe-gravity
     id: s3://galxe-gravity
     kind: evm
-  - name: gelato-arbitrum-blueberry
-    id: s3://arbitrum-blueberry-1
-    kind: evm
   - name: gelato-opcelestia-raspberry
     id: s3://opcelestia-raspberry-traceless
     kind: evm
@@ -157,9 +127,6 @@ sqd-network-datasets:
     kind: evm
   - name: hyperliquid-mainnet
     id: s3://hyperliquid-mainnet-1
-    kind: evm
-  - name: immutable-zkevm-mainnet
-    id: s3://immutable-zkevm-mainnet-traceless-1
     kind: evm
   - name: ink-mainnet
     id: s3://ink-mainnet-2
@@ -194,9 +161,6 @@ sqd-network-datasets:
   - name: megaeth-testnet
     id: s3://mega-testnet-v2
     kind: evm
-  - name: merlin-mainnet
-    id: s3://merlin-mainnet-traceless
-    kind: evm
   - name: metis-mainnet
     id: s3://metis-mainnet-3
     kind: evm
@@ -218,17 +182,8 @@ sqd-network-datasets:
   - name: moonriver-mainnet
     id: s3://moonriver-mainnet-1
     kind: evm
-  - name: moonsama
-    id: s3://moonsama-traceless-1
-    kind: evm
-  - name: nakachain
-    id: s3://nakachain
-    kind: evm
   - name: neon-mainnet
     id: s3://neon-mainnet-traceless
-    kind: evm
-  - name: neon-devnet
-    id: s3://neon-devnet-traceless-1
     kind: evm
   - name: opbnb-mainnet
     id: s3://opbnb-mainnet-traceless-1
@@ -242,9 +197,6 @@ sqd-network-datasets:
   - name: optimism-sepolia
     id: s3://optimism-sepolia-traceless
     kind: evm
-  - name: ozean-testnet
-    id: s3://ozean-testnet
-    kind: evm
   - name: peaq-mainnet
     id: s3://peaq-mainnet-traceless-1
     kind: evm
@@ -253,9 +205,6 @@ sqd-network-datasets:
     kind: evm
   - name: plasma-testnet
     id: s3://plasma-testnet
-    kind: evm
-  - name: plume-testnet
-    id: s3://plume-devnet-v2
     kind: evm
   - name: plume-mainnet
     id: s3://plume-mainnet-3
@@ -281,9 +230,6 @@ sqd-network-datasets:
   - name: scroll-sepolia
     id: s3://scroll-sepolia
     kind: evm
-  - name: shiden-mainnet
-    id: s3://shiden-mainnet
-    kind: evm
   - name: skale-nebula
     id: s3://skale-nebula-traceless-1
     kind: evm
@@ -299,14 +245,8 @@ sqd-network-datasets:
   - name: sonic-testnet
     id: s3://sonic-testnet-0
     kind: evm
-  - name: superseed-mainnet
-    id: s3://superseed-mainnet
-    kind: evm
   - name: taiko-mainnet
     id: s3://taiko-mainnet-traceless
-    kind: evm
-  - name: tanssi
-    id: s3://tanssi-traceless-1
     kind: evm
   - name: unichain-mainnet
     id: s3://unichain-mainnet
@@ -339,14 +279,8 @@ sqd-network-datasets:
     id: s3://zora-sepolia-traceless-1
     kind: evm
 
-  - name: acala
-    id: s3://acala-4
-    kind: substrate
   - name: agung
     id: s3://agung-4
-    kind: substrate
-  - name: aleph-zero
-    id: s3://aleph-zero
     kind: substrate
   - name: amplitude
     id: s3://amplitude-4
@@ -366,29 +300,11 @@ sqd-network-datasets:
   - name: astar-substrate
     id: s3://astar-substrate
     kind: substrate
-  - name: avail
-    id: s3://avail-1
-    kind: substrate
-  - name: basilisk
-    id: s3://basilisk-4
-    kind: substrate
-  - name: bifrost-kusama
-    id: s3://bifrost-kusama-4
-    kind: substrate
-  - name: bifrost-polkadot
-    id: s3://bifrost-polkadot-4
-    kind: substrate
   - name: bittensor-testnet
     id: s3://bittensor-testnet
     kind: substrate
   - name: bittensor
     id: s3://bittensor-4
-    kind: substrate
-  - name: bridge-hub-kusama
-    id: s3://bridge-hub-kusama-4
-    kind: substrate
-  - name: bridge-hub-polkadot
-    id: s3://bridge-hub-polkadot-4
     kind: substrate
   - name: celo-alfajores-testnet
     id: s3://celo-alfajores-testnet
@@ -396,32 +312,8 @@ sqd-network-datasets:
   - name: celo-mainnet
     id: s3://celo-mainnet-traceless
     kind: substrate
-  - name: centrifuge
-    id: s3://centrifuge-4
-    kind: substrate
-  - name: cere
-    id: s3://cere-4
-    kind: substrate
   - name: chainflip
     id: s3://chainflip-4
-    kind: substrate
-  - name: collectives-polkadot
-    id: s3://collectives-polkadot-4
-    kind: substrate
-  - name: crust
-    id: s3://crust-4
-    kind: substrate
-  - name: clover
-    id: s3://clover-4
-    kind: substrate
-  - name: darwinia-crab
-    id: s3://darwinia-crab-4
-    kind: substrate
-  - name: darwinia
-    id: s3://darwinia-4
-    kind: substrate
-  - name: degen-chain
-    id: s3://degen-traceless
     kind: substrate
   - name: eden
     id: s3://eden-4
@@ -435,20 +327,8 @@ sqd-network-datasets:
   - name: enjin-canary-matrix
     id: s3://enjin-canary-matrix
     kind: substrate
-  - name: equilibrium
-    id: s3://equilibrium
-    kind: substrate
-  - name: frequency
-    id: s3://frequency-4
-    kind: substrate
   - name: hydradx
     id: s3://hydradx-4
-    kind: substrate
-  - name: integritee
-    id: s3://integritee
-    kind: substrate
-  - name: interlay
-    id: s3://interlay-4
     kind: substrate
   - name: invarch-parachain
     id: s3://invarch-parachain-4
@@ -456,26 +336,8 @@ sqd-network-datasets:
   - name: invarch-tinkernet
     id: s3://invarch-tinkernet-5
     kind: substrate
-  - name: joystream
-    id: s3://joystream-4
-    kind: substrate
-  - name: karura
-    id: s3://karura-4
-    kind: substrate
-  - name: khala
-    id: s3://khala-4
-    kind: substrate
-  - name: kilt
-    id: s3://kilt-4
-    kind: substrate
-  - name: kintsugi
-    id: s3://kintsugi-4
-    kind: substrate
   - name: kusama
     id: s3://kusama-4
-    kind: substrate
-  - name: litentry
-    id: s3://litentry-4
     kind: substrate
   - name: moonbeam-substrate
     id: s3://moonbeam-substrate-4
@@ -486,62 +348,14 @@ sqd-network-datasets:
   - name: moonriver-substrate
     id: s3://moonriver-substrate-4
     kind: substrate
-  - name: paseo
-    id: s3://paseo-5
-    kind: substrate
   - name: peaq-mainnet-substrate
     id: s3://peaq-mainnet-5
     kind: substrate
   - name: pendulum
     id: s3://pendulum-4
     kind: substrate
-  - name: people-chain
-    id: s3://people-chain
-    kind: substrate
-  - name: phala
-    id: s3://phala-4
-    kind: substrate
-  - name: picasso
-    id: s3://picasso
-    kind: substrate
-  - name: polkadex
-    id: s3://polkadex
-    kind: substrate
   - name: polkadot
     id: s3://polkadot-4
-    kind: substrate
-  - name: polymesh
-    id: s3://polymesh-4
-    kind: substrate
-  - name: reef-testnet
-    id: s3://reef-testnet-4-1
-    kind: substrate
-  - name: reef
-    id: s3://reef-4
-    kind: substrate
-  - name: robonomics
-    id: s3://robonomics-4
-    kind: substrate
-  - name: shiden-substrate
-    id: s3://shiden-substrate-4
-    kind: substrate
-  - name: shibuya-substrate
-    id: s3://shibuya-substrate
-    kind: substrate
-  - name: sora-mainnet
-    id: s3://sora-mainnet-4
-    kind: substrate
-  - name: subsocial-parachain
-    id: s3://subsocial-parachain-4-1
-    kind: substrate
-  - name: ternoa
-    id: s3://ternoa-4
-    kind: substrate
-  - name: turing-avail
-    id: s3://avail-turing
-    kind: substrate
-  - name: turing-mainnet
-    id: s3://turing-mainnet
     kind: substrate
   - name: vara
     id: s3://vara-4
