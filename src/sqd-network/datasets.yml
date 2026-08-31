@@ -113,6 +113,9 @@ sqd-network-datasets:
   - name: gnosis-mainnet
     id: s3://gnosis-mainnet-3
     kind: evm
+  - name: hashkey-mainnet
+    id: s3://hashkey-mainnet
+    kind: evm
   - name: hedera-mainnet
     id: s3://hedera-mainnet
     kind: evm
