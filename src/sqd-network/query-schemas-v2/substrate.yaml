@@ -1,0 +1,382 @@
+name: substrate
+
+tables:
+  blocks:
+    output:
+      name: block
+      fields: [
+        number, hash, parent_hash, state_root, extrinsics_root, digest, spec_name, spec_version,
+        impl_name, impl_version, validator, timestamp
+      ]
+    parent_hash_column: parent_hash
+    block_number_column: number
+    sort_key: [ number ]
+    columns:
+      number:
+        type: uint64
+      hash:
+        type: string
+      parent_hash:
+        type: string
+      state_root:
+        type: string
+      extrinsics_root:
+        type: string
+      digest:
+        type: string
+        encoding: json_verbatim
+      spec_name:
+        type: string
+      spec_version:
+        type: uint32
+      impl_name:
+        type: string
+      impl_version:
+        type: uint32
+      timestamp:
+        type: timestamp_millisecond
+        encoding: timestamp_millisecond
+      validator:
+        type: string
+
+  extrinsics:
+    request:
+      name: extrinsics
+      filters: []
+      relations:
+        events:
+          table: events
+          left_key: [ block_number, index ]
+          right_key: [ block_number, extrinsic_index ]
+    output:
+      name: extrinsic
+      fields: [ index, version, success, hash, fee, tip, signature, error ]
+    item_order_keys: [ index ]
+    sort_key: [ block_number, index ]
+    columns:
+      block_number:
+        type: uint64
+      index:
+        type: uint32
+      version:
+        type: uint32
+      signature:
+        type: string
+        encoding: json_verbatim
+        weight: 128
+      fee:
+        type: decimal128
+        encoding: decimal_string
+      tip:
+        type: decimal128
+        encoding: decimal_string
+      error:
+        type: string
+        encoding: json_verbatim
+      success:
+        type: boolean
+      hash:
+        type: string
+      # system
+      _idx:
+        type: int64
+        system: true
+
+  calls:
+    request:
+      name: calls
+      filters: [ name ]
+      relations:
+        extrinsic:
+          table: extrinsics
+          left_key: [ block_number, extrinsic_index ]
+          right_key: [ block_number, index ]
+        events:
+          table: events
+          kind: children
+          left_key: [ block_number, extrinsic_index ]
+          right_key: [ block_number, extrinsic_index ]
+        subcalls:
+          table: calls
+          kind: children
+          key: [ block_number, extrinsic_index ]
+        stack:
+          table: calls
+          kind: parents
+          key: [ block_number, extrinsic_index ]
+    output:
+      name: call
+      fields: [ extrinsic_index, address, name, success, args, origin, error ]
+    address_column: address
+    item_order_keys: [ extrinsic_index, address ]
+    sort_key: [ name, block_number, extrinsic_index ]
+    columns:
+      block_number:
+        type: uint64
+      extrinsic_index:
+        type: uint32
+      address:
+        type: list_uint32
+      name:
+        type: string
+      args:
+        type: string
+        encoding: json_verbatim
+        weight: args_size
+      origin:
+        type: string
+        encoding: json_verbatim
+      error:
+        type: string
+        encoding: json_verbatim
+      success:
+        type: boolean
+      _ethereum_transact_to:
+        type: string
+        encoding: hex_bytes
+        system: true
+      _ethereum_transact_sighash:
+        type: string
+        encoding: hex_bytes
+        system: true
+      # system
+      args_size:
+        type: int64
+        system: true
+      _idx:
+        type: int64
+        system: true
+
+  events:
+    request:
+      name: events
+      filters: [ name ]
+      relations:
+        extrinsic:
+          table: extrinsics
+          left_key: [ block_number, extrinsic_index ]
+          right_key: [ block_number, index ]
+        call:
+          table: calls
+          left_key: [ block_number, extrinsic_index, call_address ]
+          right_key: [ block_number, extrinsic_index, address ]
+        stack:
+          table: calls
+          kind: parents
+          left_key: [ block_number, extrinsic_index ]
+          right_key: [ block_number, extrinsic_index ]
+    output:
+      name: event
+      fields: [ index, extrinsic_index, name, phase, call_address, topics, args ]
+    address_column: call_address
+    item_order_keys: [ index ]
+    sort_key: [ name, block_number, index ]
+    columns:
+      block_number:
+        type: uint64
+      index:
+        type: uint32
+      name:
+        type: string
+      args:
+        type: string
+        encoding: json_verbatim
+        weight: args_size
+      phase:
+        type: string
+      extrinsic_index:
+        type: uint32
+      call_address:
+        type: list_uint32
+      topics:
+        type: list_string
+      _evm_log_address:
+        type: string
+        encoding: hex_bytes
+        system: true
+      _evm_log_topic0:
+        type: string
+        encoding: hex_bytes
+        system: true
+      _evm_log_topic1:
+        type: string
+        encoding: hex_bytes
+        system: true
+      _evm_log_topic2:
+        type: string
+        encoding: hex_bytes
+        system: true
+      _evm_log_topic3:
+        type: string
+        encoding: hex_bytes
+        system: true
+      _contract_address:
+        type: string
+        system: true
+      _gear_program_id:
+        type: string
+        system: true
+      _revive_contract:
+        type: string
+        system: true
+      _revive_topic0:
+        type: string
+        system: true
+      _revive_topic1:
+        type: string
+        system: true
+      _revive_topic2:
+        type: string
+        system: true
+      _revive_topic3:
+        type: string
+        system: true
+      # system
+      args_size:
+        type: int64
+        system: true
+      _idx:
+        type: int64
+        system: true
+
+aliases:
+  evmLogs:
+    table: events
+    implicit_filters:
+      name: [ "EVM.Log" ]
+    filters: [ address, topic0, topic1, topic2, topic3 ]
+    special_filters:
+      topic0: { kind: column_alias, column: _evm_log_topic0 }
+      topic1: { kind: column_alias, column: _evm_log_topic1 }
+      topic2: { kind: column_alias, column: _evm_log_topic2 }
+      topic3: { kind: column_alias, column: _evm_log_topic3 }
+      address: { kind: column_alias, column: _evm_log_address }
+    relations:
+      extrinsic:
+        table: extrinsics
+        left_key: [ block_number, extrinsic_index ]
+        right_key: [ block_number, index ]
+      call:
+        table: calls
+        left_key: [ block_number, extrinsic_index, call_address ]
+        right_key: [ block_number, extrinsic_index, address ]
+      stack:
+        table: calls
+        kind: parents
+        left_key: [ block_number, extrinsic_index ]
+        right_key: [ block_number, extrinsic_index ]
+
+  ethereumTransactions:
+    table: calls
+    implicit_filters:
+      name: [ "Ethereum.transact" ]
+    filters: [ to, sighash ]
+    special_filters:
+      to: { kind: column_alias, column: _ethereum_transact_to }
+      sighash: { kind: column_alias, column: _ethereum_transact_sighash }
+    relations:
+      extrinsic:
+        table: extrinsics
+        left_key: [ block_number, extrinsic_index ]
+        right_key: [ block_number, index ]
+      stack:
+        table: calls
+        kind: parents
+        key: [ block_number, extrinsic_index ]
+      events:
+        table: events
+        kind: children
+        left_key: [ block_number, extrinsic_index ]
+        right_key: [ block_number, extrinsic_index ]
+
+  contractsEvents:
+    table: events
+    implicit_filters:
+      name: [ "Contracts.ContractEmitted" ]
+    filters: [ contract_address ]
+    special_filters:
+      contract_address: { kind: column_alias, column: _contract_address }
+    relations:
+      extrinsic:
+        table: extrinsics
+        left_key: [ block_number, extrinsic_index ]
+        right_key: [ block_number, index ]
+      call:
+        table: calls
+        left_key: [ block_number, extrinsic_index, call_address ]
+        right_key: [ block_number, extrinsic_index, address ]
+      stack:
+        table: calls
+        kind: parents
+        left_key: [ block_number, extrinsic_index ]
+        right_key: [ block_number, extrinsic_index ]
+
+  gearMessagesEnqueued:
+    table: events
+    implicit_filters:
+      name: [ "Gear.UserMessageEnqueued" ]
+    filters: [ program_id ]
+    special_filters:
+      program_id: { kind: column_alias, column: _gear_program_id }
+    relations:
+      extrinsic:
+        table: extrinsics
+        left_key: [ block_number, extrinsic_index ]
+        right_key: [ block_number, index ]
+      call:
+        table: calls
+        left_key: [ block_number, extrinsic_index, call_address ]
+        right_key: [ block_number, extrinsic_index, address ]
+      stack:
+        table: calls
+        kind: parents
+        left_key: [ block_number, extrinsic_index ]
+        right_key: [ block_number, extrinsic_index ]
+
+  gearUserMessagesSent:
+    table: events
+    implicit_filters:
+      name: [ "Gear.UserMessageSent" ]
+    filters: [ program_id ]
+    special_filters:
+      program_id: { kind: column_alias, column: _gear_program_id }
+    relations:
+      extrinsic:
+        table: extrinsics
+        left_key: [ block_number, extrinsic_index ]
+        right_key: [ block_number, index ]
+      call:
+        table: calls
+        left_key: [ block_number, extrinsic_index, call_address ]
+        right_key: [ block_number, extrinsic_index, address ]
+      stack:
+        table: calls
+        kind: parents
+        left_key: [ block_number, extrinsic_index ]
+        right_key: [ block_number, extrinsic_index ]
+
+  reviveContractEmitted:
+    table: events
+    implicit_filters:
+      name: [ "Revive.ContractEmitted" ]
+    filters: [ contract, topic0, topic1, topic2, topic3 ]
+    special_filters:
+      contract: { kind: column_alias, column: _revive_contract }
+      topic0: { kind: column_alias, column: _revive_topic0 }
+      topic1: { kind: column_alias, column: _revive_topic1 }
+      topic2: { kind: column_alias, column: _revive_topic2 }
+      topic3: { kind: column_alias, column: _revive_topic3 }
+    relations:
+      extrinsic:
+        table: extrinsics
+        left_key: [ block_number, extrinsic_index ]
+        right_key: [ block_number, index ]
+      call:
+        table: calls
+        left_key: [ block_number, extrinsic_index, call_address ]
+        right_key: [ block_number, extrinsic_index, address ]
+      stack:
+        table: calls
+        kind: parents
+        left_key: [ block_number, extrinsic_index ]
+        right_key: [ block_number, extrinsic_index ]
