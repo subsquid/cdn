@@ -1,0 +1,188 @@
+name: bitcoin
+
+tables:
+  blocks:
+    output:
+      name: block
+      fields: [
+        number, hash, parent_hash, timestamp, median_time, version, merkle_root, nonce, target,
+        bits, difficulty, chain_work, stripped_size, size, weight
+      ]
+    parent_hash_column: parent_hash
+    block_number_column: number
+    sort_key: [ number ]
+    columns:
+      number:
+        type: uint64
+      hash:
+        type: string
+      parent_hash:
+        type: string
+      timestamp:
+        type: timestamp_second
+      median_time:
+        type: timestamp_second
+      version:
+        type: uint32
+      merkle_root:
+        type: string
+      nonce:
+        type: uint32
+      target:
+        type: string
+      bits:
+        type: string
+      difficulty:
+        type: float64
+      chain_work:
+        type: string
+      stripped_size:
+        type: uint64
+      size:
+        type: uint64
+      weight:
+        type: uint64
+
+  transactions:
+    request:
+      name: transactions
+      filters: []
+      relations:
+        inputs:
+          table: inputs
+          key: [ block_number, transaction_index ]
+        outputs:
+          table: outputs
+          key: [ block_number, transaction_index ]
+    output:
+      name: transaction
+      fields: [ transaction_index, hex, txid, hash, size, vsize, weight, version, locktime ]
+    item_order_keys: [ transaction_index ]
+    sort_key: [ block_number, transaction_index ]
+    columns:
+      block_number:
+        type: uint64
+      transaction_index:
+        type: uint32
+      hex:
+        type: string
+      txid:
+        type: string
+      hash:
+        type: string
+      size:
+        type: uint64
+      vsize:
+        type: uint64
+      weight:
+        type: uint64
+      version:
+        type: uint32
+      locktime:
+        type: uint32
+
+  inputs:
+    request:
+      name: inputs
+      filters: [ type, prevout_script_pub_key_address, prevout_script_pub_key_type, prevout_generated ]
+      relations:
+        transaction:
+          table: transactions
+          key: [ block_number, transaction_index ]
+        transaction_inputs:
+          table: inputs
+          key: [ block_number, transaction_index ]
+        transaction_outputs:
+          table: outputs
+          key: [ block_number, transaction_index ]
+    output:
+      name: input
+      fields: [
+        transaction_index, input_index, type, txid, vout, script_sig_hex, script_sig_asm,
+        sequence, coinbase, tx_in_witness, prevout_generated, prevout_height, prevout_value,
+        prevout_script_pub_key_hex, prevout_script_pub_key_asm, prevout_script_pub_key_desc,
+        prevout_script_pub_key_type, prevout_script_pub_key_address
+      ]
+    item_order_keys: [ transaction_index, input_index ]
+    sort_key: [ prevout_script_pub_key_address, block_number, transaction_index, input_index ]
+    columns:
+      block_number:
+        type: uint64
+      transaction_index:
+        type: uint32
+      input_index:
+        type: uint32
+      type:
+        type: string
+      txid:
+        type: string
+      vout:
+        type: uint32
+      script_sig_hex:
+        type: string
+      script_sig_asm:
+        type: string
+      sequence:
+        type: uint32
+      coinbase:
+        type: string
+      tx_in_witness:
+        type: list_string
+      prevout_generated:
+        type: boolean
+      prevout_height:
+        type: uint64
+      prevout_value:
+        type: float64
+      prevout_script_pub_key_hex:
+        type: string
+      prevout_script_pub_key_asm:
+        type: string
+      prevout_script_pub_key_desc:
+        type: string
+      prevout_script_pub_key_type:
+        type: string
+      prevout_script_pub_key_address:
+        type: string
+
+  outputs:
+    request:
+      name: outputs
+      filters: [ script_pub_key_address, script_pub_key_type ]
+      relations:
+        transaction:
+          table: transactions
+          key: [ block_number, transaction_index ]
+        transaction_inputs:
+          table: inputs
+          key: [ block_number, transaction_index ]
+        transaction_outputs:
+          table: outputs
+          key: [ block_number, transaction_index ]
+    output:
+      name: output
+      fields: [
+        transaction_index, output_index, value, script_pub_key_hex, script_pub_key_asm,
+        script_pub_key_desc, script_pub_key_type, script_pub_key_address
+      ]
+    item_order_keys: [ transaction_index, output_index ]
+    sort_key: [ script_pub_key_address, block_number, transaction_index, output_index ]
+    columns:
+      block_number:
+        type: uint64
+      transaction_index:
+        type: uint32
+      output_index:
+        type: uint32
+      value:
+        type: float64
+      script_pub_key_hex:
+        type: string
+      script_pub_key_asm:
+        type: string
+      script_pub_key_desc:
+        type: string
+      script_pub_key_type:
+        type: string
+      script_pub_key_address:
+        type: string

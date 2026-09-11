@@ -1,0 +1,8 @@
+schemas:
+  evm: /sqd-network/query-schemas-v2/evm.yaml
+  solana: /sqd-network/query-schemas-v2/solana.yaml
+  substrate: /sqd-network/query-schemas-v2/substrate.yaml
+  bitcoin: /sqd-network/query-schemas-v2/bitcoin.yaml
+  hyperliquidFills: /sqd-network/query-schemas-v2/hyperliquid_fills.yaml
+  hyperliquidReplicaCmds: /sqd-network/query-schemas-v2/hyperliquid_replica_cmds.yaml
+  tron: /sqd-network/query-schemas-v2/tron.yaml
