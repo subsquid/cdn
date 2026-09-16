@@ -6,6 +6,11 @@ datasets:
       ecosystem: bitcoin
       type: mainnet
       logo_url: https://cdn.subsquid.io/img/networks/bitcoin.svg
+      website: https://bitcoin.org
+      docs: https://developer.bitcoin.org
+      explorer: https://blockstream.info
+      tier: core
+      private: false
     schema:
       tables:
         blocks: {}
@@ -21,6 +26,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/abstract.png
       type: mainnet
       kind: evm
+      website: https://abs.xyz
+      docs: https://docs.abs.xyz
+      tier: frontier
+      private: false
       evm:
         chain_id: 2741
     schema:
@@ -35,6 +44,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/abstract.png
       type: testnet
       kind: evm
+      website: https://abs.xyz
+      docs: https://docs.abs.xyz
+      tier: frontier
+      private: false
       evm:
         chain_id: 11124
     schema:
@@ -51,6 +64,10 @@ datasets:
       ecosystem: adi
       logo_url: https://cdn.subsquid.io/img/networks/adi.jpg
       type: mainnet
+      website: https://www.adi.foundation
+      docs: https://docs.adi.foundation
+      tier: partner
+      private: true
       evm:
         chain_id: 36900
     schema:
@@ -66,6 +83,10 @@ datasets:
       ecosystem: adi
       logo_url: https://cdn.subsquid.io/img/networks/adi.jpg
       type: testnet
+      website: https://www.adi.foundation
+      docs: https://docs.adi.foundation
+      tier: partner
+      private: true
       evm: {}
     schema:
       tables:
@@ -82,6 +103,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/peaq.png
       type: testnet
       kind: evm
+      website: https://www.peaq.network
+      docs: https://docs.peaq.network
+      tier: partner
+      private: false
       evm:
         chain_id: 9990
     schema:
@@ -96,6 +121,10 @@ datasets:
       ecosystem: alpen
       type: testnet
       logo_url: https://cdn.subsquid.io/img/networks/alpen.svg
+      website: https://www.alpenlabs.io
+      docs: https://docs.alpenlabs.io
+      tier: partner
+      private: false
       evm:
         chain_id: 20310
     schema:
@@ -112,6 +141,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/arbitrum-nova.png
       type: mainnet
       kind: evm
+      website: https://arbitrum.io
+      docs: https://docs.arbitrum.io
+      explorer: https://arbiscan.io
+      tier: core
+      private: false
       evm:
         chain_id: 42170
     schema:
@@ -127,6 +161,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/arbitrum.svg
       type: mainnet
       kind: evm
+      website: https://arbitrum.io
+      docs: https://docs.arbitrum.io
+      explorer: https://arbiscan.io
+      tier: core
+      private: false
       evm:
         chain_id: 42161
     schema:
@@ -142,6 +181,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/arbitrum.svg
       type: testnet
       kind: evm
+      website: https://arbitrum.io
+      docs: https://docs.arbitrum.io
+      explorer: https://arbiscan.io
+      tier: core
+      private: false
       evm:
         chain_id: 421614
     schema:
@@ -156,6 +200,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/astar.svg
       type: mainnet
       kind: evm
+      website: https://astar.network
+      docs: https://docs.astar.network
+      explorer: https://astar.subscan.io
+      tier: frontier
+      private: false
       evm:
         chain_id: 592
     schema:
@@ -170,6 +219,11 @@ datasets:
       ecosystem: astar
       type: mainnet
       logo_url: https://cdn.subsquid.io/img/networks/astar.svg
+      website: https://astar.network
+      docs: https://docs.astar.network
+      explorer: https://astar.subscan.io
+      tier: frontier
+      private: false
       evm:
         chain_id: 3776
     schema:
@@ -184,6 +238,11 @@ datasets:
       ecosystem: astar
       type: testnet
       logo_url: https://cdn.subsquid.io/img/networks/astar.svg
+      website: https://astar.network
+      docs: https://docs.astar.network
+      explorer: https://astar.subscan.io
+      tier: frontier
+      private: false
       evm:
         chain_id: 6038361
     schema:
@@ -198,6 +257,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/avax.png
       type: mainnet
       kind: evm
+      website: https://avax.network
+      docs: https://build.avax.network/docs
+      explorer: https://snowscan.xyz
+      tier: core
+      private: false
       evm:
         chain_id: 43114
     schema:
@@ -214,6 +278,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/avax.png
       type: testnet
       kind: evm
+      website: https://avax.network
+      docs: https://build.avax.network/docs
+      explorer: https://snowscan.xyz
+      tier: core
+      private: false
       evm:
         chain_id: 43113
     schema:
@@ -230,6 +299,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/b3.svg
       type: mainnet
       kind: evm
+      website: https://www.b3.fun
+      docs: https://docs.b3.fun
+      tier: frontier
+      private: false
       evm:
         chain_id: 8333
     schema:
@@ -246,6 +319,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/b3.svg
       type: testnet
       kind: evm
+      website: https://www.b3.fun
+      docs: https://docs.b3.fun
+      tier: frontier
+      private: false
       evm:
         chain_id: 1993
     schema:
@@ -262,6 +339,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/base.png
       type: mainnet
       kind: evm
+      website: https://base.org
+      docs: https://docs.base.org
+      explorer: https://basescan.org
+      tier: core
+      private: false
       evm:
         chain_id: 8453
     schema:
@@ -278,6 +360,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/baseTestnet.png
       type: testnet
       kind: evm
+      website: https://base.org
+      docs: https://docs.base.org
+      explorer: https://basescan.org
+      tier: core
+      private: false
       evm:
         chain_id: 84532
     schema:
@@ -296,6 +383,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/beam.png
       type: mainnet
       kind: evm
+      website: https://onbeam.com
+      docs: https://docs.onbeam.com
+      tier: frontier
+      private: false
       evm:
         chain_id: 4337
     schema:
@@ -314,6 +405,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/berachain.png
       type: mainnet
       kind: evm
+      website: https://berachain.com
+      docs: https://docs.berachain.com
+      explorer: https://berascan.com
+      tier: frontier
+      private: false
       evm:
         chain_id: 80094
     schema:
@@ -332,6 +428,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/binance.svg
       type: mainnet
       kind: evm
+      website: https://www.bnbchain.org
+      docs: https://docs.bnbchain.org
+      explorer: https://bscscan.com
+      tier: core
+      private: false
       evm:
         chain_id: 56
     schema:
@@ -348,6 +449,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/binance.svg
       type: testnet
       kind: evm
+      website: https://www.bnbchain.org
+      docs: https://docs.bnbchain.org
+      explorer: https://bscscan.com
+      tier: core
+      private: false
       evm:
         chain_id: 97
     schema:
@@ -364,6 +470,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/bittensor.svg
       type: mainnet
       kind: evm
+      website: https://bittensor.com
+      docs: https://docs.bittensor.com
+      tier: frontier
+      private: false
+      logo_bg: white
       evm:
         chain_id: 964
     schema:
@@ -378,6 +489,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/bittensor.svg
       type: testnet
       kind: evm
+      website: https://bittensor.com
+      docs: https://docs.bittensor.com
+      tier: frontier
+      private: false
+      logo_bg: white
       evm:
         chain_id: 945
     schema:
@@ -394,6 +510,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/blast.png
       type: mainnet
       kind: evm
+      website: https://blast.io
+      docs: https://docs.blast.io
+      explorer: https://blastscan.io
+      tier: frontier
+      private: false
       evm:
         chain_id: 81457
     schema:
@@ -410,6 +531,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/blast.png
       type: testnet
       kind: evm
+      website: https://blast.io
+      docs: https://docs.blast.io
+      explorer: https://blastscan.io
+      tier: frontier
+      private: false
       evm:
         chain_id: 168587773
     schema:
@@ -426,6 +552,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/bob.png
       type: mainnet
       kind: evm
+      website: https://gobob.xyz
+      docs: https://docs.gobob.xyz
+      explorer: https://explorer.gobob.xyz
+      tier: frontier
+      private: false
       evm:
         chain_id: 60808
     schema:
@@ -442,6 +573,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/bob.png
       type: testnet
       kind: evm
+      website: https://gobob.xyz
+      docs: https://docs.gobob.xyz
+      explorer: https://explorer.gobob.xyz
+      tier: frontier
+      private: false
       evm:
         chain_id: 808813
     schema:
@@ -456,6 +592,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/celo.svg
       type: testnet
       kind: evm
+      website: https://celo.org
+      docs: https://docs.celo.org
+      explorer: https://celoscan.io
+      tier: frontier
+      private: false
       evm:
         chain_id: 44787
     schema:
@@ -472,6 +613,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/celo.svg
       type: mainnet
       kind: evm
+      website: https://celo.org
+      docs: https://docs.celo.org
+      explorer: https://celoscan.io
+      tier: frontier
+      private: false
       evm:
         chain_id: 42220
     schema:
@@ -488,6 +634,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/core.png
       type: mainnet
       kind: evm
+      website: https://coredao.org
+      docs: https://docs.coredao.org
+      explorer: https://scan.coredao.org
+      tier: frontier
+      private: false
       evm:
         chain_id: 1116
     schema:
@@ -505,6 +656,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/tanssi.png
       type: testnet
       kind: evm
+      website: https://www.tanssi.network
+      docs: https://docs.tanssi.network
+      tier: frontier
+      private: false
       evm:
         chain_id: 5678
     schema: {}
@@ -515,6 +670,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/dogechain.png
       type: mainnet
       kind: evm
+      website: https://dogechain.dog
+      docs: https://docs.dogechain.dog
+      tier: frontier
+      private: false
       evm:
         chain_id: 2000
     schema:
@@ -529,6 +688,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/ethereum.svg
       type: testnet
       kind: evm
+      website: https://ethereum.org
+      docs: https://ethereum.org/developers/docs
+      explorer: https://etherscan.io
+      tier: core
+      private: false
       evm:
         chain_id: 560048
     schema:
@@ -543,6 +707,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/ethereum.svg
       type: mainnet
       kind: evm
+      website: https://ethereum.org
+      docs: https://ethereum.org/developers/docs
+      explorer: https://etherscan.io
+      tier: core
+      private: false
       evm:
         chain_id: 1
     schema:
@@ -559,6 +728,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/ethereum.svg
       type: testnet
       kind: evm
+      website: https://ethereum.org
+      docs: https://ethereum.org/developers/docs
+      explorer: https://etherscan.io
+      tier: core
+      private: false
       evm:
         chain_id: 11155111
     schema:
@@ -576,6 +750,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/etherlink.png
       type: mainnet
       kind: evm
+      website: https://www.etherlink.com
+      docs: https://docs.etherlink.com
+      tier: partner
+      private: false
       evm:
         chain_id: 42793
     schema:
@@ -590,6 +768,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/etherlink.png
       type: testnet
       kind: evm
+      website: https://www.etherlink.com
+      docs: https://docs.etherlink.com
+      tier: partner
+      private: false
       evm:
         chain_id: 127823
     schema:
@@ -604,6 +786,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/etherlink.png
       type: testnet
       kind: evm
+      website: https://www.etherlink.com
+      docs: https://docs.etherlink.com
+      tier: partner
+      private: false
       evm:
         chain_id: 128123
     schema:
@@ -618,6 +804,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/flare.png
       type: mainnet
       kind: evm
+      website: https://flare.network
+      docs: https://dev.flare.network
+      explorer: https://flarescan.com
+      tier: frontier
+      private: false
       evm:
         chain_id: 14
     schema:
@@ -634,6 +825,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/gravity.png
       type: mainnet
       kind: evm
+      website: https://gravity.xyz
+      docs: https://docs.gravity.xyz
+      tier: frontier
+      private: false
       evm:
         chain_id: 1625
     schema:
@@ -650,6 +845,10 @@ datasets:
       ecosystem: gelato
       type: testnet
       logo_url: https://cdn.subsquid.io/img/networks/gelato.svg
+      website: https://www.gelato.network
+      docs: https://docs.gelato.cloud
+      tier: frontier
+      private: false
       evm:
         chain_id: 123420111
     schema:
@@ -664,6 +863,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/gnosis.png
       type: mainnet
       kind: evm
+      website: https://www.gnosis.io
+      docs: https://docs.gnosischain.com
+      explorer: https://gnosisscan.io
+      tier: frontier
+      private: false
       evm:
         chain_id: 100
     schema:
@@ -682,6 +886,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/hashkey.jpg
       type: mainnet
       kind: evm
+      website: https://hskchain.net
+      docs: https://docs.hskchain.net
+      explorer: https://hsk.blockscout.com
+      tier: frontier
+      private: false
       evm:
         chain_id: 177
     schema:
@@ -700,6 +909,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/hedera.png
       type: mainnet
       kind: evm
+      website: https://hedera.com
+      docs: https://docs.hedera.com
+      tier: partner
+      private: false
+      logo_bg: white
       evm:
         chain_id: 295
     schema:
@@ -716,6 +930,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/hemi.jpg
       type: mainnet
       kind: evm
+      website: https://hemi.xyz
+      docs: https://docs.hemi.xyz
+      tier: partner
+      private: false
       evm:
         chain_id: 43111
     schema:
@@ -730,6 +948,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/hemi.jpg
       type: testnet
       kind: evm
+      website: https://hemi.xyz
+      docs: https://docs.hemi.xyz
+      tier: partner
+      private: false
       evm:
         chain_id: 743111
     schema:
@@ -746,6 +968,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/hyperliquid.svg
       type: mainnet
       kind: evm
+      website: https://hyperliquid.xyz
+      docs: https://hyperliquid.gitbook.io/hyperliquid-docs
+      explorer: https://app.hyperliquid.xyz
+      tier: frontier
+      private: false
       evm:
         chain_id: 999
     schema:
@@ -762,6 +989,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/hyperliquid.svg
       type: testnet
       kind: evm
+      website: https://hyperliquid.xyz
+      docs: https://hyperliquid.gitbook.io/hyperliquid-docs
+      explorer: https://app.hyperliquid.xyz
+      tier: frontier
+      private: false
       evm:
         chain_id: 998
     schema:
@@ -778,6 +1010,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/ink.svg
       type: mainnet
       kind: evm
+      website: https://inkonchain.com
+      docs: https://docs.inkonchain.com
+      tier: frontier
+      private: false
       evm:
         chain_id: 57073
     schema:
@@ -794,6 +1030,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/ink.svg
       type: testnet
       kind: evm
+      website: https://inkonchain.com
+      docs: https://docs.inkonchain.com
+      tier: frontier
+      private: false
       evm:
         chain_id: 763373
     schema:
@@ -812,6 +1052,10 @@ datasets:
       ecosystem: katana
       type: mainnet
       logo_url: https://cdn.subsquid.io/img/networks/katana.png
+      website: https://katana.network
+      docs: https://docs.katana.network
+      tier: frontier
+      private: true
       evm:
         chain_id: 747474
     schema:
@@ -828,6 +1072,12 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/linea.png
       type: mainnet
       kind: evm
+      website: https://linea.build
+      docs: https://docs.linea.build
+      explorer: https://lineascan.build
+      tier: frontier
+      private: false
+      logo_bg: white
       evm:
         chain_id: 59144
     schema:
@@ -845,6 +1095,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/lukso.svg
       type: mainnet
       kind: evm
+      website: https://lukso.network
+      docs: https://docs.lukso.tech
+      explorer: https://explorer.lukso.network
+      tier: frontier
+      private: false
       evm:
         chain_id: 42
     schema:
@@ -859,6 +1114,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/manta.png
       type: mainnet
       kind: evm
+      website: https://pacific.manta.network
+      docs: https://docs.manta.network
+      explorer: https://pacific-explorer.manta.network
+      tier: frontier
+      private: false
       evm:
         chain_id: 169
     schema:
@@ -873,6 +1133,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/manta.png
       type: testnet
       kind: evm
+      website: https://pacific.manta.network
+      docs: https://docs.manta.network
+      explorer: https://pacific-explorer.manta.network
+      tier: frontier
+      private: false
       evm:
         chain_id: 3441006
     schema:
@@ -887,6 +1152,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/mantle.png
       type: mainnet
       kind: evm
+      website: https://mantle.xyz
+      docs: https://docs.mantle.xyz
+      explorer: https://mantlescan.xyz
+      tier: frontier
+      private: false
       evm:
         chain_id: 5000
     schema:
@@ -901,6 +1171,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/mantle.png
       type: testnet
       kind: evm
+      website: https://mantle.xyz
+      docs: https://docs.mantle.xyz
+      explorer: https://mantlescan.xyz
+      tier: frontier
+      private: false
       evm:
         chain_id: 5003
     schema:
@@ -917,6 +1192,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/mega.png
       type: mainnet
       kind: evm
+      website: https://megaeth.com
+      docs: https://docs.megaeth.com
+      tier: frontier
+      private: false
       evm:
         chain_id: 4326
     schema:
@@ -931,6 +1210,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/mega.png
       type: testnet
       kind: evm
+      website: https://megaeth.com
+      docs: https://docs.megaeth.com
+      tier: frontier
+      private: false
       evm:
         chain_id: 6342
     schema:
@@ -947,6 +1230,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/metis.svg
       type: mainnet
       kind: evm
+      website: https://metis.io
+      docs: https://docs.metis.io
+      explorer: https://andromeda-explorer.metis.io
+      tier: frontier
+      private: false
       evm:
         chain_id: 1088
     schema:
@@ -964,6 +1252,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/mode.png
       type: mainnet
       kind: evm
+      website: https://mode.network
+      docs: https://docs.mode.network
+      explorer: https://modescan.io
+      tier: frontier
+      private: false
       evm:
         chain_id: 34443
     schema:
@@ -980,6 +1273,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/monad.png
       type: mainnet
       kind: evm
+      website: https://monad.xyz
+      docs: https://docs.monad.xyz
+      tier: frontier
+      private: false
       evm:
         chain_id: 143
     schema:
@@ -994,6 +1291,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/monad.png
       type: testnet
       kind: evm
+      website: https://monad.xyz
+      docs: https://docs.monad.xyz
+      tier: frontier
+      private: false
       evm:
         chain_id: 10143
     schema:
@@ -1008,6 +1309,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/moonbasealpha.png
       type: testnet
       kind: evm
+      website: https://moonbeam.network
+      docs: https://docs.moonbeam.network
+      explorer: https://moonscan.io
+      tier: frontier
+      private: false
       evm:
         chain_id: 1287
     schema:
@@ -1022,6 +1328,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/moonbeam.png
       type: mainnet
       kind: evm
+      website: https://moonbeam.network
+      docs: https://docs.moonbeam.network
+      explorer: https://moonscan.io
+      tier: frontier
+      private: false
       evm:
         chain_id: 1284
     schema:
@@ -1037,6 +1348,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/moonriver.png
       type: mainnet
       kind: evm
+      website: https://moonbeam.network/networks/moonriver
+      docs: https://docs.moonbeam.network
+      explorer: https://moonriver.moonscan.io
+      tier: frontier
+      private: false
       evm:
         chain_id: 1285
     schema:
@@ -1052,6 +1368,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/neon.png
       type: mainnet
       kind: evm
+      website: https://neon-labs.org
+      docs: https://docs.neonevm.org
+      explorer: https://neonscan.org
+      tier: frontier
+      private: false
       evm:
         chain_id: 245022934
     schema:
@@ -1066,6 +1387,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/opbnb.png
       type: mainnet
       kind: evm
+      website: https://www.bnbchain.org
+      docs: https://docs.bnbchain.org
+      explorer: https://bscscan.com
+      tier: core
+      private: false
       evm:
         chain_id: 204
     schema:
@@ -1080,6 +1406,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/opbnb.png
       type: testnet
       kind: evm
+      website: https://www.bnbchain.org
+      docs: https://docs.bnbchain.org
+      explorer: https://bscscan.com
+      tier: core
+      private: false
       evm:
         chain_id: 5611
     schema:
@@ -1094,6 +1425,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/optimism.svg
       type: mainnet
       kind: evm
+      website: https://optimism.io
+      docs: https://docs.optimism.io
+      explorer: https://optimistic.etherscan.io
+      tier: core
+      private: false
       evm:
         chain_id: 10
     schema:
@@ -1110,6 +1446,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/optimism.svg
       type: testnet
       kind: evm
+      website: https://optimism.io
+      docs: https://docs.optimism.io
+      explorer: https://optimistic.etherscan.io
+      tier: core
+      private: false
       evm:
         chain_id: 11155420
     schema:
@@ -1124,6 +1465,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/peaq.png
       type: mainnet
       kind: evm
+      website: https://www.peaq.network
+      docs: https://docs.peaq.network
+      tier: partner
+      private: false
       evm:
         chain_id: 3338
     schema:
@@ -1140,6 +1485,11 @@ datasets:
       ecosystem: plasma
       type: mainnet
       logo_url: https://cdn.subsquid.io/img/networks/plasma.svg
+      website: https://www.plasma.to
+      docs: https://docs.plasma.to
+      tier: frontier
+      private: false
+      logo_bg: white
       evm:
         chain_id: 9745
     schema:
@@ -1156,6 +1506,11 @@ datasets:
       ecosystem: plasma
       type: testnet
       logo_url: https://cdn.subsquid.io/img/networks/plasma.svg
+      website: https://www.plasma.to
+      docs: https://docs.plasma.to
+      tier: frontier
+      private: false
+      logo_bg: white
       evm:
         chain_id: 9746
     schema:
@@ -1174,6 +1529,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/plume.png
       type: mainnet
       kind: evm
+      website: https://plumenetwork.xyz
+      docs: https://docs.plumenetwork.xyz
+      tier: frontier
+      private: false
       evm:
         chain_id: 98866
     schema:
@@ -1190,6 +1549,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/polygon.png
       type: testnet
       kind: evm
+      website: https://polygon.technology
+      docs: https://docs.polygon.technology
+      explorer: https://polygonscan.com
+      tier: core
+      private: false
       evm:
         chain_id: 80002
     schema:
@@ -1204,6 +1568,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/polygon.png
       type: mainnet
       kind: evm
+      website: https://polygon.technology
+      docs: https://docs.polygon.technology
+      explorer: https://polygonscan.com
+      tier: core
+      private: false
       evm:
         chain_id: 137
     schema:
@@ -1219,6 +1588,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/zkevm.png
       type: testnet
       kind: evm
+      website: https://polygon.technology
+      docs: https://docs.polygon.technology
+      explorer: https://polygonscan.com
+      tier: core
+      private: false
       evm:
         chain_id: 2442
     schema:
@@ -1233,6 +1607,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/zkevm.png
       type: mainnet
       kind: evm
+      website: https://polygon.technology
+      docs: https://docs.polygon.technology
+      explorer: https://polygonscan.com
+      tier: core
+      private: false
       evm:
         chain_id: 1101
     schema:
@@ -1249,6 +1628,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/prom.png
       type: mainnet
       kind: evm
+      website: https://prom.io
+      docs: https://prom.gitbook.io/prom
+      tier: partner
+      private: false
       evm:
         chain_id: 227
     schema:
@@ -1265,6 +1648,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/shibarium.png
       type: testnet
       kind: evm
+      website: https://shib.io
+      docs: https://docs.shib.io/get-started/shibarium
+      tier: frontier
+      private: false
       evm:
         chain_id: 157
     schema:
@@ -1283,6 +1670,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/robinhood.png
       type: mainnet
       kind: evm
+      website: https://robinhood.com/chain
+      docs: https://docs.robinhood.com/chain
+      explorer: https://robinhoodchain.blockscout.com
+      tier: frontier
+      private: true
       evm:
         chain_id: 4663
     schema:
@@ -1299,6 +1691,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/robinhood.png
       type: testnet
       kind: evm
+      website: https://robinhood.com/chain
+      docs: https://docs.robinhood.com/chain
+      explorer: https://explorer.testnet.chain.robinhood.com
+      tier: frontier
+      private: true
       evm:
         chain_id: 46630
     schema:
@@ -1313,6 +1710,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/scroll.png
       type: mainnet
       kind: evm
+      website: https://scroll.io
+      docs: https://docs.scroll.io
+      explorer: https://scrollscan.com
+      tier: frontier
+      private: false
       evm:
         chain_id: 534352
     schema:
@@ -1328,6 +1730,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/scroll.png
       type: testnet
       kind: evm
+      website: https://scroll.io
+      docs: https://docs.scroll.io
+      explorer: https://scrollscan.com
+      tier: frontier
+      private: false
       evm:
         chain_id: 534351
     schema:
@@ -1345,6 +1752,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/sei.png
       type: mainnet
       kind: evm
+      website: https://www.sei.io
+      docs: https://docs.sei.io
+      tier: frontier
+      private: false
       evm:
         chain_id: 1329
     schema:
@@ -1359,6 +1770,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/sei.png
       type: testnet
       kind: evm
+      website: https://www.sei.io
+      docs: https://docs.sei.io
+      tier: frontier
+      private: false
       evm:
         chain_id: 1328
     schema:
@@ -1373,6 +1788,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/shibarium.png
       type: mainnet
       kind: evm
+      website: https://shib.io
+      docs: https://docs.shib.io/get-started/shibarium
+      tier: frontier
+      private: false
       evm:
         chain_id: 109
     schema:
@@ -1391,6 +1810,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/nebula.png
       type: mainnet
       kind: evm
+      website: https://skale.space
+      docs: https://docs.skale.space
+      tier: frontier
+      private: false
       evm:
         chain_id: 1482601649
     schema:
@@ -1407,6 +1830,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/soneium.svg
       type: mainnet
       kind: evm
+      website: https://soneium.org
+      docs: https://docs.soneium.org
+      tier: frontier
+      private: false
       evm:
         chain_id: 1868
     schema:
@@ -1422,6 +1849,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/soneium.svg
       type: testnet
       kind: evm
+      website: https://soneium.org
+      docs: https://docs.soneium.org
+      tier: frontier
+      private: false
       evm:
         chain_id: 1946
     schema:
@@ -1440,6 +1871,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/sonic.png
       type: mainnet
       kind: evm
+      website: https://soniclabs.com
+      docs: https://docs.soniclabs.com
+      tier: frontier
+      private: false
       evm:
         chain_id: 146
     schema:
@@ -1455,6 +1890,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/sonic.png
       type: testnet
       kind: evm
+      website: https://soniclabs.com
+      docs: https://docs.soniclabs.com
+      tier: frontier
+      private: false
       evm:
         chain_id: 14601
     schema:
@@ -1472,6 +1911,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/stable.png
       type: mainnet
       kind: evm
+      website: https://www.stable.xyz
+      docs: https://docs.stable.xyz
+      tier: frontier
+      private: false
       evm:
         chain_id: 988
     schema:
@@ -1486,6 +1929,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/stable.png
       type: testnet
       kind: evm
+      website: https://www.stable.xyz
+      docs: https://docs.stable.xyz
+      tier: frontier
+      private: false
       evm:
         chain_id: 2201
     schema:
@@ -1502,6 +1949,10 @@ datasets:
       ecosystem: tac
       type: mainnet
       logo_url: https://cdn.subsquid.io/img/networks/tac.png
+      website: https://tac.build
+      docs: https://docs.tac.build
+      tier: frontier
+      private: true
       evm:
         chain_id: 239
     schema:
@@ -1518,6 +1969,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/taiko.png
       type: mainnet
       kind: evm
+      website: https://taiko.xyz
+      docs: https://docs.taiko.xyz
+      explorer: https://taikoscan.io
+      tier: frontier
+      private: false
       evm:
         chain_id: 167000
     schema:
@@ -1534,6 +1990,10 @@ datasets:
       ecosystem: tempo
       type: mainnet
       logo_url: https://cdn.subsquid.io/img/networks/tempo.png
+      website: https://tempo.xyz
+      docs: https://tempo.xyz/developers
+      tier: frontier
+      private: true
       evm:
         chain_id: 4217
     schema:
@@ -1552,6 +2012,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/unichain.svg
       type: mainnet
       kind: evm
+      website: https://unichain.org
+      docs: https://docs.unichain.org
+      tier: frontier
+      private: false
       evm:
         chain_id: 130
     schema:
@@ -1568,6 +2032,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/unichain.svg
       type: testnet
       kind: evm
+      website: https://unichain.org
+      docs: https://docs.unichain.org
+      tier: frontier
+      private: false
       evm:
         chain_id: 1301
     schema:
@@ -1584,6 +2052,11 @@ datasets:
       ecosystem: worldchain
       type: mainnet
       logo_url: https://cdn.subsquid.io/img/networks/world.png
+      website: https://world.org
+      docs: https://docs.world.org/world-chain
+      tier: frontier
+      private: true
+      logo_bg: white
       evm:
         chain_id: 480
     schema:
@@ -1600,6 +2073,11 @@ datasets:
       ecosystem: xlayer
       type: testnet
       logo_url: https://cdn.subsquid.io/img/networks/xlayer.svg
+      website: https://www.okx.com/xlayer
+      docs: https://web3.okx.com/xlayer/docs/developer
+      tier: frontier
+      private: false
+      logo_bg: white
       evm:
         chain_id: 1952
     schema:
@@ -1616,6 +2094,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/xlayer.svg
       type: mainnet
       kind: evm
+      website: https://www.okx.com/xlayer
+      docs: https://web3.okx.com/xlayer/docs/developer
+      tier: frontier
+      private: false
+      logo_bg: white
       evm:
         chain_id: 196
     schema:
@@ -1630,6 +2113,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/xlayer.svg
       type: testnet
       kind: evm
+      website: https://www.okx.com/xlayer
+      docs: https://web3.okx.com/xlayer/docs/developer
+      tier: frontier
+      private: false
+      logo_bg: white
       evm:
         chain_id: 195
     schema:
@@ -1646,6 +2134,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/zklink-nova.png
       type: mainnet
       kind: evm
+      website: https://zk.link
+      docs: https://docs.zk.link
+      tier: frontier
+      private: false
       evm:
         chain_id: 810180
     schema:
@@ -1661,6 +2153,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/zksync-era.svg
       type: mainnet
       kind: evm
+      website: https://zksync.io
+      docs: https://docs.zksync.io
+      explorer: https://explorer.zksync.io
+      tier: frontier
+      private: false
       evm:
         chain_id: 324
     schema:
@@ -1676,6 +2173,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/zksync-era.svg
       type: testnet
       kind: evm
+      website: https://zksync.io
+      docs: https://docs.zksync.io
+      explorer: https://explorer.zksync.io
+      tier: frontier
+      private: false
       evm:
         chain_id: 300
     schema:
@@ -1691,6 +2193,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/zora.png
       type: mainnet
       kind: evm
+      website: https://zora.co
+      docs: https://docs.zora.co
+      explorer: https://explorer.zora.energy
+      tier: frontier
+      private: false
       evm:
         chain_id: 7777777
     schema:
@@ -1707,6 +2214,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/zora-sepolia-testnet.png
       type: testnet
       kind: evm
+      website: https://zora.co
+      docs: https://docs.zora.co
+      explorer: https://explorer.zora.energy
+      tier: frontier
+      private: false
       evm:
         chain_id: 999999999
     schema:
@@ -1720,6 +2232,11 @@ datasets:
       display_name: Hyperliquid
       ecosystem: hyperliquid
       logo_url: https://cdn.subsquid.io/img/networks/hyperliquid.svg
+      website: https://hyperliquid.xyz
+      docs: https://hyperliquid.gitbook.io/hyperliquid-docs
+      explorer: https://app.hyperliquid.xyz
+      tier: frontier
+      private: false
     schema:
       tables:
         blocks: {}
@@ -1730,6 +2247,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/hyperliquid.svg
       display_name: Hyperliquid Replica Commands
       ecosystem: hyperliquid
+      website: https://hyperliquid.xyz
+      docs: https://hyperliquid.gitbook.io/hyperliquid-docs
+      explorer: https://app.hyperliquid.xyz
+      tier: frontier
+      private: false
     schema:
       tables:
         blocks: {}
@@ -1741,6 +2263,11 @@ datasets:
       display_name: Solana Devnet
       ecosystem: solana
       logo_url: https://cdn.subsquid.io/img/networks/solana.svg
+      website: https://solana.com
+      docs: https://solana.com/docs
+      explorer: https://explorer.solana.com
+      tier: core
+      private: false
     schema:
       tables:
         instructions: {}
@@ -1756,6 +2283,11 @@ datasets:
       display_name: Solana
       ecosystem: solana
       logo_url: https://cdn.subsquid.io/img/networks/solana.svg
+      website: https://solana.com
+      docs: https://solana.com/docs
+      explorer: https://explorer.solana.com
+      tier: core
+      private: false
     schema:
       tables:
         instructions: {}
@@ -1771,6 +2303,10 @@ datasets:
       display_name: Soon Devnet
       ecosystem: soon
       logo_url: https://cdn.subsquid.io/img/networks/soon.png
+      website: https://soo.network
+      docs: https://docs.soo.network
+      tier: frontier
+      private: false
     schema:
       tables:
         instructions: {}
@@ -1788,6 +2324,10 @@ datasets:
         - Soon Mainnet
       ecosystem: soon
       logo_url: https://cdn.subsquid.io/img/networks/soon.png
+      website: https://soo.network
+      docs: https://docs.soo.network
+      tier: frontier
+      private: false
     schema:
       tables:
         instructions: {}
@@ -1803,6 +2343,10 @@ datasets:
       display_name: Soon Testnet
       ecosystem: soon
       logo_url: https://cdn.subsquid.io/img/networks/soon.png
+      website: https://soo.network
+      docs: https://docs.soo.network
+      tier: frontier
+      private: false
     schema:
       tables:
         instructions: {}
@@ -1818,6 +2362,10 @@ datasets:
       display_name: SVM BNB
       ecosystem: soon
       logo_url: https://cdn.subsquid.io/img/networks/bnb.svg
+      website: https://soo.network
+      docs: https://docs.soo.network
+      tier: frontier
+      private: false
     schema:
       tables:
         instructions: {}
@@ -1833,6 +2381,10 @@ datasets:
       display_name: SVM BNB Testnet
       ecosystem: soon
       logo_url: https://cdn.subsquid.io/img/networks/bnb.svg
+      website: https://soo.network
+      docs: https://docs.soo.network
+      tier: frontier
+      private: false
     schema:
       tables:
         instructions: {}
@@ -1847,6 +2399,10 @@ datasets:
       kind: substrate
       display_name: Agung (Substrate)
       ecosystem: agung
+      website: https://www.peaq.network
+      docs: https://docs.peaq.network
+      tier: partner
+      private: false
     schema: {}
   amplitude:
     metadata:
@@ -1854,6 +2410,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/amplitude.svg
       display_name: Amplitude
       ecosystem: amplitude
+      website: https://www.pendulumchain.org/amplitude
+      docs: https://pendulum.gitbook.io/pendulum-docs
+      tier: frontier
+      private: false
     schema: {}
   asset-hub-kusama:
     metadata:
@@ -1861,6 +2421,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/assethub-kusama.svg
       display_name: Kusama Asset Hub
       ecosystem: asset-hub
+      website: https://polkadot.network
+      docs: https://docs.polkadot.com/polkadot-protocol/architecture/system-chains/asset-hub
+      tier: frontier
+      private: false
     schema: {}
   asset-hub-paseo:
     metadata:
@@ -1869,6 +2433,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/assethub.svg
       display_name: Paseo Asset Hub
       ecosystem: asset-hub
+      website: https://polkadot.network
+      docs: https://docs.polkadot.com/polkadot-protocol/architecture/system-chains/asset-hub
+      tier: frontier
+      private: false
     schema: {}
   asset-hub-polkadot:
     metadata:
@@ -1876,6 +2444,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/assethub.svg
       display_name: Polkadot Asset Hub
       ecosystem: asset-hub
+      website: https://polkadot.network
+      docs: https://docs.polkadot.com/polkadot-protocol/architecture/system-chains/asset-hub
+      tier: frontier
+      private: false
     schema: {}
   asset-hub-westend:
     metadata:
@@ -1884,6 +2456,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/assethub.svg
       display_name: Westend Asset Hub
       ecosystem: asset-hub
+      website: https://polkadot.network
+      docs: https://docs.polkadot.com/polkadot-protocol/architecture/system-chains/asset-hub
+      tier: frontier
+      private: false
     schema: {}
   astar-substrate:
     metadata:
@@ -1891,6 +2467,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/astar.png
       display_name: Astar (Substrate)
       ecosystem: astar
+      website: https://astar.network
+      docs: https://docs.astar.network
+      explorer: https://astar.subscan.io
+      tier: frontier
+      private: false
     schema: {}
   bittensor:
     metadata:
@@ -1898,6 +2479,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/bittensor.png
       display_name: Bittensor (Substrate)
       ecosystem: bittensor
+      website: https://bittensor.com
+      docs: https://docs.bittensor.com
+      tier: frontier
+      private: false
     schema: {}
   bittensor-testnet:
     metadata:
@@ -1905,6 +2490,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/bittensor.png
       display_name: Bittensor Testnet (Substrate)
       ecosystem: bittensor
+      website: https://bittensor.com
+      docs: https://docs.bittensor.com
+      tier: frontier
+      private: false
     schema: {}
   chainflip:
     metadata:
@@ -1912,6 +2501,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/chainflip.png
       display_name: Chainflip
       ecosystem: chainflip
+      website: https://chainflip.io
+      docs: https://docs.chainflip.io
+      tier: frontier
+      private: false
     schema: {}
   eden:
     metadata:
@@ -1919,6 +2512,10 @@ datasets:
       kind: substrate
       display_name: Eden
       ecosystem: eden
+      website: https://www.nodle.com
+      docs: https://docs.nodle.com
+      tier: frontier
+      private: false
     schema: {}
   enjin-canary-matrix:
     metadata:
@@ -1926,6 +2523,10 @@ datasets:
       kind: substrate
       display_name: Enjin Canary Matrixchain
       ecosystem: enjin
+      website: https://enjin.io
+      docs: https://docs.enjin.io
+      tier: partner
+      private: false
     schema: {}
   enjin-matrix:
     metadata:
@@ -1933,6 +2534,10 @@ datasets:
       kind: substrate
       display_name: Enjin Matrixchain
       ecosystem: enjin
+      website: https://enjin.io
+      docs: https://docs.enjin.io
+      tier: partner
+      private: false
     schema: {}
   enjin-relay:
     metadata:
@@ -1940,6 +2545,10 @@ datasets:
       kind: substrate
       display_name: Enjin Relaychain
       ecosystem: enjin
+      website: https://enjin.io
+      docs: https://docs.enjin.io
+      tier: partner
+      private: false
     schema: {}
   hydradx:
     metadata:
@@ -1947,6 +2556,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/hydration.svg
       display_name: Hydration
       ecosystem: hydradx
+      website: https://hydration.net
+      docs: https://docs.hydration.net
+      tier: frontier
+      private: false
     schema: {}
   invarch-parachain:
     metadata:
@@ -1954,6 +2567,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/invarch.jpeg
       display_name: InvArch
       ecosystem: invarch
+      website: https://invarch.network
+      docs: https://docs.invarch.network
+      tier: frontier
+      private: false
     schema: {}
   invarch-tinkernet:
     metadata:
@@ -1961,6 +2578,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/tinker.png
       display_name: InvArch Tinkernet
       ecosystem: invarch
+      website: https://invarch.network
+      docs: https://docs.invarch.network
+      tier: frontier
+      private: false
     schema: {}
   kusama:
     metadata:
@@ -1968,6 +2589,12 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/kusama.svg
       display_name: Kusama
       ecosystem: kusama
+      website: https://kusama.network
+      docs: https://wiki.polkadot.network/docs/learn-kusama
+      explorer: https://kusama.subscan.io
+      tier: frontier
+      private: false
+      logo_bg: white
     schema: {}
   moonbase-substrate:
     metadata:
@@ -1975,6 +2602,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/moonbase_alpha.svg
       display_name: Moonbase Alpha (Substrate)
       ecosystem: moonbeam
+      website: https://moonbeam.network
+      docs: https://docs.moonbeam.network
+      explorer: https://moonscan.io
+      tier: frontier
+      private: false
     schema: {}
   moonbeam-substrate:
     metadata:
@@ -1982,6 +2614,12 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/moonbeam.svg
       display_name: Moonbeam (Substrate)
       ecosystem: moonbeam
+      website: https://moonbeam.network
+      docs: https://docs.moonbeam.network
+      explorer: https://moonscan.io
+      tier: frontier
+      private: false
+      logo_bg: white
     schema: {}
   moonriver-substrate:
     metadata:
@@ -1989,6 +2627,12 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/moonriver.svg
       display_name: Moonriver (Substrate)
       ecosystem: moonriver
+      website: https://moonbeam.network/networks/moonriver
+      docs: https://docs.moonbeam.network
+      explorer: https://moonriver.moonscan.io
+      tier: frontier
+      private: false
+      logo_bg: white
     schema: {}
   peaq-mainnet-substrate:
     metadata:
@@ -1996,6 +2640,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/peaq.png
       display_name: Peaq (Substrate)
       ecosystem: peaq
+      website: https://www.peaq.network
+      docs: https://docs.peaq.network
+      tier: partner
+      private: false
     schema: {}
   pendulum:
     metadata:
@@ -2003,6 +2651,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/pendulum.svg
       display_name: Pendulum
       ecosystem: pendulum
+      website: https://www.pendulumchain.org
+      docs: https://pendulum.gitbook.io/pendulum-docs
+      tier: frontier
+      private: false
     schema: {}
   polkadot:
     metadata:
@@ -2010,6 +2662,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/polkadot-circle.svg
       display_name: Polkadot
       ecosystem: polkadot
+      website: https://polkadot.network
+      docs: https://docs.polkadot.com
+      explorer: https://polkadot.subscan.io
+      tier: frontier
+      private: false
     schema: {}
   vara:
     metadata:
@@ -2017,6 +2674,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/vara.svg
       display_name: Vara
       ecosystem: vara
+      website: https://vara.network
+      docs: https://wiki.vara.network
+      explorer: https://vara.subscan.io
+      tier: partner
+      private: false
     schema: {}
   vara-testnet:
     metadata:
@@ -2024,6 +2686,12 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/vara-testnet.png
       display_name: Vara Testnet
       ecosystem: vara
+      website: https://vara.network
+      docs: https://wiki.vara.network
+      explorer: https://vara.subscan.io
+      tier: partner
+      private: false
+      logo_bg: white
     schema: {}
   zeitgeist:
     metadata:
@@ -2031,6 +2699,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/zeitgeist.png
       display_name: Zeitgeist
       ecosystem: zeitgeist
+      website: https://zeitgeist.pm
+      docs: https://docs.zeitgeist.pm
+      tier: frontier
+      private: false
+      logo_bg: white
     schema: {}
   zeitgeist-testnet:
     metadata:
@@ -2038,6 +2711,11 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/zeitgeist.png
       display_name: Zeitgeist Testnet
       ecosystem: zeitgeist
+      website: https://zeitgeist.pm
+      docs: https://docs.zeitgeist.pm
+      tier: frontier
+      private: false
+      logo_bg: white
     schema: {}
   zkverify-mainnet:
     metadata:
@@ -2045,6 +2723,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/zkverify.png
       display_name: zkVerify Mainnet
       ecosystem: zkverify
+      website: https://zkverify.io
+      docs: https://docs.zkverify.io
+      tier: partner
+      private: false
     schema: {}
   zkverify-testnet:
     metadata:
@@ -2052,6 +2734,10 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/zkverify.png
       display_name: zkVerify Testnet
       ecosystem: zkverify
+      website: https://zkverify.io
+      docs: https://docs.zkverify.io
+      tier: partner
+      private: false
     schema: {}
   tron-mainnet:
     metadata:
@@ -2062,6 +2748,11 @@ datasets:
       ecosystem: tron
       logo_url: https://cdn.subsquid.io/img/networks/tron.svg
       type: mainnet
+      website: https://tron.network
+      docs: https://developers.tron.network
+      explorer: https://tronscan.org
+      tier: frontier
+      private: false
     schema:
       tables:
         blocks: {}
@@ -2077,6 +2768,11 @@ datasets:
       ecosystem: cronos
       type: mainnet
       logo_url: https://cdn.subsquid.io/img/networks/cronos.svg
+      website: https://cronos.org
+      docs: https://docs.cronos.org
+      tier: frontier
+      private: true
+      logo_bg: white
       evm:
         chain_id: 25
     schema:
