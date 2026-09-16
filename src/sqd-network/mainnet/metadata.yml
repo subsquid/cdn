@@ -1338,7 +1338,7 @@ datasets:
         traces: {}
   sei-mainnet:
     metadata:
-      display_name: "Sei Mainnet"
+      display_name: Sei
       aliases:
         - Sei Mainnet
       ecosystem: sei
@@ -1915,7 +1915,7 @@ datasets:
     schema: {}
   eden:
     metadata:
-      logo_url: https://cdn.subsquid.io/img/networks/eden.png
+      logo_url: https://cdn.subsquid.io/img/networks/eden.svg
       kind: substrate
       display_name: Eden
       ecosystem: eden
