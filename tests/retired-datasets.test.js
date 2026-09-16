@@ -21,7 +21,7 @@ test('Pipes CLI network choices exclude retired and unavailable datasets', () =>
   assert.ok(networks.includes('solana-mainnet'), 'active SVM networks remain selectable');
 });
 
-test('Portal registries exclude retired datasets and preserve Pendulum', () => {
+test('Portal registries exclude retired datasets and keep Pendulum storage available', () => {
   const declarations = yaml.load(read('src/sqd-network/datasets.yml'))['sqd-network-datasets'];
   const metadata = yaml.load(read('src/sqd-network/mainnet/metadata.yml')).datasets;
   const archives = JSON.parse(read('src/archives/substrate.json')).archives;
@@ -35,9 +35,9 @@ test('Portal registries exclude retired datasets and preserve Pendulum', () => {
     assert.ok(names.includes('polkadot'), 'active Substrate datasets remain listed');
   }
   assert.equal(retired.includes('pendulum'), false);
-  for (const names of catalogs.slice(0, 3)) {
-    assert.ok(names.includes('pendulum'), 'Pendulum remains available');
-  }
+  assert.ok(catalogs[0].includes('pendulum'), 'Pendulum remains declared');
+  assert.equal(catalogs[1].includes('pendulum'), false, 'Pendulum is omitted from expanded metadata');
+  assert.ok(catalogs[2].includes('pendulum'), 'Pendulum archive remains available');
 });
 
 test('legacy EVM metadata imports cannot restore retired Portal datasets', () => {
