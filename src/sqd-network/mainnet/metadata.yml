@@ -2053,7 +2053,7 @@ datasets:
       aliases:
         - Tron Mainnet
       ecosystem: tron
-      logo_url: https://cdn.subsquid.io/img/networks/tron.png
+      logo_url: https://cdn.subsquid.io/img/networks/tron.svg
       type: mainnet
     schema:
       tables:
