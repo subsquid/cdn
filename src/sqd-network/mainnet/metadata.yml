@@ -149,6 +149,24 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+  arc-mainnet:
+    metadata:
+      display_name: Arc
+      aliases:
+        - Arc Mainnet
+      ecosystem: arc
+      logo_url: https://cdn.subsquid.io/img/networks/arc.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 5042
+    schema:
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+        traces: {}
+        state_diffs: {}
   astar-mainnet:
     metadata:
       display_name: Astar
