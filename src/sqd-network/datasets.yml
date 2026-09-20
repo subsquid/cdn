@@ -248,9 +248,6 @@ sqd-network-datasets:
   - name: sonic-testnet
     id: s3://sonic-testnet-0
     kind: evm
-  - name: taiko-mainnet
-    id: s3://taiko-mainnet-traceless
-    kind: evm
   - name: unichain-mainnet
     id: s3://unichain-mainnet
     kind: evm

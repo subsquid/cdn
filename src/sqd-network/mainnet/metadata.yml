@@ -1527,22 +1527,6 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
-  taiko-mainnet:
-    metadata:
-      display_name: Taiko Alethia
-      aliases:
-        - Taiko Mainnet
-      ecosystem: taiko
-      logo_url: https://cdn.subsquid.io/img/networks/taiko.png
-      type: mainnet
-      kind: evm
-      evm:
-        chain_id: 167000
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
   tempo-mainnet:
     metadata:
       kind: evm
