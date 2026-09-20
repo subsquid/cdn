@@ -185,9 +185,6 @@ sqd-network-datasets:
   - name: moonriver-mainnet
     id: s3://moonriver-mainnet-1
     kind: evm
-  - name: neon-mainnet
-    id: s3://neon-mainnet-traceless
-    kind: evm
   - name: opbnb-mainnet
     id: s3://opbnb-mainnet-traceless-1
     kind: evm

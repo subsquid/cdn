@@ -1063,20 +1063,6 @@ datasets:
         transactions: {}
         logs: {}
         traces: {}
-  neon-mainnet:
-    metadata:
-      display_name: Neon EVM
-      ecosystem: neon
-      logo_url: https://cdn.subsquid.io/img/networks/neon.png
-      type: mainnet
-      kind: evm
-      evm:
-        chain_id: 245022934
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
   opbnb-mainnet:
     metadata:
       display_name: opBNB
