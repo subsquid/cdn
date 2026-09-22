@@ -179,12 +179,6 @@ sqd-network-datasets:
   - name: moonbase-testnet
     id: s3://moonbase-testnet-1
     kind: evm
-  - name: moonbeam-mainnet
-    id: s3://moonbeam-evm-2
-    kind: evm
-  - name: moonriver-mainnet
-    id: s3://moonriver-mainnet-1
-    kind: evm
   - name: opbnb-mainnet
     id: s3://opbnb-mainnet-traceless-1
     kind: evm
@@ -214,12 +208,6 @@ sqd-network-datasets:
     kind: evm
   - name: polygon-amoy-testnet
     id: s3://polygon-amoy-testnet-traceless
-    kind: evm
-  - name: polygon-zkevm-mainnet
-    id: s3://polygon-zkevm-mainnet-traceless
-    kind: evm
-  - name: polygon-zkevm-cardona-testnet
-    id: s3://polygon-zkevm-cardona-testnet-traceless-1
     kind: evm
   - name: prom-mainnet
     id: s3://prom-mainnet-1
@@ -336,14 +324,8 @@ sqd-network-datasets:
   - name: kusama
     id: s3://kusama-4
     kind: substrate
-  - name: moonbeam-substrate
-    id: s3://moonbeam-substrate-4
-    kind: substrate
   - name: moonbase-substrate
     id: s3://moonbase-substrate-4
-    kind: substrate
-  - name: moonriver-substrate
-    id: s3://moonriver-substrate-4
     kind: substrate
   - name: peaq-mainnet-substrate
     id: s3://peaq-mainnet-5

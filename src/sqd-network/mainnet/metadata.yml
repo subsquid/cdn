@@ -1033,36 +1033,6 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
-  moonbeam-mainnet:
-    metadata:
-      display_name: Moonbeam
-      ecosystem: moonbeam
-      logo_url: https://cdn.subsquid.io/img/networks/moonbeam.png
-      type: mainnet
-      kind: evm
-      evm:
-        chain_id: 1284
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-        traces: {}
-  moonriver-mainnet:
-    metadata:
-      display_name: Moonriver
-      ecosystem: moonriver
-      logo_url: https://cdn.subsquid.io/img/networks/moonriver.png
-      type: mainnet
-      kind: evm
-      evm:
-        chain_id: 1285
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-        traces: {}
   opbnb-mainnet:
     metadata:
       display_name: opBNB
@@ -1216,34 +1186,6 @@ datasets:
         transactions: {}
         logs: {}
         traces: {}
-  polygon-zkevm-cardona-testnet:
-    metadata:
-      display_name: Polygon zkEVM Cardona Testnet
-      ecosystem: polygon
-      logo_url: https://cdn.subsquid.io/img/networks/zkevm.png
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 2442
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-  polygon-zkevm-mainnet:
-    metadata:
-      display_name: Polygon zkEVM
-      ecosystem: polygon
-      logo_url: https://cdn.subsquid.io/img/networks/zkevm.png
-      type: mainnet
-      kind: evm
-      evm:
-        chain_id: 1101
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
   prom-mainnet:
     metadata:
       display_name: Prom
@@ -1963,20 +1905,6 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/moonbase_alpha.svg
       display_name: Moonbase Alpha (Substrate)
       ecosystem: moonbeam
-    schema: {}
-  moonbeam-substrate:
-    metadata:
-      kind: substrate
-      logo_url: https://cdn.subsquid.io/img/networks/moonbeam.svg
-      display_name: Moonbeam (Substrate)
-      ecosystem: moonbeam
-    schema: {}
-  moonriver-substrate:
-    metadata:
-      kind: substrate
-      logo_url: https://cdn.subsquid.io/img/networks/moonriver.svg
-      display_name: Moonriver (Substrate)
-      ecosystem: moonriver
     schema: {}
   peaq-mainnet-substrate:
     metadata:
