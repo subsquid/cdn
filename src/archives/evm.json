@@ -1403,48 +1403,6 @@
       ]
     },
     {
-      "chainId": 1284,
-      "chainName": "Moonbeam",
-      "id": "moonbeam-mainnet",
-      "logoUrl": "https://cdn.subsquid.io/img/networks/moonbeam.png",
-      "network": "moonbeam",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs",
-            "traces"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonbeam-mainnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainId": 1285,
-      "chainName": "Moonriver",
-      "id": "moonriver-mainnet",
-      "logoUrl": "https://cdn.subsquid.io/img/networks/moonriver.png",
-      "network": "moonriver",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs",
-            "traces"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonriver-mainnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainId": 42225,
       "chainName": "Naka Chain",
       "id": "nakachain",
@@ -1802,47 +1760,6 @@
             "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-amoy-testnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainId": 1101,
-      "chainName": "Polygon zkEVM",
-      "id": "polygon-zkevm-mainnet",
-      "logoUrl": "https://cdn.subsquid.io/img/networks/zkevm.png",
-      "network": "polygon-zkevm",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-zkevm-mainnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 1
-        }
-      ]
-    },
-    {
-      "chainId": 2442,
-      "chainName": "Polygon zkEVM Cardona Testnet",
-      "id": "polygon-zkevm-cardona-testnet",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/zkevm.png",
-      "network": "polygon-zkevm-cardona-testnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/polygon-zkevm-cardona-testnet",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
