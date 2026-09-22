@@ -950,48 +950,6 @@
       ]
     },
     {
-      "chainName": "Moonbeam",
-      "chainSS58Prefix": 1284,
-      "genesisHash": "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
-      "id": "moonbeam-substrate",
-      "network": "moonbeam",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonbeam-substrate",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainName": "Moonriver",
-      "chainSS58Prefix": 1285,
-      "genesisHash": "0x401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
-      "id": "moonriver-substrate",
-      "network": "moonriver",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonriver-substrate",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainName": "Paseo",
       "chainSS58Prefix": 42,
       "genesisHash": "0x77afd6190f1554ad45fd0d31aee62aacc33c6db0ea801129acb813f913e0764f",
