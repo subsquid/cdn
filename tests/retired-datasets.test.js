@@ -10,6 +10,13 @@ const { transferArchive } = require('../.github/workflows/scripts/transfer-evm-m
 
 const read = (file) => readFileSync(join(__dirname, '..', file), 'utf8');
 
+test('Pipes CLI network choices exclude retired datasets', () => {
+  const schema = JSON.parse(read('src/schemas/pipes_cli_config.json'));
+  const networks = schema.oneOf.flatMap((variant) => variant.properties.defaultNetwork?.enum ?? []);
+  for (const slug of retired) assert.equal(networks.includes(slug), false, `${slug} is still offered by Pipes CLI`);
+  assert.ok(networks.includes('ethereum-mainnet'), 'active EVM networks remain selectable');
+});
+
 test('Portal registries exclude retired datasets and preserve Pendulum', () => {
   const declarations = yaml.load(read('src/sqd-network/datasets.yml'))['sqd-network-datasets'];
   const metadata = yaml.load(read('src/sqd-network/mainnet/metadata.yml')).datasets;
