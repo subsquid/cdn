@@ -105,11 +105,6 @@
     "confirmations": 60
   },
   {
-    "id": "blast-sepolia",
-    "chainId": 168587773,
-    "confirmations": 60
-  },
-  {
     "id": "core-mainnet",
     "chainId": 1116,
     "confirmations": 60
@@ -127,11 +122,6 @@
   {
     "id": "xlayer-mainnet",
     "chainId": 196,
-    "confirmations": 120
-  },
-  {
-    "id": "xlayer-testnet",
-    "chainId": 195,
     "confirmations": 120
   }
 ]

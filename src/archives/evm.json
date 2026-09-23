@@ -589,27 +589,6 @@
       ]
     },
     {
-      "chainId": 168587773,
-      "chainName": "Blast Sepolia",
-      "id": "blast-sepolia",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/blast.png",
-      "network": "blast-sepolia",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/blast-sepolia",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainId": 60808,
       "chainName": "BOB Mainnet",
       "id": "bob-mainnet",
@@ -666,27 +645,6 @@
             "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/canto",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainId": 44787,
-      "chainName": "Celo Testnet (Alfajores)",
-      "id": "celo-alfajores-testnet",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/celo.svg",
-      "network": "celo-alfajores-testnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/celo-alfajores-testnet",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
@@ -2040,27 +1998,6 @@
             "logs"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/xlayer-mainnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainId": 195,
-      "chainName": "X Layer Testnet",
-      "id": "xlayer-testnet",
-      "isTestnet": true,
-      "logoUrl": "https://cdn.subsquid.io/img/networks/xlayer.svg",
-      "network": "xlayer-testnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "tx",
-            "logs"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/xlayer-testnet",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
