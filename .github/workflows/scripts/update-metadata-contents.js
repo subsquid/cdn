@@ -165,6 +165,9 @@ async function probeCapability(baseUrl, capability, block, probeType = 'evm') {
     body: JSON.stringify(body),
   });
   if (res.status === 200 || res.status === 204) return true;
+  if (res.status !== 400) {
+    throw new Error(`Cannot determine ${capability} support: HTTP ${res.status} from ${baseUrl}/stream`);
+  }
   unexpectedProbeStatuses.add(res.status);
   return false;
 }
@@ -341,7 +344,7 @@ async function main() {
   console.log(`${METADATA_YAML_PATH} updated.`);
 }
 
-module.exports = { loadPortalDatasetNames };
+module.exports = { loadPortalDatasetNames, updateSchema };
 
 if (require.main === module) {
   main().catch((err) => {

@@ -1,8 +1,10 @@
 [
   "amplitude",
+  "dogechain-mainnet",
   "eden",
   "invarch-parachain",
   "invarch-tinkernet",
+  "skale-nebula",
   "zeitgeist",
   "zeitgeist-testnet"
 ]

@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const assert = require('assert');
 const yaml = require('js-yaml');
+const retiredDatasets = new Set(require('../../../scripts/retired-datasets.json'));
 
 const OVERWRITE_FLAG = '--overwrite';
 
@@ -34,6 +35,7 @@ function transferArchive(archive, datasets, overwrite) {
   assert(typeof archive.id === 'string' && archive.id.length > 0, 'archive.id must be a non-empty string');
 
   const id = archive.id;
+  if (retiredDatasets.has(id)) return;
   const dataset = datasets[id] || {};
   const meta = (dataset.metadata && typeof dataset.metadata === 'object') ? dataset.metadata : {};
   const evm = (meta.evm && typeof meta.evm === 'object') ? meta.evm : {};
@@ -106,4 +108,6 @@ function main() {
   saveMetadata(metadata);
 }
 
-main();
+module.exports = { transferArchive };
+
+if (require.main === module) main();
