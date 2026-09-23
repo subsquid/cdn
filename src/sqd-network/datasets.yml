@@ -77,9 +77,6 @@ sqd-network-datasets:
   - name: core-mainnet
     id: s3://core-mainnet-1
     kind: evm
-  - name: dogechain-mainnet
-    id: s3://dogechain-mainnet-traceless-1
-    kind: evm
   - name: ethereum-hoodi
     id: s3://ethereum-hoodi
     kind: evm
@@ -212,9 +209,6 @@ sqd-network-datasets:
   - name: scroll-sepolia
     id: s3://scroll-sepolia
     kind: evm
-  - name: skale-nebula
-    id: s3://skale-nebula-traceless-1
-    kind: evm
   - name: soneium-mainnet
     id: s3://soneium-mainnet-0
     kind: evm
@@ -278,7 +272,7 @@ sqd-network-datasets:
     kind: substrate
   - name: celo-mainnet
     id: s3://celo-mainnet-traceless
-    kind: substrate
+    kind: evm
   - name: chainflip
     id: s3://chainflip-4
     kind: substrate
