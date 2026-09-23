@@ -5,9 +5,6 @@ sqd-network-datasets:
   - name: ethereum-mainnet
     id: s3://ethereum-mainnet-4
     kind: evm
-  - name: blast-sepolia
-    id: s3://blast-sepolia
-    kind: evm
   - name: zora-mainnet
     id: s3://zora-mainnet
     kind: evm

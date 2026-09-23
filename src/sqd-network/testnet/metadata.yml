@@ -23,12 +23,6 @@ datasets:
       kind: evm
       evm:
         chain_id: 1
-  blast-sepolia:
-    metadata:
-      display_name: "Blast Sepolia"
-      kind: evm
-      evm:
-        chain_id: 168587773
   zora-mainnet:
     metadata:
       display_name: "Zora"

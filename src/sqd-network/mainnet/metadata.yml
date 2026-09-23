@@ -421,20 +421,6 @@ datasets:
         logs: {}
         traces: {}
         state_diffs: {}
-  blast-sepolia:
-    metadata:
-      display_name: Blast Sepolia
-      ecosystem: blast
-      logo_url: https://cdn.subsquid.io/img/networks/blast.png
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 168587773
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
   bob-mainnet:
     metadata:
       display_name: BOB
@@ -462,20 +448,6 @@ datasets:
       kind: evm
       evm:
         chain_id: 808813
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-  celo-alfajores-testnet:
-    metadata:
-      display_name: Celo Testnet (Alfajores)
-      ecosystem: celo
-      logo_url: https://cdn.subsquid.io/img/networks/celo.svg
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 44787
     schema:
       tables:
         blocks: {}
@@ -1523,20 +1495,6 @@ datasets:
         logs: {}
         traces: {}
         state_diffs: {}
-  x1-testnet:
-    metadata:
-      kind: evm
-      display_name: X Layer Testnet
-      ecosystem: xlayer
-      type: testnet
-      logo_url: https://cdn.subsquid.io/img/networks/xlayer.svg
-      evm:
-        chain_id: 1952
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
   xlayer-mainnet:
     metadata:
       display_name: X Layer
@@ -1548,20 +1506,6 @@ datasets:
       kind: evm
       evm:
         chain_id: 196
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-  xlayer-testnet:
-    metadata:
-      display_name: X Layer Testnet
-      ecosystem: xlayer
-      logo_url: https://cdn.subsquid.io/img/networks/xlayer.svg
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 195
     schema:
       tables:
         blocks: {}

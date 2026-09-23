@@ -68,9 +68,6 @@ sqd-network-datasets:
   - name: blast-l2-mainnet
     id: s3://blast-l2-mainnet-1
     kind: evm
-  - name: blast-sepolia
-    id: s3://blast-sepolia
-    kind: evm
   - name: bob-mainnet
     id: s3://bob-mainnet
     kind: evm
@@ -239,14 +236,8 @@ sqd-network-datasets:
   - name: unichain-sepolia
     id: s3://unichain-sepolia-1
     kind: evm
-  - name: x1-testnet
-    id: s3://x1-testnet-traceless
-    kind: evm
   - name: xlayer-mainnet
     id: s3://xlayer-mainnet-traceless
-    kind: evm
-  - name: xlayer-testnet
-    id: s3://xlayer-testnet-traceless
     kind: evm
   - name: zklink-nova-mainnet
     id: s3://zklink-nova-mainnet
@@ -290,9 +281,6 @@ sqd-network-datasets:
     kind: substrate
   - name: bittensor
     id: s3://bittensor-4
-    kind: substrate
-  - name: celo-alfajores-testnet
-    id: s3://celo-alfajores-testnet
     kind: substrate
   - name: celo-mainnet
     id: s3://celo-mainnet-traceless
