@@ -34,17 +34,6 @@
       "parachainId": "2088"
     },
     {
-      "name": "amplitude",
-      "displayName": "Amplitude",
-      "tokens": [
-        "AMPE"
-      ],
-      "website": "https://pendulumchain.org/amplitude/",
-      "description": "Amplitude is as a canary network of its sister blockchain Pendulum. It will act as a testing ground for applications and network parameters for Pendulum. Unlike a traditional testnet, users can interact on the Amplitude chain with real financial consequences. Lots of novel ways of utilizing fiat on DeFi can be experimented with. Amplitude chain will be powered by its native AMPE token.",
-      "relayChain": "kusama",
-      "parachainId": "2124"
-    },
-    {
       "name": "astar",
       "displayName": "Astar Network",
       "tokens": [
@@ -420,17 +409,6 @@
       "description": "Interlay is a decentralized network dedicated to connecting crypto-currencies like Bitcoin with DeFi platforms like Polkadot and Ethereum. The Interlay network is hosted as a Polkadot parachain and will be connected to Cosmos, Ethereum, and other major DeFi networks.",
       "relayChain": "polkadot",
       "parachainId": "2032"
-    },
-    {
-      "name": "invarch-tinkernet",
-      "displayName": "InvArch Tinkernet",
-      "tokens": [
-        "TNKR"
-      ],
-      "website": "https://invarch.network/tinkernet/",
-      "description": "The Tinkernet Parachain is the canary network of the InvArch Network, designed as the IP Asset & accelerated development staging grounds for the Kusama ecosystem.",
-      "relayChain": "kusama",
-      "parachainId": "2125"
     },
     {
       "name": "joystream",
@@ -1005,17 +983,6 @@
       "description": "xx network is a fast, low-fee quantum-ready layer 1 blockchain built in tandem with the most private communications network in the world (cMix). Founded by the godfather of digital currency and privacy technology David Chaum, the xx network mainnet launched in November 2021. Nominated Proof-of-Stake (NPoS) incentivizes coin holders to run and elect nodes as well as to participate in the governance of the platform via on-chain DAO.",
       "relayChain": null,
       "parachainId": null
-    },
-    {
-      "name": "zeitgeist",
-      "displayName": "Zeitgeist Polkadot",
-      "tokens": [
-        "ZTG"
-      ],
-      "website": "https://zeitgeist.pm/",
-      "description": "Zeitgeist is a decentralized network for creating, betting on, and resolving prediction markets. The platform's native currency, the ZTG, is used to sway the direction of the network, and as a means of last-call dispute resolution.",
-      "relayChain": "polkadot",
-      "parachainId": "2092"
     }
   ]
 }
