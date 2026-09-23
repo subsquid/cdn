@@ -104,9 +104,6 @@ sqd-network-datasets:
   - name: galxe-gravity
     id: s3://galxe-gravity
     kind: evm
-  - name: gelato-opcelestia-raspberry
-    id: s3://opcelestia-raspberry-traceless
-    kind: evm
   - name: gnosis-mainnet
     id: s3://gnosis-mainnet-3
     kind: evm
