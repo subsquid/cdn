@@ -4,11 +4,22 @@ const { join } = require('node:path');
 const test = require('node:test');
 const yaml = require('js-yaml');
 const retired = require('../scripts/retired-datasets.json');
+const cliExclusions = require('./fixtures/pipes-cli-exclusions.json');
 const { classifyAllPortalDatasets } = require('../.github/workflows/scripts/classify-datasets.js');
 const { loadPortalDatasetNames } = require('../.github/workflows/scripts/update-metadata-contents.js');
 const { transferArchive } = require('../.github/workflows/scripts/transfer-evm-metadata.js');
 
 const read = (file) => readFileSync(join(__dirname, '..', file), 'utf8');
+
+test('Pipes CLI network choices exclude retired and unavailable datasets', () => {
+  const schema = JSON.parse(read('src/schemas/pipes_cli_config.json'));
+  const networks = schema.oneOf.flatMap((variant) => variant.properties.defaultNetwork?.enum ?? []);
+  // These exclusions apply only to CLI network choices.
+  const excluded = [...retired, ...cliExclusions.retired, ...cliExclusions.unavailable];
+  for (const slug of excluded) assert.equal(networks.includes(slug), false, `${slug} is still offered by Pipes CLI`);
+  assert.ok(networks.includes('ethereum-mainnet'), 'active EVM networks remain selectable');
+  assert.ok(networks.includes('solana-mainnet'), 'active SVM networks remain selectable');
+});
 
 test('Portal registries exclude retired datasets and preserve Pendulum', () => {
   const declarations = yaml.load(read('src/sqd-network/datasets.yml'))['sqd-network-datasets'];
