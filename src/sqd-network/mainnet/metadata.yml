@@ -950,7 +950,7 @@ datasets:
       type: testnet
       kind: evm
       evm:
-        chain_id: 6342
+        chain_id: 6343
     schema:
       tables:
         blocks: {}
