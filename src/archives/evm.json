@@ -1287,7 +1287,7 @@
       ]
     },
     {
-      "chainId": 6342,
+      "chainId": 6343,
       "chainName": "MegaETH Testnet",
       "id": "megaeth-testnet",
       "isTestnet": true,
