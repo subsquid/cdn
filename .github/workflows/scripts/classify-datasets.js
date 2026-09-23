@@ -17,6 +17,7 @@ const fs = require('fs');
 const path = require('path');
 const assert = require('assert');
 const yaml = require('js-yaml');
+const retiredDatasets = new Set(require('../../../scripts/retired-datasets.json'));
 
 const METADATA_YAML_PATH = path.join(process.cwd(), 'src/sqd-network/mainnet/metadata.yml');
 const PORTAL_BASE = 'https://portal.sqd.dev/datasets';
@@ -222,7 +223,7 @@ async function classifyAllPortalDatasets() {
 
   const datasetNames = portalDatasets
     .map((item) => (item && typeof item === 'object' ? item.dataset : null))
-    .filter((name) => typeof name === 'string' && name.length > 0);
+    .filter((name) => typeof name === 'string' && name.length > 0 && !retiredDatasets.has(name));
 
   console.log(`Found ${datasetNames.length} datasets on portal`);
 
@@ -346,7 +347,11 @@ async function main() {
   console.log(`${METADATA_YAML_PATH} updated.`);
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+module.exports = { classifyAllPortalDatasets };
+
+if (require.main === module) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}

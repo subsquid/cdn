@@ -64,27 +64,6 @@
       ]
     },
     {
-      "chainName": "Amplitude",
-      "chainSS58Prefix": 57,
-      "genesisHash": "0xcceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
-      "id": "amplitude",
-      "network": "amplitude",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/amplitude",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainName": "Asset Hub Kusama",
       "chainSS58Prefix": 2,
       "genesisHash": "0x48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
@@ -550,27 +529,6 @@
       ]
     },
     {
-      "chainName": "Eden",
-      "chainSS58Prefix": 37,
-      "genesisHash": "0x97da7ede98d7bad4e36b4d734b6055425a3be036da2a332ea5a7037656427a21",
-      "id": "eden",
-      "network": "eden",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/eden",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainName": "Enjin Canary Matrix",
       "chainSS58Prefix": 9030,
       "genesis_hash": "0xa37725fd8943d2a524cb7ecc65da438f9fa644db78ba24dcd0003e2f95645e8f",
@@ -733,48 +691,6 @@
             "extrinsics"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/interlay",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainName": "Invarch Parachain",
-      "chainSS58Prefix": 117,
-      "genesisHash": "0x31a7d8914fb31c249b972f18c115f1e22b4b039abbcb03c73b6774c5642f9efe",
-      "id": "invarch-parachain",
-      "network": "invarch-parachain",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/invarch-parachain",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainName": "Invarch Tinkernet",
-      "chainSS58Prefix": 117,
-      "genesisHash": "0xd42e9606a995dfe433dc7955dc2a70f495f350f373daa200098ae84437816ad2",
-      "id": "invarch-tinkernet",
-      "network": "invarch-tinkernet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/invarch-tinkernet",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
@@ -1410,49 +1326,6 @@
             "extrinsics"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/vara-testnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainName": "Zeitgeist",
-      "chainSS58Prefix": 73,
-      "genesisHash": "0x1bf2a2ecb4a868de66ea8610f2ce7c8c43706561b6476031315f6640fe38e060",
-      "id": "zeitgeist",
-      "network": "zeitgeist",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/zeitgeist",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainName": "Zeitgeist Testnet",
-      "chainSS58Prefix": 73,
-      "genesisHash": "0xb90cd3a37b4793c6494b78962986f4f6ed3ec2eda91a6b84fd8457d24f606b9c",
-      "id": "zeitgeist-testnet",
-      "isTestnet": true,
-      "network": "zeitgeist-testnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/zeitgeist-testnet",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2

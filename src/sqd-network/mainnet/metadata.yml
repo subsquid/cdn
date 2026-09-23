@@ -1708,13 +1708,6 @@ datasets:
       display_name: Agung (Substrate)
       ecosystem: agung
     schema: {}
-  amplitude:
-    metadata:
-      kind: substrate
-      logo_url: https://cdn.subsquid.io/img/networks/amplitude.svg
-      display_name: Amplitude
-      ecosystem: amplitude
-    schema: {}
   asset-hub-kusama:
     metadata:
       kind: substrate
@@ -1773,13 +1766,6 @@ datasets:
       display_name: Chainflip
       ecosystem: chainflip
     schema: {}
-  eden:
-    metadata:
-      logo_url: https://cdn.subsquid.io/img/networks/eden.svg
-      kind: substrate
-      display_name: Eden
-      ecosystem: eden
-    schema: {}
   enjin-canary-matrix:
     metadata:
       logo_url: https://cdn.subsquid.io/img/networks/enjin.png
@@ -1807,20 +1793,6 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/hydration.svg
       display_name: Hydration
       ecosystem: hydradx
-    schema: {}
-  invarch-parachain:
-    metadata:
-      kind: substrate
-      logo_url: https://cdn.subsquid.io/img/networks/invarch.jpeg
-      display_name: InvArch
-      ecosystem: invarch
-    schema: {}
-  invarch-tinkernet:
-    metadata:
-      kind: substrate
-      logo_url: https://cdn.subsquid.io/img/networks/tinker.png
-      display_name: InvArch Tinkernet
-      ecosystem: invarch
     schema: {}
   kusama:
     metadata:
@@ -1870,20 +1842,6 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/vara-testnet.png
       display_name: Vara Testnet
       ecosystem: vara
-    schema: {}
-  zeitgeist:
-    metadata:
-      kind: substrate
-      logo_url: https://cdn.subsquid.io/img/networks/zeitgeist.png
-      display_name: Zeitgeist
-      ecosystem: zeitgeist
-    schema: {}
-  zeitgeist-testnet:
-    metadata:
-      kind: substrate
-      logo_url: https://cdn.subsquid.io/img/networks/zeitgeist.png
-      display_name: Zeitgeist Testnet
-      ecosystem: zeitgeist
     schema: {}
   zkverify-mainnet:
     metadata:
