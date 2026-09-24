@@ -12,6 +12,15 @@ datasets:
         transactions: {}
         inputs: {}
         outputs: {}
+  0g-testnet:
+    metadata:
+      display_name: 0g Testnet
+      logo_url: https://cdn.subsquid.io/img/networks/0gai.png
+      type: testnet
+      kind: evm
+      evm:
+        chain_id: 16600
+    schema: {}
   abstract-mainnet:
     metadata:
       display_name: Abstract
@@ -167,6 +176,15 @@ datasets:
         logs: {}
         traces: {}
         state_diffs: {}
+  arthera-mainnet:
+    metadata:
+      display_name: Arthera Mainnet
+      logo_url: https://cdn.subsquid.io/img/networks/arthera.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 10242
+    schema: {}
   astar-mainnet:
     metadata:
       display_name: Astar
@@ -323,6 +341,15 @@ datasets:
         logs: {}
         traces: {}
         state_diffs: {}
+  berachain-bartio:
+    metadata:
+      display_name: Berachain bArtio
+      logo_url: https://cdn.subsquid.io/img/networks/berachain.png
+      type: testnet
+      kind: evm
+      evm:
+        chain_id: 80084
+    schema: {}
   berachain-mainnet:
     metadata:
       display_name: Berachain
@@ -373,6 +400,24 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+  bitfinity-mainnet:
+    metadata:
+      display_name: Bitfinity Mainnet
+      logo_url: https://cdn.subsquid.io/img/networks/bitfinity.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 355110
+    schema: {}
+  bitgert-mainnet:
+    metadata:
+      display_name: Bitgert
+      logo_url: https://cdn.subsquid.io/img/networks/brise.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 32520
+    schema: {}
   bittensor-mainnet-evm:
     metadata:
       display_name: Bittensor
@@ -453,6 +498,15 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+  canto:
+    metadata:
+      display_name: Canto
+      logo_url: https://cdn.subsquid.io/img/networks/canto.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 7700
+    schema: {}
   celo-mainnet:
     metadata:
       display_name: Celo
@@ -486,6 +540,31 @@ datasets:
         transactions: {}
         logs: {}
         traces: {}
+  cronos-mainnet:
+    metadata:
+      kind: evm
+      display_name: Cronos
+      aliases:
+        - Cronos Mainnet
+      ecosystem: cronos
+      type: mainnet
+      logo_url: https://cdn.subsquid.io/img/networks/cronos.svg
+      evm:
+        chain_id: 25
+    schema:
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+  cyber-mainnet:
+    metadata:
+      display_name: Cyber Mainnet
+      logo_url: https://cdn.subsquid.io/img/networks/cyber.svg
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 7560
+    schema: {}
   dancelight-testnet:
     metadata:
       display_name: Dancelight Testnet
@@ -497,6 +576,24 @@ datasets:
       kind: evm
       evm:
         chain_id: 5678
+    schema: {}
+  degen-chain:
+    metadata:
+      display_name: Degen Chain
+      logo_url: https://cdn.subsquid.io/img/networks/degen.svg
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 666666666
+    schema: {}
+  dfk-chain:
+    metadata:
+      display_name: DFK Chain
+      logo_url: https://cdn.subsquid.io/img/networks/dfk.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 53935
     schema: {}
   ethereum-hoodi:
     metadata:
@@ -606,6 +703,15 @@ datasets:
         logs: {}
         traces: {}
         state_diffs: {}
+  gelato-arbitrum-blueberry:
+    metadata:
+      display_name: Arbitrum Blueberry
+      logo_url: https://cdn.subsquid.io/img/networks/gelato.svg
+      type: testnet
+      kind: evm
+      evm:
+        chain_id: 88153591557
+    schema: {}
   gnosis-mainnet:
     metadata:
       display_name: Gnosis
@@ -718,6 +824,15 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+  immutable-zkevm-mainnet:
+    metadata:
+      display_name: Immutable zkEVM
+      logo_url: https://cdn.subsquid.io/img/networks/immutable.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 13371
+    schema: {}
   ink-mainnet:
     metadata:
       display_name: Ink
@@ -887,6 +1002,15 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+  merlin-mainnet:
+    metadata:
+      display_name: Merlin Mainnet
+      logo_url: https://cdn.subsquid.io/img/networks/merlin.jpg
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 4200
+    schema: {}
   metis-mainnet:
     metadata:
       display_name: Metis Andromeda
@@ -964,6 +1088,33 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+  nakachain:
+    metadata:
+      display_name: Naka Chain
+      logo_url: https://cdn.subsquid.io/img/networks/naka-chain.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 42225
+    schema: {}
+  neon-devnet:
+    metadata:
+      display_name: Neon EVM Devnet
+      logo_url: https://cdn.subsquid.io/img/networks/neon.png
+      type: testnet
+      kind: evm
+      evm:
+        chain_id: 245022926
+    schema: {}
+  neon-mainnet:
+    metadata:
+      display_name: Neon EVM
+      logo_url: https://cdn.subsquid.io/img/networks/neon.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 245022934
+    schema: {}
   opbnb-mainnet:
     metadata:
       display_name: opBNB
@@ -1022,6 +1173,15 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+  ozean-testnet:
+    metadata:
+      display_name: Ozean Testnet
+      logo_url: https://cdn.subsquid.io/img/networks/ozean.svg
+      type: testnet
+      kind: evm
+      evm:
+        chain_id: 7849306
+    schema: {}
   peaq-mainnet:
     metadata:
       display_name: Peaq
@@ -1070,6 +1230,33 @@ datasets:
         logs: {}
         traces: {}
         state_diffs: {}
+  plume:
+    metadata:
+      display_name: Plume Mainnet
+      logo_url: https://cdn.subsquid.io/img/networks/plume.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 98866
+    schema: {}
+  plume-devnet:
+    metadata:
+      display_name: Plume Devnet
+      logo_url: https://cdn.subsquid.io/img/networks/plume.png
+      type: testnet
+      kind: evm
+      evm:
+        chain_id: 98864
+    schema: {}
+  plume-legacy:
+    metadata:
+      display_name: Plume Mainnet (Legacy)
+      logo_url: https://cdn.subsquid.io/img/networks/plume.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 98865
+    schema: {}
   plume-mainnet:
     metadata:
       display_name: Plume
@@ -1088,6 +1275,15 @@ datasets:
         logs: {}
         traces: {}
         state_diffs: {}
+  plume-testnet:
+    metadata:
+      display_name: Plume Testnet
+      logo_url: https://cdn.subsquid.io/img/networks/plume.png
+      type: testnet
+      kind: evm
+      evm:
+        chain_id: 98867
+    schema: {}
   polygon-amoy-testnet:
     metadata:
       display_name: Polygon Amoy Testnet
@@ -1117,6 +1313,15 @@ datasets:
         transactions: {}
         logs: {}
         traces: {}
+  poseidon-testnet:
+    metadata:
+      display_name: Poseidon Testnet
+      logo_url: https://cdn.subsquid.io/img/networks/ozean.svg
+      type: testnet
+      kind: evm
+      evm:
+        chain_id: 31911
+    schema: {}
   prom-mainnet:
     metadata:
       display_name: Prom
@@ -1259,6 +1464,15 @@ datasets:
         logs: {}
         traces: {}
         state_diffs: {}
+  shiden-mainnet:
+    metadata:
+      display_name: Shiden
+      logo_url: https://cdn.subsquid.io/img/networks/shiden.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 336
+    schema: {}
   soneium-mainnet:
     metadata:
       display_name: Soneium
@@ -1354,6 +1568,15 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+  superseed-mainnet:
+    metadata:
+      display_name: Superseed Mainnet
+      logo_url: https://cdn.subsquid.io/img/networks/superseed.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 5330
+    schema: {}
   tac-mainnet:
     metadata:
       kind: evm
@@ -1370,6 +1593,15 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+  tanssi:
+    metadata:
+      display_name: Tanssi
+      logo_url: https://cdn.subsquid.io/img/networks/tanssi.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 5678
+    schema: {}
   tempo-mainnet:
     metadata:
       kind: evm
@@ -1829,19 +2061,3 @@ datasets:
         transactions: {}
         logs: {}
         internal_transactions: {}
-  cronos-mainnet:
-    metadata:
-      kind: evm
-      display_name: Cronos
-      aliases:
-        - Cronos Mainnet
-      ecosystem: cronos
-      type: mainnet
-      logo_url: https://cdn.subsquid.io/img/networks/cronos.svg
-      evm:
-        chain_id: 25
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
