@@ -92,9 +92,6 @@ sqd-network-datasets:
   - name: etherlink-shadownet
     id: s3://etherlink-shadownet
     kind: evm
-  - name: etherlink-testnet
-    id: s3://etherlink-testnet-4
-    kind: evm
   - name: flare-mainnet
     id: s3://flare-mainnet-traceless-1
     kind: evm

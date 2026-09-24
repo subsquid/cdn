@@ -574,20 +574,6 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
-  etherlink-testnet:
-    metadata:
-      display_name: Etherlink Testnet
-      ecosystem: etherlink
-      logo_url: https://cdn.subsquid.io/img/networks/etherlink.png
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 128123
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
   flare-mainnet:
     metadata:
       display_name: Flare
