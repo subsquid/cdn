@@ -164,9 +164,6 @@ sqd-network-datasets:
   - name: monad-testnet
     id: s3://monad-testnet-3
     kind: evm
-  - name: moonbase-testnet
-    id: s3://moonbase-testnet-1
-    kind: evm
   - name: opbnb-mainnet
     id: s3://opbnb-mainnet-traceless-1
     kind: evm
@@ -288,14 +285,8 @@ sqd-network-datasets:
   - name: kusama
     id: s3://kusama-4
     kind: substrate
-  - name: moonbase-substrate
-    id: s3://moonbase-substrate-4
-    kind: substrate
   - name: peaq-mainnet-substrate
     id: s3://peaq-mainnet-5
-    kind: substrate
-  - name: pendulum
-    id: s3://pendulum-4
     kind: substrate
   - name: polkadot
     id: s3://polkadot-4

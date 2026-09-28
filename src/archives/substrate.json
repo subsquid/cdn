@@ -845,27 +845,6 @@
       ]
     },
     {
-      "chainName": "Moonbase",
-      "chainSS58Prefix": 1287,
-      "genesisHash": "0x91bc6e169807aaa54802737e1c504b2577d4fafedd5a02c10293b1cd60e39527",
-      "id": "moonbase-substrate",
-      "network": "moonbase",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/moonbase-substrate",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainName": "Paseo",
       "chainSS58Prefix": 42,
       "genesisHash": "0x77afd6190f1554ad45fd0d31aee62aacc33c6db0ea801129acb813f913e0764f",
@@ -901,27 +880,6 @@
             "extrinsics"
           ],
           "dataSourceUrl": "https://v2.archive.subsquid.io/network/peaq-mainnet-substrate",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
-      "chainName": "Pendulum",
-      "chainSS58Prefix": 56,
-      "genesisHash": "0x5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
-      "id": "pendulum",
-      "network": "pendulum",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/pendulum",
           "provider": "subsquid",
           "release": "ArrowSquid",
           "supportTier": 2
