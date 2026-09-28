@@ -950,20 +950,6 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
-  moonbase-testnet:
-    metadata:
-      display_name: Moonbase Alpha
-      ecosystem: moonbeam
-      logo_url: https://cdn.subsquid.io/img/networks/moonbasealpha.png
-      type: testnet
-      kind: evm
-      evm:
-        chain_id: 1287
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
   opbnb-mainnet:
     metadata:
       display_name: opBNB
@@ -1758,26 +1744,12 @@ datasets:
       display_name: Kusama
       ecosystem: kusama
     schema: {}
-  moonbase-substrate:
-    metadata:
-      kind: substrate
-      logo_url: https://cdn.subsquid.io/img/networks/moonbase_alpha.svg
-      display_name: Moonbase Alpha (Substrate)
-      ecosystem: moonbeam
-    schema: {}
   peaq-mainnet-substrate:
     metadata:
       kind: substrate
       logo_url: https://cdn.subsquid.io/img/networks/peaq.png
       display_name: Peaq (Substrate)
       ecosystem: peaq
-    schema: {}
-  pendulum:
-    metadata:
-      kind: substrate
-      logo_url: https://cdn.subsquid.io/img/networks/pendulum.svg
-      display_name: Pendulum
-      ecosystem: pendulum
     schema: {}
   polkadot:
     metadata:

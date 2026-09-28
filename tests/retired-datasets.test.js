@@ -21,7 +21,7 @@ test('Pipes CLI network choices exclude retired and unavailable datasets', () =>
   assert.ok(networks.includes('solana-mainnet'), 'active SVM networks remain selectable');
 });
 
-test('Portal registries exclude retired datasets and preserve Pendulum', () => {
+test('Portal registries exclude retired datasets', () => {
   const declarations = yaml.load(read('src/sqd-network/datasets.yml'))['sqd-network-datasets'];
   const metadata = yaml.load(read('src/sqd-network/mainnet/metadata.yml')).datasets;
   const archives = JSON.parse(read('src/archives/substrate.json')).archives;
@@ -33,10 +33,6 @@ test('Portal registries exclude retired datasets and preserve Pendulum', () => {
   for (const names of catalogs) {
     for (const slug of retired) assert.equal(names.includes(slug), false, `${slug} was reintroduced`);
     assert.ok(names.includes('polkadot'), 'active Substrate datasets remain listed');
-  }
-  assert.equal(retired.includes('pendulum'), false);
-  for (const names of catalogs.slice(0, 3)) {
-    assert.ok(names.includes('pendulum'), 'Pendulum remains available');
   }
 });
 

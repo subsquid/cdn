@@ -5,6 +5,9 @@
   "etherlink-testnet",
   "invarch-parachain",
   "invarch-tinkernet",
+  "moonbase-substrate",
+  "moonbase-testnet",
+  "pendulum",
   "skale-nebula",
   "zeitgeist",
   "zeitgeist-testnet"

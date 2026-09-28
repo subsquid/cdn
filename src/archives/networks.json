@@ -544,17 +544,6 @@
       "parachainId": "2104"
     },
     {
-      "name": "moonbase",
-      "displayName": "Moonbase Alpha",
-      "tokens": [
-        "DEV"
-      ],
-      "website": "https://moonbeam.network/",
-      "description": "",
-      "relayChain": null,
-      "parachainId": null
-    },
-    {
       "name": "moonbeam",
       "displayName": "Moonbeam",
       "tokens": [
@@ -676,17 +665,6 @@
       "description": "peaq network is a smart contract platform built on Substrate supporting ink! and Ethereum Virtual Machine (EVM) smart contracts.",
       "relayChain": null,
       "parachainId": null
-    },
-    {
-      "name": "pendulum",
-      "displayName": "Pendulum",
-      "tokens": [
-        "PEN"
-      ],
-      "website": "https://pendulumchain.org/",
-      "description": "Pendulum is an open-source blockchain that aims to establish the missing link between the fiat and the DeFi ecosystems through a fiat-optimized smart contract blockchain.",
-      "relayChain": "polkadot",
-      "parachainId": "2094"
     },
     {
       "name": "phala",
