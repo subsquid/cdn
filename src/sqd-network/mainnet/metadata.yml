@@ -1765,13 +1765,6 @@ datasets:
       display_name: Vara
       ecosystem: vara
     schema: {}
-  vara-testnet:
-    metadata:
-      kind: substrate
-      logo_url: https://cdn.subsquid.io/img/networks/vara-testnet.png
-      display_name: Vara Testnet
-      ecosystem: vara
-    schema: {}
   zkverify-mainnet:
     metadata:
       kind: substrate
