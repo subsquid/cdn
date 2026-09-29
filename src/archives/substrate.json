@@ -1269,28 +1269,6 @@
       ]
     },
     {
-      "chainName": "Vara Testnet",
-      "chainSS58Prefix": 137,
-      "genesisHash": "0x525639f713f397dcf839bd022cd821f367ebcf179de7b9253531f8adbe5436d6",
-      "id": "vara-testnet",
-      "isTestnet": true,
-      "network": "vara-testnet",
-      "providers": [
-        {
-          "data": [
-            "blocks",
-            "calls",
-            "events",
-            "extrinsics"
-          ],
-          "dataSourceUrl": "https://v2.archive.subsquid.io/network/vara-testnet",
-          "provider": "subsquid",
-          "release": "ArrowSquid",
-          "supportTier": 2
-        }
-      ]
-    },
-    {
       "chainName": "zkVerify Mainnet",
       "chainSS58Prefix": null,
       "genesis_hash": "0x060e3dd3fa2904d031206bb913c954687a2bcc350e5a83d33d9e273ad21460f1",
