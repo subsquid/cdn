@@ -33,7 +33,6 @@ and `declared_but_unlisted` lists declared datasets that are left out.
 | `kind` | Data model or VM, such as `evm`, `substrate`, `solana`, or `bitcoin`. |
 | `type` | Network class: `mainnet`, `testnet`, or `devnet`. |
 | `logo_url` | Network or chain logo. |
-| `logo_bg` | Optional rendering hint. `white` adds a white background behind a dark logo. |
 | `website` | Official chain website. |
 | `docs` | Official developer documentation. |
 | `explorer` | Official or primary block explorer when reviewed. |

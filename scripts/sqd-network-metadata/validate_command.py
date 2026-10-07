@@ -14,7 +14,6 @@ CATALOG_PATH = Path(__file__).resolve().parent / "catalog.json"
 REQUIRED_FIELDS = ("kind", "display_name", "ecosystem", "logo_url", "website", "docs", "category", "private")
 CATEGORY_CHOICES = {"core", "partner", "frontier"}
 TYPE_CHOICES = {"mainnet", "testnet", "devnet"}
-LOGO_BG_CHOICES = {"white"}
 
 
 def update_parser(parser: argparse.ArgumentParser):
@@ -54,8 +53,6 @@ def _run(parsed_args):
             errors.append(f"{dataset}: invalid metadata.type {fields['type']!r}")
         if not isinstance(fields.get("private"), bool):
             errors.append(f"{dataset}: metadata.private must be a boolean")
-        if "logo_bg" in fields and fields["logo_bg"] not in LOGO_BG_CHOICES:
-            errors.append(f"{dataset}: invalid metadata.logo_bg {fields['logo_bg']!r}")
         for field in ("website", "docs", "explorer", "logo_url"):
             if field in fields and not str(fields[field]).startswith(("https://", "http://")):
                 errors.append(f"{dataset}: metadata.{field} must be an HTTP(S) URL")

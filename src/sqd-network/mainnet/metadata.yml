@@ -496,7 +496,6 @@ datasets:
       website: https://bittensor.com
       docs: https://docs.bittensor.com
       category: frontier
-      logo_bg: white
       private: false
       evm:
         chain_id: 964
@@ -515,7 +514,6 @@ datasets:
       website: https://bittensor.com
       docs: https://docs.bittensor.com
       category: frontier
-      logo_bg: white
       private: false
       evm:
         chain_id: 945
@@ -828,7 +826,6 @@ datasets:
       website: https://hedera.com
       docs: https://docs.hedera.com
       category: partner
-      logo_bg: white
       private: false
       evm:
         chain_id: 295
@@ -992,7 +989,6 @@ datasets:
       docs: https://docs.linea.build
       explorer: https://lineascan.build
       category: frontier
-      logo_bg: white
       private: false
       evm:
         chain_id: 59144
@@ -1326,7 +1322,6 @@ datasets:
       website: https://www.plasma.to
       docs: https://docs.plasma.to
       category: frontier
-      logo_bg: white
       private: false
       evm:
         chain_id: 9745
@@ -1347,7 +1342,6 @@ datasets:
       website: https://www.plasma.to
       docs: https://docs.plasma.to
       category: frontier
-      logo_bg: white
       private: false
       evm:
         chain_id: 9746
@@ -1756,7 +1750,6 @@ datasets:
       website: https://world.org
       docs: https://docs.world.org/world-chain
       category: frontier
-      logo_bg: white
       private: true
       evm:
         chain_id: 480
@@ -1779,7 +1772,6 @@ datasets:
       website: https://www.okx.com/xlayer
       docs: https://web3.okx.com/xlayer/docs/developer
       category: frontier
-      logo_bg: white
       private: false
       evm:
         chain_id: 196
@@ -2212,7 +2204,6 @@ datasets:
       docs: https://wiki.polkadot.network/docs/learn-kusama
       explorer: https://kusama.subscan.io
       category: frontier
-      logo_bg: white
       private: false
     schema: {}
   peaq-mainnet-substrate:
@@ -2304,7 +2295,6 @@ datasets:
       website: https://cronos.org
       docs: https://docs.cronos.org
       category: frontier
-      logo_bg: white
       private: true
       evm:
         chain_id: 25

@@ -48,7 +48,6 @@ def _build_entry(
     explorer_raw: str,
     category: str,
     private: bool,
-    logo_bg_raw: str,
 ):
     chain_id = _parse_chain_id(chain_id_raw)
 
@@ -67,10 +66,6 @@ def _build_entry(
     explorer = _optional_value(explorer_raw)
     if explorer is not None:
         meta["explorer"] = explorer
-
-    logo_bg = _optional_value(logo_bg_raw)
-    if logo_bg is not None:
-        meta["logo_bg"] = logo_bg
 
     if chain_id is not None:
         meta["evm"] = {"chain_id": chain_id}
@@ -112,7 +107,6 @@ def _run(parsed_args):
     explorer_raw = Prompt.ask("explorer", default="null").strip()
     category = Prompt.ask("category", default="frontier", choices=CATEGORY_CHOICES).strip()
     private = Confirm.ask("private", default=False)
-    logo_bg_raw = Prompt.ask("logo_bg", default="null", choices=["null", "white"]).strip()
 
     entry = _build_entry(
         kind,
@@ -126,7 +120,6 @@ def _run(parsed_args):
         explorer_raw,
         category,
         private,
-        logo_bg_raw,
     )
     syntax = Syntax(yaml.safe_dump(entry, sort_keys=False), "yaml", theme="monokai", line_numbers=True)
     console.print(f"\nFollowing entry will be added as datasets.{dataset_key}:")
