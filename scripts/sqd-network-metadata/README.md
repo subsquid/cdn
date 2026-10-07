@@ -19,11 +19,12 @@ python scripts/sqd-network-metadata/__main__.py validate
 
 ## Metadata fields
 
-Each dataset has its own record. Chain-level fields are repeated on every
-network in the same `ecosystem` so consumers do not need another lookup.
-The catalog contains 114 public Portal datasets and 11 private datasets.
-`catalog.json` records the small set difference between the public dataset
-declarations and the supported directory, plus the canonical private list.
+Each dataset (network) has its own record and belongs to one chain, named by
+`ecosystem`. Chain-level fields, including `category`, are repeated on every
+network of the same chain so consumers do not need another lookup.
+`catalog.json` records how the metadata differs from `datasets.yml`:
+`metadata_only` lists datasets that have metadata but are not declared there,
+and `declared_but_unlisted` lists declared datasets that are left out.
 
 | Field | Meaning |
 | --- | --- |
@@ -36,9 +37,9 @@ declarations and the supported directory, plus the canonical private list.
 | `website` | Official chain website. |
 | `docs` | Official developer documentation. |
 | `explorer` | Official or primary block explorer when reviewed. |
-| `tier` | SQD support tier: `core`, `partner`, or `frontier`. This is consistent across an ecosystem. |
-| `private` | `true` when access requires a private or commercial arrangement. |
+| `category` | Chain category: `core`, `partner`, or `frontier`. Every network of a chain has the same value. |
+| `private` | `true` while access requires a private or commercial arrangement. Change it on the record alone when a dataset becomes public. |
 
-Run `validate` before opening a PR. It checks the exact public and private
-catalogs, required fields on every metadata record, and consistency of
-chain-level fields within an ecosystem.
+Run `validate` before opening a PR. It checks that the metadata covers exactly
+the catalog, required fields on every metadata record, and consistency of
+chain-level fields within a chain.

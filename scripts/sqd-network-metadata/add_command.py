@@ -9,7 +9,7 @@ from rich.syntax import Syntax
 
 METADATA_PATH = Path(__file__).resolve().parent.parent.parent / "src/sqd-network/mainnet/metadata.yml"
 TYPE_CHOICES = ["testnet", "mainnet", "devnet"]
-TIER_CHOICES = ["core", "partner", "frontier"]
+CATEGORY_CHOICES = ["core", "partner", "frontier"]
 
 
 def update_parser(parser: argparse.ArgumentParser):
@@ -46,7 +46,7 @@ def _build_entry(
     website: str,
     docs: str,
     explorer_raw: str,
-    tier: str,
+    category: str,
     private: bool,
     logo_bg_raw: str,
 ):
@@ -60,7 +60,7 @@ def _build_entry(
         "logo_url": logo_url,
         "website": website,
         "docs": docs,
-        "tier": tier,
+        "category": category,
         "private": private,
     }
 
@@ -110,7 +110,7 @@ def _run(parsed_args):
     docs = Prompt.ask("docs").strip()
     assert docs, "docs must not be empty"
     explorer_raw = Prompt.ask("explorer", default="null").strip()
-    tier = Prompt.ask("tier", default="frontier", choices=TIER_CHOICES).strip()
+    category = Prompt.ask("category", default="frontier", choices=CATEGORY_CHOICES).strip()
     private = Confirm.ask("private", default=False)
     logo_bg_raw = Prompt.ask("logo_bg", default="null", choices=["null", "white"]).strip()
 
@@ -124,7 +124,7 @@ def _run(parsed_args):
         website,
         docs,
         explorer_raw,
-        tier,
+        category,
         private,
         logo_bg_raw,
     )

@@ -1,25 +1,19 @@
 {
-  "public_metadata_only": [
-    "bitcoin-mainnet",
-    "tac-mainnet",
-    "tron-mainnet"
-  ],
-  "declared_but_unlisted": [
-    "moonbase-substrate",
-    "moonbase-testnet",
-    "pendulum"
-  ],
-  "private": [
+  "metadata_only": [
     "adi-mainnet",
     "adi-testnet",
     "arc-mainnet",
+    "bitcoin-mainnet",
     "cronos-mainnet",
     "robinhood-mainnet",
     "robinhood-testnet",
     "sei-mainnet",
     "stable-mainnet",
     "stable-testnet",
+    "tac-mainnet",
     "tempo-mainnet",
+    "tron-mainnet",
     "worldchain-mainnet"
-  ]
+  ],
+  "declared_but_unlisted": []
 }

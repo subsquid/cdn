@@ -11,8 +11,8 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 METADATA_PATH = ROOT / "src/sqd-network/mainnet/metadata.yml"
 DATASETS_PATH = ROOT / "src/sqd-network/datasets.yml"
 CATALOG_PATH = Path(__file__).resolve().parent / "catalog.json"
-REQUIRED_FIELDS = ("kind", "display_name", "ecosystem", "logo_url", "website", "docs", "tier", "private")
-TIER_CHOICES = {"core", "partner", "frontier"}
+REQUIRED_FIELDS = ("kind", "display_name", "ecosystem", "logo_url", "website", "docs", "category", "private")
+CATEGORY_CHOICES = {"core", "partner", "frontier"}
 TYPE_CHOICES = {"mainnet", "testnet", "devnet"}
 LOGO_BG_CHOICES = {"white"}
 
@@ -35,12 +35,11 @@ def _run(parsed_args):
     declared = {entry["name"] for entry in declarations}
     with open(CATALOG_PATH, "r", encoding="utf-8") as handle:
         catalog = json.load(handle)
-    expected_public = (
+    expected = (
         declared
         - set(catalog["declared_but_unlisted"])
-        | set(catalog["public_metadata_only"])
+        | set(catalog["metadata_only"])
     )
-    expected_private = set(catalog["private"])
     errors = []
     ecosystems = defaultdict(lambda: defaultdict(set))
 
@@ -49,8 +48,8 @@ def _run(parsed_args):
         for field in REQUIRED_FIELDS:
             if field not in fields or fields[field] in (None, ""):
                 errors.append(f"{dataset}: missing metadata.{field}")
-        if fields.get("tier") not in TIER_CHOICES:
-            errors.append(f"{dataset}: invalid metadata.tier {fields.get('tier')!r}")
+        if fields.get("category") not in CATEGORY_CHOICES:
+            errors.append(f"{dataset}: invalid metadata.category {fields.get('category')!r}")
         if "type" in fields and fields["type"] not in TYPE_CHOICES:
             errors.append(f"{dataset}: invalid metadata.type {fields['type']!r}")
         if not isinstance(fields.get("private"), bool):
@@ -62,26 +61,17 @@ def _run(parsed_args):
                 errors.append(f"{dataset}: metadata.{field} must be an HTTP(S) URL")
         ecosystem = fields.get("ecosystem")
         if ecosystem:
-            for field in ("website", "docs", "tier", "private"):
+            for field in ("website", "docs", "category", "private"):
                 if field in fields:
                     ecosystems[ecosystem][field].add(fields[field])
 
-    actual_private = {
-        dataset
-        for dataset, record in metadata.items()
-        if (record.get("metadata") or {}).get("private") is True
-    }
-    actual_public = set(metadata) - actual_private
-    for label, actual, expected in (
-        ("public", actual_public, expected_public),
-        ("private", actual_private, expected_private),
-    ):
-        missing = sorted(expected - actual)
-        unexpected = sorted(actual - expected)
-        if missing:
-            errors.append(f"{label} catalog is missing: {', '.join(missing)}")
-        if unexpected:
-            errors.append(f"{label} catalog has unexpected datasets: {', '.join(unexpected)}")
+    actual = set(metadata)
+    missing = sorted(expected - actual)
+    unexpected = sorted(actual - expected)
+    if missing:
+        errors.append(f"catalog is missing: {', '.join(missing)}")
+    if unexpected:
+        errors.append(f"catalog has unexpected datasets: {', '.join(unexpected)}")
 
     for ecosystem, fields in ecosystems.items():
         for field, values in fields.items():
@@ -94,7 +84,8 @@ def _run(parsed_args):
             console.print(f"- {error}")
         raise SystemExit(1)
 
+    private_count = sum(1 for record in metadata.values() if (record.get("metadata") or {}).get("private") is True)
     console.print(
-        f"Validated {len(actual_public)} public and {len(actual_private)} private metadata records.",
+        f"Validated {len(actual)} metadata records ({len(actual) - private_count} public, {private_count} private).",
         style="bold green",
     )
