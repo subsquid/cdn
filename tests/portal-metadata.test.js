@@ -6,18 +6,35 @@ const yaml = require('js-yaml');
 const { updateSchema } = require('../.github/workflows/scripts/update-metadata-contents.js');
 
 const readYaml = (file) => yaml.load(readFileSync(join(__dirname, '..', file), 'utf8'));
+const readJson = (file) => JSON.parse(readFileSync(join(__dirname, '..', file), 'utf8'));
 
-test('Portal declarations and metadata agree on dataset kinds', () => {
+test('expanded metadata covers the declared datasets and assigns every dataset a tier', () => {
   const declarations = readYaml('src/sqd-network/datasets.yml')['sqd-network-datasets'];
   const metadata = readYaml('src/sqd-network/mainnet/metadata.yml').datasets;
+  const exceptions = readJson('scripts/sqd-network-metadata/dataset-exceptions.json');
+  const omitted = new Set(exceptions.declared_but_unlisted);
+  const expected = new Set([
+    ...declarations.map((row) => row.name).filter((name) => !omitted.has(name)),
+    ...exceptions.metadata_only,
+  ]);
+
+  assert.deepEqual(Object.keys(metadata).sort(), [...expected].sort());
+  for (const [name, record] of Object.entries(metadata)) {
+    assert.ok(['core', 'partner', 'frontier'].includes(record.metadata.tier), `${name} has no valid tier`);
+    assert.equal(typeof record.metadata.private, 'boolean', `${name} has no private flag`);
+  }
+
   for (const row of declarations) {
-    assert.ok(metadata[row.name], `${row.name} needs metadata`);
-    assert.equal(row.kind, metadata[row.name].metadata.kind, `${row.name} has conflicting kinds`);
+    if (metadata[row.name]) {
+      assert.equal(row.kind, metadata[row.name].metadata.kind, `${row.name} has conflicting kinds`);
+    }
   }
   assert.equal(declarations.find((row) => row.name === 'celo-mainnet').kind, 'evm');
   assert.equal(metadata['binance-testnet'].metadata.display_name, 'BNB Smart Chain Testnet');
   assert.equal(metadata['binance-testnet'].metadata.evm.chain_id, 97);
   assert.ok(Object.hasOwn(metadata['ethereum-sepolia'].schema.tables, 'state_diffs'));
+  assert.equal(metadata['katana-mainnet'].metadata.private, false);
+  assert.equal(metadata['tac-mainnet'].metadata.private, false);
 });
 
 test('a full metadata refresh retains supported state diffs and does not erase them on HTTP errors', async (t) => {

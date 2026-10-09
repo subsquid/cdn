@@ -9,6 +9,7 @@ from rich.syntax import Syntax
 
 METADATA_PATH = Path(__file__).resolve().parent.parent.parent / "src/sqd-network/mainnet/metadata.yml"
 TYPE_CHOICES = ["testnet", "mainnet", "devnet"]
+TIER_CHOICES = ["core", "partner", "frontier"]
 
 
 def update_parser(parser: argparse.ArgumentParser):
@@ -31,17 +32,48 @@ def _parse_chain_id(chain_id_raw: str):
     return int(chain_id_raw)
 
 
-def _build_entry(kind: str, display_name: str, logo_url_raw: str, chain_type: str, chain_id_raw: str):
+def _optional_value(value: str):
+    return None if value == "null" else value
+
+
+def _ecosystem_fields(datasets: dict, ecosystem: str):
+    for record in datasets.values():
+        fields = record.get("metadata") or {}
+        if fields.get("ecosystem") == ecosystem:
+            return {field: fields[field] for field in ("website", "docs", "tier")}
+    return None
+
+
+def _build_entry(
+    kind: str,
+    display_name: str,
+    ecosystem: str,
+    logo_url: str,
+    chain_type: str,
+    chain_id_raw: str,
+    website: str,
+    docs: str,
+    explorer_raw: str,
+    tier: str,
+    private: bool,
+):
     chain_id = _parse_chain_id(chain_id_raw)
 
     meta = {
         "kind": kind,
         "display_name": display_name,
+        "ecosystem": ecosystem,
         "type": chain_type,
+        "logo_url": logo_url,
+        "website": website,
+        "docs": docs,
+        "tier": tier,
+        "private": private,
     }
 
-    if logo_url_raw != "null":
-        meta["logo_url"] = logo_url_raw
+    explorer = _optional_value(explorer_raw)
+    if explorer is not None:
+        meta["explorer"] = explorer
 
     if chain_id is not None:
         meta["evm"] = {"chain_id": chain_id}
@@ -62,19 +94,47 @@ def _run(parsed_args):
     assert dataset_key, "Dataset key must not be empty"
     assert dataset_key not in datasets, f"Dataset '{dataset_key}' already exists"
 
+    ecosystem = Prompt.ask("ecosystem").strip()
+    assert ecosystem, "ecosystem must not be empty"
+    shared = _ecosystem_fields(datasets, ecosystem)
+    if shared is not None:
+        console.print(f"Using website, docs and tier of the existing ecosystem '{ecosystem}'.")
+
     kind = Prompt.ask("kind", default="evm").strip()
     assert kind, "kind must not be empty"
 
     display_name = Prompt.ask("display_name").strip()
     assert display_name, "display_name must not be empty"
 
-    logo_url_raw = Prompt.ask("logo_url", default="null").strip()
-    assert logo_url_raw, "logo_url must not be empty (use 'null' for missing value)"
+    logo_url = Prompt.ask("logo_url").strip()
+    assert logo_url, "logo_url must not be empty"
 
     chain_type = Prompt.ask("type", default="mainnet", choices=TYPE_CHOICES).strip()
     chain_id_raw = Prompt.ask("chain_id", default="null").strip()
+    if shared is None:
+        website = Prompt.ask("website").strip()
+        assert website, "website must not be empty"
+        docs = Prompt.ask("docs").strip()
+        assert docs, "docs must not be empty"
+        tier = Prompt.ask("tier", default="frontier", choices=TIER_CHOICES).strip()
+    else:
+        website, docs, tier = shared["website"], shared["docs"], shared["tier"]
+    explorer_raw = Prompt.ask("explorer", default="null").strip()
+    private = Confirm.ask("private", default=False)
 
-    entry = _build_entry(kind, display_name, logo_url_raw, chain_type, chain_id_raw)
+    entry = _build_entry(
+        kind,
+        display_name,
+        ecosystem,
+        logo_url,
+        chain_type,
+        chain_id_raw,
+        website,
+        docs,
+        explorer_raw,
+        tier,
+        private,
+    )
     syntax = Syntax(yaml.safe_dump(entry, sort_keys=False), "yaml", theme="monokai", line_numbers=True)
     console.print(f"\nFollowing entry will be added as datasets.{dataset_key}:")
     console.print(syntax)

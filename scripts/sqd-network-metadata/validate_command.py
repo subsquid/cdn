@@ -1,0 +1,89 @@
+import argparse
+from collections import defaultdict
+import json
+from pathlib import Path
+
+import yaml
+from rich.console import Console
+
+
+ROOT = Path(__file__).resolve().parent.parent.parent
+METADATA_PATH = ROOT / "src/sqd-network/mainnet/metadata.yml"
+DATASETS_PATH = ROOT / "src/sqd-network/datasets.yml"
+EXCEPTIONS_PATH = Path(__file__).resolve().parent / "dataset-exceptions.json"
+REQUIRED_FIELDS = ("kind", "display_name", "ecosystem", "logo_url", "website", "docs", "tier", "private")
+ECOSYSTEM_FIELDS = ("website", "docs", "tier")
+TIER_CHOICES = {"core", "partner", "frontier"}
+TYPE_CHOICES = {"mainnet", "testnet", "devnet"}
+
+
+def update_parser(parser: argparse.ArgumentParser):
+    parser.description = "Validate dataset metadata"
+    parser.set_defaults(func=_run)
+
+
+def _load_yaml(path: Path):
+    with open(path, "r", encoding="utf-8") as handle:
+        return yaml.safe_load(handle)
+
+
+def _run(parsed_args):
+    del parsed_args
+    console = Console()
+    metadata = _load_yaml(METADATA_PATH)["datasets"]
+    declarations = _load_yaml(DATASETS_PATH)["sqd-network-datasets"]
+    declared = {entry["name"] for entry in declarations}
+    with open(EXCEPTIONS_PATH, "r", encoding="utf-8") as handle:
+        exceptions = json.load(handle)
+    expected = (
+        declared
+        - set(exceptions["declared_but_unlisted"])
+        | set(exceptions["metadata_only"])
+    )
+    errors = []
+    ecosystems = defaultdict(lambda: defaultdict(set))
+
+    for dataset, record in metadata.items():
+        fields = record.get("metadata") or {}
+        for field in REQUIRED_FIELDS:
+            if field not in fields or fields[field] in (None, ""):
+                errors.append(f"{dataset}: missing metadata.{field}")
+        if fields.get("tier") not in TIER_CHOICES:
+            errors.append(f"{dataset}: invalid metadata.tier {fields.get('tier')!r}")
+        if "type" in fields and fields["type"] not in TYPE_CHOICES:
+            errors.append(f"{dataset}: invalid metadata.type {fields['type']!r}")
+        if not isinstance(fields.get("private"), bool):
+            errors.append(f"{dataset}: metadata.private must be a boolean")
+        for field in ("website", "docs", "explorer", "logo_url"):
+            if field in fields and not str(fields[field]).startswith(("https://", "http://")):
+                errors.append(f"{dataset}: metadata.{field} must be an HTTP(S) URL")
+        ecosystem = fields.get("ecosystem")
+        if ecosystem:
+            for field in ECOSYSTEM_FIELDS:
+                if field in fields:
+                    ecosystems[ecosystem][field].add(fields[field])
+
+    actual = set(metadata)
+    missing = sorted(expected - actual)
+    unexpected = sorted(actual - expected)
+    if missing:
+        errors.append(f"metadata.yml has no record for: {', '.join(missing)}")
+    if unexpected:
+        errors.append(f"metadata.yml has records not in datasets.yml or dataset-exceptions.json: {', '.join(unexpected)}")
+
+    for ecosystem, fields in ecosystems.items():
+        for field, values in fields.items():
+            if len(values) > 1:
+                errors.append(f"datasets in ecosystem {ecosystem} disagree on metadata.{field}: {sorted(values)!r}")
+
+    if errors:
+        console.print("Metadata validation failed:", style="bold red")
+        for error in errors:
+            console.print(f"- {error}")
+        raise SystemExit(1)
+
+    private_count = sum(1 for record in metadata.values() if (record.get("metadata") or {}).get("private") is True)
+    console.print(
+        f"Validated {len(actual)} metadata records ({len(actual) - private_count} public, {private_count} private).",
+        style="bold green",
+    )

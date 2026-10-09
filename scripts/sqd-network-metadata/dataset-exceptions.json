@@ -1,0 +1,19 @@
+{
+  "metadata_only": [
+    "adi-mainnet",
+    "adi-testnet",
+    "arc-mainnet",
+    "bitcoin-mainnet",
+    "cronos-mainnet",
+    "robinhood-mainnet",
+    "robinhood-testnet",
+    "sei-mainnet",
+    "stable-mainnet",
+    "stable-testnet",
+    "tac-mainnet",
+    "tempo-mainnet",
+    "tron-mainnet",
+    "worldchain-mainnet"
+  ],
+  "declared_but_unlisted": []
+}
