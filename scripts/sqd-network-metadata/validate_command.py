@@ -10,8 +10,9 @@ from rich.console import Console
 ROOT = Path(__file__).resolve().parent.parent.parent
 METADATA_PATH = ROOT / "src/sqd-network/mainnet/metadata.yml"
 DATASETS_PATH = ROOT / "src/sqd-network/datasets.yml"
-CATALOG_PATH = Path(__file__).resolve().parent / "catalog.json"
+EXCEPTIONS_PATH = Path(__file__).resolve().parent / "dataset-exceptions.json"
 REQUIRED_FIELDS = ("kind", "display_name", "ecosystem", "logo_url", "website", "docs", "category", "private")
+ECOSYSTEM_FIELDS = ("website", "docs", "category")
 CATEGORY_CHOICES = {"core", "partner", "frontier"}
 TYPE_CHOICES = {"mainnet", "testnet", "devnet"}
 
@@ -32,12 +33,12 @@ def _run(parsed_args):
     metadata = _load_yaml(METADATA_PATH)["datasets"]
     declarations = _load_yaml(DATASETS_PATH)["sqd-network-datasets"]
     declared = {entry["name"] for entry in declarations}
-    with open(CATALOG_PATH, "r", encoding="utf-8") as handle:
-        catalog = json.load(handle)
+    with open(EXCEPTIONS_PATH, "r", encoding="utf-8") as handle:
+        exceptions = json.load(handle)
     expected = (
         declared
-        - set(catalog["declared_but_unlisted"])
-        | set(catalog["metadata_only"])
+        - set(exceptions["declared_but_unlisted"])
+        | set(exceptions["metadata_only"])
     )
     errors = []
     ecosystems = defaultdict(lambda: defaultdict(set))
@@ -58,7 +59,7 @@ def _run(parsed_args):
                 errors.append(f"{dataset}: metadata.{field} must be an HTTP(S) URL")
         ecosystem = fields.get("ecosystem")
         if ecosystem:
-            for field in ("website", "docs", "category", "private"):
+            for field in ECOSYSTEM_FIELDS:
                 if field in fields:
                     ecosystems[ecosystem][field].add(fields[field])
 
@@ -66,14 +67,14 @@ def _run(parsed_args):
     missing = sorted(expected - actual)
     unexpected = sorted(actual - expected)
     if missing:
-        errors.append(f"catalog is missing: {', '.join(missing)}")
+        errors.append(f"metadata.yml has no record for: {', '.join(missing)}")
     if unexpected:
-        errors.append(f"catalog has unexpected datasets: {', '.join(unexpected)}")
+        errors.append(f"metadata.yml has records not in datasets.yml or dataset-exceptions.json: {', '.join(unexpected)}")
 
     for ecosystem, fields in ecosystems.items():
         for field, values in fields.items():
             if len(values) > 1:
-                errors.append(f"{ecosystem}: networks disagree on metadata.{field}: {sorted(values)!r}")
+                errors.append(f"datasets in ecosystem {ecosystem} disagree on metadata.{field}: {sorted(values)!r}")
 
     if errors:
         console.print("Metadata validation failed:", style="bold red")

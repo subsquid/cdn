@@ -8,14 +8,14 @@ const { updateSchema } = require('../.github/workflows/scripts/update-metadata-c
 const readYaml = (file) => yaml.load(readFileSync(join(__dirname, '..', file), 'utf8'));
 const readJson = (file) => JSON.parse(readFileSync(join(__dirname, '..', file), 'utf8'));
 
-test('expanded metadata covers the dataset catalog and assigns every dataset a category', () => {
+test('expanded metadata covers the declared datasets and assigns every dataset a category', () => {
   const declarations = readYaml('src/sqd-network/datasets.yml')['sqd-network-datasets'];
   const metadata = readYaml('src/sqd-network/mainnet/metadata.yml').datasets;
-  const catalog = readJson('scripts/sqd-network-metadata/catalog.json');
-  const omitted = new Set(catalog.declared_but_unlisted);
+  const exceptions = readJson('scripts/sqd-network-metadata/dataset-exceptions.json');
+  const omitted = new Set(exceptions.declared_but_unlisted);
   const expected = new Set([
     ...declarations.map((row) => row.name).filter((name) => !omitted.has(name)),
-    ...catalog.metadata_only,
+    ...exceptions.metadata_only,
   ]);
 
   assert.deepEqual(Object.keys(metadata).sort(), [...expected].sort());

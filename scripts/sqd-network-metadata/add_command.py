@@ -36,6 +36,14 @@ def _optional_value(value: str):
     return None if value == "null" else value
 
 
+def _ecosystem_fields(datasets: dict, ecosystem: str):
+    for record in datasets.values():
+        fields = record.get("metadata") or {}
+        if fields.get("ecosystem") == ecosystem:
+            return {field: fields[field] for field in ("website", "docs", "category")}
+    return None
+
+
 def _build_entry(
     kind: str,
     display_name: str,
@@ -86,26 +94,32 @@ def _run(parsed_args):
     assert dataset_key, "Dataset key must not be empty"
     assert dataset_key not in datasets, f"Dataset '{dataset_key}' already exists"
 
+    ecosystem = Prompt.ask("ecosystem").strip()
+    assert ecosystem, "ecosystem must not be empty"
+    shared = _ecosystem_fields(datasets, ecosystem)
+    if shared is not None:
+        console.print(f"Using website, docs and category of the existing ecosystem '{ecosystem}'.")
+
     kind = Prompt.ask("kind", default="evm").strip()
     assert kind, "kind must not be empty"
 
     display_name = Prompt.ask("display_name").strip()
     assert display_name, "display_name must not be empty"
 
-    ecosystem = Prompt.ask("ecosystem", default=dataset_key).strip()
-    assert ecosystem, "ecosystem must not be empty"
-
     logo_url = Prompt.ask("logo_url").strip()
     assert logo_url, "logo_url must not be empty"
 
     chain_type = Prompt.ask("type", default="mainnet", choices=TYPE_CHOICES).strip()
     chain_id_raw = Prompt.ask("chain_id", default="null").strip()
-    website = Prompt.ask("website").strip()
-    assert website, "website must not be empty"
-    docs = Prompt.ask("docs").strip()
-    assert docs, "docs must not be empty"
-    explorer_raw = Prompt.ask("explorer", default="null").strip()
-    category = Prompt.ask("category", default="frontier", choices=CATEGORY_CHOICES).strip()
+    if shared is None:
+        website = Prompt.ask("website").strip()
+        assert website, "website must not be empty"
+        docs = Prompt.ask("docs").strip()
+        assert docs, "docs must not be empty"
+        category = Prompt.ask("category", default="frontier", choices=CATEGORY_CHOICES).strip()
+    else:
+        website, docs, category = shared["website"], shared["docs"], shared["category"]
+    explorer_raw = Prompt.ask("explorer (for this network)", default="null").strip()
     private = Confirm.ask("private", default=False)
 
     entry = _build_entry(

@@ -19,26 +19,33 @@ python scripts/sqd-network-metadata/__main__.py validate
 
 ## Metadata fields
 
-Each dataset (network) has its own record and belongs to one chain, named by
-`ecosystem`. Chain-level fields, including `category`, are repeated on every
-network of the same chain so consumers do not need another lookup.
-`catalog.json` records how the metadata differs from `datasets.yml`:
-`metadata_only` lists datasets that have metadata but are not declared there,
-and `declared_but_unlisted` lists declared datasets that are left out.
+Each record in `metadata.yml` describes one dataset. A network (one chain,
+such as Ethereum Sepolia) can have several datasets: Hyperliquid Mainnet has
+`hyperliquid-mainnet`, `hyperliquid-fills` and `hyperliquid-replica-cmds`.
+`ecosystem` groups datasets by the organization or brand behind them, across
+all of its networks. Ecosystem-level fields (`website`, `docs` and `category`)
+are repeated on every dataset in the ecosystem so consumers do not need
+another lookup.
 
-| Field | Meaning |
-| --- | --- |
-| `display_name` | Human-readable network name. |
-| `ecosystem` | Canonical chain grouping. Mainnets and testnets for one chain use the same value. |
-| `kind` | Data model or VM, such as `evm`, `substrate`, `solana`, or `bitcoin`. |
-| `type` | Network class: `mainnet`, `testnet`, or `devnet`. |
-| `logo_url` | Network or chain logo. |
-| `website` | Official chain website. |
-| `docs` | Official developer documentation. |
-| `explorer` | Official or primary block explorer when reviewed. |
-| `category` | Chain category: `core`, `partner`, or `frontier`. Every network of a chain has the same value. |
-| `private` | `true` while access requires a private or commercial arrangement. Change it on the record alone when a dataset becomes public. |
+`dataset-exceptions.json` lists where the metadata differs from
+`datasets.yml`: `metadata_only` names datasets that have metadata but are not
+declared there, and `declared_but_unlisted` names declared datasets that are
+left out.
 
-Run `validate` before opening a PR. It checks that the metadata covers exactly
-the catalog, required fields on every metadata record, and consistency of
-chain-level fields within a chain.
+| Field | Level | Meaning |
+| --- | --- | --- |
+| `display_name` | dataset | Human-readable dataset name, such as "Hyperliquid Replica Commands". |
+| `ecosystem` | dataset | Organization or brand grouping that spans networks (Arbitrum One, Nova, Sepolia) and their datasets. |
+| `kind` | dataset | Data model or VM, such as `evm`, `substrate`, `solana`, or `bitcoin`. |
+| `type` | network | Network class: `mainnet`, `testnet`, or `devnet`. |
+| `logo_url` | dataset | Network or ecosystem logo. |
+| `website` | ecosystem | Official ecosystem website. Same on every dataset in the ecosystem. |
+| `docs` | ecosystem | Official developer documentation. Same on every dataset in the ecosystem. |
+| `explorer` | network | Block explorer for this dataset's network. Omitted where none was confirmed for that network. |
+| `category` | ecosystem | Ecosystem category: `core`, `partner`, or `frontier`. Same on every dataset in the ecosystem. |
+| `private` | dataset | `true` while access requires a private or commercial arrangement. Change it on the record alone when a dataset becomes public. |
+
+Run `validate` before opening a PR. It checks that `metadata.yml` has a record
+for exactly the datasets in `datasets.yml` adjusted by
+`dataset-exceptions.json`, required fields on every record, and that datasets
+in one ecosystem agree on the ecosystem-level fields.
