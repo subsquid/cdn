@@ -8,7 +8,7 @@ const { updateSchema } = require('../.github/workflows/scripts/update-metadata-c
 const readYaml = (file) => yaml.load(readFileSync(join(__dirname, '..', file), 'utf8'));
 const readJson = (file) => JSON.parse(readFileSync(join(__dirname, '..', file), 'utf8'));
 
-test('expanded metadata covers the declared datasets and assigns every dataset a category', () => {
+test('expanded metadata covers the declared datasets and assigns every dataset a tier', () => {
   const declarations = readYaml('src/sqd-network/datasets.yml')['sqd-network-datasets'];
   const metadata = readYaml('src/sqd-network/mainnet/metadata.yml').datasets;
   const exceptions = readJson('scripts/sqd-network-metadata/dataset-exceptions.json');
@@ -20,7 +20,7 @@ test('expanded metadata covers the declared datasets and assigns every dataset a
 
   assert.deepEqual(Object.keys(metadata).sort(), [...expected].sort());
   for (const [name, record] of Object.entries(metadata)) {
-    assert.ok(['core', 'partner', 'frontier'].includes(record.metadata.category), `${name} has no valid category`);
+    assert.ok(['core', 'partner', 'frontier'].includes(record.metadata.tier), `${name} has no valid tier`);
     assert.equal(typeof record.metadata.private, 'boolean', `${name} has no private flag`);
   }
 

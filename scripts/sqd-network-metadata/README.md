@@ -23,7 +23,7 @@ Each record in `metadata.yml` describes one dataset. A network (one chain,
 such as Ethereum Sepolia) can have several datasets: Hyperliquid Mainnet has
 `hyperliquid-mainnet`, `hyperliquid-fills` and `hyperliquid-replica-cmds`.
 `ecosystem` groups datasets by the organization or brand behind them, across
-all of its networks. Ecosystem-level fields (`website`, `docs` and `category`)
+all of its networks. Ecosystem-level fields (`website`, `docs` and `tier`)
 are repeated on every dataset in the ecosystem so consumers do not need
 another lookup.
 
@@ -42,7 +42,7 @@ left out.
 | `website` | ecosystem | Official ecosystem website. Same on every dataset in the ecosystem. |
 | `docs` | ecosystem | Official developer documentation. Same on every dataset in the ecosystem. |
 | `explorer` | dataset | Block explorer for this dataset's data. Datasets of one network usually share it, but need not: Hyperliquid Mainnet's EVM dataset uses an EVM explorer, its fills and replica commands the Hyperliquid explorer. Omitted where none was confirmed. |
-| `category` | ecosystem | Ecosystem category: `core`, `partner`, or `frontier`. Same on every dataset in the ecosystem. |
+| `tier` | ecosystem | Ecosystem tier: `core`, `partner`, or `frontier`. Same on every dataset in the ecosystem. |
 | `private` | dataset | `true` while access requires a private or commercial arrangement. Change it on the record alone when a dataset becomes public. |
 
 Run `validate` before opening a PR. It checks that `metadata.yml` has a record

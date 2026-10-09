@@ -11,9 +11,9 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 METADATA_PATH = ROOT / "src/sqd-network/mainnet/metadata.yml"
 DATASETS_PATH = ROOT / "src/sqd-network/datasets.yml"
 EXCEPTIONS_PATH = Path(__file__).resolve().parent / "dataset-exceptions.json"
-REQUIRED_FIELDS = ("kind", "display_name", "ecosystem", "logo_url", "website", "docs", "category", "private")
-ECOSYSTEM_FIELDS = ("website", "docs", "category")
-CATEGORY_CHOICES = {"core", "partner", "frontier"}
+REQUIRED_FIELDS = ("kind", "display_name", "ecosystem", "logo_url", "website", "docs", "tier", "private")
+ECOSYSTEM_FIELDS = ("website", "docs", "tier")
+TIER_CHOICES = {"core", "partner", "frontier"}
 TYPE_CHOICES = {"mainnet", "testnet", "devnet"}
 
 
@@ -48,8 +48,8 @@ def _run(parsed_args):
         for field in REQUIRED_FIELDS:
             if field not in fields or fields[field] in (None, ""):
                 errors.append(f"{dataset}: missing metadata.{field}")
-        if fields.get("category") not in CATEGORY_CHOICES:
-            errors.append(f"{dataset}: invalid metadata.category {fields.get('category')!r}")
+        if fields.get("tier") not in TIER_CHOICES:
+            errors.append(f"{dataset}: invalid metadata.tier {fields.get('tier')!r}")
         if "type" in fields and fields["type"] not in TYPE_CHOICES:
             errors.append(f"{dataset}: invalid metadata.type {fields['type']!r}")
         if not isinstance(fields.get("private"), bool):

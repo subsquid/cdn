@@ -9,7 +9,7 @@ from rich.syntax import Syntax
 
 METADATA_PATH = Path(__file__).resolve().parent.parent.parent / "src/sqd-network/mainnet/metadata.yml"
 TYPE_CHOICES = ["testnet", "mainnet", "devnet"]
-CATEGORY_CHOICES = ["core", "partner", "frontier"]
+TIER_CHOICES = ["core", "partner", "frontier"]
 
 
 def update_parser(parser: argparse.ArgumentParser):
@@ -40,7 +40,7 @@ def _ecosystem_fields(datasets: dict, ecosystem: str):
     for record in datasets.values():
         fields = record.get("metadata") or {}
         if fields.get("ecosystem") == ecosystem:
-            return {field: fields[field] for field in ("website", "docs", "category")}
+            return {field: fields[field] for field in ("website", "docs", "tier")}
     return None
 
 
@@ -54,7 +54,7 @@ def _build_entry(
     website: str,
     docs: str,
     explorer_raw: str,
-    category: str,
+    tier: str,
     private: bool,
 ):
     chain_id = _parse_chain_id(chain_id_raw)
@@ -67,7 +67,7 @@ def _build_entry(
         "logo_url": logo_url,
         "website": website,
         "docs": docs,
-        "category": category,
+        "tier": tier,
         "private": private,
     }
 
@@ -98,7 +98,7 @@ def _run(parsed_args):
     assert ecosystem, "ecosystem must not be empty"
     shared = _ecosystem_fields(datasets, ecosystem)
     if shared is not None:
-        console.print(f"Using website, docs and category of the existing ecosystem '{ecosystem}'.")
+        console.print(f"Using website, docs and tier of the existing ecosystem '{ecosystem}'.")
 
     kind = Prompt.ask("kind", default="evm").strip()
     assert kind, "kind must not be empty"
@@ -116,9 +116,9 @@ def _run(parsed_args):
         assert website, "website must not be empty"
         docs = Prompt.ask("docs").strip()
         assert docs, "docs must not be empty"
-        category = Prompt.ask("category", default="frontier", choices=CATEGORY_CHOICES).strip()
+        tier = Prompt.ask("tier", default="frontier", choices=TIER_CHOICES).strip()
     else:
-        website, docs, category = shared["website"], shared["docs"], shared["category"]
+        website, docs, tier = shared["website"], shared["docs"], shared["tier"]
     explorer_raw = Prompt.ask("explorer", default="null").strip()
     private = Confirm.ask("private", default=False)
 
@@ -132,7 +132,7 @@ def _run(parsed_args):
         website,
         docs,
         explorer_raw,
-        category,
+        tier,
         private,
     )
     syntax = Syntax(yaml.safe_dump(entry, sort_keys=False), "yaml", theme="monokai", line_numbers=True)

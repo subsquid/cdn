@@ -9,7 +9,7 @@ datasets:
       website: https://bitcoin.org
       docs: https://developer.bitcoin.org
       explorer: https://blockstream.info
-      category: core
+      tier: core
       private: false
     schema:
       tables:
@@ -28,7 +28,7 @@ datasets:
       kind: evm
       website: https://abs.xyz
       docs: https://docs.abs.xyz
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 2741
@@ -46,7 +46,7 @@ datasets:
       kind: evm
       website: https://abs.xyz
       docs: https://docs.abs.xyz
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 11124
@@ -66,7 +66,7 @@ datasets:
       type: mainnet
       website: https://www.adi.foundation
       docs: https://docs.adi.foundation
-      category: partner
+      tier: partner
       private: true
       evm:
         chain_id: 36900
@@ -85,7 +85,7 @@ datasets:
       type: testnet
       website: https://www.adi.foundation
       docs: https://docs.adi.foundation
-      category: partner
+      tier: partner
       private: true
       evm: {}
     schema:
@@ -105,7 +105,7 @@ datasets:
       kind: evm
       website: https://www.peaq.network
       docs: https://docs.peaq.network
-      category: partner
+      tier: partner
       private: false
       evm:
         chain_id: 9990
@@ -123,7 +123,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/alpen.svg
       website: https://www.alpenlabs.io
       docs: https://docs.alpenlabs.io
-      category: partner
+      tier: partner
       private: false
       evm:
         chain_id: 20310
@@ -144,7 +144,7 @@ datasets:
       website: https://arbitrum.io
       docs: https://docs.arbitrum.io
       explorer: https://arbitrum-nova.blockscout.com
-      category: core
+      tier: core
       private: false
       evm:
         chain_id: 42170
@@ -164,7 +164,7 @@ datasets:
       website: https://arbitrum.io
       docs: https://docs.arbitrum.io
       explorer: https://arbiscan.io
-      category: core
+      tier: core
       private: false
       evm:
         chain_id: 42161
@@ -184,7 +184,7 @@ datasets:
       website: https://arbitrum.io
       docs: https://docs.arbitrum.io
       explorer: https://sepolia.arbiscan.io
-      category: core
+      tier: core
       private: false
       evm:
         chain_id: 421614
@@ -205,7 +205,7 @@ datasets:
       website: https://www.arc.io
       docs: https://docs.arc.io
       explorer: https://explorer.arc.io
-      category: frontier
+      tier: frontier
       private: true
       evm:
         chain_id: 5042
@@ -226,7 +226,7 @@ datasets:
       website: https://astar.network
       docs: https://docs.astar.network
       explorer: https://astar.subscan.io
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 592
@@ -244,7 +244,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/astar.svg
       website: https://astar.network
       docs: https://docs.astar.network
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 3776
@@ -262,7 +262,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/astar.svg
       website: https://astar.network
       docs: https://docs.astar.network
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 6038361
@@ -281,7 +281,7 @@ datasets:
       website: https://avax.network
       docs: https://build.avax.network/docs
       explorer: https://snowscan.xyz
-      category: core
+      tier: core
       private: false
       evm:
         chain_id: 43114
@@ -302,7 +302,7 @@ datasets:
       website: https://avax.network
       docs: https://build.avax.network/docs
       explorer: https://testnet.snowscan.xyz
-      category: core
+      tier: core
       private: false
       evm:
         chain_id: 43113
@@ -322,7 +322,7 @@ datasets:
       kind: evm
       website: https://www.b3.fun
       docs: https://docs.b3.fun
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 8333
@@ -342,7 +342,7 @@ datasets:
       kind: evm
       website: https://www.b3.fun
       docs: https://docs.b3.fun
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 1993
@@ -363,7 +363,7 @@ datasets:
       website: https://base.org
       docs: https://docs.base.org
       explorer: https://basescan.org
-      category: core
+      tier: core
       private: false
       evm:
         chain_id: 8453
@@ -384,7 +384,7 @@ datasets:
       website: https://base.org
       docs: https://docs.base.org
       explorer: https://sepolia.basescan.org
-      category: core
+      tier: core
       private: false
       evm:
         chain_id: 84532
@@ -406,7 +406,7 @@ datasets:
       kind: evm
       website: https://onbeam.com
       docs: https://docs.onbeam.com
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 4337
@@ -429,7 +429,7 @@ datasets:
       website: https://berachain.com
       docs: https://docs.berachain.com
       explorer: https://berascan.com
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 80094
@@ -452,7 +452,7 @@ datasets:
       website: https://www.bnbchain.org
       docs: https://docs.bnbchain.org
       explorer: https://bscscan.com
-      category: core
+      tier: core
       private: false
       evm:
         chain_id: 56
@@ -473,7 +473,7 @@ datasets:
       website: https://www.bnbchain.org
       docs: https://docs.bnbchain.org
       explorer: https://testnet.bscscan.com
-      category: core
+      tier: core
       private: false
       evm:
         chain_id: 97
@@ -493,7 +493,7 @@ datasets:
       kind: evm
       website: https://bittensor.com
       docs: https://docs.bittensor.com
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 964
@@ -511,7 +511,7 @@ datasets:
       kind: evm
       website: https://bittensor.com
       docs: https://docs.bittensor.com
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 945
@@ -532,7 +532,7 @@ datasets:
       website: https://blast.io
       docs: https://docs.blast.io
       explorer: https://blastscan.io
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 81457
@@ -555,7 +555,7 @@ datasets:
       website: https://gobob.xyz
       docs: https://docs.gobob.xyz
       explorer: https://explorer.gobob.xyz
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 60808
@@ -576,7 +576,7 @@ datasets:
       website: https://gobob.xyz
       docs: https://docs.gobob.xyz
       explorer: https://bob-sepolia.explorer.gobob.xyz
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 808813
@@ -597,7 +597,7 @@ datasets:
       website: https://celo.org
       docs: https://docs.celo.org
       explorer: https://celoscan.io
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 42220
@@ -618,7 +618,7 @@ datasets:
       website: https://coredao.org
       docs: https://docs.coredao.org
       explorer: https://scan.coredao.org
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 1116
@@ -638,7 +638,7 @@ datasets:
       website: https://ethereum.org
       docs: https://ethereum.org/developers/docs
       explorer: https://hoodi.etherscan.io
-      category: core
+      tier: core
       private: false
       evm:
         chain_id: 560048
@@ -657,7 +657,7 @@ datasets:
       website: https://ethereum.org
       docs: https://ethereum.org/developers/docs
       explorer: https://etherscan.io
-      category: core
+      tier: core
       private: false
       evm:
         chain_id: 1
@@ -678,7 +678,7 @@ datasets:
       website: https://ethereum.org
       docs: https://ethereum.org/developers/docs
       explorer: https://sepolia.etherscan.io
-      category: core
+      tier: core
       private: false
       evm:
         chain_id: 11155111
@@ -700,7 +700,7 @@ datasets:
       kind: evm
       website: https://www.etherlink.com
       docs: https://docs.etherlink.com
-      category: partner
+      tier: partner
       private: false
       evm:
         chain_id: 42793
@@ -718,7 +718,7 @@ datasets:
       kind: evm
       website: https://www.etherlink.com
       docs: https://docs.etherlink.com
-      category: partner
+      tier: partner
       private: false
       evm:
         chain_id: 127823
@@ -737,7 +737,7 @@ datasets:
       website: https://flare.network
       docs: https://dev.flare.network
       explorer: https://flarescan.com
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 14
@@ -757,7 +757,7 @@ datasets:
       kind: evm
       website: https://gravity.xyz
       docs: https://docs.gravity.xyz
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 1625
@@ -778,7 +778,7 @@ datasets:
       website: https://www.gnosis.io
       docs: https://docs.gnosischain.com
       explorer: https://gnosisscan.io
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 100
@@ -801,7 +801,7 @@ datasets:
       website: https://hskchain.net
       docs: https://docs.hskchain.net
       explorer: https://hsk.blockscout.com
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 177
@@ -823,7 +823,7 @@ datasets:
       kind: evm
       website: https://hedera.com
       docs: https://docs.hedera.com
-      category: partner
+      tier: partner
       private: false
       evm:
         chain_id: 295
@@ -843,7 +843,7 @@ datasets:
       kind: evm
       website: https://hemi.xyz
       docs: https://docs.hemi.xyz
-      category: partner
+      tier: partner
       private: false
       evm:
         chain_id: 43111
@@ -861,7 +861,7 @@ datasets:
       kind: evm
       website: https://hemi.xyz
       docs: https://docs.hemi.xyz
-      category: partner
+      tier: partner
       private: false
       evm:
         chain_id: 743111
@@ -882,7 +882,7 @@ datasets:
       website: https://hyperliquid.xyz
       docs: https://hyperliquid.gitbook.io/hyperliquid-docs
       explorer: https://hyperevmscan.io
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 999
@@ -902,7 +902,7 @@ datasets:
       kind: evm
       website: https://hyperliquid.xyz
       docs: https://hyperliquid.gitbook.io/hyperliquid-docs
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 998
@@ -922,7 +922,7 @@ datasets:
       kind: evm
       website: https://inkonchain.com
       docs: https://docs.inkonchain.com
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 57073
@@ -942,7 +942,7 @@ datasets:
       kind: evm
       website: https://inkonchain.com
       docs: https://docs.inkonchain.com
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 763373
@@ -964,7 +964,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/katana.png
       website: https://katana.network
       docs: https://docs.katana.network
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 747474
@@ -985,7 +985,7 @@ datasets:
       website: https://linea.build
       docs: https://docs.linea.build
       explorer: https://lineascan.build
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 59144
@@ -1007,7 +1007,7 @@ datasets:
       website: https://lukso.network
       docs: https://docs.lukso.tech
       explorer: https://explorer.lukso.network
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 42
@@ -1026,7 +1026,7 @@ datasets:
       website: https://pacific.manta.network
       docs: https://docs.manta.network
       explorer: https://pacific-explorer.manta.network
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 169
@@ -1045,7 +1045,7 @@ datasets:
       website: https://pacific.manta.network
       docs: https://docs.manta.network
       explorer: https://pacific-explorer.sepolia-testnet.manta.network
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 3441006
@@ -1064,7 +1064,7 @@ datasets:
       website: https://mantle.xyz
       docs: https://docs.mantle.xyz
       explorer: https://mantlescan.xyz
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 5000
@@ -1083,7 +1083,7 @@ datasets:
       website: https://mantle.xyz
       docs: https://docs.mantle.xyz
       explorer: https://sepolia.mantlescan.xyz
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 5003
@@ -1103,7 +1103,7 @@ datasets:
       kind: evm
       website: https://megaeth.com
       docs: https://docs.megaeth.com
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 4326
@@ -1121,7 +1121,7 @@ datasets:
       kind: evm
       website: https://megaeth.com
       docs: https://docs.megaeth.com
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 6343
@@ -1142,7 +1142,7 @@ datasets:
       website: https://metis.io
       docs: https://docs.metis.io
       explorer: https://andromeda-explorer.metis.io
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 1088
@@ -1164,7 +1164,7 @@ datasets:
       website: https://mode.network
       docs: https://docs.mode.network
       explorer: https://modescan.io
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 34443
@@ -1184,7 +1184,7 @@ datasets:
       kind: evm
       website: https://monad.xyz
       docs: https://docs.monad.xyz
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 143
@@ -1202,7 +1202,7 @@ datasets:
       kind: evm
       website: https://monad.xyz
       docs: https://docs.monad.xyz
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 10143
@@ -1221,7 +1221,7 @@ datasets:
       website: https://www.bnbchain.org
       docs: https://docs.bnbchain.org
       explorer: https://opbnb.bscscan.com
-      category: core
+      tier: core
       private: false
       evm:
         chain_id: 204
@@ -1240,7 +1240,7 @@ datasets:
       website: https://www.bnbchain.org
       docs: https://docs.bnbchain.org
       explorer: https://opbnb-testnet.bscscan.com
-      category: core
+      tier: core
       private: false
       evm:
         chain_id: 5611
@@ -1259,7 +1259,7 @@ datasets:
       website: https://optimism.io
       docs: https://docs.optimism.io
       explorer: https://optimistic.etherscan.io
-      category: core
+      tier: core
       private: false
       evm:
         chain_id: 10
@@ -1280,7 +1280,7 @@ datasets:
       website: https://optimism.io
       docs: https://docs.optimism.io
       explorer: https://sepolia-optimism.etherscan.io
-      category: core
+      tier: core
       private: false
       evm:
         chain_id: 11155420
@@ -1298,7 +1298,7 @@ datasets:
       kind: evm
       website: https://www.peaq.network
       docs: https://docs.peaq.network
-      category: partner
+      tier: partner
       private: false
       evm:
         chain_id: 3338
@@ -1318,7 +1318,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/plasma.svg
       website: https://www.plasma.to
       docs: https://docs.plasma.to
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 9745
@@ -1338,7 +1338,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/plasma.svg
       website: https://www.plasma.to
       docs: https://docs.plasma.to
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 9746
@@ -1360,7 +1360,7 @@ datasets:
       kind: evm
       website: https://plumenetwork.xyz
       docs: https://docs.plumenetwork.xyz
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 98866
@@ -1381,7 +1381,7 @@ datasets:
       website: https://polygon.technology
       docs: https://docs.polygon.technology
       explorer: https://amoy.polygonscan.com
-      category: core
+      tier: core
       private: false
       evm:
         chain_id: 80002
@@ -1400,7 +1400,7 @@ datasets:
       website: https://polygon.technology
       docs: https://docs.polygon.technology
       explorer: https://polygonscan.com
-      category: core
+      tier: core
       private: false
       evm:
         chain_id: 137
@@ -1421,7 +1421,7 @@ datasets:
       kind: evm
       website: https://prom.io
       docs: https://prom.gitbook.io/prom
-      category: partner
+      tier: partner
       private: false
       evm:
         chain_id: 227
@@ -1444,7 +1444,7 @@ datasets:
       website: https://robinhood.com/chain
       docs: https://docs.robinhood.com/chain
       explorer: https://robinhoodchain.blockscout.com
-      category: frontier
+      tier: frontier
       private: true
       evm:
         chain_id: 4663
@@ -1465,7 +1465,7 @@ datasets:
       website: https://robinhood.com/chain
       docs: https://docs.robinhood.com/chain
       explorer: https://explorer.testnet.chain.robinhood.com
-      category: frontier
+      tier: frontier
       private: true
       evm:
         chain_id: 46630
@@ -1484,7 +1484,7 @@ datasets:
       website: https://scroll.io
       docs: https://docs.scroll.io
       explorer: https://scrollscan.com
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 534352
@@ -1504,7 +1504,7 @@ datasets:
       website: https://scroll.io
       docs: https://docs.scroll.io
       explorer: https://sepolia.scrollscan.com
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 534351
@@ -1525,7 +1525,7 @@ datasets:
       kind: evm
       website: https://www.sei.io
       docs: https://docs.sei.io
-      category: frontier
+      tier: frontier
       private: true
       evm:
         chain_id: 1329
@@ -1545,7 +1545,7 @@ datasets:
       kind: evm
       website: https://soneium.org
       docs: https://docs.soneium.org
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 1868
@@ -1564,7 +1564,7 @@ datasets:
       kind: evm
       website: https://soneium.org
       docs: https://docs.soneium.org
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 1946
@@ -1586,7 +1586,7 @@ datasets:
       kind: evm
       website: https://soniclabs.com
       docs: https://docs.soniclabs.com
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 146
@@ -1605,7 +1605,7 @@ datasets:
       kind: evm
       website: https://soniclabs.com
       docs: https://docs.soniclabs.com
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 14601
@@ -1626,7 +1626,7 @@ datasets:
       kind: evm
       website: https://www.stable.xyz
       docs: https://docs.stable.xyz
-      category: frontier
+      tier: frontier
       private: true
       evm:
         chain_id: 988
@@ -1644,7 +1644,7 @@ datasets:
       kind: evm
       website: https://www.stable.xyz
       docs: https://docs.stable.xyz
-      category: frontier
+      tier: frontier
       private: true
       evm:
         chain_id: 2201
@@ -1664,7 +1664,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/tac.png
       website: https://tac.build
       docs: https://docs.tac.build
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 239
@@ -1684,7 +1684,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/tempo.png
       website: https://tempo.xyz
       docs: https://tempo.xyz/developers
-      category: frontier
+      tier: frontier
       private: true
       evm:
         chain_id: 4217
@@ -1706,7 +1706,7 @@ datasets:
       kind: evm
       website: https://unichain.org
       docs: https://docs.unichain.org
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 130
@@ -1726,7 +1726,7 @@ datasets:
       kind: evm
       website: https://unichain.org
       docs: https://docs.unichain.org
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 1301
@@ -1746,7 +1746,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/world.png
       website: https://world.org
       docs: https://docs.world.org/world-chain
-      category: frontier
+      tier: frontier
       private: true
       evm:
         chain_id: 480
@@ -1768,7 +1768,7 @@ datasets:
       kind: evm
       website: https://www.okx.com/xlayer
       docs: https://web3.okx.com/xlayer/docs/developer
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 196
@@ -1788,7 +1788,7 @@ datasets:
       kind: evm
       website: https://zk.link
       docs: https://docs.zk.link
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 810180
@@ -1808,7 +1808,7 @@ datasets:
       website: https://zksync.io
       docs: https://docs.zksync.io
       explorer: https://explorer.zksync.io
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 324
@@ -1828,7 +1828,7 @@ datasets:
       website: https://zksync.io
       docs: https://docs.zksync.io
       explorer: https://sepolia.explorer.zksync.io
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 300
@@ -1848,7 +1848,7 @@ datasets:
       website: https://zora.co
       docs: https://docs.zora.co
       explorer: https://explorer.zora.energy
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 7777777
@@ -1869,7 +1869,7 @@ datasets:
       website: https://zora.co
       docs: https://docs.zora.co
       explorer: https://sepolia.explorer.zora.energy
-      category: frontier
+      tier: frontier
       private: false
       evm:
         chain_id: 999999999
@@ -1888,7 +1888,7 @@ datasets:
       website: https://hyperliquid.xyz
       docs: https://hyperliquid.gitbook.io/hyperliquid-docs
       explorer: https://app.hyperliquid.xyz/explorer
-      category: frontier
+      tier: frontier
       private: false
     schema:
       tables:
@@ -1904,7 +1904,7 @@ datasets:
       website: https://hyperliquid.xyz
       docs: https://hyperliquid.gitbook.io/hyperliquid-docs
       explorer: https://app.hyperliquid.xyz/explorer
-      category: frontier
+      tier: frontier
       private: false
     schema:
       tables:
@@ -1920,7 +1920,7 @@ datasets:
       website: https://solana.com
       docs: https://solana.com/docs
       explorer: https://explorer.solana.com/?cluster=devnet
-      category: core
+      tier: core
       private: false
     schema:
       tables:
@@ -1940,7 +1940,7 @@ datasets:
       website: https://solana.com
       docs: https://solana.com/docs
       explorer: https://explorer.solana.com
-      category: core
+      tier: core
       private: false
     schema:
       tables:
@@ -1959,7 +1959,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/soon.png
       website: https://soo.network
       docs: https://docs.soo.network
-      category: frontier
+      tier: frontier
       private: false
     schema:
       tables:
@@ -1980,7 +1980,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/soon.png
       website: https://soo.network
       docs: https://docs.soo.network
-      category: frontier
+      tier: frontier
       private: false
     schema:
       tables:
@@ -1999,7 +1999,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/soon.png
       website: https://soo.network
       docs: https://docs.soo.network
-      category: frontier
+      tier: frontier
       private: false
     schema:
       tables:
@@ -2018,7 +2018,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/bnb.svg
       website: https://soo.network
       docs: https://docs.soo.network
-      category: frontier
+      tier: frontier
       private: false
     schema:
       tables:
@@ -2037,7 +2037,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/bnb.svg
       website: https://soo.network
       docs: https://docs.soo.network
-      category: frontier
+      tier: frontier
       private: false
     schema:
       tables:
@@ -2056,7 +2056,7 @@ datasets:
       type: testnet
       website: https://www.peaq.network
       docs: https://docs.peaq.network
-      category: partner
+      tier: partner
       private: false
     schema: {}
   asset-hub-kusama:
@@ -2068,7 +2068,7 @@ datasets:
       type: mainnet
       website: https://polkadot.network
       docs: https://docs.polkadot.com/polkadot-protocol/architecture/system-chains/asset-hub
-      category: frontier
+      tier: frontier
       private: false
     schema: {}
   asset-hub-paseo:
@@ -2080,7 +2080,7 @@ datasets:
       ecosystem: asset-hub
       website: https://polkadot.network
       docs: https://docs.polkadot.com/polkadot-protocol/architecture/system-chains/asset-hub
-      category: frontier
+      tier: frontier
       private: false
     schema: {}
   asset-hub-polkadot:
@@ -2092,7 +2092,7 @@ datasets:
       type: mainnet
       website: https://polkadot.network
       docs: https://docs.polkadot.com/polkadot-protocol/architecture/system-chains/asset-hub
-      category: frontier
+      tier: frontier
       private: false
     schema: {}
   asset-hub-westend:
@@ -2104,7 +2104,7 @@ datasets:
       ecosystem: asset-hub
       website: https://polkadot.network
       docs: https://docs.polkadot.com/polkadot-protocol/architecture/system-chains/asset-hub
-      category: frontier
+      tier: frontier
       private: false
     schema: {}
   astar-substrate:
@@ -2117,7 +2117,7 @@ datasets:
       website: https://astar.network
       docs: https://docs.astar.network
       explorer: https://astar.subscan.io
-      category: frontier
+      tier: frontier
       private: false
     schema: {}
   bittensor:
@@ -2129,7 +2129,7 @@ datasets:
       type: mainnet
       website: https://bittensor.com
       docs: https://docs.bittensor.com
-      category: frontier
+      tier: frontier
       private: false
     schema: {}
   bittensor-testnet:
@@ -2141,7 +2141,7 @@ datasets:
       type: testnet
       website: https://bittensor.com
       docs: https://docs.bittensor.com
-      category: frontier
+      tier: frontier
       private: false
     schema: {}
   chainflip:
@@ -2153,7 +2153,7 @@ datasets:
       type: mainnet
       website: https://chainflip.io
       docs: https://docs.chainflip.io
-      category: frontier
+      tier: frontier
       private: false
     schema: {}
   enjin-canary-matrix:
@@ -2164,7 +2164,7 @@ datasets:
       ecosystem: enjin
       website: https://enjin.io
       docs: https://docs.enjin.io
-      category: partner
+      tier: partner
       private: false
     schema: {}
   enjin-matrix:
@@ -2176,7 +2176,7 @@ datasets:
       type: mainnet
       website: https://enjin.io
       docs: https://docs.enjin.io
-      category: partner
+      tier: partner
       private: false
     schema: {}
   enjin-relay:
@@ -2188,7 +2188,7 @@ datasets:
       type: mainnet
       website: https://enjin.io
       docs: https://docs.enjin.io
-      category: partner
+      tier: partner
       private: false
     schema: {}
   hydradx:
@@ -2200,7 +2200,7 @@ datasets:
       type: mainnet
       website: https://hydration.net
       docs: https://docs.hydration.net
-      category: frontier
+      tier: frontier
       private: false
     schema: {}
   kusama:
@@ -2213,7 +2213,7 @@ datasets:
       website: https://kusama.network
       docs: https://wiki.polkadot.network/docs/learn-kusama
       explorer: https://kusama.subscan.io
-      category: frontier
+      tier: frontier
       private: false
     schema: {}
   peaq-mainnet-substrate:
@@ -2225,7 +2225,7 @@ datasets:
       type: mainnet
       website: https://www.peaq.network
       docs: https://docs.peaq.network
-      category: partner
+      tier: partner
       private: false
     schema: {}
   polkadot:
@@ -2238,7 +2238,7 @@ datasets:
       website: https://polkadot.network
       docs: https://docs.polkadot.com
       explorer: https://polkadot.subscan.io
-      category: frontier
+      tier: frontier
       private: false
     schema: {}
   vara:
@@ -2251,7 +2251,7 @@ datasets:
       website: https://vara.network
       docs: https://wiki.vara.network
       explorer: https://vara.subscan.io
-      category: partner
+      tier: partner
       private: false
     schema: {}
   zkverify-mainnet:
@@ -2263,7 +2263,7 @@ datasets:
       type: mainnet
       website: https://zkverify.io
       docs: https://docs.zkverify.io
-      category: partner
+      tier: partner
       private: false
     schema: {}
   zkverify-testnet:
@@ -2275,7 +2275,7 @@ datasets:
       type: testnet
       website: https://zkverify.io
       docs: https://docs.zkverify.io
-      category: partner
+      tier: partner
       private: false
     schema: {}
   tron-mainnet:
@@ -2290,7 +2290,7 @@ datasets:
       website: https://tron.network
       docs: https://developers.tron.network
       explorer: https://tronscan.org
-      category: frontier
+      tier: frontier
       private: false
     schema:
       tables:
@@ -2309,7 +2309,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/cronos.svg
       website: https://cronos.org
       docs: https://docs.cronos.org
-      category: frontier
+      tier: frontier
       private: true
       evm:
         chain_id: 25
