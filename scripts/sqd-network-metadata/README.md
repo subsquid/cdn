@@ -41,7 +41,7 @@ left out.
 | `logo_url` | dataset | Network or ecosystem logo. |
 | `website` | ecosystem | Official ecosystem website. Same on every dataset in the ecosystem. |
 | `docs` | ecosystem | Official developer documentation. Same on every dataset in the ecosystem. |
-| `explorer` | network | Block explorer for this dataset's network. Omitted where none was confirmed for that network. |
+| `explorer` | dataset | Block explorer for this dataset's data. Datasets of one network usually share it, but need not: Hyperliquid Mainnet's EVM dataset uses an EVM explorer, its fills and replica commands the Hyperliquid explorer. Omitted where none was confirmed. |
 | `category` | ecosystem | Ecosystem category: `core`, `partner`, or `frontier`. Same on every dataset in the ecosystem. |
 | `private` | dataset | `true` while access requires a private or commercial arrangement. Change it on the record alone when a dataset becomes public. |
 

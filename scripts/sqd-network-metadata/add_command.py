@@ -119,7 +119,7 @@ def _run(parsed_args):
         category = Prompt.ask("category", default="frontier", choices=CATEGORY_CHOICES).strip()
     else:
         website, docs, category = shared["website"], shared["docs"], shared["category"]
-    explorer_raw = Prompt.ask("explorer (for this network)", default="null").strip()
+    explorer_raw = Prompt.ask("explorer", default="null").strip()
     private = Confirm.ask("private", default=False)
 
     entry = _build_entry(

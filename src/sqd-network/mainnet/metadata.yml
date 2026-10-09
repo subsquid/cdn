@@ -99,7 +99,7 @@ datasets:
       display_name: Agung Testnet
       aliases:
       - Agung
-      ecosystem: agung
+      ecosystem: peaq
       logo_url: https://cdn.subsquid.io/img/networks/peaq.png
       type: testnet
       kind: evm
@@ -1881,8 +1881,9 @@ datasets:
   hyperliquid-fills:
     metadata:
       kind: hyperliquidFills
-      display_name: Hyperliquid
+      display_name: Hyperliquid Fills
       ecosystem: hyperliquid
+      type: mainnet
       logo_url: https://cdn.subsquid.io/img/networks/hyperliquid.svg
       website: https://hyperliquid.xyz
       docs: https://hyperliquid.gitbook.io/hyperliquid-docs
@@ -1899,6 +1900,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/hyperliquid.svg
       display_name: Hyperliquid Replica Commands
       ecosystem: hyperliquid
+      type: mainnet
       website: https://hyperliquid.xyz
       docs: https://hyperliquid.gitbook.io/hyperliquid-docs
       explorer: https://app.hyperliquid.xyz/explorer
@@ -2050,7 +2052,8 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/peaq.png
       kind: substrate
       display_name: Agung (Substrate)
-      ecosystem: agung
+      ecosystem: peaq
+      type: testnet
       website: https://www.peaq.network
       docs: https://docs.peaq.network
       category: partner
@@ -2062,6 +2065,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/assethub-kusama.svg
       display_name: Kusama Asset Hub
       ecosystem: asset-hub
+      type: mainnet
       website: https://polkadot.network
       docs: https://docs.polkadot.com/polkadot-protocol/architecture/system-chains/asset-hub
       category: frontier
@@ -2085,6 +2089,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/assethub.svg
       display_name: Polkadot Asset Hub
       ecosystem: asset-hub
+      type: mainnet
       website: https://polkadot.network
       docs: https://docs.polkadot.com/polkadot-protocol/architecture/system-chains/asset-hub
       category: frontier
@@ -2108,6 +2113,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/astar.png
       display_name: Astar (Substrate)
       ecosystem: astar
+      type: mainnet
       website: https://astar.network
       docs: https://docs.astar.network
       explorer: https://astar.subscan.io
@@ -2120,6 +2126,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/bittensor.png
       display_name: Bittensor (Substrate)
       ecosystem: bittensor
+      type: mainnet
       website: https://bittensor.com
       docs: https://docs.bittensor.com
       category: frontier
@@ -2131,6 +2138,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/bittensor.png
       display_name: Bittensor Testnet (Substrate)
       ecosystem: bittensor
+      type: testnet
       website: https://bittensor.com
       docs: https://docs.bittensor.com
       category: frontier
@@ -2142,6 +2150,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/chainflip.png
       display_name: Chainflip
       ecosystem: chainflip
+      type: mainnet
       website: https://chainflip.io
       docs: https://docs.chainflip.io
       category: frontier
@@ -2164,6 +2173,7 @@ datasets:
       kind: substrate
       display_name: Enjin Matrixchain
       ecosystem: enjin
+      type: mainnet
       website: https://enjin.io
       docs: https://docs.enjin.io
       category: partner
@@ -2175,6 +2185,7 @@ datasets:
       kind: substrate
       display_name: Enjin Relaychain
       ecosystem: enjin
+      type: mainnet
       website: https://enjin.io
       docs: https://docs.enjin.io
       category: partner
@@ -2186,6 +2197,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/hydration.svg
       display_name: Hydration
       ecosystem: hydradx
+      type: mainnet
       website: https://hydration.net
       docs: https://docs.hydration.net
       category: frontier
@@ -2197,6 +2209,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/kusama.svg
       display_name: Kusama
       ecosystem: kusama
+      type: mainnet
       website: https://kusama.network
       docs: https://wiki.polkadot.network/docs/learn-kusama
       explorer: https://kusama.subscan.io
@@ -2209,6 +2222,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/peaq.png
       display_name: Peaq (Substrate)
       ecosystem: peaq
+      type: mainnet
       website: https://www.peaq.network
       docs: https://docs.peaq.network
       category: partner
@@ -2220,6 +2234,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/polkadot-circle.svg
       display_name: Polkadot
       ecosystem: polkadot
+      type: mainnet
       website: https://polkadot.network
       docs: https://docs.polkadot.com
       explorer: https://polkadot.subscan.io
@@ -2232,6 +2247,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/vara.svg
       display_name: Vara
       ecosystem: vara
+      type: mainnet
       website: https://vara.network
       docs: https://wiki.vara.network
       explorer: https://vara.subscan.io
@@ -2244,6 +2260,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/zkverify.png
       display_name: zkVerify Mainnet
       ecosystem: zkverify
+      type: mainnet
       website: https://zkverify.io
       docs: https://docs.zkverify.io
       category: partner
@@ -2255,6 +2272,7 @@ datasets:
       logo_url: https://cdn.subsquid.io/img/networks/zkverify.png
       display_name: zkVerify Testnet
       ecosystem: zkverify
+      type: testnet
       website: https://zkverify.io
       docs: https://docs.zkverify.io
       category: partner
