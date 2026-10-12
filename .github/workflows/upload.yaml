@@ -27,8 +27,13 @@ jobs:
 
       - name: upload
         run: |-
-          gsutil rsync -r src gs://subsquid-public
+          gsutil rsync -r -x '^points/testnet-rewards/current\.json$' src gs://subsquid-public
 
-#      - name: cors
-#        run: |-
-#          gsutil cors set cors.json gs://subsquid-public
+      # The claim frontend reads this file straight from GCS, so it must not be
+      # cached. Uploaded separately so it never exists with the default max-age=3600.
+      - name: upload testnet rewards
+        run: |-
+          f=src/points/testnet-rewards/current.json
+          if [ -f "$f" ]; then
+            gsutil -h "Cache-Control:no-cache" cp "$f" gs://subsquid-public/points/testnet-rewards/current.json
+          fi
