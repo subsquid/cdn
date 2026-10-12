@@ -2162,6 +2162,7 @@ datasets:
       kind: substrate
       display_name: Enjin Canary Matrixchain
       ecosystem: enjin
+      type: testnet
       website: https://enjin.io
       docs: https://docs.enjin.io
       tier: partner
