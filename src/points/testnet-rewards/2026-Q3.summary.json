@@ -1,0 +1,23 @@
+{
+  "label": "2026-Q3",
+  "chainId": 42161,
+  "token": "0x1337420dED5ADb9980CFc35f8f2B054ea86f8aB1",
+  "periodStart": "2026-06-30",
+  "periodEnd": "2026-09-30",
+  "periodEndExclusive": "2026-10-01",
+  "source": "squid:subsquid-network-testnet",
+  "params": {
+    "workers": "25",
+    "targetUsd": "225",
+    "price": "0.033212",
+    "priceSource": "CoinGecko subsquid/usd TWAP over 2026-07-01 to 2026-10-01 (exclusive) from 2209 hourly samples, rounded to 6 decimals from 0.033211829579991976"
+  },
+  "testnetRewardTotal": "313366204763807208896110",
+  "incomplete": null,
+  "wallets": 17,
+  "total": "169366494038299409851852",
+  "totalSqd": "169366.494038299409851852",
+  "root": "0xdd625babbf28e38878ba7553edb4ff9b2d5363dbcb2208910b36b9c13d2f987e",
+  "generatedAt": "2026-10-13T10:47:34.307Z",
+  "contract": "0x228Bf62be85fa81Ba02EE3304d375B922f6241A5"
+}
