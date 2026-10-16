@@ -3,7 +3,7 @@ sqd-network-datasets:
     id: s3://arbitrum-one-2
     kind: evm
   - name: ethereum-mainnet
-    id: s3://ethereum-mainnet-4
+    id: s3://ethereum-mainnet-5
     kind: evm
   - name: zora-mainnet
     id: s3://zora-mainnet
