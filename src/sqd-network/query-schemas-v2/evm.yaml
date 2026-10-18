@@ -149,10 +149,10 @@ tables:
       extra_data_size:
         type: uint64
         system: true
-      withdrawals_size:
+      block_extra_data_size:
         type: uint64
         system: true
-      block_extra_data_size:
+      withdrawals_size:
         type: uint64
         system: true
 
@@ -248,6 +248,9 @@ tables:
         type: list_string
       authorization_list:
         type: list_struct
+        members:
+          nonce:
+            encoding: decimal_string
       contract_address:
         type: string
         encoding: hex_bytes
@@ -360,6 +363,8 @@ tables:
           kind: roll
           columns: [ topic0, topic1, topic2, topic3 ]
     item_order_keys: [ transaction_index, log_index ]
+    # A log is ordered by its transaction but weighed for its block and log index.
+    weight_key: [ block_number, log_index ]
     sort_key: [ topic0, address, block_number, log_index ]
     columns:
       block_number:

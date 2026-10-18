@@ -99,8 +99,12 @@ tables:
       loaded_addresses:
         type: struct
         weight: loaded_addresses_size
+      # Nullable; absent from chunks written before the field existed.
       transaction_config:
         type: struct
+        members:
+          priority_fee:
+            encoding: decimal_string
       has_dropped_log_messages:
         type: boolean
       fee_payer:
