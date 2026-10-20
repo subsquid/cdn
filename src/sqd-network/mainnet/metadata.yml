@@ -17,12 +17,21 @@ datasets:
         transactions: {}
         inputs: {}
         outputs: {}
+  0g-testnet:
+    metadata:
+      display_name: 0g Testnet
+      logo_url: https://cdn.subsquid.io/img/networks/0gai.png
+      type: testnet
+      kind: evm
+      evm:
+        chain_id: 16600
+    schema: {}
   adi-mainnet:
     metadata:
       kind: evm
       display_name: ADI Chain
       aliases:
-      - ADI Mainnet
+        - ADI Mainnet
       ecosystem: adi
       logo_url: https://cdn.subsquid.io/img/networks/adi.jpg
       type: mainnet
@@ -60,7 +69,7 @@ datasets:
     metadata:
       display_name: Agung Testnet
       aliases:
-      - Agung
+        - Agung
       ecosystem: peaq
       logo_url: https://cdn.subsquid.io/img/networks/peaq.png
       type: testnet
@@ -159,7 +168,7 @@ datasets:
     metadata:
       display_name: Arc
       aliases:
-      - Arc Mainnet
+        - Arc Mainnet
       ecosystem: arc
       logo_url: https://cdn.subsquid.io/img/networks/arc.png
       type: mainnet
@@ -178,6 +187,15 @@ datasets:
         logs: {}
         traces: {}
         state_diffs: {}
+  arthera-mainnet:
+    metadata:
+      display_name: Arthera Mainnet
+      logo_url: https://cdn.subsquid.io/img/networks/arthera.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 10242
+    schema: {}
   astar-mainnet:
     metadata:
       display_name: Astar
@@ -361,7 +379,7 @@ datasets:
     metadata:
       display_name: Beam
       aliases:
-      - Beam Mainnet
+        - Beam Mainnet
       ecosystem: beam
       logo_url: https://cdn.subsquid.io/img/networks/beam.png
       type: mainnet
@@ -379,11 +397,20 @@ datasets:
         logs: {}
         traces: {}
         state_diffs: {}
+  berachain-bartio:
+    metadata:
+      display_name: Berachain bArtio
+      logo_url: https://cdn.subsquid.io/img/networks/berachain.png
+      type: testnet
+      kind: evm
+      evm:
+        chain_id: 80084
+    schema: {}
   berachain-mainnet:
     metadata:
       display_name: Berachain
       aliases:
-      - Berachain Mainnet
+        - Berachain Mainnet
       ecosystem: berachain
       logo_url: https://cdn.subsquid.io/img/networks/berachain.png
       type: mainnet
@@ -406,7 +433,7 @@ datasets:
     metadata:
       display_name: BNB Smart Chain
       aliases:
-      - Binance
+        - Binance
       ecosystem: binance
       logo_url: https://cdn.subsquid.io/img/networks/binance.svg
       type: mainnet
@@ -444,11 +471,29 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+  bitfinity-mainnet:
+    metadata:
+      display_name: Bitfinity Mainnet
+      logo_url: https://cdn.subsquid.io/img/networks/bitfinity.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 355110
+    schema: {}
+  bitgert-mainnet:
+    metadata:
+      display_name: Bitgert
+      logo_url: https://cdn.subsquid.io/img/networks/brise.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 32520
+    schema: {}
   bittensor-mainnet-evm:
     metadata:
       display_name: Bittensor
       aliases:
-      - Bittensor Mainnet
+        - Bittensor Mainnet
       ecosystem: bittensor
       logo_url: https://cdn.subsquid.io/img/networks/bittensor.svg
       type: mainnet
@@ -486,7 +531,7 @@ datasets:
     metadata:
       display_name: BOB
       aliases:
-      - BOB Mainnet
+        - BOB Mainnet
       ecosystem: bob
       logo_url: https://cdn.subsquid.io/img/networks/bob.png
       type: mainnet
@@ -524,11 +569,20 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+  canto:
+    metadata:
+      display_name: Canto
+      logo_url: https://cdn.subsquid.io/img/networks/canto.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 7700
+    schema: {}
   celo-mainnet:
     metadata:
       display_name: Celo
       aliases:
-      - Celo Mainnet
+        - Celo Mainnet
       ecosystem: celo
       logo_url: https://cdn.subsquid.io/img/networks/celo.svg
       type: mainnet
@@ -549,7 +603,7 @@ datasets:
     metadata:
       display_name: Core Blockchain
       aliases:
-      - Core Mainnet
+        - Core Mainnet
       ecosystem: core
       logo_url: https://cdn.subsquid.io/img/networks/core.png
       type: mainnet
@@ -567,6 +621,62 @@ datasets:
         transactions: {}
         logs: {}
         traces: {}
+  cronos-mainnet:
+    metadata:
+      kind: evm
+      display_name: Cronos
+      aliases:
+        - Cronos Mainnet
+      ecosystem: cronos
+      type: mainnet
+      logo_url: https://cdn.subsquid.io/img/networks/cronos.svg
+      website: https://cronos.org
+      docs: https://docs.cronos.org
+      tier: frontier
+      private: true
+      evm:
+        chain_id: 25
+    schema:
+      tables:
+        blocks: {}
+        transactions: {}
+        logs: {}
+  cyber-mainnet:
+    metadata:
+      display_name: Cyber Mainnet
+      logo_url: https://cdn.subsquid.io/img/networks/cyber.svg
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 7560
+    schema: {}
+  dancelight-testnet:
+    metadata:
+      display_name: Dancelight
+      logo_url: https://cdn.subsquid.io/img/networks/tanssi.png
+      type: testnet
+      kind: evm
+      evm:
+        chain_id: 5678
+    schema: {}
+  degen-chain:
+    metadata:
+      display_name: Degen Chain
+      logo_url: https://cdn.subsquid.io/img/networks/degen.svg
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 666666666
+    schema: {}
+  dfk-chain:
+    metadata:
+      display_name: DFK Chain
+      logo_url: https://cdn.subsquid.io/img/networks/dfk.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 53935
+    schema: {}
   ethereum-hoodi:
     metadata:
       display_name: Ethereum Hoodi
@@ -632,7 +742,7 @@ datasets:
     metadata:
       display_name: Etherlink
       aliases:
-      - Etherlink Mainnet
+        - Etherlink Mainnet
       ecosystem: etherlink
       logo_url: https://cdn.subsquid.io/img/networks/etherlink.png
       type: mainnet
@@ -689,7 +799,7 @@ datasets:
     metadata:
       display_name: Gravity Alpha
       aliases:
-      - Gravity
+        - Gravity
       ecosystem: galxe-gravity
       logo_url: https://cdn.subsquid.io/img/networks/gravity.png
       type: mainnet
@@ -707,6 +817,15 @@ datasets:
         logs: {}
         traces: {}
         state_diffs: {}
+  gelato-arbitrum-blueberry:
+    metadata:
+      display_name: Arbitrum Blueberry
+      logo_url: https://cdn.subsquid.io/img/networks/gelato.svg
+      type: testnet
+      kind: evm
+      evm:
+        chain_id: 88153591557
+    schema: {}
   gnosis-mainnet:
     metadata:
       display_name: Gnosis
@@ -732,7 +851,7 @@ datasets:
     metadata:
       display_name: HashKey Chain
       aliases:
-      - HashKey Mainnet
+        - HashKey Mainnet
       ecosystem: hashkey
       logo_url: https://cdn.subsquid.io/img/networks/hashkey.jpg
       type: mainnet
@@ -755,7 +874,7 @@ datasets:
     metadata:
       display_name: Hedera
       aliases:
-      - Hedera Mainnet
+        - Hedera Mainnet
       ecosystem: hedera
       logo_url: https://cdn.subsquid.io/img/networks/hedera.png
       type: mainnet
@@ -775,7 +894,7 @@ datasets:
     metadata:
       display_name: Hemi
       aliases:
-      - Hemi Mainnet
+        - Hemi Mainnet
       ecosystem: hemi
       logo_url: https://cdn.subsquid.io/img/networks/hemi.jpg
       type: mainnet
@@ -813,7 +932,7 @@ datasets:
     metadata:
       display_name: HyperEVM
       aliases:
-      - HyperEVM Mainnet
+        - HyperEVM Mainnet
       ecosystem: hyperliquid
       logo_url: https://cdn.subsquid.io/img/networks/hyperliquid.svg
       type: mainnet
@@ -850,11 +969,20 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+  immutable-zkevm-mainnet:
+    metadata:
+      display_name: Immutable zkEVM
+      logo_url: https://cdn.subsquid.io/img/networks/immutable.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 13371
+    schema: {}
   ink-mainnet:
     metadata:
       display_name: Ink
       aliases:
-      - Ink Mainnet
+        - Ink Mainnet
       ecosystem: ink
       logo_url: https://cdn.subsquid.io/img/networks/ink.svg
       type: mainnet
@@ -897,7 +1025,7 @@ datasets:
       kind: evm
       display_name: Katana
       aliases:
-      - Katana Mainnet
+        - Katana Mainnet
       ecosystem: katana
       type: mainnet
       logo_url: https://cdn.subsquid.io/img/networks/katana.png
@@ -938,7 +1066,7 @@ datasets:
     metadata:
       display_name: LUKSO
       aliases:
-      - Lukso Mainnet
+        - Lukso Mainnet
       ecosystem: lukso
       logo_url: https://cdn.subsquid.io/img/networks/lukso.svg
       type: mainnet
@@ -1035,7 +1163,7 @@ datasets:
     metadata:
       display_name: MegaETH
       aliases:
-      - MegaETH Mainnet
+        - MegaETH Mainnet
       ecosystem: megaeth
       logo_url: https://cdn.subsquid.io/img/networks/mega.png
       type: mainnet
@@ -1069,11 +1197,20 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+  merlin-mainnet:
+    metadata:
+      display_name: Merlin Mainnet
+      logo_url: https://cdn.subsquid.io/img/networks/merlin.jpg
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 4200
+    schema: {}
   metis-mainnet:
     metadata:
       display_name: Metis Andromeda
       aliases:
-      - Metis
+        - Metis
       ecosystem: metis
       logo_url: https://cdn.subsquid.io/img/networks/metis.svg
       type: mainnet
@@ -1095,7 +1232,7 @@ datasets:
     metadata:
       display_name: Mode
       aliases:
-      - Mode Mainnet
+        - Mode Mainnet
       ecosystem: mode
       logo_url: https://cdn.subsquid.io/img/networks/mode.png
       type: mainnet
@@ -1116,7 +1253,7 @@ datasets:
     metadata:
       display_name: Monad
       aliases:
-      - Monad Mainnet
+        - Monad Mainnet
       ecosystem: monad
       logo_url: https://cdn.subsquid.io/img/networks/monad.png
       type: mainnet
@@ -1150,6 +1287,33 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+  nakachain:
+    metadata:
+      display_name: Naka Chain
+      logo_url: https://cdn.subsquid.io/img/networks/naka-chain.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 42225
+    schema: {}
+  neon-devnet:
+    metadata:
+      display_name: Neon EVM Devnet
+      logo_url: https://cdn.subsquid.io/img/networks/neon.png
+      type: testnet
+      kind: evm
+      evm:
+        chain_id: 245022926
+    schema: {}
+  neon-mainnet:
+    metadata:
+      display_name: Neon EVM
+      logo_url: https://cdn.subsquid.io/img/networks/neon.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 245022934
+    schema: {}
   opbnb-mainnet:
     metadata:
       display_name: opBNB
@@ -1228,6 +1392,15 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+  ozean-testnet:
+    metadata:
+      display_name: Ozean Testnet
+      logo_url: https://cdn.subsquid.io/img/networks/ozean.svg
+      type: testnet
+      kind: evm
+      evm:
+        chain_id: 7849306
+    schema: {}
   peaq-mainnet:
     metadata:
       display_name: Peaq
@@ -1251,7 +1424,7 @@ datasets:
       kind: evm
       display_name: Plasma
       aliases:
-      - Plasma Mainnet
+        - Plasma Mainnet
       ecosystem: plasma
       type: mainnet
       logo_url: https://cdn.subsquid.io/img/networks/plasma.svg
@@ -1288,11 +1461,38 @@ datasets:
         logs: {}
         traces: {}
         state_diffs: {}
+  plume:
+    metadata:
+      display_name: Plume Mainnet
+      logo_url: https://cdn.subsquid.io/img/networks/plume.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 98866
+    schema: {}
+  plume-devnet:
+    metadata:
+      display_name: Plume Devnet
+      logo_url: https://cdn.subsquid.io/img/networks/plume.png
+      type: testnet
+      kind: evm
+      evm:
+        chain_id: 98864
+    schema: {}
+  plume-legacy:
+    metadata:
+      display_name: Plume Mainnet (Legacy)
+      logo_url: https://cdn.subsquid.io/img/networks/plume.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 98865
+    schema: {}
   plume-mainnet:
     metadata:
       display_name: Plume
       aliases:
-      - Plume Mainnet
+        - Plume Mainnet
       ecosystem: plume
       logo_url: https://cdn.subsquid.io/img/networks/plume.png
       type: mainnet
@@ -1310,6 +1510,15 @@ datasets:
         logs: {}
         traces: {}
         state_diffs: {}
+  plume-testnet:
+    metadata:
+      display_name: Plume Testnet
+      logo_url: https://cdn.subsquid.io/img/networks/plume.png
+      type: testnet
+      kind: evm
+      evm:
+        chain_id: 98867
+    schema: {}
   polygon-amoy-testnet:
     metadata:
       display_name: Polygon Amoy Testnet
@@ -1349,11 +1558,20 @@ datasets:
         transactions: {}
         logs: {}
         traces: {}
+  poseidon-testnet:
+    metadata:
+      display_name: Poseidon Testnet
+      logo_url: https://cdn.subsquid.io/img/networks/ozean.svg
+      type: testnet
+      kind: evm
+      evm:
+        chain_id: 31911
+    schema: {}
   prom-mainnet:
     metadata:
       display_name: Prom
       aliases:
-      - Prom Mainnet
+        - Prom Mainnet
       ecosystem: prom
       logo_url: https://cdn.subsquid.io/img/networks/prom.png
       type: mainnet
@@ -1371,11 +1589,20 @@ datasets:
         logs: {}
         traces: {}
         state_diffs: {}
+  puppynet:
+    metadata:
+      display_name: Puppynet (Shibarium's Testnet)
+      logo_url: https://cdn.subsquid.io/img/networks/shibarium.png
+      type: testnet
+      kind: evm
+      evm:
+        chain_id: 157
+    schema: {}
   robinhood-mainnet:
     metadata:
       display_name: Robinhood Chain
       aliases:
-      - Robinhood Mainnet
+        - Robinhood Mainnet
       ecosystem: robinhood
       logo_url: https://cdn.subsquid.io/img/networks/robinhood.png
       type: mainnet
@@ -1457,7 +1684,7 @@ datasets:
     metadata:
       display_name: Sei
       aliases:
-      - Sei Mainnet
+        - Sei Mainnet
       ecosystem: sei
       logo_url: https://cdn.subsquid.io/img/networks/sei.png
       type: mainnet
@@ -1473,11 +1700,29 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+  shibarium:
+    metadata:
+      display_name: Shibarium
+      logo_url: https://cdn.subsquid.io/img/networks/shibarium.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 109
+    schema: {}
+  shiden-mainnet:
+    metadata:
+      display_name: Shiden
+      logo_url: https://cdn.subsquid.io/img/networks/shiden.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 336
+    schema: {}
   soneium-mainnet:
     metadata:
       display_name: Soneium
       aliases:
-      - Soneium Mainnet
+        - Soneium Mainnet
       ecosystem: soneium
       logo_url: https://cdn.subsquid.io/img/networks/soneium.svg
       type: mainnet
@@ -1518,7 +1763,7 @@ datasets:
     metadata:
       display_name: Sonic
       aliases:
-      - Sonic Mainnet
+        - Sonic Mainnet
       ecosystem: sonic
       logo_url: https://cdn.subsquid.io/img/networks/sonic.png
       type: mainnet
@@ -1558,7 +1803,7 @@ datasets:
     metadata:
       display_name: Stable
       aliases:
-      - Stable Mainnet
+        - Stable Mainnet
       ecosystem: stable
       logo_url: https://cdn.subsquid.io/img/networks/stable.png
       type: mainnet
@@ -1592,12 +1837,21 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+  superseed-mainnet:
+    metadata:
+      display_name: Superseed Mainnet
+      logo_url: https://cdn.subsquid.io/img/networks/superseed.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 5330
+    schema: {}
   tac-mainnet:
     metadata:
       kind: evm
       display_name: TAC
       aliases:
-      - TAC Mainnet
+        - TAC Mainnet
       ecosystem: tac
       type: mainnet
       logo_url: https://cdn.subsquid.io/img/networks/tac.png
@@ -1612,12 +1866,21 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
+  tanssi:
+    metadata:
+      display_name: Tanssi
+      logo_url: https://cdn.subsquid.io/img/networks/tanssi.png
+      type: mainnet
+      kind: evm
+      evm:
+        chain_id: 5678
+    schema: {}
   tempo-mainnet:
     metadata:
       kind: evm
       display_name: Tempo
       aliases:
-      - Tempo Mainnet
+        - Tempo Mainnet
       ecosystem: tempo
       type: mainnet
       logo_url: https://cdn.subsquid.io/img/networks/tempo.png
@@ -1638,7 +1901,7 @@ datasets:
     metadata:
       display_name: Unichain
       aliases:
-      - Unichain Mainnet
+        - Unichain Mainnet
       ecosystem: unichain
       logo_url: https://cdn.subsquid.io/img/networks/unichain.svg
       type: mainnet
@@ -1679,7 +1942,7 @@ datasets:
       kind: evm
       display_name: World Chain
       aliases:
-      - Worldchain Mainnet
+        - Worldchain Mainnet
       ecosystem: worldchain
       type: mainnet
       logo_url: https://cdn.subsquid.io/img/networks/world.png
@@ -1700,7 +1963,7 @@ datasets:
     metadata:
       display_name: X Layer
       aliases:
-      - X Layer Mainnet
+        - X Layer Mainnet
       ecosystem: xlayer
       logo_url: https://cdn.subsquid.io/img/networks/xlayer.svg
       type: mainnet
@@ -1720,7 +1983,7 @@ datasets:
     metadata:
       display_name: zkLink Nova
       aliases:
-      - zkLink Nova Mainnet
+        - zkLink Nova Mainnet
       ecosystem: zklink-nova
       logo_url: https://cdn.subsquid.io/img/networks/zklink-nova.png
       type: mainnet
@@ -1914,7 +2177,7 @@ datasets:
       type: mainnet
       display_name: Soon
       aliases:
-      - Soon Mainnet
+        - Soon Mainnet
       ecosystem: soon
       logo_url: https://cdn.subsquid.io/img/networks/soon.png
       website: https://soo.network
@@ -2223,7 +2486,7 @@ datasets:
       kind: tron
       display_name: Tron
       aliases:
-      - Tron Mainnet
+        - Tron Mainnet
       ecosystem: tron
       logo_url: https://cdn.subsquid.io/img/networks/tron.svg
       type: mainnet
@@ -2238,23 +2501,3 @@ datasets:
         transactions: {}
         logs: {}
         internal_transactions: {}
-  cronos-mainnet:
-    metadata:
-      kind: evm
-      display_name: Cronos
-      aliases:
-      - Cronos Mainnet
-      ecosystem: cronos
-      type: mainnet
-      logo_url: https://cdn.subsquid.io/img/networks/cronos.svg
-      website: https://cronos.org
-      docs: https://docs.cronos.org
-      tier: frontier
-      private: true
-      evm:
-        chain_id: 25
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
