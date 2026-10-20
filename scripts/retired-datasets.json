@@ -1,5 +1,8 @@
 [
+  "abstract-mainnet",
+  "abstract-testnet",
   "amplitude",
+  "blast-l2-mainnet",
   "dogechain-mainnet",
   "eden",
   "etherlink-testnet",
