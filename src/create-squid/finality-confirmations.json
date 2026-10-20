@@ -100,11 +100,6 @@
     "confirmations": 100
   },
   {
-    "id": "blast-l2-mainnet",
-    "chainId": 81457,
-    "confirmations": 60
-  },
-  {
     "id": "core-mainnet",
     "chainId": 1116,
     "confirmations": 60

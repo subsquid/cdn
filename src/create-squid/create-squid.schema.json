@@ -82,8 +82,6 @@
                   "minLength": 1,
                   "enum": [
                     "0g-testnet",
-                    "abstract-mainnet",
-                    "abstract-testnet",
                     "agung-evm",
                     "arbitrum-nova",
                     "arbitrum-one",
@@ -102,7 +100,6 @@
                     "bitgert-mainnet",
                     "bittensor-mainnet-evm",
                     "bittensor-testnet-evm",
-                    "blast-l2-mainnet",
                     "bob-mainnet",
                     "bob-sepolia",
                     "canto",
