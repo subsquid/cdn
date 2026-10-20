@@ -33,8 +33,6 @@
         "defaultNetwork": {
           "type": "string",
           "enum": [
-            "abstract-mainnet",
-            "abstract-testnet",
             "agung-evm",
             "arbitrum-nova",
             "arbitrum-one",
@@ -54,7 +52,6 @@
             "binance-testnet",
             "bittensor-mainnet-evm",
             "bittensor-testnet-evm",
-            "blast-l2-mainnet",
             "bob-mainnet",
             "bob-sepolia",
             "celo-mainnet",

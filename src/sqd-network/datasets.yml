@@ -1,12 +1,6 @@
 sqd-network-datasets:
-  - name: abstract-testnet
-    id: s3://abstract-testnet
-    kind: evm
   - name: alpen-testnet
     id: s3://alpen-testnet-1
-    kind: evm
-  - name: abstract-mainnet
-    id: s3://abstract-mainnet
     kind: evm
   - name: agung-evm
     id: s3://agung-testnet-1
@@ -64,9 +58,6 @@ sqd-network-datasets:
     kind: evm
   - name: bittensor-testnet-evm
     id: s3://bittensor-testnet-evm
-    kind: evm
-  - name: blast-l2-mainnet
-    id: s3://blast-l2-mainnet-1
     kind: evm
   - name: bob-mainnet
     id: s3://bob-mainnet

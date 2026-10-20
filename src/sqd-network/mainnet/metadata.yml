@@ -17,44 +17,6 @@ datasets:
         transactions: {}
         inputs: {}
         outputs: {}
-  abstract-mainnet:
-    metadata:
-      display_name: Abstract
-      aliases:
-      - Abstract Mainnet
-      ecosystem: abstract
-      logo_url: https://cdn.subsquid.io/img/networks/abstract.png
-      type: mainnet
-      kind: evm
-      website: https://abs.xyz
-      docs: https://docs.abs.xyz
-      tier: frontier
-      private: false
-      evm:
-        chain_id: 2741
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-  abstract-testnet:
-    metadata:
-      display_name: Abstract Testnet
-      ecosystem: abstract
-      logo_url: https://cdn.subsquid.io/img/networks/abstract.png
-      type: testnet
-      kind: evm
-      website: https://abs.xyz
-      docs: https://docs.abs.xyz
-      tier: frontier
-      private: false
-      evm:
-        chain_id: 11124
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
   adi-mainnet:
     metadata:
       kind: evm
@@ -520,29 +482,6 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
-  blast-l2-mainnet:
-    metadata:
-      display_name: Blast
-      aliases:
-      - Blast L2
-      ecosystem: blast
-      logo_url: https://cdn.subsquid.io/img/networks/blast.png
-      type: mainnet
-      kind: evm
-      website: https://blast.io
-      docs: https://docs.blast.io
-      explorer: https://blastscan.io
-      tier: frontier
-      private: false
-      evm:
-        chain_id: 81457
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-        traces: {}
-        state_diffs: {}
   bob-mainnet:
     metadata:
       display_name: BOB
