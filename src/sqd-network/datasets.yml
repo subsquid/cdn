@@ -86,9 +86,6 @@ sqd-network-datasets:
   - name: flare-mainnet
     id: s3://flare-mainnet-traceless-1
     kind: evm
-  - name: galxe-gravity
-    id: s3://galxe-gravity
-    kind: evm
   - name: gnosis-mainnet
     id: s3://gnosis-mainnet-3
     kind: evm

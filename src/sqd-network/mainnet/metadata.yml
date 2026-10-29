@@ -685,28 +685,6 @@ datasets:
         blocks: {}
         transactions: {}
         logs: {}
-  galxe-gravity:
-    metadata:
-      display_name: Gravity Alpha
-      aliases:
-      - Gravity
-      ecosystem: galxe-gravity
-      logo_url: https://cdn.subsquid.io/img/networks/gravity.png
-      type: mainnet
-      kind: evm
-      website: https://gravity.xyz
-      docs: https://docs.gravity.xyz
-      tier: frontier
-      private: false
-      evm:
-        chain_id: 1625
-    schema:
-      tables:
-        blocks: {}
-        transactions: {}
-        logs: {}
-        traces: {}
-        state_diffs: {}
   gnosis-mainnet:
     metadata:
       display_name: Gnosis
