@@ -258,15 +258,6 @@ sqd-network-datasets:
   - name: chainflip
     id: s3://chainflip-4
     kind: substrate
-  - name: enjin-matrix
-    id: s3://enjin-matrix-4
-    kind: substrate
-  - name: enjin-relay
-    id: s3://enjin-relay
-    kind: substrate
-  - name: enjin-canary-matrix
-    id: s3://enjin-canary-matrix
-    kind: substrate
   - name: hydradx
     id: s3://hydradx-4
     kind: substrate
