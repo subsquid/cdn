@@ -2073,42 +2073,6 @@ datasets:
       tier: frontier
       private: false
     schema: {}
-  enjin-canary-matrix:
-    metadata:
-      logo_url: https://cdn.subsquid.io/img/networks/enjin.png
-      kind: substrate
-      display_name: Enjin Canary Matrixchain
-      ecosystem: enjin
-      type: testnet
-      website: https://enjin.io
-      docs: https://docs.enjin.io
-      tier: partner
-      private: false
-    schema: {}
-  enjin-matrix:
-    metadata:
-      logo_url: https://cdn.subsquid.io/img/networks/enjin.png
-      kind: substrate
-      display_name: Enjin Matrixchain
-      ecosystem: enjin
-      type: mainnet
-      website: https://enjin.io
-      docs: https://docs.enjin.io
-      tier: partner
-      private: false
-    schema: {}
-  enjin-relay:
-    metadata:
-      logo_url: https://cdn.subsquid.io/img/networks/enjin.png
-      kind: substrate
-      display_name: Enjin Relaychain
-      ecosystem: enjin
-      type: mainnet
-      website: https://enjin.io
-      docs: https://docs.enjin.io
-      tier: partner
-      private: false
-    schema: {}
   hydradx:
     metadata:
       kind: substrate
